@@ -1,0 +1,117 @@
+[
+    {
+        "category": "Basic Definitions",
+        "items":
+        [
+            "\\sin x = \\frac 1 {\\csc x}",
+            "\\cos x = \\frac 1 {\\sec x}",
+            "\\tan x = \\frac {\\sin x} {\\cos x} = \\frac 1 {\\cot x}",
+            "\\cot x = \\frac {\\cos x} {\\sin x} = \\frac 1 {\\tan x}",
+            "\\sec x = \\frac 1 {\\cos x}",
+            "\\csc x = \\frac 1 {\\sin x}"
+        ]
+    },
+    {
+        "category": "Symmetry Identities",
+        "items":
+        [
+            "\\sin (-x) = - \\sin x",
+            "\\cos (-x) = \\cos x",
+            "\\tan (-x) = - \\tan x",
+            "\\cot (-x) = - \\cot x",
+            "\\sec (-x) = \\sec x",
+            "\\csc (-x) = - \\csc x"
+        ]
+    },
+    {
+        "category": "Cofunction Identities",
+        "items":
+        [
+            "\\sin \\left( \\frac \\pi 2 - x \\right) = \\cos x",
+            "\\cos \\left( \\frac \\pi 2 - x \\right) = \\sin x",
+            "\\tan \\left( \\frac \\pi 2 - x \\right) = \\cot x",
+            "\\cot \\left( \\frac \\pi 2 - x \\right) = \\tan x",
+            "\\sec \\left( \\frac \\pi 2 - x \\right) = \\csc x",
+            "\\csc \\left( \\frac \\pi 2 - x \\right) = \\sec x"
+        ]
+    },
+    {
+        "category": "Pythagorean Identities",
+        "items":
+        [
+            "\\sin^2 x + \\cos^2 x = 1",
+            "\\tan^2 x + 1 = \\sec^2 x",
+            "1 + \\cot^2 x = \\csc^2 x"
+        ]
+    },
+    {
+        "category": "Sum to Product",
+        "items":
+        [
+            "\\sin x + \\sin y = 2 \\sin \\left( \\frac {x + y} 2 \\right) \\cos \\left( \\frac {x - y} 2 \\right)",
+            "\\sin x - \\sin y = 2 \\cos \\left( \\frac {x + y} 2 \\right) \\sin \\left( \\frac {x - y} 2 \\right)",
+            "\\cos x + \\cos y = 2 \\cos \\left( \\frac {x + y} 2 \\right) \\cos \\left( \\frac {x - y} 2 \\right)",
+            "\\cos x - \\cos y = -2 \\sin \\left( \\frac {x + y} 2 \\right) \\sin \\left( \\frac {x - y} 2 \\right)",
+            "\\tan x + \\tan y = \\frac {\\sin (x + y)} {\\cos x\\cos y}",
+            "\\tan x - \\tan y = \\frac {\\sin (x - y)} {\\cos x\\cos y}",
+            "\\cot x + \\cot y = \\frac {\\sin (x + y)} {\\sin x\\sin y}",
+            "\\cot x - \\cot y = \\frac {\\sin (y - x)} {\\sin x\\sin y}"
+        ]
+    },
+    {
+        "category": "Product to Sum",
+        "items":
+        [
+            "\\sin x \\sin y = \\frac {\\cos (x - y) - \\cos (x + y)} 2",
+            "\\cos x \\cos y = \\frac {\\cos (x - y) + \\cos (x + y)} 2",
+            "\\sin x \\cos y = \\frac {\\sin (x + y) + \\sin (x - y)} 2",
+            "\\tan x \\tan y = \\frac {\\tan x + \\tan y} {\\cot x + \\cot y}",
+            "\\cot x \\cot y = \\frac {\\cot x + \\cot y} {\\tan x + \\tan y}",
+            "\\tan x \\cot y = \\frac {\\tan x + \\cot y} {\\cot x + \\tan y}"
+        ]
+    },
+    {
+        "category": "Squares",
+        "items":
+        [
+            "\\sin^2 x = \\frac {1 - \\cos 2x} 2",
+            "\\cos^2 x = \\frac {1 + \\cos 2x} 2",
+            "\\tan^2 x = \\frac {1 - \\cos 2x} {1 + \\cos 2x}",
+            "\\cot^2 x = \\frac {1 + \\cos 2x} {1 - \\cos 2x}"
+        ]
+    },
+    {
+        "category": "Half Angle",
+        "items":
+        [
+            "\\sin \\frac x 2 = \\pm \\sqrt {\\frac {1 - \\cos x} 2}",
+            "\\cos \\frac x 2 = \\pm \\sqrt {\\frac {1 + \\cos x} 2}",
+            "\\tan \\frac x 2 = \\frac {\\sin x} {1 + \\cos x} = \\frac {1 - \\cos x} {\\sin x}",
+            "\\cot \\frac x 2 = \\frac {\\sin x} {1 - \\cos x} = \\frac {1 + \\cos x} {\\sin x}"
+        ]
+    },
+    {
+        "category": "Sum of Angles",
+        "items":
+        [
+            "\\sin (x + y) = \\sin x \\cos y + \\cos x \\sin y",
+            "\\sin (x - y) = \\sin x \\cos y - \\cos x \\sin y",
+            "\\cos (x + y) = \\cos x \\cos y - \\sin x \\sin y",
+            "\\cos (x - y) = \\cos x \\cos y + \\sin x \\sin y",
+            "\\tan (x + y) = \\frac {\\tan x + \\tan y} {1 - \\tan x \\tan y}",
+            "\\tan (x - y) = \\frac {\\tan x - \\tan y} {1 + \\tan x \\tan y}",
+            "\\cot (x + y) = \\frac {\\cot x \\cot y - 1} {\\cot x + \\cot y}",
+            "\\cot (x - y) = \\frac {\\cot x \\cot y + 1} {\\cot y - \\cot x}"
+        ]
+    },
+    {
+        "category": "Double Angle",
+        "items":
+        [
+            "\\sin 2x = 2 \\sin x \\cos x",
+            "\\begin {aligned} \\cos 2x &= \\cos^2 x - \\sin^2 x \\\\ &= 2 \\cos^2 x - 1 \\\\ &= 1 - 2 \\sin^2 x \\end {aligned}",
+            "\\tan 2x = \\frac {2 \\tan x} {1 - \\tan^2 x}",
+            "\\cot 2x = \\frac {\\cot^2 x - 1} {2 \\cot x}"
+        ]
+    }
+]

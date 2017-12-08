@@ -1,0 +1,32 @@
+<template>
+    <section id="latex-math-renderer-unit">
+        <div class="plain-panel">
+            <label>LaTeX:<textarea class="latex-formula" rows="8"></textarea></label>
+            <div class="interface">
+                <span class="option">
+                    <label title="If checked, the math will be rendered in display mode; if unchecked, the math will be rendered in inline mode."><input type="checkbox" class="display-mode" value="Toto">&nbsp;Display Mode</label>
+                </span>
+                <span class="option">
+                    <button type="button" class="clear-button">Clear</button>
+                </span>
+                <span class="option">
+                    <label title="If checked, will throw a ParseError when it encounters an unsupported command; if unchecked, will render the unsupported command as text in color."><input type="checkbox" class="throw-on-error">&nbsp;Throw on Error</label>
+                </span>
+            </div>
+            <div class="latex-rendering">
+                <div class="latex-container"></div>
+            </div>
+        </div>
+        <div class="accent-panel">
+            <p><strong>References</strong>:</p>
+            <ul>
+                <li><a href="https://khan.github.io/KaTeX/">KaTeX – The fastest math typesetting library for the web</a></li>
+                <li><a href="https://github.com/Khan/KaTeX">GitHub - Khan/KaTeX: Fast math typesetting for the web.</a></li>
+                <li><a href="https://www.intmath.com/blog/mathematics/katex-a-new-way-to-display-math-on-the-web-9445">KaTeX - a new way to display math on the Web</a></li>
+                <li><a href="https://khan.github.io/KaTeX/function-support.html">Function Support in KaTeX</a></li>
+                <li><a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX/Mathematics - Wikibooks, open books for an open world</a></li>
+                <li><a href="https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics">LaTeX/Advanced Mathematics - Wikibooks, open books for an open world</a></li>
+            </ul>
+        </div>
+    </section>
+</template>

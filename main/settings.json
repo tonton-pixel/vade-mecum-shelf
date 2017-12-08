@@ -1,0 +1,26 @@
+{
+    "accelerated": false,
+    "hotKey": "CommandOrControl+Alt+V",
+    "unitsMenu": true,
+    "developerMenu": true,
+    "window":
+    {
+        "defaultWidth": 1080,
+        "defaultHeight": 720,
+        "minWidth": 720,
+        "minHeight": 480,
+        "backgroundColor": "#F5F5F5",
+        "titleTemplate": "{unit} | {app}",
+        "delayShow": true
+    },
+    "shortAppName": "Shelf",
+    "unitsName": "Titles",
+    "noCategoryName": "Other",
+    "description": "Modular utility app built with Electron.",
+    "copyright": "© 2017 Michel MARIANI.",
+    "homePage":
+    {
+        "label": "Home Page",
+        "URL": "https://github.com/tonton-pixel/vade-mecum-shelf"
+    }
+}

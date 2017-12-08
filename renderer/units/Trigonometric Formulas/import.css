@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+#trigonometric-formulas-unit .plain-panel
+{
+    text-align: center;
+    /*font-size: 1.1em;*/
+    padding-bottom: 1.5em;
+}
+
+#trigonometric-formulas-unit .plain-panel h2
+{
+    margin-bottom: 0.5em;
+}
+
+#trigonometric-formulas-unit .plain-panel .sheet
+{
+    background-color: white;
+    border: 1px solid var(--color-border);
+    border-radius: inherit;
+    margin: 0;
+    padding: 0.25em;
+    text-align: center;
+    overflow-x: auto;
+}
+
+#trigonometric-formulas-unit .plain-panel hr
+{
+    width: 10%;
+}

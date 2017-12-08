@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+#http-status-codes-unit .interface
+{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#http-status-codes-unit table
+{
+    font-size: 13px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: block;
+    /*overflow-x: scroll;*/
+    color: var(--color);
+}
+
+#http-status-codes-unit tr
+{
+    vertical-align: middle;
+    user-select: auto;
+}
+
+#http-status-codes-unit th
+{
+    text-align: left;
+    padding: calc(0.5em / 1.3);
+    font-size: 1.33em;
+    color: var(--color-accent);
+    background-color: white;
+    padding-top: 1em;
+}
+
+#http-status-codes-unit td
+{
+    padding: 0.25em 0.5em;
+    text-align: left;
+    line-height: 1.33em;
+    background-color: white;
+}
+
+#http-status-codes-unit .code
+{
+    font-weight: bold;
+}
+
+#http-status-codes-unit .message
+{
+    font-style: italic;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#http-status-codes-unit .meaning
+{
+    width: 100%;
+}

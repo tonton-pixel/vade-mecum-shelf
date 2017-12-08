@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+#latex-math-renderer-unit .latex-formula
+{
+    font-family: Monaco, monospace;
+    font-size: 13px;
+    line-height: normal;
+    width: 100%;
+    resize: vertical;
+    padding: 0.25em 0.5em;
+    tab-size : 4;
+}
+
+#latex-math-renderer-unit .interface
+{
+    padding: 0.5em 0 0.75em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+#latex-math-renderer-unit .option + .option
+{
+    margin-left: 0.5em;
+}
+
+#latex-math-renderer-unit .latex-rendering
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    min-height: calc(5 * 1.2em);
+    background-color: white;
+    border:1px solid var(--color-border);
+    overflow-x: auto;
+    margin-bottom: 0.5em;
+}
+
+#latex-math-renderer-unit .latex-container
+{
+    min-width: 0;
+}
+
+#latex-math-renderer-unit .rendering-error
+{
+    font-family: Monaco, monospace;
+    font-size: 13px;
+    line-height: normal;
+    color: var(--color-error);
+    text-align: center;
+    padding: 0.25em 0.5em;
+}

@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+#prefectures-of-japan-unit
+{
+    font-size: 15px;
+}
+
+#prefectures-of-japan-unit .accent-panel
+{
+    font-size: 14px;
+}
+
+#prefectures-of-japan-unit .interface
+{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#prefectures-of-japan-unit .live-search
+{
+    width: 12em;
+    font-size: 1em;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+}
+
+#prefectures-of-japan-unit table
+{
+    color: var(--color);
+    margin: 0.5em 0;
+}
+
+#prefectures-of-japan-unit tr
+{
+    user-select: auto;
+}
+
+#prefectures-of-japan-unit tr:nth-child(even)
+{
+    background-color: white;
+}
+
+#prefectures-of-japan-unit tr:nth-child(odd)
+{
+    background-color: var(--color-bg);
+}
+
+#prefectures-of-japan-unit th
+{
+    background-color: var(--color-border);
+    white-space: nowrap;
+}
+
+#prefectures-of-japan-unit td,
+#prefectures-of-japan-unit th
+{
+    text-align: left;
+    padding: 0.1em 0.5em;
+    text-align: left;
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#prefectures-of-japan-unit td.message
+{
+    text-align: center;
+    /*font-style: italic;*/
+}

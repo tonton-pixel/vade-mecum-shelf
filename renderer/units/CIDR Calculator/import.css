@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+#cidr-calculator-unit code
+{
+    user-select: auto;
+}
+
+#cidr-calculator-unit code,
+#cidr-calculator-unit input,
+#cidr-calculator-unit textarea
+{
+    font-family: Monaco, monospace;
+    font-size: 13px;
+}
+
+#cidr-calculator-unit .ip-range-output
+{
+    resize: none;
+}
+
+#cidr-calculator-unit .cidr-list-output
+{
+    resize: vertical;
+}
+
+#cidr-calculator-unit .plain-panel
+{
+    padding-bottom: 0.25em;
+}

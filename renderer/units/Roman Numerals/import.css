@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+#roman-numerals-unit .plain-panel
+{
+    font-size: 1em;
+}
+
+#roman-numerals-unit code,
+#roman-numerals-unit .notes ul
+{
+    user-select: auto;
+}
+
+#roman-numerals-unit code,
+#roman-numerals-unit input
+{
+    font-family: Monaco, monospace;
+    font-size: 1em;
+}
+
+#roman-numerals-unit input
+{
+    padding: 0.2em 0.3em;
+}

@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+#system-information-unit h2
+{
+    text-align: center;
+    user-select: auto;
+}
+
+#system-information-unit table
+{
+    font-size: 13px;
+    display: block;
+    overflow-x: scroll;
+    color: var(--color);
+    background-color: white;
+    margin-bottom: 0.25em;
+}
+
+#system-information-unit tr
+{
+    user-select: auto;
+}
+
+#system-information-unit th,
+#system-information-unit td
+{
+    padding: 0.1em 0.5em;
+    text-align: left;
+    white-space: nowrap;
+}
+
+#system-information-unit td
+{
+    font-family: Monaco, monospace;
+    width: 100%;
+}
+
+#system-information-unit td.disabled
+{
+    font-style: italic;
+    color: var(--color-subtle);
+}

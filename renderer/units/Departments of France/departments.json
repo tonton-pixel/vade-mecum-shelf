@@ -1,0 +1,656 @@
+[
+    {
+        "clé": 1,
+        "code": "01",
+        "département": "Ain",
+        "chef-lieu": "Bourg-en-Bresse"
+    },
+    {
+        "clé": 2,
+        "code": "02",
+        "département": "Aisne",
+        "chef-lieu": "Laon"
+    },
+    {
+        "clé": 3,
+        "code": "03",
+        "département": "Allier",
+        "chef-lieu": "Moulins"
+    },
+    {
+        "clé": 4,
+        "code": "04",
+        "département": "Alpes-de-Haute-Provence",
+        "chef-lieu": "Digne-les-Bains"
+    },
+    {
+        "clé": 5,
+        "code": "05",
+        "département": "Hautes-Alpes",
+        "chef-lieu": "Gap"
+    },
+    {
+        "clé": 6,
+        "code": "06",
+        "département": "Alpes-Maritimes",
+        "chef-lieu": "Nice"
+    },
+    {
+        "clé": 7,
+        "code": "07",
+        "département": "Ardèche",
+        "chef-lieu": "Privas"
+    },
+    {
+        "clé": 8,
+        "code": "08",
+        "département": "Ardennes",
+        "chef-lieu": "Charleville-Mézières"
+    },
+    {
+        "clé": 9,
+        "code": "09",
+        "département": "Ariège",
+        "chef-lieu": "Foix"
+    },
+    {
+        "clé": 10,
+        "code": "10",
+        "département": "Aube",
+        "chef-lieu": "Troyes"
+    },
+    {
+        "clé": 11,
+        "code": "11",
+        "département": "Aude",
+        "chef-lieu": "Carcassonne"
+    },
+    {
+        "clé": 12,
+        "code": "12",
+        "département": "Aveyron",
+        "chef-lieu": "Rodez"
+    },
+    {
+        "clé": 13,
+        "code": "13",
+        "département": "Bouches-du-Rhône",
+        "chef-lieu": "Marseille"
+    },
+    {
+        "clé": 14,
+        "code": "14",
+        "département": "Calvados",
+        "chef-lieu": "Caen"
+    },
+    {
+        "clé": 15,
+        "code": "15",
+        "département": "Cantal",
+        "chef-lieu": "Aurillac"
+    },
+    {
+        "clé": 16,
+        "code": "16",
+        "département": "Charente",
+        "chef-lieu": "Angoulême"
+    },
+    {
+        "clé": 17,
+        "code": "17",
+        "département": "Charente-Maritime",
+        "chef-lieu": "La Rochelle"
+    },
+    {
+        "clé": 18,
+        "code": "18",
+        "département": "Cher",
+        "chef-lieu": "Bourges"
+    },
+    {
+        "clé": 19,
+        "code": "19",
+        "département": "Corrèze",
+        "chef-lieu": "Tulle"
+    },
+    {
+        "clé": 20.0,
+        "code": "2A",
+        "département": "Corse-du-Sud",
+        "chef-lieu": "Ajaccio"
+    },
+    {
+        "clé": 20.5,
+        "code": "2B",
+        "département": "Haute-Corse",
+        "chef-lieu": "Bastia"
+    },
+    {
+        "clé": 21,
+        "code": "21",
+        "département": "Côte-d'Or",
+        "chef-lieu": "Dijon"
+    },
+    {
+        "clé": 22,
+        "code": "22",
+        "département": "Côtes-d'Armor",
+        "chef-lieu": "Saint-Brieuc"
+    },
+    {
+        "clé": 23,
+        "code": "23",
+        "département": "Creuse",
+        "chef-lieu": "Guéret"
+    },
+    {
+        "clé": 24,
+        "code": "24",
+        "département": "Dordogne",
+        "chef-lieu": "Périgueux"
+    },
+    {
+        "clé": 25,
+        "code": "25",
+        "département": "Doubs",
+        "chef-lieu": "Besançon"
+    },
+    {
+        "clé": 26,
+        "code": "26",
+        "département": "Drôme",
+        "chef-lieu": "Valence"
+    },
+    {
+        "clé": 27,
+        "code": "27",
+        "département": "Eure",
+        "chef-lieu": "Évreux"
+    },
+    {
+        "clé": 28,
+        "code": "28",
+        "département": "Eure-et-Loir",
+        "chef-lieu": "Chartres"
+    },
+    {
+        "clé": 29,
+        "code": "29",
+        "département": "Finistère",
+        "chef-lieu": "Quimper"
+    },
+    {
+        "clé": 30,
+        "code": "30",
+        "département": "Gard",
+        "chef-lieu": "Nîmes"
+    },
+    {
+        "clé": 31,
+        "code": "31",
+        "département": "Haute-Garonne",
+        "chef-lieu": "Toulouse"
+    },
+    {
+        "clé": 32,
+        "code": "32",
+        "département": "Gers",
+        "chef-lieu": "Auch"
+    },
+    {
+        "clé": 33,
+        "code": "33",
+        "département": "Gironde",
+        "chef-lieu": "Bordeaux"
+    },
+    {
+        "clé": 34,
+        "code": "34",
+        "département": "Hérault",
+        "chef-lieu": "Montpellier"
+    },
+    {
+        "clé": 35,
+        "code": "35",
+        "département": "Ille-et-Vilaine",
+        "chef-lieu": "Rennes"
+    },
+    {
+        "clé": 36,
+        "code": "36",
+        "département": "Indre",
+        "chef-lieu": "Châteauroux"
+    },
+    {
+        "clé": 37,
+        "code": "37",
+        "département": "Indre-et-Loire",
+        "chef-lieu": "Tours"
+    },
+    {
+        "clé": 38,
+        "code": "38",
+        "département": "Isère",
+        "chef-lieu": "Grenoble"
+    },
+    {
+        "clé": 39,
+        "code": "39",
+        "département": "Jura",
+        "chef-lieu": "Lons-le-Saunier"
+    },
+    {
+        "clé": 40,
+        "code": "40",
+        "département": "Landes",
+        "chef-lieu": "Mont-de-Marsan"
+    },
+    {
+        "clé": 41,
+        "code": "41",
+        "département": "Loir-et-Cher",
+        "chef-lieu": "Blois"
+    },
+    {
+        "clé": 42,
+        "code": "42",
+        "département": "Loire",
+        "chef-lieu": "Saint-Étienne"
+    },
+    {
+        "clé": 43,
+        "code": "43",
+        "département": "Haute-Loire",
+        "chef-lieu": "Le Puy-en-Velay"
+    },
+    {
+        "clé": 44,
+        "code": "44",
+        "département": "Loire-Atlantique",
+        "chef-lieu": "Nantes"
+    },
+    {
+        "clé": 45,
+        "code": "45",
+        "département": "Loiret",
+        "chef-lieu": "Orléans"
+    },
+    {
+        "clé": 46,
+        "code": "46",
+        "département": "Lot",
+        "chef-lieu": "Cahors"
+    },
+    {
+        "clé": 47,
+        "code": "47",
+        "département": "Lot-et-Garonne",
+        "chef-lieu": "Agen"
+    },
+    {
+        "clé": 48,
+        "code": "48",
+        "département": "Lozère",
+        "chef-lieu": "Mende"
+    },
+    {
+        "clé": 49,
+        "code": "49",
+        "département": "Maine-et-Loire",
+        "chef-lieu": "Angers"
+    },
+    {
+        "clé": 50,
+        "code": "50",
+        "département": "Manche",
+        "chef-lieu": "Saint-Lô"
+    },
+    {
+        "clé": 51,
+        "code": "51",
+        "département": "Marne",
+        "chef-lieu": "Châlons-en-Champagne"
+    },
+    {
+        "clé": 52,
+        "code": "52",
+        "département": "Haute-Marne",
+        "chef-lieu": "Chaumont"
+    },
+    {
+        "clé": 53,
+        "code": "53",
+        "département": "Mayenne",
+        "chef-lieu": "Laval"
+    },
+    {
+        "clé": 54,
+        "code": "54",
+        "département": "Meurthe-et-Moselle",
+        "chef-lieu": "Nancy"
+    },
+    {
+        "clé": 55,
+        "code": "55",
+        "département": "Meuse",
+        "chef-lieu": "Bar-le-Duc"
+    },
+    {
+        "clé": 56,
+        "code": "56",
+        "département": "Morbihan",
+        "chef-lieu": "Vannes"
+    },
+    {
+        "clé": 57,
+        "code": "57",
+        "département": "Moselle",
+        "chef-lieu": "Metz"
+    },
+    {
+        "clé": 58,
+        "code": "58",
+        "département": "Nièvre",
+        "chef-lieu": "Nevers"
+    },
+    {
+        "clé": 59,
+        "code": "59",
+        "département": "Nord",
+        "chef-lieu": "Lille"
+    },
+    {
+        "clé": 60,
+        "code": "60",
+        "département": "Oise",
+        "chef-lieu": "Beauvais"
+    },
+    {
+        "clé": 61,
+        "code": "61",
+        "département": "Orne",
+        "chef-lieu": "Alençon"
+    },
+    {
+        "clé": 62,
+        "code": "62",
+        "département": "Pas-de-Calais",
+        "chef-lieu": "Arras"
+    },
+    {
+        "clé": 63,
+        "code": "63",
+        "département": "Puy-de-Dôme",
+        "chef-lieu": "Clermont-Ferrand"
+    },
+    {
+        "clé": 64,
+        "code": "64",
+        "département": "Pyrénées-Atlantiques",
+        "chef-lieu": "Pau"
+    },
+    {
+        "clé": 65,
+        "code": "65",
+        "département": "Hautes-Pyrénées",
+        "chef-lieu": "Tarbes"
+    },
+    {
+        "clé": 66,
+        "code": "66",
+        "département": "Pyrénées-Orientales",
+        "chef-lieu": "Perpignan"
+    },
+    {
+        "clé": 67,
+        "code": "67",
+        "département": "Bas-Rhin",
+        "chef-lieu": "Strasbourg"
+    },
+    {
+        "clé": 68,
+        "code": "68",
+        "département": "Haut-Rhin",
+        "chef-lieu": "Colmar"
+    },
+    {
+        "clé": 69,
+        "code": "69",
+        "département": "Rhône",
+        "chef-lieu": "Lyon"
+    },
+    {
+        "clé": 70,
+        "code": "70",
+        "département": "Haute-Saône",
+        "chef-lieu": "Vesoul"
+    },
+    {
+        "clé": 71,
+        "code": "71",
+        "département": "Saône-et-Loire",
+        "chef-lieu": "Mâcon"
+    },
+    {
+        "clé": 72,
+        "code": "72",
+        "département": "Sarthe",
+        "chef-lieu": "Le Mans"
+    },
+    {
+        "clé": 73,
+        "code": "73",
+        "département": "Savoie",
+        "chef-lieu": "Chambéry"
+    },
+    {
+        "clé": 74,
+        "code": "74",
+        "département": "Haute-Savoie",
+        "chef-lieu": "Annecy"
+    },
+    {
+        "clé": 75,
+        "code": "75",
+        "département": "Paris",
+        "chef-lieu": "Paris"
+    },
+    {
+        "clé": 76,
+        "code": "76",
+        "département": "Seine-Maritime",
+        "chef-lieu": "Rouen"
+    },
+    {
+        "clé": 77,
+        "code": "77",
+        "département": "Seine-et-Marne",
+        "chef-lieu": "Melun"
+    },
+    {
+        "clé": 78,
+        "code": "78",
+        "département": "Yvelines",
+        "chef-lieu": "Versailles"
+    },
+    {
+        "clé": 79,
+        "code": "79",
+        "département": "Deux-Sèvres",
+        "chef-lieu": "Niort"
+    },
+    {
+        "clé": 80,
+        "code": "80",
+        "département": "Somme",
+        "chef-lieu": "Amiens"
+    },
+    {
+        "clé": 81,
+        "code": "81",
+        "département": "Tarn",
+        "chef-lieu": "Albi"
+    },
+    {
+        "clé": 82,
+        "code": "82",
+        "département": "Tarn-et-Garonne",
+        "chef-lieu": "Montauban"
+    },
+    {
+        "clé": 83,
+        "code": "83",
+        "département": "Var",
+        "chef-lieu": "Toulon"
+    },
+    {
+        "clé": 84,
+        "code": "84",
+        "département": "Vaucluse",
+        "chef-lieu": "Avignon"
+    },
+    {
+        "clé": 85,
+        "code": "85",
+        "département": "Vendée",
+        "chef-lieu": "La Roche-sur-Yon"
+    },
+    {
+        "clé": 86,
+        "code": "86",
+        "département": "Vienne",
+        "chef-lieu": "Poitiers"
+    },
+    {
+        "clé": 87,
+        "code": "87",
+        "département": "Haute-Vienne",
+        "chef-lieu": "Limoges"
+    },
+    {
+        "clé": 88,
+        "code": "88",
+        "département": "Vosges",
+        "chef-lieu": "Épinal"
+    },
+    {
+        "clé": 89,
+        "code": "89",
+        "département": "Yonne",
+        "chef-lieu": "Auxerre"
+    },
+    {
+        "clé": 90,
+        "code": "90",
+        "département": "Territoire de Belfort",
+        "chef-lieu": "Belfort"
+    },
+    {
+        "clé": 91,
+        "code": "91",
+        "département": "Essonne",
+        "chef-lieu": "Évry"
+    },
+    {
+        "clé": 92,
+        "code": "92",
+        "département": "Hauts-de-Seine",
+        "chef-lieu": "Nanterre"
+    },
+    {
+        "clé": 93,
+        "code": "93",
+        "département": "Seine-Saint-Denis",
+        "chef-lieu": "Bobigny"
+    },
+    {
+        "clé": 94,
+        "code": "94",
+        "département": "Val-de-Marne",
+        "chef-lieu": "Créteil"
+    },
+    {
+        "clé": 95,
+        "code": "95",
+        "département": "Val-d'Oise",
+        "chef-lieu": "Pontoise"
+    },
+    {
+        "clé": 971,
+        "code": "971",
+        "département": "Guadeloupe",
+        "chef-lieu": "Basse-Terre"
+    },
+    {
+        "clé": 972,
+        "code": "972",
+        "département": "Martinique",
+        "chef-lieu": "Fort-de-France"
+    },
+    {
+        "clé": 973,
+        "code": "973",
+        "département": "Guyane",
+        "chef-lieu": "Cayenne"
+    },
+    {
+        "clé": 974,
+        "code": "974",
+        "département": "La Réunion",
+        "chef-lieu": "Saint-Denis"
+    },
+    {
+        "clé": 975,
+        "code": "975",
+        "département": "Saint-Pierre-et-Miquelon",
+        "chef-lieu": "Saint-Pierre"
+    },
+    {
+        "clé": 976,
+        "code": "976",
+        "département": "Mayotte",
+        "chef-lieu": "Dzaoudzi"
+    },
+    {
+        "clé": 977,
+        "code": "977",
+        "département": "Saint-Barthélemy",
+        "chef-lieu": "Gustavia"
+    },
+    {
+        "clé": 978,
+        "code": "978",
+        "département": "Saint-Martin",
+        "chef-lieu": "Marigot"
+    },
+    {
+        "clé": 984,
+        "code": "984",
+        "département": "Terres australes et antarctiques françaises",
+        "chef-lieu": ""
+    },
+    {
+        "clé": 986,
+        "code": "986",
+        "département": "Wallis-et-Futuna",
+        "chef-lieu": "Mata Utu"
+    },
+    {
+        "clé": 987,
+        "code": "987",
+        "département": "Polynésie française",
+        "chef-lieu": "Papeete"
+    },
+    {
+        "clé": 988,
+        "code": "988",
+        "département": "Nouvelle-Calédonie",
+        "chef-lieu": "Nouméa"
+    },
+    {
+        "clé": 989,
+        "code": "989",
+        "département": "Île de Clipperton",
+        "chef-lieu": ""
+    }
+]

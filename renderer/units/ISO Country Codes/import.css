@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+#iso-country-codes-unit .interface
+{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#iso-country-codes-unit .live-search
+{
+    width: 12em;
+    font-size: 1em;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+}
+
+#iso-country-codes-unit table
+{
+    color: var(--color);
+    margin: 0.5em 0;
+}
+
+#iso-country-codes-unit tr
+{
+    user-select: auto;
+}
+
+#iso-country-codes-unit tr:nth-child(even)
+{
+    background-color: white;
+}
+
+#iso-country-codes-unit tr:nth-child(odd)
+{
+    background-color: var(--color-bg);
+}
+
+#iso-country-codes-unit th
+{
+    background-color: var(--color-border);
+    white-space: nowrap;
+}
+
+#iso-country-codes-unit td,
+#iso-country-codes-unit th
+{
+    padding: 0.1em 0.5em;
+    text-align: left;
+}
+
+#iso-country-codes-unit th.code
+{
+    width: 3em;
+}
+
+#iso-country-codes-unit td.code
+{
+    font-family: Monaco, monospace;
+    width: 3em;
+}
+
+#iso-country-codes-unit th.country,
+#iso-country-codes-unit td.country
+{
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#iso-country-codes-unit td.message
+{
+    text-align: center;
+    font-style: italic;
+}
