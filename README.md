@@ -2,7 +2,9 @@
 
 **Vade Mecum Shelf** is a modular utility app built with [Electron](https://electron.atom.io).
 
-This app works on Mac OS X, Linux and Windows operating systems.
+It works on Mac OS X, Linux and Windows operating systems.
+
+Its *look and feel* is partly inspired by the brilliant [Electron API Demos](https://github.com/electron/electron-api-demos) app, but it makes use of a more dynamic modular approach: each utility is made of an independent, self-contained folder including all necessary files.
 
 ## Features
 
@@ -172,7 +174,7 @@ $ npm run build-darwin
 
 - In Linux (at least on **Linux Mint 18.2 Sonya** and **Ubuntu 16.04.3 LTS**), there is a [bug](https://github.com/electron/electron/issues/10388) which prevents the window position to be correctly recorded between consecutive runs, a slight shift to the bottom right occurs systematically.
 
-- In **Ubuntu 16.04.3 LTS**, the Titles menu is never updated whenever one of its items is selected, or when the selection is triggered programmatically.
+- In **Ubuntu 16.04.3 LTS**, the Titles menu is never updated whenever one of its items is selected, or when the selection is triggered programmatically. This [bug](https://github.com/electron/electron/issues/11386) affects all menus made of radio-buttons items.
 
 - When using the Developer Tools, be careful not to modify the zoom level; this will almost certainly crash the app. This is a documented [bug](https://github.com/electron/electron/issues/10697) which may be fixed soon, hopefully...
 
