@@ -1,7 +1,7 @@
 {
   "name": "vade-mecum-shelf",
   "productName": "Vade Mecum Shelf",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Modular utility app built with Electron.",
   "main": "main/main.js",
   "scripts": {
