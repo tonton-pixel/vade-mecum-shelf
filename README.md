@@ -155,10 +155,10 @@ Sets of trigonometric formulas, by category:
 You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this app.
 
 ```bash
-$ git clone https://github.com/tonton-pixel/vade-mecum-shelf
-$ cd vade-mecum-shelf
-$ npm install
-$ npm start
+git clone https://github.com/tonton-pixel/vade-mecum-shelf
+cd vade-mecum-shelf
+npm install
+npm start
 ```
 
 If you don't wish to clone, you can [download the source code](https://github.com/tonton-pixel/vade-mecum-shelf/archive/master.zip).
@@ -167,8 +167,12 @@ Several scripts are also defined in the `package.json` file to build OS-specific
 For instance, running the following command will create a `Vade Mecum Shelf.app` version for Mac OS X:
 
 ```bash
-$ npm run build-darwin
+npm run build-darwin
 ```
+
+## Using
+
+You can [download the latest release](https://github.com/tonton-pixel/vade-mecum-shelf/releases) for Mac OS X.
 
 ## Known Issues
 
