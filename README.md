@@ -170,6 +170,10 @@ For instance, running the following command will create a `Vade Mecum Shelf.app`
 npm run build-darwin
 ```
 
+## Using
+
+You can [download the latest release](https://github.com/tonton-pixel/vade-mecum-shelf/releases) for Mac OS X.
+
 ## Known Issues
 
 - In Linux (at least on **Linux Mint 18.2 Sonya** and **Ubuntu 16.04.3 LTS**), there is a [bug](https://github.com/electron/electron/issues/10388) which prevents the window position to be correctly recorded between consecutive runs, a slight shift to the bottom right occurs systematically.
