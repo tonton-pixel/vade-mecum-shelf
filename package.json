@@ -1,8 +1,8 @@
 {
   "name": "vade-mecum-shelf",
   "productName": "Vade Mecum Shelf",
-  "version": "1.0.2",
-  "description": "Modular utility app built with Electron.",
+  "version": "1.0.3",
+  "description": "Collection of utilities wrapped into one single app.",
   "main": "main/main.js",
   "scripts": {
     "start": "electron .",
@@ -15,6 +15,8 @@
   },
   "keywords": [
     "app",
+    "collection",
+    "customizable",
     "electron",
     "modular",
     "shelf",
