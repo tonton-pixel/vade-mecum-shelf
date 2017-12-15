@@ -1,6 +1,6 @@
 # <img src="icons/icon-256.png" width="64px" align="center" alt="Vade Mecum Shelf icon"> VADE MECUM SHELF
 
-**Vade Mecum Shelf** is a modular utility app built with [Electron](https://electron.atom.io).
+**Vade Mecum Shelf** is a collection of utilities wrapped into one single app, built with [Electron](https://electron.atom.io).
 
 It works on Mac OS X, Linux and Windows operating systems.
 
