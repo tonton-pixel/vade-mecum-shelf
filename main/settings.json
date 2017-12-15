@@ -16,7 +16,7 @@
     "shortAppName": "Shelf",
     "unitsName": "Titles",
     "noCategoryName": "Other",
-    "description": "Modular utility app built with Electron.",
+    "description": "Collection of utilities wrapped into one single app.",
     "copyright": "© 2017 Michel MARIANI.",
     "homePage":
     {
