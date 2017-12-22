@@ -318,7 +318,7 @@ kbd
     text-align: center;
 }
 
-.content
+.contents
 {
     flex: 1;
     position: relative;
@@ -330,7 +330,7 @@ kbd
     opacity: 0;
 }
 
-.content.is-shown
+.contents.is-shown
 {
     pointer-events: auto;
     visibility: visible;

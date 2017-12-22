@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+@font-face
+{
+    font-family: "jabberwocky";
+    src: url("BLKCHCRY.TTF");
+}
+
+#jabberwocky-unit .plain-panel
+{
+    /* box-shadow: inset 0 0 65px hsla(0, 0%, 0%, 0.1); */
+}
+
+#jabberwocky-unit .combi-box
+{
+    padding: 1em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+#jabberwocky-unit .illustration
+{
+    /*margin-right: -0.5em;*/
+}
+
+#jabberwocky-unit .illustration svg
+{
+    width: calc(13em * 1908 / 2760);
+    height: 13em;
+    fill: var(--color-accent);
+}
+
+#jabberwocky-unit .stanzas
+{
+    min-width: 0;
+    white-space: nowrap;
+    margin-top: 8.6em;
+}
+
+#jabberwocky-unit .stanza,
+#jabberwocky-unit .author
+{
+    font-family: jabberwocky, cursive;
+    /* font-style: italic; */
+    /* font-weight: bold; */
+}
+
+#jabberwocky-unit .stanza
+{
+    font-size: 21px;
+    line-height: 1.4em;
+    margin: auto;
+}
+
+#jabberwocky-unit .stanza::first-letter
+{
+    font-size: 1.5em;
+    color: var(--color-accent);
+    letter-spacing: 1px;
+}
+
+#jabberwocky-unit .line:nth-of-type(even)
+{
+    margin-left: 1.5em;
+}
+
+#jabberwocky-unit .author
+{
+    font-size: 24px;
+    text-align: right;
+    margin-top: 1em;
+    color: var(--color-accent);
+}

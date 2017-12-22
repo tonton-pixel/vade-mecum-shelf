@@ -20,7 +20,7 @@ Its *look and feel* is partly inspired by the brilliant [Electron API Demos](htt
 
 ## Titles
 
-Thirteen utilities are currently available:
+Fifteen utilities are currently available:
 
 * [CIDR Calculator](#cidr-calculator)
 * [Color Names](#color-names)
@@ -28,6 +28,7 @@ Thirteen utilities are currently available:
 * [Digital Clock](#digital-clock)
 * [HTTP Status Codes](#http-status-codes)
 * [ISO Country Codes](#iso-country-codes)
+* [Jabberwocky](#jabberwocky)
 * [JSON Formatter](#json-formatter)
 * [LaTeX Math Renderer](#latex-math-renderer)
 * [List of U.S. States](#list-of-us-states)
@@ -35,6 +36,7 @@ Thirteen utilities are currently available:
 * [Roman Numerals](#roman-numerals)
 * [System Information](#system-information)
 * [Trigonometric Formulas](#trigonometric-formulas)
+* [Unicode Inspector](#unicode-inspector)
 
 ## CIDR Calculator
 
@@ -83,6 +85,12 @@ Full list of ISO 3166-1 country codes, with live search:
 
 <img src="screenshots/iso-country-codes.png" width="1080px" alt="ISO Country Codes screenshot">
 
+## Jabberwocky
+
+Typographic rendition of Lewis Carroll's nonsense poem "Jabberwocky":
+
+<img src="screenshots/jabberwocky.png" width="1080px" alt="Jabberwocky screenshot">
+
 ## JSON Formatter
 
 JSON data formatter and validator:
@@ -109,10 +117,10 @@ Full list of prefectures of Japan, with live search:
 
 ## Roman Numerals
 
-Converters between numerals:
+Converters between roman and arabic numerals:
 
-* Roman to Arabic Numerals
-* Arabic to Roman Numerals
+* Roman to Arabic Numeral
+* Arabic to Roman Numeral
 
 <img src="screenshots/roman-numerals.png" width="1080px" alt="Roman Numerals screenshot">
 
@@ -149,6 +157,12 @@ Sets of trigonometric formulas, by category:
 * Double Angle
 
 <img src="screenshots/trigonometric-formulas.png" width="1080px" alt="Trigonometric Formulas screenshot">
+
+## Unicode Inspector
+
+Code point information of Unicode characters:
+
+<img src="screenshots/unicode-inspector.png" width="1080px" alt="Unicode Inspector screenshot">
 
 ## Building
 

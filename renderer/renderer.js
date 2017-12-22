@@ -67,7 +67,12 @@ function pathToURL (pathname)
 for (let unitFilename of unitFilenames)
 {
     let unitDirname = path.join (unitsDirname, unitFilename);
-    const { category = settings.noCategoryName, disabled = false } = getConfig (path.join (unitDirname, 'config.json'));
+    const
+    {
+        category = settings.noCategoryName,
+        description = "",
+        disabled = false
+    } = getConfig (path.join (unitDirname, 'config.json'));
     if (!disabled)
     {
         let htmlFilename = path.join (unitDirname, 'import.html');
@@ -146,9 +151,9 @@ let footer = document.createElement ('footer');
 footer.className = 'footer';
 sidebar.appendChild (footer);
 document.body.appendChild (sidebar);
-let main = document.createElement ('main');
-main.className = 'content';
-document.body.appendChild (main);
+let contents = document.createElement ('main');
+contents.className = 'contents';
+document.body.appendChild (contents);
 //
 const Storage = require ('../lib/storage.js');
 const rendererStorage = new Storage ('renderer-preferences');
@@ -259,7 +264,8 @@ let div = document.createElement ('div');
 div.innerHTML = '<svg class="app-color-icon"><use href="images/icons.svg#app-color-icon"></use></svg>';
 footer.appendChild (div);
 // Easter egg...
-div.querySelector ('use').addEventListener ('dblclick', () => { shell.openExternal (settings.homePage.URL); });
+const electronAppURL = 'https://electronjs.org/apps/vade-mecum-shelf';
+div.querySelector ('use').addEventListener ('dblclick', () => { shell.openExternal (electronAppURL); });
 //
 ipcRenderer.on
 (
@@ -395,7 +401,7 @@ function importUnit (template, unitImport)
         section.classList.add ('is-shown');
         document.title = settings.window.titleTemplate.replace ('{app}', appName).replace ('{unit}', unitImport.name);
     }
-    main.appendChild (section);
+    contents.appendChild (section);
     fixSvgUseFromTemplate (section);
     unitElements[unitImport.name].section = section;
     if (unitImport.filename)
@@ -497,7 +503,7 @@ remote.getCurrentWebContents ().once
             sidebar.classList.add ('is-shown');
         }
         toggleCategories (showCategories);
-        main.classList.add ('is-shown');
+        contents.classList.add ('is-shown');
         if (settings.unitsMenu)
         {
             ipcRenderer.send ('update-units-menu', unitNames, currentUnitName);

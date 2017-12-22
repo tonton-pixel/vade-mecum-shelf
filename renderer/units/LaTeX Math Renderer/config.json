@@ -1,3 +1,4 @@
 {
-    "category": "Development"
+    "category": "Development",
+    "description": "LaTeX math expression renderer, using the KaTeX JavaScript library"
 }

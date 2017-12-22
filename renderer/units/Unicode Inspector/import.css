@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+#unicode-inspector-unit label
+{
+    line-height: 1.75em;
+    white-space: nowrap;
+}
+
+#unicode-inspector-unit .input-characters,
+#unicode-inspector-unit .output-codes,
+#unicode-inspector-unit .input-codes,
+#unicode-inspector-unit .output-characters
+{
+    font-size: 1em;
+    padding: 0.2em;
+    width: 100%;
+}
+
+#unicode-inspector-unit .input-characters,
+#unicode-inspector-unit .output-characters
+{
+    font-size: 5em;
+}
+
+#unicode-inspector-unit .output-codes,
+#unicode-inspector-unit .input-codes
+{
+    font-family: Monaco, monospace;
+}
+
+#unicode-inspector-unit .interface
+{
+    padding: 0.5em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+#unicode-inspector-unit .option + .option
+{
+    margin-left: 0.5em;
+}
