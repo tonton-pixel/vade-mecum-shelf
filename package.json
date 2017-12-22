@@ -1,8 +1,8 @@
 {
   "name": "vade-mecum-shelf",
   "productName": "Vade Mecum Shelf",
-  "version": "1.1.0",
   "description": "Collection of utilities wrapped into one single app.",
+  "version": "1.1.0",
   "main": "main/main.js",
   "scripts": {
     "start": "electron .",
