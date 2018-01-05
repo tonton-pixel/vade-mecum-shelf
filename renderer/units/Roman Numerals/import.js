@@ -14,7 +14,7 @@ module.exports.start = function (context, getPrefs)
     const defaultPrefs = { romanInput: "MMXVII", arabicInput: "2017" };
     let prefs = getPrefs (defaultPrefs);
     //
-    let numerals = require ('./numerals.js');
+    const numerals = require ('./numerals.js');
     //
     romanSample.textContent = defaultPrefs.romanInput;
     arabicOutput.value = numerals.romanToArabic (romanInput.value = prefs.romanInput);

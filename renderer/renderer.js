@@ -487,7 +487,16 @@ function addListeners ()
         if (aTag.href.startsWith ("http://") || aTag.href.startsWith ("https://"))
         {
             aTag.title = decodeURI (aTag.href);
-            aTag.addEventListener ('click', (event) => { event.preventDefault (); shell.openExternal (event.target.href); });
+            aTag.addEventListener
+            (
+                'click',
+                (event) =>
+                {
+                    let isCommandOrControlClick = (process.platform === 'darwin') ? event.metaKey : event.ctrlKey;
+                    event.preventDefault ();
+                    shell.openExternal (event.target.href, { activate: !isCommandOrControlClick }); // options are macOS only anyway
+                }
+            );
         }
     }
 }

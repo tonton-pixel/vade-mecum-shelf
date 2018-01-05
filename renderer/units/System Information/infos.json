@@ -168,6 +168,18 @@
                 "value": "require ('os').endianness ()"
             },
             {
+                "name": "CPU Logical Cores",
+                "value": "(require ('os').cpus ()).length"
+            },
+            {
+                "name": "CPU Model",
+                "value": "(require ('os').cpus ())[0].model"
+            },
+            {
+                "name": "CPU Speed (MHz)",
+                "value": "(require ('os').cpus ())[0].speed"
+            },
+            {
                 "name": "End-of-Line Marker",
                 "value": "JSON.stringify (require ('os').EOL).slice (1, -1)"
             },

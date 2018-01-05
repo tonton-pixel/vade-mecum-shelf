@@ -20,7 +20,7 @@ Its *look and feel* is partly inspired by the brilliant [Electron API Demos](htt
 
 ## Titles
 
-Fifteen utilities are currently available:
+The following utilities are currently available:
 
 * [CIDR Calculator](#cidr-calculator)
 * [Color Names](#color-names)
@@ -28,6 +28,7 @@ Fifteen utilities are currently available:
 * [Digital Clock](#digital-clock)
 * [HTTP Status Codes](#http-status-codes)
 * [ISO Country Codes](#iso-country-codes)
+* [ISO Language Codes](#iso-language-codes)
 * [Jabberwocky](#jabberwocky)
 * [JSON Formatter](#json-formatter)
 * [LaTeX Math Renderer](#latex-math-renderer)
@@ -35,6 +36,7 @@ Fifteen utilities are currently available:
 * [Prefectures of Japan](#prefectures-of-japan)
 * [Roman Numerals](#roman-numerals)
 * [System Information](#system-information)
+* [Text Scratchpad](#text-scratchpad)
 * [Trigonometric Formulas](#trigonometric-formulas)
 * [Unicode Inspector](#unicode-inspector)
 
@@ -84,6 +86,12 @@ Full list of HTTP status codes, with definitions in several languages:
 Full list of ISO 3166-1 country codes, with live search:
 
 <img src="screenshots/iso-country-codes.png" width="1080px" alt="ISO Country Codes screenshot">
+
+## ISO Language Codes
+
+Full list of ISO 639-1 language codes, with live search:
+
+<img src="screenshots/iso-language-codes.png" width="1080px" alt="ISO Language Codes screenshot">
 
 ## Jabberwocky
 
@@ -140,6 +148,12 @@ Detailed list of system information, by category:
 * Environment
 
 <img src="screenshots/system-information.png" width="1080px" alt="System Information screenshot">
+
+## Text Scratchpad
+
+Scratchpad to store persistent text data:
+
+<img src="screenshots/text-scratchpad.png" width="1080px" alt="Text Scratchpad screenshot">
 
 ## Trigonometric Formulas
 
@@ -206,4 +220,4 @@ You can [download the latest release](https://github.com/tonton-pixel/vade-mecum
 
 The MIT License (MIT).
 
-Copyright © 2017 Michel MARIANI.
+Copyright © 2017-2018 Michel MARIANI.

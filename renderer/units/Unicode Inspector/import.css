@@ -7,8 +7,8 @@
 }
 
 #unicode-inspector-unit .input-characters,
-#unicode-inspector-unit .output-codes,
-#unicode-inspector-unit .input-codes,
+#unicode-inspector-unit .output-code-points,
+#unicode-inspector-unit .input-code-points,
 #unicode-inspector-unit .output-characters
 {
     font-size: 1em;
@@ -22,8 +22,8 @@
     font-size: 5em;
 }
 
-#unicode-inspector-unit .output-codes,
-#unicode-inspector-unit .input-codes
+#unicode-inspector-unit .output-code-points,
+#unicode-inspector-unit .input-code-points
 {
     font-family: Monaco, monospace;
 }

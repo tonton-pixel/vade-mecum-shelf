@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+#text-scratchpad-unit .text-string
+{
+    font-family: Monaco, monospace;
+    font-size: 13px;
+    line-height: normal;
+    width: 100%;
+    padding: 0.25em 0.5em;
+    margin: 0.5em 0;
+    overflow-y: scroll;
+    resize: vertical;
+    tab-size : 4;
+}
+

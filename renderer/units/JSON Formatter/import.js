@@ -10,7 +10,7 @@ module.exports.start = function (context, getPrefs)
     const defaultPrefs = { inputString: "{\"First Name\":\"Albert\",\"Last Name\":\"Einstein\",\"Genius\":true,\"Known for\":[\"Photoelectric effect\",\"Brownian motion\",\"Special relativity\",\"General relativity\"]}" };
     let prefs = getPrefs (defaultPrefs);
     //
-    let json = require ('./json.js');
+    const json = require ('./json.js');
     //
     const { remote } = require ('electron');
     const contents = remote.getCurrentWebContents ();
@@ -57,8 +57,8 @@ module.exports.start = function (context, getPrefs)
     );
 };
 //
-module.exports.stop = function (context, getPrefs)
+module.exports.stop = function (context, setPrefs)
 {
-    getPrefs ({ inputString: inputString.value });
+    setPrefs ({ inputString: inputString.value });
 };
 //
