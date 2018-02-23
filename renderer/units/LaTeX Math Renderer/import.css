@@ -11,7 +11,22 @@
     tab-size : 4;
 }
 
-#latex-math-renderer-unit .interface
+#latex-math-renderer-unit .actions
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0.5em 0 -0.5em 0;
+}
+
+#latex-math-renderer-unit .action + .action
+{
+    margin-left: 0.5em;
+}
+
+#latex-math-renderer-unit .options
 {
     padding: 0.5em 0 0.75em 0;
     display: flex;

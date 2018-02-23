@@ -5,10 +5,14 @@ const setsContainer = unit.querySelector ('.sets-container');
 const setSelector = unit.querySelector ('.set-selector');
 const liveSearch = unit.querySelector ('.live-search');
 //
-module.exports.start = function (context, getPrefs)
+module.exports.start = function (context)
 {
-    const defaultPrefs = { setSelector: "", liveSearch: "" };
-    let prefs = getPrefs (defaultPrefs);
+    const defaultPrefs =
+    {
+        setSelector: "",
+        liveSearch: ""
+    };
+    let prefs = context.getPrefs (defaultPrefs);
     //
     const sets = require ('./sets.json');
     //
@@ -156,8 +160,8 @@ module.exports.start = function (context, getPrefs)
     liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
 };
 //
-module.exports.stop = function (context, setPrefs)
+module.exports.stop = function (context)
 {
-    setPrefs ({ setSelector: setSelector.value, liveSearch: liveSearch.value });
+    context.setPrefs ({ setSelector: setSelector.value, liveSearch: liveSearch.value });
 };
 //

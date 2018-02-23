@@ -2,7 +2,7 @@
 
 **Vade Mecum Shelf** is a collection of utilities wrapped into one single app, built with [Electron](https://electron.atom.io).
 
-It works on Mac OS X, Linux and Windows operating systems.
+This app works on Mac OS X, Linux and Windows operating systems.
 
 Its *look and feel* is partly inspired by the brilliant [Electron API Demos](https://github.com/electron/electron-api-demos) app, but it makes use of a more dynamic modular approach: each utility is made of an independent, self-contained folder including all necessary files.
 
@@ -27,8 +27,10 @@ The following utilities are currently available:
 * [Departments of France](#departments-of-france)
 * [Digital Clock](#digital-clock)
 * [HTTP Status Codes](#http-status-codes)
+* [IETF Language Tags](#ietf-language-tags)
 * [ISO Country Codes](#iso-country-codes)
 * [ISO Language Codes](#iso-language-codes)
+* [ISO Script Codes](#iso-script-codes)
 * [Jabberwocky](#jabberwocky)
 * [JSON Formatter](#json-formatter)
 * [LaTeX Math Renderer](#latex-math-renderer)
@@ -81,6 +83,12 @@ Full list of HTTP status codes, with definitions in several languages:
 
 <img src="screenshots/http-status-codes.png" width="1080px" alt="HTTP Status Codes screenshot">
 
+## IETF Language Tags
+
+References for IETF BCP 47 language tags and subtags:
+
+<img src="screenshots/ietf-language-tags.png" width="1080px" alt="IETF Language Tags screenshot">
+
 ## ISO Country Codes
 
 Full list of ISO 3166-1 country codes, with live search:
@@ -92,6 +100,12 @@ Full list of ISO 3166-1 country codes, with live search:
 Full list of ISO 639-1 language codes, with live search:
 
 <img src="screenshots/iso-language-codes.png" width="1080px" alt="ISO Language Codes screenshot">
+
+## ISO Script Codes
+
+Full list of ISO 15924 script codes, with live search:
+
+<img src="screenshots/iso-script-codes.png" width="1080px" alt="ISO Script Codes screenshot">
 
 ## Jabberwocky
 
@@ -207,8 +221,6 @@ You can [download the latest release](https://github.com/tonton-pixel/vade-mecum
 - In Linux (at least on **Linux Mint 18.2 Sonya** and **Ubuntu 16.04.3 LTS**), there is a [bug](https://github.com/electron/electron/issues/10388) which prevents the window position to be correctly recorded between consecutive runs, a slight shift to the bottom right occurs systematically.
 
 - In **Ubuntu 16.04.3 LTS**, the Titles menu is never updated whenever one of its items is selected, or when the selection is triggered programmatically. This [bug](https://github.com/electron/electron/issues/11386) affects all menus made of radio-buttons items.
-
-- When using the Developer Tools, be careful not to modify the zoom level; this will almost certainly crash the app. This is a documented [bug](https://github.com/electron/electron/issues/10697) which may be fixed soon, hopefully...
 
 ## Limitations
 

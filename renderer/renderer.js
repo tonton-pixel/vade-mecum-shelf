@@ -1,5 +1,5 @@
 //
-const { remote, ipcRenderer, shell } = require ('electron');
+const { remote, ipcRenderer, shell, webFrame } = require ('electron');
 //
 const fs = require ('fs');
 const path = require ('path');
@@ -9,6 +9,11 @@ const appName = remote.app.getName ();
 const appVersion = remote.app.getVersion ();
 //
 const settings = remote.getGlobal ('settings');
+//
+if (!settings.smartZoom)
+{
+    webFrame.setVisualZoomLevelLimits (1, 1);  // Disable smart zoom (double-tap and pinch)
+}
 //
 if (settings.unitsMenu)
 {
@@ -407,18 +412,18 @@ function importUnit (template, unitImport)
     if (unitImport.filename)
     {
         let unitModule = require (unitImport.filename);
-        let context = { baseURL: unitImport.URL };
-        if (typeof unitModule === 'function')
+        let id = section.id;
+        if (id)
         {
-            unitModule (context);
-        }
-        else if (typeof unitModule.start === 'function')
-        {
-            let id = section.id;
-            if (id)
+            unitImport.storage = new Storage (`${id}-preferences`);
+            let context = { baseURL: unitImport.URL, getPrefs: unitImport.storage.get, setPrefs: unitImport.storage.set };
+            if (typeof unitModule === 'function')
             {
-                unitImport.storage = new Storage (`${id}-preferences`);
-                unitModule.start (context, unitImport.storage.get);
+                unitModule (context);
+            }
+            else if (typeof unitModule.start === 'function')
+            {
+                unitModule.start (context);
             }
         }
     }
@@ -464,12 +469,12 @@ window.addEventListener // *Not* document.addEventListener
             if (unitImport.filename)
             {
                 let unitModule = require (unitImport.filename);
-                let context = { baseURL: unitImport.URL };
-                if (typeof unitModule.stop === 'function')
+                if (unitImport.storage)
                 {
-                    if (unitImport.storage)
+                    let context = { baseURL: unitImport.URL, getPrefs: unitImport.storage.get, setPrefs: unitImport.storage.set };
+                    if (typeof unitModule.stop === 'function')
                     {
-                        unitModule.stop (context, unitImport.storage.set);
+                        unitModule.stop (context);
                     }
                 }
             }

@@ -6,10 +6,13 @@ const unit = document.getElementById (unitId);
 const codesContainer = unit.querySelector ('.codes-container');
 const selectLocale = unit.querySelector ('.select-locale');
 //
-module.exports.start = function (context, getPrefs)
+module.exports.start = function (context)
 {
-    const defaultPrefs = { selectLocale: "" };
-    let prefs = getPrefs (defaultPrefs);
+    const defaultPrefs =
+    {
+        selectLocale: ""
+    };
+    let prefs = context.getPrefs (defaultPrefs);
     //
     const codes = require ('./codes.json');
     //
@@ -88,8 +91,8 @@ module.exports.start = function (context, getPrefs)
     selectLocale.addEventListener ('input', (event) => { style.textContent = getLocalesCSS (selectLocale, event.target.value); });
 };
 //
-module.exports.stop = function (context, setPrefs)
+module.exports.stop = function (context)
 {
-    setPrefs ({ selectLocale: selectLocale.value });
+    context.setPrefs ({ selectLocale: selectLocale.value });
 };
 //

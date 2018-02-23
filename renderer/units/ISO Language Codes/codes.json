@@ -1,1118 +1,1118 @@
 [
-	{
-		"639-1": "aa",
-		"639-2": "aar",
-		"french": "Afar",
-		"english": "Afar"
-	},
-	{
-		"639-1": "ab",
-		"639-2": "abk",
-		"french": "Abkhaze",
-		"english": "Abkhazian"
-	},
-	{
-		"639-1": "ae",
-		"639-2": "ave",
-		"french": "Avestique",
-		"english": "Avestan"
-	},
-	{
-		"639-1": "af",
-		"639-2": "afr",
-		"french": "Afrikaans",
-		"english": "Afrikaans"
-	},
-	{
-		"639-1": "ak",
-		"639-2": "aka",
-		"french": "Akan",
-		"english": "Akan"
-	},
-	{
-		"639-1": "am",
-		"639-2": "amh",
-		"french": "Amharique",
-		"english": "Amharic"
-	},
-	{
-		"639-1": "an",
-		"639-2": "arg",
-		"french": "Aragonais",
-		"english": "Aragonese"
-	},
-	{
-		"639-1": "ar",
-		"639-2": "ara",
-		"french": "Arabe",
-		"english": "Arabic"
-	},
-	{
-		"639-1": "as",
-		"639-2": "asm",
-		"french": "Assamais",
-		"english": "Assamese"
-	},
-	{
-		"639-1": "av",
-		"639-2": "ava",
-		"french": "Avar",
-		"english": "Avaric"
-	},
-	{
-		"639-1": "ay",
-		"639-2": "aym",
-		"french": "Aymara",
-		"english": "Aymara"
-	},
-	{
-		"639-1": "az",
-		"639-2": "aze",
-		"french": "Azéri",
-		"english": "Azerbaijani"
-	},
-	{
-		"639-1": "ba",
-		"639-2": "bak",
-		"french": "Bachkir",
-		"english": "Bashkir"
-	},
-	{
-		"639-1": "be",
-		"639-2": "bel",
-		"french": "Biélorusse",
-		"english": "Belarusian"
-	},
-	{
-		"639-1": "bg",
-		"639-2": "bul",
-		"french": "Bulgare",
-		"english": "Bulgarian"
-	},
-	{
-		"639-1": "bh",
-		"639-2": "bih",
-		"french": "Bihari",
-		"english": "Bihari"
-	},
-	{
-		"639-1": "bi",
-		"639-2": "bis",
-		"french": "Bichelamar",
-		"english": "Bislama"
-	},
-	{
-		"639-1": "bm",
-		"639-2": "bam",
-		"french": "Bambara",
-		"english": "Bambara"
-	},
-	{
-		"639-1": "bn",
-		"639-2": "ben",
-		"french": "Bengali",
-		"english": "Bengali"
-	},
-	{
-		"639-1": "bo",
-		"639-2": "tib/bod",
-		"french": "Tibétain",
-		"english": "Tibetan"
-	},
-	{
-		"639-1": "br",
-		"639-2": "bre",
-		"french": "Breton",
-		"english": "Breton"
-	},
-	{
-		"639-1": "bs",
-		"639-2": "bos",
-		"french": "Bosnien",
-		"english": "Bosnian"
-	},
-	{
-		"639-1": "ca",
-		"639-2": "cat",
-		"french": "Catalan",
-		"english": "Catalan"
-	},
-	{
-		"639-1": "ce",
-		"639-2": "che",
-		"french": "Tchétchène",
-		"english": "Chechen"
-	},
-	{
-		"639-1": "ch",
-		"639-2": "cha",
-		"french": "Chamorro",
-		"english": "Chamorro"
-	},
-	{
-		"639-1": "co",
-		"639-2": "cos",
-		"french": "Corse",
-		"english": "Corsican"
-	},
-	{
-		"639-1": "cr",
-		"639-2": "cre",
-		"french": "Cri",
-		"english": "Cree"
-	},
-	{
-		"639-1": "cs",
-		"639-2": "cze/ces",
-		"french": "Tchèque",
-		"english": "Czech"
-	},
-	{
-		"639-1": "cu",
-		"639-2": "chu",
-		"french": "Vieux-slave",
-		"english": "Old Church Slavonic"
-	},
-	{
-		"639-1": "cv",
-		"639-2": "chv",
-		"french": "Tchouvache",
-		"english": "Chuvash"
-	},
-	{
-		"639-1": "cy",
-		"639-2": "wel/cym",
-		"french": "Gallois",
-		"english": "Welsh"
-	},
-	{
-		"639-1": "da",
-		"639-2": "dan",
-		"french": "Danois",
-		"english": "Danish"
-	},
-	{
-		"639-1": "de",
-		"639-2": "ger/deu",
-		"french": "Allemand",
-		"english": "German"
-	},
-	{
-		"639-1": "dv",
-		"639-2": "div",
-		"french": "Maldivien",
-		"english": "Divehi"
-	},
-	{
-		"639-1": "dz",
-		"639-2": "dzo",
-		"french": "Dzongkha",
-		"english": "Dzongkha"
-	},
-	{
-		"639-1": "ee",
-		"639-2": "ewe",
-		"french": "Ewe",
-		"english": "Ewe"
-	},
-	{
-		"639-1": "el",
-		"639-2": "gre/ell",
-		"french": "Grec moderne",
-		"english": "Greek"
-	},
-	{
-		"639-1": "en",
-		"639-2": "eng",
-		"french": "Anglais",
-		"english": "English"
-	},
-	{
-		"639-1": "eo",
-		"639-2": "epo",
-		"french": "Espéranto",
-		"english": "Esperanto"
-	},
-	{
-		"639-1": "es",
-		"639-2": "spa",
-		"french": "Espagnol",
-		"english": "Spanish"
-	},
-	{
-		"639-1": "et",
-		"639-2": "est",
-		"french": "Estonien",
-		"english": "Estonian"
-	},
-	{
-		"639-1": "eu",
-		"639-2": "baq/eus",
-		"french": "Basque",
-		"english": "Basque"
-	},
-	{
-		"639-1": "fa",
-		"639-2": "per/fas",
-		"french": "Persan",
-		"english": "Persian"
-	},
-	{
-		"639-1": "ff",
-		"639-2": "ful",
-		"french": "Peul",
-		"english": "Fulah"
-	},
-	{
-		"639-1": "fi",
-		"639-2": "fin",
-		"french": "Finnois",
-		"english": "Finnish"
-	},
-	{
-		"639-1": "fj",
-		"639-2": "fij",
-		"french": "Fidjien",
-		"english": "Fijian"
-	},
-	{
-		"639-1": "fo",
-		"639-2": "fao",
-		"french": "Féroïen",
-		"english": "Faroese"
-	},
-	{
-		"639-1": "fr",
-		"639-2": "fre/fra",
-		"french": "Français",
-		"english": "French"
-	},
-	{
-		"639-1": "fy",
-		"639-2": "fry",
-		"french": "Frison occidental",
-		"english": "Western Frisian"
-	},
-	{
-		"639-1": "ga",
-		"639-2": "gle",
-		"french": "Irlandais",
-		"english": "Irish"
-	},
-	{
-		"639-1": "gd",
-		"639-2": "gla",
-		"french": "Écossais",
-		"english": "Scottish Gaelic"
-	},
-	{
-		"639-1": "gl",
-		"639-2": "glg",
-		"french": "Galicien",
-		"english": "Galician"
-	},
-	{
-		"639-1": "gn",
-		"639-2": "grn",
-		"french": "Guarani",
-		"english": "Guarani"
-	},
-	{
-		"639-1": "gu",
-		"639-2": "guj",
-		"french": "Gujarati",
-		"english": "Gujarati"
-	},
-	{
-		"639-1": "gv",
-		"639-2": "glv",
-		"french": "Mannois",
-		"english": "Manx"
-	},
-	{
-		"639-1": "ha",
-		"639-2": "hau",
-		"french": "Haoussa",
-		"english": "Hausa"
-	},
-	{
-		"639-1": "he",
-		"639-2": "heb",
-		"french": "Hébreu",
-		"english": "Hebrew"
-	},
-	{
-		"639-1": "hi",
-		"639-2": "hin",
-		"french": "Hindi",
-		"english": "Hindi"
-	},
-	{
-		"639-1": "ho",
-		"639-2": "hmo",
-		"french": "Hiri motu",
-		"english": "Hiri Motu"
-	},
-	{
-		"639-1": "hr",
-		"639-2": "scr/hrv",
-		"french": "Croate",
-		"english": "Croatian"
-	},
-	{
-		"639-1": "ht",
-		"639-2": "hat",
-		"french": "Créole haïtien",
-		"english": "Haitian"
-	},
-	{
-		"639-1": "hu",
-		"639-2": "hun",
-		"french": "Hongrois",
-		"english": "Hungarian"
-	},
-	{
-		"639-1": "hy",
-		"639-2": "arm/hye",
-		"french": "Arménien",
-		"english": "Armenian"
-	},
-	{
-		"639-1": "hz",
-		"639-2": "her",
-		"french": "Héréro",
-		"english": "Herero"
-	},
-	{
-		"639-1": "ia",
-		"639-2": "ina",
-		"french": "Interlingua",
-		"english": "Interlingua"
-	},
-	{
-		"639-1": "id",
-		"639-2": "ind",
-		"french": "Indonésien",
-		"english": "Indonesian"
-	},
-	{
-		"639-1": "ie",
-		"639-2": "ile",
-		"french": "Occidental",
-		"english": "Interlingue"
-	},
-	{
-		"639-1": "ig",
-		"639-2": "ibo",
-		"french": "Igbo",
-		"english": "Igbo"
-	},
-	{
-		"639-1": "ii",
-		"639-2": "iii",
-		"french": "Yi",
-		"english": "Sichuan Yi"
-	},
-	{
-		"639-1": "ik",
-		"639-2": "ipk",
-		"french": "Inupiak",
-		"english": "Inupiaq"
-	},
-	{
-		"639-1": "io",
-		"639-2": "ido",
-		"french": "Ido",
-		"english": "Ido"
-	},
-	{
-		"639-1": "is",
-		"639-2": "ice/isl",
-		"french": "Islandais",
-		"english": "Icelandic"
-	},
-	{
-		"639-1": "it",
-		"639-2": "ita",
-		"french": "Italien",
-		"english": "Italian"
-	},
-	{
-		"639-1": "iu",
-		"639-2": "iku",
-		"french": "Inuktitut",
-		"english": "Inuktitut"
-	},
-	{
-		"639-1": "ja",
-		"639-2": "jpn",
-		"french": "Japonais",
-		"english": "Japanese"
-	},
-	{
-		"639-1": "jv",
-		"639-2": "jav",
-		"french": "Javanais",
-		"english": "Javanese"
-	},
-	{
-		"639-1": "ka",
-		"639-2": "geo/kat",
-		"french": "Géorgien",
-		"english": "Georgian"
-	},
-	{
-		"639-1": "kg",
-		"639-2": "kon",
-		"french": "Kikongo",
-		"english": "Kongo"
-	},
-	{
-		"639-1": "ki",
-		"639-2": "kik",
-		"french": "Kikuyu",
-		"english": "Kikuyu"
-	},
-	{
-		"639-1": "kj",
-		"639-2": "kua",
-		"french": "Kuanyama",
-		"english": "Kwanyama"
-	},
-	{
-		"639-1": "kk",
-		"639-2": "kaz",
-		"french": "Kazakh",
-		"english": "Kazakh"
-	},
-	{
-		"639-1": "kl",
-		"639-2": "kal",
-		"french": "Groenlandais",
-		"english": "Kalaallisut"
-	},
-	{
-		"639-1": "km",
-		"639-2": "khm",
-		"french": "Khmer",
-		"english": "Khmer"
-	},
-	{
-		"639-1": "kn",
-		"639-2": "kan",
-		"french": "Kannada",
-		"english": "Kannada"
-	},
-	{
-		"639-1": "ko",
-		"639-2": "kor",
-		"french": "Coréen",
-		"english": "Korean"
-	},
-	{
-		"639-1": "kr",
-		"639-2": "kau",
-		"french": "Kanouri",
-		"english": "Kanuri"
-	},
-	{
-		"639-1": "ks",
-		"639-2": "kas",
-		"french": "Cachemiri",
-		"english": "Kashmiri"
-	},
-	{
-		"639-1": "ku",
-		"639-2": "kur",
-		"french": "Kurde",
-		"english": "Kurdish"
-	},
-	{
-		"639-1": "kv",
-		"639-2": "kom",
-		"french": "Komi",
-		"english": "Komi"
-	},
-	{
-		"639-1": "kw",
-		"639-2": "cor",
-		"french": "Cornique",
-		"english": "Cornish"
-	},
-	{
-		"639-1": "ky",
-		"639-2": "kir",
-		"french": "Kirghiz",
-		"english": "Kirghiz"
-	},
-	{
-		"639-1": "la",
-		"639-2": "lat",
-		"french": "Latin",
-		"english": "Latin"
-	},
-	{
-		"639-1": "lb",
-		"639-2": "ltz",
-		"french": "Luxembourgeois",
-		"english": "Luxembourgish"
-	},
-	{
-		"639-1": "lg",
-		"639-2": "lug",
-		"french": "Ganda",
-		"english": "Ganda"
-	},
-	{
-		"639-1": "li",
-		"639-2": "lim",
-		"french": "Limbourgeois",
-		"english": "Limburgish"
-	},
-	{
-		"639-1": "ln",
-		"639-2": "lin",
-		"french": "Lingala",
-		"english": "Lingala"
-	},
-	{
-		"639-1": "lo",
-		"639-2": "lao",
-		"french": "Lao",
-		"english": "Lao"
-	},
-	{
-		"639-1": "lt",
-		"639-2": "lit",
-		"french": "Lituanien",
-		"english": "Lithuanian"
-	},
-	{
-		"639-1": "lu",
-		"639-2": "lub",
-		"french": "Luba-katanga",
-		"english": "Luba-Katanga"
-	},
-	{
-		"639-1": "lv",
-		"639-2": "lav",
-		"french": "Letton",
-		"english": "Latvian"
-	},
-	{
-		"639-1": "mg",
-		"639-2": "mlg",
-		"french": "Malgache",
-		"english": "Malagasy"
-	},
-	{
-		"639-1": "mh",
-		"639-2": "mah",
-		"french": "Marshallais",
-		"english": "Marshallese"
-	},
-	{
-		"639-1": "mi",
-		"639-2": "mao/mri",
-		"french": "Maori de Nouvelle-Zélande",
-		"english": "Māori"
-	},
-	{
-		"639-1": "mk",
-		"639-2": "mac/mkd",
-		"french": "Macédonien",
-		"english": "Macedonian"
-	},
-	{
-		"639-1": "ml",
-		"639-2": "mal",
-		"french": "Malayalam",
-		"english": "Malayalam"
-	},
-	{
-		"639-1": "mn",
-		"639-2": "mon",
-		"french": "Mongol",
-		"english": "Mongolian"
-	},
-	{
-		"639-1": "mo",
-		"639-2": "mol",
-		"french": "Moldave",
-		"english": "Moldavian"
-	},
-	{
-		"639-1": "mr",
-		"639-2": "mar",
-		"french": "Marathi",
-		"english": "Marathi"
-	},
-	{
-		"639-1": "ms",
-		"639-2": "may/msa",
-		"french": "Malais",
-		"english": "Malay"
-	},
-	{
-		"639-1": "mt",
-		"639-2": "mlt",
-		"french": "Maltais",
-		"english": "Maltese"
-	},
-	{
-		"639-1": "my",
-		"639-2": "bur/mya",
-		"french": "Birman",
-		"english": "Burmese"
-	},
-	{
-		"639-1": "na",
-		"639-2": "nau",
-		"french": "Nauruan",
-		"english": "Nauru"
-	},
-	{
-		"639-1": "nb",
-		"639-2": "nob",
-		"french": "Norvégien Bokmål",
-		"english": "Norwegian Bokmål"
-	},
-	{
-		"639-1": "nd",
-		"639-2": "nde",
-		"french": "Sindebele",
-		"english": "North Ndebele"
-	},
-	{
-		"639-1": "ne",
-		"639-2": "nep",
-		"french": "Népalais",
-		"english": "Nepali"
-	},
-	{
-		"639-1": "ng",
-		"639-2": "ndo",
-		"french": "Ndonga",
-		"english": "Ndonga"
-	},
-	{
-		"639-1": "nl",
-		"639-2": "dut/nld",
-		"french": "Néerlandais",
-		"english": "Dutch"
-	},
-	{
-		"639-1": "nn",
-		"639-2": "nno",
-		"french": "Norvégien Nynorsk",
-		"english": "Norwegian Nynorsk"
-	},
-	{
-		"639-1": "no",
-		"639-2": "nor",
-		"french": "Norvégien",
-		"english": "Norwegian"
-	},
-	{
-		"639-1": "nr",
-		"639-2": "nbl",
-		"french": "Nrebele",
-		"english": "South Ndebele"
-	},
-	{
-		"639-1": "nv",
-		"639-2": "nav",
-		"french": "Navajo",
-		"english": "Navajo"
-	},
-	{
-		"639-1": "ny",
-		"639-2": "nya",
-		"french": "Chichewa",
-		"english": "Chichewa"
-	},
-	{
-		"639-1": "oc",
-		"639-2": "oci",
-		"french": "Occitan",
-		"english": "Occitan"
-	},
-	{
-		"639-1": "oj",
-		"639-2": "oji",
-		"french": "Ojibwé",
-		"english": "Ojibwa"
-	},
-	{
-		"639-1": "om",
-		"639-2": "orm",
-		"french": "Oromo",
-		"english": "Oromo"
-	},
-	{
-		"639-1": "or",
-		"639-2": "ori",
-		"french": "Oriya",
-		"english": "Oriya"
-	},
-	{
-		"639-1": "os",
-		"639-2": "oss",
-		"french": "Ossète",
-		"english": "Ossetian"
-	},
-	{
-		"639-1": "pa",
-		"639-2": "pan",
-		"french": "Pendjabi",
-		"english": "Panjabi"
-	},
-	{
-		"639-1": "pi",
-		"639-2": "pli",
-		"french": "Pali",
-		"english": "Pāli"
-	},
-	{
-		"639-1": "pl",
-		"639-2": "pol",
-		"french": "Polonais",
-		"english": "Polish"
-	},
-	{
-		"639-1": "ps",
-		"639-2": "pus",
-		"french": "Pachto",
-		"english": "Pashto"
-	},
-	{
-		"639-1": "pt",
-		"639-2": "por",
-		"french": "Portugais",
-		"english": "Portuguese"
-	},
-	{
-		"639-1": "qu",
-		"639-2": "que",
-		"french": "Quechua",
-		"english": "Quechua"
-	},
-	{
-		"639-1": "rc",
-		"639-2": "rcf",
-		"french": "Créole Réunionnais",
-		"english": "Reunionese"
-	},
-	{
-		"639-1": "rm",
-		"639-2": "roh",
-		"french": "Romanche",
-		"english": "Romansh"
-	},
-	{
-		"639-1": "rn",
-		"639-2": "run",
-		"french": "Kirundi",
-		"english": "Kirundi"
-	},
-	{
-		"639-1": "ro",
-		"639-2": "rum/ron",
-		"french": "Roumain",
-		"english": "Romanian"
-	},
-	{
-		"639-1": "ru",
-		"639-2": "rus",
-		"french": "Russe",
-		"english": "Russian"
-	},
-	{
-		"639-1": "rw",
-		"639-2": "kin",
-		"french": "Kinyarwanda",
-		"english": "Kinyarwanda"
-	},
-	{
-		"639-1": "sa",
-		"639-2": "san",
-		"french": "Sanskrit",
-		"english": "Sanskrit"
-	},
-	{
-		"639-1": "sc",
-		"639-2": "srd",
-		"french": "Sarde",
-		"english": "Sardinian"
-	},
-	{
-		"639-1": "sd",
-		"639-2": "snd",
-		"french": "Sindhi",
-		"english": "Sindhi"
-	},
-	{
-		"639-1": "se",
-		"639-2": "sme",
-		"french": "Same du Nord",
-		"english": "Northern Sami"
-	},
-	{
-		"639-1": "sg",
-		"639-2": "sag",
-		"french": "Sango",
-		"english": "Sango"
-	},
-	{
-		"639-1": "si",
-		"639-2": "sin",
-		"french": "Cingalais",
-		"english": "Sinhalese"
-	},
-	{
-		"639-1": "sk",
-		"639-2": "slo/slk",
-		"french": "Slovaque",
-		"english": "Slovak"
-	},
-	{
-		"639-1": "sl",
-		"639-2": "slv",
-		"french": "Slovène",
-		"english": "Slovene"
-	},
-	{
-		"639-1": "sm",
-		"639-2": "smo",
-		"french": "Samoan",
-		"english": "Samoan"
-	},
-	{
-		"639-1": "sn",
-		"639-2": "sna",
-		"french": "Shona",
-		"english": "Shona"
-	},
-	{
-		"639-1": "so",
-		"639-2": "som",
-		"french": "Somali",
-		"english": "Somali"
-	},
-	{
-		"639-1": "sq",
-		"639-2": "alb/sqi",
-		"french": "Albanais",
-		"english": "Albanian"
-	},
-	{
-		"639-1": "sr",
-		"639-2": "scc/srp",
-		"french": "Serbe",
-		"english": "Serbian"
-	},
-	{
-		"639-1": "ss",
-		"639-2": "ssw",
-		"french": "Swati",
-		"english": "Swati"
-	},
-	{
-		"639-1": "st",
-		"639-2": "sot",
-		"french": "Sotho du Sud",
-		"english": "Sotho"
-	},
-	{
-		"639-1": "su",
-		"639-2": "sun",
-		"french": "Soundanais",
-		"english": "Sundanese"
-	},
-	{
-		"639-1": "sv",
-		"639-2": "swe",
-		"french": "Suédois",
-		"english": "Swedish"
-	},
-	{
-		"639-1": "sw",
-		"639-2": "swa",
-		"french": "Swahili",
-		"english": "Swahili"
-	},
-	{
-		"639-1": "ta",
-		"639-2": "tam",
-		"french": "Tamoul",
-		"english": "Tamil"
-	},
-	{
-		"639-1": "te",
-		"639-2": "tel",
-		"french": "Télougou",
-		"english": "Telugu"
-	},
-	{
-		"639-1": "tg",
-		"639-2": "tgk",
-		"french": "Tadjik",
-		"english": "Tajik"
-	},
-	{
-		"639-1": "th",
-		"639-2": "tha",
-		"french": "Thaï",
-		"english": "Thai"
-	},
-	{
-		"639-1": "ti",
-		"639-2": "tir",
-		"french": "Tigrigna",
-		"english": "Tigrinya"
-	},
-	{
-		"639-1": "tk",
-		"639-2": "tuk",
-		"french": "Turkmène",
-		"english": "Turkmen"
-	},
-	{
-		"639-1": "tl",
-		"639-2": "tgl",
-		"french": "Tagalog",
-		"english": "Tagalog"
-	},
-	{
-		"639-1": "tn",
-		"639-2": "tsn",
-		"french": "Tswana",
-		"english": "Tswana"
-	},
-	{
-		"639-1": "to",
-		"639-2": "ton",
-		"french": "Tongien",
-		"english": "Tonga"
-	},
-	{
-		"639-1": "tr",
-		"639-2": "tur",
-		"french": "Turc",
-		"english": "Turkish"
-	},
-	{
-		"639-1": "ts",
-		"639-2": "tso",
-		"french": "Tsonga",
-		"english": "Tsonga"
-	},
-	{
-		"639-1": "tt",
-		"639-2": "tat",
-		"french": "Tatar",
-		"english": "Tatar"
-	},
-	{
-		"639-1": "tw",
-		"639-2": "twi",
-		"french": "Twi",
-		"english": "Twi"
-	},
-	{
-		"639-1": "ty",
-		"639-2": "tah",
-		"french": "Tahitien",
-		"english": "Tahitian"
-	},
-	{
-		"639-1": "ug",
-		"639-2": "uig",
-		"french": "Ouïghour",
-		"english": "Uighur"
-	},
-	{
-		"639-1": "uk",
-		"639-2": "ukr",
-		"french": "Ukrainien",
-		"english": "Ukrainian"
-	},
-	{
-		"639-1": "ur",
-		"639-2": "urd",
-		"french": "Ourdou",
-		"english": "Urdu"
-	},
-	{
-		"639-1": "uz",
-		"639-2": "uzb",
-		"french": "Ouzbek",
-		"english": "Uzbek"
-	},
-	{
-		"639-1": "ve",
-		"639-2": "ven",
-		"french": "Venda",
-		"english": "Venda"
-	},
-	{
-		"639-1": "vi",
-		"639-2": "vie",
-		"french": "Vietnamien",
-		"english": "Viêt Namese"
-	},
-	{
-		"639-1": "vo",
-		"639-2": "vol",
-		"french": "Volapük",
-		"english": "Volapük"
-	},
-	{
-		"639-1": "wa",
-		"639-2": "wln",
-		"french": "Wallon",
-		"english": "Walloon"
-	},
-	{
-		"639-1": "wo",
-		"639-2": "wol",
-		"french": "Wolof",
-		"english": "Wolof"
-	},
-	{
-		"639-1": "xh",
-		"639-2": "xho",
-		"french": "Xhosa",
-		"english": "Xhosa"
-	},
-	{
-		"639-1": "yi",
-		"639-2": "yid",
-		"french": "Yiddish",
-		"english": "Yiddish"
-	},
-	{
-		"639-1": "yo",
-		"639-2": "yor",
-		"french": "Yoruba",
-		"english": "Yoruba"
-	},
-	{
-		"639-1": "za",
-		"639-2": "zha",
-		"french": "Zhuang",
-		"english": "Zhuang"
-	},
-	{
-		"639-1": "zh",
-		"639-2": "chi/zho",
-		"french": "Chinois",
-		"english": "Chinese"
-	},
-	{
-		"639-1": "zu",
-		"639-2": "zul",
-		"french": "Zoulou",
-		"english": "Zulu"
-	}
+    {
+        "639-1": "aa",
+        "639-2": "aar",
+        "french": "Afar",
+        "english": "Afar"
+    },
+    {
+        "639-1": "ab",
+        "639-2": "abk",
+        "french": "Abkhaze",
+        "english": "Abkhazian"
+    },
+    {
+        "639-1": "ae",
+        "639-2": "ave",
+        "french": "Avestique",
+        "english": "Avestan"
+    },
+    {
+        "639-1": "af",
+        "639-2": "afr",
+        "french": "Afrikaans",
+        "english": "Afrikaans"
+    },
+    {
+        "639-1": "ak",
+        "639-2": "aka",
+        "french": "Akan",
+        "english": "Akan"
+    },
+    {
+        "639-1": "am",
+        "639-2": "amh",
+        "french": "Amharique",
+        "english": "Amharic"
+    },
+    {
+        "639-1": "an",
+        "639-2": "arg",
+        "french": "Aragonais",
+        "english": "Aragonese"
+    },
+    {
+        "639-1": "ar",
+        "639-2": "ara",
+        "french": "Arabe",
+        "english": "Arabic"
+    },
+    {
+        "639-1": "as",
+        "639-2": "asm",
+        "french": "Assamais",
+        "english": "Assamese"
+    },
+    {
+        "639-1": "av",
+        "639-2": "ava",
+        "french": "Avar",
+        "english": "Avaric"
+    },
+    {
+        "639-1": "ay",
+        "639-2": "aym",
+        "french": "Aymara",
+        "english": "Aymara"
+    },
+    {
+        "639-1": "az",
+        "639-2": "aze",
+        "french": "Azéri",
+        "english": "Azerbaijani"
+    },
+    {
+        "639-1": "ba",
+        "639-2": "bak",
+        "french": "Bachkir",
+        "english": "Bashkir"
+    },
+    {
+        "639-1": "be",
+        "639-2": "bel",
+        "french": "Biélorusse",
+        "english": "Belarusian"
+    },
+    {
+        "639-1": "bg",
+        "639-2": "bul",
+        "french": "Bulgare",
+        "english": "Bulgarian"
+    },
+    {
+        "639-1": "bh",
+        "639-2": "bih",
+        "french": "Bihari",
+        "english": "Bihari"
+    },
+    {
+        "639-1": "bi",
+        "639-2": "bis",
+        "french": "Bichelamar",
+        "english": "Bislama"
+    },
+    {
+        "639-1": "bm",
+        "639-2": "bam",
+        "french": "Bambara",
+        "english": "Bambara"
+    },
+    {
+        "639-1": "bn",
+        "639-2": "ben",
+        "french": "Bengali",
+        "english": "Bengali"
+    },
+    {
+        "639-1": "bo",
+        "639-2": "tib/bod",
+        "french": "Tibétain",
+        "english": "Tibetan"
+    },
+    {
+        "639-1": "br",
+        "639-2": "bre",
+        "french": "Breton",
+        "english": "Breton"
+    },
+    {
+        "639-1": "bs",
+        "639-2": "bos",
+        "french": "Bosnien",
+        "english": "Bosnian"
+    },
+    {
+        "639-1": "ca",
+        "639-2": "cat",
+        "french": "Catalan",
+        "english": "Catalan"
+    },
+    {
+        "639-1": "ce",
+        "639-2": "che",
+        "french": "Tchétchène",
+        "english": "Chechen"
+    },
+    {
+        "639-1": "ch",
+        "639-2": "cha",
+        "french": "Chamorro",
+        "english": "Chamorro"
+    },
+    {
+        "639-1": "co",
+        "639-2": "cos",
+        "french": "Corse",
+        "english": "Corsican"
+    },
+    {
+        "639-1": "cr",
+        "639-2": "cre",
+        "french": "Cri",
+        "english": "Cree"
+    },
+    {
+        "639-1": "cs",
+        "639-2": "cze/ces",
+        "french": "Tchèque",
+        "english": "Czech"
+    },
+    {
+        "639-1": "cu",
+        "639-2": "chu",
+        "french": "Vieux-slave",
+        "english": "Old Church Slavonic"
+    },
+    {
+        "639-1": "cv",
+        "639-2": "chv",
+        "french": "Tchouvache",
+        "english": "Chuvash"
+    },
+    {
+        "639-1": "cy",
+        "639-2": "wel/cym",
+        "french": "Gallois",
+        "english": "Welsh"
+    },
+    {
+        "639-1": "da",
+        "639-2": "dan",
+        "french": "Danois",
+        "english": "Danish"
+    },
+    {
+        "639-1": "de",
+        "639-2": "ger/deu",
+        "french": "Allemand",
+        "english": "German"
+    },
+    {
+        "639-1": "dv",
+        "639-2": "div",
+        "french": "Maldivien",
+        "english": "Divehi"
+    },
+    {
+        "639-1": "dz",
+        "639-2": "dzo",
+        "french": "Dzongkha",
+        "english": "Dzongkha"
+    },
+    {
+        "639-1": "ee",
+        "639-2": "ewe",
+        "french": "Ewe",
+        "english": "Ewe"
+    },
+    {
+        "639-1": "el",
+        "639-2": "gre/ell",
+        "french": "Grec moderne",
+        "english": "Greek"
+    },
+    {
+        "639-1": "en",
+        "639-2": "eng",
+        "french": "Anglais",
+        "english": "English"
+    },
+    {
+        "639-1": "eo",
+        "639-2": "epo",
+        "french": "Espéranto",
+        "english": "Esperanto"
+    },
+    {
+        "639-1": "es",
+        "639-2": "spa",
+        "french": "Espagnol",
+        "english": "Spanish"
+    },
+    {
+        "639-1": "et",
+        "639-2": "est",
+        "french": "Estonien",
+        "english": "Estonian"
+    },
+    {
+        "639-1": "eu",
+        "639-2": "baq/eus",
+        "french": "Basque",
+        "english": "Basque"
+    },
+    {
+        "639-1": "fa",
+        "639-2": "per/fas",
+        "french": "Persan",
+        "english": "Persian"
+    },
+    {
+        "639-1": "ff",
+        "639-2": "ful",
+        "french": "Peul",
+        "english": "Fulah"
+    },
+    {
+        "639-1": "fi",
+        "639-2": "fin",
+        "french": "Finnois",
+        "english": "Finnish"
+    },
+    {
+        "639-1": "fj",
+        "639-2": "fij",
+        "french": "Fidjien",
+        "english": "Fijian"
+    },
+    {
+        "639-1": "fo",
+        "639-2": "fao",
+        "french": "Féroïen",
+        "english": "Faroese"
+    },
+    {
+        "639-1": "fr",
+        "639-2": "fre/fra",
+        "french": "Français",
+        "english": "French"
+    },
+    {
+        "639-1": "fy",
+        "639-2": "fry",
+        "french": "Frison occidental",
+        "english": "Western Frisian"
+    },
+    {
+        "639-1": "ga",
+        "639-2": "gle",
+        "french": "Irlandais",
+        "english": "Irish"
+    },
+    {
+        "639-1": "gd",
+        "639-2": "gla",
+        "french": "Écossais",
+        "english": "Scottish Gaelic"
+    },
+    {
+        "639-1": "gl",
+        "639-2": "glg",
+        "french": "Galicien",
+        "english": "Galician"
+    },
+    {
+        "639-1": "gn",
+        "639-2": "grn",
+        "french": "Guarani",
+        "english": "Guarani"
+    },
+    {
+        "639-1": "gu",
+        "639-2": "guj",
+        "french": "Gujarati",
+        "english": "Gujarati"
+    },
+    {
+        "639-1": "gv",
+        "639-2": "glv",
+        "french": "Mannois",
+        "english": "Manx"
+    },
+    {
+        "639-1": "ha",
+        "639-2": "hau",
+        "french": "Haoussa",
+        "english": "Hausa"
+    },
+    {
+        "639-1": "he",
+        "639-2": "heb",
+        "french": "Hébreu",
+        "english": "Hebrew"
+    },
+    {
+        "639-1": "hi",
+        "639-2": "hin",
+        "french": "Hindi",
+        "english": "Hindi"
+    },
+    {
+        "639-1": "ho",
+        "639-2": "hmo",
+        "french": "Hiri motu",
+        "english": "Hiri Motu"
+    },
+    {
+        "639-1": "hr",
+        "639-2": "scr/hrv",
+        "french": "Croate",
+        "english": "Croatian"
+    },
+    {
+        "639-1": "ht",
+        "639-2": "hat",
+        "french": "Créole haïtien",
+        "english": "Haitian"
+    },
+    {
+        "639-1": "hu",
+        "639-2": "hun",
+        "french": "Hongrois",
+        "english": "Hungarian"
+    },
+    {
+        "639-1": "hy",
+        "639-2": "arm/hye",
+        "french": "Arménien",
+        "english": "Armenian"
+    },
+    {
+        "639-1": "hz",
+        "639-2": "her",
+        "french": "Héréro",
+        "english": "Herero"
+    },
+    {
+        "639-1": "ia",
+        "639-2": "ina",
+        "french": "Interlingua",
+        "english": "Interlingua"
+    },
+    {
+        "639-1": "id",
+        "639-2": "ind",
+        "french": "Indonésien",
+        "english": "Indonesian"
+    },
+    {
+        "639-1": "ie",
+        "639-2": "ile",
+        "french": "Occidental",
+        "english": "Interlingue"
+    },
+    {
+        "639-1": "ig",
+        "639-2": "ibo",
+        "french": "Igbo",
+        "english": "Igbo"
+    },
+    {
+        "639-1": "ii",
+        "639-2": "iii",
+        "french": "Yi",
+        "english": "Sichuan Yi"
+    },
+    {
+        "639-1": "ik",
+        "639-2": "ipk",
+        "french": "Inupiak",
+        "english": "Inupiaq"
+    },
+    {
+        "639-1": "io",
+        "639-2": "ido",
+        "french": "Ido",
+        "english": "Ido"
+    },
+    {
+        "639-1": "is",
+        "639-2": "ice/isl",
+        "french": "Islandais",
+        "english": "Icelandic"
+    },
+    {
+        "639-1": "it",
+        "639-2": "ita",
+        "french": "Italien",
+        "english": "Italian"
+    },
+    {
+        "639-1": "iu",
+        "639-2": "iku",
+        "french": "Inuktitut",
+        "english": "Inuktitut"
+    },
+    {
+        "639-1": "ja",
+        "639-2": "jpn",
+        "french": "Japonais",
+        "english": "Japanese"
+    },
+    {
+        "639-1": "jv",
+        "639-2": "jav",
+        "french": "Javanais",
+        "english": "Javanese"
+    },
+    {
+        "639-1": "ka",
+        "639-2": "geo/kat",
+        "french": "Géorgien",
+        "english": "Georgian"
+    },
+    {
+        "639-1": "kg",
+        "639-2": "kon",
+        "french": "Kikongo",
+        "english": "Kongo"
+    },
+    {
+        "639-1": "ki",
+        "639-2": "kik",
+        "french": "Kikuyu",
+        "english": "Kikuyu"
+    },
+    {
+        "639-1": "kj",
+        "639-2": "kua",
+        "french": "Kuanyama",
+        "english": "Kwanyama"
+    },
+    {
+        "639-1": "kk",
+        "639-2": "kaz",
+        "french": "Kazakh",
+        "english": "Kazakh"
+    },
+    {
+        "639-1": "kl",
+        "639-2": "kal",
+        "french": "Groenlandais",
+        "english": "Kalaallisut"
+    },
+    {
+        "639-1": "km",
+        "639-2": "khm",
+        "french": "Khmer",
+        "english": "Khmer"
+    },
+    {
+        "639-1": "kn",
+        "639-2": "kan",
+        "french": "Kannada",
+        "english": "Kannada"
+    },
+    {
+        "639-1": "ko",
+        "639-2": "kor",
+        "french": "Coréen",
+        "english": "Korean"
+    },
+    {
+        "639-1": "kr",
+        "639-2": "kau",
+        "french": "Kanouri",
+        "english": "Kanuri"
+    },
+    {
+        "639-1": "ks",
+        "639-2": "kas",
+        "french": "Cachemiri",
+        "english": "Kashmiri"
+    },
+    {
+        "639-1": "ku",
+        "639-2": "kur",
+        "french": "Kurde",
+        "english": "Kurdish"
+    },
+    {
+        "639-1": "kv",
+        "639-2": "kom",
+        "french": "Komi",
+        "english": "Komi"
+    },
+    {
+        "639-1": "kw",
+        "639-2": "cor",
+        "french": "Cornique",
+        "english": "Cornish"
+    },
+    {
+        "639-1": "ky",
+        "639-2": "kir",
+        "french": "Kirghiz",
+        "english": "Kirghiz"
+    },
+    {
+        "639-1": "la",
+        "639-2": "lat",
+        "french": "Latin",
+        "english": "Latin"
+    },
+    {
+        "639-1": "lb",
+        "639-2": "ltz",
+        "french": "Luxembourgeois",
+        "english": "Luxembourgish"
+    },
+    {
+        "639-1": "lg",
+        "639-2": "lug",
+        "french": "Ganda",
+        "english": "Ganda"
+    },
+    {
+        "639-1": "li",
+        "639-2": "lim",
+        "french": "Limbourgeois",
+        "english": "Limburgish"
+    },
+    {
+        "639-1": "ln",
+        "639-2": "lin",
+        "french": "Lingala",
+        "english": "Lingala"
+    },
+    {
+        "639-1": "lo",
+        "639-2": "lao",
+        "french": "Lao",
+        "english": "Lao"
+    },
+    {
+        "639-1": "lt",
+        "639-2": "lit",
+        "french": "Lituanien",
+        "english": "Lithuanian"
+    },
+    {
+        "639-1": "lu",
+        "639-2": "lub",
+        "french": "Luba-katanga",
+        "english": "Luba-Katanga"
+    },
+    {
+        "639-1": "lv",
+        "639-2": "lav",
+        "french": "Letton",
+        "english": "Latvian"
+    },
+    {
+        "639-1": "mg",
+        "639-2": "mlg",
+        "french": "Malgache",
+        "english": "Malagasy"
+    },
+    {
+        "639-1": "mh",
+        "639-2": "mah",
+        "french": "Marshallais",
+        "english": "Marshallese"
+    },
+    {
+        "639-1": "mi",
+        "639-2": "mao/mri",
+        "french": "Maori de Nouvelle-Zélande",
+        "english": "Māori"
+    },
+    {
+        "639-1": "mk",
+        "639-2": "mac/mkd",
+        "french": "Macédonien",
+        "english": "Macedonian"
+    },
+    {
+        "639-1": "ml",
+        "639-2": "mal",
+        "french": "Malayalam",
+        "english": "Malayalam"
+    },
+    {
+        "639-1": "mn",
+        "639-2": "mon",
+        "french": "Mongol",
+        "english": "Mongolian"
+    },
+    {
+        "639-1": "mo",
+        "639-2": "mol",
+        "french": "Moldave",
+        "english": "Moldavian"
+    },
+    {
+        "639-1": "mr",
+        "639-2": "mar",
+        "french": "Marathi",
+        "english": "Marathi"
+    },
+    {
+        "639-1": "ms",
+        "639-2": "may/msa",
+        "french": "Malais",
+        "english": "Malay"
+    },
+    {
+        "639-1": "mt",
+        "639-2": "mlt",
+        "french": "Maltais",
+        "english": "Maltese"
+    },
+    {
+        "639-1": "my",
+        "639-2": "bur/mya",
+        "french": "Birman",
+        "english": "Burmese"
+    },
+    {
+        "639-1": "na",
+        "639-2": "nau",
+        "french": "Nauruan",
+        "english": "Nauru"
+    },
+    {
+        "639-1": "nb",
+        "639-2": "nob",
+        "french": "Norvégien Bokmål",
+        "english": "Norwegian Bokmål"
+    },
+    {
+        "639-1": "nd",
+        "639-2": "nde",
+        "french": "Sindebele",
+        "english": "North Ndebele"
+    },
+    {
+        "639-1": "ne",
+        "639-2": "nep",
+        "french": "Népalais",
+        "english": "Nepali"
+    },
+    {
+        "639-1": "ng",
+        "639-2": "ndo",
+        "french": "Ndonga",
+        "english": "Ndonga"
+    },
+    {
+        "639-1": "nl",
+        "639-2": "dut/nld",
+        "french": "Néerlandais",
+        "english": "Dutch"
+    },
+    {
+        "639-1": "nn",
+        "639-2": "nno",
+        "french": "Norvégien Nynorsk",
+        "english": "Norwegian Nynorsk"
+    },
+    {
+        "639-1": "no",
+        "639-2": "nor",
+        "french": "Norvégien",
+        "english": "Norwegian"
+    },
+    {
+        "639-1": "nr",
+        "639-2": "nbl",
+        "french": "Nrebele",
+        "english": "South Ndebele"
+    },
+    {
+        "639-1": "nv",
+        "639-2": "nav",
+        "french": "Navajo",
+        "english": "Navajo"
+    },
+    {
+        "639-1": "ny",
+        "639-2": "nya",
+        "french": "Chichewa",
+        "english": "Chichewa"
+    },
+    {
+        "639-1": "oc",
+        "639-2": "oci",
+        "french": "Occitan",
+        "english": "Occitan"
+    },
+    {
+        "639-1": "oj",
+        "639-2": "oji",
+        "french": "Ojibwé",
+        "english": "Ojibwa"
+    },
+    {
+        "639-1": "om",
+        "639-2": "orm",
+        "french": "Oromo",
+        "english": "Oromo"
+    },
+    {
+        "639-1": "or",
+        "639-2": "ori",
+        "french": "Oriya",
+        "english": "Oriya"
+    },
+    {
+        "639-1": "os",
+        "639-2": "oss",
+        "french": "Ossète",
+        "english": "Ossetian"
+    },
+    {
+        "639-1": "pa",
+        "639-2": "pan",
+        "french": "Pendjabi",
+        "english": "Panjabi"
+    },
+    {
+        "639-1": "pi",
+        "639-2": "pli",
+        "french": "Pali",
+        "english": "Pāli"
+    },
+    {
+        "639-1": "pl",
+        "639-2": "pol",
+        "french": "Polonais",
+        "english": "Polish"
+    },
+    {
+        "639-1": "ps",
+        "639-2": "pus",
+        "french": "Pachto",
+        "english": "Pashto"
+    },
+    {
+        "639-1": "pt",
+        "639-2": "por",
+        "french": "Portugais",
+        "english": "Portuguese"
+    },
+    {
+        "639-1": "qu",
+        "639-2": "que",
+        "french": "Quechua",
+        "english": "Quechua"
+    },
+    {
+        "639-1": "rc",
+        "639-2": "rcf",
+        "french": "Créole Réunionnais",
+        "english": "Reunionese"
+    },
+    {
+        "639-1": "rm",
+        "639-2": "roh",
+        "french": "Romanche",
+        "english": "Romansh"
+    },
+    {
+        "639-1": "rn",
+        "639-2": "run",
+        "french": "Kirundi",
+        "english": "Kirundi"
+    },
+    {
+        "639-1": "ro",
+        "639-2": "rum/ron",
+        "french": "Roumain",
+        "english": "Romanian"
+    },
+    {
+        "639-1": "ru",
+        "639-2": "rus",
+        "french": "Russe",
+        "english": "Russian"
+    },
+    {
+        "639-1": "rw",
+        "639-2": "kin",
+        "french": "Kinyarwanda",
+        "english": "Kinyarwanda"
+    },
+    {
+        "639-1": "sa",
+        "639-2": "san",
+        "french": "Sanskrit",
+        "english": "Sanskrit"
+    },
+    {
+        "639-1": "sc",
+        "639-2": "srd",
+        "french": "Sarde",
+        "english": "Sardinian"
+    },
+    {
+        "639-1": "sd",
+        "639-2": "snd",
+        "french": "Sindhi",
+        "english": "Sindhi"
+    },
+    {
+        "639-1": "se",
+        "639-2": "sme",
+        "french": "Same du Nord",
+        "english": "Northern Sami"
+    },
+    {
+        "639-1": "sg",
+        "639-2": "sag",
+        "french": "Sango",
+        "english": "Sango"
+    },
+    {
+        "639-1": "si",
+        "639-2": "sin",
+        "french": "Cingalais",
+        "english": "Sinhalese"
+    },
+    {
+        "639-1": "sk",
+        "639-2": "slo/slk",
+        "french": "Slovaque",
+        "english": "Slovak"
+    },
+    {
+        "639-1": "sl",
+        "639-2": "slv",
+        "french": "Slovène",
+        "english": "Slovene"
+    },
+    {
+        "639-1": "sm",
+        "639-2": "smo",
+        "french": "Samoan",
+        "english": "Samoan"
+    },
+    {
+        "639-1": "sn",
+        "639-2": "sna",
+        "french": "Shona",
+        "english": "Shona"
+    },
+    {
+        "639-1": "so",
+        "639-2": "som",
+        "french": "Somali",
+        "english": "Somali"
+    },
+    {
+        "639-1": "sq",
+        "639-2": "alb/sqi",
+        "french": "Albanais",
+        "english": "Albanian"
+    },
+    {
+        "639-1": "sr",
+        "639-2": "scc/srp",
+        "french": "Serbe",
+        "english": "Serbian"
+    },
+    {
+        "639-1": "ss",
+        "639-2": "ssw",
+        "french": "Swati",
+        "english": "Swati"
+    },
+    {
+        "639-1": "st",
+        "639-2": "sot",
+        "french": "Sotho du Sud",
+        "english": "Sotho"
+    },
+    {
+        "639-1": "su",
+        "639-2": "sun",
+        "french": "Soundanais",
+        "english": "Sundanese"
+    },
+    {
+        "639-1": "sv",
+        "639-2": "swe",
+        "french": "Suédois",
+        "english": "Swedish"
+    },
+    {
+        "639-1": "sw",
+        "639-2": "swa",
+        "french": "Swahili",
+        "english": "Swahili"
+    },
+    {
+        "639-1": "ta",
+        "639-2": "tam",
+        "french": "Tamoul",
+        "english": "Tamil"
+    },
+    {
+        "639-1": "te",
+        "639-2": "tel",
+        "french": "Télougou",
+        "english": "Telugu"
+    },
+    {
+        "639-1": "tg",
+        "639-2": "tgk",
+        "french": "Tadjik",
+        "english": "Tajik"
+    },
+    {
+        "639-1": "th",
+        "639-2": "tha",
+        "french": "Thaï",
+        "english": "Thai"
+    },
+    {
+        "639-1": "ti",
+        "639-2": "tir",
+        "french": "Tigrigna",
+        "english": "Tigrinya"
+    },
+    {
+        "639-1": "tk",
+        "639-2": "tuk",
+        "french": "Turkmène",
+        "english": "Turkmen"
+    },
+    {
+        "639-1": "tl",
+        "639-2": "tgl",
+        "french": "Tagalog",
+        "english": "Tagalog"
+    },
+    {
+        "639-1": "tn",
+        "639-2": "tsn",
+        "french": "Tswana",
+        "english": "Tswana"
+    },
+    {
+        "639-1": "to",
+        "639-2": "ton",
+        "french": "Tongien",
+        "english": "Tonga"
+    },
+    {
+        "639-1": "tr",
+        "639-2": "tur",
+        "french": "Turc",
+        "english": "Turkish"
+    },
+    {
+        "639-1": "ts",
+        "639-2": "tso",
+        "french": "Tsonga",
+        "english": "Tsonga"
+    },
+    {
+        "639-1": "tt",
+        "639-2": "tat",
+        "french": "Tatar",
+        "english": "Tatar"
+    },
+    {
+        "639-1": "tw",
+        "639-2": "twi",
+        "french": "Twi",
+        "english": "Twi"
+    },
+    {
+        "639-1": "ty",
+        "639-2": "tah",
+        "french": "Tahitien",
+        "english": "Tahitian"
+    },
+    {
+        "639-1": "ug",
+        "639-2": "uig",
+        "french": "Ouïghour",
+        "english": "Uighur"
+    },
+    {
+        "639-1": "uk",
+        "639-2": "ukr",
+        "french": "Ukrainien",
+        "english": "Ukrainian"
+    },
+    {
+        "639-1": "ur",
+        "639-2": "urd",
+        "french": "Ourdou",
+        "english": "Urdu"
+    },
+    {
+        "639-1": "uz",
+        "639-2": "uzb",
+        "french": "Ouzbek",
+        "english": "Uzbek"
+    },
+    {
+        "639-1": "ve",
+        "639-2": "ven",
+        "french": "Venda",
+        "english": "Venda"
+    },
+    {
+        "639-1": "vi",
+        "639-2": "vie",
+        "french": "Vietnamien",
+        "english": "Viêt Namese"
+    },
+    {
+        "639-1": "vo",
+        "639-2": "vol",
+        "french": "Volapük",
+        "english": "Volapük"
+    },
+    {
+        "639-1": "wa",
+        "639-2": "wln",
+        "french": "Wallon",
+        "english": "Walloon"
+    },
+    {
+        "639-1": "wo",
+        "639-2": "wol",
+        "french": "Wolof",
+        "english": "Wolof"
+    },
+    {
+        "639-1": "xh",
+        "639-2": "xho",
+        "french": "Xhosa",
+        "english": "Xhosa"
+    },
+    {
+        "639-1": "yi",
+        "639-2": "yid",
+        "french": "Yiddish",
+        "english": "Yiddish"
+    },
+    {
+        "639-1": "yo",
+        "639-2": "yor",
+        "french": "Yoruba",
+        "english": "Yoruba"
+    },
+    {
+        "639-1": "za",
+        "639-2": "zha",
+        "french": "Zhuang",
+        "english": "Zhuang"
+    },
+    {
+        "639-1": "zh",
+        "639-2": "chi/zho",
+        "french": "Chinois",
+        "english": "Chinese"
+    },
+    {
+        "639-1": "zu",
+        "639-2": "zul",
+        "french": "Zoulou",
+        "english": "Zulu"
+    }
 ]

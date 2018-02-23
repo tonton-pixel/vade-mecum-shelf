@@ -1,44 +1,98 @@
 @charset "utf-8";
 
-#unicode-inspector-unit label
+#unicode-inspector-unit .plain-panel
 {
-    line-height: 1.75em;
-    white-space: nowrap;
+    padding-bottom: 0.75em;
 }
 
-#unicode-inspector-unit .input-characters,
-#unicode-inspector-unit .output-code-points,
-#unicode-inspector-unit .input-code-points,
-#unicode-inspector-unit .output-characters
+#unicode-inspector-unit .actions
 {
-    font-size: 1em;
-    padding: 0.2em;
-    width: 100%;
-}
-
-#unicode-inspector-unit .input-characters,
-#unicode-inspector-unit .output-characters
-{
-    font-size: 5em;
-}
-
-#unicode-inspector-unit .output-code-points,
-#unicode-inspector-unit .input-code-points
-{
-    font-family: Monaco, monospace;
-}
-
-#unicode-inspector-unit .interface
-{
-    padding: 0.5em 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    margin: 0;
+    margin: -1.5em 0 0 0;
 }
 
-#unicode-inspector-unit .option + .option
+#unicode-inspector-unit .action + .action
 {
     margin-left: 0.5em;
+}
+
+#unicode-inspector-unit .output-characters-data table,
+#unicode-inspector-unit .output-code-points-data table
+{
+    margin: 1.5em 0 1em 0;
+}
+
+#unicode-inspector-unit .data-list
+{
+    user-select: auto;
+    background-color: white;
+}
+
+#unicode-inspector-unit .data-list .data-header-centered
+{
+    text-align: center;
+    font-size: 12px;
+    padding: 0.25em 0.5em;
+    font-weight: bold;
+}
+
+#unicode-inspector-unit .data-list .data-header
+{
+    text-align: left;
+    font-size: 12px;
+    padding: 0.25em 0.5em;
+    font-weight: bold;
+}
+
+#unicode-inspector-unit .data-list .symbol
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    height: 1em;
+    width: 1em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1em;
+    padding: 0.2em;
+}
+
+#unicode-inspector-unit .data-list .codes,
+#unicode-inspector-unit .data-list .properties
+{
+    text-align: left;
+    font-size: 12px;
+    vertical-align: top;
+    line-height: 1.2em;
+    font-family: Monaco, monospace;
+    padding: 0.5em;
+    /* white-space: nowrap; */
+}
+
+#unicode-inspector-unit .data-list .field
+{
+    margin: 0.25em 0;
+}
+
+#unicode-inspector-unit .input-characters,
+#unicode-inspector-unit .output-characters
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    padding: 0.2em;
+    width: 100%;
+    tab-size : 4;
+}
+
+#unicode-inspector-unit .input-code-points,
+#unicode-inspector-unit .output-code-points
+{
+    font-family: Monaco, monospace;
+    font-size: 1em;
+    padding: 0.2em 0.4em;
+    width: 100%;
+    tab-size : 4;
 }

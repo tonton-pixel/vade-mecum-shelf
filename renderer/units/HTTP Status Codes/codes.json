@@ -170,7 +170,7 @@
                 {
                     "en": "Indicates multiple options for the resource from which the client may choose (via agent-driven content negotiation). For example, this code could be used to present multiple video format options, to list files with different filename extensions, or to suggest word-sense disambiguation.",
                     "fr": "L’URI demandée se rapporte à plusieurs ressources.",
-                    "ja": "複数の選択。リクエストしたリソースが複数存在し、ユーザやユーザーエージェントに選択肢を提示するときに返される。具体例として、W3Cのhttp://www.w3.org/TR/xhtml11/DTD/xhtml11.html"
+                    "ja": "複数の選択。リクエストしたリソースが複数存在し、ユーザやユーザーエージェントに選択肢を提示するときに返される。具体例として、W3Cのhttps://www.w3.org/TR/xhtml11/DTD/xhtml11.html"
                 }
             },
             {
@@ -180,7 +180,7 @@
                 {
                     "en": "This and all future requests should be directed to the given URI.",
                     "fr": "Document déplacé de façon permanente.",
-                    "ja": "恒久的に移動した。リクエストしたリソースが恒久的に移動されているときに返される。Location:ヘッダに移動先のURLが示されている。例としては、ファイルではなくディレクトリに対応するURLの末尾に/を書かずにアクセスした場合に返される。具体例として、http://www.w3.org/TR"
+                    "ja": "恒久的に移動した。リクエストしたリソースが恒久的に移動されているときに返される。Location:ヘッダに移動先のURLが示されている。例としては、ファイルではなくディレクトリに対応するURLの末尾に/を書かずにアクセスした場合に返される。具体例として、https://www.w3.org/TR"
                 }
             },
             {

@@ -17,7 +17,7 @@ const selectMinute = unit.querySelector ('.select-minute');
 const selectSecond = unit.querySelector ('.select-second');
 const selectTimeZoneName = unit.querySelector ('.select-timezonename');
 //
-module.exports.start = function (context, getPrefs)
+module.exports.start = function (context)
 {
     const defaultPrefs =
     {
@@ -33,7 +33,7 @@ module.exports.start = function (context, getPrefs)
         selectSecond: "numeric",
         selectTimeZoneName: "short"
     };
-    let prefs = getPrefs (defaultPrefs);
+    let prefs = context.getPrefs (defaultPrefs);
     //
     let timeZone = Intl.DateTimeFormat ().resolvedOptions ().timeZone;
     //
@@ -187,7 +187,7 @@ module.exports.start = function (context, getPrefs)
     window.setInterval (periodicFunction, 1000 / 25);
 };
 //
-module.exports.stop = function (context, setPrefs)
+module.exports.stop = function (context)
 {
     let prefs =
     {
@@ -203,6 +203,6 @@ module.exports.stop = function (context, setPrefs)
         selectSecond: selectSecond.value,
         selectTimeZoneName: selectTimeZoneName.value
     };
-    setPrefs (prefs);
+    context.setPrefs (prefs);
 };
 //

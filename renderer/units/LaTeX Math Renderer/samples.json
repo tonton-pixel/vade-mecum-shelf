@@ -1,0 +1,90 @@
+[
+    {
+        "label": "Euler's",
+        "string": "e^{i\\pi} + 1 = 0"
+    },
+    {
+        "label": "Errors 1",
+        "string": "\\begin{equation}\nf(x) = ax^2 + bx + c\n\\end{equation}"
+    },
+    {
+        "label": "Errors 2",
+        "string": "f(x) = \\int_{-\\infinity}^\\infinity\n\t\\hat f(\\xi)\\,e^{2 \\pi i \\xi x}\n\t\\,d\\xi"
+    },
+    {
+        "label": "KaTeX 1",
+        "string": "f(x) = \\int_{-\\infty}^\\infty\n\t\\hat f(\\xi)\\,e^{2 \\pi i \\xi x}\n\t\\,d\\xi"
+    },
+    {
+        "label": "KaTeX 2",
+        "string": "\\frac{1}{\\Bigl(\\sqrt{\\phi \\sqrt{5}}-\\phi\\Bigr) e^{\\frac25 \\pi}} = 1+\\frac{e^{-2\\pi}} {1+\\frac{e^{-4\\pi}} {1+\\frac{e^{-6\\pi}} {1+\\frac{e^{-8\\pi}} {1+\\cdots} } } }"
+    },
+    {
+        "label": "KaTeX 3",
+        "string": "\\left( \\sum_{k=1}^n a_k b_k \\right)^2 \\leq \\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)"
+    },
+    {
+        "label": "KaTeX 4",
+        "string": "1 +  \\frac{q^2}{(1-q)}+\\frac{q^6}{(1-q)(1-q^2)}+\\cdots = \\prod_{j=0}^{\\infty}\\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \\quad\\quad \\text{for }\\lvert q\\rvert<1."
+    },
+    {
+        "label": "Cases 1",
+        "string": "\\begin{cases}\n\t3x + 5y + z \\\\\n\t7x - 2y + 4z \\\\\n\t-6x + 3y + 2z\n\\end{cases}"
+    },
+    {
+        "label": "Cases 2",
+        "string": "f(n) =\n\\begin{cases}\n\tn/2, & \\text{if } n\\text{ is even} \\\\\n\t3n+1, & \\text{if } n\\text{ is odd}\n\\end{cases}"
+    },
+    {
+        "label": "Cases 3",
+        "string": "C_{\\textnormal{skip}}(d) =\n\\begin{cases}\n\t1 + C_m (L_m - d - 1), & \\text{if $R_m=1$} \\\\[0.5em]\n\t\\dfrac{1 + C_m - R_m - C_m R_m^{L_m - d -1}}{1 - R_m}, & \\text{otherwise}\n\\end{cases}"
+    },
+    {
+        "label": "Colors 1",
+        "string": "{\\color{#9C0}c} = \\pm\\sqrt{a^2 + {\\color{#F44}{b^2}}}"
+    },
+    {
+        "label": "Colors 2",
+        "string": "\\begin{aligned}\n\\color{blue}{blue} \\not = black \\\\\n\\textcolor{blue}{blue} \\not = black\n\\end{aligned}"
+    },
+    {
+        "label": "Aligned 1",
+        "string": "\\begin{aligned}\n\\sum_{y < n \\le x} f(n) = & \\int_y^x f(t) dt + \\int_y^x (t - [t]) f'(t) dt \\\\\n\t\t\t\t\t\t  & + f(x)([x] - x) - f(y)([y] - y)\n\\end{aligned}\n"
+    },
+    {
+        "label": "Aligned 2",
+        "string": "\\begin{aligned}\nR &= 1 - \\sin \\left( (1 - t) \\times \\frac \\pi 2 \\right) \\\\\nG &= \\frac {1 - \\cos \\left( t \\times \\pi \\right)} 2\n   = \\sin^2 \\left( t \\times \\frac \\pi 2 \\right) \\\\\nB &= \\sin \\left( t \\times \\frac \\pi 2 \\right)\n\\end{aligned}"
+    },
+    {
+        "label": "Formula 1",
+        "string": "f_j = \\sum_{k=0}^{n-1} x_k e^{-{2\\pi i \\over n} jk } \\qquad j = 0,\\ldots,n-1."
+    },
+    {
+        "label": "Formula 2",
+        "string": "P(x) = \\frac{1}{{\\sigma \\sqrt {2\\pi }}} e^{-\\frac{(x - \\mu)^2} {2 \\sigma^2}}"
+    },
+    {
+        "label": "Formula 3",
+        "string": "\\sum_{j \\in \\mathbf{N}} b_{ij} \\hat{y}_{j} =\n\\sum_{j \\in \\mathbf{N}} b^{(\\lambda)}_{ij} \\hat{y}_{j} +\n(b_{ii} - \\lambda_{i}) \\hat{y}_{i} \\hat{y}"
+    },
+    {
+        "label": "Formula 4",
+        "string": "\\det \\mathbf{K} (t = 1, t_{1}, \\cdots, t_{n}) =\n\\sum_{I \\in \\mathbf{n} }(-1)^{|I|}\n\\prod_{i \\in I} t_{i}\n\\prod_{j \\in I} (D_{j} + \\lambda_{j} t_{j})\n\\det \\mathbf{A}^{(\\lambda)} (\\overline{I} | \\overline{I}) = 0"
+    },
+    {
+        "label": "Formula 5",
+        "string": "\\sum_{i = 1}^{ \\left[ \\frac{n}{2} \\right] }\n\\binom{ x_{i, i + 1}^{i^{2}} }\n{ \\left[ \\frac{i + 3}{3} \\right] }\n\\frac{ \\sqrt{ \\mu(i)^{ \\frac{3}{2}} (i^{2} - 1) } }\n{ \\sqrt[3]{\\rho(i) - 2} + \\sqrt[3]{\\rho(i) - 1} }"
+    },
+    {
+        "label": "Matrices 1",
+        "string": "\\begin{bmatrix}\n\t-2 & 1 & 0 & 0 & \\cdots & 0  \\\\\n\t1 & -2 & 1 & 0 & \\cdots & 0  \\\\\n\t0 & 1 & -2 & 1 & \\cdots & 0  \\\\\n\t0 & 0 & 1 & -2 & \\ddots & \\vdots \\\\\n\t\\vdots & \\vdots & \\vdots & \\ddots & \\ddots & 1  \\\\\n\t0 & 0 & 0 & \\cdots & 1 & -2\n\\end{bmatrix}"
+    },
+    {
+        "label": "Matrices 2",
+        "string": "\\left\\{ \\begin{matrix}\n\t-2 & 1 & 0 & 0 & \\cdots & 0  \\\\\n\t1 & -2 & 1 & 0 & \\cdots & 0  \\\\\n\t0 & 1 & -2 & 1 & \\cdots & 0  \\\\\n\t0 & 0 & 1 & -2 & \\ddots & \\vdots \\\\\n\t\\vdots & \\vdots & \\vdots & \\ddots & \\ddots & 1  \\\\\n\t0 & 0 & 0 & \\cdots & 1 & -2\n\\end{matrix} \\right\\}"
+    },
+    {
+        "label": "Matrices 3",
+        "string": "\\begin{array}{l}\n\\begin{pmatrix}\nf_0 \\\\\nf_1 \\\\\nf_2 \\\\\n\\vdots \\\\\nf_{n-1}\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n1 & 1 & 1 & \\cdots & 1\\\\\n1 & w & w^2 & \\cdots & w^{n-1}\\\\\n1 & w^2 & w^4 & \\cdots & w^{2(n-1)}\\\\\n\\vdots & \\vdots & \\vdots & \\ddots & \\vdots &\\\\\n1 & w^{n-1} & w^{2(n-1)} & \\cdots & w^{(n-1)^2}\n\\end{pmatrix}\n\\end{array}\n\\begin{pmatrix}\nx_0 \\\\\nx_1 \\\\\nx_2 \\\\\n\\vdots \\\\\nx_{n-1}\n\\end{pmatrix}\n,\nw = e^{-\\frac{2 \\pi i}{n}}"
+    }
+]

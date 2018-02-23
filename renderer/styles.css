@@ -451,7 +451,7 @@ input[type=button]
     line-height: 1em;
     border-radius: 0.25em;
     border: var(--color-accent) 1px solid;
-    padding: 0.5em 1em;
+    padding: 0.25em 0.5em;
     color: var(--color-accent);
     background-color: white;
 }
@@ -489,4 +489,26 @@ input[type=radio]
     width: 1.25em;
     height: 1.25em;
     zoom: 1.01;
+}
+
+button.pull-down-menu,
+button.pull-down-menu:hover,
+button.pull-down-menu:active
+{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1em;
+    font-weight: normal;
+    background: white;
+    color: var(--color);
+    border: 1px solid var(--color-subtle);
+    border-radius: 0.4em;
+    padding: 0.25em 0.5em;
+}
+
+button.pull-down-menu::after
+{
+    content: "\A0\A0▾";
+    position: relative;
+    top: -1px;
 }

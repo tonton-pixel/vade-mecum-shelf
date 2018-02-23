@@ -9,24 +9,28 @@ const arabicInput = unit.querySelector ('.arabic-input');
 const arabicSample = unit.querySelector ('.arabic-sample');
 const romanOutput = unit.querySelector ('.roman-output');
 //
-module.exports.start = function (context, getPrefs)
+module.exports.start = function (context)
 {
-    const defaultPrefs = { romanInput: "MMXVII", arabicInput: "2017" };
-    let prefs = getPrefs (defaultPrefs);
+    const defaultPrefs =
+    {
+        romanInput: "",
+        arabicInput: ""
+    };
+    let prefs = context.getPrefs (defaultPrefs);
     //
     const numerals = require ('./numerals.js');
     //
-    romanSample.textContent = defaultPrefs.romanInput;
+    romanSample.textContent = "MMXVIII";
     arabicOutput.value = numerals.romanToArabic (romanInput.value = prefs.romanInput);
     romanInput.addEventListener ('input', (event) => { arabicOutput.value = numerals.romanToArabic (event.target.value); });
     //
-    arabicSample.textContent = defaultPrefs.arabicInput;
+    arabicSample.textContent = "2018";
     romanOutput.value = numerals.arabicToRoman (arabicInput.value = prefs.arabicInput);
     arabicInput.addEventListener ('input', (event) => { romanOutput.value = numerals.arabicToRoman (event.target.value) });
 };
 //
-module.exports.stop = function (context, setPrefs)
+module.exports.stop = function (context)
 {
-    setPrefs ({ romanInput: romanInput.value, arabicInput: arabicInput.value });
+    context.setPrefs ({ romanInput: romanInput.value, arabicInput: arabicInput.value });
 };
 //

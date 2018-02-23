@@ -210,11 +210,11 @@
                 "value": "require ('os').userInfo ().homedir"
             },
             {
-                "name": "User Identifier",
+                "name": "User ID",
                 "value": "require ('os').userInfo ().uid"
             },
             {
-                "name": "Group Identifier",
+                "name": "Group ID",
                 "value": "require ('os').userInfo ().gid"
             },
             {
@@ -362,7 +362,7 @@
         "items":
         [
             {
-                "name": "Unique Identifier",
+                "name": "Unique ID",
                 "value": "require ('electron').screen.getPrimaryDisplay ().id"
             },
             {
@@ -400,7 +400,7 @@
         "items":
         [
             {
-                "name": "ID",
+                "name": "Unique ID",
                 "value": "require ('electron').remote.getCurrentWindow ().id"
             },
             {

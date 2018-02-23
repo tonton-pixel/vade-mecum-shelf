@@ -4,10 +4,13 @@ const unit = document.getElementById ('iso-language-codes-unit');
 const liveSearch = unit.querySelector ('.live-search');
 const codesContainer = unit.querySelector ('.codes-container');
 //
-module.exports.start = function (context, getPrefs)
+module.exports.start = function (context)
 {
-    const defaultPrefs = { liveSearch: "" };
-    let prefs = getPrefs (defaultPrefs);
+    const defaultPrefs =
+    {
+        liveSearch: ""
+    };
+    let prefs = context.getPrefs (defaultPrefs);
     //
     const tables = require ('../../lib/tables.js');
     //
@@ -18,62 +21,18 @@ module.exports.start = function (context, getPrefs)
     const englishIndex = tables.buildKeyIndex (codes, "english", (a, b) => a.localeCompare (b, 'en'));
     const frenchIndex = tables.buildKeyIndex (codes, "french", (a, b) => a.localeCompare (b, 'fr'));
     //
-    let sortIndex = code1Index; // Temp...
-    //
-    let table = document.createElement ('table');
-    let header = document.createElement ('tr');
-    let th;
-    th = document.createElement ('th');
-    th.className = 'code';
-    th.textContent = "639-1";
-    header.appendChild (th);
-    th = document.createElement ('th');
-    th.className = 'code';
-    th.textContent = "639-2";
-    header.appendChild (th);
-    th = document.createElement ('th');
-    th.className = 'language';
-    th.textContent = "English";
-    header.appendChild (th);
-    th = document.createElement ('th');
-    th.className = 'language';
-    th.lang = 'fr';
-    th.textContent = "Français";
-    header.appendChild (th);
-    table.appendChild (header);
-    for (let index = 0; index < codes.length; index++)
-    {
-        let isoCode = codes[sortIndex[index]];
-        let tr = document.createElement ('tr');
-        let td;
-        td = document.createElement ('td');
-        td.className = 'code';
-        td.textContent = isoCode["639-1"];
-        tr.appendChild (td);
-        td = document.createElement ('td');
-        td.className = 'code';
-        td.textContent = isoCode["639-2"];
-        tr.appendChild (td);
-        td = document.createElement ('td');
-        td.className = 'language';
-        td.textContent = isoCode["english"];
-        tr.appendChild (td);
-        td = document.createElement ('td');
-        td.className = 'language';
-        td.lang = 'fr';
-        td.textContent = isoCode["french"];
-        tr.appendChild (td);
-        table.appendChild (tr);
-    }
-    let message = document.createElement ('tr');
-    message.setAttribute ('hidden', '');
-    td = document.createElement ('td');
-    td.setAttribute ('colspan', '4');
-    td.className = 'message';
-    td.textContent = "No match";
-    message.appendChild (td);
-    table.appendChild (message);
-    table.appendChild (header.cloneNode (true));
+    let table = tables.create
+    (
+        [
+            { label: "639-1", className: 'code', key: "639-1" },
+            { label: "639-2", className: 'code', key: "639-2" },
+            { label: "English", className: 'language', key: "english", lang: 'en' },
+            { label: "Français", className: 'language', key: "french", lang: 'fr' }
+        ],
+        { label: "No Match", className: 'message', lang: 'en' },
+        codes,
+        code1Index // Temp...
+    );
     //
     let tableCopy = table.cloneNode (true);
     codesContainer.appendChild (tableCopy);
@@ -95,8 +54,8 @@ module.exports.start = function (context, getPrefs)
     liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
 };
 //
-module.exports.stop = function (context, setPrefs)
+module.exports.stop = function (context)
 {
-    setPrefs ({ liveSearch: liveSearch.value });
+    context.setPrefs ({ liveSearch: liveSearch.value });
 };
 //

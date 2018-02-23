@@ -1,0 +1,1374 @@
+[
+    {
+        "code": "Adlm",
+        "number": 166,
+        "english": "Adlam",
+        "french": "adlam",
+        "alias": "Adlam"
+    },
+    {
+        "code": "Afak",
+        "number": 439,
+        "english": "Afaka",
+        "french": "afaka",
+        "alias": ""
+    },
+    {
+        "code": "Aghb",
+        "number": 239,
+        "english": "Caucasian Albanian",
+        "french": "aghbanien",
+        "alias": "Caucasian_Albanian"
+    },
+    {
+        "code": "Ahom",
+        "number": 338,
+        "english": "Ahom, Tai Ahom",
+        "french": "âhom",
+        "alias": "Ahom"
+    },
+    {
+        "code": "Arab",
+        "number": 160,
+        "english": "Arabic",
+        "french": "arabe",
+        "alias": "Arabic"
+    },
+    {
+        "code": "Aran",
+        "number": 161,
+        "english": "Arabic (Nastaliq variant)",
+        "french": "arabe (variante nastalique)",
+        "alias": ""
+    },
+    {
+        "code": "Armi",
+        "number": 124,
+        "english": "Imperial Aramaic",
+        "french": "araméen impérial",
+        "alias": "Imperial_Aramaic"
+    },
+    {
+        "code": "Armn",
+        "number": 230,
+        "english": "Armenian",
+        "french": "arménien",
+        "alias": "Armenian"
+    },
+    {
+        "code": "Avst",
+        "number": 134,
+        "english": "Avestan",
+        "french": "avestique",
+        "alias": "Avestan"
+    },
+    {
+        "code": "Bali",
+        "number": 360,
+        "english": "Balinese",
+        "french": "balinais",
+        "alias": "Balinese"
+    },
+    {
+        "code": "Bamu",
+        "number": 435,
+        "english": "Bamum",
+        "french": "bamoum",
+        "alias": "Bamum"
+    },
+    {
+        "code": "Bass",
+        "number": 259,
+        "english": "Bassa Vah",
+        "french": "bassa",
+        "alias": "Bassa_Vah"
+    },
+    {
+        "code": "Batk",
+        "number": 365,
+        "english": "Batak",
+        "french": "batik",
+        "alias": "Batak"
+    },
+    {
+        "code": "Beng",
+        "number": 325,
+        "english": "Bengali (Bangla)",
+        "french": "bengalî (bangla)",
+        "alias": "Bengali"
+    },
+    {
+        "code": "Bhks",
+        "number": 334,
+        "english": "Bhaiksuki",
+        "french": "bhaïksukî",
+        "alias": "Bhaiksuki"
+    },
+    {
+        "code": "Blis",
+        "number": 550,
+        "english": "Blissymbols",
+        "french": "symboles Bliss",
+        "alias": ""
+    },
+    {
+        "code": "Bopo",
+        "number": 285,
+        "english": "Bopomofo",
+        "french": "bopomofo",
+        "alias": "Bopomofo"
+    },
+    {
+        "code": "Brah",
+        "number": 300,
+        "english": "Brahmi",
+        "french": "brahma",
+        "alias": "Brahmi"
+    },
+    {
+        "code": "Brai",
+        "number": 570,
+        "english": "Braille",
+        "french": "braille",
+        "alias": "Braille"
+    },
+    {
+        "code": "Bugi",
+        "number": 367,
+        "english": "Buginese",
+        "french": "bouguis",
+        "alias": "Buginese"
+    },
+    {
+        "code": "Buhd",
+        "number": 372,
+        "english": "Buhid",
+        "french": "bouhide",
+        "alias": "Buhid"
+    },
+    {
+        "code": "Cakm",
+        "number": 349,
+        "english": "Chakma",
+        "french": "chakma",
+        "alias": "Chakma"
+    },
+    {
+        "code": "Cans",
+        "number": 440,
+        "english": "Unified Canadian Aboriginal Syllabics",
+        "french": "syllabaire autochtone canadien unifié",
+        "alias": "Canadian_Aboriginal"
+    },
+    {
+        "code": "Cari",
+        "number": 201,
+        "english": "Carian",
+        "french": "carien",
+        "alias": "Carian"
+    },
+    {
+        "code": "Cham",
+        "number": 358,
+        "english": "Cham",
+        "french": "cham (čam, tcham)",
+        "alias": "Cham"
+    },
+    {
+        "code": "Cher",
+        "number": 445,
+        "english": "Cherokee",
+        "french": "tchérokî",
+        "alias": "Cherokee"
+    },
+    {
+        "code": "Cirt",
+        "number": 291,
+        "english": "Cirth",
+        "french": "cirth",
+        "alias": ""
+    },
+    {
+        "code": "Copt",
+        "number": 204,
+        "english": "Coptic",
+        "french": "copte",
+        "alias": "Coptic"
+    },
+    {
+        "code": "Cpmn",
+        "number": 402,
+        "english": "Cypro-Minoan",
+        "french": "syllabaire chypro-minoen",
+        "alias": ""
+    },
+    {
+        "code": "Cprt",
+        "number": 403,
+        "english": "Cypriot syllabary",
+        "french": "syllabaire chypriote",
+        "alias": "Cypriot"
+    },
+    {
+        "code": "Cyrl",
+        "number": 220,
+        "english": "Cyrillic",
+        "french": "cyrillique",
+        "alias": "Cyrillic"
+    },
+    {
+        "code": "Cyrs",
+        "number": 221,
+        "english": "Cyrillic (Old Church Slavonic variant)",
+        "french": "cyrillique (variante slavonne)",
+        "alias": ""
+    },
+    {
+        "code": "Deva",
+        "number": 315,
+        "english": "Devanagari (Nagari)",
+        "french": "dévanâgarî",
+        "alias": "Devanagari"
+    },
+    {
+        "code": "Dogr",
+        "number": 328,
+        "english": "Dogra",
+        "french": "dogra",
+        "alias": ""
+    },
+    {
+        "code": "Dsrt",
+        "number": 250,
+        "english": "Deseret (Mormon)",
+        "french": "déseret (mormon)",
+        "alias": "Deseret"
+    },
+    {
+        "code": "Dupl",
+        "number": 755,
+        "english": "Duployan shorthand, Duployan stenography",
+        "french": "sténographie Duployé",
+        "alias": "Duployan"
+    },
+    {
+        "code": "Egyd",
+        "number": 70,
+        "english": "Egyptian demotic",
+        "french": "démotique égyptien",
+        "alias": ""
+    },
+    {
+        "code": "Egyh",
+        "number": 60,
+        "english": "Egyptian hieratic",
+        "french": "hiératique égyptien",
+        "alias": ""
+    },
+    {
+        "code": "Egyp",
+        "number": 50,
+        "english": "Egyptian hieroglyphs",
+        "french": "hiéroglyphes égyptiens",
+        "alias": "Egyptian_Hieroglyphs"
+    },
+    {
+        "code": "Elba",
+        "number": 226,
+        "english": "Elbasan",
+        "french": "elbasan",
+        "alias": "Elbasan"
+    },
+    {
+        "code": "Ethi",
+        "number": 430,
+        "english": "Ethiopic (Geʻez)",
+        "french": "éthiopien (geʻez, guèze)",
+        "alias": "Ethiopic"
+    },
+    {
+        "code": "Geok",
+        "number": 241,
+        "english": "Khutsuri (Asomtavruli and Nuskhuri)",
+        "french": "khoutsouri (assomtavrouli et nouskhouri)",
+        "alias": "Georgian"
+    },
+    {
+        "code": "Geor",
+        "number": 240,
+        "english": "Georgian (Mkhedruli and Mtavruli)",
+        "french": "géorgien (mkhédrouli et mtavrouli)",
+        "alias": "Georgian"
+    },
+    {
+        "code": "Glag",
+        "number": 225,
+        "english": "Glagolitic",
+        "french": "glagolitique",
+        "alias": "Glagolitic"
+    },
+    {
+        "code": "Gong",
+        "number": 312,
+        "english": "Gunjala Gondi",
+        "french": "gunjala gondî",
+        "alias": ""
+    },
+    {
+        "code": "Gonm",
+        "number": 313,
+        "english": "Masaram Gondi",
+        "french": "masaram gondî",
+        "alias": "Masaram Gondi"
+    },
+    {
+        "code": "Goth",
+        "number": 206,
+        "english": "Gothic",
+        "french": "gotique",
+        "alias": "Gothic"
+    },
+    {
+        "code": "Gran",
+        "number": 343,
+        "english": "Grantha",
+        "french": "grantha",
+        "alias": "Grantha"
+    },
+    {
+        "code": "Grek",
+        "number": 200,
+        "english": "Greek",
+        "french": "grec",
+        "alias": "Greek"
+    },
+    {
+        "code": "Gujr",
+        "number": 320,
+        "english": "Gujarati",
+        "french": "goudjarâtî (gujrâtî)",
+        "alias": "Gujarati"
+    },
+    {
+        "code": "Guru",
+        "number": 310,
+        "english": "Gurmukhi",
+        "french": "gourmoukhî",
+        "alias": "Gurmukhi"
+    },
+    {
+        "code": "Hanb",
+        "number": 503,
+        "english": "Han with Bopomofo (alias for Han + Bopomofo)",
+        "french": "han avec bopomofo (alias pour han + bopomofo)",
+        "alias": ""
+    },
+    {
+        "code": "Hang",
+        "number": 286,
+        "english": "Hangul (Hangŭl, Hangeul)",
+        "french": "hangûl (hangŭl, hangeul)",
+        "alias": "Hangul"
+    },
+    {
+        "code": "Hani",
+        "number": 500,
+        "english": "Han (Hanzi, Kanji, Hanja)",
+        "french": "idéogrammes han (sinogrammes)",
+        "alias": "Han"
+    },
+    {
+        "code": "Hano",
+        "number": 371,
+        "english": "Hanunoo (Hanunóo)",
+        "french": "hanounóo",
+        "alias": "Hanunoo"
+    },
+    {
+        "code": "Hans",
+        "number": 501,
+        "english": "Han (Simplified variant)",
+        "french": "idéogrammes han (variante simplifiée)",
+        "alias": ""
+    },
+    {
+        "code": "Hant",
+        "number": 502,
+        "english": "Han (Traditional variant)",
+        "french": "idéogrammes han (variante traditionnelle)",
+        "alias": ""
+    },
+    {
+        "code": "Hatr",
+        "number": 127,
+        "english": "Hatran",
+        "french": "hatrénien",
+        "alias": "Hatran"
+    },
+    {
+        "code": "Hebr",
+        "number": 125,
+        "english": "Hebrew",
+        "french": "hébreu",
+        "alias": "Hebrew"
+    },
+    {
+        "code": "Hira",
+        "number": 410,
+        "english": "Hiragana",
+        "french": "hiragana",
+        "alias": "Hiragana"
+    },
+    {
+        "code": "Hluw",
+        "number": 80,
+        "english": "Anatolian Hieroglyphs (Luwian Hieroglyphs, Hittite Hieroglyphs)",
+        "french": "hiéroglyphes anatoliens (hiéroglyphes louvites, hiéroglyphes hittites)",
+        "alias": "Anatolian_Hieroglyphs"
+    },
+    {
+        "code": "Hmng",
+        "number": 450,
+        "english": "Pahawh Hmong",
+        "french": "pahawh hmong",
+        "alias": "Pahawh_Hmong"
+    },
+    {
+        "code": "Hmnp",
+        "number": 451,
+        "english": "Nyiakeng Puachue Hmong",
+        "french": "nyiakeng puachue hmong",
+        "alias": ""
+    },
+    {
+        "code": "Hrkt",
+        "number": 412,
+        "english": "Japanese syllabaries (alias for Hiragana + Katakana)",
+        "french": "syllabaires japonais (alias pour hiragana + katakana)",
+        "alias": "Katakana_Or_Hiragana"
+    },
+    {
+        "code": "Hung",
+        "number": 176,
+        "english": "Old Hungarian (Hungarian Runic)",
+        "french": "runes hongroises (ancien hongrois)",
+        "alias": "Old_Hungarian"
+    },
+    {
+        "code": "Inds",
+        "number": 610,
+        "english": "Indus (Harappan)",
+        "french": "indus",
+        "alias": ""
+    },
+    {
+        "code": "Ital",
+        "number": 210,
+        "english": "Old Italic (Etruscan, Oscan, etc.)",
+        "french": "ancien italique (étrusque, osque, etc.)",
+        "alias": "Old_Italic"
+    },
+    {
+        "code": "Jamo",
+        "number": 284,
+        "english": "Jamo (alias for Jamo subset of Hangul)",
+        "french": "jamo (alias pour le sous-ensemble jamo du hangûl)",
+        "alias": ""
+    },
+    {
+        "code": "Java",
+        "number": 361,
+        "english": "Javanese",
+        "french": "javanais",
+        "alias": "Javanese"
+    },
+    {
+        "code": "Jpan",
+        "number": 413,
+        "english": "Japanese (alias for Han + Hiragana + Katakana)",
+        "french": "japonais (alias pour han + hiragana + katakana)",
+        "alias": ""
+    },
+    {
+        "code": "Jurc",
+        "number": 510,
+        "english": "Jurchen",
+        "french": "jurchen",
+        "alias": ""
+    },
+    {
+        "code": "Kali",
+        "number": 357,
+        "english": "Kayah Li",
+        "french": "kayah li",
+        "alias": "Kayah_Li"
+    },
+    {
+        "code": "Kana",
+        "number": 411,
+        "english": "Katakana",
+        "french": "katakana",
+        "alias": "Katakana"
+    },
+    {
+        "code": "Khar",
+        "number": 305,
+        "english": "Kharoshthi",
+        "french": "kharochthî",
+        "alias": "Kharoshthi"
+    },
+    {
+        "code": "Khmr",
+        "number": 355,
+        "english": "Khmer",
+        "french": "khmer",
+        "alias": "Khmer"
+    },
+    {
+        "code": "Khoj",
+        "number": 322,
+        "english": "Khojki",
+        "french": "khojkî",
+        "alias": "Khojki"
+    },
+    {
+        "code": "Kitl",
+        "number": 505,
+        "english": "Khitan large script",
+        "french": "grande écriture khitan",
+        "alias": ""
+    },
+    {
+        "code": "Kits",
+        "number": 288,
+        "english": "Khitan small script",
+        "french": "petite écriture khitan",
+        "alias": ""
+    },
+    {
+        "code": "Knda",
+        "number": 345,
+        "english": "Kannada",
+        "french": "kannara (canara)",
+        "alias": "Kannada"
+    },
+    {
+        "code": "Kore",
+        "number": 287,
+        "english": "Korean (alias for Hangul + Han)",
+        "french": "coréen (alias pour hangûl + han)",
+        "alias": ""
+    },
+    {
+        "code": "Kpel",
+        "number": 436,
+        "english": "Kpelle",
+        "french": "kpèllé",
+        "alias": ""
+    },
+    {
+        "code": "Kthi",
+        "number": 317,
+        "english": "Kaithi",
+        "french": "kaithî",
+        "alias": "Kaithi"
+    },
+    {
+        "code": "Lana",
+        "number": 351,
+        "english": "Tai Tham (Lanna)",
+        "french": "taï tham (lanna)",
+        "alias": "Tai_Tham"
+    },
+    {
+        "code": "Laoo",
+        "number": 356,
+        "english": "Lao",
+        "french": "laotien",
+        "alias": "Lao"
+    },
+    {
+        "code": "Latf",
+        "number": 217,
+        "english": "Latin (Fraktur variant)",
+        "french": "latin (variante brisée)",
+        "alias": ""
+    },
+    {
+        "code": "Latg",
+        "number": 216,
+        "english": "Latin (Gaelic variant)",
+        "french": "latin (variante gaélique)",
+        "alias": ""
+    },
+    {
+        "code": "Latn",
+        "number": 215,
+        "english": "Latin",
+        "french": "latin",
+        "alias": "Latin"
+    },
+    {
+        "code": "Leke",
+        "number": 364,
+        "english": "Leke",
+        "french": "léké",
+        "alias": ""
+    },
+    {
+        "code": "Lepc",
+        "number": 335,
+        "english": "Lepcha (Róng)",
+        "french": "lepcha (róng)",
+        "alias": "Lepcha"
+    },
+    {
+        "code": "Limb",
+        "number": 336,
+        "english": "Limbu",
+        "french": "limbou",
+        "alias": "Limbu"
+    },
+    {
+        "code": "Lina",
+        "number": 400,
+        "english": "Linear A",
+        "french": "linéaire A",
+        "alias": "Linear_A"
+    },
+    {
+        "code": "Linb",
+        "number": 401,
+        "english": "Linear B",
+        "french": "linéaire B",
+        "alias": "Linear_B"
+    },
+    {
+        "code": "Lisu",
+        "number": 399,
+        "english": "Lisu (Fraser)",
+        "french": "lisu (Fraser)",
+        "alias": "Lisu"
+    },
+    {
+        "code": "Loma",
+        "number": 437,
+        "english": "Loma",
+        "french": "loma",
+        "alias": ""
+    },
+    {
+        "code": "Lyci",
+        "number": 202,
+        "english": "Lycian",
+        "french": "lycien",
+        "alias": "Lycian"
+    },
+    {
+        "code": "Lydi",
+        "number": 116,
+        "english": "Lydian",
+        "french": "lydien",
+        "alias": "Lydian"
+    },
+    {
+        "code": "Mahj",
+        "number": 314,
+        "english": "Mahajani",
+        "french": "mahâjanî",
+        "alias": "Mahajani"
+    },
+    {
+        "code": "Maka",
+        "number": 366,
+        "english": "Makasar",
+        "french": "makassar",
+        "alias": ""
+    },
+    {
+        "code": "Mand",
+        "number": 140,
+        "english": "Mandaic, Mandaean",
+        "french": "mandéen",
+        "alias": "Mandaic"
+    },
+    {
+        "code": "Mani",
+        "number": 139,
+        "english": "Manichaean",
+        "french": "manichéen",
+        "alias": "Manichaean"
+    },
+    {
+        "code": "Marc",
+        "number": 332,
+        "english": "Marchen",
+        "french": "marchen",
+        "alias": "Marchen"
+    },
+    {
+        "code": "Maya",
+        "number": 90,
+        "english": "Mayan hieroglyphs",
+        "french": "hiéroglyphes mayas",
+        "alias": ""
+    },
+    {
+        "code": "Medf",
+        "number": 265,
+        "english": "Medefaidrin (Oberi Okaime, Oberi Ɔkaimɛ)",
+        "french": "médéfaïdrine",
+        "alias": ""
+    },
+    {
+        "code": "Mend",
+        "number": 438,
+        "english": "Mende Kikakui",
+        "french": "mendé kikakui",
+        "alias": "Mende_Kikakui"
+    },
+    {
+        "code": "Merc",
+        "number": 101,
+        "english": "Meroitic Cursive",
+        "french": "cursif méroïtique",
+        "alias": "Meroitic_Cursive"
+    },
+    {
+        "code": "Mero",
+        "number": 100,
+        "english": "Meroitic Hieroglyphs",
+        "french": "hiéroglyphes méroïtiques",
+        "alias": "Meroitic_Hieroglyphs"
+    },
+    {
+        "code": "Mlym",
+        "number": 347,
+        "english": "Malayalam",
+        "french": "malayâlam",
+        "alias": "Malayalam"
+    },
+    {
+        "code": "Modi",
+        "number": 324,
+        "english": "Modi, Moḍī",
+        "french": "modî",
+        "alias": "Modi"
+    },
+    {
+        "code": "Mong",
+        "number": 145,
+        "english": "Mongolian",
+        "french": "mongol",
+        "alias": "Mongolian"
+    },
+    {
+        "code": "Moon",
+        "number": 218,
+        "english": "Moon (Moon code, Moon script, Moon type)",
+        "french": "écriture Moon",
+        "alias": ""
+    },
+    {
+        "code": "Mroo",
+        "number": 264,
+        "english": "Mro, Mru",
+        "french": "mro",
+        "alias": "Mro"
+    },
+    {
+        "code": "Mtei",
+        "number": 337,
+        "english": "Meitei Mayek (Meithei, Meetei)",
+        "french": "meitei mayek",
+        "alias": "Meetei_Mayek"
+    },
+    {
+        "code": "Mult",
+        "number": 323,
+        "english": "Multani",
+        "french": "multanî",
+        "alias": "Multani"
+    },
+    {
+        "code": "Mymr",
+        "number": 350,
+        "english": "Myanmar (Burmese)",
+        "french": "birman",
+        "alias": "Myanmar"
+    },
+    {
+        "code": "Narb",
+        "number": 106,
+        "english": "Old North Arabian (Ancient North Arabian)",
+        "french": "nord-arabique",
+        "alias": "Old_North_Arabian"
+    },
+    {
+        "code": "Nbat",
+        "number": 159,
+        "english": "Nabataean",
+        "french": "nabatéen",
+        "alias": "Nabataean"
+    },
+    {
+        "code": "Newa",
+        "number": 333,
+        "english": "Newa, Newar, Newari, Nepāla lipi",
+        "french": "néwa, néwar, néwari, nepāla lipi",
+        "alias": "Newa"
+    },
+    {
+        "code": "Nkdb",
+        "number": 85,
+        "english": "Naxi Dongba (na²¹ɕi³³ to³³ba²¹, Nakhi Tomba)",
+        "french": "naxi dongba",
+        "alias": ""
+    },
+    {
+        "code": "Nkgb",
+        "number": 420,
+        "english": "Naxi Geba (na²¹ɕi³³ gʌ²¹ba²¹, 'Na-'Khi ²Ggŏ-¹baw, Nakhi Geba)",
+        "french": "naxi geba, nakhi geba",
+        "alias": ""
+    },
+    {
+        "code": "Nkoo",
+        "number": 165,
+        "english": "N’Ko",
+        "french": "n’ko",
+        "alias": "Nko"
+    },
+    {
+        "code": "Nshu",
+        "number": 499,
+        "english": "Nüshu",
+        "french": "nüshu",
+        "alias": "Nushu"
+    },
+    {
+        "code": "Ogam",
+        "number": 212,
+        "english": "Ogham",
+        "french": "ogam",
+        "alias": "Ogham"
+    },
+    {
+        "code": "Olck",
+        "number": 261,
+        "english": "Ol Chiki (Ol Cemet’, Ol, Santali)",
+        "french": "ol tchiki",
+        "alias": "Ol_Chiki"
+    },
+    {
+        "code": "Orkh",
+        "number": 175,
+        "english": "Old Turkic, Orkhon Runic",
+        "french": "orkhon",
+        "alias": "Old_Turkic"
+    },
+    {
+        "code": "Orya",
+        "number": 327,
+        "english": "Oriya (Odia)",
+        "french": "oriyâ (odia)",
+        "alias": "Oriya"
+    },
+    {
+        "code": "Osge",
+        "number": 219,
+        "english": "Osage",
+        "french": "osage",
+        "alias": "Osage"
+    },
+    {
+        "code": "Osma",
+        "number": 260,
+        "english": "Osmanya",
+        "french": "osmanais",
+        "alias": "Osmanya"
+    },
+    {
+        "code": "Palm",
+        "number": 126,
+        "english": "Palmyrene",
+        "french": "palmyrénien",
+        "alias": "Palmyrene"
+    },
+    {
+        "code": "Pauc",
+        "number": 263,
+        "english": "Pau Cin Hau",
+        "french": "paou chin haou",
+        "alias": "Pau_Cin_Hau"
+    },
+    {
+        "code": "Perm",
+        "number": 227,
+        "english": "Old Permic",
+        "french": "ancien permien",
+        "alias": "Old_Permic"
+    },
+    {
+        "code": "Phag",
+        "number": 331,
+        "english": "Phags-pa",
+        "french": "’phags pa",
+        "alias": "Phags_Pa"
+    },
+    {
+        "code": "Phli",
+        "number": 131,
+        "english": "Inscriptional Pahlavi",
+        "french": "pehlevi des inscriptions",
+        "alias": "Inscriptional_Pahlavi"
+    },
+    {
+        "code": "Phlp",
+        "number": 132,
+        "english": "Psalter Pahlavi",
+        "french": "pehlevi des psautiers",
+        "alias": "Psalter_Pahlavi"
+    },
+    {
+        "code": "Phlv",
+        "number": 133,
+        "english": "Book Pahlavi",
+        "french": "pehlevi des livres",
+        "alias": ""
+    },
+    {
+        "code": "Phnx",
+        "number": 115,
+        "english": "Phoenician",
+        "french": "phénicien",
+        "alias": "Phoenician"
+    },
+    {
+        "code": "Plrd",
+        "number": 282,
+        "english": "Miao (Pollard)",
+        "french": "miao (Pollard)",
+        "alias": "Miao"
+    },
+    {
+        "code": "Piqd",
+        "number": 293,
+        "english": "Klingon (KLI pIqaD)",
+        "french": "klingon (pIqaD du KLI)",
+        "alias": ""
+    },
+    {
+        "code": "Prti",
+        "number": 130,
+        "english": "Inscriptional Parthian",
+        "french": "parthe des inscriptions",
+        "alias": "Inscriptional_Parthian"
+    },
+    {
+        "code": "Qaaa",
+        "number": 900,
+        "english": "Reserved for private use (start)",
+        "french": "réservé à l’usage privé (début)",
+        "alias": ""
+    },
+    {
+        "code": "Qabx",
+        "number": 949,
+        "english": "Reserved for private use (end)",
+        "french": "réservé à l’usage privé (fin)",
+        "alias": ""
+    },
+    {
+        "code": "Rjng",
+        "number": 363,
+        "english": "Rejang (Redjang, Kaganga)",
+        "french": "redjang (kaganga)",
+        "alias": "Rejang"
+    },
+    {
+        "code": "Rohg",
+        "number": 167,
+        "english": "Hanifi Rohingya",
+        "french": "hanifi rohingya",
+        "alias": ""
+    },
+    {
+        "code": "Roro",
+        "number": 620,
+        "english": "Rongorongo",
+        "french": "rongorongo",
+        "alias": ""
+    },
+    {
+        "code": "Runr",
+        "number": 211,
+        "english": "Runic",
+        "french": "runique",
+        "alias": "Runic"
+    },
+    {
+        "code": "Samr",
+        "number": 123,
+        "english": "Samaritan",
+        "french": "samaritain",
+        "alias": "Samaritan"
+    },
+    {
+        "code": "Sara",
+        "number": 292,
+        "english": "Sarati",
+        "french": "sarati",
+        "alias": ""
+    },
+    {
+        "code": "Sarb",
+        "number": 105,
+        "english": "Old South Arabian",
+        "french": "sud-arabique, himyarite",
+        "alias": "Old_South_Arabian"
+    },
+    {
+        "code": "Saur",
+        "number": 344,
+        "english": "Saurashtra",
+        "french": "saurachtra",
+        "alias": "Saurashtra"
+    },
+    {
+        "code": "Sgnw",
+        "number": 95,
+        "english": "SignWriting",
+        "french": "SignÉcriture, SignWriting",
+        "alias": "SignWriting"
+    },
+    {
+        "code": "Shaw",
+        "number": 281,
+        "english": "Shavian (Shaw)",
+        "french": "shavien (Shaw)",
+        "alias": "Shavian"
+    },
+    {
+        "code": "Shrd",
+        "number": 319,
+        "english": "Sharada, Śāradā",
+        "french": "charada, shard",
+        "alias": "Sharada"
+    },
+    {
+        "code": "Shui",
+        "number": 530,
+        "english": "Shuishu",
+        "french": "shuishu",
+        "alias": ""
+    },
+    {
+        "code": "Sidd",
+        "number": 302,
+        "english": "Siddham, Siddhaṃ, Siddhamātṛkā",
+        "french": "siddham",
+        "alias": "Siddham"
+    },
+    {
+        "code": "Sind",
+        "number": 318,
+        "english": "Khudawadi, Sindhi",
+        "french": "khoudawadî, sindhî",
+        "alias": "Khudawadi"
+    },
+    {
+        "code": "Sinh",
+        "number": 348,
+        "english": "Sinhala",
+        "french": "singhalais",
+        "alias": "Sinhala"
+    },
+    {
+        "code": "Sogd",
+        "number": 141,
+        "english": "Sogdian",
+        "french": "sogdien",
+        "alias": ""
+    },
+    {
+        "code": "Sogo",
+        "number": 142,
+        "english": "Old Sogdian",
+        "french": "ancien sogdien",
+        "alias": ""
+    },
+    {
+        "code": "Sora",
+        "number": 398,
+        "english": "Sora Sompeng",
+        "french": "sora sompeng",
+        "alias": "Sora_Sompeng"
+    },
+    {
+        "code": "Soyo",
+        "number": 329,
+        "english": "Soyombo",
+        "french": "soyombo",
+        "alias": "Soyombo"
+    },
+    {
+        "code": "Sund",
+        "number": 362,
+        "english": "Sundanese",
+        "french": "sundanais",
+        "alias": "Sundanese"
+    },
+    {
+        "code": "Sylo",
+        "number": 316,
+        "english": "Syloti Nagri",
+        "french": "sylotî nâgrî",
+        "alias": "Syloti_Nagri"
+    },
+    {
+        "code": "Syrc",
+        "number": 135,
+        "english": "Syriac",
+        "french": "syriaque",
+        "alias": "Syriac"
+    },
+    {
+        "code": "Syre",
+        "number": 138,
+        "english": "Syriac (Estrangelo variant)",
+        "french": "syriaque (variante estranghélo)",
+        "alias": ""
+    },
+    {
+        "code": "Syrj",
+        "number": 137,
+        "english": "Syriac (Western variant)",
+        "french": "syriaque (variante occidentale)",
+        "alias": ""
+    },
+    {
+        "code": "Syrn",
+        "number": 136,
+        "english": "Syriac (Eastern variant)",
+        "french": "syriaque (variante orientale)",
+        "alias": ""
+    },
+    {
+        "code": "Tagb",
+        "number": 373,
+        "english": "Tagbanwa",
+        "french": "tagbanoua",
+        "alias": "Tagbanwa"
+    },
+    {
+        "code": "Takr",
+        "number": 321,
+        "english": "Takri, Ṭākrī, Ṭāṅkrī",
+        "french": "tâkrî",
+        "alias": "Takri"
+    },
+    {
+        "code": "Tale",
+        "number": 353,
+        "english": "Tai Le",
+        "french": "taï-le",
+        "alias": "Tai_Le"
+    },
+    {
+        "code": "Talu",
+        "number": 354,
+        "english": "New Tai Lue",
+        "french": "nouveau taï-lue",
+        "alias": "New_Tai_Lue"
+    },
+    {
+        "code": "Taml",
+        "number": 346,
+        "english": "Tamil",
+        "french": "tamoul",
+        "alias": "Tamil"
+    },
+    {
+        "code": "Tang",
+        "number": 520,
+        "english": "Tangut",
+        "french": "tangoute",
+        "alias": "Tangut"
+    },
+    {
+        "code": "Tavt",
+        "number": 359,
+        "english": "Tai Viet",
+        "french": "taï viêt",
+        "alias": "Tai_Viet"
+    },
+    {
+        "code": "Telu",
+        "number": 340,
+        "english": "Telugu",
+        "french": "télougou",
+        "alias": "Telugu"
+    },
+    {
+        "code": "Teng",
+        "number": 290,
+        "english": "Tengwar",
+        "french": "tengwar",
+        "alias": ""
+    },
+    {
+        "code": "Tfng",
+        "number": 120,
+        "english": "Tifinagh (Berber)",
+        "french": "tifinagh (berbère)",
+        "alias": "Tifinagh"
+    },
+    {
+        "code": "Tglg",
+        "number": 370,
+        "english": "Tagalog (Baybayin, Alibata)",
+        "french": "tagal (baybayin, alibata)",
+        "alias": "Tagalog"
+    },
+    {
+        "code": "Thaa",
+        "number": 170,
+        "english": "Thaana",
+        "french": "thâna",
+        "alias": "Thaana"
+    },
+    {
+        "code": "Thai",
+        "number": 352,
+        "english": "Thai",
+        "french": "thaï",
+        "alias": "Thai"
+    },
+    {
+        "code": "Tibt",
+        "number": 330,
+        "english": "Tibetan",
+        "french": "tibétain",
+        "alias": "Tibetan"
+    },
+    {
+        "code": "Tirh",
+        "number": 326,
+        "english": "Tirhuta",
+        "french": "tirhouta",
+        "alias": "Tirhuta"
+    },
+    {
+        "code": "Ugar",
+        "number": 40,
+        "english": "Ugaritic",
+        "french": "ougaritique",
+        "alias": "Ugaritic"
+    },
+    {
+        "code": "Vaii",
+        "number": 470,
+        "english": "Vai",
+        "french": "vaï",
+        "alias": "Vai"
+    },
+    {
+        "code": "Visp",
+        "number": 280,
+        "english": "Visible Speech",
+        "french": "parole visible",
+        "alias": ""
+    },
+    {
+        "code": "Wara",
+        "number": 262,
+        "english": "Warang Citi (Varang Kshiti)",
+        "french": "warang citi",
+        "alias": "Warang_Citi"
+    },
+    {
+        "code": "Wcho",
+        "number": 283,
+        "english": "Wancho",
+        "french": "wantcho",
+        "alias": ""
+    },
+    {
+        "code": "Wole",
+        "number": 480,
+        "english": "Woleai",
+        "french": "woléaï",
+        "alias": ""
+    },
+    {
+        "code": "Xpeo",
+        "number": 30,
+        "english": "Old Persian",
+        "french": "cunéiforme persépolitain",
+        "alias": "Old_Persian"
+    },
+    {
+        "code": "Xsux",
+        "number": 20,
+        "english": "Cuneiform, Sumero-Akkadian",
+        "french": "cunéiforme suméro-akkadien",
+        "alias": "Cuneiform"
+    },
+    {
+        "code": "Yiii",
+        "number": 460,
+        "english": "Yi",
+        "french": "yi",
+        "alias": "Yi"
+    },
+    {
+        "code": "Zanb",
+        "number": 339,
+        "english": "Zanabazar Square (Zanabazarin Dörböljin Useg, Xewtee Dörböljin Bicig, Horizontal Square Script)",
+        "french": "zanabazar quadratique",
+        "alias": "Zanabazar_Square"
+    },
+    {
+        "code": "Zinh",
+        "number": 994,
+        "english": "Code for inherited script",
+        "french": "codet pour écriture héritée",
+        "alias": "Inherited"
+    },
+    {
+        "code": "Zmth",
+        "number": 995,
+        "english": "Mathematical notation",
+        "french": "notation mathématique",
+        "alias": ""
+    },
+    {
+        "code": "Zsye",
+        "number": 993,
+        "english": "Symbols (Emoji variant)",
+        "french": "symboles (variante émoji)",
+        "alias": ""
+    },
+    {
+        "code": "Zsym",
+        "number": 996,
+        "english": "Symbols",
+        "french": "symboles",
+        "alias": ""
+    },
+    {
+        "code": "Zxxx",
+        "number": 997,
+        "english": "Code for unwritten documents",
+        "french": "codet pour les documents non écrits",
+        "alias": ""
+    },
+    {
+        "code": "Zyyy",
+        "number": 998,
+        "english": "Code for undetermined script",
+        "french": "codet pour écriture indéterminée",
+        "alias": "Common"
+    }
+]

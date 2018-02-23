@@ -3,6 +3,7 @@
     "hotKey": "CommandOrControl+Alt+V",
     "unitsMenu": true,
     "developerMenu": true,
+    "smartZoom": false,
     "window":
     {
         "defaultWidth": 1080,

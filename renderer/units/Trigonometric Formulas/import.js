@@ -3,7 +3,7 @@ const unit = document.getElementById ('trigonometric-formulas-unit');
 //
 const container = unit.querySelector ('.formulas-container');
 //
-module.exports.start = function (context, getPrefs)
+module.exports.start = function (context)
 {
     const katex = require ('../../lib/katex/katex.min.js');
     //
@@ -39,7 +39,7 @@ module.exports.start = function (context, getPrefs)
     }
 };
 //
-module.exports.stop = function (context, setPrefs)
+module.exports.stop = function (context)
 {
 };
 //

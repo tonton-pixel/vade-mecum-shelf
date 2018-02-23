@@ -1,5 +1,5 @@
 //
-const unit = document.getElementById ('iso-country-codes-unit');
+const unit = document.getElementById ('iso-script-codes-unit');
 //
 const liveSearch = unit.querySelector ('.live-search');
 const codesContainer = unit.querySelector ('.codes-container');
@@ -16,23 +16,20 @@ module.exports.start = function (context)
     //
     const codes = require ('./codes.json');
     //
-    const numericIndex = tables.buildKeyIndex (codes, "numeric", (a, b) => a - b); // Not used yet...
-    const alpha2Index = tables.buildKeyIndex (codes, "alpha-2", (a, b) => a.localeCompare (b));
-    const alpha3Index = tables.buildKeyIndex (codes, "alpha-3", (a, b) => a.localeCompare (b));
+    const codeIndex = tables.buildKeyIndex (codes, "code", (a, b) => a.localeCompare (b));
     const englishIndex = tables.buildKeyIndex (codes, "english", (a, b) => a.localeCompare (b, 'en'));
     const frenchIndex = tables.buildKeyIndex (codes, "french", (a, b) => a.localeCompare (b, 'fr'));
     //
     let table = tables.create
     (
         [
-            { label: "Alpha-2", className: 'code', key: "alpha-2" },
-            { label: "Alpha-3", className: 'code', key: "alpha-3" },
-            { label: "English", className: 'country', key: "english", lang: 'en' },
-            { label: "Français", className: 'country', key: "french", lang: 'fr' }
+            { label: "Code", className: 'code', key: "code" },
+            { label: "English", className: 'language', key: "english", lang: 'en' },
+            { label: "Français", className: 'language', key: "french", lang: 'fr' }
         ],
         { label: "No Match", className: 'message', lang: 'en' },
         codes,
-        alpha2Index // Temp...
+        codeIndex // Temp...
     );
     //
     let tableCopy = table.cloneNode (true);

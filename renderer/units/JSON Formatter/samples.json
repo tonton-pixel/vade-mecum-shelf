@@ -1,0 +1,26 @@
+[
+    {
+        "label": "JSON Object 1",
+        "string": "{\"a\":1,\"b\":2,\"c\":3}"
+    },
+    {
+        "label": "JSON Object 2",
+        "string": "{\"First Name\":\"Albert\",\"Last Name\":\"Einstein\",\"Genius\":true,\n\"Known for\":[\n\"Photoelectric effect\",\"Brownian motion\",\"Special relativity\",\"General relativity\"]}"
+    },
+    {
+        "label": "JSON Array 1",
+        "string": "[1,2,3]"
+    },
+    {
+        "label": "JSON Array 2",
+        "string": "[{\"City\":\"San Francisco\",\"State\":\"CA\",\"Zip\":\"94107\"},{\"City\":\"Sunnyvale\",\"State\":\"CA\",\"Zip\":\"94085\"}]\n"
+    },
+    {
+        "label": "JSON String 1",
+        "string": "\"Hello world!\""
+    },
+    {
+        "label": "JSON String 2",
+        "string": "\"\\u0041\\u0061\\u0100\\u0101\\u2764\\u611B\\u7231\\uC560\\uD83D\\uDC9C\""
+    }
+]

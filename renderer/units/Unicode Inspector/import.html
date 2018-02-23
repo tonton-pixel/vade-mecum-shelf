@@ -2,24 +2,31 @@
     <section id="unicode-inspector-unit">
         <div class="plain-panel">
             <h2>Characters</h2>
+            <div class="actions">
+                <span class="action">
+                    <button type="button" class="pull-down-menu characters-samples">Samples</button>
+                </span>
+                <span class="action">
+                    <button type="button" class="characters-clear">Clear</button>
+                </span>
+            </div>
             <p><input class="input-characters" type="text"></p>
             <p><input class="output-code-points" type="text" readonly></p>
-            <div class="interface">
-                <span class="option">
-                    <label title="If checked, the Unicode code points are formatted as string escape sequences."><input type="checkbox" class="string-escapes">&nbsp;String Escapes</label>
-                </span>
-                <span class="option">
-                    <label title="If checked, the Unicode code points exclude surrogates."><input type="checkbox" class="scalar-values">&nbsp;Scalar Values</label>
-                </span>
-                <span class="option">
-                    <label title="If checked, the Unicode code points use upper case hexadecimal digits."><input type="checkbox" class="upper-case-hex">&nbsp;Upper Case Hex</label>
-                </span>
-           </div>
-        </div>
+            <div class="output-characters-data"></div>
+       </div>
          <div class="plain-panel">
             <h2>Code Points</h2>
-            <p><input class="input-code-points" type="text"></p>
+            <div class="actions">
+                <span class="action">
+                    <button type="button" class="pull-down-menu code-points-samples">Samples</button>
+                </span>
+                <span class="action">
+                    <button type="button" class="code-points-clear">Clear</button>
+                </span>
+            </div>
+             <p><input class="input-code-points" type="text"></p>
             <p><input class="output-characters" type="text" readonly></p>
+            <div class="output-code-points-data"></div>
         </div>
         <div class="accent-panel">
             <p><strong>References</strong>:</p>
@@ -32,25 +39,52 @@
                 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint">String.fromCodePoint() - JavaScript | MDN</a></li>
             </ul>
             <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize">String.prototype.normalize() - JavaScript | MDN</a></li>
+            </ul>
+            <ul>
                 <li><a href="https://mathiasbynens.be/notes/javascript-escapes">JavaScript character escape sequences · Mathias Bynens</a></li>
                 <li><a href="https://mathiasbynens.be/notes/javascript-encoding">JavaScript’s internal character encoding: UCS-2 or UTF-16? · Mathias Bynens</a></li>
                 <li><a href="https://mathiasbynens.be/notes/javascript-unicode">JavaScript has a Unicode problem · Mathias Bynens</a></li>
             </ul>
             <ul>
                 <li><a href="https://en.wikipedia.org/wiki/Unicode">Unicode - Wikipedia</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Plane_(Unicode)">Plane (Unicode) - Wikipedia</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Unicode_block">Unicode block - Wikipedia</a></li>
                 <li><a href="https://en.wikipedia.org/wiki/Unicode_input">Unicode input - Wikipedia</a></li>
                 <li><a href="https://en.wikipedia.org/wiki/Combining_character">Combining character - Wikipedia</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Zero-width_joiner">Zero-width joiner - Wikipedia</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Han_unification">Han unification - Wikipedia</a></li>
                 <li><a href="https://en.wikipedia.org/wiki/Variant_form_(Unicode)">Variant form (Unicode) - Wikipedia</a></li>
                 <li><a href="https://en.wikipedia.org/wiki/List_of_Unicode_characters">List of Unicode characters - Wikipedia</a></li>
             </ul>
             <ul>
+                <li><a href="https://www.unicode.org/roadmaps/">Roadmaps to Unicode</a></li>
+                <li><a href="https://www.unicode.org/reports/tr44/">UAX #44: Unicode Character Database</a></li>
+                <li><a href="https://www.unicode.org/Public/UNIDATA/Blocks.txt">Blocks.txt</a></li>
+                <li><a href="https://www.unicode.org/Public/UNIDATA/UnicodeData.txt">UnicodeData.txt</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://www.unicode.org/reports/tr15/">UAX #15: Unicode Normalization Forms</a></li>
+                <li><a href="https://www.unicode.org/charts/normalization/">Normalization Charts</a></li>
+                <li><a href="https://www.unicode.org/faq/normalization.html">FAQ - Normalization</a></li>
+            </ul>
+            <ul>
                 <li><a href="https://www.unicode.org/glossary/">Glossary</a></li>
+            </ul>
+            <ul>
                 <li><a href="https://www.unicode.org/reports/tr51/">UTS #51: Unicode Emoji</a></li>
+                <li><a href="https://www.unicode.org/emoji/">Unicode Emoji</a></li>
+                <li><a href="https://www.unicode.org/emoji/charts/">Unicode Emoji v5.0</a></li>
                 <li><a href="https://www.unicode.org/emoji/charts/emoji-variants.html">Emoji Presentation Sequences, v5.0</a></li>
+                <li><a href="https://www.unicode.org/emoji/charts/emoji-zwj-sequences.html">Recommended Emoji ZWJ Sequences, v5.0</a></li>
+                <li><a href="https://www.unicode.org/faq/emoji_dingbats.html">FAQ - Emoji & Pictographs</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://www.nytimes.com/2017/10/18/magazine/how-the-appetite-for-emojis-complicates-the-effort-to-standardize-the-worlds-alphabets.html">How the Appetite for Emojis Complicates the Effort to Standardize the World’s Alphabets - The New York Times</a></li>
             </ul>
             <ul>
                 <li><a href="https://namakajiri.net/nikki/joyo-kanji-variants-the-curious-case-of-and-%e5%8f%b1/">Jōyō kanji variants: The curious case of 叱 and [censored] | The Nanbanjin Nikki</a></li>
             </ul>
-        </div>
+         </div>
     </section>
 </template>

@@ -4,10 +4,13 @@ const unit = document.getElementById ('departments-of-france-unit');
 const liveSearch = unit.querySelector ('.live-search');
 const codesContainer = unit.querySelector ('.codes-container');
 //
-module.exports.start = function (context, getPrefs)
+module.exports.start = function (context)
 {
-    const defaultPrefs = { liveSearch: "" };
-    let prefs = getPrefs (defaultPrefs);
+    const defaultPrefs =
+    {
+        liveSearch: ""
+    };
+    let prefs = context.getPrefs (defaultPrefs);
     //
     const tables = require ('../../lib/tables.js');
     //
@@ -18,57 +21,17 @@ module.exports.start = function (context, getPrefs)
     const departmentIndex = tables.buildKeyIndex (departments, "département", (a, b) => a.localeCompare (b, 'fr'));
     const prefectureIndex = tables.buildKeyIndex (departments, "chef-lieu", (a, b) => a.localeCompare (b, 'fr'));
     //
-    let sortIndex = keyIndex; // Temp...
-    //
-    let table = document.createElement ('table');
-    let header = document.createElement ('tr');
-    let th;
-    th = document.createElement ('th');
-    th.className = 'code';
-    th.textContent = "Code";
-    header.appendChild (th);
-    th = document.createElement ('th');
-    th.className = 'département';
-    th.lang = 'fr';
-    th.textContent = "Département";
-    header.appendChild (th);
-    th = document.createElement ('th');
-    th.className = 'chef-lieu';
-    th.lang = 'fr';
-    th.textContent = "Chef-lieu";
-    header.appendChild (th);
-    table.appendChild (header);
-    for (let index = 0; index < departments.length; index++)
-    {
-        let departmentCode = departments[sortIndex[index]];
-        let tr = document.createElement ('tr');
-        let td;
-        td = document.createElement ('td');
-        td.className = 'code';
-        td.textContent = departmentCode["code"];
-        tr.appendChild (td);
-        td = document.createElement ('td');
-        td.className = 'département';
-        td.lang = 'fr';
-        td.textContent = departmentCode["département"];
-        tr.appendChild (td);
-        td = document.createElement ('td');
-        td.className = 'chef-lieu';
-        td.lang = 'fr';
-        td.textContent = departmentCode["chef-lieu"];
-        tr.appendChild (td);
-        table.appendChild (tr);
-    }
-    let message = document.createElement ('tr');
-    message.setAttribute ('hidden', '');
-    td = document.createElement ('td');
-    td.setAttribute ('colspan', '3');
-    td.className = 'message';
-    td.lang = 'fr';
-    td.textContent = "Aucun résultat";
-    message.appendChild (td);
-    table.appendChild (message);
-    table.appendChild (header.cloneNode (true));
+    let table = tables.create
+    (
+        [
+            { label: "Code", className: 'code', key: "code" },
+            { label: "Département", className: 'département', key: "département", lang: 'fr' },
+            { label: "Chef-lieu", className: 'chef-lieu', key: "chef-lieu", lang: 'fr' }
+        ],
+        { label: "Aucun résultat", className: 'message', lang: 'fr' },
+        departments,
+        keyIndex // Temp...
+    );
     //
     let tableCopy = table.cloneNode (true);
     codesContainer.appendChild (tableCopy);
@@ -91,8 +54,8 @@ module.exports.start = function (context, getPrefs)
     liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
 };
 //
-module.exports.stop = function (context, setPrefs)
+module.exports.stop = function (context)
 {
-    setPrefs ({ liveSearch: liveSearch.value });
+    context.setPrefs ({ liveSearch: liveSearch.value });
 };
 //

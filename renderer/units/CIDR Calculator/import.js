@@ -9,10 +9,14 @@ const ipRangeInput = unit.querySelector ('.ip-range-input');
 const ipRangeSample = unit.querySelector ('.ip-range-sample');
 const cidrListOutput = unit.querySelector ('.cidr-list-output');
 //
-module.exports.start = function (context, getPrefs)
+module.exports.start = function (context)
 {
-    const defaultPrefs = { cidrInput: "192.0.0.1/25", ipRangeInput: "192.168.1.1 - 192.168.1.12" };
-    let prefs = getPrefs (defaultPrefs);
+    const defaultPrefs =
+    {
+        cidrInput: "",
+        ipRangeInput: ""
+    };
+    let prefs = context.getPrefs (defaultPrefs);
     //
     const cidr = require ('./cidr.js');
     //
@@ -21,7 +25,7 @@ module.exports.start = function (context, getPrefs)
         let ips = cidr.cidrToIps (string.trim ());
         ipRangeOutput.value = ips ? ips.join (' - ') : "";
     }
-    cidrSample.textContent = defaultPrefs.cidrInput;
+    cidrSample.textContent = "192.0.0.1/25";
     getIpRange (cidrInput.value = prefs.cidrInput);
     cidrInput.addEventListener ('input', (event) => { getIpRange (event.target.value); });
     //
@@ -30,13 +34,13 @@ module.exports.start = function (context, getPrefs)
         let cidrs = cidr.ipRangeToCidrs (string.trim ());
         cidrListOutput.value = cidrs ? cidrs.join ('\n') : "";
     }
-    ipRangeSample.textContent = defaultPrefs.ipRangeInput;
+    ipRangeSample.textContent = "192.168.1.1 - 192.168.1.12";
     getCidrList (ipRangeInput.value = prefs.ipRangeInput);
     ipRangeInput.addEventListener ('input', (event) => { getCidrList (event.target.value) });
 };
 //
-module.exports.stop = function (context, setPrefs)
+module.exports.stop = function (context)
 {
-    setPrefs ({ cidrInput: cidrInput.value, ipRangeInput: ipRangeInput.value });
+    context.setPrefs ({ cidrInput: cidrInput.value, ipRangeInput: ipRangeInput.value });
 };
 //

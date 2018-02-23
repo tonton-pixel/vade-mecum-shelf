@@ -1,13 +1,21 @@
 <template>
     <section id="latex-math-renderer-unit">
         <div class="plain-panel">
+            <div class="actions">
+                <span class="action">
+                    <button type="button" class="pull-down-menu samples-button">Samples</button>
+                </span>
+                <span class="action">
+                    <button type="button" class="clear-button">Clear</button>
+                </span>
+            </div>
             <label>LaTeX:<textarea class="latex-formula" rows="8"></textarea></label>
-            <div class="interface">
+            <div class="options">
                 <span class="option">
                     <label title="If checked, the math will be rendered in display mode; if unchecked, the math will be rendered in inline mode."><input type="checkbox" class="display-mode">&nbsp;Display Mode</label>
                 </span>
                 <span class="option">
-                    <button type="button" class="clear-button">Clear</button>
+                    <label title="If checked, \color will work like LaTeX's \textcolor, and take two arguments; if unchecked, \color will work like LaTeX's \color, and take one argument."><input type="checkbox" class="text-color">&nbsp;Color is Text Color</label>
                 </span>
                 <span class="option">
                     <label title="If checked, will throw a ParseError when it encounters an unsupported command; if unchecked, will render the unsupported command as text in color."><input type="checkbox" class="throw-on-error">&nbsp;Throw on Error</label>
