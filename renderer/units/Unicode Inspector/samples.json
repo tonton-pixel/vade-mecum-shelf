@@ -4,6 +4,38 @@
         "string": "AaĀā❤愛爱애💜"
     },
     {
+        "label": "Presentation Selectors 1",
+        "string": "☎︎☎️♻︎♻️❤︎❤️"
+    },
+    {
+        "label": "Presentation Selectors 2",
+        "string": "ℹ︎ℹ️☯︎☯️✒︎✒️"
+    },
+    {
+        "label": "Presentation Selectors 3",
+        "string": "♨︎♨️㊗︎㊗️🈲︎🈲️"
+    },
+    {
+        "label": "Multi-Person Groupings 1",
+        "string": "👪⬌👨‍👩‍👦"
+    },
+    {
+        "label": "Multi-Person Groupings 2",
+        "string": "💑⬌👩‍❤️‍👨"
+    },
+    {
+        "label": "Multi-Person Groupings 3",
+        "string": "💏⬌👩‍❤️‍💋‍👨"
+    },
+    {
+        "label": "Skin Tone Modifiers",
+        "string": "👳🏻👳🏼👳🏽👳🏾👳🏿"
+    },
+    {
+        "label": "Combined Symbols",
+        "string": "#️⃣👁‍🗨"
+    },
+    {
         "label": "Digits & Numbers 1",
         "string": "1½⅟１𝍠𝟏𝟙𝟣𝟭𝟷"
     },
@@ -24,44 +56,12 @@
         "string": "ⅰⅱⅲⅳⅴⅵⅶⅷⅸⅹⅺⅻⅼⅽⅾⅿ"
     },
     {
-        "label": "Presentation Selectors 1",
-        "string": "☎︎☎️♻︎♻️❤︎❤️"
-    },
-    {
-        "label": "Presentation Selectors 2",
-        "string": "ℹ︎ℹ️☯︎☯️✒︎✒️"
-    },
-    {
-        "label": "Presentation Selectors 3",
-        "string": "♨︎♨️㊗︎㊗️🈲︎🈲️"
-    },
-    {
         "label": "ISO Country Flags 1",
         "string": "🇨🇦🇫🇷🇬🇧🇯🇵🇺🇸"
     },
     {
         "label": "ISO Country Flags 2",
         "string": "🇪🇺🇺🇳"
-    },
-    {
-        "label": "Skin Tone Modifiers",
-        "string": "👳🏻👳🏼👳🏽👳🏾👳🏿"
-    },
-    {
-        "label": "Multi-Person Groupings 1",
-        "string": "👪⬌👨‍👩‍👦"
-    },
-    {
-        "label": "Multi-Person Groupings 2",
-        "string": "💑⬌👩‍❤️‍👨"
-    },
-    {
-        "label": "Multi-Person Groupings 3",
-        "string": "💏⬌👩‍❤️‍💋‍👨"
-    },
-    {
-        "label": "Combined Symbols",
-        "string": "#️⃣👁‍🗨"
     },
     {
         "label": "CJK Variation Sequences",

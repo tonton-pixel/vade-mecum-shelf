@@ -1,0 +1,54 @@
+<template>
+    <section id="javascript-runner-unit">
+        <div class="plain-panel">
+            <div class="actions">
+                <span class="action-group">
+                    <span class="action">
+                        <button type="button" class="clear-button">Clear</button>
+                    </span>
+                    <span class="action">
+                        <button type="button" class="pull-down-menu samples-button">Samples</button>
+                    </span>
+                </span>
+                <span class="action-group">
+                    <span class="action">
+                        <button type="button" class="load-button">Load...</button>
+                    </span>
+                    <span class="action">
+                        <button type="button" class="save-button">Save...</button>
+                    </span>
+                </span>
+            </div>
+            <label>Code:<textarea class="code-string" rows="12"></textarea></label>
+            <div class="interface">
+                <span class="option">
+                    <button type="button" class="run-button">Run</button>
+                </span>
+            </div>
+            <label>Output:<textarea class="output-string" rows="12" readonly></textarea></label>
+        </div>
+        <div class="accent-panel info">
+            <p><strong>Built-in functions</strong>:</p>
+            <ul>
+                <li><code>$.clear ();</code><br>Clears the output field.</li>
+                <li><code>$.notify (message[, callback]);</code><br>Sends a desktop notification with the given message and, if defined, executes the callback function when the user clicks on the notification.</li>
+                <li><code>$.write (text[, text...]...);</code><br>Writes the specified text to the output field.</li>
+                <li><code>$.writeln (text[, text...]...);</code><br>Writes the specified text to the output field and appends a line break.</li>
+            </ul>
+       </div>
+        <div class="accent-panel">
+            <p><strong>References</strong>:</p>
+            <ul>
+                <li><a href="https://electronjs.org/docs">Documentation | Electron</a></li>
+                <li><a href="https://nodejs.org/api/">Index | Node.js Documentation</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">Document Object Model (DOM) - Web APIs | MDN</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript reference - JavaScript | MDN</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions">Functions - JavaScript | MDN</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function - JavaScript | MDN</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode">Strict mode - JavaScript | MDN</a></li>
+            </ul>
+        </div>
+    </section>
+</template>

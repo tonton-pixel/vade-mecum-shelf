@@ -19,6 +19,8 @@ const selectTimeZoneName = unit.querySelector ('.select-timezonename');
 //
 module.exports.start = function (context)
 {
+    const json = require ('../../lib/json2.js');
+    //
     const defaultPrefs =
     {
         selectLocale: "",
@@ -165,9 +167,9 @@ module.exports.start = function (context)
     {
         clock.lang = currentLocale;
         dateText.textContent = dateString (date);
-        dateText.title = 'new Date ().toLocaleDateString ("' + currentLocale + '", ' + JSON.stringify (dateOptions, undefined, 1).replace (/\s+/g, ' ') + ')';
+        dateText.title = 'new Date ().toLocaleDateString ("' + currentLocale + '", ' + json.stringify (dateOptions) + ')';
         timeText.textContent = timeString (date);
-        timeText.title = 'new Date ().toLocaleTimeString ("' + currentLocale + '", ' + JSON.stringify (timeOptions, undefined, 1).replace (/\s+/g, ' ') + ')';
+        timeText.title = 'new Date ().toLocaleTimeString ("' + currentLocale + '", ' + json.stringify (timeOptions) + ')';
     }
     //
     title.textContent = timeZone;

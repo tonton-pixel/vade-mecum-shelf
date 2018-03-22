@@ -6,13 +6,15 @@
     "smartZoom": false,
     "window":
     {
+        "largerDefaultWidth": 1280,
+        "largerDefaultHeight": 800,
         "defaultWidth": 1080,
-        "defaultHeight": 720,
+        "defaultHeight": 675,
         "minWidth": 720,
-        "minHeight": 480,
+        "minHeight": 450,
         "backgroundColor": "#F5F5F5",
         "titleTemplate": "{unit} | {app}",
-        "delayShow": true
+        "deferredShow": true
     },
     "shortAppName": "Shelf",
     "unitsName": "Titles",

@@ -1,66 +1,31 @@
 //
 const unit = document.getElementById ('json-formatter-unit');
 //
-const samplesButton = unit.querySelector ('.samples-button');
 const clearButton = unit.querySelector ('.clear-button');
+const samplesButton = unit.querySelector ('.samples-button');
 const inputString = unit.querySelector ('.input-string');
-const expandTabs = unit.querySelector ('.expand-tabs');
-const appendLineBreak = unit.querySelector ('.append-line-break');
+const spaceType = unit.querySelector ('.space-type');
+const balancedSpacing = unit.querySelector ('.balanced-spacing');
+const finalLineBreak = unit.querySelector ('.final-line-break');
 const outputString = unit.querySelector ('.output-string');
 //
 module.exports.start = function (context)
 {
+    const pullDownMenus = require ('../../lib/pull-down-menus.js');
+    const json = require ('../../lib/json2.js');
+    //
     const defaultPrefs =
     {
         inputString: "",
-        expandTabs: false,
-        appendLineBreak: false
+        spaceType: "",
+        balancedSpacing: false,
+        finalLineBreak: false
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
-    const json = require ('./json.js');
-    //
-    const { remote, webFrame } = require ('electron');
-    const { getCurrentWebContents, Menu, MenuItem, BrowserWindow } = remote;
-    const contents = getCurrentWebContents ();
-    //
-    const samples = require ('./samples.json');
-    //
-    function pullDownSamplesMenu (button, input)
-    {
-        let pullDownMenu = new Menu ();
-        for (let sample of samples)
-        {
-            let menuItem = new MenuItem
-            (
-                {
-                    label: sample.label.replace (/&/g, "&&"),
-                    click: () =>
-                    {
-                        let sampleString = sample.string;
-                        input.focus ();
-                        contents.selectAll ();
-                        contents.replace (sampleString);
-                    }
-                }
-            );
-            pullDownMenu.append (menuItem);
-        }
-        let factor = webFrame.getZoomFactor ();
-        let targetRect = button.getBoundingClientRect ();
-        let x = (targetRect.left * factor) + ((process.platform === 'darwin') ? 0 : 0);  // !!
-        let y = (targetRect.bottom  * factor) + ((process.platform === 'darwin') ? 4 : 2);  // !!
-        pullDownMenu.popup (Math.round (x), Math.round (y));
-    }
-    //
-    samplesButton.addEventListener
-    (
-        'click',
-        (event) =>
-        {
-            pullDownSamplesMenu (event.target, inputString);
-        }
-    );
+    const { remote } = require ('electron');
+    const { getCurrentWebContents, Menu, MenuItem } = remote;
+    const webContents = getCurrentWebContents ();
     //
     clearButton.addEventListener
     (
@@ -68,8 +33,37 @@ module.exports.start = function (context)
         (event) =>
         {
             inputString.focus ();
-            contents.selectAll ();
-            contents.delete ();
+            webContents.selectAll ();
+            webContents.delete ();
+        }
+    );
+    //
+    const samples = require ('./samples.json');
+    //
+    let samplesMenu = new Menu ();
+    for (let sample of samples)
+    {
+        let menuItem = new MenuItem
+        (
+            {
+                label: sample.label.replace (/&/g, "&&"),
+                click: () =>
+                {
+                    inputString.focus ();
+                    webContents.selectAll ();
+                    webContents.replace (sample.string);
+                }
+            }
+        );
+        samplesMenu.append (menuItem);
+    }
+    //
+    samplesButton.addEventListener
+    (
+        'click',
+        (event) =>
+        {
+            pullDownMenus.popup (event.target.getBoundingClientRect (), samplesMenu);
         }
     );
     //
@@ -81,8 +75,17 @@ module.exports.start = function (context)
         {
             try
             {
-                output = json.stringify (json.parse (input), expandTabs.checked ? 4 : '\t');
-                if (appendLineBreak.checked)
+                let space = undefined;
+                if (spaceType.value === 'spaces')
+                {
+                    space = 4;
+                }
+                else if (spaceType.value === 'tabs')
+                {
+                    space = '\t';
+                }
+                output = (balancedSpacing.checked ? json : JSON).stringify (JSON.parse (input), null, space);
+                if (finalLineBreak.checked)
                 {
                     output += '\n';
                 }
@@ -107,21 +110,34 @@ module.exports.start = function (context)
     reformat (inputString.value = prefs.inputString);
     inputString.addEventListener ('input', (event) => reformat (event.target.value));
     //
-    function changeExpandTabs (checked)
+    function changeSpaceType (value)
     {
         reformat (inputString.value);
     }
     //
-    changeExpandTabs (expandTabs.checked = prefs.expandTabs);
-    expandTabs.addEventListener ('click', (event) => { changeExpandTabs (event.target.checked); });
+    spaceType.value = prefs.spaceType;
+    if (spaceType.selectedIndex < 0) // -1: no element is selected
+    {
+        spaceType.selectedIndex = 0;
+    }
+    changeSpaceType (spaceType.value);
+    spaceType.addEventListener ('input', (event) => { changeSpaceType (event.target.value); });
     //
-    function changeAppendLineBreak (checked)
+    function changeBalancedSpacing (checked)
     {
         reformat (inputString.value);
     }
     //
-    changeAppendLineBreak (appendLineBreak.checked = prefs.appendLineBreak);
-    appendLineBreak.addEventListener ('click', (event) => { changeAppendLineBreak (event.target.checked); });
+    changeBalancedSpacing (balancedSpacing.checked = prefs.balancedSpacing);
+    balancedSpacing.addEventListener ('click', (event) => { changeBalancedSpacing (event.target.checked); });
+    //
+    function changeFinalLineBreak (checked)
+    {
+        reformat (inputString.value);
+    }
+    //
+    changeFinalLineBreak (finalLineBreak.checked = prefs.finalLineBreak);
+    finalLineBreak.addEventListener ('click', (event) => { changeFinalLineBreak (event.target.checked); });
 };
 //
 module.exports.stop = function (context)
@@ -129,8 +145,9 @@ module.exports.stop = function (context)
     let prefs =
     {
         inputString: inputString.value,
-        expandTabs: expandTabs.checked,
-        appendLineBreak: appendLineBreak.checked
+        spaceType: spaceType.value,
+        balancedSpacing: balancedSpacing.checked,
+        finalLineBreak: finalLineBreak.checked
     };
     context.setPrefs (prefs);
 };

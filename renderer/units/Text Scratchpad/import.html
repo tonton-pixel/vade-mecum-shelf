@@ -1,7 +1,22 @@
 <template>
     <section id="text-scratchpad-unit">
         <div class="plain-panel">
-            <label>Text:<textarea class="text-string" rows="30" placeholder="Use this scratchpad to store persistent text data."></textarea></label>
+            <div class="actions">
+                <span class="action-group">
+                    <span class="action">
+                        <button type="button" class="clear-button">Clear</button>
+                    </span>
+                </span>
+                <span class="action-group">
+                    <span class="action">
+                        <button type="button" class="load-button">Load...</button>
+                    </span>
+                    <span class="action">
+                        <button type="button" class="save-button">Save...</button>
+                    </span>
+                </span>
+            </div>
+            <label>Text:<textarea class="text-string" rows="25"></textarea></label>
        </div>
     </section>
 </template>

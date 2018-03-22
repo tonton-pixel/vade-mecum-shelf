@@ -1,5 +1,6 @@
 //
-const { app, BrowserWindow, Menu, dialog, shell, globalShortcut, ipcMain } = require ('electron');
+const electron = require ('electron');
+const { app, BrowserWindow, dialog, globalShortcut, ipcMain, Menu, shell } = electron;
 //
 let mainWindow = null;
 //
@@ -68,6 +69,9 @@ else
         }
     }
     //
+    let defaultWidth;
+    let defaultHeight;
+    //
     function resetWindow ()
     {
         if (mainWindow.isFullScreen ())
@@ -76,12 +80,12 @@ else
         }
         else
         {
-            mainWindow.setSize (settings.window.defaultWidth, settings.window.defaultHeight);
-            mainWindow.center ();
             if (mainWindow.isMaximized ())
             {
                 mainWindow.unmaximize ();
             }
+            mainWindow.setSize (defaultWidth, defaultHeight);
+            mainWindow.center ();
             if (mainWindow.isMinimized ())
             {
                 mainWindow.restore ();
@@ -133,8 +137,8 @@ else
         label: "View",
         submenu:
         [
-            { label: "Toogle Sidebar", accelerator: 'CommandOrControl+S', click: () => { mainWindow.webContents.send ('toggle-sidebar'); } },
-            { label: "Toogle Categories", accelerator: 'CommandOrControl+K', click: () => { mainWindow.webContents.send ('toggle-categories'); } },
+            { label: "Toggle Navigation Sidebar", accelerator: 'CommandOrControl+N', click: () => { mainWindow.webContents.send ('toggle-sidebar'); } },
+            { label: "Toggle Categories", accelerator: 'CommandOrControl+K', click: () => { mainWindow.webContents.send ('toggle-categories'); } },
             { type: 'separator' },
             { label: "Scroll to Top", accelerator: 'CommandOrControl+T', click: () => { mainWindow.webContents.send ('scroll-to-top'); } },
             { label: "Scroll to Bottom", accelerator: 'CommandOrControl+B', click: () => { mainWindow.webContents.send ('scroll-to-bottom'); } },
@@ -183,8 +187,10 @@ else
         submenu:
         [
             { role: 'minimize' },
-            { role: 'close' }
-        ]
+            { role: 'close' },
+            { type: 'separator' },
+            { label: "Reset to Default", accelerator: 'CommandOrControl+D', click: () => { resetWindow (); } }
+         ]
     };
     const darwinHelpMenu =
     {
@@ -222,7 +228,7 @@ else
     menuTemplate.push ((process.platform === 'darwin') ? darwinWindowMenu : windowMenu);
     menuTemplate.push ((process.platform === 'darwin') ? darwinHelpMenu : helpMenu);
     //
-    let menu = null;
+    let menu;
     //
     function updateUnitsMenu (unitNames, currentUnitName)
     {
@@ -279,12 +285,24 @@ else
         const Storage = require ('../lib/storage.js');
         const mainStorage = new Storage ('main-preferences');
         //
+        const { screen } = electron;
+        let workAreaWidth = screen.getPrimaryDisplay ().workArea.width;
+        let workAreaHeight = screen.getPrimaryDisplay ().workArea.height;
+        //
+        defaultWidth = settings.window.largerDefaultWidth;
+        defaultHeight = settings.window.largerDefaultHeight;
+        if ((defaultWidth > workAreaWidth) || (defaultHeight > workAreaHeight))
+        {
+            defaultWidth = settings.window.defaultWidth;
+            defaultHeight = settings.window.defaultHeight;
+        }
+        //
         const defaultPrefs =
         {
             windowBounds:
             {
-                width: settings.window.defaultWidth,
-                height: settings.window.defaultHeight
+                width: defaultWidth,
+                height: defaultHeight
             }
         };
         let prefs = mainStorage.get (defaultPrefs);
@@ -302,7 +320,7 @@ else
                 minWidth: settings.window.minWidth,
                 minHeight: settings.window.minHeight,
                 backgroundColor: settings.window.backgroundColor,
-                show: !settings.window.delayShow
+                show: !settings.window.deferredShow
             }
         );
         //

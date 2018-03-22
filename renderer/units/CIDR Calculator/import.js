@@ -41,6 +41,11 @@ module.exports.start = function (context)
 //
 module.exports.stop = function (context)
 {
-    context.setPrefs ({ cidrInput: cidrInput.value, ipRangeInput: ipRangeInput.value });
+    let prefs =
+    {
+        cidrInput: cidrInput.value,
+        ipRangeInput: ipRangeInput.value
+    };
+    context.setPrefs (prefs);
 };
 //

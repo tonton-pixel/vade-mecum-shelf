@@ -5,7 +5,7 @@
     },
     {
         "label": "JSON Object 2",
-        "string": "{\"First Name\":\"Albert\",\"Last Name\":\"Einstein\",\"Genius\":true,\n\"Known for\":[\n\"Photoelectric effect\",\"Brownian motion\",\"Special relativity\",\"General relativity\"]}"
+        "string": "{\"First Name\":\"Albert\",\"Last Name\":\"Einstein\",\"Genius\":true,\n\"Known for\":[\n\"Photoelectric effect\",\"Brownian motion\",\"Special relativity\",\"General relativity\"]}\n"
     },
     {
         "label": "JSON Array 1",

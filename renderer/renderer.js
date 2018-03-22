@@ -1,14 +1,15 @@
 //
-const { remote, ipcRenderer, shell, webFrame } = require ('electron');
+const { ipcRenderer, remote, shell, webFrame } = require ('electron');
+const { app, getCurrentWebContents, getGlobal } = remote;
 //
 const fs = require ('fs');
 const path = require ('path');
 const url = require ('url');
 //
-const appName = remote.app.getName ();
-const appVersion = remote.app.getVersion ();
+const appName = app.getName ();
+const appVersion = app.getVersion ();
 //
-const settings = remote.getGlobal ('settings');
+const settings = getGlobal ('settings');
 //
 if (!settings.smartZoom)
 {
@@ -156,9 +157,9 @@ let footer = document.createElement ('footer');
 footer.className = 'footer';
 sidebar.appendChild (footer);
 document.body.appendChild (sidebar);
-let contents = document.createElement ('main');
-contents.className = 'contents';
-document.body.appendChild (contents);
+let main = document.createElement ('main');
+main.className = 'main';
+document.body.appendChild (main);
 //
 const Storage = require ('../lib/storage.js');
 const rendererStorage = new Storage ('renderer-preferences');
@@ -406,7 +407,7 @@ function importUnit (template, unitImport)
         section.classList.add ('is-shown');
         document.title = settings.window.titleTemplate.replace ('{app}', appName).replace ('{unit}', unitImport.name);
     }
-    contents.appendChild (section);
+    main.appendChild (section);
     fixSvgUseFromTemplate (section);
     unitElements[unitImport.name].section = section;
     if (unitImport.filename)
@@ -416,7 +417,13 @@ function importUnit (template, unitImport)
         if (id)
         {
             unitImport.storage = new Storage (`${id}-preferences`);
-            let context = { baseURL: unitImport.URL, getPrefs: unitImport.storage.get, setPrefs: unitImport.storage.set };
+            let context =
+            {
+                name: unitImport.name,
+                baseURL: unitImport.URL,
+                getPrefs: unitImport.storage.get,
+                setPrefs: unitImport.storage.set
+            };
             if (typeof unitModule === 'function')
             {
                 unitModule (context);
@@ -471,7 +478,13 @@ window.addEventListener // *Not* document.addEventListener
                 let unitModule = require (unitImport.filename);
                 if (unitImport.storage)
                 {
-                    let context = { baseURL: unitImport.URL, getPrefs: unitImport.storage.get, setPrefs: unitImport.storage.set };
+                    let context =
+                    {
+                        name: unitImport.name,
+                        baseURL: unitImport.URL,
+                        getPrefs: unitImport.storage.get,
+                        setPrefs: unitImport.storage.set
+                    };
                     if (typeof unitModule.stop === 'function')
                     {
                         unitModule.stop (context);
@@ -497,8 +510,8 @@ function addListeners ()
                 'click',
                 (event) =>
                 {
-                    let isCommandOrControlClick = (process.platform === 'darwin') ? event.metaKey : event.ctrlKey;
                     event.preventDefault ();
+                    let isCommandOrControlClick = (process.platform === 'darwin') ? event.metaKey : event.ctrlKey;
                     shell.openExternal (event.target.href, { activate: !isCommandOrControlClick }); // options are macOS only anyway
                 }
             );
@@ -506,7 +519,7 @@ function addListeners ()
     }
 }
 //
-remote.getCurrentWebContents ().once
+getCurrentWebContents ().once
 (
     'did-finish-load', (event) =>
     {
@@ -517,7 +530,7 @@ remote.getCurrentWebContents ().once
             sidebar.classList.add ('is-shown');
         }
         toggleCategories (showCategories);
-        contents.classList.add ('is-shown');
+        main.classList.add ('is-shown');
         if (settings.unitsMenu)
         {
             ipcRenderer.send ('update-units-menu', unitNames, currentUnitName);
@@ -546,4 +559,8 @@ ipcRenderer.on ( 'scroll-to-bottom', () => { scroll.toBottom (unitElements[curre
     };
     bindEvents ();
 }) (document.body);
+//
+// <https://stackoverflow.com/questions/22812303/why-is-my-speech-synthesis-api-voice-changing-when-function-run-more-than-1-time>
+// When you call API for the first time voices don't load for some reason. And default voice loads for the first time.
+window.speechSynthesis.getVoices ();
 //

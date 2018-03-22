@@ -31,6 +31,11 @@ module.exports.start = function (context)
 //
 module.exports.stop = function (context)
 {
-    context.setPrefs ({ romanInput: romanInput.value, arabicInput: arabicInput.value });
+    let prefs =
+    {
+        romanInput: romanInput.value,
+        arabicInput: arabicInput.value
+    };
+    context.setPrefs (prefs);
 };
 //

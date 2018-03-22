@@ -10,7 +10,7 @@ Its *look and feel* is partly inspired by the brilliant [Electron API Demos](htt
 
 - The app window is resizable; its title displays the currently selected utility name next to the app name.
 
-- The visibility of the navigation sidebar can be toggled on and off from the `View` menu, as well as the use of categories.
+- The visibility of the navigation sidebar, as well as the use of categories, can be toggled on and off from the `View` menu.
 
 - It is possible to quickly scroll to the top or to the bottom of the utility from the `View` menu.
 
@@ -32,6 +32,7 @@ The following utilities are currently available:
 * [ISO Language Codes](#iso-language-codes)
 * [ISO Script Codes](#iso-script-codes)
 * [Jabberwocky](#jabberwocky)
+* [JavaScript Runner](#javascript-runner)
 * [JSON Formatter](#json-formatter)
 * [LaTeX Math Renderer](#latex-math-renderer)
 * [List of U.S. States](#list-of-us-states)
@@ -112,6 +113,12 @@ Full list of ISO 15924 script codes, with live search:
 Typographic rendition of Lewis Carroll's nonsense poem "Jabberwocky":
 
 <img src="screenshots/jabberwocky.png" width="1080px" alt="Jabberwocky screenshot">
+
+## JavaScript Runner
+
+JavaScript code runner, useful for quick testing/prototyping or data processing:
+
+<img src="screenshots/javascript-runner.png" width="1080px" alt="JavaScript Runner screenshot">
 
 ## JSON Formatter
 

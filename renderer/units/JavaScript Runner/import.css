@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+#javascript-runner-unit .code-string,
+#javascript-runner-unit .output-string
+{
+    /* display: block; */
+    vertical-align: top;
+    font-family: Monaco, monospace;
+    font-size: 13px;
+    line-height: normal;
+    width: 100%;
+    resize: vertical;
+    padding: 0.25em 0.5em;
+    /* white-space: pre; */
+    tab-size : 4;
+}
+
+#javascript-runner-unit .actions
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+#javascript-runner-unit .action-group
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#javascript-runner-unit .action-group + .action-group,
+#javascript-runner-unit .action + .action
+{
+    margin-left: 0.75em;
+}
+
+#javascript-runner-unit .interface
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 -0.25em 0;
+}
+
+#javascript-runner-unit .option + .option
+{
+    margin-left: 0.5em;
+}
+
+#javascript-runner-unit .output-string
+{
+    margin-bottom: 0.25em;
+}
+
+#javascript-runner-unit .run-error
+{
+    color: var(--color-error);
+}
+
+#javascript-runner-unit .info
+{
+    padding-bottom: 0.25em;
+}
+
+#javascript-runner-unit .info ul
+{
+    margin-top: -0.25em;
+}
+
+#javascript-runner-unit .info li
+{
+    margin: 0.5em 0;
+}
+
+#javascript-runner-unit .info code
+{
+    /* user-select: auto; */
+    color: inherit;
+    background: var(--color-accent) linear-gradient(hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0.8));
+}
+
+#javascript-runner-unit .plain-panel
+{
+    padding-bottom: 1.5em;
+}

@@ -162,6 +162,11 @@ module.exports.start = function (context)
 //
 module.exports.stop = function (context)
 {
-    context.setPrefs ({ setSelector: setSelector.value, liveSearch: liveSearch.value });
+    let prefs =
+    {
+        setSelector: setSelector.value,
+        liveSearch: liveSearch.value
+    };
+    context.setPrefs (prefs);
 };
 //

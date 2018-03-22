@@ -1,7 +1,11 @@
 [
     {
-        "label": "Euler's",
-        "string": "e^{i\\pi} + 1 = 0"
+        "label": "Euler 1",
+        "string": "e^{i\\pi} = -1"
+    },
+    {
+        "label": "Euler 2",
+        "string": "e^{ix} = \\cos x + i \\sin x"
     },
     {
         "label": "Errors 1",
@@ -54,6 +58,10 @@
     {
         "label": "Aligned 2",
         "string": "\\begin{aligned}\nR &= 1 - \\sin \\left( (1 - t) \\times \\frac \\pi 2 \\right) \\\\\nG &= \\frac {1 - \\cos \\left( t \\times \\pi \\right)} 2\n   = \\sin^2 \\left( t \\times \\frac \\pi 2 \\right) \\\\\nB &= \\sin \\left( t \\times \\frac \\pi 2 \\right)\n\\end{aligned}"
+    },
+    {
+        "label": "Aligned 3",
+        "string": "\\begin{aligned}\n  \\nabla \\times \\vec{\\mathbf{B}} -\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{E}}}{\\partial t} & = \\frac{4\\pi}{c}\\vec{\\mathbf{j}} \\\\\n  \\nabla \\cdot \\vec{\\mathbf{E}} & = 4 \\pi \\rho \\\\\n  \\nabla \\times \\vec{\\mathbf{E}}\\, +\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{B}}}{\\partial t} & = \\vec{\\mathbf{0}} \\\\\n  \\nabla \\cdot \\vec{\\mathbf{B}} & = 0\n\\end{aligned}"
     },
     {
         "label": "Formula 1",

@@ -15,6 +15,14 @@ const outputCodePointsData = unit.querySelector ('.output-code-points-data');
 //
 module.exports.start = function (context)
 {
+    const { remote } = require ('electron');
+    const { getCurrentWebContents, Menu, MenuItem } = remote;
+    const webContents = getCurrentWebContents ();
+    //
+    const pullDownMenus = require ('../../lib/pull-down-menus.js');
+    //
+    const unicode = require ('./unicode.js');
+    //
     const defaultPrefs =
     {
         inputCharacters: "",
@@ -22,43 +30,35 @@ module.exports.start = function (context)
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
-    const unicode = require ('./unicode.js');
-    //
-    const { remote, webFrame } = require ('electron');
-    const { getCurrentWebContents, Menu, MenuItem, BrowserWindow } = remote;
-    const contents = getCurrentWebContents ();
+    charactersClear.addEventListener
+    (
+        'click',
+        (event) =>
+        {
+            inputCharacters.focus ();
+            webContents.selectAll ();
+            webContents.delete ();
+        }
+    );
     //
     const samples = require ('./samples.json');
     //
-    function pullDownSamplesMenu (button, input, codePoints)
+    let charactersMenu = new Menu ();
+    for (let sample of samples)
     {
-        let pullDownMenu = new Menu ();
-        for (let sample of samples)
-        {
-            let menuItem = new MenuItem
-            (
+        let menuItem = new MenuItem
+        (
+            {
+                label: sample.label.replace (/&/g, "&&"),
+                click: () =>
                 {
-                    label: sample.label.replace (/&/g, "&&"),
-                    click: () =>
-                    {
-                        let sampleString = sample.string;
-                        if (codePoints)
-                        {
-                            sampleString = unicode.charactersToCodePoints (sampleString);
-                        }
-                        input.focus ();
-                        contents.selectAll ();
-                        contents.replace (sampleString);
-                    }
+                    inputCharacters.focus ();
+                    webContents.selectAll ();
+                    webContents.replace (sample.string);
                 }
-            );
-            pullDownMenu.append (menuItem);
-        }
-        let factor = webFrame.getZoomFactor ();
-        let targetRect = button.getBoundingClientRect ();
-        let x = (targetRect.left * factor) + ((process.platform === 'darwin') ? 0 : 0);  // !!
-        let y = (targetRect.bottom  * factor) + ((process.platform === 'darwin') ? 4 : 2);  // !!
-        pullDownMenu.popup (Math.round (x), Math.round (y));
+            }
+        );
+        charactersMenu.append (menuItem);
     }
     //
     charactersSamples.addEventListener
@@ -66,18 +66,7 @@ module.exports.start = function (context)
         'click',
         (event) =>
         {
-            pullDownSamplesMenu (event.target, inputCharacters, false);
-        }
-    );
-    //
-    charactersClear.addEventListener
-    (
-        'click',
-        (event) =>
-        {
-            inputCharacters.focus ();
-            contents.selectAll ();
-            contents.delete ();
+            pullDownMenus.popup (event.target.getBoundingClientRect (), charactersMenu);
         }
     );
     //
@@ -198,23 +187,41 @@ module.exports.start = function (context)
     );
     inputCharacters.value = prefs.inputCharacters; inputCharacters.dispatchEvent (new Event ('input'));
     //
-    codePointsSamples.addEventListener
-    (
-        'click',
-        (event) =>
-        {
-            pullDownSamplesMenu (event.target, inputCodePoints, true);
-        }
-    );
-    //
     codePointsClear.addEventListener
     (
         'click',
         (event) =>
         {
             inputCodePoints.focus ();
-            contents.selectAll ();
-            contents.delete ();
+            webContents.selectAll ();
+            webContents.delete ();
+        }
+    );
+    //
+    let codePointsMenu = new Menu ();
+    for (let sample of samples)
+    {
+        let menuItem = new MenuItem
+        (
+            {
+                label: sample.label.replace (/&/g, "&&"),
+                click: () =>
+                {
+                    inputCodePoints.focus ();
+                    webContents.selectAll ();
+                    webContents.replace (unicode.charactersToCodePoints (sample.string));
+                }
+            }
+        );
+        codePointsMenu.append (menuItem);
+    }
+    //
+    codePointsSamples.addEventListener
+    (
+        'click',
+        (event) =>
+        {
+            pullDownMenus.popup (event.target.getBoundingClientRect (), codePointsMenu);
         }
     );
     //

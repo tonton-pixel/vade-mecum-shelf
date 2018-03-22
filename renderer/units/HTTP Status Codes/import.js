@@ -93,6 +93,10 @@ module.exports.start = function (context)
 //
 module.exports.stop = function (context)
 {
-    context.setPrefs ({ selectLocale: selectLocale.value });
+    let prefs =
+    {
+        selectLocale: selectLocale.value
+    };
+    context.setPrefs (prefs);
 };
 //

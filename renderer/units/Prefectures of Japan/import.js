@@ -59,6 +59,10 @@ module.exports.start = function (context)
 //
 module.exports.stop = function (context)
 {
-    context.setPrefs ({ liveSearch: liveSearch.value });
+    let prefs =
+    {
+        liveSearch: liveSearch.value
+    };
+    context.setPrefs (prefs);
 };
 //

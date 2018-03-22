@@ -1,68 +1,41 @@
 //
 const unit = document.getElementById ('latex-math-renderer-unit');
 //
-const samplesButton = unit.querySelector ('.samples-button');
 const clearButton = unit.querySelector ('.clear-button');
+const samplesButton = unit.querySelector ('.samples-button');
+const loadButton = unit.querySelector ('.load-button');
+const saveButton = unit.querySelector ('.save-button');
 const latexFormula = unit.querySelector ('.latex-formula');
 const displayMode = unit.querySelector ('.display-mode');
 const textColor = unit.querySelector ('.text-color');
 const throwOnError = unit.querySelector ('.throw-on-error');
 const latexContainer = unit.querySelector ('.latex-container');
 //
+let defaultFolderPath;
+//
 module.exports.start = function (context)
 {
+    const { remote } = require ('electron');
+    const { app, getCurrentWebContents, Menu, MenuItem } = remote;
+    const webContents = getCurrentWebContents ();
+    //
+    const path = require ('path');
+    //
+    const fileDialogs = require ('../../lib/file-dialogs.js');
+    //
+    const pullDownMenus = require ('../../lib/pull-down-menus.js');
+    //
+    const katex = require ('../../lib/katex/katex.min.js');
+    //
     const defaultPrefs =
     {
         latexFormula: "",
         displayMode: true,
         textColor: false,
-        throwOnError: false
+        throwOnError: false,
+        defaultFolderPath: app.getPath ('documents')  // 'desktop'
     };
     let prefs = context.getPrefs (defaultPrefs);
-    //
-    const katex = require ('../../lib/katex/katex.min.js');
-    //
-    const { remote, webFrame } = require ('electron');
-    const { getCurrentWebContents, Menu, MenuItem, BrowserWindow } = remote;
-    const contents = getCurrentWebContents ();
-    //
-    const samples = require ('./samples.json');
-    //
-    function pullDownSamplesMenu (button, input)
-    {
-        let pullDownMenu = new Menu ();
-        for (let sample of samples)
-        {
-            let menuItem = new MenuItem
-            (
-                {
-                    label: sample.label.replace (/&/g, "&&"),
-                    click: () =>
-                    {
-                        let sampleString = sample.string;
-                        input.focus ();
-                        contents.selectAll ();
-                        contents.replace (sampleString);
-                    }
-                }
-            );
-            pullDownMenu.append (menuItem);
-        }
-        let factor = webFrame.getZoomFactor ();
-        let targetRect = button.getBoundingClientRect ();
-        let x = (targetRect.left * factor) + ((process.platform === 'darwin') ? 0 : 0);  // !!
-        let y = (targetRect.bottom  * factor) + ((process.platform === 'darwin') ? 4 : 2);  // !!
-        pullDownMenu.popup (Math.round (x), Math.round (y));
-    }
-    //
-    samplesButton.addEventListener
-    (
-        'click',
-        (event) =>
-        {
-            pullDownSamplesMenu (event.target, latexFormula);
-        }
-    );
     //
     clearButton.addEventListener
     (
@@ -70,8 +43,79 @@ module.exports.start = function (context)
         (event) =>
         {
             latexFormula.focus ();
-            contents.selectAll ();
-            contents.delete ();
+            webContents.selectAll ();
+            webContents.delete ();
+        }
+    );
+    //
+    const samples = require ('./samples.json');
+    //
+    let samplesMenu = new Menu ();
+    for (let sample of samples)
+    {
+        let menuItem = new MenuItem
+        (
+            {
+                label: sample.label.replace (/&/g, "&&"),
+                click: () =>
+                {
+                    latexFormula.focus ();
+                    webContents.selectAll ();
+                    webContents.replace (sample.string);
+                }
+            }
+        );
+        samplesMenu.append (menuItem);
+    }
+    //
+    samplesButton.addEventListener
+    (
+        'click',
+        (event) =>
+        {
+            pullDownMenus.popup (event.target.getBoundingClientRect (), samplesMenu);
+        }
+    );
+    //
+    defaultFolderPath = prefs.defaultFolderPath;
+    //
+    loadButton.addEventListener
+    (
+        'click',
+        (event) =>
+        {
+            fileDialogs.loadTextFile
+            (
+                "Load LaTeX file:",
+                [ { name: "LaTeX (*.tex)", extensions: [ 'tex' ] } ],
+                defaultFolderPath,
+                (text, filePath) =>
+                {
+                    latexFormula.focus ();
+                    webContents.selectAll ();
+                    webContents.replace (text);
+                    defaultFolderPath = path.dirname (filePath);
+                }
+            );
+        }
+    );
+    //
+    saveButton.addEventListener
+    (
+        'click',
+        (event) =>
+        {
+            fileDialogs.saveTextFile
+            (
+                "Save LaTeX file:",
+                [ { name: 'LaTeX (*.tex)', extensions: [ 'tex' ] } ],
+                defaultFolderPath,
+                (filePath) =>
+                {
+                    defaultFolderPath = path.dirname (filePath);
+                    return latexFormula.value;
+                }
+            );
         }
     );
     //
@@ -136,7 +180,8 @@ module.exports.stop = function (context)
         latexFormula: latexFormula.value,
         displayMode: displayMode.checked,
         textColor: textColor.checked,
-        throwOnError: throwOnError.checked
+        throwOnError: throwOnError.checked,
+        defaultFolderPath: defaultFolderPath
     };
     context.setPrefs (prefs);
 };

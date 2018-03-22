@@ -47,7 +47,7 @@ html
 {
     box-sizing: border-box;
 }
-*, *:before, *:after
+*, *::before, *::after
 {
     box-sizing: inherit;
 }
@@ -318,7 +318,7 @@ kbd
     text-align: center;
 }
 
-.contents
+.main
 {
     flex: 1;
     position: relative;
@@ -330,7 +330,7 @@ kbd
     opacity: 0;
 }
 
-.contents.is-shown
+.main.is-shown
 {
     pointer-events: auto;
     visibility: visible;
@@ -495,7 +495,6 @@ button.pull-down-menu,
 button.pull-down-menu:hover,
 button.pull-down-menu:active
 {
-    vertical-align: middle;
     text-align: center;
     font-size: 1em;
     font-weight: normal;
