@@ -1,5 +1,151 @@
 [
     {
+        "category": "Framework",
+        "items":
+        [
+            {
+                "name": "Platform",
+                "value": "require ('electron').remote.process.platform"
+            },
+            {
+                "name": "Architecture",
+                "value": "require ('electron').remote.process.arch"
+            },
+            {
+                "name": "Default App",
+                "value": "require ('electron').remote.process.defaultApp || false"
+            },
+            {
+                "name": "Mac App Store App",
+                "value": "require ('electron').remote.process.mas || false"
+            },
+            {
+                "name": "Windows Store App",
+                "value": "require ('electron').remote.process.windowsStore || false"
+            },
+            {
+                "name": "Version String",
+                "value": "require ('electron').remote.process.version"
+            },
+            {
+                "name": "Electron Version",
+                "value": "require ('electron').remote.process.versions.electron"
+            },
+            {
+                "name": "Node Version",
+                "value": "require ('electron').remote.process.versions.node"
+            },
+            {
+                "name": "Chromium Version",
+                "value": "require ('electron').remote.process.versions.chrome"
+            },
+            {
+                "name": "V8 Version",
+                "value": "require ('electron').remote.process.versions.v8"
+            },
+            {
+                "name": "All Versions",
+                "value": "require ('electron').remote.process.versions"
+            },
+            {
+                "name": "Features",
+                "value": "require ('electron').remote.process.features"
+            },
+            {
+                "name": "Release",
+                "value": "require ('electron').remote.process.release"
+            },
+            {
+                "name": "Resources Directory",
+                "value": "require ('electron').remote.process.resourcesPath"
+            }
+        ]
+    },
+    {
+        "category": "Main Process",
+        "items":
+        [
+            {
+                "name": "Process Type",
+                "value": "require ('electron').remote.process.type"
+            },
+            {
+                "name": "Process ID",
+                "value": "require ('electron').remote.process.pid"
+            },
+            {
+                "name": "Process Uptime (Sec.)",
+                "value": "require ('electron').remote.process.uptime ()"
+            },
+            {
+                "name": "Process Memory",
+                "value": "require ('electron').remote.process.getProcessMemoryInfo ()"
+            },
+            {
+                "name": "System Memory",
+                "value": "require ('electron').remote.process.getSystemMemoryInfo ()"
+            },
+            {
+                "name": "Memory Usage",
+                "value": "require ('electron').remote.process.memoryUsage ()"
+            },
+            {
+                "name": "Command Line Arguments",
+                "value": "require ('electron').remote.process.argv"
+            },
+            {
+                "name": "Original Argument [0]",
+                "value": "require ('electron').remote.process.argv0"
+            },
+            {
+                "name": "Executable File",
+                "value": "require ('electron').remote.process.execPath"
+            }
+        ]
+    },
+    {
+        "category": "Renderer Process",
+        "items":
+        [
+            {
+                "name": "Process Type",
+                "value": "process.type"
+            },
+            {
+                "name": "Process ID",
+                "value": "process.pid"
+            },
+            {
+                "name": "Process Uptime (Sec.)",
+                "value": "process.uptime ()"
+            },
+            {
+                "name": "Process Memory",
+                "value": "process.getProcessMemoryInfo ()"
+            },
+            {
+                "name": "System Memory",
+                "value": "process.getSystemMemoryInfo ()"
+            },
+            {
+                "name": "Memory Usage",
+                "value": "process.memoryUsage ()"
+            },
+            {
+                "name": "Command Line Arguments",
+                "value": "process.argv"
+            },
+            {
+                "name": "Original Argument [0]",
+                "value": "process.argv0"
+            },
+            {
+                "name": "Executable File",
+                "value": "process.execPath"
+            }
+        ]
+    },
+    {
         "category": "Application",
         "items":
         [
@@ -184,7 +330,7 @@
                 "value": "JSON.stringify (require ('os').EOL).slice (1, -1)"
             },
             {
-                "name": "System Uptime",
+                "name": "System Uptime (Sec.)",
                 "value": "require ('os').uptime ()"
             },
             {
@@ -220,140 +366,6 @@
             {
                 "name": "Shell",
                 "value": "require ('os').userInfo ().shell"
-            }
-        ]
-    },
-    {
-        "category": "Process",
-        "items":
-        [
-            {
-                "name": "Default App",
-                "value": "require ('electron').remote.process.defaultApp || false"
-            },
-            {
-                "name": "Version",
-                "value": "require ('electron').remote.process.version"
-            },
-            {
-                "name": "Node Version",
-                "value": "require ('electron').remote.process.versions.node"
-            },
-            {
-                "name": "Chromium Version",
-                "value": "require ('electron').remote.process.versions.chrome"
-            },
-            {
-                "name": "V8 Version",
-                "value": "require ('electron').remote.process.versions.v8"
-            },
-            {
-                "name": "Electron Version",
-                "value": "require ('electron').remote.process.versions.electron"
-            },
-            {
-                "name": "Versions",
-                "value": "require ('electron').remote.process.versions"
-            },
-            {
-                "name": "System Platform",
-                "value": "require ('electron').remote.process.platform"
-            },
-            {
-                "name": "System Architecture",
-                "value": "require ('electron').remote.process.arch"
-            },
-            {
-                "name": "Features",
-                "value": "require ('electron').remote.process.features"
-            },
-            {
-                "name": "Release",
-                "value": "require ('electron').remote.process.release"
-            },
-            {
-                "name": "Resources Directory",
-                "value": "require ('electron').remote.process.resourcesPath"
-            },
-            {
-                "name": "Helper Executable File",
-                "value": "require ('electron').remote.process.helperExecPath"
-            }
-        ]
-    },
-    {
-        "category": "Main Process",
-        "items":
-        [
-            {
-                "name": "Process Type",
-                "value": "require ('electron').remote.process.type"
-            },
-            {
-                "name": "Process ID",
-                "value": "require ('electron').remote.process.pid"
-            },
-            {
-                "name": "Process Memory",
-                "value": "require ('electron').remote.process.getProcessMemoryInfo ()"
-            },
-            {
-                "name": "System Memory",
-                "value": "require ('electron').remote.process.getSystemMemoryInfo ()"
-            },
-            {
-                "name": "Memory Usage",
-                "value": "require ('electron').remote.process.memoryUsage ()"
-            },
-            {
-                "name": "Command Line Arguments",
-                "value": "require ('electron').remote.process.argv"
-            },
-            {
-                "name": "Original Argument [0]",
-                "value": "require ('electron').remote.process.argv0"
-            },
-            {
-                "name": "Executable File",
-                "value": "require ('electron').remote.process.execPath"
-            }
-        ]
-    },
-    {
-        "category": "Renderer Process",
-        "items":
-        [
-            {
-                "name": "Process Type",
-                "value": "process.type"
-            },
-            {
-                "name": "Process ID",
-                "value": "process.pid"
-            },
-            {
-                "name": "Process Memory",
-                "value": "process.getProcessMemoryInfo ()"
-            },
-            {
-                "name": "System Memory",
-                "value": "process.getSystemMemoryInfo ()"
-            },
-            {
-                "name": "Memory Usage",
-                "value": "process.memoryUsage ()"
-            },
-            {
-                "name": "Command Line Arguments",
-                "value": "process.argv"
-            },
-            {
-                "name": "Original Argument [0]",
-                "value": "process.argv0"
-            },
-            {
-                "name": "Executable File",
-                "value": "process.execPath"
             }
         ]
     },

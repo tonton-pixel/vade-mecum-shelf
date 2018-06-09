@@ -5,12 +5,14 @@ const unit = document.getElementById (unitId);
 //
 const codesContainer = unit.querySelector ('.codes-container');
 const selectLocale = unit.querySelector ('.select-locale');
+const references = unit.querySelector ('.references');
 //
 module.exports.start = function (context)
 {
     const defaultPrefs =
     {
-        selectLocale: ""
+        selectLocale: "",
+        references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
@@ -89,13 +91,16 @@ module.exports.start = function (context)
     let currentLocale = selectLocale.value;
     style.textContent = getLocalesCSS (selectLocale, currentLocale);
     selectLocale.addEventListener ('input', (event) => { style.textContent = getLocalesCSS (selectLocale, event.target.value); });
+    //
+    references.open = prefs.references;
 };
 //
 module.exports.stop = function (context)
 {
     let prefs =
     {
-        selectLocale: selectLocale.value
+        selectLocale: selectLocale.value,
+        references: references.open
     };
     context.setPrefs (prefs);
 };

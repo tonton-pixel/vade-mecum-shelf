@@ -2,9 +2,16 @@
 const unit = document.getElementById ('trigonometric-formulas-unit');
 //
 const container = unit.querySelector ('.formulas-container');
+const references = unit.querySelector ('.references');
 //
 module.exports.start = function (context)
 {
+    const defaultPrefs =
+    {
+        references: false
+    };
+    let prefs = context.getPrefs (defaultPrefs);
+    //
     const katex = require ('../../lib/katex/katex.min.js');
     //
     const formulas = require ('./formulas.json');
@@ -37,9 +44,16 @@ module.exports.start = function (context)
         panel.appendChild (sheet);
         container.appendChild (panel);
     }
+    //
+    references.open = prefs.references;
 };
 //
 module.exports.stop = function (context)
 {
+    let prefs =
+    {
+        references: references.open
+    };
+    context.setPrefs (prefs);
 };
 //

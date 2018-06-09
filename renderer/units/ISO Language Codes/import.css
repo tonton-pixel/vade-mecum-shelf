@@ -48,30 +48,31 @@
 {
     padding: 0.1em 0.5em;
     text-align: left;
-}
-
-#iso-language-codes-unit th.code
-{
-    width: 3em;
-}
-
-#iso-language-codes-unit td.code
-{
-    font-family: Monaco, monospace;
-    width: 3em;
-}
-
-#iso-language-codes-unit th.language,
-#iso-language-codes-unit td.language
-{
     max-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
+#iso-language-codes-unit td.code,
+#iso-language-codes-unit th.code
+{
+    width: 5.5em;
+}
+
+#iso-language-codes-unit td.code
+{
+    font-family: Monaco, monospace;
+}
+
 #iso-language-codes-unit td.message
 {
     text-align: center;
     font-style: italic;
+}
+
+#iso-language-codes-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
 }

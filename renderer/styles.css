@@ -10,7 +10,7 @@
     --color-accent: hsl(195, 60%, 37%);
     --color-hover:  hsl(270, 100%, 50%);
     --color-error:  hsl(0, 100%, 40%);
-    --sidebar-width: 272px;
+    --sidebar-width: 256px;
     --sidebar-duration: calc(1s/10);
 }
 
@@ -406,6 +406,11 @@ kbd
     margin-top: 0;
 }
 
+.plain-panel h2
+{
+    margin: 0 0 0.5em 0;
+}
+
 .accent-panel
 {
     font-size: 13px;
@@ -415,11 +420,6 @@ kbd
     border-radius: 6px;
     background: var(--color-accent) linear-gradient(hsla(0, 0%, 100%, 0.9), hsla(0, 0%, 100%, 0.9));
     overflow-x: auto;
-}
-
-.accent-panel h2
-{
-    margin: 0 0 0.5rem 0;
 }
 
 .accent-panel strong
@@ -437,7 +437,8 @@ input[type=button].mouse-focus,
 input[type=checkbox].mouse-focus,
 input[type=color].mouse-focus,
 input[type=radio].mouse-focus,
-select.mouse-focus
+select.mouse-focus,
+summary.mouse-focus
 {
     outline: none;
 }
@@ -473,7 +474,6 @@ input[type=button]:active
 
 select
 {
-    text-align: center;
     font-size: 1em;
     background: white;
     border: 1px solid var(--color-subtle);

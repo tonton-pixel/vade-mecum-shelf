@@ -5,10 +5,10 @@
 {
     font-family: Monaco, monospace;
     font-size: 13px;
-    line-height: normal;
+    line-height: 1.333em;
     width: 100%;
     resize: vertical;
-    padding: 0.25em 0.5em;
+    padding: 0 0.5em;
     white-space: pre;
     tab-size : 4;
 }
@@ -28,11 +28,6 @@
     margin-left: 0.75em;
 }
 
-#json-formatter-unit .dummy
-{
-    padding: 0 4.7em;
-}
-
 #json-formatter-unit .options
 {
     padding: 0.5em 0 0.75em 0;
@@ -45,7 +40,7 @@
 
 #json-formatter-unit .option + .option
 {
-    margin-left: 0.5em;
+    margin-left: 0.75em;
 }
 
 #json-formatter-unit .output-string
@@ -53,7 +48,13 @@
     margin-bottom: 0.25em;
 }
 
-#json-formatter-unit .rendering-error
+#json-formatter-unit .output-error
 {
     color: var(--color-error);
+}
+
+#json-formatter-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
 }

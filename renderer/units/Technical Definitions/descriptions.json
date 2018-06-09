@@ -1,0 +1,584 @@
+[
+    {
+        "category": "Computing Abbreviations",
+        "items":
+        [
+            {
+                "term": "ADSL",
+                "details": "Asymmetric Digital Subscriber Line"
+            },
+            {
+                "term": "ANSI",
+                "details": "American National Standards Institute"
+            },
+            {
+                "term": "AST",
+                "details": "Abstract Syntax Tree"
+            },
+            {
+                "term": "BCP",
+                "details": "Best Current Practice"
+            },
+            {
+                "term": "CC",
+                "details": "Creative Commons"
+            },
+            {
+                "term": "CIDR",
+                "details": "Classless Inter-Domain Routing"
+            },
+            {
+                "term": "CLI",
+                "details": "Command Line Interface<br>Command Line Interpreter"
+            },
+            {
+                "term": "CPU",
+                "details": "Central Processing Unit"
+            },
+            {
+                "term": "CRC",
+                "details": "Cyclical Redundancy Check"
+            },
+            {
+                "term": "CSS",
+                "details": "Cascading Style Sheets"
+            },
+            {
+                "term": "CSV",
+                "details": "Comma-Separated Values"
+            },
+            {
+                "term": "DHCP",
+                "details": "Dynamic Host Configuration Protocol"
+            },
+            {
+                "term": "DNS",
+                "details": "Domain Name System"
+            },
+            {
+                "term": "DPI",
+                "details": "Dots Per Inch"
+            },
+            {
+                "term": "DSL",
+                "details": "Digital Subscriber Line"
+            },
+            {
+                "term": "ECMA",
+                "details": "European Computer Manufacturers Association"
+            },
+            {
+                "term": "EPS",
+                "details": "Encapsulated PostScript"
+            },
+            {
+                "term": "FAQ",
+                "details": "Frequently Asked Questions"
+            },
+            {
+                "term": "FIFO",
+                "details": "First In, First Out"
+            },
+            {
+                "term": "FPU",
+                "details": "Floating Point Unit"
+            },
+            {
+                "term": "FSF",
+                "details": "Free Software Foundation"
+            },
+            {
+                "term": "FTP",
+                "details": "File Transfer Protocol"
+            },
+            {
+                "term": "GIF",
+                "details": "Graphics Interchange Format"
+            },
+            {
+                "term": "GIGO",
+                "details": "Garbage In, Garbage Out"
+            },
+            {
+                "term": "GNU",
+                "details": "GNU's Not Unix!"
+            },
+            {
+                "term": "GPU",
+                "details": "Graphics Processing Unit"
+            },
+            {
+                "term": "GUI",
+                "details": "Graphical User Interface"
+            },
+            {
+                "term": "HTML",
+                "details": "HyperText Markup Language"
+            },
+            {
+                "term": "HTTP",
+                "details": "HyperText Transfer Protocol"
+            },
+            {
+                "term": "HTTPS",
+                "details": "HyperText Transfer Protocol Secure"
+            },
+            {
+                "term": "IANA",
+                "details": "Internet Assigned Number Authority"
+            },
+            {
+                "term": "ICANN",
+                "details": "Internet Corporation for Assigned Names and Numbers"
+            },
+            {
+                "term": "IEEE",
+                "details": "Institute for Electrical and Electronic Engineers"
+            },
+            {
+                "term": "IETF",
+                "details": "Internet Engineering Task Force"
+            },
+            {
+                "term": "IIFE",
+                "details": "Immediately Invoked Function Expresssion"
+            },
+            {
+                "term": "IMAP",
+                "details": "Internet Message Access Protocol"
+            },
+            {
+                "term": "IP",
+                "details": "Internet Protocol"
+            },
+            {
+                "term": "ISO",
+                "details": "International Organization for Standardization"
+            },
+            {
+                "term": "ISP",
+                "details": "Internet Service Provider"
+            },
+            {
+                "term": "IT",
+                "details": "Information Technology"
+            },
+            {
+                "term": "JPEG",
+                "details": "Joint Photographic Experts Group"
+            },
+            {
+                "term": "JSON",
+                "details": "JavaScript Object Notation"
+            },
+            {
+                "term": "LAN",
+                "details": "Local Area Network"
+            },
+            {
+                "term": "LDAP",
+                "details": "Lightweight Directory Access Protocol"
+            },
+            {
+                "term": "LIFO",
+                "details": "Last In, First Out"
+            },
+            {
+                "term": "MAC",
+                "details": "Media Access Control"
+            },
+            {
+                "term": "MDN",
+                "details": "Mozilla Developer Network"
+            },
+            {
+                "term": "MIDI",
+                "details": "Musical Instrument Digital Interface"
+            },
+            {
+                "term": "MIME",
+                "details": "Multipurpose Internet Mail Extensions"
+            },
+            {
+                "term": "MPEG",
+                "details": "Motion Picture Experts Group"
+            },
+            {
+                "term": "NAT",
+                "details": "Network Address Translation"
+            },
+            {
+                "term": "NNTP",
+                "details": "Network News Transfer Protocol"
+            },
+            {
+                "term": "NTP",
+                "details": "Network Time Protocol"
+            },
+            {
+                "term": "OCR",
+                "details": "Optical Character Recognition<br>Optical Character Reader"
+            },
+            {
+                "term": "OS",
+                "details": "Operating System"
+            },
+            {
+                "term": "OSI",
+                "details": "Open Source Initiative"
+            },
+            {
+                "term": "PDF",
+                "details": "Portable Document Format"
+            },
+            {
+                "term": "PNG",
+                "details": "Portable Network Graphics"
+            },
+            {
+                "term": "POP",
+                "details": "Post Office Protocol"
+            },
+            {
+                "term": "PPI",
+                "details": "Pixels Per Inch"
+            },
+            {
+                "term": "PPP",
+                "details": "Point-to-Point Protocol"
+            },
+            {
+                "term": "RAM",
+                "details": "Random Access Memory"
+            },
+            {
+                "term": "RFC",
+                "details": "Request For Comments"
+            },
+            {
+                "term": "ROM",
+                "details": "Read-Only Memory"
+            },
+            {
+                "term": "RSS",
+                "details": "Rich Site Summary<br>Really Simple Syndication"
+            },
+            {
+                "term": "RTF",
+                "details": "Rich Text Fomat"
+            },
+            {
+                "term": "SEO",
+                "details": "Search Engine Optimization"
+            },
+            {
+                "term": "SGML",
+                "details": "Standard Generalized Markup Language"
+            },
+            {
+                "term": "SMTP",
+                "details": "Simple Mail Transfer Protocol"
+            },
+            {
+                "term": "SNMP",
+                "details": "Simple Network Management Protocol"
+            },
+            {
+                "term": "SQL",
+                "details": "Structured Query Language"
+            },
+            {
+                "term": "SSH",
+                "details": "Secure Shell"
+            },
+            {
+                "term": "SSL",
+                "details": "Secure Sockets Layer"
+            },
+            {
+                "term": "SVG",
+                "details": "Scalable Vector Graphics"
+            },
+            {
+                "term": "TCP",
+                "details": "Transmission Control Protocol"
+            },
+            {
+                "term": "TIFF",
+                "details": "Tagged Image File Format"
+            },
+            {
+                "term": "TLS",
+                "details": "Transport Layer Security"
+            },
+            {
+                "term": "UDP",
+                "details": "User Datagram Protocol"
+            },
+            {
+                "term": "URI",
+                "details": "Uniform Resource Identifier"
+            },
+            {
+                "term": "URL",
+                "details": "Uniform Resource Locator"
+            },
+            {
+                "term": "URN",
+                "details": "Uniform Resource Name"
+            },
+            {
+                "term": "USB",
+                "details": "Universal Serial Bus"
+            },
+            {
+                "term": "VLAN",
+                "details": "Virtual Local Area Network"
+            },
+            {
+                "term": "VPN",
+                "details": "Virtual Private Network"
+            },
+            {
+                "term": "W3C",
+                "details": "World Wide Web Consortium"
+            },
+            {
+                "term": "WAN",
+                "details": "Wide-Area Network"
+            },
+            {
+                "term": "WAP",
+                "details": "Wireless Application Protocol"
+            },
+            {
+                "term": "WEP",
+                "details": "Wired Equivalent Privacy"
+            },
+            {
+                "term": "WHATWG",
+                "details": "Web Hypertext Application Technology Working Group"
+            },
+            {
+                "term": "WPA",
+                "details": "Wi-Fi Protected Access"
+            },
+            {
+                "term": "WWW",
+                "details": "World Wide Web"
+            },
+            {
+                "term": "WYSIWYG",
+                "details": "What You See Is What You Get"
+            },
+            {
+                "term": "XHTML",
+                "details": "Extensible Hypertext Markup Language"
+            },
+            {
+                "term": "XML",
+                "details": "Extensible Markup Language"
+            },
+            {
+                "term": "XSLT",
+                "details": "Extensible Stylesheet Language Transformation"
+            }
+        ]
+    },
+    {
+        "category": "Mac OS Release Names",
+        "items":
+        [
+            {
+                "term": "10.0",
+                "details": "Cheetah"
+            },
+            {
+                "term": "10.1",
+                "details": "Puma"
+            },
+            {
+                "term": "10.2",
+                "details": "Jaguar"
+            },
+            {
+                "term": "10.3",
+                "details": "Panther"
+            },
+            {
+                "term": "10.4",
+                "details": "Tiger"
+            },
+            {
+                "term": "10.5",
+                "details": "Leopard"
+            },
+            {
+                "term": "10.6",
+                "details": "Snow Leopard"
+            },
+            {
+                "term": "10.7",
+                "details": "Lion"
+            },
+            {
+                "term": "10.8",
+                "details": "Mountain Lion"
+            },
+            {
+                "term": "10.9",
+                "details": "Mavericks"
+            },
+            {
+                "term": "10.10",
+                "details": "Yosemite"
+            },
+            {
+                "term": "10.11",
+                "details": "El Capitan"
+            },
+            {
+                "term": "10.12",
+                "details": "Sierra"
+            },
+            {
+                "term": "10.13",
+                "details": "High Sierra"
+            },
+            {
+                "term": "10.14",
+                "details": "Mojave"
+            }
+        ]
+    },
+    {
+        "category": "Metric Prefixes | Fractions",
+        "items":
+        [
+            {
+                "term": "deci-",
+                "details": "10<sup>-1</sup> (0.1)"
+            },
+            {
+                "term": "centi-",
+                "details": "10<sup>-2</sup> (0.01)"
+            },
+            {
+                "term": "milli-",
+                "details": "10<sup>-3</sup> (0.001)"
+            },
+            {
+                "term": "micro-",
+                "details": "10<sup>-6</sup> (0.000,001)"
+            },
+            {
+                "term": "nano-",
+                "details": "10<sup>-9</sup> (0.000,000,001)"
+            },
+            {
+                "term": "pico-",
+                "details": "10<sup>-12</sup> (0.000,000,000,001)"
+            },
+            {
+                "term": "femto-",
+                "details": "10<sup>-15</sup> (0.000,000,000,000,001)"
+            },
+            {
+                "term": "atto-",
+                "details": "10<sup>-18</sup> (0.000,000,000,000,000,001)"
+            },
+            {
+                "term": "zepto-",
+                "details": "10<sup>-21</sup> (0.000,000,000,000,000,000,001)"
+            },
+            {
+                "term": "yocto-",
+                "details": "10<sup>-24</sup> (0.000,000,000,000,000,000,000,001)"
+            }
+        ]
+    },
+    {
+        "category": "Metric Prefixes | Multiples",
+        "items":
+        [
+            {
+                "term": "deca-",
+                "details": "10<sup>1</sup> (10)"
+            },
+            {
+                "term": "hecto-",
+                "details": "10<sup>2</sup> (100)"
+            },
+            {
+                "term": "kilo-",
+                "details": "10<sup>3</sup> (1,000)"
+            },
+            {
+                "term": "mega-",
+                "details": "10<sup>6</sup> (1,000,000)"
+            },
+            {
+                "term": "giga-",
+                "details": "10<sup>9</sup> (1,000,000,000)"
+            },
+            {
+                "term": "tera-",
+                "details": "10<sup>12</sup> (1,000,000,000,000)"
+            },
+            {
+                "term": "peta-",
+                "details": "10<sup>15</sup> (1,000,000,000,000,000)"
+            },
+            {
+                "term": "exa-",
+                "details": "10<sup>18</sup> (1,000,000,000,000,000,000)"
+            },
+            {
+                "term": "zetta-",
+                "details": "10<sup>21</sup> (1,000,000,000,000,000,000,000)"
+            },
+            {
+                "term": "yotta-",
+                "details": "10<sup>24</sup> (1,000,000,000,000,000,000,000,000)"
+            }
+        ]
+    },
+    {
+        "category": "Binary Prefixes",
+        "items":
+        [
+            {
+                "term": "kilo-",
+                "details": "2<sup>10</sup> (1024<sup>1</sup>)"
+            },
+            {
+                "term": "mega-",
+                "details": "2<sup>20</sup> (1024<sup>2</sup>)"
+            },
+            {
+                "term": "giga-",
+                "details": "2<sup>30</sup> (1024<sup>3</sup>)"
+            },
+            {
+                "term": "tera-",
+                "details": "2<sup>40</sup> (1024<sup>4</sup>)"
+            },
+            {
+                "term": "peta-",
+                "details": "2<sup>50</sup> (1024<sup>5</sup>)"
+            },
+            {
+                "term": "exa-",
+                "details": "2<sup>60</sup> (1024<sup>6</sup>)"
+            },
+            {
+                "term": "zetta-",
+                "details": "2<sup>70</sup> (1024<sup>7</sup>)"
+            },
+            {
+                "term": "yotta-",
+                "details": "2<sup>80</sup> (1024<sup>8</sup>)"
+            }
+        ]
+    }
+]

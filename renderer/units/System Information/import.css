@@ -8,7 +8,6 @@
 
 #system-information-unit table
 {
-    font-size: 13px;
     display: block;
     overflow-x: scroll;
     color: var(--color);
@@ -18,6 +17,8 @@
 
 #system-information-unit tr
 {
+    font-size: 13px;
+    line-height: 1.5em;
     user-select: auto;
 }
 
@@ -31,7 +32,7 @@
 
 #system-information-unit td
 {
-    font-family: Monaco, monospace;
+    font-family: Monaco, "Noto Mono", monospace;
     width: 100%;
 }
 
@@ -39,4 +40,10 @@
 {
     font-style: italic;
     color: var(--color-subtle);
+}
+
+#system-information-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
 }

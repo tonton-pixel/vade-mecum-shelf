@@ -1,82 +1,140 @@
 [
     {
-        "label": "Miscellaneous Blocks",
-        "string": "AaĀā❤愛爱애💜"
+        "label": "Miscellaneous",
+        "items":
+        [
+            {
+                "label": "Ascending Blocks",
+                "string": "AaĀā❤愛爱애💜"
+            },
+            {
+                "label": "Basic Hearts",
+                "string": "❣️❤️💔💙💚💛💜💟"
+            },
+            {
+                "label": "Fancy Hearts",
+                "string": "💓💕💖💗💘💝💞"
+            },
+            {
+                "label": "Inset Hearts",
+                "string": "👩‍❤️‍👩😍👩‍❤️‍👨😻👨‍❤️‍👨"
+            },
+            {
+                "label": "iOS Killer Character",
+                "string": "జ్ఞ‌ా"
+            }
+        ]
     },
     {
-        "label": "Presentation Selectors 1",
-        "string": "☎︎☎️♻︎♻️❤︎❤️"
+        "label": "Digits & Numbers",
+        "items":
+        [
+            {
+                "label": "Digits & Numbers 1",
+                "string": "1½⅟１𝍠𝟏𝟙𝟣𝟭𝟷"
+            },
+            {
+                "label": "Digits & Numbers 2",
+                "string": "¹₁①⑴⒈⓵⓿❶➀➊🄂"
+            },
+            {
+                "label": "Digits & Numbers 3",
+                "string": "⑩⑽⒑⓫⓾❿➉➓🄌"
+            },
+            {
+                "label": "Capital Roman Numerals",
+                "string": "ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩⅪⅫⅬⅭⅮⅯ"
+            },
+            {
+                "label": "Small Roman Numerals",
+                "string": "ⅰⅱⅲⅳⅴⅵⅶⅷⅸⅹⅺⅻⅼⅽⅾⅿ"
+            }
+        ]
     },
     {
-        "label": "Presentation Selectors 2",
-        "string": "ℹ︎ℹ️☯︎☯️✒︎✒️"
+        "label": "Emoji Country Flags",
+        "items":
+        [
+            {
+                "label": "National Flags",
+                "string": "🇨🇦🇫🇷🇬🇧🇯🇵🇺🇸"
+            },
+            {
+                "label": "Special Flags",
+                "string": "🇪🇺🇺🇳"
+            },
+            {
+                "label": "Sub-Division Flags",
+                "string": "🏴󠁧󠁢󠁥󠁮󠁧󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿🏴󠁧󠁢󠁷󠁬󠁳󠁿"
+            }
+        ]
     },
     {
-        "label": "Presentation Selectors 3",
-        "string": "♨︎♨️㊗︎㊗️🈲︎🈲️"
-    },
-    {
-        "label": "Multi-Person Groupings 1",
-        "string": "👪⬌👨‍👩‍👦"
-    },
-    {
-        "label": "Multi-Person Groupings 2",
-        "string": "💑⬌👩‍❤️‍👨"
-    },
-    {
-        "label": "Multi-Person Groupings 3",
-        "string": "💏⬌👩‍❤️‍💋‍👨"
-    },
-    {
-        "label": "Skin Tone Modifiers",
-        "string": "👳🏻👳🏼👳🏽👳🏾👳🏿"
+        "label": "Multi-Person Groupings",
+        "items":
+        [
+            {
+                "label": "Family",
+                "string": "👪⬌👨‍👩‍👦"
+            },
+            {
+                "label": "Couple",
+                "string": "💑⬌👩‍❤️‍👨"
+            },
+            {
+                "label": "Kiss",
+                "string": "💏⬌👩‍❤️‍💋‍👨"
+            }
+        ]
     },
     {
         "label": "Combined Symbols",
-        "string": "#️⃣👁‍🗨"
+        "items":
+        [
+            {
+                "label": "Skin Tone Modifiers",
+                "string": "👳🏻👳🏼👳🏽👳🏾👳🏿"
+            },
+            {
+                "label": "Combinations",
+                "string": "#️⃣👁‍🗨"
+            }
+        ]
     },
     {
-        "label": "Digits & Numbers 1",
-        "string": "1½⅟１𝍠𝟏𝟙𝟣𝟭𝟷"
+        "label": "Presentation Sequences",
+        "items":
+        [
+            {
+                "label": "Variation Selectors 1",
+                "string": "☎︎☎️♻︎♻️❤︎❤️"
+            },
+            {
+                "label": "Variation Selectors 2",
+                "string": "ℹ︎ℹ️☯︎☯️✒︎✒️"
+            },
+            {
+                "label": "Variation Selectors 3",
+                "string": "♨︎♨️㊗︎㊗️🈲︎🈲️"
+            },
+            {
+                "label": "CJK Variation Selectors",
+                "string": "謎󠄀謎󠄁遡󠄀遡󠄁餅󠄀餅󠄁"
+            }
+        ]
     },
     {
-        "label": "Digits & Numbers 2",
-        "string": "¹₁①⑴⒈⓵⓿❶➀➊🄂"
-    },
-    {
-        "label": "Digits & Numbers 3",
-        "string": "⑩⑽⒑⓫⓾❿➉➓🄌"
-    },
-    {
-        "label": "Roman Numerals 1",
-        "string": "ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩⅪⅫⅬⅭⅮⅯ"
-    },
-    {
-        "label": "Roman Numerals 2",
-        "string": "ⅰⅱⅲⅳⅴⅵⅶⅷⅸⅹⅺⅻⅼⅽⅾⅿ"
-    },
-    {
-        "label": "ISO Country Flags 1",
-        "string": "🇨🇦🇫🇷🇬🇧🇯🇵🇺🇸"
-    },
-    {
-        "label": "ISO Country Flags 2",
-        "string": "🇪🇺🇺🇳"
-    },
-    {
-        "label": "CJK Variation Sequences",
-        "string": "謎󠄀謎󠄁遡󠄀遡󠄁餅󠄀餅󠄁"
-    },
-    {
-        "label": "CJK Graphical Variants 1",
-        "string": "汉漢漢冨富畐"
-    },
-    {
-        "label": "CJK Graphical Variants 2",
-        "string": "剝剥叱𠮟塡填頰頬"
-    },
-    {
-        "label": "iOS Killer Character",
-        "string": "జ్ఞ‌ా"
+        "label": "CJK Graphical Variants",
+        "items":
+        [
+            {
+                "label": "CJK Graphical Variants 1",
+                "string": "汉漢漢冨富畐"
+            },
+            {
+                "label": "CJK Graphical Variants 2",
+                "string": "剝剥叱𠮟塡填頰頬"
+            }
+        ]
     }
 ]

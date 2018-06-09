@@ -73,3 +73,9 @@
     margin-top: 1em;
     color: var(--color-accent);
 }
+
+#jabberwocky-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
+}

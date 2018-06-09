@@ -1,0 +1,2 @@
+// Syntax Error
+foo bar;

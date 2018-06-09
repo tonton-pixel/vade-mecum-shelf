@@ -1,0 +1,2 @@
+// URI Error
+decodeURIComponent ('%');

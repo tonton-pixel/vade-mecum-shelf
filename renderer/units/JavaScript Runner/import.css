@@ -7,10 +7,10 @@
     vertical-align: top;
     font-family: Monaco, monospace;
     font-size: 13px;
-    line-height: normal;
+    line-height: 1.333em;
     width: 100%;
     resize: vertical;
-    padding: 0.25em 0.5em;
+    padding: 0 0.5em;
     /* white-space: pre; */
     tab-size : 4;
 }
@@ -50,7 +50,7 @@
 
 #javascript-runner-unit .option + .option
 {
-    margin-left: 0.5em;
+    margin-left: 0.75em;
 }
 
 #javascript-runner-unit .output-string
@@ -63,22 +63,17 @@
     color: var(--color-error);
 }
 
-#javascript-runner-unit .info
+#javascript-runner-unit .built-in-functions ul
 {
-    padding-bottom: 0.25em;
+    margin: -0.5em 0;
 }
 
-#javascript-runner-unit .info ul
-{
-    margin-top: -0.25em;
-}
-
-#javascript-runner-unit .info li
+#javascript-runner-unit .built-in-functions li
 {
     margin: 0.5em 0;
 }
 
-#javascript-runner-unit .info code
+#javascript-runner-unit .built-in-functions code
 {
     /* user-select: auto; */
     color: inherit;
@@ -88,4 +83,10 @@
 #javascript-runner-unit .plain-panel
 {
     padding-bottom: 1.5em;
+}
+
+#javascript-runner-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
 }

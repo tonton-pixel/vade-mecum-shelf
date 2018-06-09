@@ -1,12 +1,16 @@
-//  Adapted by Michel MARIANI
-//  Used module.exports to allow Node.js require ()
-//  JSON.stringify ():
-//  Used Array.isArray () to test if the value is an array
-//  Improved indenting so that pairs of brackets { } and [ ] 
+//
+//  Adapted by Michel MARIANI:
+//  - Used module.exports to allow Node.js require ().
+//  json2.stringify ():
+//  - Used Array.isArray () to test if the value is an array.
+//  - Improved indenting so that pairs of brackets { } and [ ] 
 //    are always aligned on the same vertical position.
-//  Inserted single spaces systematically for better 
+//  - Inserted single spaces systematically for better 
 //    readability when indenting is off.
-//  JSON.parse ():
+//  - Removed all ranges from rx_escapable, except first one,
+//    to be consistent with JSON.stringify ().
+//  json2.parse ():
+//  - Not used.
 //
 //  json2.js
 //  2016-10-28
@@ -165,7 +169,7 @@
     var rx_two = /\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g;
     var rx_three = /"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g;
     var rx_four = /(?:^|:|,)(?:\s*\[)+/g;
-    var rx_escapable = /[\\"\u0000-\u001f\u007f-\u009f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
+    var rx_escapable = /[\\"\u0000-\u001f]/g;
     var rx_dangerous = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
 
     function f(n) {
@@ -499,3 +503,4 @@
         throw new SyntaxError("[JSON.parse] text is not JSON parseable.");
     };
 }());
+//

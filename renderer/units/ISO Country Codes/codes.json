@@ -1,40 +1,5 @@
 [
     {
-        "numeric": 4,
-        "alpha-2": "AF",
-        "alpha-3": "AFG",
-        "english": "Afghanistan",
-        "french": "Afghanistan (l')"
-    },
-    {
-        "numeric": 248,
-        "alpha-2": "AX",
-        "alpha-3": "ALA",
-        "english": "Åland Islands",
-        "french": "Åland (les Îles)"
-    },
-    {
-        "numeric": 8,
-        "alpha-2": "AL",
-        "alpha-3": "ALB",
-        "english": "Albania",
-        "french": "Albanie (l')"
-    },
-    {
-        "numeric": 12,
-        "alpha-2": "DZ",
-        "alpha-3": "DZA",
-        "english": "Algeria",
-        "french": "Algérie (l')"
-    },
-    {
-        "numeric": 16,
-        "alpha-2": "AS",
-        "alpha-3": "ASM",
-        "english": "American Samoa",
-        "french": "Samoa américaines (les)"
-    },
-    {
         "numeric": 20,
         "alpha-2": "AD",
         "alpha-3": "AND",
@@ -42,25 +7,18 @@
         "french": "Andorre (l')"
     },
     {
-        "numeric": 24,
-        "alpha-2": "AO",
-        "alpha-3": "AGO",
-        "english": "Angola",
-        "french": "Angola (l')"
+        "numeric": 784,
+        "alpha-2": "AE",
+        "alpha-3": "ARE",
+        "english": "United Arab Emirates (the)",
+        "french": "Émirats arabes unis (les)"
     },
     {
-        "numeric": 660,
-        "alpha-2": "AI",
-        "alpha-3": "AIA",
-        "english": "Anguilla",
-        "french": "Anguilla"
-    },
-    {
-        "numeric": 10,
-        "alpha-2": "AQ",
-        "alpha-3": "ATA",
-        "english": "Antarctica",
-        "french": "Antarctique (l')"
+        "numeric": 4,
+        "alpha-2": "AF",
+        "alpha-3": "AFG",
+        "english": "Afghanistan",
+        "french": "Afghanistan (l')"
     },
     {
         "numeric": 28,
@@ -70,11 +28,18 @@
         "french": "Antigua-et-Barbuda"
     },
     {
-        "numeric": 32,
-        "alpha-2": "AR",
-        "alpha-3": "ARG",
-        "english": "Argentina",
-        "french": "Argentine (l')"
+        "numeric": 660,
+        "alpha-2": "AI",
+        "alpha-3": "AIA",
+        "english": "Anguilla",
+        "french": "Anguilla"
+    },
+    {
+        "numeric": 8,
+        "alpha-2": "AL",
+        "alpha-3": "ALB",
+        "english": "Albania",
+        "french": "Albanie (l')"
     },
     {
         "numeric": 51,
@@ -84,18 +49,32 @@
         "french": "Arménie (l')"
     },
     {
-        "numeric": 533,
-        "alpha-2": "AW",
-        "alpha-3": "ABW",
-        "english": "Aruba",
-        "french": "Aruba"
+        "numeric": 24,
+        "alpha-2": "AO",
+        "alpha-3": "AGO",
+        "english": "Angola",
+        "french": "Angola (l')"
     },
     {
-        "numeric": 36,
-        "alpha-2": "AU",
-        "alpha-3": "AUS",
-        "english": "Australia",
-        "french": "Australie (l')"
+        "numeric": 10,
+        "alpha-2": "AQ",
+        "alpha-3": "ATA",
+        "english": "Antarctica",
+        "french": "Antarctique (l')"
+    },
+    {
+        "numeric": 32,
+        "alpha-2": "AR",
+        "alpha-3": "ARG",
+        "english": "Argentina",
+        "french": "Argentine (l')"
+    },
+    {
+        "numeric": 16,
+        "alpha-2": "AS",
+        "alpha-3": "ASM",
+        "english": "American Samoa",
+        "french": "Samoa américaines (les)"
     },
     {
         "numeric": 40,
@@ -105,6 +84,27 @@
         "french": "Autriche (l')"
     },
     {
+        "numeric": 36,
+        "alpha-2": "AU",
+        "alpha-3": "AUS",
+        "english": "Australia",
+        "french": "Australie (l')"
+    },
+    {
+        "numeric": 533,
+        "alpha-2": "AW",
+        "alpha-3": "ABW",
+        "english": "Aruba",
+        "french": "Aruba"
+    },
+    {
+        "numeric": 248,
+        "alpha-2": "AX",
+        "alpha-3": "ALA",
+        "english": "Åland Islands",
+        "french": "Åland (les Îles)"
+    },
+    {
         "numeric": 31,
         "alpha-2": "AZ",
         "alpha-3": "AZE",
@@ -112,25 +112,11 @@
         "french": "Azerbaïdjan (l')"
     },
     {
-        "numeric": 44,
-        "alpha-2": "BS",
-        "alpha-3": "BHS",
-        "english": "Bahamas (the)",
-        "french": "Bahamas (les)"
-    },
-    {
-        "numeric": 48,
-        "alpha-2": "BH",
-        "alpha-3": "BHR",
-        "english": "Bahrain",
-        "french": "Bahreïn"
-    },
-    {
-        "numeric": 50,
-        "alpha-2": "BD",
-        "alpha-3": "BGD",
-        "english": "Bangladesh",
-        "french": "Bangladesh (le)"
+        "numeric": 70,
+        "alpha-2": "BA",
+        "alpha-3": "BIH",
+        "english": "Bosnia and Herzegovina",
+        "french": "Bosnie-Herzégovine (la)"
     },
     {
         "numeric": 52,
@@ -140,11 +126,11 @@
         "french": "Barbade (la)"
     },
     {
-        "numeric": 112,
-        "alpha-2": "BY",
-        "alpha-3": "BLR",
-        "english": "Belarus",
-        "french": "Bélarus (le)"
+        "numeric": 50,
+        "alpha-2": "BD",
+        "alpha-3": "BGD",
+        "english": "Bangladesh",
+        "french": "Bangladesh (le)"
     },
     {
         "numeric": 56,
@@ -154,11 +140,32 @@
         "french": "Belgique (la)"
     },
     {
-        "numeric": 84,
-        "alpha-2": "BZ",
-        "alpha-3": "BLZ",
-        "english": "Belize",
-        "french": "Belize (le)"
+        "numeric": 854,
+        "alpha-2": "BF",
+        "alpha-3": "BFA",
+        "english": "Burkina Faso",
+        "french": "Burkina Faso (le)"
+    },
+    {
+        "numeric": 100,
+        "alpha-2": "BG",
+        "alpha-3": "BGR",
+        "english": "Bulgaria",
+        "french": "Bulgarie (la)"
+    },
+    {
+        "numeric": 48,
+        "alpha-2": "BH",
+        "alpha-3": "BHR",
+        "english": "Bahrain",
+        "french": "Bahreïn"
+    },
+    {
+        "numeric": 108,
+        "alpha-2": "BI",
+        "alpha-3": "BDI",
+        "english": "Burundi",
+        "french": "Burundi (le)"
     },
     {
         "numeric": 204,
@@ -168,6 +175,13 @@
         "french": "Bénin (le)"
     },
     {
+        "numeric": 652,
+        "alpha-2": "BL",
+        "alpha-3": "BLM",
+        "english": "Saint Barthélemy",
+        "french": "Saint-Barthélemy"
+    },
+    {
         "numeric": 60,
         "alpha-2": "BM",
         "alpha-3": "BMU",
@@ -175,11 +189,11 @@
         "french": "Bermudes (les)"
     },
     {
-        "numeric": 64,
-        "alpha-2": "BT",
-        "alpha-3": "BTN",
-        "english": "Bhutan",
-        "french": "Bhoutan (le)"
+        "numeric": 96,
+        "alpha-2": "BN",
+        "alpha-3": "BRN",
+        "english": "Brunei Darussalam",
+        "french": "Brunéi Darussalam (le)"
     },
     {
         "numeric": 68,
@@ -196,18 +210,25 @@
         "french": "Bonaire, Saint-Eustache et Saba"
     },
     {
-        "numeric": 70,
-        "alpha-2": "BA",
-        "alpha-3": "BIH",
-        "english": "Bosnia and Herzegovina",
-        "french": "Bosnie-Herzégovine (la)"
+        "numeric": 76,
+        "alpha-2": "BR",
+        "alpha-3": "BRA",
+        "english": "Brazil",
+        "french": "Brésil (le)"
     },
     {
-        "numeric": 72,
-        "alpha-2": "BW",
-        "alpha-3": "BWA",
-        "english": "Botswana",
-        "french": "Botswana (le)"
+        "numeric": 44,
+        "alpha-2": "BS",
+        "alpha-3": "BHS",
+        "english": "Bahamas (the)",
+        "french": "Bahamas (les)"
+    },
+    {
+        "numeric": 64,
+        "alpha-2": "BT",
+        "alpha-3": "BTN",
+        "english": "Bhutan",
+        "french": "Bhoutan (le)"
     },
     {
         "numeric": 74,
@@ -217,67 +238,25 @@
         "french": "Bouvet (l'Île)"
     },
     {
-        "numeric": 76,
-        "alpha-2": "BR",
-        "alpha-3": "BRA",
-        "english": "Brazil",
-        "french": "Brésil (le)"
+        "numeric": 72,
+        "alpha-2": "BW",
+        "alpha-3": "BWA",
+        "english": "Botswana",
+        "french": "Botswana (le)"
     },
     {
-        "numeric": 86,
-        "alpha-2": "IO",
-        "alpha-3": "IOT",
-        "english": "British Indian Ocean Territory (the)",
-        "french": "Indien (le Territoire britannique de l'océan)"
+        "numeric": 112,
+        "alpha-2": "BY",
+        "alpha-3": "BLR",
+        "english": "Belarus",
+        "french": "Bélarus (le)"
     },
     {
-        "numeric": 96,
-        "alpha-2": "BN",
-        "alpha-3": "BRN",
-        "english": "Brunei Darussalam",
-        "french": "Brunéi Darussalam (le)"
-    },
-    {
-        "numeric": 100,
-        "alpha-2": "BG",
-        "alpha-3": "BGR",
-        "english": "Bulgaria",
-        "french": "Bulgarie (la)"
-    },
-    {
-        "numeric": 854,
-        "alpha-2": "BF",
-        "alpha-3": "BFA",
-        "english": "Burkina Faso",
-        "french": "Burkina Faso (le)"
-    },
-    {
-        "numeric": 108,
-        "alpha-2": "BI",
-        "alpha-3": "BDI",
-        "english": "Burundi",
-        "french": "Burundi (le)"
-    },
-    {
-        "numeric": 132,
-        "alpha-2": "CV",
-        "alpha-3": "CPV",
-        "english": "Cabo Verde",
-        "french": "Cabo Verde"
-    },
-    {
-        "numeric": 116,
-        "alpha-2": "KH",
-        "alpha-3": "KHM",
-        "english": "Cambodia",
-        "french": "Cambodge (le)"
-    },
-    {
-        "numeric": 120,
-        "alpha-2": "CM",
-        "alpha-3": "CMR",
-        "english": "Cameroon",
-        "french": "Cameroun (le)"
+        "numeric": 84,
+        "alpha-2": "BZ",
+        "alpha-3": "BLZ",
+        "english": "Belize",
+        "french": "Belize (le)"
     },
     {
         "numeric": 124,
@@ -287,67 +266,11 @@
         "french": "Canada (le)"
     },
     {
-        "numeric": 136,
-        "alpha-2": "KY",
-        "alpha-3": "CYM",
-        "english": "Cayman Islands (the)",
-        "french": "Caïmans (les Îles)"
-    },
-    {
-        "numeric": 140,
-        "alpha-2": "CF",
-        "alpha-3": "CAF",
-        "english": "Central African Republic (the)",
-        "french": "République centrafricaine (la)"
-    },
-    {
-        "numeric": 148,
-        "alpha-2": "TD",
-        "alpha-3": "TCD",
-        "english": "Chad",
-        "french": "Tchad (le)"
-    },
-    {
-        "numeric": 152,
-        "alpha-2": "CL",
-        "alpha-3": "CHL",
-        "english": "Chile",
-        "french": "Chili (le)"
-    },
-    {
-        "numeric": 156,
-        "alpha-2": "CN",
-        "alpha-3": "CHN",
-        "english": "China",
-        "french": "Chine (la)"
-    },
-    {
-        "numeric": 162,
-        "alpha-2": "CX",
-        "alpha-3": "CXR",
-        "english": "Christmas Island",
-        "french": "Christmas (l'Île)"
-    },
-    {
         "numeric": 166,
         "alpha-2": "CC",
         "alpha-3": "CCK",
         "english": "Cocos (Keeling) Islands (the)",
         "french": "Cocos (les Îles)/ Keeling (les Îles)"
-    },
-    {
-        "numeric": 170,
-        "alpha-2": "CO",
-        "alpha-3": "COL",
-        "english": "Colombia",
-        "french": "Colombie (la)"
-    },
-    {
-        "numeric": 174,
-        "alpha-2": "KM",
-        "alpha-3": "COM",
-        "english": "Comoros (the)",
-        "french": "Comores (les)"
     },
     {
         "numeric": 180,
@@ -357,6 +280,13 @@
         "french": "Congo (la République démocratique du)"
     },
     {
+        "numeric": 140,
+        "alpha-2": "CF",
+        "alpha-3": "CAF",
+        "english": "Central African Republic (the)",
+        "french": "République centrafricaine (la)"
+    },
+    {
         "numeric": 178,
         "alpha-2": "CG",
         "alpha-3": "COG",
@@ -364,18 +294,11 @@
         "french": "Congo (le)"
     },
     {
-        "numeric": 184,
-        "alpha-2": "CK",
-        "alpha-3": "COK",
-        "english": "Cook Islands (the)",
-        "french": "Cook (les Îles)"
-    },
-    {
-        "numeric": 188,
-        "alpha-2": "CR",
-        "alpha-3": "CRI",
-        "english": "Costa Rica",
-        "french": "Costa Rica (le)"
+        "numeric": 756,
+        "alpha-2": "CH",
+        "alpha-3": "CHE",
+        "english": "Switzerland",
+        "french": "Suisse (la)"
     },
     {
         "numeric": 384,
@@ -385,11 +308,46 @@
         "french": "Côte d'Ivoire (la)"
     },
     {
-        "numeric": 191,
-        "alpha-2": "HR",
-        "alpha-3": "HRV",
-        "english": "Croatia",
-        "french": "Croatie (la)"
+        "numeric": 184,
+        "alpha-2": "CK",
+        "alpha-3": "COK",
+        "english": "Cook Islands (the)",
+        "french": "Cook (les Îles)"
+    },
+    {
+        "numeric": 152,
+        "alpha-2": "CL",
+        "alpha-3": "CHL",
+        "english": "Chile",
+        "french": "Chili (le)"
+    },
+    {
+        "numeric": 120,
+        "alpha-2": "CM",
+        "alpha-3": "CMR",
+        "english": "Cameroon",
+        "french": "Cameroun (le)"
+    },
+    {
+        "numeric": 156,
+        "alpha-2": "CN",
+        "alpha-3": "CHN",
+        "english": "China",
+        "french": "Chine (la)"
+    },
+    {
+        "numeric": 170,
+        "alpha-2": "CO",
+        "alpha-3": "COL",
+        "english": "Colombia",
+        "french": "Colombie (la)"
+    },
+    {
+        "numeric": 188,
+        "alpha-2": "CR",
+        "alpha-3": "CRI",
+        "english": "Costa Rica",
+        "french": "Costa Rica (le)"
     },
     {
         "numeric": 192,
@@ -399,11 +357,25 @@
         "french": "Cuba"
     },
     {
+        "numeric": 132,
+        "alpha-2": "CV",
+        "alpha-3": "CPV",
+        "english": "Cabo Verde",
+        "french": "Cabo Verde"
+    },
+    {
         "numeric": 531,
         "alpha-2": "CW",
         "alpha-3": "CUW",
         "english": "Curaçao",
         "french": "Curaçao"
+    },
+    {
+        "numeric": 162,
+        "alpha-2": "CX",
+        "alpha-3": "CXR",
+        "english": "Christmas Island",
+        "french": "Christmas (l'Île)"
     },
     {
         "numeric": 196,
@@ -420,11 +392,11 @@
         "french": "Tchéquie (la)"
     },
     {
-        "numeric": 208,
-        "alpha-2": "DK",
-        "alpha-3": "DNK",
-        "english": "Denmark",
-        "french": "Danemark (le)"
+        "numeric": 276,
+        "alpha-2": "DE",
+        "alpha-3": "DEU",
+        "english": "Germany",
+        "french": "Allemagne (l')"
     },
     {
         "numeric": 262,
@@ -432,6 +404,13 @@
         "alpha-3": "DJI",
         "english": "Djibouti",
         "french": "Djibouti"
+    },
+    {
+        "numeric": 208,
+        "alpha-2": "DK",
+        "alpha-3": "DNK",
+        "english": "Denmark",
+        "french": "Danemark (le)"
     },
     {
         "numeric": 212,
@@ -448,39 +427,18 @@
         "french": "dominicaine (la République)"
     },
     {
+        "numeric": 12,
+        "alpha-2": "DZ",
+        "alpha-3": "DZA",
+        "english": "Algeria",
+        "french": "Algérie (l')"
+    },
+    {
         "numeric": 218,
         "alpha-2": "EC",
         "alpha-3": "ECU",
         "english": "Ecuador",
         "french": "Équateur (l')"
-    },
-    {
-        "numeric": 818,
-        "alpha-2": "EG",
-        "alpha-3": "EGY",
-        "english": "Egypt",
-        "french": "Égypte (l')"
-    },
-    {
-        "numeric": 222,
-        "alpha-2": "SV",
-        "alpha-3": "SLV",
-        "english": "El Salvador",
-        "french": "El Salvador"
-    },
-    {
-        "numeric": 226,
-        "alpha-2": "GQ",
-        "alpha-3": "GNQ",
-        "english": "Equatorial Guinea",
-        "french": "Guinée équatoriale (la)"
-    },
-    {
-        "numeric": 232,
-        "alpha-2": "ER",
-        "alpha-3": "ERI",
-        "english": "Eritrea",
-        "french": "Érythrée (l')"
     },
     {
         "numeric": 233,
@@ -490,32 +448,39 @@
         "french": "Estonie (l')"
     },
     {
+        "numeric": 818,
+        "alpha-2": "EG",
+        "alpha-3": "EGY",
+        "english": "Egypt",
+        "french": "Égypte (l')"
+    },
+    {
+        "numeric": 732,
+        "alpha-2": "EH",
+        "alpha-3": "ESH",
+        "english": "Western Sahara*",
+        "french": "Sahara occidental (le)*"
+    },
+    {
+        "numeric": 232,
+        "alpha-2": "ER",
+        "alpha-3": "ERI",
+        "english": "Eritrea",
+        "french": "Érythrée (l')"
+    },
+    {
+        "numeric": 724,
+        "alpha-2": "ES",
+        "alpha-3": "ESP",
+        "english": "Spain",
+        "french": "Espagne (l')"
+    },
+    {
         "numeric": 231,
         "alpha-2": "ET",
         "alpha-3": "ETH",
         "english": "Ethiopia",
         "french": "Éthiopie (l')"
-    },
-    {
-        "numeric": 238,
-        "alpha-2": "FK",
-        "alpha-3": "FLK",
-        "english": "Falkland Islands (the) [Malvinas]",
-        "french": "Falkland (les Îles)/Malouines (les Îles)"
-    },
-    {
-        "numeric": 234,
-        "alpha-2": "FO",
-        "alpha-3": "FRO",
-        "english": "Faroe Islands (the)",
-        "french": "Féroé (les Îles)"
-    },
-    {
-        "numeric": 242,
-        "alpha-2": "FJ",
-        "alpha-3": "FJI",
-        "english": "Fiji",
-        "french": "Fidji (les)"
     },
     {
         "numeric": 246,
@@ -525,32 +490,39 @@
         "french": "Finlande (la)"
     },
     {
+        "numeric": 242,
+        "alpha-2": "FJ",
+        "alpha-3": "FJI",
+        "english": "Fiji",
+        "french": "Fidji (les)"
+    },
+    {
+        "numeric": 238,
+        "alpha-2": "FK",
+        "alpha-3": "FLK",
+        "english": "Falkland Islands (the) [Malvinas]",
+        "french": "Falkland (les Îles)/Malouines (les Îles)"
+    },
+    {
+        "numeric": 583,
+        "alpha-2": "FM",
+        "alpha-3": "FSM",
+        "english": "Micronesia (Federated States of)",
+        "french": "Micronésie (États fédérés de)"
+    },
+    {
+        "numeric": 234,
+        "alpha-2": "FO",
+        "alpha-3": "FRO",
+        "english": "Faroe Islands (the)",
+        "french": "Féroé (les Îles)"
+    },
+    {
         "numeric": 250,
         "alpha-2": "FR",
         "alpha-3": "FRA",
         "english": "France",
         "french": "France (la)"
-    },
-    {
-        "numeric": 254,
-        "alpha-2": "GF",
-        "alpha-3": "GUF",
-        "english": "French Guiana",
-        "french": "Guyane française (la)"
-    },
-    {
-        "numeric": 258,
-        "alpha-2": "PF",
-        "alpha-3": "PYF",
-        "english": "French Polynesia",
-        "french": "Polynésie française (la)"
-    },
-    {
-        "numeric": 260,
-        "alpha-2": "TF",
-        "alpha-3": "ATF",
-        "english": "French Southern Territories (the)",
-        "french": "Terres australes françaises (les)"
     },
     {
         "numeric": 266,
@@ -560,11 +532,18 @@
         "french": "Gabon (le)"
     },
     {
-        "numeric": 270,
-        "alpha-2": "GM",
-        "alpha-3": "GMB",
-        "english": "Gambia (the)",
-        "french": "Gambie (la)"
+        "numeric": 826,
+        "alpha-2": "GB",
+        "alpha-3": "GBR",
+        "english": "United Kingdom of Great Britain and Northern Ireland (the)",
+        "french": "Royaume-Uni de Grande-Bretagne et d'Irlande du Nord (le)"
+    },
+    {
+        "numeric": 308,
+        "alpha-2": "GD",
+        "alpha-3": "GRD",
+        "english": "Grenada",
+        "french": "Grenade (la)"
     },
     {
         "numeric": 268,
@@ -574,11 +553,18 @@
         "french": "Géorgie (la)"
     },
     {
-        "numeric": 276,
-        "alpha-2": "DE",
-        "alpha-3": "DEU",
-        "english": "Germany",
-        "french": "Allemagne (l')"
+        "numeric": 254,
+        "alpha-2": "GF",
+        "alpha-3": "GUF",
+        "english": "French Guiana",
+        "french": "Guyane française (la)"
+    },
+    {
+        "numeric": 831,
+        "alpha-2": "GG",
+        "alpha-3": "GGY",
+        "english": "Guernsey",
+        "french": "Guernesey"
     },
     {
         "numeric": 288,
@@ -595,13 +581,6 @@
         "french": "Gibraltar"
     },
     {
-        "numeric": 300,
-        "alpha-2": "GR",
-        "alpha-3": "GRC",
-        "english": "Greece",
-        "french": "Grèce (la)"
-    },
-    {
         "numeric": 304,
         "alpha-2": "GL",
         "alpha-3": "GRL",
@@ -609,11 +588,18 @@
         "french": "Groenland (le)"
     },
     {
-        "numeric": 308,
-        "alpha-2": "GD",
-        "alpha-3": "GRD",
-        "english": "Grenada",
-        "french": "Grenade (la)"
+        "numeric": 270,
+        "alpha-2": "GM",
+        "alpha-3": "GMB",
+        "english": "Gambia (the)",
+        "french": "Gambie (la)"
+    },
+    {
+        "numeric": 324,
+        "alpha-2": "GN",
+        "alpha-3": "GIN",
+        "english": "Guinea",
+        "french": "Guinée (la)"
     },
     {
         "numeric": 312,
@@ -623,11 +609,25 @@
         "french": "Guadeloupe (la)"
     },
     {
-        "numeric": 316,
-        "alpha-2": "GU",
-        "alpha-3": "GUM",
-        "english": "Guam",
-        "french": "Guam"
+        "numeric": 226,
+        "alpha-2": "GQ",
+        "alpha-3": "GNQ",
+        "english": "Equatorial Guinea",
+        "french": "Guinée équatoriale (la)"
+    },
+    {
+        "numeric": 300,
+        "alpha-2": "GR",
+        "alpha-3": "GRC",
+        "english": "Greece",
+        "french": "Grèce (la)"
+    },
+    {
+        "numeric": 239,
+        "alpha-2": "GS",
+        "alpha-3": "SGS",
+        "english": "South Georgia and the South Sandwich Islands",
+        "french": "Géorgie du Sud-et-les Îles Sandwich du Sud (la)"
     },
     {
         "numeric": 320,
@@ -637,18 +637,11 @@
         "french": "Guatemala (le)"
     },
     {
-        "numeric": 831,
-        "alpha-2": "GG",
-        "alpha-3": "GGY",
-        "english": "Guernsey",
-        "french": "Guernesey"
-    },
-    {
-        "numeric": 324,
-        "alpha-2": "GN",
-        "alpha-3": "GIN",
-        "english": "Guinea",
-        "french": "Guinée (la)"
+        "numeric": 316,
+        "alpha-2": "GU",
+        "alpha-3": "GUM",
+        "english": "Guam",
+        "french": "Guam"
     },
     {
         "numeric": 624,
@@ -665,11 +658,11 @@
         "french": "Guyana (le)"
     },
     {
-        "numeric": 332,
-        "alpha-2": "HT",
-        "alpha-3": "HTI",
-        "english": "Haiti",
-        "french": "Haïti"
+        "numeric": 344,
+        "alpha-2": "HK",
+        "alpha-3": "HKG",
+        "english": "Hong Kong",
+        "french": "Hong Kong"
     },
     {
         "numeric": 334,
@@ -679,13 +672,6 @@
         "french": "Heard-et-Îles MacDonald (l'Île)"
     },
     {
-        "numeric": 336,
-        "alpha-2": "VA",
-        "alpha-3": "VAT",
-        "english": "Holy See (the)",
-        "french": "Saint-Siège (le)"
-    },
-    {
         "numeric": 340,
         "alpha-2": "HN",
         "alpha-3": "HND",
@@ -693,11 +679,18 @@
         "french": "Honduras (le)"
     },
     {
-        "numeric": 344,
-        "alpha-2": "HK",
-        "alpha-3": "HKG",
-        "english": "Hong Kong",
-        "french": "Hong Kong"
+        "numeric": 191,
+        "alpha-2": "HR",
+        "alpha-3": "HRV",
+        "english": "Croatia",
+        "french": "Croatie (la)"
+    },
+    {
+        "numeric": 332,
+        "alpha-2": "HT",
+        "alpha-3": "HTI",
+        "english": "Haiti",
+        "french": "Haïti"
     },
     {
         "numeric": 348,
@@ -707,39 +700,11 @@
         "french": "Hongrie (la)"
     },
     {
-        "numeric": 352,
-        "alpha-2": "IS",
-        "alpha-3": "ISL",
-        "english": "Iceland",
-        "french": "Islande (l')"
-    },
-    {
-        "numeric": 356,
-        "alpha-2": "IN",
-        "alpha-3": "IND",
-        "english": "India",
-        "french": "Inde (l')"
-    },
-    {
         "numeric": 360,
         "alpha-2": "ID",
         "alpha-3": "IDN",
         "english": "Indonesia",
         "french": "Indonésie (l')"
-    },
-    {
-        "numeric": 364,
-        "alpha-2": "IR",
-        "alpha-3": "IRN",
-        "english": "Iran (Islamic Republic of)",
-        "french": "Iran (République Islamique d')"
-    },
-    {
-        "numeric": 368,
-        "alpha-2": "IQ",
-        "alpha-3": "IRQ",
-        "english": "Iraq",
-        "french": "Iraq (l')"
     },
     {
         "numeric": 372,
@@ -749,6 +714,13 @@
         "french": "Irlande (l')"
     },
     {
+        "numeric": 376,
+        "alpha-2": "IL",
+        "alpha-3": "ISR",
+        "english": "Israel",
+        "french": "Israël"
+    },
+    {
         "numeric": 833,
         "alpha-2": "IM",
         "alpha-3": "IMN",
@@ -756,11 +728,39 @@
         "french": "Île de Man"
     },
     {
-        "numeric": 376,
-        "alpha-2": "IL",
-        "alpha-3": "ISR",
-        "english": "Israel",
-        "french": "Israël"
+        "numeric": 356,
+        "alpha-2": "IN",
+        "alpha-3": "IND",
+        "english": "India",
+        "french": "Inde (l')"
+    },
+    {
+        "numeric": 86,
+        "alpha-2": "IO",
+        "alpha-3": "IOT",
+        "english": "British Indian Ocean Territory (the)",
+        "french": "Indien (le Territoire britannique de l'océan)"
+    },
+    {
+        "numeric": 368,
+        "alpha-2": "IQ",
+        "alpha-3": "IRQ",
+        "english": "Iraq",
+        "french": "Iraq (l')"
+    },
+    {
+        "numeric": 364,
+        "alpha-2": "IR",
+        "alpha-3": "IRN",
+        "english": "Iran (Islamic Republic of)",
+        "french": "Iran (République Islamique d')"
+    },
+    {
+        "numeric": 352,
+        "alpha-2": "IS",
+        "alpha-3": "ISL",
+        "english": "Iceland",
+        "french": "Islande (l')"
     },
     {
         "numeric": 380,
@@ -770,25 +770,18 @@
         "french": "Italie (l')"
     },
     {
-        "numeric": 388,
-        "alpha-2": "JM",
-        "alpha-3": "JAM",
-        "english": "Jamaica",
-        "french": "Jamaïque (la)"
-    },
-    {
-        "numeric": 392,
-        "alpha-2": "JP",
-        "alpha-3": "JPN",
-        "english": "Japan",
-        "french": "Japon (le)"
-    },
-    {
         "numeric": 832,
         "alpha-2": "JE",
         "alpha-3": "JEY",
         "english": "Jersey",
         "french": "Jersey"
+    },
+    {
+        "numeric": 388,
+        "alpha-2": "JM",
+        "alpha-3": "JAM",
+        "english": "Jamaica",
+        "french": "Jamaïque (la)"
     },
     {
         "numeric": 400,
@@ -798,11 +791,11 @@
         "french": "Jordanie (la)"
     },
     {
-        "numeric": 398,
-        "alpha-2": "KZ",
-        "alpha-3": "KAZ",
-        "english": "Kazakhstan",
-        "french": "Kazakhstan (le)"
+        "numeric": 392,
+        "alpha-2": "JP",
+        "alpha-3": "JPN",
+        "english": "Japan",
+        "french": "Japon (le)"
     },
     {
         "numeric": 404,
@@ -812,11 +805,39 @@
         "french": "Kenya (le)"
     },
     {
+        "numeric": 417,
+        "alpha-2": "KG",
+        "alpha-3": "KGZ",
+        "english": "Kyrgyzstan",
+        "french": "Kirghizistan (le)"
+    },
+    {
+        "numeric": 116,
+        "alpha-2": "KH",
+        "alpha-3": "KHM",
+        "english": "Cambodia",
+        "french": "Cambodge (le)"
+    },
+    {
         "numeric": 296,
         "alpha-2": "KI",
         "alpha-3": "KIR",
         "english": "Kiribati",
         "french": "Kiribati"
+    },
+    {
+        "numeric": 174,
+        "alpha-2": "KM",
+        "alpha-3": "COM",
+        "english": "Comoros (the)",
+        "french": "Comores (les)"
+    },
+    {
+        "numeric": 659,
+        "alpha-2": "KN",
+        "alpha-3": "KNA",
+        "english": "Saint Kitts and Nevis",
+        "french": "Saint-Kitts-et-Nevis"
     },
     {
         "numeric": 408,
@@ -840,11 +861,18 @@
         "french": "Koweït (le)"
     },
     {
-        "numeric": 417,
-        "alpha-2": "KG",
-        "alpha-3": "KGZ",
-        "english": "Kyrgyzstan",
-        "french": "Kirghizistan (le)"
+        "numeric": 136,
+        "alpha-2": "KY",
+        "alpha-3": "CYM",
+        "english": "Cayman Islands (the)",
+        "french": "Caïmans (les Îles)"
+    },
+    {
+        "numeric": 398,
+        "alpha-2": "KZ",
+        "alpha-3": "KAZ",
+        "english": "Kazakhstan",
+        "french": "Kazakhstan (le)"
     },
     {
         "numeric": 418,
@@ -854,13 +882,6 @@
         "french": "Lao, République démocratique populaire"
     },
     {
-        "numeric": 428,
-        "alpha-2": "LV",
-        "alpha-3": "LVA",
-        "english": "Latvia",
-        "french": "Lettonie (la)"
-    },
-    {
         "numeric": 422,
         "alpha-2": "LB",
         "alpha-3": "LBN",
@@ -868,11 +889,25 @@
         "french": "Liban (le)"
     },
     {
-        "numeric": 426,
-        "alpha-2": "LS",
-        "alpha-3": "LSO",
-        "english": "Lesotho",
-        "french": "Lesotho (le)"
+        "numeric": 662,
+        "alpha-2": "LC",
+        "alpha-3": "LCA",
+        "english": "Saint Lucia",
+        "french": "Sainte-Lucie"
+    },
+    {
+        "numeric": 438,
+        "alpha-2": "LI",
+        "alpha-3": "LIE",
+        "english": "Liechtenstein",
+        "french": "Liechtenstein (le)"
+    },
+    {
+        "numeric": 144,
+        "alpha-2": "LK",
+        "alpha-3": "LKA",
+        "english": "Sri Lanka",
+        "french": "Sri Lanka"
     },
     {
         "numeric": 430,
@@ -882,18 +917,11 @@
         "french": "Libéria (le)"
     },
     {
-        "numeric": 434,
-        "alpha-2": "LY",
-        "alpha-3": "LBY",
-        "english": "Libya",
-        "french": "Libye (la)"
-    },
-    {
-        "numeric": 438,
-        "alpha-2": "LI",
-        "alpha-3": "LIE",
-        "english": "Liechtenstein",
-        "french": "Liechtenstein (le)"
+        "numeric": 426,
+        "alpha-2": "LS",
+        "alpha-3": "LSO",
+        "english": "Lesotho",
+        "french": "Lesotho (le)"
     },
     {
         "numeric": 440,
@@ -910,18 +938,53 @@
         "french": "Luxembourg (le)"
     },
     {
-        "numeric": 446,
-        "alpha-2": "MO",
-        "alpha-3": "MAC",
-        "english": "Macao",
-        "french": "Macao"
+        "numeric": 428,
+        "alpha-2": "LV",
+        "alpha-3": "LVA",
+        "english": "Latvia",
+        "french": "Lettonie (la)"
     },
     {
-        "numeric": 807,
-        "alpha-2": "MK",
-        "alpha-3": "MKD",
-        "english": "Macedonia (the former Yugoslav Republic of)",
-        "french": "Macédoine (l'ex‑République yougoslave de)"
+        "numeric": 434,
+        "alpha-2": "LY",
+        "alpha-3": "LBY",
+        "english": "Libya",
+        "french": "Libye (la)"
+    },
+    {
+        "numeric": 504,
+        "alpha-2": "MA",
+        "alpha-3": "MAR",
+        "english": "Morocco",
+        "french": "Maroc (le)"
+    },
+    {
+        "numeric": 492,
+        "alpha-2": "MC",
+        "alpha-3": "MCO",
+        "english": "Monaco",
+        "french": "Monaco"
+    },
+    {
+        "numeric": 498,
+        "alpha-2": "MD",
+        "alpha-3": "MDA",
+        "english": "Moldova (the Republic of)",
+        "french": "Moldova, République de"
+    },
+    {
+        "numeric": 499,
+        "alpha-2": "ME",
+        "alpha-3": "MNE",
+        "english": "Montenegro",
+        "french": "Monténégro (le)"
+    },
+    {
+        "numeric": 663,
+        "alpha-2": "MF",
+        "alpha-3": "MAF",
+        "english": "Saint Martin (French part)",
+        "french": "Saint-Martin (partie française)"
     },
     {
         "numeric": 450,
@@ -931,25 +994,18 @@
         "french": "Madagascar"
     },
     {
-        "numeric": 454,
-        "alpha-2": "MW",
-        "alpha-3": "MWI",
-        "english": "Malawi",
-        "french": "Malawi (le)"
+        "numeric": 584,
+        "alpha-2": "MH",
+        "alpha-3": "MHL",
+        "english": "Marshall Islands (the)",
+        "french": "Marshall (Îles)"
     },
     {
-        "numeric": 458,
-        "alpha-2": "MY",
-        "alpha-3": "MYS",
-        "english": "Malaysia",
-        "french": "Malaisie (la)"
-    },
-    {
-        "numeric": 462,
-        "alpha-2": "MV",
-        "alpha-3": "MDV",
-        "english": "Maldives",
-        "french": "Maldives (les)"
+        "numeric": 807,
+        "alpha-2": "MK",
+        "alpha-3": "MKD",
+        "english": "Macedonia (the former Yugoslav Republic of)",
+        "french": "Macédoine (l'ex‑République yougoslave de)"
     },
     {
         "numeric": 466,
@@ -959,18 +1015,32 @@
         "french": "Mali (le)"
     },
     {
-        "numeric": 470,
-        "alpha-2": "MT",
-        "alpha-3": "MLT",
-        "english": "Malta",
-        "french": "Malte"
+        "numeric": 104,
+        "alpha-2": "MM",
+        "alpha-3": "MMR",
+        "english": "Myanmar",
+        "french": "Myanmar (le)"
     },
     {
-        "numeric": 584,
-        "alpha-2": "MH",
-        "alpha-3": "MHL",
-        "english": "Marshall Islands (the)",
-        "french": "Marshall (Îles)"
+        "numeric": 496,
+        "alpha-2": "MN",
+        "alpha-3": "MNG",
+        "english": "Mongolia",
+        "french": "Mongolie (la)"
+    },
+    {
+        "numeric": 446,
+        "alpha-2": "MO",
+        "alpha-3": "MAC",
+        "english": "Macao",
+        "french": "Macao"
+    },
+    {
+        "numeric": 580,
+        "alpha-2": "MP",
+        "alpha-3": "MNP",
+        "english": "Northern Mariana Islands (the)",
+        "french": "Mariannes du Nord (les Îles)"
     },
     {
         "numeric": 474,
@@ -987,6 +1057,20 @@
         "french": "Mauritanie (la)"
     },
     {
+        "numeric": 500,
+        "alpha-2": "MS",
+        "alpha-3": "MSR",
+        "english": "Montserrat",
+        "french": "Montserrat"
+    },
+    {
+        "numeric": 470,
+        "alpha-2": "MT",
+        "alpha-3": "MLT",
+        "english": "Malta",
+        "french": "Malte"
+    },
+    {
         "numeric": 480,
         "alpha-2": "MU",
         "alpha-3": "MUS",
@@ -994,11 +1078,18 @@
         "french": "Maurice"
     },
     {
-        "numeric": 175,
-        "alpha-2": "YT",
-        "alpha-3": "MYT",
-        "english": "Mayotte",
-        "french": "Mayotte"
+        "numeric": 462,
+        "alpha-2": "MV",
+        "alpha-3": "MDV",
+        "english": "Maldives",
+        "french": "Maldives (les)"
+    },
+    {
+        "numeric": 454,
+        "alpha-2": "MW",
+        "alpha-3": "MWI",
+        "english": "Malawi",
+        "french": "Malawi (le)"
     },
     {
         "numeric": 484,
@@ -1008,53 +1099,11 @@
         "french": "Mexique (le)"
     },
     {
-        "numeric": 583,
-        "alpha-2": "FM",
-        "alpha-3": "FSM",
-        "english": "Micronesia (Federated States of)",
-        "french": "Micronésie (États fédérés de)"
-    },
-    {
-        "numeric": 498,
-        "alpha-2": "MD",
-        "alpha-3": "MDA",
-        "english": "Moldova (the Republic of)",
-        "french": "Moldova, République de"
-    },
-    {
-        "numeric": 492,
-        "alpha-2": "MC",
-        "alpha-3": "MCO",
-        "english": "Monaco",
-        "french": "Monaco"
-    },
-    {
-        "numeric": 496,
-        "alpha-2": "MN",
-        "alpha-3": "MNG",
-        "english": "Mongolia",
-        "french": "Mongolie (la)"
-    },
-    {
-        "numeric": 499,
-        "alpha-2": "ME",
-        "alpha-3": "MNE",
-        "english": "Montenegro",
-        "french": "Monténégro (le)"
-    },
-    {
-        "numeric": 500,
-        "alpha-2": "MS",
-        "alpha-3": "MSR",
-        "english": "Montserrat",
-        "french": "Montserrat"
-    },
-    {
-        "numeric": 504,
-        "alpha-2": "MA",
-        "alpha-3": "MAR",
-        "english": "Morocco",
-        "french": "Maroc (le)"
+        "numeric": 458,
+        "alpha-2": "MY",
+        "alpha-3": "MYS",
+        "english": "Malaysia",
+        "french": "Malaisie (la)"
     },
     {
         "numeric": 508,
@@ -1064,39 +1113,11 @@
         "french": "Mozambique (le)"
     },
     {
-        "numeric": 104,
-        "alpha-2": "MM",
-        "alpha-3": "MMR",
-        "english": "Myanmar",
-        "french": "Myanmar (le)"
-    },
-    {
         "numeric": 516,
         "alpha-2": "NA",
         "alpha-3": "NAM",
         "english": "Namibia",
         "french": "Namibie (la)"
-    },
-    {
-        "numeric": 520,
-        "alpha-2": "NR",
-        "alpha-3": "NRU",
-        "english": "Nauru",
-        "french": "Nauru"
-    },
-    {
-        "numeric": 524,
-        "alpha-2": "NP",
-        "alpha-3": "NPL",
-        "english": "Nepal",
-        "french": "Népal (le)"
-    },
-    {
-        "numeric": 528,
-        "alpha-2": "NL",
-        "alpha-3": "NLD",
-        "english": "Netherlands (the)",
-        "french": "Pays-Bas (les)"
     },
     {
         "numeric": 540,
@@ -1106,39 +1127,11 @@
         "french": "Nouvelle-Calédonie (la)"
     },
     {
-        "numeric": 554,
-        "alpha-2": "NZ",
-        "alpha-3": "NZL",
-        "english": "New Zealand",
-        "french": "Nouvelle-Zélande (la)"
-    },
-    {
-        "numeric": 558,
-        "alpha-2": "NI",
-        "alpha-3": "NIC",
-        "english": "Nicaragua",
-        "french": "Nicaragua (le)"
-    },
-    {
         "numeric": 562,
         "alpha-2": "NE",
         "alpha-3": "NER",
         "english": "Niger (the)",
         "french": "Niger (le)"
-    },
-    {
-        "numeric": 566,
-        "alpha-2": "NG",
-        "alpha-3": "NGA",
-        "english": "Nigeria",
-        "french": "Nigéria (le)"
-    },
-    {
-        "numeric": 570,
-        "alpha-2": "NU",
-        "alpha-3": "NIU",
-        "english": "Niue",
-        "french": "Niue"
     },
     {
         "numeric": 574,
@@ -1148,11 +1141,25 @@
         "french": "Norfolk (l'Île)"
     },
     {
-        "numeric": 580,
-        "alpha-2": "MP",
-        "alpha-3": "MNP",
-        "english": "Northern Mariana Islands (the)",
-        "french": "Mariannes du Nord (les Îles)"
+        "numeric": 566,
+        "alpha-2": "NG",
+        "alpha-3": "NGA",
+        "english": "Nigeria",
+        "french": "Nigéria (le)"
+    },
+    {
+        "numeric": 558,
+        "alpha-2": "NI",
+        "alpha-3": "NIC",
+        "english": "Nicaragua",
+        "french": "Nicaragua (le)"
+    },
+    {
+        "numeric": 528,
+        "alpha-2": "NL",
+        "alpha-3": "NLD",
+        "english": "Netherlands (the)",
+        "french": "Pays-Bas (les)"
     },
     {
         "numeric": 578,
@@ -1162,32 +1169,39 @@
         "french": "Norvège (la)"
     },
     {
+        "numeric": 524,
+        "alpha-2": "NP",
+        "alpha-3": "NPL",
+        "english": "Nepal",
+        "french": "Népal (le)"
+    },
+    {
+        "numeric": 520,
+        "alpha-2": "NR",
+        "alpha-3": "NRU",
+        "english": "Nauru",
+        "french": "Nauru"
+    },
+    {
+        "numeric": 570,
+        "alpha-2": "NU",
+        "alpha-3": "NIU",
+        "english": "Niue",
+        "french": "Niue"
+    },
+    {
+        "numeric": 554,
+        "alpha-2": "NZ",
+        "alpha-3": "NZL",
+        "english": "New Zealand",
+        "french": "Nouvelle-Zélande (la)"
+    },
+    {
         "numeric": 512,
         "alpha-2": "OM",
         "alpha-3": "OMN",
         "english": "Oman",
         "french": "Oman"
-    },
-    {
-        "numeric": 586,
-        "alpha-2": "PK",
-        "alpha-3": "PAK",
-        "english": "Pakistan",
-        "french": "Pakistan (le)"
-    },
-    {
-        "numeric": 585,
-        "alpha-2": "PW",
-        "alpha-3": "PLW",
-        "english": "Palau",
-        "french": "Palaos (les)"
-    },
-    {
-        "numeric": 275,
-        "alpha-2": "PS",
-        "alpha-3": "PSE",
-        "english": "Palestine, State of",
-        "french": "Palestine, État de"
     },
     {
         "numeric": 591,
@@ -1197,25 +1211,25 @@
         "french": "Panama (le)"
     },
     {
-        "numeric": 598,
-        "alpha-2": "PG",
-        "alpha-3": "PNG",
-        "english": "Papua New Guinea",
-        "french": "Papouasie-Nouvelle-Guinée (la)"
-    },
-    {
-        "numeric": 600,
-        "alpha-2": "PY",
-        "alpha-3": "PRY",
-        "english": "Paraguay",
-        "french": "Paraguay (le)"
-    },
-    {
         "numeric": 604,
         "alpha-2": "PE",
         "alpha-3": "PER",
         "english": "Peru",
         "french": "Pérou (le)"
+    },
+    {
+        "numeric": 258,
+        "alpha-2": "PF",
+        "alpha-3": "PYF",
+        "english": "French Polynesia",
+        "french": "Polynésie française (la)"
+    },
+    {
+        "numeric": 598,
+        "alpha-2": "PG",
+        "alpha-3": "PNG",
+        "english": "Papua New Guinea",
+        "french": "Papouasie-Nouvelle-Guinée (la)"
     },
     {
         "numeric": 608,
@@ -1225,11 +1239,11 @@
         "french": "Philippines (les)"
     },
     {
-        "numeric": 612,
-        "alpha-2": "PN",
-        "alpha-3": "PCN",
-        "english": "Pitcairn",
-        "french": "Pitcairn"
+        "numeric": 586,
+        "alpha-2": "PK",
+        "alpha-3": "PAK",
+        "english": "Pakistan",
+        "french": "Pakistan (le)"
     },
     {
         "numeric": 616,
@@ -1239,11 +1253,18 @@
         "french": "Pologne (la)"
     },
     {
-        "numeric": 620,
-        "alpha-2": "PT",
-        "alpha-3": "PRT",
-        "english": "Portugal",
-        "french": "Portugal (le)"
+        "numeric": 666,
+        "alpha-2": "PM",
+        "alpha-3": "SPM",
+        "english": "Saint Pierre and Miquelon",
+        "french": "Saint-Pierre-et-Miquelon"
+    },
+    {
+        "numeric": 612,
+        "alpha-2": "PN",
+        "alpha-3": "PCN",
+        "english": "Pitcairn",
+        "french": "Pitcairn"
     },
     {
         "numeric": 630,
@@ -1251,6 +1272,34 @@
         "alpha-3": "PRI",
         "english": "Puerto Rico",
         "french": "Porto Rico"
+    },
+    {
+        "numeric": 275,
+        "alpha-2": "PS",
+        "alpha-3": "PSE",
+        "english": "Palestine, State of",
+        "french": "Palestine, État de"
+    },
+    {
+        "numeric": 620,
+        "alpha-2": "PT",
+        "alpha-3": "PRT",
+        "english": "Portugal",
+        "french": "Portugal (le)"
+    },
+    {
+        "numeric": 585,
+        "alpha-2": "PW",
+        "alpha-3": "PLW",
+        "english": "Palau",
+        "french": "Palaos (les)"
+    },
+    {
+        "numeric": 600,
+        "alpha-2": "PY",
+        "alpha-3": "PRY",
+        "english": "Paraguay",
+        "french": "Paraguay (le)"
     },
     {
         "numeric": 634,
@@ -1274,6 +1323,13 @@
         "french": "Roumanie (la)"
     },
     {
+        "numeric": 688,
+        "alpha-2": "RS",
+        "alpha-3": "SRB",
+        "english": "Serbia",
+        "french": "Serbie (la)"
+    },
+    {
         "numeric": 643,
         "alpha-2": "RU",
         "alpha-3": "RUS",
@@ -1288,137 +1344,11 @@
         "french": "Rwanda (le)"
     },
     {
-        "numeric": 652,
-        "alpha-2": "BL",
-        "alpha-3": "BLM",
-        "english": "Saint Barthélemy",
-        "french": "Saint-Barthélemy"
-    },
-    {
-        "numeric": 654,
-        "alpha-2": "SH",
-        "alpha-3": "SHN",
-        "english": "Saint Helena, Ascension and Tristan da Cunha",
-        "french": "Sainte-Hélène, Ascension et Tristan da Cunha"
-    },
-    {
-        "numeric": 659,
-        "alpha-2": "KN",
-        "alpha-3": "KNA",
-        "english": "Saint Kitts and Nevis",
-        "french": "Saint-Kitts-et-Nevis"
-    },
-    {
-        "numeric": 662,
-        "alpha-2": "LC",
-        "alpha-3": "LCA",
-        "english": "Saint Lucia",
-        "french": "Sainte-Lucie"
-    },
-    {
-        "numeric": 663,
-        "alpha-2": "MF",
-        "alpha-3": "MAF",
-        "english": "Saint Martin (French part)",
-        "french": "Saint-Martin (partie française)"
-    },
-    {
-        "numeric": 666,
-        "alpha-2": "PM",
-        "alpha-3": "SPM",
-        "english": "Saint Pierre and Miquelon",
-        "french": "Saint-Pierre-et-Miquelon"
-    },
-    {
-        "numeric": 670,
-        "alpha-2": "VC",
-        "alpha-3": "VCT",
-        "english": "Saint Vincent and the Grenadines",
-        "french": "Saint-Vincent-et-les Grenadines"
-    },
-    {
-        "numeric": 882,
-        "alpha-2": "WS",
-        "alpha-3": "WSM",
-        "english": "Samoa",
-        "french": "Samoa (le)"
-    },
-    {
-        "numeric": 674,
-        "alpha-2": "SM",
-        "alpha-3": "SMR",
-        "english": "San Marino",
-        "french": "Saint-Marin"
-    },
-    {
-        "numeric": 678,
-        "alpha-2": "ST",
-        "alpha-3": "STP",
-        "english": "Sao Tome and Principe",
-        "french": "Sao Tomé-et-Principe"
-    },
-    {
         "numeric": 682,
         "alpha-2": "SA",
         "alpha-3": "SAU",
         "english": "Saudi Arabia",
         "french": "Arabie saoudite (l')"
-    },
-    {
-        "numeric": 686,
-        "alpha-2": "SN",
-        "alpha-3": "SEN",
-        "english": "Senegal",
-        "french": "Sénégal (le)"
-    },
-    {
-        "numeric": 688,
-        "alpha-2": "RS",
-        "alpha-3": "SRB",
-        "english": "Serbia",
-        "french": "Serbie (la)"
-    },
-    {
-        "numeric": 690,
-        "alpha-2": "SC",
-        "alpha-3": "SYC",
-        "english": "Seychelles",
-        "french": "Seychelles (les)"
-    },
-    {
-        "numeric": 694,
-        "alpha-2": "SL",
-        "alpha-3": "SLE",
-        "english": "Sierra Leone",
-        "french": "Sierra Leone (la)"
-    },
-    {
-        "numeric": 702,
-        "alpha-2": "SG",
-        "alpha-3": "SGP",
-        "english": "Singapore",
-        "french": "Singapour"
-    },
-    {
-        "numeric": 534,
-        "alpha-2": "SX",
-        "alpha-3": "SXM",
-        "english": "Sint Maarten (Dutch part)",
-        "french": "Saint-Martin (partie néerlandaise)"
-    },
-    {
-        "numeric": 703,
-        "alpha-2": "SK",
-        "alpha-3": "SVK",
-        "english": "Slovakia",
-        "french": "Slovaquie (la)"
-    },
-    {
-        "numeric": 705,
-        "alpha-2": "SI",
-        "alpha-3": "SVN",
-        "english": "Slovenia",
-        "french": "Slovénie (la)"
     },
     {
         "numeric": 90,
@@ -1428,46 +1358,11 @@
         "french": "Salomon (Îles)"
     },
     {
-        "numeric": 706,
-        "alpha-2": "SO",
-        "alpha-3": "SOM",
-        "english": "Somalia",
-        "french": "Somalie (la)"
-    },
-    {
-        "numeric": 710,
-        "alpha-2": "ZA",
-        "alpha-3": "ZAF",
-        "english": "South Africa",
-        "french": "Afrique du Sud (l')"
-    },
-    {
-        "numeric": 239,
-        "alpha-2": "GS",
-        "alpha-3": "SGS",
-        "english": "South Georgia and the South Sandwich Islands",
-        "french": "Géorgie du Sud-et-les Îles Sandwich du Sud (la)"
-    },
-    {
-        "numeric": 728,
-        "alpha-2": "SS",
-        "alpha-3": "SSD",
-        "english": "South Sudan",
-        "french": "Soudan du Sud (le)"
-    },
-    {
-        "numeric": 724,
-        "alpha-2": "ES",
-        "alpha-3": "ESP",
-        "english": "Spain",
-        "french": "Espagne (l')"
-    },
-    {
-        "numeric": 144,
-        "alpha-2": "LK",
-        "alpha-3": "LKA",
-        "english": "Sri Lanka",
-        "french": "Sri Lanka"
+        "numeric": 690,
+        "alpha-2": "SC",
+        "alpha-3": "SYC",
+        "english": "Seychelles",
+        "french": "Seychelles (les)"
     },
     {
         "numeric": 729,
@@ -1477,11 +1372,32 @@
         "french": "Soudan (le)"
     },
     {
-        "numeric": 740,
-        "alpha-2": "SR",
-        "alpha-3": "SUR",
-        "english": "Suriname",
-        "french": "Suriname (le)"
+        "numeric": 752,
+        "alpha-2": "SE",
+        "alpha-3": "SWE",
+        "english": "Sweden",
+        "french": "Suède (la)"
+    },
+    {
+        "numeric": 702,
+        "alpha-2": "SG",
+        "alpha-3": "SGP",
+        "english": "Singapore",
+        "french": "Singapour"
+    },
+    {
+        "numeric": 654,
+        "alpha-2": "SH",
+        "alpha-3": "SHN",
+        "english": "Saint Helena, Ascension and Tristan da Cunha",
+        "french": "Sainte-Hélène, Ascension et Tristan da Cunha"
+    },
+    {
+        "numeric": 705,
+        "alpha-2": "SI",
+        "alpha-3": "SVN",
+        "english": "Slovenia",
+        "french": "Slovénie (la)"
     },
     {
         "numeric": 744,
@@ -1491,25 +1407,74 @@
         "french": "Svalbard et l'Île Jan Mayen (le)"
     },
     {
-        "numeric": 748,
-        "alpha-2": "SZ",
-        "alpha-3": "SWZ",
-        "english": "Swaziland",
-        "french": "Swaziland (le)"
+        "numeric": 703,
+        "alpha-2": "SK",
+        "alpha-3": "SVK",
+        "english": "Slovakia",
+        "french": "Slovaquie (la)"
     },
     {
-        "numeric": 752,
-        "alpha-2": "SE",
-        "alpha-3": "SWE",
-        "english": "Sweden",
-        "french": "Suède (la)"
+        "numeric": 694,
+        "alpha-2": "SL",
+        "alpha-3": "SLE",
+        "english": "Sierra Leone",
+        "french": "Sierra Leone (la)"
     },
     {
-        "numeric": 756,
-        "alpha-2": "CH",
-        "alpha-3": "CHE",
-        "english": "Switzerland",
-        "french": "Suisse (la)"
+        "numeric": 674,
+        "alpha-2": "SM",
+        "alpha-3": "SMR",
+        "english": "San Marino",
+        "french": "Saint-Marin"
+    },
+    {
+        "numeric": 686,
+        "alpha-2": "SN",
+        "alpha-3": "SEN",
+        "english": "Senegal",
+        "french": "Sénégal (le)"
+    },
+    {
+        "numeric": 706,
+        "alpha-2": "SO",
+        "alpha-3": "SOM",
+        "english": "Somalia",
+        "french": "Somalie (la)"
+    },
+    {
+        "numeric": 740,
+        "alpha-2": "SR",
+        "alpha-3": "SUR",
+        "english": "Suriname",
+        "french": "Suriname (le)"
+    },
+    {
+        "numeric": 728,
+        "alpha-2": "SS",
+        "alpha-3": "SSD",
+        "english": "South Sudan",
+        "french": "Soudan du Sud (le)"
+    },
+    {
+        "numeric": 678,
+        "alpha-2": "ST",
+        "alpha-3": "STP",
+        "english": "Sao Tome and Principe",
+        "french": "Sao Tomé-et-Principe"
+    },
+    {
+        "numeric": 222,
+        "alpha-2": "SV",
+        "alpha-3": "SLV",
+        "english": "El Salvador",
+        "french": "El Salvador"
+    },
+    {
+        "numeric": 534,
+        "alpha-2": "SX",
+        "alpha-3": "SXM",
+        "english": "Sint Maarten (Dutch part)",
+        "french": "Saint-Martin (partie néerlandaise)"
     },
     {
         "numeric": 760,
@@ -1519,88 +1484,11 @@
         "french": "République arabe syrienne (la)"
     },
     {
-        "numeric": 158,
-        "alpha-2": "TW",
-        "alpha-3": "TWN",
-        "english": "Taiwan (Province of China)",
-        "french": "Taïwan (Province de Chine)"
-    },
-    {
-        "numeric": 762,
-        "alpha-2": "TJ",
-        "alpha-3": "TJK",
-        "english": "Tajikistan",
-        "french": "Tadjikistan (le)"
-    },
-    {
-        "numeric": 834,
-        "alpha-2": "TZ",
-        "alpha-3": "TZA",
-        "english": "Tanzania, United Republic of",
-        "french": "Tanzanie, République-Unie de"
-    },
-    {
-        "numeric": 764,
-        "alpha-2": "TH",
-        "alpha-3": "THA",
-        "english": "Thailand",
-        "french": "Thaïlande (la)"
-    },
-    {
-        "numeric": 626,
-        "alpha-2": "TL",
-        "alpha-3": "TLS",
-        "english": "Timor-Leste",
-        "french": "Timor-Leste (le)"
-    },
-    {
-        "numeric": 768,
-        "alpha-2": "TG",
-        "alpha-3": "TGO",
-        "english": "Togo",
-        "french": "Togo (le)"
-    },
-    {
-        "numeric": 772,
-        "alpha-2": "TK",
-        "alpha-3": "TKL",
-        "english": "Tokelau",
-        "french": "Tokelau (les)"
-    },
-    {
-        "numeric": 776,
-        "alpha-2": "TO",
-        "alpha-3": "TON",
-        "english": "Tonga",
-        "french": "Tonga (les)"
-    },
-    {
-        "numeric": 780,
-        "alpha-2": "TT",
-        "alpha-3": "TTO",
-        "english": "Trinidad and Tobago",
-        "french": "Trinité-et-Tobago (la)"
-    },
-    {
-        "numeric": 788,
-        "alpha-2": "TN",
-        "alpha-3": "TUN",
-        "english": "Tunisia",
-        "french": "Tunisie (la)"
-    },
-    {
-        "numeric": 792,
-        "alpha-2": "TR",
-        "alpha-3": "TUR",
-        "english": "Turkey",
-        "french": "Turquie (la)"
-    },
-    {
-        "numeric": 795,
-        "alpha-2": "TM",
-        "alpha-3": "TKM",
-        "english": "Turkmenistan",
-        "french": "Turkménistan (le)"
+        "numeric": 748,
+        "alpha-2": "SZ",
+        "alpha-3": "SWZ",
+        "english": "Swaziland",
+        "french": "Swaziland (le)"
     },
     {
         "numeric": 796,
@@ -1610,6 +1498,90 @@
         "french": "Turks-et-Caïcos (les Îles)"
     },
     {
+        "numeric": 148,
+        "alpha-2": "TD",
+        "alpha-3": "TCD",
+        "english": "Chad",
+        "french": "Tchad (le)"
+    },
+    {
+        "numeric": 260,
+        "alpha-2": "TF",
+        "alpha-3": "ATF",
+        "english": "French Southern Territories (the)",
+        "french": "Terres australes françaises (les)"
+    },
+    {
+        "numeric": 768,
+        "alpha-2": "TG",
+        "alpha-3": "TGO",
+        "english": "Togo",
+        "french": "Togo (le)"
+    },
+    {
+        "numeric": 764,
+        "alpha-2": "TH",
+        "alpha-3": "THA",
+        "english": "Thailand",
+        "french": "Thaïlande (la)"
+    },
+    {
+        "numeric": 762,
+        "alpha-2": "TJ",
+        "alpha-3": "TJK",
+        "english": "Tajikistan",
+        "french": "Tadjikistan (le)"
+    },
+    {
+        "numeric": 772,
+        "alpha-2": "TK",
+        "alpha-3": "TKL",
+        "english": "Tokelau",
+        "french": "Tokelau (les)"
+    },
+    {
+        "numeric": 626,
+        "alpha-2": "TL",
+        "alpha-3": "TLS",
+        "english": "Timor-Leste",
+        "french": "Timor-Leste (le)"
+    },
+    {
+        "numeric": 795,
+        "alpha-2": "TM",
+        "alpha-3": "TKM",
+        "english": "Turkmenistan",
+        "french": "Turkménistan (le)"
+    },
+    {
+        "numeric": 788,
+        "alpha-2": "TN",
+        "alpha-3": "TUN",
+        "english": "Tunisia",
+        "french": "Tunisie (la)"
+    },
+    {
+        "numeric": 776,
+        "alpha-2": "TO",
+        "alpha-3": "TON",
+        "english": "Tonga",
+        "french": "Tonga (les)"
+    },
+    {
+        "numeric": 792,
+        "alpha-2": "TR",
+        "alpha-3": "TUR",
+        "english": "Turkey",
+        "french": "Turquie (la)"
+    },
+    {
+        "numeric": 780,
+        "alpha-2": "TT",
+        "alpha-3": "TTO",
+        "english": "Trinidad and Tobago",
+        "french": "Trinité-et-Tobago (la)"
+    },
+    {
         "numeric": 798,
         "alpha-2": "TV",
         "alpha-3": "TUV",
@@ -1617,11 +1589,18 @@
         "french": "Tuvalu (les)"
     },
     {
-        "numeric": 800,
-        "alpha-2": "UG",
-        "alpha-3": "UGA",
-        "english": "Uganda",
-        "french": "Ouganda (l')"
+        "numeric": 158,
+        "alpha-2": "TW",
+        "alpha-3": "TWN",
+        "english": "Taiwan (Province of China)",
+        "french": "Taïwan (Province de Chine)"
+    },
+    {
+        "numeric": 834,
+        "alpha-2": "TZ",
+        "alpha-3": "TZA",
+        "english": "Tanzania, United Republic of",
+        "french": "Tanzanie, République-Unie de"
     },
     {
         "numeric": 804,
@@ -1631,18 +1610,11 @@
         "french": "Ukraine (l')"
     },
     {
-        "numeric": 784,
-        "alpha-2": "AE",
-        "alpha-3": "ARE",
-        "english": "United Arab Emirates (the)",
-        "french": "Émirats arabes unis (les)"
-    },
-    {
-        "numeric": 826,
-        "alpha-2": "GB",
-        "alpha-3": "GBR",
-        "english": "United Kingdom of Great Britain and Northern Ireland (the)",
-        "french": "Royaume-Uni de Grande-Bretagne et d'Irlande du Nord (le)"
+        "numeric": 800,
+        "alpha-2": "UG",
+        "alpha-3": "UGA",
+        "english": "Uganda",
+        "french": "Ouganda (l')"
     },
     {
         "numeric": 581,
@@ -1673,11 +1645,18 @@
         "french": "Ouzbékistan (l')"
     },
     {
-        "numeric": 548,
-        "alpha-2": "VU",
-        "alpha-3": "VUT",
-        "english": "Vanuatu",
-        "french": "Vanuatu (le)"
+        "numeric": 336,
+        "alpha-2": "VA",
+        "alpha-3": "VAT",
+        "english": "Holy See (the)",
+        "french": "Saint-Siège (le)"
+    },
+    {
+        "numeric": 670,
+        "alpha-2": "VC",
+        "alpha-3": "VCT",
+        "english": "Saint Vincent and the Grenadines",
+        "french": "Saint-Vincent-et-les Grenadines"
     },
     {
         "numeric": 862,
@@ -1685,13 +1664,6 @@
         "alpha-3": "VEN",
         "english": "Venezuela (Bolivarian Republic of)",
         "french": "Venezuela (République bolivarienne du)"
-    },
-    {
-        "numeric": 704,
-        "alpha-2": "VN",
-        "alpha-3": "VNM",
-        "english": "Viet Nam",
-        "french": "Viet Nam (le)"
     },
     {
         "numeric": 92,
@@ -1708,6 +1680,20 @@
         "french": "Vierges des États-Unis (les Îles)"
     },
     {
+        "numeric": 704,
+        "alpha-2": "VN",
+        "alpha-3": "VNM",
+        "english": "Viet Nam",
+        "french": "Viet Nam (le)"
+    },
+    {
+        "numeric": 548,
+        "alpha-2": "VU",
+        "alpha-3": "VUT",
+        "english": "Vanuatu",
+        "french": "Vanuatu (le)"
+    },
+    {
         "numeric": 876,
         "alpha-2": "WF",
         "alpha-3": "WLF",
@@ -1715,11 +1701,11 @@
         "french": "Wallis-et-Futuna "
     },
     {
-        "numeric": 732,
-        "alpha-2": "EH",
-        "alpha-3": "ESH",
-        "english": "Western Sahara*",
-        "french": "Sahara occidental (le)*"
+        "numeric": 882,
+        "alpha-2": "WS",
+        "alpha-3": "WSM",
+        "english": "Samoa",
+        "french": "Samoa (le)"
     },
     {
         "numeric": 887,
@@ -1727,6 +1713,20 @@
         "alpha-3": "YEM",
         "english": "Yemen",
         "french": "Yémen (le)"
+    },
+    {
+        "numeric": 175,
+        "alpha-2": "YT",
+        "alpha-3": "MYT",
+        "english": "Mayotte",
+        "french": "Mayotte"
+    },
+    {
+        "numeric": 710,
+        "alpha-2": "ZA",
+        "alpha-3": "ZAF",
+        "english": "South Africa",
+        "french": "Afrique du Sud (l')"
     },
     {
         "numeric": 894,

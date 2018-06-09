@@ -56,7 +56,6 @@
 #prefectures-of-japan-unit td,
 #prefectures-of-japan-unit th
 {
-    text-align: left;
     padding: 0.1em 0.5em;
     text-align: left;
     max-width: 0;
@@ -69,4 +68,10 @@
 {
     text-align: center;
     /*font-style: italic;*/
+}
+
+#prefectures-of-japan-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
 }

@@ -2,6 +2,7 @@
 const unit = document.getElementById ('system-information-unit');
 //
 const infoContainer = unit.querySelector ('.info-container');
+const references = unit.querySelector ('.references');
 //
 const infos = require ('./infos.json');
 //

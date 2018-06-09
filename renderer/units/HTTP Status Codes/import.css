@@ -56,3 +56,9 @@
 {
     width: 100%;
 }
+
+#http-status-codes-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
+}

@@ -10,20 +10,21 @@ const displayMode = unit.querySelector ('.display-mode');
 const textColor = unit.querySelector ('.text-color');
 const throwOnError = unit.querySelector ('.throw-on-error');
 const latexContainer = unit.querySelector ('.latex-container');
+const references = unit.querySelector ('.references');
 //
 let defaultFolderPath;
 //
 module.exports.start = function (context)
 {
     const { remote } = require ('electron');
-    const { app, getCurrentWebContents, Menu, MenuItem } = remote;
+    const { app, getCurrentWebContents } = remote;
     const webContents = getCurrentWebContents ();
     //
     const path = require ('path');
     //
     const fileDialogs = require ('../../lib/file-dialogs.js');
-    //
     const pullDownMenus = require ('../../lib/pull-down-menus.js');
+    const sampleMenus = require ('../../lib/sample-menus');
     //
     const katex = require ('../../lib/katex/katex.min.js');
     //
@@ -33,7 +34,8 @@ module.exports.start = function (context)
         displayMode: true,
         textColor: false,
         throwOnError: false,
-        defaultFolderPath: app.getPath ('documents')  // 'desktop'
+        defaultFolderPath: app.getPath ('documents'),  // 'desktop'
+        references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
@@ -50,23 +52,16 @@ module.exports.start = function (context)
     //
     const samples = require ('./samples.json');
     //
-    let samplesMenu = new Menu ();
-    for (let sample of samples)
-    {
-        let menuItem = new MenuItem
-        (
-            {
-                label: sample.label.replace (/&/g, "&&"),
-                click: () =>
-                {
-                    latexFormula.focus ();
-                    webContents.selectAll ();
-                    webContents.replace (sample.string);
-                }
-            }
-        );
-        samplesMenu.append (menuItem);
-    }
+    let samplesMenu = sampleMenus.makeMenu
+    (
+        samples,
+        (sample) =>
+        {
+            latexFormula.focus ();
+            webContents.selectAll ();
+            webContents.replace (sample.string);
+        }
+    );
     //
     samplesButton.addEventListener
     (
@@ -89,6 +84,7 @@ module.exports.start = function (context)
                 "Load LaTeX file:",
                 [ { name: "LaTeX (*.tex)", extensions: [ 'tex' ] } ],
                 defaultFolderPath,
+                'utf8',
                 (text, filePath) =>
                 {
                     latexFormula.focus ();
@@ -171,6 +167,8 @@ module.exports.start = function (context)
     //
     changeThrowOnError (throwOnError.checked = prefs.throwOnError);
     throwOnError.addEventListener ('click', (event) => { changeThrowOnError (event.target.checked); });
+    //
+    references.open = prefs.references;
 };
 //
 module.exports.stop = function (context)
@@ -181,7 +179,8 @@ module.exports.stop = function (context)
         displayMode: displayMode.checked,
         textColor: textColor.checked,
         throwOnError: throwOnError.checked,
-        defaultFolderPath: defaultFolderPath
+        defaultFolderPath: defaultFolderPath,
+        references: references.open
     };
     context.setPrefs (prefs);
 };

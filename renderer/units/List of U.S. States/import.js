@@ -3,29 +3,40 @@ const unit = document.getElementById ('list-of-us-states-unit');
 //
 const liveSearch = unit.querySelector ('.live-search');
 const statesContainer = unit.querySelector ('.states-container');
+const references = unit.querySelector ('.references');
 //
 module.exports.start = function (context)
 {
     const defaultPrefs =
     {
-        liveSearch: ""
+        liveSearch: "",
+        references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
     const tables = require ('../../lib/tables.js');
     //
     const states = require ('./states.json');
+    for (let state of states)
+    {
+        if (!state.largest)
+        {
+            state.largest = state.capital;
+        }
+    }
     //
     const abbreviationIndex = tables.buildKeyIndex (states, "abbreviation", (a, b) => a.localeCompare (b));
-    const nameIndex = tables.buildKeyIndex (states, "name", (a, b) => a.localeCompare (b, 'en'));
+    const stateIndex = tables.buildKeyIndex (states, "state", (a, b) => a.localeCompare (b, 'en'));
     const capitalIndex = tables.buildKeyIndex (states, "capital", (a, b) => a.localeCompare (b, 'en'));
+    const largestIndex = tables.buildKeyIndex (states, "largest", (a, b) => a.localeCompare (b, 'en'));
     //
     let table = tables.create
     (
         [
             { label: "Abbreviation", className: 'abbreviation', key: "abbreviation" },
-            { label: "State Name", className: 'name', key: "name", lang: 'en' },
-            { label: "Capital", className: 'capital', key: "capital", lang: 'en' }
+            { label: "State Name", className: 'state', key: "state", lang: 'en' },
+            { label: "Capital City", className: 'city', key: "capital", lang: 'en' },
+            { label: "Largest City", className: 'city', key: "largest", lang: 'en' }
         ],
         { label: "No Match", className: 'message', lang: 'en' },
         states,
@@ -50,13 +61,16 @@ module.exports.start = function (context)
     liveSearch.placeholder = "Search";
     doSearch (liveSearch.value = prefs.liveSearch);
     liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
+    //
+    references.open = prefs.references;
 };
 //
 module.exports.stop = function (context)
 {
     let prefs =
     {
-        liveSearch: liveSearch.value
+        liveSearch: liveSearch.value,
+        references: references.open
     };
     context.setPrefs (prefs);
 };

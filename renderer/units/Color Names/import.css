@@ -91,3 +91,9 @@
     font-style: italic;
     font-size: 14px;
 }
+
+#color-names-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
+}

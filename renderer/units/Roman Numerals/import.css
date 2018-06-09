@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-#roman-numerals-unit .plain-panel
-{
-    font-size: 1em;
-}
-
 #roman-numerals-unit code,
 #roman-numerals-unit .notes ul
 {
@@ -16,9 +11,31 @@
 {
     font-family: Monaco, monospace;
     font-size: 1em;
+    line-height: 1.333em;
 }
 
 #roman-numerals-unit input
 {
     padding: 0.2em 0.3em;
+}
+
+#roman-numerals-unit .plain-panel
+{
+    padding-bottom: 1em;
+}
+
+#roman-numerals-unit .plain-panel div
+{
+    margin: 1em 0 0.5em 0;
+}
+
+#roman-numerals-unit .notes ul
+{
+    margin: -0.5em 0;
+}
+
+#roman-numerals-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
 }

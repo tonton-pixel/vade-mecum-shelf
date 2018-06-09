@@ -9,12 +9,17 @@ const arabicInput = unit.querySelector ('.arabic-input');
 const arabicSample = unit.querySelector ('.arabic-sample');
 const romanOutput = unit.querySelector ('.roman-output');
 //
+const notes = unit.querySelector ('.notes');
+const references = unit.querySelector ('.references');
+//
 module.exports.start = function (context)
 {
     const defaultPrefs =
     {
         romanInput: "",
-        arabicInput: ""
+        arabicInput: "",
+        notes: true,
+        references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
@@ -27,6 +32,9 @@ module.exports.start = function (context)
     arabicSample.textContent = "2018";
     romanOutput.value = numerals.arabicToRoman (arabicInput.value = prefs.arabicInput);
     arabicInput.addEventListener ('input', (event) => { romanOutput.value = numerals.arabicToRoman (event.target.value) });
+    //
+    notes.open = prefs.notes;
+    references.open = prefs.references;
 };
 //
 module.exports.stop = function (context)
@@ -34,7 +42,9 @@ module.exports.stop = function (context)
     let prefs =
     {
         romanInput: romanInput.value,
-        arabicInput: arabicInput.value
+        arabicInput: arabicInput.value,
+        notes: notes.open,
+        references: references.open
     };
     context.setPrefs (prefs);
 };

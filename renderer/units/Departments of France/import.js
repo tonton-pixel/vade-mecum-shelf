@@ -3,12 +3,14 @@ const unit = document.getElementById ('departments-of-france-unit');
 //
 const liveSearch = unit.querySelector ('.live-search');
 const codesContainer = unit.querySelector ('.codes-container');
+const references = unit.querySelector ('.references');
 //
 module.exports.start = function (context)
 {
     const defaultPrefs =
     {
-        liveSearch: ""
+        liveSearch: "",
+        references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
@@ -20,13 +22,15 @@ module.exports.start = function (context)
     const codeIndex = tables.buildKeyIndex (departments, "code", (a, b) => a.localeCompare (b));
     const departmentIndex = tables.buildKeyIndex (departments, "département", (a, b) => a.localeCompare (b, 'fr'));
     const prefectureIndex = tables.buildKeyIndex (departments, "chef-lieu", (a, b) => a.localeCompare (b, 'fr'));
+    const regionIndex = tables.buildKeyIndex (departments, "région", (a, b) => a.localeCompare (b, 'fr'));
     //
     let table = tables.create
     (
         [
             { label: "Code", className: 'code', key: "code" },
             { label: "Département", className: 'département', key: "département", lang: 'fr' },
-            { label: "Chef-lieu", className: 'chef-lieu', key: "chef-lieu", lang: 'fr' }
+            { label: "Chef-lieu", className: 'chef-lieu', key: "chef-lieu", lang: 'fr' },
+            { label: "Région", className: 'région', key: "région", lang: 'fr' }
         ],
         { label: "Aucun résultat", className: 'message', lang: 'fr' },
         departments,
@@ -52,13 +56,16 @@ module.exports.start = function (context)
     liveSearch.placeholder = "Rechercher";
     doSearch (liveSearch.value = prefs.liveSearch);
     liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
+    //
+    references.open = prefs.references;
 };
 //
 module.exports.stop = function (context)
 {
     let prefs =
     {
-        liveSearch: liveSearch.value
+        liveSearch: liveSearch.value,
+        references: references.open
     };
     context.setPrefs (prefs);
 };

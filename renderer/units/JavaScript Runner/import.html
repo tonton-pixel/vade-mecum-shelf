@@ -27,28 +27,34 @@
             </div>
             <label>Output:<textarea class="output-string" rows="12" readonly></textarea></label>
         </div>
-        <div class="accent-panel info">
-            <p><strong>Built-in functions</strong>:</p>
-            <ul>
-                <li><code>$.clear ();</code><br>Clears the output field.</li>
-                <li><code>$.notify (message[, callback]);</code><br>Sends a desktop notification with the given message and, if defined, executes the callback function when the user clicks on the notification.</li>
-                <li><code>$.write (text[, text...]...);</code><br>Writes the specified text to the output field.</li>
-                <li><code>$.writeln (text[, text...]...);</code><br>Writes the specified text to the output field and appends a line break.</li>
-            </ul>
-       </div>
         <div class="accent-panel">
-            <p><strong>References</strong>:</p>
-            <ul>
-                <li><a href="https://electronjs.org/docs">Documentation | Electron</a></li>
-                <li><a href="https://nodejs.org/api/">Index | Node.js Documentation</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">Document Object Model (DOM) - Web APIs | MDN</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript reference - JavaScript | MDN</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions">Functions - JavaScript | MDN</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function - JavaScript | MDN</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode">Strict mode - JavaScript | MDN</a></li>
-            </ul>
+            <details class="built-in-functions">
+                <summary>Built-in functions</summary>
+                <ul>
+                    <li><code>$.clear ();</code><br>Clears the output field.</li>
+                    <li><code>$.notify (message[, callback]);</code><br>Sends a desktop notification with the given message and, if defined, executes the callback function when the user clicks on the notification.</li>
+                    <li><code>$.stringify (value[, replacer[, space]]);</code><br>Converts a JavaScript value to a JSON string (with balanced spacing).</li>
+                    <li><code>$.write (text[, text...]...);</code><br>Writes the specified text to the output field.</li>
+                    <li><code>$.writeln (text[, text...]...);</code><br>Writes the specified text to the output field and appends a line break.</li>
+                </ul>
+            </details>
+            <details class="references">
+                <summary>References</summary>
+                <ul>
+                    <li><a href="https://electronjs.org/docs">Documentation | Electron</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://nodejs.org/api/">Index | Node.js Documentation</a></li>
+                    <li><a href="https://nodejs.org/api/child_process.html">Child Process | Node.js Documentation</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">Document Object Model (DOM) - Web APIs | MDN</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript reference - JavaScript | MDN</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions">Functions - JavaScript | MDN</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function - JavaScript | MDN</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode">Strict mode - JavaScript | MDN</a></li>
+                </ul>
+            </details>
         </div>
     </section>
 </template>

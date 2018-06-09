@@ -9,12 +9,15 @@ const ipRangeInput = unit.querySelector ('.ip-range-input');
 const ipRangeSample = unit.querySelector ('.ip-range-sample');
 const cidrListOutput = unit.querySelector ('.cidr-list-output');
 //
+const references = unit.querySelector ('.references');
+//
 module.exports.start = function (context)
 {
     const defaultPrefs =
     {
         cidrInput: "",
-        ipRangeInput: ""
+        ipRangeInput: "",
+        references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
@@ -37,6 +40,8 @@ module.exports.start = function (context)
     ipRangeSample.textContent = "192.168.1.1 - 192.168.1.12";
     getCidrList (ipRangeInput.value = prefs.ipRangeInput);
     ipRangeInput.addEventListener ('input', (event) => { getCidrList (event.target.value) });
+    //
+    references.open = prefs.references;
 };
 //
 module.exports.stop = function (context)
@@ -44,7 +49,8 @@ module.exports.stop = function (context)
     let prefs =
     {
         cidrInput: cidrInput.value,
-        ipRangeInput: ipRangeInput.value
+        ipRangeInput: ipRangeInput.value,
+        references: references.open
     };
     context.setPrefs (prefs);
 };

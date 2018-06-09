@@ -48,6 +48,7 @@ module.exports.start = function (context)
                 "Load text file:",
                 [ { name: "Text (*.txt)", extensions: [ 'txt' ] } ],
                 defaultFolderPath,
+                'utf8',
                 (text, filePath) =>
                 {
                     textString.focus ();

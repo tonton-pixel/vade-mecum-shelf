@@ -8,10 +8,12 @@ const spaceType = unit.querySelector ('.space-type');
 const balancedSpacing = unit.querySelector ('.balanced-spacing');
 const finalLineBreak = unit.querySelector ('.final-line-break');
 const outputString = unit.querySelector ('.output-string');
+const references = unit.querySelector ('.references');
 //
 module.exports.start = function (context)
 {
     const pullDownMenus = require ('../../lib/pull-down-menus.js');
+    const sampleMenus = require ('../../lib/sample-menus');
     const json = require ('../../lib/json2.js');
     //
     const defaultPrefs =
@@ -19,12 +21,13 @@ module.exports.start = function (context)
         inputString: "",
         spaceType: "",
         balancedSpacing: false,
-        finalLineBreak: false
+        finalLineBreak: false,
+        references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
     const { remote } = require ('electron');
-    const { getCurrentWebContents, Menu, MenuItem } = remote;
+    const { getCurrentWebContents } = remote;
     const webContents = getCurrentWebContents ();
     //
     clearButton.addEventListener
@@ -40,23 +43,16 @@ module.exports.start = function (context)
     //
     const samples = require ('./samples.json');
     //
-    let samplesMenu = new Menu ();
-    for (let sample of samples)
-    {
-        let menuItem = new MenuItem
-        (
-            {
-                label: sample.label.replace (/&/g, "&&"),
-                click: () =>
-                {
-                    inputString.focus ();
-                    webContents.selectAll ();
-                    webContents.replace (sample.string);
-                }
-            }
-        );
-        samplesMenu.append (menuItem);
-    }
+    let samplesMenu = sampleMenus.makeMenu
+    (
+        samples,
+        (sample) =>
+        {
+            inputString.focus ();
+            webContents.selectAll ();
+            webContents.replace (sample.string);
+        }
+    );
     //
     samplesButton.addEventListener
     (
@@ -99,11 +95,11 @@ module.exports.start = function (context)
         outputString.value = output;
         if (error)
         {
-            outputString.classList.add ('rendering-error');
+            outputString.classList.add ('output-error');
         }
         else
         {
-            outputString.classList.remove ('rendering-error');
+            outputString.classList.remove ('output-error');
         }
     }
     //
@@ -138,6 +134,8 @@ module.exports.start = function (context)
     //
     changeFinalLineBreak (finalLineBreak.checked = prefs.finalLineBreak);
     finalLineBreak.addEventListener ('click', (event) => { changeFinalLineBreak (event.target.checked); });
+    //
+    references.open = prefs.references;
 };
 //
 module.exports.stop = function (context)
@@ -147,7 +145,8 @@ module.exports.stop = function (context)
         inputString: inputString.value,
         spaceType: spaceType.value,
         balancedSpacing: balancedSpacing.checked,
-        finalLineBreak: finalLineBreak.checked
+        finalLineBreak: finalLineBreak.checked,
+        references: references.open
     };
     context.setPrefs (prefs);
 };

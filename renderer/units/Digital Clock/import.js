@@ -16,6 +16,7 @@ const selectHour = unit.querySelector ('.select-hour');
 const selectMinute = unit.querySelector ('.select-minute');
 const selectSecond = unit.querySelector ('.select-second');
 const selectTimeZoneName = unit.querySelector ('.select-timezonename');
+const references = unit.querySelector ('.references');
 //
 module.exports.start = function (context)
 {
@@ -33,7 +34,8 @@ module.exports.start = function (context)
         selectHour: "numeric",
         selectMinute: "numeric",
         selectSecond: "numeric",
-        selectTimeZoneName: "short"
+        selectTimeZoneName: "short",
+        references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
@@ -187,6 +189,8 @@ module.exports.start = function (context)
         }
     }
     window.setInterval (periodicFunction, 1000 / 25);
+    //
+    references.open = prefs.references;
 };
 //
 module.exports.stop = function (context)
@@ -203,7 +207,8 @@ module.exports.stop = function (context)
         selectHour: selectHour.value,
         selectMinute: selectMinute.value,
         selectSecond: selectSecond.value,
-        selectTimeZoneName: selectTimeZoneName.value
+        selectTimeZoneName: selectTimeZoneName.value,
+        references: references.open
     };
     context.setPrefs (prefs);
 };

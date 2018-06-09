@@ -39,6 +39,7 @@ The following utilities are currently available:
 * [Prefectures of Japan](#prefectures-of-japan)
 * [Roman Numerals](#roman-numerals)
 * [System Information](#system-information)
+* [Technical Definitions](#technical-definitions)
 * [Text Scratchpad](#text-scratchpad)
 * [Trigonometric Formulas](#trigonometric-formulas)
 * [Unicode Inspector](#unicode-inspector)
@@ -157,18 +158,30 @@ Converters between roman and arabic numerals:
 
 Detailed list of system information, by category:
 
+* Framework
+* Main Process
+* Renderer Process
 * Application
 * Navigator
 * Operating System
 * OS User Info
-* Process
-* Main Process
-* Renderer Process
 * Screen
 * Window
 * Environment
 
 <img src="screenshots/system-information.png" width="1080px" alt="System Information screenshot">
+
+## Technical Definitions
+
+Lists of technical definitions:
+
+* Computing Abbreviations
+* Mac OS Release Names
+* Metric Prefixes | Fractions
+* Metric Prefixes | Multiples
+* Binary Prefixes
+
+<img src="screenshots/technical-definitions.png" width="1080px" alt="Technical Definitions screenshot">
 
 ## Text Scratchpad
 

@@ -48,8 +48,13 @@
 {
     padding: 0.1em 0.5em;
     text-align: left;
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
+#iso-script-codes-unit td.code,
 #iso-script-codes-unit th.code
 {
     width: 4em;
@@ -58,20 +63,16 @@
 #iso-script-codes-unit td.code
 {
     font-family: Monaco, monospace;
-    width: 4em;
-}
-
-#iso-script-codes-unit th.language,
-#iso-script-codes-unit td.language
-{
-    max-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 #iso-script-codes-unit td.message
 {
     text-align: center;
     font-style: italic;
+}
+
+#iso-script-codes-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
 }

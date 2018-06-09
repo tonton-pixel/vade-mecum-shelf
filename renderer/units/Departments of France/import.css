@@ -48,32 +48,31 @@
 {
     padding: 0.1em 0.5em;
     text-align: left;
-}
-
-#departments-of-france-unit th.code
-{
-    /*text-align: right;*/
-    width: 3em;
-}
-
-#departments-of-france-unit td.code
-{
-    /*text-align: right;*/
-    font-family: Monaco, monospace;
-    width: 3em;
-}
-
-#departments-of-france-unit td.département,
-#departments-of-france-unit td.chef-lieu
-{
     max-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
+#departments-of-france-unit td.code,
+#departments-of-france-unit th.code
+{
+    width: 4em;
+}
+
+#departments-of-france-unit td.code
+{
+    font-family: Monaco, monospace;
+}
+
 #departments-of-france-unit td.message
 {
     text-align: center;
     font-style: italic;
+}
+
+#departments-of-france-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
 }

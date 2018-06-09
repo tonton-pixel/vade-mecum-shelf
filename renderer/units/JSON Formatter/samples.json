@@ -1,26 +1,110 @@
 [
     {
-        "label": "JSON Object 1",
-        "string": "{\"a\":1,\"b\":2,\"c\":3}"
+        "label": "JSON Objects",
+        "items":
+        [
+            {
+                "label": "Basic",
+                "string": "{\"a\":1,\"b\":2,\"c\":3}"
+            },
+            {
+                "label": "Simple",
+                "string": "{\"First Name\":\"Albert\",\"Last Name\":\"Einstein\",\"Genius\":true,\n\"Known for\":[\n\"Photoelectric effect\",\"Brownian motion\",\"Special relativity\",\"General relativity\"]}\n"
+            },
+            {
+                "label": "Detailed",
+                "string": "{\"glossary\":{\"title\":\"example glossary\",\"GlossDiv\":{\"title\":\"S\",\"GlossList\":{\"GlossEntry\":{\"ID\":\"SGML\",\"SortAs\":\"SGML\",\"GlossTerm\":\"Standard Generalized Markup Language\",\"Acronym\":\"SGML\",\"Abbrev\":\"ISO 8879:1986\",\"GlossDef\":{\"para\":\"A meta-markup language, used to create markup languages such as DocBook.\",\"GlossSeeAlso\":[\"GML\",\"XML\"]},\"GlossSee\":\"markup\"}}}}}\n"
+            }
+        ]
     },
     {
-        "label": "JSON Object 2",
-        "string": "{\"First Name\":\"Albert\",\"Last Name\":\"Einstein\",\"Genius\":true,\n\"Known for\":[\n\"Photoelectric effect\",\"Brownian motion\",\"Special relativity\",\"General relativity\"]}\n"
+        "label": "JSON Arrays",
+        "items":
+        [
+            {
+                "label": "Basic",
+                "string": "[1,2,3]"
+            },
+            {
+                "label": "Simple",
+                "string": "[{\"City\":\"San Francisco\",\"State\":\"CA\",\"Zip\":\"94107\"},{\"City\":\"Sunnyvale\",\"State\":\"CA\",\"Zip\":\"94085\"}]\n"
+            },
+            {
+                "label": "Detailed",
+                "string": "[{\"name\":{\"en\":\"Licorice\",\"fr\":\"Réglisse\",\"ja\":\"リコリス\"},\"hex\":\"#000000\"},{\"name\":{\"en\":\"Lead\",\"fr\":\"Plomb\",\"ja\":\"リード\"},\"hex\":\"#191919\"},{\"name\":{\"en\":\"Tungsten\",\"fr\":\"Tungstène\",\"ja\":\"タングステン\"},\"hex\":\"#333333\"},{\"name\":{\"en\":\"Iron\",\"fr\":\"Fer\",\"ja\":\"アイアン\"},\"hex\":\"#4C4C4C\"},{\"name\":{\"en\":\"Steel\",\"fr\":\"Acier\",\"ja\":\"スチール\"},\"hex\":\"#666666\"},{\"name\":{\"en\":\"Tin\",\"fr\":\"Étain\",\"ja\":\"スズ\"},\"hex\":\"#7F7F7F\"},{\"name\":{\"en\":\"Nickel\",\"fr\":\"Nickel\",\"ja\":\"ニッケル\"},\"hex\":\"#808080\"},{\"name\":{\"en\":\"Aluminium\",\"fr\":\"Aluminium\",\"ja\":\"アルミニウム\"},\"hex\":\"#999999\"},{\"name\":{\"en\":\"Magnesium\",\"fr\":\"Magnésium\",\"ja\":\"マグネシウム\"},\"hex\":\"#B3B3B3\"},{\"name\":{\"en\":\"Silver\",\"fr\":\"Argent\",\"ja\":\"シルバー\"},\"hex\":\"#CCCCCC\"},{\"name\":{\"en\":\"Mercury\",\"fr\":\"Mercure\",\"ja\":\"マーキュリー\"},\"hex\":\"#E6E6E6\"},{\"name\":{\"en\":\"Snow\",\"fr\":\"Neige\",\"ja\":\"スノー\"},\"hex\":\"#FFFFFF\"},{\"name\":{\"en\":\"Cayenne\",\"fr\":\"Cayenne\",\"ja\":\"トウガラシ\"},\"hex\":\"#800000\"},{\"name\":{\"en\":\"Mocha\",\"fr\":\"Moka\",\"ja\":\"モカ\"},\"hex\":\"#804000\"},{\"name\":{\"en\":\"Asparagus\",\"fr\":\"Asperge\",\"ja\":\"アスパラガス\"},\"hex\":\"#808000\"},{\"name\":{\"en\":\"Fern\",\"fr\":\"Fougère\",\"ja\":\"シダ\"},\"hex\":\"#408000\"},{\"name\":{\"en\":\"Clover\",\"fr\":\"Trèfle\",\"ja\":\"クローバー\"},\"hex\":\"#008000\"},{\"name\":{\"en\":\"Moss\",\"fr\":\"Mousse\",\"ja\":\"コケ\"},\"hex\":\"#008040\"},{\"name\":{\"en\":\"Teal\",\"fr\":\"Sarcelle\",\"ja\":\"ティール\"},\"hex\":\"#008080\"},{\"name\":{\"en\":\"Ocean\",\"fr\":\"Océan\",\"ja\":\"オーシャン\"},\"hex\":\"#004080\"},{\"name\":{\"en\":\"Midnight\",\"fr\":\"Minuit\",\"ja\":\"ミッドナイト\"},\"hex\":\"#000080\"},{\"name\":{\"en\":\"Eggplant\",\"fr\":\"Aubergine\",\"ja\":\"ナス\"},\"hex\":\"#400080\"},{\"name\":{\"en\":\"Plum\",\"fr\":\"Prune\",\"ja\":\"プラム\"},\"hex\":\"#800080\"},{\"name\":{\"en\":\"Maroon\",\"fr\":\"Bordeaux\",\"ja\":\"マロン\"},\"hex\":\"#800040\"},{\"name\":{\"en\":\"Maraschino\",\"fr\":\"Marasquin\",\"ja\":\"サクランボ\"},\"hex\":\"#FF0000\"},{\"name\":{\"en\":\"Tangerine\",\"fr\":\"Mandarine\",\"ja\":\"タンジェリン\"},\"hex\":\"#FF8000\"},{\"name\":{\"en\":\"Lemon\",\"fr\":\"Citron\",\"ja\":\"レモン\"},\"hex\":\"#FFFF00\"},{\"name\":{\"en\":\"Lime\",\"fr\":\"Citron vert\",\"ja\":\"ライム\"},\"hex\":\"#80FF00\"},{\"name\":{\"en\":\"Spring\",\"fr\":\"Printemps\",\"ja\":\"スプリング\"},\"hex\":\"#00FF00\"},{\"name\":{\"en\":\"Sea Foam\",\"fr\":\"Écume\",\"ja\":\"シーフォーム\"},\"hex\":\"#00FF80\"},{\"name\":{\"en\":\"Turquoise\",\"fr\":\"Turquoise\",\"ja\":\"ターコイズ\"},\"hex\":\"#00FFFF\"},{\"name\":{\"en\":\"Aqua\",\"fr\":\"Aqua\",\"ja\":\"アクア\"},\"hex\":\"#0080FF\"},{\"name\":{\"en\":\"Blueberry\",\"fr\":\"Myrtille\",\"ja\":\"ブルーベリー\"},\"hex\":\"#0000FF\"},{\"name\":{\"en\":\"Grape\",\"fr\":\"Raisin\",\"ja\":\"グレープ\"},\"hex\":\"#8000FF\"},{\"name\":{\"en\":\"Magenta\",\"fr\":\"Magenta\",\"ja\":\"マゼンタ\"},\"hex\":\"#FF00FF\"},{\"name\":{\"en\":\"Strawberry\",\"fr\":\"Fraise\",\"ja\":\"ストロベリー\"},\"hex\":\"#FF0080\"},{\"name\":{\"en\":\"Salmon\",\"fr\":\"Saumon\",\"ja\":\"サーモン\"},\"hex\":\"#FF6666\"},{\"name\":{\"en\":\"Cantaloupe\",\"fr\":\"Cantaloup\",\"ja\":\"マスクメロン\"},\"hex\":\"#FFCC66\"},{\"name\":{\"en\":\"Banana\",\"fr\":\"Banane\",\"ja\":\"バナナ\"},\"hex\":\"#FFFF66\"},{\"name\":{\"en\":\"Honeydew\",\"fr\":\"Miellée\",\"ja\":\"ハチミツ\"},\"hex\":\"#CCFF66\"},{\"name\":{\"en\":\"Flora\",\"fr\":\"Flore\",\"ja\":\"フローラ\"},\"hex\":\"#66FF66\"},{\"name\":{\"en\":\"Spindrift\",\"fr\":\"Embruns\",\"ja\":\"スピンドリフト\"},\"hex\":\"#66FFCC\"},{\"name\":{\"en\":\"Ice\",\"fr\":\"Glace\",\"ja\":\"アイス\"},\"hex\":\"#66FFFF\"},{\"name\":{\"en\":\"Sky\",\"fr\":\"Ciel\",\"ja\":\"スカイ\"},\"hex\":\"#66CCFF\"},{\"name\":{\"en\":\"Orchid\",\"fr\":\"Orchidée\",\"ja\":\"ラン\"},\"hex\":\"#6666FF\"},{\"name\":{\"en\":\"Lavender\",\"fr\":\"Lavande\",\"ja\":\"ラベンダー\"},\"hex\":\"#CC66FF\"},{\"name\":{\"en\":\"Bubblegum\",\"fr\":\"Chewing gum\",\"ja\":\"バブルガム\"},\"hex\":\"#FF66FF\"},{\"name\":{\"en\":\"Carnation\",\"fr\":\"Œillet\",\"ja\":\"カーネーション\"},\"hex\":\"#FF6FCF\"}]\n"
+            }
+        ]
     },
     {
-        "label": "JSON Array 1",
-        "string": "[1,2,3]"
+        "label": "JSON Strings",
+        "items":
+        [
+            {
+                "label": "ASCII",
+                "string": "\"Hello world!\""
+            },
+            {
+                "label": "Unicode",
+                "string": "\"AaĀā❤愛爱애💜\""
+            },
+            {
+                "label": "Escape Sequences 1",
+                "string": "\"\\u0000\\u0001\\u0002\\u0003\\u0004\\u0005\\u0006\\u0007\\u0008\\u0009\\u000A\\u000B\\u000C\\u000D\\u000E\\u000F\"\n"
+            },
+            {
+                "label": "Escape Sequences 2",
+                "string": "\"\\u0041\\u0061\\u0100\\u0101\\u2764\\u611B\\u7231\\uC560\\uD83D\\uDC9C\"\n"
+            }
+        ]
     },
     {
-        "label": "JSON Array 2",
-        "string": "[{\"City\":\"San Francisco\",\"State\":\"CA\",\"Zip\":\"94107\"},{\"City\":\"Sunnyvale\",\"State\":\"CA\",\"Zip\":\"94085\"}]\n"
-    },
-    {
-        "label": "JSON String 1",
-        "string": "\"Hello world!\""
-    },
-    {
-        "label": "JSON String 2",
-        "string": "\"\\u0041\\u0061\\u0100\\u0101\\u2764\\u611B\\u7231\\uC560\\uD83D\\uDC9C\""
+        "label": "Syntax Errors",
+        "items":
+        [
+            {
+                "label": "Unquoted Key",
+                "string": "{ a: 1 }"
+            },
+            {
+                "label": "Single-Quoted String",
+                "string": "[ 'a' ]"
+            },
+            {
+                "label": "Unescaped Quotes",
+                "string": "{ \"message\": \"This message has \"unescaped\" quotes.\" }"
+            },
+            {
+                "label": "Extraneous Comma",
+                "string": "[ 1, 2, 3, ]"
+            },
+            {
+                "label": "Missing Item",
+                "string": "[ 1, , 3 ]"
+            },
+            {
+                "label": "Undefined Value",
+                "string": "{ \"a\": undefined }"
+            },
+            {
+                "label": "Invalid Number 1",
+                "string": "+3.14"
+            },
+            {
+                "label": "Invalid Number 2",
+                "string": "0xDEAD"
+            },
+            {
+                "label": "Invalid Number 3",
+                "string": "01"
+            },
+            {
+                "label": "Invalid Number 4",
+                "string": "1."
+            },
+            {
+                "label": "Invalid Number 5",
+                "string": ".1"
+            }
+        ]
     }
 ]

@@ -3,12 +3,14 @@ const unit = document.getElementById ('iso-country-codes-unit');
 //
 const liveSearch = unit.querySelector ('.live-search');
 const codesContainer = unit.querySelector ('.codes-container');
+const references = unit.querySelector ('.references');
 //
 module.exports.start = function (context)
 {
     const defaultPrefs =
     {
-        liveSearch: ""
+        liveSearch: "",
+        references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
@@ -53,13 +55,16 @@ module.exports.start = function (context)
     liveSearch.placeholder = "Search";
     doSearch (liveSearch.value = prefs.liveSearch);
     liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
+    //
+    references.open = prefs.references;
 };
 //
 module.exports.stop = function (context)
 {
     let prefs =
     {
-        liveSearch: liveSearch.value
+        liveSearch: liveSearch.value,
+        references: references.open
     };
     context.setPrefs (prefs);
 };

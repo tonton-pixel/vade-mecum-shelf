@@ -1,21 +1,19 @@
 {
     "name": "vade-mecum-shelf",
     "productName": "Vade Mecum Shelf",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "description": "Collection of utilities wrapped into one single app.",
     "main": "main/main.js",
-    "scripts":
-    {
+    "scripts": {
         "start": "electron .",
-        "build-darwin-no-asar": "electron-packager . --out=build --platform=darwin --ignore=/~.* --icon=icons/icon.icns --overwrite",
-        "build-darwin": "electron-packager . --out=build --platform=darwin --ignore=/~.* --asar.unpack=LICENSE.txt --icon=icons/icon.icns --overwrite",
-        "build-linux": "electron-packager . --out=build --platform=linux --ignore=/~.* --asar.unpack=LICENSE.txt --icon=icons/icon.png --overwrite",
-        "build-mas": "electron-packager . --out=build --platform=mas --ignore=/~.* --asar.unpack=LICENSE.txt --icon=icons/icon.icns --overwrite",
-        "build-win32": "electron-packager . --out=build --platform=win32 --ignore=/~.* --asar.unpack=LICENSE.txt --icon=icons/icon.ico --overwrite",
-        "build-all": "electron-packager . --out=build --platform=all --ignore=/~.* --asar.unpack=LICENSE.txt --icon=icons/icon --overwrite"
+        "build-darwin-no-asar": "electron-packager . --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
+        "build-darwin": "electron-packager . --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --asar.unpack=LICENSE.txt --icon=icons/icon.icns --overwrite",
+        "build-linux": "electron-packager . --out=build --platform=linux --ignore=/~.* --ignore=^/screenshots --asar.unpack=LICENSE.txt --icon=icons/icon.png --overwrite",
+        "build-mas": "electron-packager . --out=build --platform=mas --ignore=/~.* --ignore=^/screenshots --asar.unpack=LICENSE.txt --icon=icons/icon.icns --overwrite",
+        "build-win32": "electron-packager . --out=build --platform=win32 --ignore=/~.* --ignore=^/screenshots --asar.unpack=LICENSE.txt --icon=icons/icon.ico --overwrite",
+        "build-all": "electron-packager . --out=build --platform=all --ignore=/~.* --ignore=^/screenshots --asar.unpack=LICENSE.txt --icon=icons/icon --overwrite"
     },
-    "keywords":
-    [
+    "keywords": [
         "app",
         "collection",
         "customizable",
@@ -25,20 +23,16 @@
         "utility",
         "vade mecum"
     ],
-    "author":
-    {
+    "author": {
         "name": "Michel MARIANI",
         "url": "https://github.com/tonton-pixel"
     },
     "homepage": "https://github.com/tonton-pixel/vade-mecum-shelf",
     "license": "MIT",
     "private": false,
-    "dependencies":
-    {
-    },
-    "devDependencies":
-    {
-        "electron": "1.8.4",
-        "electron-packager": "^10.1.2"
+    "dependencies": {},
+    "devDependencies": {
+        "electron": "^1.8.7",
+        "electron-packager": "^12.1.0"
     }
 }

@@ -8,26 +8,32 @@ const saveButton = unit.querySelector ('.save-button');
 const codeString = unit.querySelector ('.code-string');
 const runButton = unit.querySelector ('.run-button');
 const outputString = unit.querySelector ('.output-string');
+const builtInFunctions = unit.querySelector ('.built-in-functions');
+const references = unit.querySelector ('.references');
 //
 let defaultFolderPath;
 //
 module.exports.start = function (context)
 {
     const { remote } = require ('electron');
-    const { app, getCurrentWebContents, Menu, MenuItem } = remote;
+    const { app, getCurrentWebContents } = remote;
     const webContents = getCurrentWebContents ();
     //
     const fs = require ('fs');
     const path = require ('path');
     //
     const fileDialogs = require ('../../lib/file-dialogs.js');
-    //
     const pullDownMenus = require ('../../lib/pull-down-menus.js');
+    const sampleMenus = require ('../../lib/sample-menus');
+    //
+    const json = require ('../../lib/json2.js');
     //
     const defaultPrefs =
     {
         codeString: "",
-        defaultFolderPath: app.getPath ('documents')  // 'desktop'
+        defaultFolderPath: app.getPath ('documents'),  // 'desktop'
+        builtInFunctions: true,
+        references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
@@ -46,40 +52,51 @@ module.exports.start = function (context)
     let samplesDirname = path.join (__dirname, 'samples');
     let samplesFilenames = fs.readdirSync (samplesDirname);
     samplesFilenames.sort ((a, b) => a.localeCompare (b));
-    //
     let samples = [ ];
-    //
     for (let samplesFilename of samplesFilenames)
     {
         let filename = path.join (samplesDirname, samplesFilename);
-        if (fs.statSync (filename).isFile ())
+        if (fs.statSync (filename).isDirectory ())
+        {
+            let dirname = filename;
+            let itemsFilenames = fs.readdirSync (dirname);
+            itemsFilenames.sort ((a, b) => a.localeCompare (b));
+            let items = [ ];
+            for (let itemsFilename of itemsFilenames)
+            {
+                let filename = path.join (dirname, itemsFilename);
+                if (fs.statSync (filename).isFile ())
+                {
+                    let jsFilename = itemsFilename.match (/(.*)\.js$/i);
+                    if (jsFilename)
+                    {
+                        items.push ({ label: jsFilename[1], string: fs.readFileSync (filename, 'utf8') });
+                    }
+                }
+            }
+            samples.push ({ label: samplesFilename, items: items });
+        }
+        else if (fs.statSync (filename).isFile ())
         {
             let jsFilename = samplesFilename.match (/(.*)\.js$/i);
             if (jsFilename)
             {
-                samples.push ( { label: jsFilename[1], string: fs.readFileSync (filename, 'utf8') } );
+                samples.push ({ label: jsFilename[1], string: fs.readFileSync (filename, 'utf8') });
             }
         }
     }
     //
-    let samplesMenu = new Menu ();
-    for (let sample of samples)
-    {
-        let menuItem = new MenuItem
-        (
-            {
-                label: sample.label.replace (/&/g, "&&"),
-                click: () =>
-                {
-                    outputString.value = "";
-                    codeString.focus ();
-                    webContents.selectAll ();
-                    webContents.replace (sample.string);
-                }
-            }
-        );
-        samplesMenu.append (menuItem);
-    }
+    let samplesMenu = sampleMenus.makeMenu
+    (
+        samples,
+        (sample) =>
+        {
+            outputString.value = "";
+            codeString.focus ();
+            webContents.selectAll ();
+            webContents.replace (sample.string);
+        }
+    );
     //
     samplesButton.addEventListener
     (
@@ -102,6 +119,7 @@ module.exports.start = function (context)
                 "Load JavaScript file:",
                 [ { name: "JavaScript (*.js)", extensions: [ 'js' ] } ],
                 defaultFolderPath,
+                'utf8',
                 (text, filePath) =>
                 {
                     outputString.value = "";
@@ -229,7 +247,9 @@ module.exports.start = function (context)
                                                 callback ();
                                             }
                                         };    
-                                    }
+                                    },
+                                //
+                                stringify: json.stringify
                             };
                             // <http://dfkaye.github.io/2014/03/14/javascript-eval-and-function-constructor/>:
                             // Because Function does not have access to the local scope, the "use strict" 
@@ -251,6 +271,9 @@ module.exports.start = function (context)
             }
         }
     );
+    //
+    builtInFunctions.open = prefs.builtInFunctions;
+    references.open = prefs.references;
 };
 //
 module.exports.stop = function (context)
@@ -258,7 +281,9 @@ module.exports.stop = function (context)
     let prefs =
     {
         codeString: codeString.value,
-        defaultFolderPath: defaultFolderPath
+        defaultFolderPath: defaultFolderPath,
+        builtInFunctions: builtInFunctions.open,
+        references: references.open
     };
     context.setPrefs (prefs);
 };

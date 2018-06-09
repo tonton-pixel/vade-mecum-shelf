@@ -48,32 +48,31 @@
 {
     padding: 0.1em 0.5em;
     text-align: left;
-}
-
-#list-of-us-states-unit th.abbreviation
-{
-    text-align: left;
-    width: 3em;
-}
-
-#list-of-us-states-unit td.abbreviation
-{
-    text-align: left;
-     font-family: Monaco, monospace;
-    width: 3em;
-}
-
-#list-of-us-states-unit td.name,
-#list-of-us-states-unit td.capital
-{
     max-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
+#list-of-us-states-unit td.abbreviation,
+#list-of-us-states-unit th.abbreviation
+{
+    width: 8em;
+}
+
+#list-of-us-states-unit td.abbreviation
+{
+    font-family: Monaco, monospace;
+}
+
 #list-of-us-states-unit td.message
 {
     text-align: center;
     font-style: italic;
+}
+
+#list-of-us-states-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
 }

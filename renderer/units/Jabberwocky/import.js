@@ -4,6 +4,7 @@ module.exports = function (context)
     const unit = document.getElementById ('jabberwocky-unit');
     //
     const poemContainer = unit.querySelector ('.poem-container');
+    const references = unit.querySelector ('.references');
     //
     const url = require ('url');
     //

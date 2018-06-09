@@ -4,13 +4,15 @@ const unit = document.getElementById ('color-names-unit');
 const setsContainer = unit.querySelector ('.sets-container');
 const setSelector = unit.querySelector ('.set-selector');
 const liveSearch = unit.querySelector ('.live-search');
+const references = unit.querySelector ('.references');
 //
 module.exports.start = function (context)
 {
     const defaultPrefs =
     {
         setSelector: "",
-        liveSearch: ""
+        liveSearch: "",
+        references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
@@ -158,6 +160,8 @@ module.exports.start = function (context)
     liveSearch.placeholder = "Search";
     doSearch (liveSearch.value = prefs.liveSearch);
     liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
+    //
+    references.open = prefs.references;
 };
 //
 module.exports.stop = function (context)
@@ -165,7 +169,8 @@ module.exports.stop = function (context)
     let prefs =
     {
         setSelector: setSelector.value,
-        liveSearch: liveSearch.value
+        liveSearch: liveSearch.value,
+        references: references.open
     };
     context.setPrefs (prefs);
 };

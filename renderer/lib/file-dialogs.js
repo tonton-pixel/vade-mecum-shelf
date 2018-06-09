@@ -4,7 +4,7 @@ const { dialog, getCurrentWindow } = remote;
 //
 const fs = require ('fs');
 //
-module.exports.loadTextFile = function (prompt, filters, defaultPath, callback)
+module.exports.loadTextFile = function (prompt, filters, defaultPath, encoding, callback)
 {
     dialog.showOpenDialog
     (
@@ -23,7 +23,7 @@ module.exports.loadTextFile = function (prompt, filters, defaultPath, callback)
                 fs.readFile
                 (
                     filePath,
-                    'utf8',
+                    encoding,
                     (err, data) =>
                     {
                         if (err)

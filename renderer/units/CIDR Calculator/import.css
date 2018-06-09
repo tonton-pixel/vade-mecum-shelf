@@ -11,6 +11,7 @@
 {
     font-family: Monaco, monospace;
     font-size: 13px;
+    line-height: 1.333em;
 }
 
 #cidr-calculator-unit .ip-range-output
@@ -26,4 +27,15 @@
 #cidr-calculator-unit .plain-panel
 {
     padding-bottom: 0.25em;
+}
+
+#cidr-calculator-unit .plain-panel div
+{
+    margin-bottom: 1em;
+}
+
+#cidr-calculator-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
 }

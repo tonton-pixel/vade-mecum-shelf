@@ -1,257 +1,308 @@
 [
     {
         "abbreviation": "AL",
-        "name": "Alabama",
-        "capital": "Montgomery"
+        "state": "Alabama",
+        "capital": "Montgomery",
+        "largest": "Birmingham"
     },
     {
         "abbreviation": "AK",
-        "name": "Alaska",
-        "capital": "Juneau"
+        "state": "Alaska",
+        "capital": "Juneau",
+        "largest": "Anchorage"
     },
     {
         "abbreviation": "AZ",
-        "name": "Arizona",
-        "capital": "Phoenix"
+        "state": "Arizona",
+        "capital": "Phoenix",
+        "largest": ""
     },
     {
         "abbreviation": "AR",
-        "name": "Arkansas",
-        "capital": "Little Rock"
+        "state": "Arkansas",
+        "capital": "Little Rock",
+        "largest": ""
     },
     {
         "abbreviation": "CA",
-        "name": "California",
-        "capital": "Sacramento"
+        "state": "California",
+        "capital": "Sacramento",
+        "largest": "Los Angeles"
     },
     {
         "abbreviation": "CO",
-        "name": "Colorado",
-        "capital": "Denver"
+        "state": "Colorado",
+        "capital": "Denver",
+        "largest": ""
     },
     {
         "abbreviation": "CT",
-        "name": "Connecticut",
-        "capital": "Hartford"
+        "state": "Connecticut",
+        "capital": "Hartford",
+        "largest": "Bridgeport"
     },
     {
         "abbreviation": "DE",
-        "name": "Delaware",
-        "capital": "Dover"
+        "state": "Delaware",
+        "capital": "Dover",
+        "largest": "Wilmington"
     },
     {
         "abbreviation": "FL",
-        "name": "Florida",
-        "capital": "Tallahassee"
+        "state": "Florida",
+        "capital": "Tallahassee",
+        "largest": "Jacksonville"
     },
     {
         "abbreviation": "GA",
-        "name": "Georgia",
-        "capital": "Atlanta"
+        "state": "Georgia",
+        "capital": "Atlanta",
+        "largest": ""
     },
     {
         "abbreviation": "HI",
-        "name": "Hawaii",
-        "capital": "Honolulu"
+        "state": "Hawaii",
+        "capital": "Honolulu",
+        "largest": ""
     },
     {
         "abbreviation": "ID",
-        "name": "Idaho",
-        "capital": "Boise"
+        "state": "Idaho",
+        "capital": "Boise",
+        "largest": ""
     },
     {
         "abbreviation": "IL",
-        "name": "Illinois",
-        "capital": "Springfield"
+        "state": "Illinois",
+        "capital": "Springfield",
+        "largest": "Chicago"
     },
     {
         "abbreviation": "IN",
-        "name": "Indiana",
-        "capital": "Indianapolis"
+        "state": "Indiana",
+        "capital": "Indianapolis",
+        "largest": ""
     },
     {
         "abbreviation": "IA",
-        "name": "Iowa",
-        "capital": "Des Moines"
+        "state": "Iowa",
+        "capital": "Des Moines",
+        "largest": ""
     },
     {
         "abbreviation": "KS",
-        "name": "Kansas",
-        "capital": "Topeka"
+        "state": "Kansas",
+        "capital": "Topeka",
+        "largest": "Wichita"
     },
     {
         "abbreviation": "KY",
-        "name": "Kentucky",
-        "capital": "Frankfort"
+        "state": "Kentucky",
+        "capital": "Frankfort",
+        "largest": "Louisville"
     },
     {
         "abbreviation": "LA",
-        "name": "Louisiana",
-        "capital": "Baton Rouge"
+        "state": "Louisiana",
+        "capital": "Baton Rouge",
+        "largest": "New Orleans"
     },
     {
         "abbreviation": "ME",
-        "name": "Maine",
-        "capital": "Augusta"
+        "state": "Maine",
+        "capital": "Augusta",
+        "largest": "Portland"
     },
     {
         "abbreviation": "MD",
-        "name": "Maryland",
-        "capital": "Annapolis"
+        "state": "Maryland",
+        "capital": "Annapolis",
+        "largest": "Baltimore"
     },
     {
         "abbreviation": "MA",
-        "name": "Massachusetts",
-        "capital": "Boston"
+        "state": "Massachusetts",
+        "capital": "Boston",
+        "largest": ""
     },
     {
         "abbreviation": "MI",
-        "name": "Michigan",
-        "capital": "Lansing"
+        "state": "Michigan",
+        "capital": "Lansing",
+        "largest": "Detroit"
     },
     {
         "abbreviation": "MN",
-        "name": "Minnesota",
-        "capital": "Saint Paul"
+        "state": "Minnesota",
+        "capital": "Saint Paul",
+        "largest": "Minneapolis"
     },
     {
         "abbreviation": "MS",
-        "name": "Mississippi",
-        "capital": "Jackson"
+        "state": "Mississippi",
+        "capital": "Jackson",
+        "largest": ""
     },
     {
         "abbreviation": "MO",
-        "name": "Missouri",
-        "capital": "Jefferson City"
+        "state": "Missouri",
+        "capital": "Jefferson City",
+        "largest": "Kansas City"
     },
     {
         "abbreviation": "MT",
-        "name": "Montana",
-        "capital": "Helena"
+        "state": "Montana",
+        "capital": "Helena",
+        "largest": "Billings"
     },
     {
         "abbreviation": "NE",
-        "name": "Nebraska",
-        "capital": "Lincoln"
+        "state": "Nebraska",
+        "capital": "Lincoln",
+        "largest": "Omaha"
     },
     {
         "abbreviation": "NV",
-        "name": "Nevada",
-        "capital": "Carson City"
+        "state": "Nevada",
+        "capital": "Carson City",
+        "largest": "Las Vegas"
     },
     {
         "abbreviation": "NH",
-        "name": "New Hampshire",
-        "capital": "Concord"
+        "state": "New Hampshire",
+        "capital": "Concord",
+        "largest": "Manchester"
     },
     {
         "abbreviation": "NJ",
-        "name": "New Jersey",
-        "capital": "Trenton"
+        "state": "New Jersey",
+        "capital": "Trenton",
+        "largest": "Newark"
     },
     {
         "abbreviation": "NM",
-        "name": "New Mexico",
-        "capital": "Santa Fe"
+        "state": "New Mexico",
+        "capital": "Santa Fe",
+        "largest": "Albuquerque"
     },
     {
         "abbreviation": "NY",
-        "name": "New York",
-        "capital": "Albany"
+        "state": "New York",
+        "capital": "Albany",
+        "largest": "New York City"
     },
     {
         "abbreviation": "NC",
-        "name": "North Carolina",
-        "capital": "Raleigh"
+        "state": "North Carolina",
+        "capital": "Raleigh",
+        "largest": "Charlotte"
     },
     {
         "abbreviation": "ND",
-        "name": "North Dakota",
-        "capital": "Bismarck"
+        "state": "North Dakota",
+        "capital": "Bismarck",
+        "largest": "Fargo"
     },
     {
         "abbreviation": "OH",
-        "name": "Ohio",
-        "capital": "Columbus"
+        "state": "Ohio",
+        "capital": "Columbus",
+        "largest": ""
     },
     {
         "abbreviation": "OK",
-        "name": "Oklahoma",
-        "capital": "Oklahoma City"
+        "state": "Oklahoma",
+        "capital": "Oklahoma City",
+        "largest": ""
     },
     {
         "abbreviation": "OR",
-        "name": "Oregon",
-        "capital": "Salem"
+        "state": "Oregon",
+        "capital": "Salem",
+        "largest": "Portland"
     },
     {
         "abbreviation": "PA",
-        "name": "Pennsylvania",
-        "capital": "Harrisburg"
+        "state": "Pennsylvania",
+        "capital": "Harrisburg",
+        "largest": "Philadelphia"
     },
     {
         "abbreviation": "RI",
-        "name": "Rhode Island",
-        "capital": "Providence"
+        "state": "Rhode Island",
+        "capital": "Providence",
+        "largest": ""
     },
     {
         "abbreviation": "SC",
-        "name": "South Carolina",
-        "capital": "Columbia"
+        "state": "South Carolina",
+        "capital": "Columbia",
+        "largest": "Charleston"
     },
     {
         "abbreviation": "SD",
-        "name": "South Dakota",
-        "capital": "Pierre"
+        "state": "South Dakota",
+        "capital": "Pierre",
+        "largest": "Sioux Falls"
     },
     {
         "abbreviation": "TN",
-        "name": "Tennessee",
-        "capital": "Nashville"
+        "state": "Tennessee",
+        "capital": "Nashville",
+        "largest": ""
     },
     {
         "abbreviation": "TX",
-        "name": "Texas",
-        "capital": "Austin"
+        "state": "Texas",
+        "capital": "Austin",
+        "largest": "Houston"
     },
     {
         "abbreviation": "UT",
-        "name": "Utah",
-        "capital": "Salt Lake City"
+        "state": "Utah",
+        "capital": "Salt Lake City",
+        "largest": ""
     },
     {
         "abbreviation": "VT",
-        "name": "Vermont",
-        "capital": "Montpelier"
+        "state": "Vermont",
+        "capital": "Montpelier",
+        "largest": "Burlington"
     },
     {
         "abbreviation": "VA",
-        "name": "Virginia",
-        "capital": "Richmond"
+        "state": "Virginia",
+        "capital": "Richmond",
+        "largest": "Virginia Beach"
     },
     {
         "abbreviation": "WA",
-        "name": "Washington",
-        "capital": "Olympia"
+        "state": "Washington",
+        "capital": "Olympia",
+        "largest": "Seattle"
     },
     {
         "abbreviation": "WV",
-        "name": "West Virginia",
-        "capital": "Charleston"
+        "state": "West Virginia",
+        "capital": "Charleston",
+        "largest": ""
     },
     {
         "abbreviation": "WI",
-        "name": "Wisconsin",
-        "capital": "Madison"
+        "state": "Wisconsin",
+        "capital": "Madison",
+        "largest": "Milwaukee"
     },
     {
         "abbreviation": "WY",
-        "name": "Wyoming",
-        "capital": "Cheyenne"
+        "state": "Wyoming",
+        "capital": "Cheyenne",
+        "largest": ""
     },
     {
         "abbreviation": "DC",
-        "name": "District of Columbia*",
-        "capital": "Washington*"
+        "state": "District of Columbia*",
+        "capital": "Washington*",
+        "largest": ""
     }
 ]

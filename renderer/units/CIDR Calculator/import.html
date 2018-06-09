@@ -2,24 +2,26 @@
     <section id="cidr-calculator-unit">
         <div class="plain-panel">
             <h2>CIDR to IP Range</h2>
-            <p><label>CIDR:<br><input class="cidr-input" type="text" size="35"></label> Ex.:&nbsp;<code><span class="cidr-sample"></span></code></p>
-            <p><label>IP Range:<br><textarea class="ip-range-output" cols="35" rows="1" readonly></textarea></label></p>
+            <div><label>CIDR:<br><input class="cidr-input" type="text" size="35"></label> Ex.:&nbsp;<code><span class="cidr-sample"></span></code></div>
+            <div><label>IP Range:<br><textarea class="ip-range-output" cols="35" rows="1" readonly></textarea></label></div>
         </div>
         <div class="plain-panel">
             <h2>IP Range to CIDR List</h2>
-            <p><label>IP Range:<br><input class="ip-range-input" type="text" size="35"></label> Ex.:&nbsp;<code><span class="ip-range-sample"></span></code></p>
-            <p><label>CIDR List:<br><textarea class="cidr-list-output" cols="35" rows="8" readonly></textarea></label></p>
+            <div><label>IP Range:<br><input class="ip-range-input" type="text" size="35"></label> Ex.:&nbsp;<code><span class="ip-range-sample"></span></code></div>
+            <div><label>CIDR List:<br><textarea class="cidr-list-output" cols="35" rows="8" readonly></textarea></label></div>
         </div>
         <div class="accent-panel">
-            <p><strong>References</strong>:</p>
-            <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">Classless Inter-Domain Routing - Wikipedia</a></li>
-            </ul>
-            <ul>
-                <li><a href="http://www.faqs.org/rfcs/rfc1817.html">RFC 1817 - CIDR and Classful Routing (RFC1817)</a></li>
-                <li><a href="http://www.faqs.org/rfcs/rfc1518.html">RFC 1518 - An Architecture for IP Address Allocation with CIDR (RFC1518)</a></li>
-                <li><a href="http://www.faqs.org/rfcs/rfc1519.html">RFC 1519 - Classless Inter-Domain Routing (CIDR): an Address Ass (RFC1519)</a></li>
-            </ul>
+            <details class="references">
+                <summary>References</summary>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">Classless Inter-Domain Routing - Wikipedia</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://www.faqs.org/rfcs/rfc1817.html">RFC 1817 - CIDR and Classful Routing (RFC1817)</a></li>
+                    <li><a href="http://www.faqs.org/rfcs/rfc1518.html">RFC 1518 - An Architecture for IP Address Allocation with CIDR (RFC1518)</a></li>
+                    <li><a href="http://www.faqs.org/rfcs/rfc1519.html">RFC 1519 - Classless Inter-Domain Routing (CIDR): an Address Ass (RFC1519)</a></li>
+                </ul>
+            </details>
         </div>
     </section>
 </template>

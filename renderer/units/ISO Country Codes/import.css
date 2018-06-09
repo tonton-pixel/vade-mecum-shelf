@@ -48,30 +48,31 @@
 {
     padding: 0.1em 0.5em;
     text-align: left;
-}
-
-#iso-country-codes-unit th.code
-{
-    width: 3em;
-}
-
-#iso-country-codes-unit td.code
-{
-    font-family: Monaco, monospace;
-    width: 3em;
-}
-
-#iso-country-codes-unit th.country,
-#iso-country-codes-unit td.country
-{
     max-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
+#iso-country-codes-unit td.code,
+#iso-country-codes-unit th.code
+{
+    width: 5.5em;
+}
+
+#iso-country-codes-unit td.code
+{
+    font-family: Monaco, monospace;
+}
+
 #iso-country-codes-unit td.message
 {
     text-align: center;
     font-style: italic;
+}
+
+#iso-country-codes-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
 }
