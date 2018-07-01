@@ -26,6 +26,7 @@ The following utilities are currently available:
 * [Color Names](#color-names)
 * [Departments of France](#departments-of-france)
 * [Digital Clock](#digital-clock)
+* [Emoji Picture Book](#emoji-picture-book)
 * [HTTP Status Codes](#http-status-codes)
 * [IETF Language Tags](#ietf-language-tags)
 * [ISO Country Codes](#iso-country-codes)
@@ -74,6 +75,21 @@ Full list of French departments, with live search:
 Customizable clock, using language-sensitive text formatting for date and time:
 
 <img src="screenshots/digital-clock.png" width="1080px" alt="Digital Clock screenshot">
+
+## Emoji Picture Book
+
+Lists of Unicode emoji characters, by group:
+
+* Smileys & People
+* Animals & Nature
+* Food & Drink
+* Travel & Places
+* Activities
+* Objects
+* Symbols
+* Flags
+
+<img src="screenshots/emoji-picture-book.png" width="1080px" alt="Emoji Picture Book screenshot">
 
 ## HTTP Status Codes
 
@@ -180,6 +196,7 @@ Lists of technical definitions:
 * Metric Prefixes | Fractions
 * Metric Prefixes | Multiples
 * Binary Prefixes
+* Name of a Polynomial by Degree
 
 <img src="screenshots/technical-definitions.png" width="1080px" alt="Technical Definitions screenshot">
 

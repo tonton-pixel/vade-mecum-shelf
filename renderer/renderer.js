@@ -564,3 +564,19 @@ ipcRenderer.on ( 'scroll-to-bottom', () => { scroll.toBottom (unitElements[curre
 // When you call API for the first time voices don't load for some reason. And default voice loads for the first time.
 window.speechSynthesis.getVoices ();
 //
+if (settings.escapeExitsFullScreen)
+{
+    window.addEventListener
+    (
+        'keydown',
+        (event) =>
+        {
+            if ((event.key === 'Escape') && !(event.shiftKey || event.ctrlKey || event.altKey || event.metaKey))
+            {
+                event.preventDefault ();
+                ipcRenderer.send ('exit-full-screen');
+            }
+        }
+    );
+}
+//

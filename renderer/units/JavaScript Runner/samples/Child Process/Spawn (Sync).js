@@ -10,17 +10,6 @@ if (curl.error)
 }
 else
 {
-    let release = JSON.parse (curl.stdout);
-    let filteredRelease = { };
-    filteredRelease.name = release.name;
-    let filteredAssets = [ ];
-    for (let asset of release.assets)
-    {
-        filteredAssets.push
-        (
-            { name: asset.name, download_count: asset.download_count }
-        );
-    }
-    filteredRelease.assets = filteredAssets;
-    $.write ($.stringify (filteredRelease, null, 4));
+    let whitelist = [ "name", "assets", "download_count", "size" ];
+    $.write ($.stringify (JSON.parse (curl.stdout), whitelist, 4));
 }

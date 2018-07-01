@@ -36,11 +36,11 @@ else
     const path = require ('path');
     const url = require ('url');
     //
-    const packagedApp = !process.defaultApp;
+    const isPackaged = !process.defaultApp;
     //
     const appName = app.getName ();
     const appVersion = app.getVersion ();
-    const appDate = (packagedApp ? fs.statSync (app.getPath ('exe')).birthtime : new Date ()).toISOString ();
+    const appDate = (isPackaged ? fs.statSync (app.getPath ('exe')).birthtime : new Date ()).toISOString ();
     //
     let appDirname = app.getAppPath ();
     let unpackedDirname = `${appDirname}.unpacked`;
@@ -346,6 +346,25 @@ else
         }
         //
         ipcMain.on ('show-window', () => { mainWindow.show (); });
+        //
+        if (settings.escapeExitsFullScreen)
+        {
+            ipcMain.on
+            (
+                'exit-full-screen',
+                () =>
+                {
+                    if (mainWindow.isFullScreen ())
+                    {
+                        mainWindow.setFullScreen (false);
+                    }
+                    else
+                    {
+                        // shell.beep ();
+                    }
+                }
+            );
+        }
         //
         if (settings.hotKey)
         {

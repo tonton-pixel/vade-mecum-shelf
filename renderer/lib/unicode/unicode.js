@@ -438,11 +438,49 @@ function findCodePointsByName (name)
     return codePointList;
 }
 //
+const emojiData = require ('./parsed-emoji-data.js');
+//
+function getEmojiData (emoji, version)
+{
+    let data = null;
+    let emojiVersionData = emojiData[version];
+    if (emojiVersionData)
+    {
+        if (emojiVersionData[emoji])
+        {
+            data =
+            {
+                name: emojiVersionData[emoji].name || getCharactersData (emoji)[0].name,
+                age: emojiVersionData[emoji].age || getCharactersData (emoji)[0].age,
+            };
+        }
+    }
+    return data;
+}
+//
+/*
+function findEmojiByName (name)
+{
+    let emojiList = [ ];
+    for (let emojiString in emojiData)
+    {
+        let data = emojiData[emojiString];
+        if (data.name.toUpperCase ().indexOf (name.toUpperCase ()) > -1)
+        {
+            emojiList.push (emojiString);
+        }
+    }
+    return emojiList;
+}
+*/
+//
 module.exports =
 {
     getCharactersData,
     charactersToCodePoints,
     codePointsToCharacters,
-    findCodePointsByName
+    findCodePointsByName,
+    getEmojiData,
+    // findEmojiByName
 };
 //

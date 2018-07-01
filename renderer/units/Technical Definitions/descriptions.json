@@ -4,12 +4,28 @@
         "items":
         [
             {
+                "term": "ABNF",
+                "details": "Augmented Backus–Naur Form"
+            },
+            {
                 "term": "ADSL",
                 "details": "Asymmetric Digital Subscriber Line"
             },
             {
+                "term": "AJAX",
+                "details": "Asynchronous JavaScript And XML"
+            },
+            {
                 "term": "ANSI",
                 "details": "American National Standards Institute"
+            },
+            {
+                "term": "API",
+                "details": "Application Programming Interface"
+            },
+            {
+                "term": "ASAR",
+                "details": "Atom Shell Archive Format"
             },
             {
                 "term": "AST",
@@ -20,6 +36,14 @@
                 "details": "Best Current Practice"
             },
             {
+                "term": "BMP",
+                "details": "Basic Multilingual Plane"
+            },
+            {
+                "term": "BNF",
+                "details": "Backus–Naur Form<br>Backus Normal Form"
+            },
+            {
                 "term": "CC",
                 "details": "Creative Commons"
             },
@@ -28,12 +52,20 @@
                 "details": "Classless Inter-Domain Routing"
             },
             {
+                "term": "CLDR",
+                "details": "Common Locale Data Repository"
+            },
+            {
                 "term": "CLI",
                 "details": "Command Line Interface<br>Command Line Interpreter"
             },
             {
                 "term": "CPU",
                 "details": "Central Processing Unit"
+            },
+            {
+                "term": "CR",
+                "details": "Carriage Return"
             },
             {
                 "term": "CRC",
@@ -52,8 +84,16 @@
                 "details": "Dynamic Host Configuration Protocol"
             },
             {
+                "term": "DMG",
+                "details": "Disk Image Format"
+            },
+            {
                 "term": "DNS",
                 "details": "Domain Name System"
+            },
+            {
+                "term": "DOM",
+                "details": "Document Object Model"
             },
             {
                 "term": "DPI",
@@ -62,6 +102,14 @@
             {
                 "term": "DSL",
                 "details": "Digital Subscriber Line"
+            },
+            {
+                "term": "DTD",
+                "details": "Document Type Definition"
+            },
+            {
+                "term": "EBNF",
+                "details": "Extended Backus–Naur Form"
             },
             {
                 "term": "ECMA",
@@ -100,6 +148,10 @@
                 "details": "Garbage In, Garbage Out"
             },
             {
+                "term": "GIMP",
+                "details": "GNU Image Manipulation Program<br>General Image Manipulation Program"
+            },
+            {
                 "term": "GNU",
                 "details": "GNU's Not Unix!"
             },
@@ -108,8 +160,20 @@
                 "details": "Graphics Processing Unit"
             },
             {
+                "term": "GTK",
+                "details": "GIMP ToolKit"
+            },
+            {
                 "term": "GUI",
                 "details": "Graphical User Interface"
+            },
+            {
+                "term": "GUID",
+                "details": "Globally Unique Identifier"
+            },
+            {
+                "term": "HIG",
+                "details": "Human Interface Guidelines"
             },
             {
                 "term": "HTML",
@@ -132,6 +196,10 @@
                 "details": "Internet Corporation for Assigned Names and Numbers"
             },
             {
+                "term": "IDL",
+                "details": "Interface Description Language"
+            },
+            {
                 "term": "IEEE",
                 "details": "Institute for Electrical and Electronic Engineers"
             },
@@ -148,8 +216,16 @@
                 "details": "Internet Message Access Protocol"
             },
             {
+                "term": "IME",
+                "details": "Input Method Editor"
+            },
+            {
                 "term": "IP",
                 "details": "Internet Protocol"
+            },
+            {
+                "term": "IPC",
+                "details": "Inter-Process Communication"
             },
             {
                 "term": "ISO",
@@ -164,8 +240,16 @@
                 "details": "Information Technology"
             },
             {
+                "term": "JIT",
+                "details": "Just-In-Time"
+            },
+            {
                 "term": "JPEG",
                 "details": "Joint Photographic Experts Group"
+            },
+            {
+                "term": "JS",
+                "details": "JavaScript"
             },
             {
                 "term": "JSON",
@@ -180,12 +264,24 @@
                 "details": "Lightweight Directory Access Protocol"
             },
             {
+                "term": "LDML",
+                "details": "Locale Data Markup Language"
+            },
+            {
+                "term": "LF",
+                "details": "Line Feed"
+            },
+            {
                 "term": "LIFO",
                 "details": "Last In, First Out"
             },
             {
                 "term": "MAC",
                 "details": "Media Access Control"
+            },
+            {
+                "term": "MAS",
+                "details": "Mac App Store"
             },
             {
                 "term": "MDN",
@@ -228,8 +324,16 @@
                 "details": "Open Source Initiative"
             },
             {
+                "term": "PC",
+                "details": "Personal Computer"
+            },
+            {
                 "term": "PDF",
                 "details": "Portable Document Format"
+            },
+            {
+                "term": "PID",
+                "details": "Process Identifier"
             },
             {
                 "term": "PNG",
@@ -240,12 +344,20 @@
                 "details": "Post Office Protocol"
             },
             {
+                "term": "POSIX",
+                "details": "Portable Operating System Interface"
+            },
+            {
                 "term": "PPI",
                 "details": "Pixels Per Inch"
             },
             {
                 "term": "PPP",
                 "details": "Point-to-Point Protocol"
+            },
+            {
+                "term": "RADIUS",
+                "details": "Remote Authentication Dial-In User Service"
             },
             {
                 "term": "RAM",
@@ -268,12 +380,44 @@
                 "details": "Rich Text Fomat"
             },
             {
+                "term": "RTP",
+                "details": "Real-time Transport Protocol"
+            },
+            {
+                "term": "RTSP",
+                "details": "Real Time Streaming Protocol"
+            },
+            {
+                "term": "SAX",
+                "details": "Simple API for XML"
+            },
+            {
                 "term": "SEO",
                 "details": "Search Engine Optimization"
             },
             {
+                "term": "SFTP",
+                "details": "SSH File Transfer Protocol<br>Secure File Transfer Protocol"
+            },
+            {
                 "term": "SGML",
                 "details": "Standard Generalized Markup Language"
+            },
+            {
+                "term": "SHA",
+                "details": "Secure Hash Algorithms"
+            },
+            {
+                "term": "SIP",
+                "details": "Supplementary Ideographic Plane"
+            },
+            {
+                "term": "SMIL",
+                "details": "Synchronized Multimedia Integration Language"
+            },
+            {
+                "term": "SMP",
+                "details": "Supplementary Multilingual Plane"
             },
             {
                 "term": "SMTP",
@@ -296,6 +440,10 @@
                 "details": "Secure Sockets Layer"
             },
             {
+                "term": "SSP",
+                "details": "Supplementary Special-purpose Plane"
+            },
+            {
                 "term": "SVG",
                 "details": "Scalable Vector Graphics"
             },
@@ -306,6 +454,10 @@
             {
                 "term": "TIFF",
                 "details": "Tagged Image File Format"
+            },
+            {
+                "term": "TIP",
+                "details": "Tertiary Ideographic Plane"
             },
             {
                 "term": "TLS",
@@ -332,12 +484,24 @@
                 "details": "Universal Serial Bus"
             },
             {
+                "term": "UUID",
+                "details": "Universally Unique Identifier"
+            },
+            {
                 "term": "VLAN",
                 "details": "Virtual Local Area Network"
             },
             {
+                "term": "VM",
+                "details": "Virtual Memory<br>Virtual Machine"
+            },
+            {
                 "term": "VPN",
                 "details": "Virtual Private Network"
+            },
+            {
+                "term": "VRML",
+                "details": "Virtual Reality Modeling Language"
             },
             {
                 "term": "W3C",
@@ -349,7 +513,7 @@
             },
             {
                 "term": "WAP",
-                "details": "Wireless Application Protocol"
+                "details": "Wireless Application Protocol<br>Wireless Access Point"
             },
             {
                 "term": "WEP",
@@ -358,6 +522,10 @@
             {
                 "term": "WHATWG",
                 "details": "Web Hypertext Application Technology Working Group"
+            },
+            {
+                "term": "WLAN",
+                "details": "Wireless Local Area Network"
             },
             {
                 "term": "WPA",
@@ -370,6 +538,10 @@
             {
                 "term": "WYSIWYG",
                 "details": "What You See Is What You Get"
+            },
+            {
+                "term": "X3D",
+                "details": "Extensible 3D"
             },
             {
                 "term": "XHTML",
@@ -578,6 +750,56 @@
             {
                 "term": "yotta-",
                 "details": "2<sup>80</sup> (1024<sup>8</sup>)"
+            }
+        ]
+    },
+    {
+        "category": "Name of a Polynomial by Degree",
+        "items":
+        [
+            {
+                "term": "0",
+                "details": "Constant"
+            },
+            {
+                "term": "1",
+                "details": "Linear"
+            },
+            {
+                "term": "2",
+                "details": "Quadratic"
+            },
+            {
+                "term": "3",
+                "details": "Cubic"
+            },
+            {
+                "term": "4",
+                "details": "Quartic"
+            },
+            {
+                "term": "5",
+                "details": "Quintic"
+            },
+            {
+                "term": "6",
+                "details": "Sextic"
+            },
+            {
+                "term": "7",
+                "details": "Septic"
+            },
+            {
+                "term": "8",
+                "details": "Octic"
+            },
+            {
+                "term": "9",
+                "details": "Nonic"
+            },
+            {
+                "term": "10",
+                "details": "Decic"
             }
         ]
     }

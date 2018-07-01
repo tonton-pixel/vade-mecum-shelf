@@ -178,6 +178,10 @@
                 "value": "require ('electron').remote.app.getPath ('userData')"
             },
             {
+                "name": "Logs Directory",
+                "value": "require ('electron').remote.app.getPath ('logs')"
+            },
+            {
                 "name": "Temporary Directory",
                 "value": "require ('electron').remote.app.getPath ('temp')"
             },
@@ -216,6 +220,14 @@
             {
                 "name": "Pepper Flash Plugin",
                 "value": "require ('electron').remote.app.getPath ('pepperFlashSystemPlugin')"
+            },
+            {
+                "name": "GPU Feature Status",
+                "value": "require ('electron').remote.app.getGPUFeatureStatus ()"
+            },
+            {
+                "name": "Processes Metrics",
+                "value": "require ('electron').remote.app.getAppMetrics ()"
             }
         ]
     },

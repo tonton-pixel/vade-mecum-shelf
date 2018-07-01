@@ -111,15 +111,11 @@
             },
             {
                 "label": "Variation Selectors 2",
-                "string": "ℹ︎ℹ️☯︎☯️✒︎✒️"
+                "string": "ℹ︎ℹ️♨︎♨️✒︎✒️"
             },
             {
                 "label": "Variation Selectors 3",
-                "string": "♨︎♨️㊗︎㊗️🈲︎🈲️"
-            },
-            {
-                "label": "CJK Variation Selectors",
-                "string": "謎󠄀謎󠄁遡󠄀遡󠄁餅󠄀餅󠄁"
+                "string": "⚠︎⚠️㊙︎㊙️🈷︎🈷️"
             }
         ]
     },
@@ -134,6 +130,10 @@
             {
                 "label": "CJK Graphical Variants 2",
                 "string": "剝剥叱𠮟塡填頰頬"
+            },
+            {
+                "label": "CJK Variation Selectors",
+                "string": "謎󠄀謎󠄁遡󠄀遡󠄁餅󠄀餅󠄁"
             }
         ]
     }

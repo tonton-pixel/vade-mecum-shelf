@@ -1,6 +1,7 @@
 {
     "accelerated": false,
     "hotKey": "CommandOrControl+Alt+V",
+    "escapeExitsFullScreen": true,
     "unitsMenu": true,
     "developerMenu": true,
     "smartZoom": false,
@@ -17,7 +18,7 @@
         "deferredShow": true
     },
     "shortAppName": "Shelf",
-    "unitsName": "Titles",
+    "unitsName": "Utilities",
     "noCategoryName": "Other",
     "description": "Collection of utilities wrapped into one single app.",
     "copyright": "© 2017-2018 Michel MARIANI.",

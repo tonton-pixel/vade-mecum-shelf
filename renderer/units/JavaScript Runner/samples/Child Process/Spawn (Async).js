@@ -15,29 +15,9 @@ curl.stdout.on
     {
         if (string)
         {
-            let releases = JSON.parse (string);
-            let filteredReleases = [ ];
-            for (let release of releases)
-            {
-                if (!release.prerelease)
-                {
-                    let filteredRelease = { };
-                    filteredRelease.name = release.name;
-                    let assets = release.assets;
-                    let filteredAssets = [ ];
-                    for (let asset of assets)
-                    {
-                        let filteredAsset = { };
-                        filteredAsset.name = asset.name;
-                        filteredAsset.download_count = asset.download_count;
-                        filteredAssets.push (filteredAsset);
-                    }
-                    filteredRelease.assets = filteredAssets;
-                    filteredReleases.push (filteredRelease);
-                }
-            }
             $.clear ();
-            $.write ($.stringify (filteredReleases, null, 4));
+            let whitelist = [ "name", "assets", "download_count", "size" ];
+            $.write ($.stringify (JSON.parse (string), whitelist, 4));
         }
     }
 );
