@@ -14,11 +14,11 @@ Its *look and feel* is partly inspired by the brilliant [Electron API Demos](htt
 
 - It is possible to quickly scroll to the top or to the bottom of the utility from the `View` menu.
 
-- A utility can be displayed either by clicking its name in the navigation sidebar, or by selecting its name from the `Titles` menu.
+- A utility can be displayed either by clicking its name in the navigation sidebar, or by selecting its name from the `Utilities` menu.
 
 - From the `Developer` menu, it is possible to reveal the app's executable file, and also to open the user data directory (where the persistent settings get stored), as well as the temporary items directory.
 
-## Titles
+## Utilities
 
 The following utilities are currently available:
 
@@ -257,7 +257,7 @@ You can [download the latest release](https://github.com/tonton-pixel/vade-mecum
 
 - In Linux (at least on **Linux Mint 18.2 Sonya** and **Ubuntu 16.04.3 LTS**), there is a [bug](https://github.com/electron/electron/issues/10388) which prevents the window position to be correctly recorded between consecutive runs, a slight shift to the bottom right occurs systematically.
 
-- In **Ubuntu 16.04.3 LTS**, the Titles menu is never updated whenever one of its items is selected, or when the selection is triggered programmatically. This [bug](https://github.com/electron/electron/issues/11386) affects all menus made of radio-buttons items.
+- In **Ubuntu 16.04.3 LTS**, the `Utilities` menu is never updated whenever one of its items is selected, or when the selection is triggered programmatically. This [bug](https://github.com/electron/electron/issues/11386) affects all menus made of radio-buttons items.
 
 ## Limitations
 
