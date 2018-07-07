@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+#emoji-data-finder-unit .action-group
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#emoji-data-finder-unit .actions
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.75em 0;
+}
+
+#emoji-data-finder-unit .action-group + .action-group,
+#emoji-data-finder-unit .action + .action
+{
+    margin-left: 1em;
+}
+
+#emoji-data-finder-unit .search-string
+{
+    width: 12em;
+    font-size: 1em;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    margin-right: -0.5em;
+}
+
+#emoji-data-finder-unit .input-string
+{
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+    font-size: 2.5em;
+    padding: 0 0.2em;
+    width: 100%;
+    tab-size : 4;
+    margin: 0.25em 0;
+    line-height: 1.333em;
+    resize: vertical;
+}
+
+#emoji-data-finder-unit .emoji-data
+{
+    user-select: auto;
+    background-color: white;
+    margin: 1em 0 0.75em 0;
+}
+
+#emoji-data-finder-unit .emoji-data .emoji
+{
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+    font-size: 5em;
+    height: 1em;
+    min-width: 1em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1em;
+    padding: 0.2em;
+}
+
+#emoji-data-finder-unit .emoji-data .names
+{
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+    padding: 0.25em 0.5em;
+}
+
+#emoji-data-finder-unit .emoji-data .short-name
+{
+    vertical-align: middle;
+    font-size: 1.2em;
+    line-height: 1.1em;
+    margin: 0.25em 0;
+}
+
+#emoji-data-finder-unit .emoji-data .keywords
+{
+    vertical-align: middle;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: 0.25em 0;
+    font-style: italic;
+}
+
+#emoji-data-finder-unit .emoji-data .codes
+{
+    font-family: Monaco, "Noto Mono", monospace;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+    font-size: 1em;
+    padding: 0.3em 0.6em;
+}
+
+#emoji-data-finder-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
+}
+
+#emoji-data-finder-unit .info-icon
+{
+    width: 8em;
+    height: 8em;
+}

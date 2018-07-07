@@ -62,7 +62,7 @@
 
 #list-of-us-states-unit td.abbreviation
 {
-    font-family: Monaco, monospace;
+    font-family: Monaco, "Noto Mono", monospace;
 }
 
 #list-of-us-states-unit td.message

@@ -254,7 +254,8 @@ const versionDate =
     "7.0": "June 2014",
     "8.0": "June 2015",
     "9.0": "June 2016",
-    "10.0": "June 2017"
+    "10.0": "June 2017",
+    "11.0": "June 2018"
 };
 //
 function getCharacterData (character)
@@ -450,6 +451,7 @@ function getEmojiData (emoji, version)
         {
             data =
             {
+                code: emojiVersionData[emoji].code,
                 name: emojiVersionData[emoji].name || getCharactersData (emoji)[0].name,
                 age: emojiVersionData[emoji].age || getCharactersData (emoji)[0].age,
             };
@@ -458,29 +460,12 @@ function getEmojiData (emoji, version)
     return data;
 }
 //
-/*
-function findEmojiByName (name)
-{
-    let emojiList = [ ];
-    for (let emojiString in emojiData)
-    {
-        let data = emojiData[emojiString];
-        if (data.name.toUpperCase ().indexOf (name.toUpperCase ()) > -1)
-        {
-            emojiList.push (emojiString);
-        }
-    }
-    return emojiList;
-}
-*/
-//
 module.exports =
 {
     getCharactersData,
     charactersToCodePoints,
     codePointsToCharacters,
     findCodePointsByName,
-    getEmojiData,
-    // findEmojiByName
+    getEmojiData
 };
 //

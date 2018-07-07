@@ -1,0 +1,67 @@
+<template>
+    <section id="emoji-data-finder-unit">
+        <div class="plain-panel">
+            <div class="actions">
+                <span class="action-group">
+                    <span class="action">
+                        <button type="button" class="clear-button">Clear</button>
+                    </span>
+                    <span class="action">
+                        <button type="button" class="pull-down-menu emoji-samples">Samples</button>
+                    </span>
+                    <span class="action">
+                        <input class="search-string" type="search">
+                    </span>
+                    <span class="action">
+                        <button type="button" class="search-button">Search</button>
+                    </span>
+                </span>
+                <span class="action-group">
+                    <span class="action">
+                        <button type="button" class="filter-button" title="Discard non-emoji and remove duplicates.">Filter</button>
+                    </span>
+                </span>
+            </div>
+            <textarea class="input-string" rows="2"></textarea>
+            <div class="emoji-data-list"></div>
+        </div>
+        <div class="accent-panel">
+            <details class="references">
+                <summary>References</summary>
+                <ul>
+                    <li><a href="https://www.unicode.org/emoji/">Unicode Emoji</a></li>
+                    <li><a href="https://www.unicode.org/emoji/charts/">Unicode Emoji Charts</a></li>
+                    <li><a href="https://www.unicode.org/emoji/format.html">Unicode Emoji Chart Format</a></li>
+                    <li><a href="https://www.unicode.org/emoji/charts/emoji-list.html">Emoji List</a></li>
+                    <li><a href="https://www.unicode.org/emoji/charts/full-emoji-list.html">Full Emoji List</a></li>
+                    <li><a href="https://www.unicode.org/emoji/charts/emoji-ordering.html">Emoji Ordering</a></li>
+                    <li><a href="https://www.unicode.org/emoji/charts/emoji-versions.html">Emoji Versions</a></li>
+                    <li><a href="https://www.unicode.org/emoji/charts/emoji-versions-sources.html">Emoji Versions &amp; Sources</a></li>
+                    <li><a href="https://www.unicode.org/emoji/charts/emoji-variants.html">Emoji Presentation Sequences</a></li>
+                    <li><a href="https://www.unicode.org/emoji/charts/emoji-zwj-sequences.html">Recommended Emoji ZWJ Sequences</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.unicode.org/reports/tr51/">UTS #51: Unicode Emoji</a></li>
+                    <li><a href="https://www.unicode.org/faq/emoji_dingbats.html">FAQ - Emoji &amp; Pictographs</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://cldr.unicode.org/translation">Translation Guidelines - CLDR - Unicode Common Locale Data Repository</a></li>
+                    <li><a href="http://cldr.unicode.org/translation/country-names">Country/Region Names - CLDR - Unicode Common Locale Data Repository</a></li>
+                    <li><a href="http://cldr.unicode.org/translation/short-names-and-keywords">Characters Names and Keywords (Emoji) - CLDR - Unicode Common Locale Data Repository</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://unicode.org/repos/cldr/trunk/specs/ldml/tr35-general.html#Annotations">UTS #35: Unicode LDML: General - 14 Annotations and Labels</a></li>
+                    <li><a href="http://cldr.unicode.org/index/downloads/cldr-30">CLDR 30 Release Note - CLDR - Unicode Common Locale Data Repository</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Emoji">Emoji - Wikipedia</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://xahlee.info/comp/unicode_index.html">Unicode Characters ∑ ♥ 😄</a></li>
+                    <li><a href="https://www.charbase.com/block/miscellaneous-symbols-and-pictographs">Charbase: Miscellaneous Symbols And Pictographs</a></li>
+                    <li><a href="https://emojipedia.org/">📙 Emojipedia — 😃 Home of Emoji Meanings 💁👌🎍😍</a></li>
+                </ul>
+            </details>
+        </div>
+    </section>
+</template>

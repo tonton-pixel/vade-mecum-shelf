@@ -62,7 +62,7 @@
 
 #iso-script-codes-unit td.code
 {
-    font-family: Monaco, monospace;
+    font-family: Monaco, "Noto Mono", monospace;
 }
 
 #iso-script-codes-unit td.message

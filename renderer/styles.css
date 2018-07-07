@@ -182,7 +182,7 @@ svg.app-color-icon use:hover
 code,
 kbd
 {
-    font-family: Monaco, monospace;
+    font-family: Monaco, "Noto Mono", monospace;
     border-radius: 4px;
     padding: 2px 4px;
     white-space: nowrap;

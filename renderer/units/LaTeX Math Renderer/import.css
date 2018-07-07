@@ -2,7 +2,7 @@
 
 #latex-math-renderer-unit .latex-formula
 {
-    font-family: Monaco, monospace;
+    font-family: Monaco, "Noto Mono", monospace;
     font-size: 13px;
     line-height: 1.333em;
     width: 100%;
@@ -70,7 +70,7 @@
 
 #latex-math-renderer-unit .rendering-error
 {
-    font-family: Monaco, monospace;
+    font-family: Monaco, "Noto Mono", monospace;
     font-size: 13px;
     line-height: 1.333em;
     color: var(--color-error);

@@ -36,9 +36,6 @@ module.exports.start = function (context)
     //
     const emojiList = require ('../../lib/unicode/get-emoji-list.js') ("11.0");
     //
-    const regionalIndicatorList = require ('./regional-indicator-list.json');
-    Object.assign (emojiList, regionalIndicatorList);
-    //
     const groups = require ('../../lib/unicode/get-emoji-groups.js') ("11.0");
     //
     let groupNames = [ ];
@@ -143,14 +140,11 @@ module.exports.start = function (context)
                                     character = emojiList[character].fullyQualified;
                                     console.log (character);
                                 }
-                                if (debugMode || isSupportedCharacter (character))
-                                {
-                                    let span =  document.createElement ('span');
-                                    span.className = 'emoji';
-                                    span.textContent = character;
-                                    span.title = getEmojiToolTip (character);
-                                    sheet.appendChild (span);
-                                }
+                                let span =  document.createElement ('span');
+                                span.className = 'emoji';
+                                span.textContent = character;
+                                span.title = getEmojiToolTip (character);
+                                sheet.appendChild (span);
                             }
                         }
                         else
@@ -166,7 +160,7 @@ module.exports.start = function (context)
                     let removedSpans = [ ];
                     for (let span of spans)
                     {
-                        if (span.scrollWidth > span.clientWidth)
+                        if (!isSupportedCharacter (span.textContent) || (span.scrollWidth > span.clientWidth))
                         {
                             let saveCharacter = span.textContent;
                             let removeSpan = true;
@@ -176,7 +170,7 @@ module.exports.start = function (context)
                                 for (let altCharacter of altCharacters)
                                 {
                                     span.textContent = altCharacter;
-                                    if (!(span.scrollWidth > span.clientWidth))
+                                    if (isSupportedCharacter (span.textContent) && (!(span.scrollWidth > span.clientWidth)))
                                     {
                                         span.title = getEmojiToolTip (altCharacter);
                                         removeSpan = false;

@@ -3,7 +3,7 @@
 #json-formatter-unit .input-string,
 #json-formatter-unit .output-string
 {
-    font-family: Monaco, monospace;
+    font-family: Monaco, "Noto Mono", monospace;
     font-size: 13px;
     line-height: 1.333em;
     width: 100%;

@@ -26,6 +26,7 @@ The following utilities are currently available:
 * [Color Names](#color-names)
 * [Departments of France](#departments-of-france)
 * [Digital Clock](#digital-clock)
+* [Emoji Data Finder](#emoji-data-finder)
 * [Emoji Picture Book](#emoji-picture-book)
 * [HTTP Status Codes](#http-status-codes)
 * [IETF Language Tags](#ietf-language-tags)
@@ -75,6 +76,12 @@ Full list of French departments, with live search:
 Customizable clock, using language-sensitive text formatting for date and time:
 
 <img src="screenshots/digital-clock.png" width="1080px" alt="Digital Clock screenshot">
+
+## Emoji Data Finder
+
+Get data (short name, keywords, codes) of Unicode emoji characters found in a string:
+
+<img src="screenshots/emoji-data-finder.png" width="1080px" alt="Emoji Data Finder screenshot">
 
 ## Emoji Picture Book
 

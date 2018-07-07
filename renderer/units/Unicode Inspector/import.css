@@ -67,7 +67,7 @@
     font-size: 12px;
     vertical-align: top;
     line-height: 1.2em;
-    font-family: Monaco, monospace;
+    font-family: Monaco, "Noto Mono", monospace;
     padding: 0.25em 0.5em;
 }
 
@@ -89,7 +89,7 @@
 #unicode-inspector-unit .input-code-points,
 #unicode-inspector-unit .output-code-points
 {
-    font-family: Monaco, monospace;
+    font-family: Monaco, "Noto Mono", monospace;
     font-size: 1em;
     line-height: 1.333em;
     padding: 0.2em 0.4em;
