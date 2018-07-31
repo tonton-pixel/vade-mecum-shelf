@@ -44,6 +44,7 @@ The following utilities are currently available:
 * [Technical Definitions](#technical-definitions)
 * [Text Scratchpad](#text-scratchpad)
 * [Trigonometric Formulas](#trigonometric-formulas)
+* [Unicode Data Finder](#unicode-data-finder)
 * [Unicode Inspector](#unicode-inspector)
 
 ## CIDR Calculator
@@ -79,7 +80,7 @@ Customizable clock, using language-sensitive text formatting for date and time:
 
 ## Emoji Data Finder
 
-Get data (short name, keywords, codes) of Unicode emoji characters found in a string:
+Data (short name, keywords, code) of Unicode emoji characters extracted from a string:
 
 <img src="screenshots/emoji-data-finder.png" width="1080px" alt="Emoji Data Finder screenshot">
 
@@ -229,6 +230,12 @@ Sets of trigonometric formulas, by category:
 * Double Angle
 
 <img src="screenshots/trigonometric-formulas.png" width="1080px" alt="Trigonometric Formulas screenshot">
+
+## Unicode Data Finder
+
+Basic data of Unicode characters found by name:
+
+<img src="screenshots/unicode-data-finder.png" width="1080px" alt="Unicode Data Finder screenshot">
 
 ## Unicode Inspector
 

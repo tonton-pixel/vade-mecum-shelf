@@ -9,6 +9,7 @@ const outputCharactersData = unit.querySelector ('.output-characters-data');
 //
 const codePointsClear = unit.querySelector ('.code-points-clear');
 const codePointsSamples = unit.querySelector ('.code-points-samples');
+const codePointsFilter = unit.querySelector ('.code-points-filter');
 const inputCodePoints = unit.querySelector ('.input-code-points');
 const outputCharacters = unit.querySelector ('.output-characters');
 const outputCodePointsData = unit.querySelector ('.output-code-points-data');
@@ -66,13 +67,13 @@ module.exports.start = function (context)
         }
     );
     //
-    function displayDataList (string, outputData)
+    function displayDataList (characters, outputData)
     {
         if (outputData.firstChild)
         {
            outputData.firstChild.remove ();
         }
-        let dataList = unicode.getCharactersData (string);
+        let dataList = unicode.getCharactersData (characters);
         if (dataList.length > 0)
         {
             let table = document.createElement ('table');
@@ -139,7 +140,8 @@ module.exports.start = function (context)
                 }
                 let properties =
                 [
-                    { label: "Name", value: name, toolTip: data.alias },
+                    { label: "Name", value: name },
+                    { label: "Alias", value: data.alias },
                     { label: "Unicode\xA0Version", value: data.age, toolTip: data.ageDate },
                     { label: "Plane", value: data.planeName, toolTip: data.planeRange },
                     { label: "Block", value: data.blockName, toolTip: data.blockRange },
@@ -180,7 +182,7 @@ module.exports.start = function (context)
         (event) =>
         {
             outputCodePoints.value = unicode.charactersToCodePoints (event.target.value);
-            displayDataList (event.target.value, outputCharactersData);
+            displayDataList (Array.from (event.target.value), outputCharactersData);
         }
     );
     inputCharacters.value = prefs.inputCharacters; inputCharacters.dispatchEvent (new Event ('input'));
@@ -216,14 +218,25 @@ module.exports.start = function (context)
         }
     );
     //
+    codePointsFilter.addEventListener
+    (
+        'click',
+        (event) =>
+        {
+            inputCodePoints.focus ();
+            webContents.selectAll ();
+            webContents.replace (unicode.charactersToCodePoints (outputCharacters.textContent));
+        }
+    );
+    //
     inputCodePoints.addEventListener
     (
         'input',
         (event) =>
         {
             let characters = unicode.codePointsToCharacters (event.target.value);
-            outputCharacters.value = characters;
-            displayDataList (characters, outputCodePointsData);
+            outputCharacters.textContent = characters;
+            displayDataList (Array.from (characters), outputCodePointsData);
         }
     );
     inputCodePoints.value = prefs.inputCodePoints; inputCodePoints.dispatchEvent (new Event ('input'));

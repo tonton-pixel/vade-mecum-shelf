@@ -39,7 +39,7 @@
 #system-information-unit td.disabled
 {
     font-style: italic;
-    color: var(--color-subtle);
+    color: gray;
 }
 
 #system-information-unit summary

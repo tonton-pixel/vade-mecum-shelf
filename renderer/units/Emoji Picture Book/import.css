@@ -2,7 +2,7 @@
 
 #emoji-picture-book-unit h1.debug
 {
-    color: var(--color);
+    text-decoration: underline overline;
 }
 
 #emoji-picture-book-unit .interface

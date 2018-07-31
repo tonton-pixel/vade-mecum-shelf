@@ -9,25 +9,40 @@
                     <span class="action">
                         <button type="button" class="pull-down-menu emoji-samples">Samples</button>
                     </span>
+                </span>
+                <span class="action-group search-group">
                     <span class="action">
                         <input class="search-string" type="search">
+                    </span>
+                    <span class="action">
+                        <label title="Whole Word"><input type="checkbox" class="whole-word"><svg><use href="/images/search.svg#whole-word-icon"></use></svg></label>
+                    </span>
+                    <span class="action">
+                        <label title="Regular Expression"><input type="checkbox" class="use-regex"><svg><use href="/images/search.svg#use-regex-icon"></use></label>
                     </span>
                     <span class="action">
                         <button type="button" class="search-button">Search</button>
                     </span>
                 </span>
-                <span class="action-group">
-                    <span class="action">
-                        <button type="button" class="filter-button" title="Discard non-emoji and remove duplicates.">Filter</button>
-                    </span>
-                </span>
             </div>
             <textarea class="input-string" rows="2"></textarea>
+            <div class="actions">
+                <span class="action hit-count">
+                </span>
+                <span class="action">
+                    <button type="button" class="filter-button" title="Strip out non-emoji characters and remove duplicates.">Filter</button>
+                </span>
+            </div>
             <div class="emoji-data-list"></div>
         </div>
         <div class="accent-panel">
             <details class="references">
                 <summary>References</summary>
+                <ul>
+                    <li><a href="https://mathiasbynens.be/notes/es-unicode-property-escapes">Unicode property escapes in JavaScript regular expressions · Mathias Bynens</a></li>
+                    <li><a href="https://github.com/mathiasbynens/regexpu-core">GitHub - mathiasbynens/regexpu-core: regexpu’s core functionality</a></li>
+                    <li><a href="https://github.com/mathiasbynens/regexpu-core/blob/master/property-escapes.md">regexpu-core/property-escapes.md at master · mathiasbynens/regexpu-core · GitHub</a></li>
+                </ul>
                 <ul>
                     <li><a href="https://www.unicode.org/emoji/">Unicode Emoji</a></li>
                     <li><a href="https://www.unicode.org/emoji/charts/">Unicode Emoji Charts</a></li>

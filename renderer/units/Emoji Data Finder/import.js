@@ -4,9 +4,12 @@ const unit = document.getElementById ('emoji-data-finder-unit');
 const clearButton = unit.querySelector ('.clear-button');
 const emojiSamples = unit.querySelector ('.emoji-samples');
 const searchString = unit.querySelector ('.search-string');
+const wholeWord = unit.querySelector ('.whole-word');
+const useRegex = unit.querySelector ('.use-regex');
 const searchButton = unit.querySelector ('.search-button');
-const filterButton = unit.querySelector ('.filter-button');
 const inputString = unit.querySelector ('.input-string');
+const hitCount = unit.querySelector ('.hit-count');
+const filterButton = unit.querySelector ('.filter-button');
 const emojiDataList = unit.querySelector ('.emoji-data-list');
 const references = unit.querySelector ('.references');
 //
@@ -19,12 +22,26 @@ module.exports.start = function (context)
     const pullDownMenus = require ('../../lib/pull-down-menus.js');
     const sampleMenus = require ('../../lib/sample-menus');
     //
+    const useES6Regex = true;
+    //
+    const rewritePattern = require ('regexpu-core');
+    //
     const defaultPrefs =
     {
+        searchString: "",
+        wholeWord: false,
+        useRegex: false,
         inputString: "",
         references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
+    //
+    function characterToEcmaScriptEscape (character)
+    {
+        let num = character.codePointAt (0);
+        let hex = num.toString (16).toUpperCase ();
+        return `\\u{${hex}}`;
+    }
     //
     const cldrAnnotations = require ('../../lib/unicode/get-cldr-annotations.js') ("en.xml");
     //
@@ -41,26 +58,23 @@ module.exports.start = function (context)
     const emojiList = require ('../../lib/unicode/get-emoji-list.js') ("11.0");
     const emojiKeys = Object.keys (emojiList).sort ().reverse ();
     //
-    function findEmojiByName (name)
+    function findEmojiByName (regex)
     {
         let emojiByName = [ ];
-        if (name)
+        for (let emoji in emojiList)
         {
-            for (let emoji in emojiList)
+            if (getEmojiShortName (emoji).match (regex))
             {
-                if (getEmojiShortName (emoji).toUpperCase ().indexOf (name.toUpperCase ()) > -1)
+                emojiByName.push (emoji);
+            }
+            else
+            {
+                for (let keyword of getEmojiKeywords (emoji))
                 {
-                    emojiByName.push (emoji);
-                }
-                else
-                {
-                    for (let keyword of getEmojiKeywords (emoji))
+                    if (keyword.match (regex))
                     {
-                        if (keyword.toUpperCase ().indexOf (name.toUpperCase ()) > -1)
-                        {
-                            emojiByName.push (emoji);
-                            break;
-                        }
+                        emojiByName.push (emoji);
+                        break;
                     }
                 }
             }
@@ -68,7 +82,7 @@ module.exports.start = function (context)
         return emojiByName;
     }
     //
-    function getEmojiDataList (string, noDuplicate)
+    function getEmojiDataList (string)
     {
         let emojiDataList = [ ];
         let emojiFound = false;
@@ -93,7 +107,7 @@ module.exports.start = function (context)
                 string = string.slice (1);
             }
         }
-        return (noDuplicate) ? [...new Set (emojiDataList)] : emojiDataList;
+        return [...new Set (emojiDataList)];
     }
     //
     clearButton.addEventListener
@@ -129,6 +143,9 @@ module.exports.start = function (context)
         }
     );
     //
+    wholeWord.checked = prefs.wholeWord;
+    useRegex.checked = prefs.useRegex;
+    //
     searchString.placeholder = "Name or keyword...";
     searchString.addEventListener
     (
@@ -142,25 +159,95 @@ module.exports.start = function (context)
             }
         }
     );
+    searchString.addEventListener
+    (
+        'input',
+        (event) =>
+        {
+            event.target.classList.remove ('error');
+            event.target.title = "";
+            if (useRegex.checked)
+            {
+                try
+                {
+                    const flags = 'ui';
+                    let pattern = event.target.value;
+                    if (useES6Regex)
+                    {
+                        pattern = rewritePattern (pattern, flags, { unicodePropertyEscape: true, useUnicodeFlag: true });
+                    }
+                    let regex = new RegExp (pattern, flags);
+                }
+                catch (e)
+                {
+                    event.target.classList.add ('error');
+                    event.target.title = e;
+                }
+            }
+        }
+    );
+    searchString.value = prefs.searchString;
+    searchString.dispatchEvent (new Event ('input'));
     //
+    useRegex.addEventListener
+    (
+        'change',
+        (event) => searchString.dispatchEvent (new Event ('input'))
+    );
     //
     searchButton.addEventListener
     (
         'click',
         (event) =>
         {
-            if (searchString.value)
-            {
-                let emojiByName = findEmojiByName (searchString.value);
-                // if (emojiByName.length > 0)
+            clearButton.click ();
+            setTimeout
+            (
+                () =>
                 {
-                    inputString.focus ();
-                    webContents.selectAll ();
-                    webContents.replace (emojiByName.join (''));
+                    let name = searchString.value;
+                    if (name)
+                    {
+                        let regex = null;
+                        try
+                        {
+                            let pattern = (useRegex.checked) ? name : Array.from (name).map ((char) => characterToEcmaScriptEscape (char)).join ('');
+                            if (wholeWord.checked)
+                            {
+                                const beforeWordBoundary =
+                                (useES6Regex) ?
+                                    '(?:^|[^\\p{Alphabetic}\\p{Mark}\\p{Decimal_Number}\\p{Connector_Punctuation}\\p{Join_Control}])' :
+                                    '(?:^|[^\\w])';
+                                const afterWordBoundary =
+                                (useES6Regex) ?
+                                    '(?:$|[^\\p{Alphabetic}\\p{Mark}\\p{Decimal_Number}\\p{Connector_Punctuation}\\p{Join_Control}])' :
+                                    '(?:$|[^\\w])';
+                                pattern = `${beforeWordBoundary}(${pattern})${afterWordBoundary}`;
+                            }
+                            const flags = 'ui';
+                            if (useES6Regex)
+                            {
+                                pattern = rewritePattern (pattern, flags, { unicodePropertyEscape: true, useUnicodeFlag: true });
+                            }
+                            regex = new RegExp (pattern, flags);
+                        }
+                        catch (e)
+                        {
+                        }
+                        if (regex)
+                        {
+                            let emojiByName = findEmojiByName (regex);
+                            inputString.focus ();
+                            webContents.selectAll ();
+                            webContents.replace (emojiByName.join (''));
+                        }
+                    }
                 }
-            }
+            );
         }
     );
+    //
+    inputString.value = prefs.inputString;
     //
     filterButton.addEventListener
     (
@@ -169,19 +256,23 @@ module.exports.start = function (context)
         {
             inputString.focus ();
             webContents.selectAll ();
-            webContents.replace (getEmojiDataList (inputString.value, true).join (""));
+            webContents.replace (getEmojiDataList (inputString.value).join (""));
         }
     );
     //
-    inputString.value = prefs.inputString;
-    //
-    function displayDataList (string)
+    function emptyDataList ()
     {
         while (emojiDataList.firstChild)
         {
            emojiDataList.firstChild.remove ();
-        } 
-        for (let character of getEmojiDataList (string))
+        }
+    }
+    //
+    function displayDataList (string)
+    {
+        let characters = getEmojiDataList (string);
+        hitCount.textContent = `${characters.length}\xA0/\xA0${emojiKeys.length}`;
+        for (let character of characters)
         {
             let emojiData = document.createElement ('table');
             emojiData.className = 'emoji-data';
@@ -209,8 +300,13 @@ module.exports.start = function (context)
             let code = emojiList[character].code.split (" ").map (source => { return `U+${source}`; }).join (" ");
             // let code = emojiList[character].code;
             codes.textContent = code;
-            let toolTip = (emojiList[character].fullyQualified) ? "Non Fully Qualified": "Fully Qualified";
-            codes.title = toolTip;
+            let toolTip = (emojiList[character].fullyQualified) ? "NON FULLY QUALIFIED": "FULLY QUALIFIED";
+            emojiData.title = toolTip;
+            if (emojiList[character].fullyQualified)
+            {
+                names.classList.add ('non-fully-qualified');
+                codes.classList.add ('non-fully-qualified');
+            }
             secondRow.appendChild (codes);
             emojiData.appendChild (secondRow);
             emojiDataList.appendChild (emojiData);
@@ -218,7 +314,15 @@ module.exports.start = function (context)
     }
     //
     displayDataList (inputString.value);
-    inputString.addEventListener ('input', (event) => { displayDataList (event.target.value); });
+    inputString.addEventListener
+    (
+        'input',
+        (event) =>
+        {
+            emptyDataList ();
+            displayDataList (event.target.value);
+        }
+    );
     //
     references.open = prefs.references;
 };
@@ -227,6 +331,9 @@ module.exports.stop = function (context)
 {
     let prefs =
     {
+        searchString: searchString.value,
+        wholeWord: wholeWord.checked,
+        useRegex: useRegex.checked,
         inputString: inputString.value,
         references: references.open
     };

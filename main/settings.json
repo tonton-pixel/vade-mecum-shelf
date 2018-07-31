@@ -1,5 +1,5 @@
 {
-    "accelerated": false,
+    "accelerated": true,
     "hotKey": "CommandOrControl+Alt+V",
     "escapeExitsFullScreen": true,
     "unitsMenu": true,
@@ -22,9 +22,14 @@
     "noCategoryName": "Other",
     "description": "Collection of utilities wrapped into one single app.",
     "copyright": "© 2017-2018 Michel MARIANI.",
-    "homePage":
+    "repository":
     {
-        "label": "Home Page",
+        "label": "Repository",
         "URL": "https://github.com/tonton-pixel/vade-mecum-shelf"
+    },
+    "releases":
+    {
+        "label": "Latest Releases",
+        "URL": "https://github.com/tonton-pixel/vade-mecum-shelf/releases"
     }
 }

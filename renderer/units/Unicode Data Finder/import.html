@@ -1,55 +1,71 @@
 <template>
-    <section id="unicode-inspector-unit">
+    <section id="unicode-data-finder-unit">
         <div class="plain-panel">
-            <h2>Characters</h2>
+            <h2>Search by Name</h2>
             <div class="actions">
-                <span class="action">
-                    <button type="button" class="characters-clear">Clear</button>
-                </span>
-                <span class="action">
-                    <button type="button" class="pull-down-menu characters-samples">Samples</button>
-                </span>
-            </div>
-            <div class="characters-to-code-points">
-                <textarea class="input-characters" rows="2"></textarea>
-                <input class="output-code-points" type="text" readonly>
-            </div>
-            <div class="output-characters-data"></div>
-        </div>
-        <div class="plain-panel">
-            <h2>Code Points</h2>
-            <div class="actions code-points-actions">
-                <span class="action-group">
+                <span class="action-group search-group">
                     <span class="action">
-                        <button type="button" class="code-points-clear">Clear</button>
+                        <input class="search-string" type="search">
                     </span>
                     <span class="action">
-                        <button type="button" class="pull-down-menu code-points-samples">Samples</button>
+                        <label title="Whole Word"><input type="checkbox" class="whole-word"><svg><use href="/images/search.svg#whole-word-icon"></use></svg></label>
+                    </span>
+                    <span class="action">
+                        <label title="Regular Expression"><input type="checkbox" class="use-regex"><svg><use href="/images/search.svg#use-regex-icon"></use></label>
+                    </span>
+                    <span class="action">
+                        <button type="button" class="search-button">Search</button>
                     </span>
                 </span>
-                <span class="action">
-                    <button type="button" class="code-points-filter" title="Keep only valid code sequences and convert them to standard U+ code point format.">Filter</button>
-                </span>
             </div>
-            <div class="code-points-to-characters">
-                <input class="input-code-points" type="text">
-                <textarea class="output-characters" rows="2" readonly></textarea>
+            <div class="search-info"></div>
+            <div class="table-pagination" hidden>
+                <div class="pagination-group">
+                    <button type="button" class="page-nav-button first-page-button">
+                        <svg class="page-nav-icon"><use href="/images/navigation.svg#first-page"></use></svg>
+                    </button>
+                    <button class="page-nav-button prev-page-button">
+                        <svg class="page-nav-icon"><use href="/images/navigation.svg#prev-page"></use></svg>
+                    </button>
+                    <select class="page-select">
+                    </select>
+                    <button type="button" class="page-nav-button next-page-button">
+                        <svg class="page-nav-icon"><use href="/images/navigation.svg#next-page"></use></svg>
+                    </button>
+                    <button class="page-nav-button last-page-button">
+                        <svg class="page-nav-icon"><use href="/images/navigation.svg#last-page"></use></svg>
+                    </button>
+                </div>
+                <div class="pagination-group">
+                    <div class="page-info">
+                    </div>
+                </div>
+                <div class="pagination-group">
+                    <label>
+                        <select class="page-size-select">
+                            <option>8</option>
+                            <option>16</option>
+                            <option>32</option>
+                            <option>64</option>
+                            <option>128</option>
+                            <option>256</option>
+                            <option>512</option>
+                            <option>1024</option>
+                            <option>2048</option>
+                            <option>4096</option>
+                        </select>&nbsp;&nbsp;per page
+                    </label>
+                </div>
             </div>
-            <div class="output-code-points-data"></div>
-        </div>
+            <div class="search-by-name-data"></div>
+       </div>
         <div class="accent-panel">
             <details class="references">
                 <summary>References</summary>
                 <ul>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt">String.prototype.charCodeAt() - JavaScript | MDN</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode">String.fromCharCode() - JavaScript | MDN</a></li>
-                </ul>
-                <ul>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt">String.prototype.codePointAt() - JavaScript | MDN</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint">String.fromCodePoint() - JavaScript | MDN</a></li>
-                </ul>
-                <ul>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize">String.prototype.normalize() - JavaScript | MDN</a></li>
+                    <li><a href="https://mathiasbynens.be/notes/es-unicode-property-escapes">Unicode property escapes in JavaScript regular expressions · Mathias Bynens</a></li>
+                    <li><a href="https://github.com/mathiasbynens/regexpu-core">GitHub - mathiasbynens/regexpu-core: regexpu’s core functionality</a></li>
+                    <li><a href="https://github.com/mathiasbynens/regexpu-core/blob/master/property-escapes.md">regexpu-core/property-escapes.md at master · mathiasbynens/regexpu-core · GitHub</a></li>
                 </ul>
                 <ul>
                     <li><a href="https://mathiasbynens.be/notes/javascript-escapes">JavaScript character escape sequences · Mathias Bynens</a></li>

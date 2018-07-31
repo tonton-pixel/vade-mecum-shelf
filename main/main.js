@@ -198,7 +198,8 @@ else
         submenu:
         [
             { label: "License", click: () => { shell.openItem (path.join (unpackedDirname, 'LICENSE.txt')); } },
-            { label: settings.homePage.label, click: () => { shell.openExternal (settings.homePage.URL); } }
+            { label: settings.repository.label, click: () => { shell.openExternal (settings.repository.URL); } },
+            { label: settings.releases.label, click: () => { shell.openExternal (settings.releases.URL); } }
         ]
     };
     const helpMenu =
@@ -209,7 +210,8 @@ else
             { label: "About...", click: showAboutBox },
             { type: 'separator' },
             { label: "License", click: () => { shell.openItem (path.join (unpackedDirname, 'LICENSE.txt')); } },
-            { label: settings.homePage.label, click: () => { shell.openExternal (settings.homePage.URL); } }
+            { label: settings.repository.label, click: () => { shell.openExternal (settings.repository.URL); } },
+            { label: settings.releases.label, click: () => { shell.openExternal (settings.releases.URL); } }
         ]
     };
     //

@@ -125,10 +125,14 @@
         [
             {
                 "label": "CJK Graphical Variants 1",
-                "string": "汉漢漢冨富畐"
+                "string": "冨富畐"
             },
             {
                 "label": "CJK Graphical Variants 2",
+                "string": "㵄汉漢漢漢"
+            },
+            {
+                "label": "CJK Graphical Variants 3",
                 "string": "剝剥叱𠮟塡填頰頬"
             },
             {

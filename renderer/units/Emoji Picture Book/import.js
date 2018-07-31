@@ -28,7 +28,14 @@ module.exports.start = function (context)
             if (isCommandOrControlDoubleClick)
             {
                 debugMode = !debugMode;
-                event.target.classList.toggle ('debug');
+                if (debugMode)
+                {
+                    event.target.classList.add ('debug');
+                }
+                else
+                {
+                    event.target.classList.remove ('debug');
+                }
                 updateGroup (selectGroup.value);
             }
         }
@@ -86,6 +93,11 @@ module.exports.start = function (context)
         return isSupported;
     }
     //
+    function uniHexify (string)
+    {
+        return string.replace (/\b([0-9a-fA-F]{4,})\b/g, "U\+$&");
+    }
+    //
     function getEmojiToolTip (emoji)
     {
         let toolTip = emojiList[emoji].name.toUpperCase ();
@@ -105,7 +117,7 @@ module.exports.start = function (context)
                 toolTip += ` [${letters.join ('').toUpperCase ().replace (/^(..)(...)$/, "$1-$2")}]`;
             }
         }
-        toolTip += "\n" + emojiList[emoji].code;
+        toolTip += "\n" + uniHexify (emojiList[emoji].code);
         return toolTip;
     }
     //

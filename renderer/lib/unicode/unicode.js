@@ -5,6 +5,8 @@ const path = require ('path');
 const unicodeData = require ('./parsed-unicode-data.js');
 const extraData = require ('./parsed-extra-data.js');
 //
+const characterCount = Object.keys (unicodeData).length;
+//
 const planes =
 [
     { name: "Basic Multilingual Plane (BMP)", first: "0000", last: "FFFF" },
@@ -267,7 +269,7 @@ function getCharacterData (character)
     characterData.javaScript = characterToJavaScriptEscape (character);
     characterData.ecmaScript = characterToEcmaScriptEscape (character);
     let num = character.codePointAt (0);
-    let hex =  num.toString (16).toUpperCase ();
+    let hex = num.toString (16).toUpperCase ();
     if (hex.length < 5)
     {
         hex = ("000" + hex).slice (-4);
@@ -302,71 +304,15 @@ function getCharacterData (character)
             break;
         }
     }
-    let name = "";
-    let decomposition = "";
-    let codePointRanges = unicodeData.codePointRanges;
-    for (let range in codePointRanges)
-    {
-        if (codePointRanges.hasOwnProperty (range))
-        {
-            let first = parseInt (codePointRanges[range].first.replace ("U+", ""), 16);
-            let last = parseInt (codePointRanges[range].last.replace ("U+", ""), 16);
-            if ((first <= num) && (num <= last))
-            {
-                if (range === "Hangul Syllable")
-                {
-                    // "Hangul" in "UTR #15: Unicode Normalization Forms"
-                    // https://unicode.org/reports/tr15/tr15-33.html#Hangul
-                    // "Conjoining Jamo Behavior" in "The Unicode Standard, Version 10.0 - ch03.pdf" p. 143
-                    // https://www.unicode.org/versions/Unicode10.0.0/ch03.pdf
-                    let jamoInitials =
-                    [
-                        "G", "GG", "N", "D", "DD", "R", "M", "B", "BB",
-                        "S", "SS", "", "J", "JJ", "C", "K", "T", "P", "H"
-                    ];
-                    let jamoMedials =
-                    [
-                        "A", "AE", "YA", "YAE", "EO", "E", "YEO", "YE", "O",
-                        "WA", "WAE", "OE", "YO", "U", "WEO", "WE", "WI",
-                        "YU", "EU", "YI", "I"
-                    ];
-                    let jamoFinals =
-                    [
-                        "", "G", "GG", "GS", "N", "NJ", "NH", "D", "L", "LG", "LM",
-                        "LB", "LS", "LT", "LP", "LH", "M", "B", "BS",
-                        "S", "SS", "NG", "J", "C", "K", "T", "P", "H"
-                    ];
-                    let s = num - first;
-                    let n = jamoMedials.length * jamoFinals.length;
-                    let t = jamoFinals.length;
-                    let i = Math.floor (s / n);
-                    let m = Math.floor ((s % n) / t);
-                    let f = Math.floor (s % t);
-                    name = range.toUpperCase () + " " + jamoInitials[i] + jamoMedials[m] + jamoFinals[f];
-                    decomposition =
-                        (0x1100 + i).toString (16).toUpperCase () + " " +
-                        (0x1161 + m).toString (16).toUpperCase () +
-                        (f > 0 ? " " + (0x11A7 + f).toString (16).toUpperCase () : "");
-                }
-                else
-                {
-                    name = range.toUpperCase () + "-" + hex;
-                }
-                codePoint = codePointRanges[range].first;
-                break;
-            }
-        }
-    }
-    //
-    let codePoints = unicodeData.codePoints;
+    let codePoints = unicodeData;
     if (codePoint in codePoints)
     {
         let data = codePoints[codePoint];
-        characterData.name = name || data.name;
+        characterData.name = data.name;
         characterData.category = categories[data.category];
         characterData.combining = combiningClasses[data.combining];
         characterData.bidirectional = bidirectionalClasses[data.bidirectional];
-        characterData.decomposition = uniHexify (decomposition || data.decomposition);
+        characterData.decomposition = uniHexify (data.decomposition);
         characterData.decimal = data.decimal;
         characterData.digit = data.digit;
         characterData.numeric = data.numeric;
@@ -380,12 +326,12 @@ function getCharacterData (character)
     return characterData;
 }
 //
-function getCharactersData (string)
+function getCharactersData (characters)
 {
     let dataList = [ ];
-    for (let char of string)
+    for (let character of characters)
     {
-        dataList.push (getCharacterData (char));
+        dataList.push (getCharacterData (character));
     }
     return dataList;
 }
@@ -396,7 +342,7 @@ function charactersToCodePoints (characters)
     for (let character of characters)
     {
         let num = character.codePointAt (0);
-        let hex =  num.toString (16).toUpperCase ();
+        let hex = num.toString (16).toUpperCase ();
         if (hex.length < 5)
         {
             hex = ("000" + hex).slice (-4);
@@ -409,7 +355,8 @@ function charactersToCodePoints (characters)
 function codePointsToCharacters (codePoints)
 {
     let characters = "";
-    const regex = /\b([0-9a-fA-F]{4,})\b|\\u([0-9a-fA-F]{4})|\\u\{([0-9a-fA-F]{1,})\}|U\+([0-9a-fA-F]{4,})/g;    // Global flag /g *must* be set!
+    codePoints = codePoints.replace (/\b([0-9a-fA-F]{4,})\b/g, "U+$1");
+    const regex = /\\u([0-9a-fA-F]{4})|\\u\{([0-9a-fA-F]{1,})\}|U\+([0-9a-fA-F]{4,})/g;    // Global flag /g *must* be set!
     let hex;
     while ((hex = regex.exec (codePoints)))
     {
@@ -422,21 +369,43 @@ function codePointsToCharacters (codePoints)
     return characters;
 }
 //
-function findCodePointsByName (name)
+function findCharactersByName (regex)
 {
-    let codePointList = [ ];
-    let codePoints = unicodeData.codePoints
+    let characterList = [ ];
+    let codePoints = unicodeData;
     for (let codePoint in codePoints)
     {
         if (codePoints.hasOwnProperty (codePoint))
         {
-            if (codePoints[codePoint].name.toUpperCase ().indexOf (name.toUpperCase ()) > -1)
+            if (codePoints[codePoint].name.match (regex) || codePoints[codePoint].alias.match (regex))
             {
-                codePointList.push (codePoint);
+                characterList.push (String.fromCodePoint (parseInt (codePoints[codePoint].code, 16)));
             }
         }
     }
-    return codePointList;
+    return characterList;
+}
+//
+function getCharacterBasicData (character)
+{
+    let characterBasicData = { };
+    let num = character.codePointAt (0);
+    let hex = num.toString (16).toUpperCase ();
+    if (hex.length < 5)
+    {
+        hex = ("000" + hex).slice (-4);
+    }
+    let codePoint = `U+${hex}`;
+    characterBasicData.character = character;
+    characterBasicData.codePoint = codePoint;
+    let codePoints = unicodeData;
+    if (codePoint in codePoints)
+    {
+        let data = codePoints[codePoint];
+        characterBasicData.name = data.name;
+        characterBasicData.alias = data.alias;
+    }
+    return characterBasicData;
 }
 //
 const emojiData = require ('./parsed-emoji-data.js');
@@ -452,8 +421,8 @@ function getEmojiData (emoji, version)
             data =
             {
                 code: emojiVersionData[emoji].code,
-                name: emojiVersionData[emoji].name || getCharactersData (emoji)[0].name,
-                age: emojiVersionData[emoji].age || getCharactersData (emoji)[0].age,
+                name: emojiVersionData[emoji].name || getCharacterData (emoji).name,
+                age: emojiVersionData[emoji].age || getCharacterData (emoji).age,
             };
         }
     }
@@ -462,10 +431,13 @@ function getEmojiData (emoji, version)
 //
 module.exports =
 {
+    characterCount,
+    getCharacterData,
     getCharactersData,
     charactersToCodePoints,
     codePointsToCharacters,
-    findCodePointsByName,
+    findCharactersByName,
+    getCharacterBasicData,
     getEmojiData
 };
 //

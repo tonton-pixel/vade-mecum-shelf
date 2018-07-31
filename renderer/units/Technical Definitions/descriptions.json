@@ -48,6 +48,10 @@
                 "details": "Creative Commons"
             },
             {
+                "term": "CGI",
+                "details": "Common Gateway Interface"
+            },
+            {
                 "term": "CIDR",
                 "details": "Classless Inter-Domain Routing"
             },
@@ -78,6 +82,10 @@
             {
                 "term": "CSV",
                 "details": "Comma-Separated Values"
+            },
+            {
+                "term": "CUPS",
+                "details": "Common Unix Printing System"
             },
             {
                 "term": "DHCP",
@@ -228,6 +236,10 @@
                 "details": "Inter-Process Communication"
             },
             {
+                "term": "IPP",
+                "details": "Internet Printing Protocol"
+            },
+            {
                 "term": "ISO",
                 "details": "International Organization for Standardization"
             },
@@ -274,6 +286,14 @@
             {
                 "term": "LIFO",
                 "details": "Last In, First Out"
+            },
+            {
+                "term": "LPD",
+                "details": "Line Printer Daemon protocol"
+            },
+            {
+                "term": "LPR",
+                "details": "Line Printer Remote protocol"
             },
             {
                 "term": "MAC",
@@ -348,6 +368,10 @@
                 "details": "Portable Operating System Interface"
             },
             {
+                "term": "PPD",
+                "details": "PostScript Printer Description"
+            },
+            {
                 "term": "PPI",
                 "details": "Pixels Per Inch"
             },
@@ -410,6 +434,10 @@
             {
                 "term": "SIP",
                 "details": "Supplementary Ideographic Plane"
+            },
+            {
+                "term": "SMB",
+                "details": "Server Message Block"
             },
             {
                 "term": "SMIL",
@@ -641,31 +669,31 @@
             },
             {
                 "term": "micro-",
-                "details": "10<sup>-6</sup> (0.000,001)"
+                "details": "10<sup>-6</sup> (0.000&thinsp;001)"
             },
             {
                 "term": "nano-",
-                "details": "10<sup>-9</sup> (0.000,000,001)"
+                "details": "10<sup>-9</sup> (0.000&thinsp;000&thinsp;001)"
             },
             {
                 "term": "pico-",
-                "details": "10<sup>-12</sup> (0.000,000,000,001)"
+                "details": "10<sup>-12</sup> (0.000&thinsp;000&thinsp;000&thinsp;001)"
             },
             {
                 "term": "femto-",
-                "details": "10<sup>-15</sup> (0.000,000,000,000,001)"
+                "details": "10<sup>-15</sup> (0.000&thinsp;000&thinsp;000&thinsp;000&thinsp;001)"
             },
             {
                 "term": "atto-",
-                "details": "10<sup>-18</sup> (0.000,000,000,000,000,001)"
+                "details": "10<sup>-18</sup> (0.000&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;001)"
             },
             {
                 "term": "zepto-",
-                "details": "10<sup>-21</sup> (0.000,000,000,000,000,000,001)"
+                "details": "10<sup>-21</sup> (0.000&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;001)"
             },
             {
                 "term": "yocto-",
-                "details": "10<sup>-24</sup> (0.000,000,000,000,000,000,000,001)"
+                "details": "10<sup>-24</sup> (0.000&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;001)"
             }
         ]
     },
@@ -683,35 +711,35 @@
             },
             {
                 "term": "kilo-",
-                "details": "10<sup>3</sup> (1,000)"
+                "details": "10<sup>3</sup> (1&thinsp;000)"
             },
             {
                 "term": "mega-",
-                "details": "10<sup>6</sup> (1,000,000)"
+                "details": "10<sup>6</sup> (1&thinsp;000&thinsp;000)"
             },
             {
                 "term": "giga-",
-                "details": "10<sup>9</sup> (1,000,000,000)"
+                "details": "10<sup>9</sup> (1&thinsp;000&thinsp;000&thinsp;000)"
             },
             {
                 "term": "tera-",
-                "details": "10<sup>12</sup> (1,000,000,000,000)"
+                "details": "10<sup>12</sup> (1&thinsp;000&thinsp;000&thinsp;000&thinsp;000)"
             },
             {
                 "term": "peta-",
-                "details": "10<sup>15</sup> (1,000,000,000,000,000)"
+                "details": "10<sup>15</sup> (1&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;000)"
             },
             {
                 "term": "exa-",
-                "details": "10<sup>18</sup> (1,000,000,000,000,000,000)"
+                "details": "10<sup>18</sup> (1&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;000)"
             },
             {
                 "term": "zetta-",
-                "details": "10<sup>21</sup> (1,000,000,000,000,000,000,000)"
+                "details": "10<sup>21</sup> (1&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;000)"
             },
             {
                 "term": "yotta-",
-                "details": "10<sup>24</sup> (1,000,000,000,000,000,000,000,000)"
+                "details": "10<sup>24</sup> (1&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;000&thinsp;000)"
             }
         ]
     },
