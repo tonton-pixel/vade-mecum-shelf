@@ -8,7 +8,9 @@
 
 #jabberwocky-unit .plain-panel
 {
-    /* box-shadow: inset 0 0 65px hsla(0, 0%, 0%, 0.1); */
+    background-image: url("diamond-plate.svg");
+    background-size: 10px;
+    background-position: center;
 }
 
 #jabberwocky-unit .combi-box

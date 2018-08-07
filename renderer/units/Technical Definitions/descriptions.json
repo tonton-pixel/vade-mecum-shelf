@@ -56,6 +56,14 @@
                 "details": "Classless Inter-Domain Routing"
             },
             {
+                "term": "CJK",
+                "details": "Chinese-Japanese-Korean"
+            },
+            {
+                "term": "CJKV",
+                "details": "Chinese-Japanese-Korean-Vietnamese"
+            },
+            {
                 "term": "CLDR",
                 "details": "Common Locale Data Repository"
             },
@@ -206,6 +214,10 @@
             {
                 "term": "IDL",
                 "details": "Interface Description Language"
+            },
+            {
+                "term": "IEC",
+                "details": "International Electrotechnical Commission"
             },
             {
                 "term": "IEEE",
@@ -744,7 +756,7 @@
         ]
     },
     {
-        "category": "Binary Prefixes",
+        "category": "IEC Binary Prefixes | Multiples",
         "items":
         [
             {

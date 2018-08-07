@@ -6,7 +6,7 @@ const wholeWord = unit.querySelector ('.whole-word');
 const useRegex = unit.querySelector ('.use-regex');
 const searchButton = unit.querySelector ('.search-button');
 const searchInfo = unit.querySelector ('.search-info');
-const tablePagination = unit.querySelector ('.table-pagination');
+const paginationBar = unit.querySelector ('.pagination-bar');
 const firstPageButton = unit.querySelector ('.first-page-button');
 const prevPageButton = unit.querySelector ('.prev-page-button');
 const pageSelect = unit.querySelector ('.page-select');
@@ -17,6 +17,7 @@ const pageSizeSelect = unit.querySelector ('.page-size-select');
 const searchByNameData = unit.querySelector ('.search-by-name-data');
 //
 const references = unit.querySelector ('.references');
+const links = unit.querySelector ('.links');
 //
 module.exports.start = function (context)
 {
@@ -38,13 +39,6 @@ module.exports.start = function (context)
     //
     const deferredSymbols = true;
     //
-    function characterToEcmaScriptEscape (character)
-    {
-        let num = character.codePointAt (0);
-        let hex = num.toString (16).toUpperCase ();
-        return `\\u{${hex}}`;
-    }
-    //
     let characters;
     let charactersPages;
     let charactersPageIndex;
@@ -54,10 +48,10 @@ module.exports.start = function (context)
         'click',
         (event) =>
         {
-            if (charactersPageIndex !== 0)
+            if (charactersPageIndex > 0)
             {
                 charactersPageIndex = 0;
-                displayDataTable (charactersPages[charactersPageIndex]);
+                displayDataPage (charactersPages[charactersPageIndex]);
             }
         }
     );
@@ -70,7 +64,7 @@ module.exports.start = function (context)
             if (charactersPageIndex > 0)
             {
                 charactersPageIndex = charactersPageIndex - 1;
-                displayDataTable (charactersPages[charactersPageIndex]);
+                displayDataPage (charactersPages[charactersPageIndex]);
             }
         }
     );
@@ -80,8 +74,31 @@ module.exports.start = function (context)
         'input',
         (event) =>
         {
-            charactersPageIndex = event.target.value - 1;
-            displayDataTable (charactersPages[charactersPageIndex]);
+            if (event.target.value !== "")
+            {
+                if (event.target.value < 1)
+                {
+                    event.target.value = 1;
+                }
+                else if (event.target.value > charactersPages.length)
+                {
+                    event.target.value = charactersPages.length;
+                }
+                charactersPageIndex = event.target.value - 1;
+                displayDataPage (charactersPages[charactersPageIndex]);
+            }
+        }
+    );
+    //
+    pageSelect.addEventListener
+    (
+        'blur',
+        (event) =>
+        {
+            if (event.target.value === "")
+            {
+                event.target.value = charactersPageIndex + 1;
+            }
         }
     );
     //
@@ -93,7 +110,7 @@ module.exports.start = function (context)
             if (charactersPageIndex < (charactersPages.length - 1))
             {
                 charactersPageIndex = charactersPageIndex + 1;
-                displayDataTable (charactersPages[charactersPageIndex]);
+                displayDataPage (charactersPages[charactersPageIndex]);
             }
         }
     );
@@ -103,48 +120,28 @@ module.exports.start = function (context)
         'click',
         (event) =>
         {
-            if (charactersPageIndex !== (charactersPages.length - 1))
+            if (charactersPageIndex < (charactersPages.length - 1))
             {
                 charactersPageIndex = charactersPages.length - 1;
-                displayDataTable (charactersPages[charactersPageIndex]);
+                displayDataPage (charactersPages[charactersPageIndex]);
             }
         }
     );
-    //
-    function displayPaginationBar ()
-    {
-        let pageCount = charactersPages.length;
-        firstPageButton.title = `First page`;
-        prevPageButton.title = `Previous page`;
-        while (pageSelect.firstChild) { pageSelect.firstChild.remove (); }
-        for (let pageIndex = 0; pageIndex < pageCount; pageIndex++)
-        {
-            let option = document.createElement ('option');
-            option.textContent = `${pageIndex + 1}`;
-            pageSelect.appendChild (option);
-        }
-        pageSelect.title = `Current page`;
-        pageSelect.selectedIndex = charactersPageIndex;
-        nextPageButton.title = `Next page`;
-        lastPageButton.title = `Last page`;
-        pageInfo.innerHTML = (pageCount > 1) ? `(<strong>${pageCount}</strong>&nbsp;pages)` : "";
-        tablePagination.hidden = false;
-    }
     //
     function updatePaginationBar ()
     {
         firstPageButton.disabled = (charactersPageIndex === 0);
         prevPageButton.disabled = (charactersPageIndex === 0);
-        if (pageSelect.selectedIndex !== charactersPageIndex)
+        if (pageSelect.value !== (charactersPageIndex + 1))
         {
-            pageSelect.selectedIndex = charactersPageIndex;
+            pageSelect.value = charactersPageIndex + 1;
         }
         pageSelect.disabled = (charactersPages.length === 1);
         nextPageButton.disabled = (charactersPageIndex === (charactersPages.length - 1));
         lastPageButton.disabled = (charactersPageIndex === (charactersPages.length - 1));
     }
     //
-    function removeDataTable ()
+    function removeDataPage ()
     {
         if (searchByNameData.firstChild)
         {
@@ -152,10 +149,10 @@ module.exports.start = function (context)
         }
     }
     //
-    function displayDataTable (characters)
+    function displayDataPage (characters)
     {
         updatePaginationBar ();
-        removeDataTable ();
+        removeDataPage ();
         let observer;
         if (deferredSymbols)
         {
@@ -234,6 +231,14 @@ module.exports.start = function (context)
                 alias.textContent = data.alias;
                 names.appendChild (alias);
             }
+            if (data.correction)
+            {
+                let alias = document.createElement ('div');
+                alias.className = 'correction';
+                alias.textContent = data.correction;
+                alias.title = "CORRECTION";
+                names.appendChild (alias);
+            }
             row.appendChild (names);
             table.appendChild (row);
         }
@@ -298,20 +303,34 @@ module.exports.start = function (context)
         pageSizeSelect.selectedIndex = 0;
     }
     //
+    function paginate (pageSize)
+    {
+        charactersPages = [ ];
+        for (let startIndex = 0; startIndex < characters.length; startIndex += pageSize)
+        {
+            charactersPages.push (characters.slice (startIndex, startIndex + pageSize));
+        }
+        charactersPageIndex = 0;
+        let pageCount = charactersPages.length;
+        firstPageButton.title = `First page`;
+        prevPageButton.title = `Previous page`;
+        pageSelect.min = 1;
+        pageSelect.max = pageCount;
+        pageSelect.value = charactersPageIndex + 1;
+        pageSelect.title = `Current page`;
+        nextPageButton.title = `Next page`;
+        lastPageButton.title = `Last page`;
+        pageInfo.innerHTML = (pageCount > 1) ? `(<strong>${pageCount}</strong>&nbsp;pages)` : "";
+        paginationBar.hidden = false;
+        displayDataPage (charactersPages[charactersPageIndex]);
+    }
+    //
     pageSizeSelect.addEventListener
     (
         'input',
         (event) =>
         {
-            let pageSize = parseInt (event.target.value);
-            charactersPages = [ ];
-            for (let startIndex = 0; startIndex < characters.length; startIndex += pageSize)
-            {
-                charactersPages.push (characters.slice (startIndex, startIndex + pageSize));
-            }
-            charactersPageIndex = 0;
-            displayPaginationBar ();
-            displayDataTable (charactersPages[charactersPageIndex]);
+            paginate (parseInt (event.target.value));
         }
     );
     //
@@ -321,8 +340,8 @@ module.exports.start = function (context)
         (event) =>
         {
             searchInfo.textContent = "";
-            tablePagination.hidden = true;
-            removeDataTable ();
+            paginationBar.hidden = true;
+            removeDataPage ();
             setTimeout
             (
                 () =>
@@ -333,6 +352,13 @@ module.exports.start = function (context)
                         let regex = null;
                         try
                         {
+                            function characterToEcmaScriptEscape (character)
+                            {
+                                let num = character.codePointAt (0);
+                                let hex = num.toString (16).toUpperCase ();
+                                return `\\u{${hex}}`;
+                            }
+                            //
                             let pattern = (useRegex.checked) ? name : Array.from (name).map ((char) => characterToEcmaScriptEscape (char)).join ('');
                             if (wholeWord.checked)
                             {
@@ -365,15 +391,7 @@ module.exports.start = function (context)
                             searchInfo.innerHTML = `Results: <strong>${characters.length}</strong>&nbsp;/&nbsp;${unicode.characterCount} (${seconds}&nbsp;seconds)`;
                             if (characters.length > 0)
                             {
-                                let pageSize = parseInt (pageSizeSelect.value);
-                                charactersPages = [ ];
-                                for (let startIndex = 0; startIndex < characters.length; startIndex += pageSize)
-                                {
-                                    charactersPages.push (characters.slice (startIndex, startIndex + pageSize));
-                                }
-                                charactersPageIndex = 0;
-                                displayPaginationBar ();
-                                displayDataTable (charactersPages[charactersPageIndex]);
+                                paginate (parseInt (pageSizeSelect.value));
                             }
                         }
                     }
@@ -383,6 +401,29 @@ module.exports.start = function (context)
     );
     //
     references.open = prefs.references;
+    //
+    const unicodeLinks = require ('../../lib/unicode/unicode-links.json');
+    //
+    unicodeLinks.forEach
+    (
+        group =>
+        {
+            let ul = document.createElement ('ul');
+            group.forEach
+            (
+                link =>
+                {
+                    let li = document.createElement ('li');
+                    let a = document.createElement ('a');
+                    a.href = link.href;
+                    a.textContent = link.name;
+                    li.appendChild (a);
+                    ul.appendChild (li);
+                }
+            );
+            links.appendChild (ul);
+        }
+    );
 };
 //
 module.exports.stop = function (context)

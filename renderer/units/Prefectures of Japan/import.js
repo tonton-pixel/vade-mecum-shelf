@@ -3,6 +3,7 @@ const unit = document.getElementById ('prefectures-of-japan-unit');
 //
 const liveSearch = unit.querySelector ('.live-search');
 const prefecturesContainer = unit.querySelector ('.prefectures-container');
+//
 const references = unit.querySelector ('.references');
 //
 module.exports.start = function (context)

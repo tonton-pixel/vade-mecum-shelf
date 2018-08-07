@@ -10,6 +10,7 @@ const displayMode = unit.querySelector ('.display-mode');
 const textColor = unit.querySelector ('.text-color');
 const throwOnError = unit.querySelector ('.throw-on-error');
 const latexContainer = unit.querySelector ('.latex-container');
+//
 const references = unit.querySelector ('.references');
 //
 let defaultFolderPath;

@@ -5,9 +5,10 @@
     padding-bottom: 0.75em;
 }
 
-#technical-definitions-unit .plain-panel .category
+#technical-definitions-unit .plain-panel .interface
 {
     text-align: center;
+    margin: 0.5em 0 1.5em 0;
 }
 
 #technical-definitions-unit .plain-panel .sheet

@@ -1,0 +1,108 @@
+[
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/Emoji",
+            "name": "Emoji - Wikipedia"
+        }
+    ],
+    [
+        {
+            "href": "https://www.unicode.org/emoji/",
+            "name": "Unicode Emoji"
+        },
+        {
+            "href": "https://www.unicode.org/emoji/charts/",
+            "name": "Unicode Emoji Charts"
+        },
+        {
+            "href": "https://www.unicode.org/emoji/format.html",
+            "name": "Unicode Emoji Chart Format"
+        },
+        {
+            "href": "https://www.unicode.org/emoji/charts/emoji-list.html",
+            "name": "Emoji List"
+        },
+        {
+            "href": "https://www.unicode.org/emoji/charts/full-emoji-list.html",
+            "name": "Full Emoji List"
+        },
+        {
+            "href": "https://www.unicode.org/emoji/charts/emoji-ordering.html",
+            "name": "Emoji Ordering"
+        },
+        {
+            "href": "https://www.unicode.org/emoji/charts/emoji-versions.html",
+            "name": "Emoji Versions"
+        },
+        {
+            "href": "https://www.unicode.org/emoji/charts/emoji-versions-sources.html",
+            "name": "Emoji Versions & Sources"
+        },
+        {
+            "href": "https://www.unicode.org/emoji/charts/emoji-variants.html",
+            "name": "Emoji Presentation Sequences"
+        },
+        {
+            "href": "https://www.unicode.org/emoji/charts/emoji-zwj-sequences.html",
+            "name": "Recommended Emoji ZWJ Sequences"
+        }
+    ],
+    [
+        {
+            "href": "https://www.unicode.org/reports/tr51/",
+            "name": "UTS #51: Unicode Emoji"
+        },
+        {
+            "href": "https://www.unicode.org/faq/emoji_dingbats.html",
+            "name": "FAQ - Emoji & Pictographs"
+        }
+    ],
+    [
+        {
+             "href": "http://cldr.unicode.org/translation",
+             "name": "Translation Guidelines - CLDR - Unicode Common Locale Data Repository"
+        },
+        {
+            "href": "http://cldr.unicode.org/translation/country-names",
+            "name": "Country/Region Names - CLDR - Unicode Common Locale Data Repository"
+        },
+        {
+            "href": "http://cldr.unicode.org/translation/short-names-and-keywords",
+            "name": "Characters Names and Keywords (Emoji) - CLDR - Unicode Common Locale Data Repository"
+        }
+    ],
+    [
+        {
+            "href": "https://unicode.org/repos/cldr/trunk/specs/ldml/tr35-general.html#Annotations",
+            "name": "UTS #35: Unicode LDML: General - 14 Annotations and Labels"
+        },
+        {
+            "href": "http://cldr.unicode.org/index/downloads/cldr-30",
+            "name": "CLDR 30 Release Note - CLDR - Unicode Common Locale Data Repository"
+        }
+    ],
+    [
+        {
+            "href": "http://xahlee.info/comp/unicode_index.html",
+            "name": "Unicode Characters ∑ ♥ 😄"
+        },
+        {
+            "href": "https://www.charbase.com/block/miscellaneous-symbols-and-pictographs",
+            "name": "Charbase: Miscellaneous Symbols And Pictographs"
+        },
+        {
+            "href": "https://emojipedia.org/",
+            "name": "📙 Emojipedia — 😃 Home of Emoji Meanings 💁👌🎍😍"
+        }
+    ],
+    [
+        {
+            "href": "https://blog.emojipedia.org/unicode-behind-the-curtain/",
+            "name": "Unicode: Behind the Curtain"
+        },
+        {
+            "href": "https://www.nytimes.com/2017/10/18/magazine/how-the-appetite-for-emojis-complicates-the-effort-to-standardize-the-worlds-alphabets.html",
+            "name": "How the Appetite for Emojis Complicates the Effort to Standardize the World’s Alphabets - The New York Times"
+        }
+    ]
+]

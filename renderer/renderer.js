@@ -263,15 +263,25 @@ for (let unitName of unitNames)
 uncategorizedNav.appendChild (navItem);
 navigation.appendChild (uncategorizedNav);
 //
-let paragraph = document.createElement ('p');
-paragraph.innerHTML = `${appName} v${appVersion}<br>${settings.copyright}`;
-footer.appendChild (paragraph);
 let div = document.createElement ('div');
 div.innerHTML = '<svg class="app-color-icon"><use href="images/icons.svg#app-color-icon"></use></svg>';
+div.title = `${appName} v${appVersion}\n${settings.copyright}`;
 footer.appendChild (div);
 // Easter egg...
 const electronAppURL = 'https://electronjs.org/apps/vade-mecum-shelf';
-div.querySelector ('use').addEventListener ('dblclick', () => { shell.openExternal (electronAppURL); });
+div.querySelector ('use').addEventListener
+(
+    'dblclick',
+    (event) =>
+    {
+        event.preventDefault ();
+        let isCommandOrControlDoubleClick = (process.platform === 'darwin') ? event.metaKey : event.ctrlKey;
+        if (isCommandOrControlDoubleClick)
+        {
+            shell.openExternal (electronAppURL);
+        }
+    }
+);
 //
 ipcRenderer.on
 (

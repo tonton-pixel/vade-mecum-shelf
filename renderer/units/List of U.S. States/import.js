@@ -3,6 +3,7 @@ const unit = document.getElementById ('list-of-us-states-unit');
 //
 const liveSearch = unit.querySelector ('.live-search');
 const statesContainer = unit.querySelector ('.states-container');
+//
 const references = unit.querySelector ('.references');
 //
 module.exports.start = function (context)

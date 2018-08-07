@@ -1,10 +1,17 @@
 //
-module.exports = function (context)
+const unit = document.getElementById ('jabberwocky-unit');
+//
+const poemContainer = unit.querySelector ('.poem-container');
+//
+const references = unit.querySelector ('.references');
+//
+module.exports.start = function (context)
 {
-    const unit = document.getElementById ('jabberwocky-unit');
-    //
-    const poemContainer = unit.querySelector ('.poem-container');
-    const references = unit.querySelector ('.references');
+    const defaultPrefs =
+    {
+        references: false
+    };
+    let prefs = context.getPrefs (defaultPrefs);
     //
     const url = require ('url');
     //
@@ -56,5 +63,16 @@ module.exports = function (context)
     combiBox.appendChild (stanzasBox);
     panel.appendChild (combiBox);
     poemContainer.appendChild (panel);
+    //
+    references.open = prefs.references;
+};
+//
+module.exports.stop = function (context)
+{
+    let prefs =
+    {
+        references: references.open
+    };
+    context.setPrefs (prefs);
 };
 //

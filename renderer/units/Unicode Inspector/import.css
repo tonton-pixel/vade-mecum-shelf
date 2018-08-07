@@ -65,6 +65,11 @@
     padding: 0.2em;
 }
 
+#unicode-inspector-unit .data-list .codes
+{
+    white-space: nowrap;
+}
+
 #unicode-inspector-unit .data-list .codes,
 #unicode-inspector-unit .data-list .properties
 {

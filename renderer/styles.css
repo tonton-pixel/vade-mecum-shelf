@@ -176,7 +176,7 @@ svg.app-color-icon
 
 svg.app-color-icon use:hover
 {
-    fill: var(--color-hover);
+    /* fill: var(--color-hover); */
 }
 
 code,
@@ -310,7 +310,7 @@ kbd
 .footer
 {
     border-top: 1px solid var(--color-border);
-    padding: 0.5em 0 0.75em;
+    padding: 2em 0 0.75em;
     margin: 1em 0;
     font: inherit;
     font-size: 13px;
@@ -437,6 +437,7 @@ input[type=button].mouse-focus,
 input[type=checkbox].mouse-focus,
 input[type=color].mouse-focus,
 input[type=radio].mouse-focus,
+input[type=range].mouse-focus,
 select.mouse-focus,
 summary.mouse-focus
 {
@@ -473,7 +474,8 @@ input[type=button]:active
 }
 
 button:disabled,
-input[type=button]:disabled
+input[type=button]:disabled,
+input[type=number]:disabled
 {
     color: gray;
     border: gray 1px solid;
@@ -498,6 +500,11 @@ input[type=radio]
     width: 1.25em;
     height: 1.25em;
     zoom: 1.01;
+}
+
+input[type=number]
+{
+    border: 1px solid var(--color-subtle);
 }
 
 button.pull-down-menu,

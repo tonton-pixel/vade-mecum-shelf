@@ -1,13 +1,16 @@
 //
 const unit = document.getElementById ('trigonometric-formulas-unit');
 //
-const container = unit.querySelector ('.formulas-container');
+const selectCategory = unit.querySelector ('.select-category');
+const formulasContainer = unit.querySelector ('.formulas-container');
+//
 const references = unit.querySelector ('.references');
 //
 module.exports.start = function (context)
 {
     const defaultPrefs =
     {
+        category: "",
         references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
@@ -16,16 +19,26 @@ module.exports.start = function (context)
     //
     const formulas = require ('./formulas.json');
     //
+    let categories = { };
+    //
     for (let formula of formulas)
     {
-        let panel = document.createElement ('div');
-        panel.className = 'plain-panel';
-        let h2 = document.createElement ('h2');
-        h2.textContent = formula["category"];
-        panel.appendChild (h2);
+        let category = formula["category"];
+        let option = document.createElement ('option');
+        option.textContent = category;
+        selectCategory.appendChild (option);
+        categories[category] = formula["items"];
+    }
+    //
+    function displayCategory (category)
+    {
+        if (formulasContainer.firstChild)
+        {
+            formulasContainer.firstChild.remove ();
+        }
         let sheet = document.createElement ('div');
         sheet.className = 'sheet';
-        let items = formula["items"];
+        let items = categories[category];
         for (let item of items)
         {
             if (item)
@@ -41,9 +54,17 @@ module.exports.start = function (context)
                 sheet.appendChild (hr);
             }
         }
-        panel.appendChild (sheet);
-        container.appendChild (panel);
+        formulasContainer.appendChild (sheet);
     }
+    //
+    selectCategory.value = prefs.category;
+    if (selectCategory.selectedIndex < 0) // -1: no element is selected
+    {
+        selectCategory.selectedIndex = 0;
+    }
+    displayCategory (selectCategory.value);
+    //
+    selectCategory.addEventListener ('input', (event) => { displayCategory (event.target.value); });
     //
     references.open = prefs.references;
 };
@@ -52,6 +73,7 @@ module.exports.stop = function (context)
 {
     let prefs =
     {
+        category: selectCategory.value,
         references: references.open
     };
     context.setPrefs (prefs);

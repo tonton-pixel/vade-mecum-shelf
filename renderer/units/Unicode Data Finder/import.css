@@ -81,43 +81,52 @@
     margin: -0.25em 0 0.5em 0;
 }
 
-#unicode-data-finder-unit .table-pagination
+#unicode-data-finder-unit .pagination-bar
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     /* align-items: center; */
-    margin: 0.75em 0 -0.5em 0;
+    margin: 1em 0 -0.25em 0;
 }
 
-#unicode-data-finder-unit .table-pagination[hidden]
+#unicode-data-finder-unit .pagination-bar[hidden]
 {
     display: none;
 }
 
-#unicode-data-finder-unit .table-pagination .pagination-group
+#unicode-data-finder-unit .pagination-bar .pagination-group
 {
     white-space: nowrap;
+    display: flex;
 }
 
-#unicode-data-finder-unit .table-pagination .page-select:disabled
+#unicode-data-finder-unit .pagination-bar .page-select:disabled
 {
     pointer-events: none;
 }
 
-#unicode-data-finder-unit .table-pagination .page-select,
-#unicode-data-finder-unit .table-pagination .page-nav-button
+#unicode-data-finder-unit .pagination-bar .page-select,
+#unicode-data-finder-unit .pagination-bar .page-nav-button
 {
     margin-right: 1em;
 }
 
-#unicode-data-finder-unit .table-pagination .page-nav-button
+#unicode-data-finder-unit .pagination-bar .page-select
+{
+    font-family: Monaco, "Noto Mono", monospace;
+    font-size: 1em;
+    padding: 0.2em 0.4em;
+    text-align: right;
+}
+
+#unicode-data-finder-unit .pagination-bar .page-nav-button
 {
     width: 2.4em;
     border-radius: 0;
 }
 
-#unicode-data-finder-unit .table-pagination .page-nav-button svg.page-nav-icon
+#unicode-data-finder-unit .pagination-bar .page-nav-button svg.page-nav-icon
 {
     width: 1em;
     height: 1em;
@@ -125,14 +134,14 @@
     fill: currentColor;
 }
 
-#unicode-data-finder-unit .table-pagination .page-info
+#unicode-data-finder-unit .pagination-bar .page-info
 {
     margin: 0 1em 0 0.5em;
 }
 
 #unicode-data-finder-unit .search-by-name-data .data-table
 {
-    margin: 1em 0 0.75em 0;
+    margin: 0.75em 0;
 }
 
 #unicode-data-finder-unit .search-by-name-data .symbol-header,
@@ -184,7 +193,8 @@
 }
 
 #unicode-data-finder-unit .search-by-name-data .names .name,
-#unicode-data-finder-unit .search-by-name-data .names .alias
+#unicode-data-finder-unit .search-by-name-data .names .alias,
+#unicode-data-finder-unit .search-by-name-data .names .correction
 {
     margin: 0.25em 0;
 }
@@ -194,11 +204,17 @@
     line-height: 1em;
 }
 
-#unicode-data-finder-unit .search-by-name-data .names .alias
+#unicode-data-finder-unit .search-by-name-data .names .alias,
+#unicode-data-finder-unit .search-by-name-data .names .correction
 {
     font-size: 0.85em;
     font-style: italic;
     line-height: 1em;
+}
+
+#unicode-data-finder-unit .search-by-name-data .names .correction::after
+{
+    content: "\A0*";
 }
 
 #unicode-data-finder-unit summary

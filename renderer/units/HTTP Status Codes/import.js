@@ -5,6 +5,7 @@ const unit = document.getElementById (unitId);
 //
 const codesContainer = unit.querySelector ('.codes-container');
 const selectLocale = unit.querySelector ('.select-locale');
+//
 const references = unit.querySelector ('.references');
 //
 module.exports.start = function (context)

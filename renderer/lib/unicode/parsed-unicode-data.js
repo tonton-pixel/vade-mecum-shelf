@@ -121,5 +121,22 @@ for (let line of lines)
     }
 }
 //
+// Copy of https://www.unicode.org/Public/UNIDATA/NameAliases.txt
+lines = fs.readFileSync (path.join (__dirname, 'UNIDATA', 'NameAliases.txt'), { encoding: 'ascii' }).split ('\n');
+for (let line of lines)
+{
+    if ((line) && (line[0] !== '#'))
+    {
+        let fields = line.split (';');
+        let hex = fields[0];
+        let alias = fields[1];
+        let type = fields[2];
+        if (type === "correction")
+        {
+            codePoints[`U+${hex}`].correction = alias;
+        }
+    }
+}
+//
 module.exports = codePoints;
 //

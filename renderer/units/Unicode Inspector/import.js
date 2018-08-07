@@ -15,6 +15,7 @@ const outputCharacters = unit.querySelector ('.output-characters');
 const outputCodePointsData = unit.querySelector ('.output-code-points-data');
 //
 const references = unit.querySelector ('.references');
+const links = unit.querySelector ('.links');
 //
 module.exports.start = function (context)
 {
@@ -142,6 +143,7 @@ module.exports.start = function (context)
                 [
                     { label: "Name", value: name },
                     { label: "Alias", value: data.alias },
+                    { label: "Correction", value: data.correction },
                     { label: "Unicode\xA0Version", value: data.age, toolTip: data.ageDate },
                     { label: "Plane", value: data.planeName, toolTip: data.planeRange },
                     { label: "Block", value: data.blockName, toolTip: data.blockRange },
@@ -153,7 +155,8 @@ module.exports.start = function (context)
                     { label: numericType, value: data.numeric },
                     { label: "Uppercase", value: data.uppercase },
                     { label: "Lowercase", value: data.lowercase },
-                    { label: "Titlecase", value: data.titlecase }
+                    { label: "Titlecase", value: data.titlecase },
+                    { label: "Binary\xA0Properties", value: data.binaryProperties }
                 ];
                 for (let property of properties)
                 {
@@ -242,6 +245,29 @@ module.exports.start = function (context)
     inputCodePoints.value = prefs.inputCodePoints; inputCodePoints.dispatchEvent (new Event ('input'));
     //
     references.open = prefs.references;
+    //
+    const unicodeLinks = require ('../../lib/unicode/unicode-links.json');
+    //
+    unicodeLinks.forEach
+    (
+        group =>
+        {
+            let ul = document.createElement ('ul');
+            group.forEach
+            (
+                link =>
+                {
+                    let li = document.createElement ('li');
+                    let a = document.createElement ('a');
+                    a.href = link.href;
+                    a.textContent = link.name;
+                    li.appendChild (a);
+                    ul.appendChild (li);
+                }
+            );
+            links.appendChild (ul);
+        }
+    );
 };
 //
 module.exports.stop = function (context)

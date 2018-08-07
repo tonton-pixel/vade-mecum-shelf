@@ -1,13 +1,16 @@
 //
 const unit = document.getElementById ('technical-definitions-unit');
 //
-const definitionContainers = unit.querySelector ('.definition-containers');
+const selectCategory = unit.querySelector ('.select-category');
+const definitionsContainer = unit.querySelector ('.definitions-container');
+//
 const references = unit.querySelector ('.references');
 //
 module.exports.start = function (context)
 {
     const defaultPrefs =
     {
+        category: "",
         references: false
     };
     //
@@ -15,19 +18,28 @@ module.exports.start = function (context)
     //
     let descriptions = require ('./descriptions.json');
     //
+    let categories = { };
+    //
     for (let description of descriptions)
     {
-        let panel = document.createElement ('div');
-        panel.className = 'plain-panel';
-        let category = document.createElement ('h2');
-        category.className = 'category';
-        category.textContent = description.category;
-        panel.appendChild (category);
+        let category = description["category"];
+        let option = document.createElement ('option');
+        option.textContent = category;
+        selectCategory.appendChild (option);
+        categories[category] = description["items"];
+    }
+    //
+    function displayCategory (category)
+    {
+        if (definitionsContainer.firstChild)
+        {
+            definitionsContainer.firstChild.remove ();
+        }
         let sheet = document.createElement ('div');
         sheet.className = 'sheet';
         let list = document.createElement ('dl');
         list.className = 'list';
-        let items = description.items;
+        let items = categories[category];
         for (let item of items)
         {
             let definition = document.createElement ('div');
@@ -43,10 +55,18 @@ module.exports.start = function (context)
             list.appendChild (definition);
         }
         sheet.appendChild (list);
-        panel.appendChild (sheet);
-        definitionContainers.appendChild (panel);
+        definitionsContainer.appendChild (sheet);
     }
-   //
+    //
+    selectCategory.value = prefs.category;
+    if (selectCategory.selectedIndex < 0) // -1: no element is selected
+    {
+        selectCategory.selectedIndex = 0;
+    }
+    displayCategory (selectCategory.value);
+    //
+    selectCategory.addEventListener ('input', (event) => { displayCategory (event.target.value); });
+    //
     references.open = prefs.references;
 };
 //
@@ -54,6 +74,7 @@ module.exports.stop = function (context)
 {
     let prefs =
     {
+        category: selectCategory.value,
         references: references.open
     };
     context.setPrefs (prefs);

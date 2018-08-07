@@ -203,7 +203,7 @@ Lists of technical definitions:
 * Mac OS Release Names
 * Metric Prefixes | Fractions
 * Metric Prefixes | Multiples
-* Binary Prefixes
+* IEC Binary Prefixes | Multiples
 * Name of a Polynomial by Degree
 
 <img src="screenshots/technical-definitions.png" width="1080px" alt="Technical Definitions screenshot">

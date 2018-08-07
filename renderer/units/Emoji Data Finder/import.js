@@ -11,7 +11,9 @@ const inputString = unit.querySelector ('.input-string');
 const hitCount = unit.querySelector ('.hit-count');
 const filterButton = unit.querySelector ('.filter-button');
 const emojiDataList = unit.querySelector ('.emoji-data-list');
+//
 const references = unit.querySelector ('.references');
+const links = unit.querySelector ('.links');
 //
 module.exports.start = function (context)
 {
@@ -35,13 +37,6 @@ module.exports.start = function (context)
         references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
-    //
-    function characterToEcmaScriptEscape (character)
-    {
-        let num = character.codePointAt (0);
-        let hex = num.toString (16).toUpperCase ();
-        return `\\u{${hex}}`;
-    }
     //
     const cldrAnnotations = require ('../../lib/unicode/get-cldr-annotations.js') ("en.xml");
     //
@@ -211,6 +206,13 @@ module.exports.start = function (context)
                         let regex = null;
                         try
                         {
+                            function characterToEcmaScriptEscape (character)
+                            {
+                                let num = character.codePointAt (0);
+                                let hex = num.toString (16).toUpperCase ();
+                                return `\\u{${hex}}`;
+                            }
+                            //
                             let pattern = (useRegex.checked) ? name : Array.from (name).map ((char) => characterToEcmaScriptEscape (char)).join ('');
                             if (wholeWord.checked)
                             {
@@ -325,6 +327,29 @@ module.exports.start = function (context)
     );
     //
     references.open = prefs.references;
+    //
+    const emojiLinks = require ('../../lib/unicode/emoji-links.json');
+    //
+    emojiLinks.forEach
+    (
+        group =>
+        {
+            let ul = document.createElement ('ul');
+            group.forEach
+            (
+                link =>
+                {
+                    let li = document.createElement ('li');
+                    let a = document.createElement ('a');
+                    a.href = link.href;
+                    a.textContent = link.name;
+                    li.appendChild (a);
+                    ul.appendChild (li);
+                }
+            );
+            links.appendChild (ul);
+        }
+    );
 };
 //
 module.exports.stop = function (context)

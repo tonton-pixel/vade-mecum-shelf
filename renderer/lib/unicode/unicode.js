@@ -304,6 +304,18 @@ function getCharacterData (character)
             break;
         }
     }
+    let binaryProperties = [ ];
+    for (let binaryProperty of extraData.binaryProperties)
+    {
+        if ((parseInt (binaryProperty.first, 16) <= num) && (num <= parseInt (binaryProperty.last, 16)))
+        {
+            binaryProperties.push (binaryProperty.name.replace (/_/g, " "));
+        }
+    }
+    if (binaryProperties.length > 0)
+    {
+        characterData.binaryProperties = binaryProperties.join (", ");
+    }
     let codePoints = unicodeData;
     if (codePoint in codePoints)
     {
@@ -322,6 +334,7 @@ function getCharacterData (character)
         characterData.uppercase = uniHexify (data.uppercase);
         characterData.lowercase = uniHexify (data.lowercase);
         characterData.titlecase = uniHexify (data.titlecase);
+        characterData.correction = data.correction;
     }
     return characterData;
 }
@@ -377,7 +390,7 @@ function findCharactersByName (regex)
     {
         if (codePoints.hasOwnProperty (codePoint))
         {
-            if (codePoints[codePoint].name.match (regex) || codePoints[codePoint].alias.match (regex))
+            if (codePoints[codePoint].name.match (regex) || codePoints[codePoint].alias.match (regex) || (codePoints[codePoint].correction && codePoints[codePoint].correction.match (regex)))
             {
                 characterList.push (String.fromCodePoint (parseInt (codePoints[codePoint].code, 16)));
             }
@@ -404,6 +417,7 @@ function getCharacterBasicData (character)
         let data = codePoints[codePoint];
         characterBasicData.name = data.name;
         characterBasicData.alias = data.alias;
+        characterBasicData.correction = data.correction;
     }
     return characterBasicData;
 }

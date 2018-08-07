@@ -1,17 +1,29 @@
 //
-const unit = document.getElementById ('emoji-picture-book-unit');
+const unitId = 'emoji-picture-book-unit';
+//
+const unit = document.getElementById (unitId);
 //
 const selectGroup = unit.querySelector ('.select-group');
+const sizeRange = unit.querySelector ('.size-range');
 const groupContainer = unit.querySelector ('.group-container');
+//
 const references = unit.querySelector ('.references');
+const links = unit.querySelector ('.links');
 //
 const titleDebugMode = unit.querySelector ('h1');
 //
 module.exports.start = function (context)
 {
+    let wheelSupport = false;
+    //
+    const minFontSize = 32;
+    const maxFontSize = 128;
+    const defaultFontSize = 100;
+    //
     const defaultPrefs =
     {
         selectGroup: "",
+        fontSize: defaultFontSize,
         references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
@@ -224,7 +236,62 @@ module.exports.start = function (context)
     updateGroup (selectGroup.value);
     selectGroup.addEventListener ('input', (event) => { updateGroup (event.target.value); });
     //
+    let style = document.createElement ('style');
+    document.head.appendChild (style);
+    //
+    function setFontSize (fontSize)
+    {
+        style.textContent = `#${unitId} .plain-panel .sheet { font-size: ${fontSize}px; }`;
+    }
+    //
+    sizeRange.min = Math.log2 (minFontSize);
+    sizeRange.max = Math.log2 (maxFontSize);
+    sizeRange.value = Math.log2 (prefs.fontSize);
+    //
+    setFontSize (Math.pow (2, sizeRange.value));
+    sizeRange.addEventListener ('input', (event) => { setFontSize (Math.pow (2, event.target.value)); });
+    if (wheelSupport)
+    {
+        sizeRange.addEventListener
+        (
+            'wheel',
+            (event) =>
+            {
+                event.preventDefault ();
+                let fontSize = Math.round (Math.pow (2, event.target.value) + Math.sign (event.deltaX));
+                if ((fontSize >= minFontSize) && (fontSize <= maxFontSize))
+                {
+                    event.target.value = Math.log2 (fontSize);
+                    setFontSize (fontSize);
+                }
+            }
+        );
+    }
+    //
     references.open = prefs.references;
+    //
+    const emojiLinks = require ('../../lib/unicode/emoji-links.json');
+    //
+    emojiLinks.forEach
+    (
+        group =>
+        {
+            let ul = document.createElement ('ul');
+            group.forEach
+            (
+                link =>
+                {
+                    let li = document.createElement ('li');
+                    let a = document.createElement ('a');
+                    a.href = link.href;
+                    a.textContent = link.name;
+                    li.appendChild (a);
+                    ul.appendChild (li);
+                }
+            );
+            links.appendChild (ul);
+        }
+    );
 };
 //
 module.exports.stop = function (context)
@@ -232,6 +299,7 @@ module.exports.stop = function (context)
     let prefs =
     {
         selectGroup: selectGroup.value,
+        fontSize: Math.pow (2, sizeRange.value),
         references: references.open
     };
     context.setPrefs (prefs);

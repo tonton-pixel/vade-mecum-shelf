@@ -140,5 +140,23 @@
                 "string": "謎󠄀謎󠄁遡󠄀遡󠄁餅󠄀餅󠄁"
             }
         ]
+    },
+    {
+        "label": "Name Corrections",
+        "items":
+        [
+            {
+                "label": "Corrections 1",
+                "string": "Ƣƣ܉ೞຝຟຣລ࿐"
+            },
+            {
+                "label": "Corrections 2",
+                "string": "ᇬᇭᇮᇯ℘⑈⑉⭺⭼"
+            },
+            {
+                "label": "Corrections 3",
+                "string": "ꀕ︘𒋔𒋕𖹖𖹗𖹶𖹷𛀁𝃅"
+            }
+        ]
     }
 ]

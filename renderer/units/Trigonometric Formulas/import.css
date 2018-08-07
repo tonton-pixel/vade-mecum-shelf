@@ -5,9 +5,10 @@
     padding-bottom: 1.5em;
 }
 
-#trigonometric-formulas-unit .plain-panel h2
+#trigonometric-formulas-unit .plain-panel .interface
 {
     text-align: center;
+    margin: 0.5em 0 1.5em 0;
 }
 
 #trigonometric-formulas-unit .plain-panel .sheet

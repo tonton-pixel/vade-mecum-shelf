@@ -1,0 +1,170 @@
+[
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/Unicode",
+            "name": "Unicode - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Plane_(Unicode)",
+            "name": "Plane (Unicode) - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Unicode_block",
+            "name": "Unicode block - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Unicode_input",
+            "name": "Unicode input - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Unicode_character_property",
+            "name": "Unicode character property - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Combining_character",
+            "name": "Combining character - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Combining_Grapheme_Joiner",
+            "name": "Combining Grapheme Joiner - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Zero-width_non-joiner",
+            "name": "Zero-width non-joiner - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Zero-width_joiner",
+            "name": "Zero-width joiner - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Regional_Indicator_Symbol",
+            "name": "Regional Indicator Symbol - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Han_unification",
+            "name": "Han unification - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Variant_form_(Unicode)",
+            "name": "Variant form (Unicode) - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Universal_Character_Set_characters",
+            "name": "Universal Character Set characters - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/List_of_Unicode_characters",
+            "name": "List of Unicode characters - Wikipedia"
+        }
+    ],
+    [
+        {
+            "href": "https://www.unicode.org/roadmaps/",
+            "name": "Roadmaps to Unicode"
+        },
+        {
+            "href": "https://www.unicode.org/reports/tr44/",
+            "name": "UAX #44: Unicode Character Database"
+        },
+        {
+            "href": "https://www.unicode.org/Public/UNIDATA/Blocks.txt",
+            "name": "Blocks.txt"
+        },
+        {
+            "href": "https://www.unicode.org/Public/UNIDATA/UnicodeData.txt",
+            "name": "UnicodeData.txt"
+        }
+    ],
+    [
+        {
+            "href": "https://www.unicode.org/reports/tr15/",
+            "name": "UAX #15: Unicode Normalization Forms"
+        },
+        {
+            "href": "https://www.unicode.org/charts/normalization/",
+            "name": "Normalization Charts"
+        },
+        {
+            "href": "https://www.unicode.org/faq/normalization.html",
+            "name": "FAQ - Normalization"
+        },
+        {
+            "href": "http://unicode.org/faq/char_combmark.html",
+            "name": "FAQ - Characters and Combining Marks"
+        }
+    ],
+    [
+        {
+            "href": "https://www.unicode.org/glossary/",
+            "name": "Glossary"
+        }
+    ],
+    [
+        {
+            "href": "https://namakajiri.net/nikki/joyo-kanji-variants-the-curious-case-of-and-%e5%8f%b1/",
+            "name": "Jōyō kanji variants: The curious case of 叱 and [censored] | The Nanbanjin Nikki"
+        }
+    ],
+    [
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt",
+            "name": "String.prototype.charCodeAt() - JavaScript | MDN"
+        },
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode",
+            "name": "String.fromCharCode() - JavaScript | MDN"
+        }
+    ],
+    [
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt",
+            "name": "String.prototype.codePointAt() - JavaScript | MDN"
+        },
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint",
+            "name": "String.fromCodePoint() - JavaScript | MDN"
+        }
+    ],
+    [
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize",
+            "name": "String.prototype.normalize() - JavaScript | MDN"
+        }
+    ],
+    [
+        {
+            "href": "https://mathiasbynens.be/notes/javascript-escapes",
+            "name": "JavaScript character escape sequences · Mathias Bynens"
+        },
+        {
+            "href": "https://mathiasbynens.be/notes/javascript-encoding",
+            "name": "JavaScript’s internal character encoding: UCS-2 or UTF-16? · Mathias Bynens"
+        },
+        {
+            "href": "https://mathiasbynens.be/notes/javascript-unicode",
+            "name": "JavaScript has a Unicode problem · Mathias Bynens"
+        },
+        {
+            "href": "https://mathiasbynens.be/notes/es6-unicode-regex",
+            "name": "Unicode-aware regular expressions in ES2015 · Mathias Bynens"
+        },
+        {
+            "href": "https://mathiasbynens.be/notes/es-unicode-property-escapes",
+            "name": "Unicode property escapes in JavaScript regular expressions · Mathias Bynens"
+        },
+        {
+            "href": "https://mathiasbynens.be/notes/es-regexp-proposals",
+            "name": "ECMAScript regular expressions are getting better! · Mathias Bynens"
+        }
+    ],
+    [
+        {
+            "href": "https://github.com/mathiasbynens/regexpu-core",
+            "name": "GitHub - mathiasbynens/regexpu-core: regexpu’s core functionality"
+        },
+        {
+            "href": "https://github.com/mathiasbynens/regexpu-core/blob/master/property-escapes.md",
+            "name": "regexpu-core/property-escapes.md at master · mathiasbynens/regexpu-core · GitHub"
+        }
+    ]
+]
