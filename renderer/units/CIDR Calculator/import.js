@@ -10,6 +10,7 @@ const ipRangeSample = unit.querySelector ('.ip-range-sample');
 const cidrListOutput = unit.querySelector ('.cidr-list-output');
 //
 const references = unit.querySelector ('.references');
+const links = unit.querySelector ('.links');
 //
 module.exports.start = function (context)
 {
@@ -42,6 +43,11 @@ module.exports.start = function (context)
     ipRangeInput.addEventListener ('input', (event) => { getCidrList (event.target.value) });
     //
     references.open = prefs.references;
+    //
+    const refLinks = require ('./ref-links.json');
+    const linksList = require ('../../lib/links-list.js');
+    //
+    linksList (links, refLinks);
 };
 //
 module.exports.stop = function (context)

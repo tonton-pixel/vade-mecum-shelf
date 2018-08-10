@@ -18,6 +18,7 @@ const selectSecond = unit.querySelector ('.select-second');
 const selectTimeZoneName = unit.querySelector ('.select-timezonename');
 //
 const references = unit.querySelector ('.references');
+const links = unit.querySelector ('.links');
 //
 module.exports.start = function (context)
 {
@@ -192,6 +193,11 @@ module.exports.start = function (context)
     window.setInterval (periodicFunction, 1000 / 25);
     //
     references.open = prefs.references;
+    //
+    const refLinks = require ('./ref-links.json');
+    const linksList = require ('../../lib/links-list.js');
+    //
+    linksList (links, refLinks);
 };
 //
 module.exports.stop = function (context)

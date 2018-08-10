@@ -1,0 +1,36 @@
+[
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes",
+            "name": "List of HTTP status codes - Wikipedia"
+        },
+        {
+            "href": "https://fr.wikipedia.org/wiki/Liste_des_codes_HTTP",
+            "lang": "fr",
+            "name": "Liste des codes HTTP — Wikipédia"
+        },
+        {
+            "href": "https://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89",
+            "lang": "ja",
+            "name": "HTTPステータスコード - Wikipedia"
+        }
+    ],
+    [
+        {
+            "href": "https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html",
+            "name": "HTTP/1.1: Status Code Definitions"
+        },
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status",
+            "name": "HTTP response status codes - HTTP | MDN"
+        },
+        {
+            "href": "https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml",
+            "name": "Hypertext Transfer Protocol (HTTP) Status Code Registry"
+        },
+        {
+            "href": "https://tools.ietf.org/html/rfc7231",
+            "name": "RFC 7231 - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content"
+        }
+    ]
+]

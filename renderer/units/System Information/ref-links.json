@@ -1,0 +1,56 @@
+[
+    [
+        {
+            "href": "https://electron.atom.io/docs/all/",
+            "name": "All of the Documentation | Electron"
+        },
+        {
+            "href": "https://electron.atom.io/docs/",
+            "name": "Documentation | Electron"
+        },
+        {
+            "href": "https://electron.atom.io/docs/api/app/",
+            "name": "app | Electron"
+        },
+        {
+            "href": "https://electron.atom.io/docs/api/browser-window/",
+            "name": "BrowserWindow | Electron"
+        },
+        {
+            "href": "https://electron.atom.io/docs/api/process/",
+            "name": "process | Electron"
+        },
+        {
+            "href": "https://electron.atom.io/docs/api/remote/",
+            "name": "remote | Electron"
+        },
+        {
+            "href": "https://electron.atom.io/docs/api/screen/",
+            "name": "screen | Electron"
+        }
+    ],
+    [
+        {
+            "href": "https://nodejs.org/api/",
+            "name": "Index | Node.js Documentation"
+        },
+        {
+            "href": "https://nodejs.org/api/os.html",
+            "name": "OS | Node.js Documentation"
+        },
+        {
+            "href": "https://nodejs.org/api/process.html",
+            "name": "Process | Node.js Documentation"
+        }
+    ],
+    [
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/API",
+            "name": "Web APIs | MDN"
+        },
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator",
+            "name": "Navigator - Web APIs | MDN"
+        }
+    ]
+]

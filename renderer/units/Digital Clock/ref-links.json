@@ -1,0 +1,92 @@
+[
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/Coordinated_Universal_Time",
+            "name": "Coordinated Universal Time - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/List_of_UTC_time_offsets",
+            "name": "List of UTC time offsets - Wikipedia"
+        }
+    ],
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+            "name": "List of tz database time zones - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/List_of_time_zone_abbreviations",
+            "name": "List of time zone abbreviations - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/List_of_time_zones_by_country",
+            "name": "List of time zones by country - Wikipedia"
+        }
+    ],
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/Daylight_saving_time",
+            "name": "Daylight saving time - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Daylight_saving_time_by_country",
+            "name": "Daylight saving time by country - Wikipedia"
+        }
+    ],
+    [
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString",
+            "name": "Date.prototype.toLocaleString() - JavaScript | MDN"
+        },
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString",
+            "name": "Date.prototype.toLocaleDateString() - JavaScript | MDN"
+        },
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString",
+            "name": "Date.prototype.toLocaleTimeString() - JavaScript | MDN"
+        }
+    ],
+    [
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl",
+            "name": "Intl - JavaScript | MDN"
+        },
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat",
+            "name": "Intl.DateTimeFormat - JavaScript | MDN"
+        },
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat/resolvedOptions",
+            "name": "Intl.DateTimeFormat.prototype.resolvedOptions() - JavaScript | MDN"
+        },
+        {
+            "href": "https://hacks.mozilla.org/2014/12/introducing-the-javascript-internationalization-api/",
+            "name": "Introducing the JavaScript Internationalization API ★ Mozilla Hacks – the Web developer blog"
+        }
+    ],
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/Date_format_by_country",
+            "name": "Date format by country - Wikipedia"
+        }
+    ],
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/Date_and_time_notation_in_Japan",
+            "name": "Date and time notation in Japan - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Japanese_era_name",
+            "name": "Japanese era name - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/List_of_Japanese_era_names",
+            "name": "List of Japanese era names - Wikipedia"
+        },
+        {
+            "href": "https://simple.wikipedia.org/wiki/List_of_Japanese_eras",
+            "name": "List of Japanese eras - Simple English Wikipedia, the free encyclopedia"
+        }
+    ]
+]

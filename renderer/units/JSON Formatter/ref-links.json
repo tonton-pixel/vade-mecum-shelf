@@ -1,0 +1,54 @@
+[
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/JSON",
+            "name": "JSON - Wikipedia"
+        },
+        {
+            "href": "https://www.json.org/",
+            "name": "JSON - Introducing JSON"
+        },
+        {
+            "href": "https://www.json.org/example.html",
+            "name": "JSON Example"
+        },
+        {
+            "href": "https://tools.ietf.org/html/rfc8259",
+            "name": "RFC 8259 - The JavaScript Object Notation (JSON) Data Interchange Format"
+        },
+        {
+            "href": "https://www.ecma-international.org/publications/standards/Ecma-404.htm",
+            "name": "Standard ECMA-404 - The JSON Data Interchange Format"
+        }
+    ],
+    [
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+            "name": "JSON - JavaScript | MDN"
+        },
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+            "name": "JSON.parse() - JavaScript | MDN"
+        },
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify",
+            "name": "JSON.stringify() - JavaScript | MDN"
+        },
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/JSON_bad_parse",
+            "name": "SyntaxError: JSON.parse: bad parsing - JavaScript | MDN"
+        }
+    ],
+    [
+        {
+            "href": "https://jsonlint.com/",
+            "name": "JSONLint - The JSON Validator"
+        }
+    ],
+    [
+        {
+            "href": "https://devgadget.com/json-formatter.html",
+            "name": "JSON Formatter"
+        }
+    ]
+]

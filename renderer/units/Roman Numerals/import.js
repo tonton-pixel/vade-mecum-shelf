@@ -12,6 +12,7 @@ const romanOutput = unit.querySelector ('.roman-output');
 const notes = unit.querySelector ('.notes');
 //
 const references = unit.querySelector ('.references');
+const links = unit.querySelector ('.links');
 //
 module.exports.start = function (context)
 {
@@ -35,7 +36,13 @@ module.exports.start = function (context)
     arabicInput.addEventListener ('input', (event) => { romanOutput.value = numerals.arabicToRoman (event.target.value) });
     //
     notes.open = prefs.notes;
+    //
     references.open = prefs.references;
+    //
+    const refLinks = require ('./ref-links.json');
+    const linksList = require ('../../lib/links-list.js');
+    //
+    linksList (links, refLinks);
 };
 //
 module.exports.stop = function (context)

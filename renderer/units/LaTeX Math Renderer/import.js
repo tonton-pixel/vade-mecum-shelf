@@ -12,6 +12,7 @@ const throwOnError = unit.querySelector ('.throw-on-error');
 const latexContainer = unit.querySelector ('.latex-container');
 //
 const references = unit.querySelector ('.references');
+const links = unit.querySelector ('.links');
 //
 let defaultFolderPath;
 //
@@ -116,7 +117,7 @@ module.exports.start = function (context)
         }
     );
     //
-    let katexOptions = { };
+    let katexOptions = { allowedProtocols: [ "http", "https" ] };
     //
     function renderLatex (string)
     {
@@ -170,6 +171,11 @@ module.exports.start = function (context)
     throwOnError.addEventListener ('click', (event) => { changeThrowOnError (event.target.checked); });
     //
     references.open = prefs.references;
+    //
+    const refLinks = require ('./ref-links.json');
+    const linksList = require ('../../lib/links-list.js');
+    //
+    linksList (links, refLinks);
 };
 //
 module.exports.stop = function (context)

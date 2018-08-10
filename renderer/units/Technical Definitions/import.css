@@ -55,7 +55,7 @@
 #technical-definitions-unit .plain-panel .details sup
 {
     font-size: 0.7em;
-    margin-left: 0.1em;
+    margin: 0 0.1em;
 }
 
 #technical-definitions-unit summary

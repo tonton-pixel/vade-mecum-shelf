@@ -18,6 +18,16 @@
         ]
     },
     {
+        "label": "HTML",
+        "items":
+        [
+            {
+                "label": "KaTeX",
+                "string": "\\href{https://khan.github.io/KaTeX/}\\text{KaTeX}"
+            }
+        ]
+    },
+    {
         "label": "Errors",
         "items":
         [

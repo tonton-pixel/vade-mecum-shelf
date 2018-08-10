@@ -16,6 +16,10 @@
                 "details": "Asynchronous JavaScript And XML"
             },
             {
+                "term": "ALM",
+                "details": "Arabic Letter Mark"
+            },
+            {
                 "term": "ANSI",
                 "details": "American National Standards Institute"
             },
@@ -26,6 +30,10 @@
             {
                 "term": "ASAR",
                 "details": "Atom Shell Archive Format"
+            },
+            {
+                "term": "ASCII",
+                "details": "American Standard Code for Information Interchange"
             },
             {
                 "term": "AST",
@@ -44,12 +52,20 @@
                 "details": "Backus–Naur Form<br>Backus Normal Form"
             },
             {
+                "term": "BOM",
+                "details": "Byte-Order Mark"
+            },
+            {
                 "term": "CC",
                 "details": "Creative Commons"
             },
             {
                 "term": "CGI",
                 "details": "Common Gateway Interface"
+            },
+            {
+                "term": "CGJ",
+                "details": "Combining Grapheme Joiner"
             },
             {
                 "term": "CIDR",
@@ -96,6 +112,10 @@
                 "details": "Common Unix Printing System"
             },
             {
+                "term": "DBCS",
+                "details": "Double-Byte Character Set"
+            },
+            {
                 "term": "DHCP",
                 "details": "Dynamic Host Configuration Protocol"
             },
@@ -122,6 +142,10 @@
             {
                 "term": "DTD",
                 "details": "Document Type Definition"
+            },
+            {
+                "term": "EBCDIC",
+                "details": "Extended Binary-Coded Decimal Interchange Code"
             },
             {
                 "term": "EBNF",
@@ -168,6 +192,10 @@
                 "details": "GNU Image Manipulation Program<br>General Image Manipulation Program"
             },
             {
+                "term": "GMT",
+                "details": "Greenwich Mean Time"
+            },
+            {
                 "term": "GNU",
                 "details": "GNU's Not Unix!"
             },
@@ -205,11 +233,15 @@
             },
             {
                 "term": "IANA",
-                "details": "Internet Assigned Number Authority"
+                "details": "Internet Assigned Numbers Authority"
             },
             {
                 "term": "ICANN",
                 "details": "Internet Corporation for Assigned Names and Numbers"
+            },
+            {
+                "term": "ICU",
+                "details": "International Components for Unicode"
             },
             {
                 "term": "IDL",
@@ -242,6 +274,10 @@
             {
                 "term": "IP",
                 "details": "Internet Protocol"
+            },
+            {
+                "term": "IPA",
+                "details": "International Phonetic Alphabet<br>International Phonetic Association"
             },
             {
                 "term": "IPC",
@@ -308,12 +344,32 @@
                 "details": "Line Printer Remote protocol"
             },
             {
+                "term": "LRM",
+                "details": "Left-to-Right Mark"
+            },
+            {
+                "term": "LSB",
+                "details": "Least Significant Byte"
+            },
+            {
+                "term": "LTR",
+                "details": "Left-To-Right"
+            },
+            {
+                "term": "LZW",
+                "details": "Lempel-Ziv-Welch"
+            },
+            {
                 "term": "MAC",
                 "details": "Media Access Control"
             },
             {
                 "term": "MAS",
                 "details": "Mac App Store"
+            },
+            {
+                "term": "MBCS",
+                "details": "Multi-Byte Character Set"
             },
             {
                 "term": "MDN",
@@ -332,8 +388,28 @@
                 "details": "Motion Picture Experts Group"
             },
             {
+                "term": "MSB",
+                "details": "Most Significant Byte"
+            },
+            {
                 "term": "NAT",
                 "details": "Network Address Translation"
+            },
+            {
+                "term": "NFC",
+                "details": "Normalization Form C"
+            },
+            {
+                "term": "NFD",
+                "details": "Normalization Form D"
+            },
+            {
+                "term": "NFKC",
+                "details": "Normalization Form KC"
+            },
+            {
+                "term": "NFKD",
+                "details": "Normalization Form KD"
             },
             {
                 "term": "NNTP",
@@ -404,6 +480,10 @@
                 "details": "Request For Comments"
             },
             {
+                "term": "RLM",
+                "details": "Right-to-Left Mark"
+            },
+            {
                 "term": "ROM",
                 "details": "Read-Only Memory"
             },
@@ -413,7 +493,11 @@
             },
             {
                 "term": "RTF",
-                "details": "Rich Text Fomat"
+                "details": "Rich Text Format"
+            },
+            {
+                "term": "RTL",
+                "details": "Right-To-Left"
             },
             {
                 "term": "RTP",
@@ -426,6 +510,10 @@
             {
                 "term": "SAX",
                 "details": "Simple API for XML"
+            },
+            {
+                "term": "SBCS",
+                "details": "Single-Byte Character Set"
             },
             {
                 "term": "SEO",
@@ -504,6 +592,14 @@
                 "details": "Transport Layer Security"
             },
             {
+                "term": "UCD",
+                "details": "Unicode Character Database"
+            },
+            {
+                "term": "UCS",
+                "details": "Universal Character Set"
+            },
+            {
                 "term": "UDP",
                 "details": "User Datagram Protocol"
             },
@@ -522,6 +618,14 @@
             {
                 "term": "USB",
                 "details": "Universal Serial Bus"
+            },
+            {
+                "term": "UTC",
+                "details": "Universal Time Coordinated<br>Coordinated Universal Time"
+            },
+            {
+                "term": "UTF",
+                "details": "Unicode Transformation Format<br>UCS Transformation Format"
             },
             {
                 "term": "UUID",
@@ -594,6 +698,14 @@
             {
                 "term": "XSLT",
                 "details": "Extensible Stylesheet Language Transformation"
+            },
+            {
+                "term": "ZWJ",
+                "details": "Zero-Width Joiner"
+            },
+            {
+                "term": "ZWNJ",
+                "details": "Zero-Width Non-Joiner"
             }
         ]
     },

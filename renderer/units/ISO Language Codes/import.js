@@ -5,6 +5,7 @@ const liveSearch = unit.querySelector ('.live-search');
 const codesContainer = unit.querySelector ('.codes-container');
 //
 const references = unit.querySelector ('.references');
+const links = unit.querySelector ('.links');
 //
 module.exports.start = function (context)
 {
@@ -57,6 +58,11 @@ module.exports.start = function (context)
     liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
     //
     references.open = prefs.references;
+    //
+    const refLinks = require ('./ref-links.json');
+    const linksList = require ('../../lib/links-list.js');
+    //
+    linksList (links, refLinks);
 };
 //
 module.exports.stop = function (context)

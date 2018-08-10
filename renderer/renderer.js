@@ -505,35 +505,30 @@ window.addEventListener // *Not* document.addEventListener
     }
 );
 //
-function addListeners ()
-{
-    // Get all external links to be opened in external browser
-    let aTags = document.querySelectorAll ('a[href]');
-    for (let aTag of aTags)
+// Open all links in external browser
+document.body.addEventListener
+(
+    'click',
+    (event) =>
     {
-        // if (aTag.href.match (/^http(s?)\:\/\//))
-        if (aTag.href.startsWith ("http://") || aTag.href.startsWith ("https://"))
+        let aTag = event.target.closest ('a');
+        if (aTag)
         {
-            aTag.title = decodeURI (aTag.href);
-            aTag.addEventListener
-            (
-                'click',
-                (event) =>
-                {
-                    event.preventDefault ();
-                    let isCommandOrControlClick = (process.platform === 'darwin') ? event.metaKey : event.ctrlKey;
-                    shell.openExternal (event.target.href, { activate: !isCommandOrControlClick }); // options are macOS only anyway
-                }
-            );
+            // if (aTag.href.match (/^http(s?)\:\/\//))
+            if (aTag.href.startsWith ("http://") || aTag.href.startsWith ("https://"))
+            {
+                event.preventDefault ();
+                let isCommandOrControlClick = (process.platform === 'darwin') ? event.metaKey : event.ctrlKey;
+                shell.openExternal (aTag.href, { activate: !isCommandOrControlClick }); // options are macOS only anyway
+            }
         }
     }
-}
+);
 //
 getCurrentWebContents ().once
 (
     'did-finish-load', (event) =>
     {
-        addListeners ();
         if (showSidebar)
         {
             sidebar.classList.add ('no-transition');

@@ -4,6 +4,7 @@ const unit = document.getElementById ('jabberwocky-unit');
 const poemContainer = unit.querySelector ('.poem-container');
 //
 const references = unit.querySelector ('.references');
+const links = unit.querySelector ('.links');
 //
 module.exports.start = function (context)
 {
@@ -65,6 +66,11 @@ module.exports.start = function (context)
     poemContainer.appendChild (panel);
     //
     references.open = prefs.references;
+    //
+    const refLinks = require ('./ref-links.json');
+    const linksList = require ('../../lib/links-list.js');
+    //
+    linksList (links, refLinks);
 };
 //
 module.exports.stop = function (context)

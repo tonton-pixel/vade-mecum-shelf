@@ -1,0 +1,33 @@
+[
+    [
+        {
+            "href": "https://www.unicode.org/iso15924/codelists.html",
+            "name": "ISO 15924 - Code Lists"
+        },
+        {
+            "href": "https://www.unicode.org/iso15924/iso15924-codes.html",
+            "name": "ISO 15924 - Alphabetical Code List"
+        }
+    ],
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/ISO_15924",
+            "name": "ISO 15924 - Wikipedia"
+        },
+        {
+            "href": "https://fr.wikipedia.org/wiki/ISO_15924",
+            "lang": "fr",
+            "name": "ISO 15924 — Wikipédia"
+        }
+    ],
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/Writing_system",
+            "name": "Writing system - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/List_of_writing_systems",
+            "name": "List of writing systems - Wikipedia"
+        }
+    ]
+]

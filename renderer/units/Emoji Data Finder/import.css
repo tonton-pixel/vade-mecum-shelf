@@ -78,14 +78,15 @@
 #emoji-data-finder-unit .input-string
 {
     font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
-    font-size: 2.5em;
+    font-size: 36px;
     padding: 0 0.2em;
     width: 100%;
     tab-size : 4;
     margin: 0.25em 0 0.125em 0;
-    line-height: 1.333em;
+    line-height: 48px;
     resize: vertical;
     overflow-y: scroll;
+    min-height: calc(1px + 48px + 48px + 1px);
 }
 
 #emoji-data-finder-unit .hit-count
@@ -109,7 +110,7 @@
 #emoji-data-finder-unit .emoji-data .emoji
 {
     font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
-    font-size: 5em;
+    font-size: 72px;
     height: 1em;
     min-width: 1em;
     text-align: center;

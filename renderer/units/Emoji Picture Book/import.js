@@ -184,7 +184,7 @@ module.exports.start = function (context)
                     let removedSpans = [ ];
                     for (let span of spans)
                     {
-                        if (!isSupportedCharacter (span.textContent) || (span.scrollWidth > span.clientWidth))
+                        if (!isSupportedCharacter (span.textContent) || ((span.scrollWidth - 1) > span.clientWidth))
                         {
                             let saveCharacter = span.textContent;
                             let removeSpan = true;
@@ -194,7 +194,7 @@ module.exports.start = function (context)
                                 for (let altCharacter of altCharacters)
                                 {
                                     span.textContent = altCharacter;
-                                    if (isSupportedCharacter (span.textContent) && (!(span.scrollWidth > span.clientWidth)))
+                                    if (isSupportedCharacter (span.textContent) && (!((span.scrollWidth - 1) > span.clientWidth)))
                                     {
                                         span.title = getEmojiToolTip (altCharacter);
                                         removeSpan = false;
@@ -271,27 +271,9 @@ module.exports.start = function (context)
     references.open = prefs.references;
     //
     const emojiLinks = require ('../../lib/unicode/emoji-links.json');
+    const linksList = require ('../../lib/links-list.js');
     //
-    emojiLinks.forEach
-    (
-        group =>
-        {
-            let ul = document.createElement ('ul');
-            group.forEach
-            (
-                link =>
-                {
-                    let li = document.createElement ('li');
-                    let a = document.createElement ('a');
-                    a.href = link.href;
-                    a.textContent = link.name;
-                    li.appendChild (a);
-                    ul.appendChild (li);
-                }
-            );
-            links.appendChild (ul);
-        }
-    );
+    linksList (links, emojiLinks);
 };
 //
 module.exports.stop = function (context)

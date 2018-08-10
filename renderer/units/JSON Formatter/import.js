@@ -10,6 +10,7 @@ const finalLineBreak = unit.querySelector ('.final-line-break');
 const outputString = unit.querySelector ('.output-string');
 //
 const references = unit.querySelector ('.references');
+const links = unit.querySelector ('.links');
 //
 module.exports.start = function (context)
 {
@@ -137,6 +138,11 @@ module.exports.start = function (context)
     finalLineBreak.addEventListener ('click', (event) => { changeFinalLineBreak (event.target.checked); });
     //
     references.open = prefs.references;
+    //
+    const refLinks = require ('./ref-links.json');
+    const linksList = require ('../../lib/links-list.js');
+    //
+    linksList (links, refLinks);
 };
 //
 module.exports.stop = function (context)

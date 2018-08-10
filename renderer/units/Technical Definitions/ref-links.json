@@ -1,0 +1,62 @@
+[
+    [
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl",
+            "name": "<dl>: The Description List element - HTML | MDN"
+        },
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt",
+            "name": "<dt>: The Description Term element - HTML | MDN"
+        },
+        {
+            "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd",
+            "name": "<dd>: The Description Details element - HTML | MDN"
+        }
+    ],
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/Technical_definition",
+            "name": "Technical definition - Wikipedia"
+        }
+    ],
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/List_of_computing_and_IT_abbreviations",
+            "name": "List of computing and IT abbreviations - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/List_of_information_technology_initialisms",
+            "name": "List of information technology initialisms - Wikipedia"
+        }
+    ],
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/MacOS",
+            "name": "macOS - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/MacOS_version_history",
+            "name": "macOS version history - Wikipedia"
+        }
+    ],
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/Unit_prefix",
+            "name": "Unit prefix - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Metric_prefix",
+            "name": "Metric prefix - Wikipedia"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Decimal_separator",
+            "name": "Decimal separator - Wikipedia"
+        }
+    ],
+    [
+        {
+            "href": "https://en.wikipedia.org/wiki/Degree_of_a_polynomial",
+            "name": "Degree of a polynomial - Wikipedia"
+        }
+    ]
+]

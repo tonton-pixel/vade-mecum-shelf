@@ -11,6 +11,7 @@ const outputString = unit.querySelector ('.output-string');
 const builtInFunctions = unit.querySelector ('.built-in-functions');
 //
 const references = unit.querySelector ('.references');
+const links = unit.querySelector ('.links');
 //
 let defaultFolderPath;
 //
@@ -274,7 +275,13 @@ module.exports.start = function (context)
     );
     //
     builtInFunctions.open = prefs.builtInFunctions;
+    //
     references.open = prefs.references;
+    //
+    const refLinks = require ('./ref-links.json');
+    const linksList = require ('../../lib/links-list.js');
+    //
+    linksList (links, refLinks);
 };
 //
 module.exports.stop = function (context)
