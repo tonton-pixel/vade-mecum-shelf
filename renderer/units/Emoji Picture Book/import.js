@@ -53,12 +53,12 @@ module.exports.start = function (context)
         }
     );
     //
-    const emojiList = require ('../../lib/unicode/get-emoji-list.js') ("11.0");
+    const emojiList = require ('emoji-test-list');
     //
-    const groups = require ('../../lib/unicode/get-emoji-groups.js') ("11.0");
+    const emojiGroups = require ('emoji-test-groups');
     //
     let groupNames = [ ];
-    for (let group of groups)
+    for (let group of emojiGroups)
     {
         groupNames.push (group.name)
     }
@@ -139,7 +139,7 @@ module.exports.start = function (context)
         {
            groupContainer.firstChild.remove ();
         }
-        for (let group of groups)
+        for (let group of emojiGroups)
         {
             if (group.name === groupName)
             {
@@ -159,9 +159,9 @@ module.exports.start = function (context)
                         {
                             if (character in emojiList)
                             {
-                                if (emojiList[character].fullyQualified)
+                                if (emojiList[character].toFullyQualified)
                                 {
-                                    character = emojiList[character].fullyQualified;
+                                    character = emojiList[character].toFullyQualified;
                                     console.log (character);
                                 }
                                 let span =  document.createElement ('span');
@@ -188,7 +188,7 @@ module.exports.start = function (context)
                         {
                             let saveCharacter = span.textContent;
                             let removeSpan = true;
-                            let altCharacters = emojiList[saveCharacter].nonFullyQualified;
+                            let altCharacters = emojiList[saveCharacter].toNonFullyQualified;
                             if (altCharacters)
                             {
                                 for (let altCharacter of altCharacters)

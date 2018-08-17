@@ -320,7 +320,7 @@ module.exports.start = function (context)
         pageSelect.title = `Current page`;
         nextPageButton.title = `Next page`;
         lastPageButton.title = `Last page`;
-        pageInfo.innerHTML = (pageCount > 1) ? `(<strong>${pageCount}</strong>&nbsp;pages)` : "";
+        pageInfo.innerHTML = (pageCount > 1) ? `<strong>${pageCount}</strong>&nbsp;pages` : "";
         paginationBar.hidden = false;
         displayDataPage (charactersPages[charactersPageIndex]);
     }

@@ -10,6 +10,6 @@ if (curl.error)
 }
 else
 {
-    let whitelist = [ "name", "assets", "download_count", "size" ];
+    let whitelist = [ "name", "assets", "download_count", "created_at", "updated_at", "published_at" ];
     $.write ($.stringify (JSON.parse (curl.stdout), whitelist, 4));
 }

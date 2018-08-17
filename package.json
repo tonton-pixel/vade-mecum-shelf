@@ -1,7 +1,7 @@
 {
     "name": "vade-mecum-shelf",
     "productName": "Vade Mecum Shelf",
-    "version": "1.8.2",
+    "version": "1.8.3",
     "description": "Collection of utilities wrapped into one single app.",
     "main": "main/main.js",
     "scripts": {
@@ -31,10 +31,13 @@
     "license": "MIT",
     "private": false,
     "dependencies": {
+        "emoji-patterns": "^11.1.0",
+        "emoji-test-groups": "^11.0.0",
+        "emoji-test-list": "^11.0.0",
         "regexpu-core": "^4.2.0"
     },
     "devDependencies": {
-        "electron": "^2.0.6",
+        "electron": "^2.0.7",
         "electron-packager": "^12.1.0"
     }
 }

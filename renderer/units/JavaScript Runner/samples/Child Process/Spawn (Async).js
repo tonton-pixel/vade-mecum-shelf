@@ -16,7 +16,7 @@ curl.stdout.on
         if (string)
         {
             $.clear ();
-            let whitelist = [ "name", "assets", "download_count", "size" ];
+            let whitelist = [ "name", "assets", "download_count", "created_at", "updated_at", "published_at" ];
             $.write ($.stringify (JSON.parse (string), whitelist, 4));
         }
     }

@@ -115,6 +115,7 @@
 #unicode-data-finder-unit .pagination-bar .page-select
 {
     font-family: Monaco, "Noto Mono", monospace;
+    font-weight: bold;
     font-size: 1em;
     padding: 0.2em 0.4em;
     text-align: right;

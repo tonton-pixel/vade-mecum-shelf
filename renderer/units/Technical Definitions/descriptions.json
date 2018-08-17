@@ -416,6 +416,10 @@
                 "details": "Network News Transfer Protocol"
             },
             {
+                "term": "NPM",
+                "details": "Node Package Manager"
+            },
+            {
                 "term": "NTP",
                 "details": "Network Time Protocol"
             },

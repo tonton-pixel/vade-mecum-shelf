@@ -50,7 +50,7 @@ module.exports.start = function (context)
         return cldrAnnotations[emoji.replace (/\uFE0F/g, "")].keywords;
     }
     //
-    const emojiList = require ('../../lib/unicode/get-emoji-list.js') ("11.0");
+    const emojiList = require ('emoji-test-list');
     const emojiKeys = Object.keys (emojiList).sort ().reverse ();
     //
     function findEmojiByName (regex)
@@ -77,32 +77,14 @@ module.exports.start = function (context)
         return emojiByName;
     }
     //
+    const emojiPatterns = require ('emoji-patterns');
+    // Exclude the 12 keycap bases and the 26 singleton Regional Indicator characters
+    const emojiPattern = emojiPatterns["Emoji_All"].replace (/\\u\{23\}\\u\{2A\}\\u\{30\}-\\u\{39\}|\\u\{1F1E6\}-\\u\{1F1FF\}/gi, "");
+    const emojiRegex = new RegExp (emojiPattern, 'gu');
+    //
     function getEmojiDataList (string)
     {
-        let emojiDataList = [ ];
-        let emojiFound = false;
-        while (string.length > 0)
-        {
-            for (let emoji of emojiKeys)
-            {
-                if (string.startsWith (emoji))
-                {
-                    emojiDataList.push (emoji);
-                    string = string.slice (emoji.length);
-                    emojiFound = true;
-                    break;
-                }
-            }
-            if (emojiFound)
-            {
-                emojiFound = false;
-            }
-            else
-            {
-                string = string.slice (1);
-            }
-        }
-        return [...new Set (emojiDataList)];
+        return [...new Set (string.match (emojiRegex))];
     }
     //
     clearButton.addEventListener
@@ -302,9 +284,9 @@ module.exports.start = function (context)
             let code = emojiList[character].code.split (" ").map (source => { return `U+${source}`; }).join (" ");
             // let code = emojiList[character].code;
             codes.textContent = code;
-            let toolTip = (emojiList[character].fullyQualified) ? "NON FULLY QUALIFIED": "FULLY QUALIFIED";
+            let toolTip = "STATUS: " + (emojiList[character].toFullyQualified ? "DISPLAY/PROCESS": "KEYBOARD/PALETTE");
             emojiData.title = toolTip;
-            if (emojiList[character].fullyQualified)
+            if (emojiList[character].toFullyQualified)
             {
                 names.classList.add ('non-fully-qualified');
                 codes.classList.add ('non-fully-qualified');
