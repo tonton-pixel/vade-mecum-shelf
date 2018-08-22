@@ -1,9 +1,9 @@
 {
     "name": "vade-mecum-shelf",
     "productName": "Vade Mecum Shelf",
-    "version": "1.8.3",
+    "version": "1.8.4",
     "description": "Collection of utilities wrapped into one single app.",
-    "main": "main/main.js",
+    "main": "main.js",
     "scripts": {
         "start": "electron .",
         "build-darwin-no-asar": "electron-packager . --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
@@ -16,7 +16,7 @@
     "keywords": [
         "app",
         "collection",
-        "customizable",
+        "desktop",
         "electron",
         "modular",
         "shelf",
@@ -31,9 +31,6 @@
     "license": "MIT",
     "private": false,
     "dependencies": {
-        "emoji-patterns": "^11.1.0",
-        "emoji-test-groups": "^11.0.0",
-        "emoji-test-list": "^11.0.0",
         "regexpu-core": "^4.2.0"
     },
     "devDependencies": {

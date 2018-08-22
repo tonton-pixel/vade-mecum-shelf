@@ -18,6 +18,15 @@ Its *look and feel* is partly inspired by the brilliant [Electron API Demos](htt
 
 - From the `Developer` menu, it is possible to reveal the app's executable file, and also to open the user data directory (where the persistent settings get stored), as well as the temporary items directory.
 
+## Note
+
+The following utilities are no more available in **Vade Mecum Shelf**; they have been moved to a new dedicated app called [Unicode Plus](https://github.com/tonton-pixel/unicode-plus):
+
+* **Emoji Data Finder**
+* **Emoji Picture Book**
+* **Unicode Data Finder**
+* **Unicode Inspector**
+
 ## Utilities
 
 The following utilities are currently available:
@@ -26,8 +35,6 @@ The following utilities are currently available:
 * [Color Names](#color-names)
 * [Departments of France](#departments-of-france)
 * [Digital Clock](#digital-clock)
-* [Emoji Data Finder](#emoji-data-finder)
-* [Emoji Picture Book](#emoji-picture-book)
 * [HTTP Status Codes](#http-status-codes)
 * [IETF Language Tags](#ietf-language-tags)
 * [ISO Country Codes](#iso-country-codes)
@@ -44,8 +51,6 @@ The following utilities are currently available:
 * [Technical Definitions](#technical-definitions)
 * [Text Scratchpad](#text-scratchpad)
 * [Trigonometric Formulas](#trigonometric-formulas)
-* [Unicode Data Finder](#unicode-data-finder)
-* [Unicode Inspector](#unicode-inspector)
 
 ## CIDR Calculator
 
@@ -77,27 +82,6 @@ Full list of French departments, with live search:
 Customizable clock, using language-sensitive text formatting for date and time:
 
 <img src="screenshots/digital-clock.png" width="1080px" alt="Digital Clock screenshot">
-
-## Emoji Data Finder
-
-Data (short name, keywords, code) of Unicode emoji characters extracted from a string:
-
-<img src="screenshots/emoji-data-finder.png" width="1080px" alt="Emoji Data Finder screenshot">
-
-## Emoji Picture Book
-
-Lists of Unicode emoji characters, by group:
-
-* Smileys & People
-* Animals & Nature
-* Food & Drink
-* Travel & Places
-* Activities
-* Objects
-* Symbols
-* Flags
-
-<img src="screenshots/emoji-picture-book.png" width="1080px" alt="Emoji Picture Book screenshot">
 
 ## HTTP Status Codes
 
@@ -230,18 +214,6 @@ Sets of trigonometric formulas, by category:
 * Double Angle
 
 <img src="screenshots/trigonometric-formulas.png" width="1080px" alt="Trigonometric Formulas screenshot">
-
-## Unicode Data Finder
-
-Basic data of Unicode characters found by name:
-
-<img src="screenshots/unicode-data-finder.png" width="1080px" alt="Unicode Data Finder screenshot">
-
-## Unicode Inspector
-
-Code point information of Unicode characters:
-
-<img src="screenshots/unicode-inspector.png" width="1080px" alt="Unicode Inspector screenshot">
 
 ## Building
 

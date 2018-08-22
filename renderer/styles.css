@@ -158,25 +158,11 @@ svg.nav-icon
     /*transform: rotate(90deg);*/
 }
 
-svg.app-icon
-{
-    width: 88px;
-    height: 88px;
-    fill: none;
-    stroke: gray;
-    stroke-width: 4px;
-}
-
 svg.app-color-icon
 {
     width: 88px;
     height: 88px;
     fill: var(--color-accent);
-}
-
-svg.app-color-icon use:hover
-{
-    /* fill: var(--color-hover); */
 }
 
 code,
@@ -311,7 +297,7 @@ kbd
 {
     border-top: 1px solid var(--color-border);
     padding: 2em 0 0.75em;
-    margin: 1em 0;
+    margin: 1.25em 0 1em 0;
     font: inherit;
     font-size: 13px;
     color: inherit;

@@ -9,6 +9,8 @@ const url = require ('url');
 const appName = app.getName ();
 const appVersion = app.getVersion ();
 //
+const isPackaged = !remote.process.defaultApp;
+//
 const settings = getGlobal ('settings');
 //
 if (!settings.smartZoom)
@@ -77,9 +79,9 @@ for (let unitFilename of unitFilenames)
     {
         category = settings.noCategoryName,
         description = "",
-        disabled = false
+        developer = false
     } = getConfig (path.join (unitDirname, 'config.json'));
-    if (!disabled)
+    if (!(isPackaged && developer))
     {
         let htmlFilename = path.join (unitDirname, 'import.html');
         if (fs.existsSync (htmlFilename))
@@ -264,11 +266,10 @@ uncategorizedNav.appendChild (navItem);
 navigation.appendChild (uncategorizedNav);
 //
 let div = document.createElement ('div');
-div.innerHTML = '<svg class="app-color-icon"><use href="images/icons.svg#app-color-icon"></use></svg>';
+div.innerHTML = '<svg class="app-color-icon"><use href="../icons/icon.svg#app-color-icon"></use></svg>';
 div.title = `${appName} v${appVersion}\n${settings.copyright}`;
 footer.appendChild (div);
 // Easter egg...
-const electronAppURL = 'https://electronjs.org/apps/vade-mecum-shelf';
 div.querySelector ('use').addEventListener
 (
     'dblclick',
@@ -278,7 +279,7 @@ div.querySelector ('use').addEventListener
         let isCommandOrControlDoubleClick = (process.platform === 'darwin') ? event.metaKey : event.ctrlKey;
         if (isCommandOrControlDoubleClick)
         {
-            shell.openExternal (electronAppURL);
+            shell.openExternal (settings.repository.URL);
         }
     }
 );
