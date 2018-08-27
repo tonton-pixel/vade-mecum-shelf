@@ -223,7 +223,7 @@ else
     {
         menuTemplate.push ({ label: settings.unitsName.replace (/&/g, "&&"), submenu: [ ] });
     }
-    if ((!isPackaged) || settings.developerMenu)
+    if ((!isPackaged) || settings.developerFeatures)
     {
         menuTemplate.push (developerMenu);
     }

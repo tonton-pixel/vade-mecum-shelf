@@ -28,18 +28,13 @@ module.exports.start = function (context)
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
-    const { remote } = require ('electron');
-    const { getCurrentWebContents } = remote;
-    const webContents = getCurrentWebContents ();
-    //
     clearButton.addEventListener
     (
         'click',
         (event) =>
         {
-            inputString.focus ();
-            webContents.selectAll ();
-            webContents.delete ();
+            inputString.value = "";
+            inputString.dispatchEvent (new Event ('input'));
         }
     );
     //
@@ -50,9 +45,8 @@ module.exports.start = function (context)
         samples,
         (sample) =>
         {
-            inputString.focus ();
-            webContents.selectAll ();
-            webContents.replace (sample.string);
+            inputString.value = sample.string;
+            inputString.dispatchEvent (new Event ('input'));
         }
     );
     //
@@ -105,8 +99,9 @@ module.exports.start = function (context)
         }
     }
     //
-    reformat (inputString.value = prefs.inputString);
     inputString.addEventListener ('input', (event) => reformat (event.target.value));
+    inputString.value = prefs.inputString;
+    inputString.dispatchEvent (new Event ('input'));
     //
     function changeSpaceType (value)
     {

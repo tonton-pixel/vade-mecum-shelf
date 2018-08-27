@@ -11,8 +11,7 @@ let defaultFolderPath;
 module.exports.start = function (context)
 {
     const { remote } = require ('electron');
-    const { app, getCurrentWebContents, Menu, MenuItem } = remote;
-    const webContents = getCurrentWebContents ();
+    const { app, Menu, MenuItem } = remote;
     //
     const path = require ('path');
     //
@@ -30,9 +29,7 @@ module.exports.start = function (context)
         'click',
         (event) =>
         {
-            textString.focus ();
-            webContents.selectAll ();
-            webContents.delete ();
+            textString.value = "";
         }
     );
     //
@@ -51,9 +48,7 @@ module.exports.start = function (context)
                 'utf8',
                 (text, filePath) =>
                 {
-                    textString.focus ();
-                    webContents.selectAll ();
-                    webContents.replace (text);
+                    textString.value = text;
                     defaultFolderPath = path.dirname (filePath);
                 }
             );

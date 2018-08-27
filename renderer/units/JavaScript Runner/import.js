@@ -45,9 +45,7 @@ module.exports.start = function (context)
         (event) =>
         {
             outputString.value = "";
-            codeString.focus ();
-            webContents.selectAll ();
-            webContents.delete ();
+            codeString.value = "";
         }
     );
     //
@@ -94,9 +92,7 @@ module.exports.start = function (context)
         (sample) =>
         {
             outputString.value = "";
-            codeString.focus ();
-            webContents.selectAll ();
-            webContents.replace (sample.string);
+            codeString.value = sample.string;
         }
     );
     //
@@ -125,9 +121,7 @@ module.exports.start = function (context)
                 (text, filePath) =>
                 {
                     outputString.value = "";
-                    codeString.focus ();
-                    webContents.selectAll ();
-                    webContents.replace (text);
+                    codeString.value = text;
                     defaultFolderPath = path.dirname (filePath);
                 }
             );
@@ -203,9 +197,7 @@ module.exports.start = function (context)
                 if (filePath)
                 {
                     outputString.value = "";
-                    codeString.focus ();
-                    webContents.selectAll ();
-                    webContents.replace (fs.readFileSync (filePath, 'utf8'));
+                    codeString.value = fs.readFileSync (filePath, 'utf8');
                 }
                 else
                 {

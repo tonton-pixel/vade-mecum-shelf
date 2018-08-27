@@ -19,8 +19,7 @@ let defaultFolderPath;
 module.exports.start = function (context)
 {
     const { remote } = require ('electron');
-    const { app, getCurrentWebContents } = remote;
-    const webContents = getCurrentWebContents ();
+    const { app } = remote;
     //
     const path = require ('path');
     //
@@ -46,9 +45,8 @@ module.exports.start = function (context)
         'click',
         (event) =>
         {
-            latexFormula.focus ();
-            webContents.selectAll ();
-            webContents.delete ();
+            latexFormula.value = "";
+            latexFormula.dispatchEvent (new Event ('input'));
         }
     );
     //
@@ -59,9 +57,8 @@ module.exports.start = function (context)
         samples,
         (sample) =>
         {
-            latexFormula.focus ();
-            webContents.selectAll ();
-            webContents.replace (sample.string);
+            latexFormula.value = sample.string;
+            latexFormula.dispatchEvent (new Event ('input'));
         }
     );
     //
@@ -89,9 +86,8 @@ module.exports.start = function (context)
                 'utf8',
                 (text, filePath) =>
                 {
-                    latexFormula.focus ();
-                    webContents.selectAll ();
-                    webContents.replace (text);
+                    latexFormula.value = text;
+                    latexFormula.dispatchEvent (new Event ('input'));
                     defaultFolderPath = path.dirname (filePath);
                 }
             );
@@ -140,8 +136,9 @@ module.exports.start = function (context)
         latexContainer.innerHTML = html;
     }
     //
-    renderLatex (latexFormula.value = prefs.latexFormula);
     latexFormula.addEventListener ('input', (event) => renderLatex (event.target.value));
+    latexFormula.value = prefs.latexFormula;
+    latexFormula.dispatchEvent (new Event ('input'));
     //
     function changeDisplayMode (checked)
     {

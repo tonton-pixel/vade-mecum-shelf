@@ -81,7 +81,7 @@ for (let unitFilename of unitFilenames)
         description = "",
         developer = false
     } = getConfig (path.join (unitDirname, 'config.json'));
-    if (!(isPackaged && developer))
+    if ((!isPackaged) || (!developer) || settings.developerFeatures)
     {
         let htmlFilename = path.join (unitDirname, 'import.html');
         if (fs.existsSync (htmlFilename))

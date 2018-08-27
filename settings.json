@@ -3,7 +3,7 @@
     "hotKey": "CommandOrControl+Alt+V",
     "escapeExitsFullScreen": true,
     "unitsMenu": true,
-    "developerMenu": true,
+    "developerFeatures": true,
     "smartZoom": false,
     "window":
     {
