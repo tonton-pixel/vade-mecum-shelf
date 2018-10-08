@@ -46,6 +46,7 @@ module.exports.start = function (context)
         {
             outputString.value = "";
             codeString.value = "";
+            codeString.focus ();
         }
     );
     //

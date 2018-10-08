@@ -24,7 +24,7 @@
 
 #departments-of-france-unit tr
 {
-    user-select: auto;
+    user-select: text;
 }
 
 #departments-of-france-unit tr:nth-child(even)

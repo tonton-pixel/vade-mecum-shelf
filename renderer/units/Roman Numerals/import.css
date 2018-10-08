@@ -3,7 +3,7 @@
 #roman-numerals-unit code,
 #roman-numerals-unit .notes ul
 {
-    user-select: auto;
+    user-select: text;
 }
 
 #roman-numerals-unit code,

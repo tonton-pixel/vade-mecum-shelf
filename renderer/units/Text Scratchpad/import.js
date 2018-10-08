@@ -30,6 +30,7 @@ module.exports.start = function (context)
         (event) =>
         {
             textString.value = "";
+            textString.focus ();
         }
     );
     //

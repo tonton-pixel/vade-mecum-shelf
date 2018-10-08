@@ -7,7 +7,7 @@ module.exports.buildKeyIndex = function (table, key, compareFunction)
     {
         keyIndex.push (index);
     }
-    keyIndex.sort ((a, b) => compareFunction (table[a][key], table[b][key]) || (a - b)); // Preserve order
+    keyIndex.sort ((a, b) => compareFunction (table[a][key], table[b][key]) || (a - b)); // Preserve order (stable sort)
     return keyIndex;
 };
 //

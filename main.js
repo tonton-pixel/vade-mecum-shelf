@@ -4,26 +4,29 @@ const { app, BrowserWindow, dialog, globalShortcut, ipcMain, Menu, shell } = ele
 //
 let mainWindow = null;
 //
-const isAlreadyRunning = app.makeSingleInstance
-(
-    () =>
-    {
-        if (mainWindow)
-        {
-            if (mainWindow.isMinimized ())
-            {
-                mainWindow.restore ();
-            }
-            mainWindow.show ();
-        }
-    }
-);
-if (isAlreadyRunning)
+const gotTheLock = app.requestSingleInstanceLock ();
+if (!gotTheLock)
 {
     app.quit ();
 }
 else
 {
+    app.on
+    (
+        'second-instance',
+        (event, commandLine, workingDirectory) =>
+        {
+            if (mainWindow)
+            {
+                if (mainWindow.isMinimized ())
+                {
+                    mainWindow.restore ();
+                }
+                mainWindow.focus ();
+            }
+        }
+    );
+    //
     // Share settings with the renderer process
     global.settings = require ('./settings.json');
     //
@@ -325,6 +328,10 @@ else
                 show: !settings.window.deferredShow
             }
         );
+        //
+        // Electron 3.0.0 bug fix for the time being, to avoid extra gap on the bottom and right of the maximized main window...
+        mainWindow.setPosition (windowBounds.x, windowBounds.y);
+        mainWindow.setSize (windowBounds.width, windowBounds.height);
         //
         mainWindow.loadURL (url.format ({ protocol: 'file', slashes: true, pathname: path.join (__dirname, 'renderer', 'index.html') }));
         //

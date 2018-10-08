@@ -34,7 +34,7 @@
 
 #prefectures-of-japan-unit tr
 {
-    user-select: auto;
+    user-select: text;
 }
 
 #prefectures-of-japan-unit tr:nth-child(even)

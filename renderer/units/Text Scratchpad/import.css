@@ -10,6 +10,7 @@
     overflow-y: scroll;
     resize: vertical;
     tab-size : 4;
+    overscroll-behavior: contain;
 }
 
 #text-scratchpad-unit .actions

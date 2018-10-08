@@ -33,7 +33,7 @@ module.exports.start = function (context)
     //
     function displayCategory (category)
     {
-        if (formulasContainer.firstChild)
+        while (formulasContainer.firstChild)
         {
             formulasContainer.firstChild.remove ();
         }

@@ -13,6 +13,7 @@
     padding: 0 0.5em;
     /* white-space: pre; */
     tab-size : 4;
+    overscroll-behavior: contain;
 }
 
 #javascript-runner-unit .actions

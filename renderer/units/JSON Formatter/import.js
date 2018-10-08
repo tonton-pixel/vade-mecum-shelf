@@ -35,6 +35,7 @@ module.exports.start = function (context)
         {
             inputString.value = "";
             inputString.dispatchEvent (new Event ('input'));
+            inputString.focus ();
         }
     );
     //

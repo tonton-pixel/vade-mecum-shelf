@@ -47,6 +47,7 @@ module.exports.start = function (context)
         {
             latexFormula.value = "";
             latexFormula.dispatchEvent (new Event ('input'));
+            latexFormula.focus ();
         }
     );
     //

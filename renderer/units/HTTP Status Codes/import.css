@@ -12,14 +12,14 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     display: block;
-    /*overflow-x: scroll;*/
+    /* overflow-x: scroll; */
     color: var(--color);
 }
 
 #http-status-codes-unit tr
 {
     vertical-align: middle;
-    user-select: auto;
+    user-select: text;
 }
 
 #http-status-codes-unit th

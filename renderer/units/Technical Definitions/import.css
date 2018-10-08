@@ -24,7 +24,7 @@
 {
     padding: 0;
     margin: 0.5em 1em 0.75em 1em;
-    user-select: auto;
+    user-select: text;
 }
 
 #technical-definitions-unit .plain-panel .list > .definition

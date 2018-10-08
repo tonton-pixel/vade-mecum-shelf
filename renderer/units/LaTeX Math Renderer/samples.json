@@ -109,22 +109,26 @@
         [
             {
                 "label": "Formula 1",
-                "string": "f_j = \\sum_{k=0}^{n-1} x_k e^{-{2\\pi i \\over n} jk } \\qquad j = 0,\\ldots,n-1."
+                "string": "x={\\frac{-b\\pm{\\sqrt{b^{2}-4ac}}}{2a}}"
             },
             {
                 "label": "Formula 2",
-                "string": "P(x) = \\frac{1}{{\\sigma \\sqrt {2\\pi }}} e^{-\\frac{(x - \\mu)^2} {2 \\sigma^2}}"
+                "string": "f_j = \\sum_{k=0}^{n-1} x_k e^{-{2\\pi i \\over n} jk } \\qquad j = 0,\\ldots,n-1."
             },
             {
                 "label": "Formula 3",
-                "string": "\\sum_{j \\in \\mathbf{N}} b_{ij} \\hat{y}_{j} =\n\\sum_{j \\in \\mathbf{N}} b^{(\\lambda)}_{ij} \\hat{y}_{j} +\n(b_{ii} - \\lambda_{i}) \\hat{y}_{i} \\hat{y}"
+                "string": "P(x) = \\frac{1}{{\\sigma \\sqrt {2\\pi }}} e^{-\\frac{(x - \\mu)^2} {2 \\sigma^2}}"
             },
             {
                 "label": "Formula 4",
-                "string": "\\det \\mathbf{K} (t = 1, t_{1}, \\cdots, t_{n}) =\n\\sum_{I \\in \\mathbf{n} }(-1)^{|I|}\n\\prod_{i \\in I} t_{i}\n\\prod_{j \\in I} (D_{j} + \\lambda_{j} t_{j})\n\\det \\mathbf{A}^{(\\lambda)} (\\overline{I} | \\overline{I}) = 0"
+                "string": "\\sum_{j \\in \\mathbf{N}} b_{ij} \\hat{y}_{j} =\n\\sum_{j \\in \\mathbf{N}} b^{(\\lambda)}_{ij} \\hat{y}_{j} +\n(b_{ii} - \\lambda_{i}) \\hat{y}_{i} \\hat{y}"
             },
             {
                 "label": "Formula 5",
+                "string": "\\det \\mathbf{K} (t = 1, t_{1}, \\cdots, t_{n}) =\n\\sum_{I \\in \\mathbf{n} }(-1)^{|I|}\n\\prod_{i \\in I} t_{i}\n\\prod_{j \\in I} (D_{j} + \\lambda_{j} t_{j})\n\\det \\mathbf{A}^{(\\lambda)} (\\overline{I} | \\overline{I}) = 0"
+            },
+            {
+                "label": "Formula 6",
                 "string": "\\sum_{i = 1}^{ \\left[ \\frac{n}{2} \\right] }\n\\binom{ x_{i, i + 1}^{i^{2}} }\n{ \\left[ \\frac{i + 3}{3} \\right] }\n\\frac{ \\sqrt{ \\mu(i)^{ \\frac{3}{2}} (i^{2} - 1) } }\n{ \\sqrt[3]{\\rho(i) - 2} + \\sqrt[3]{\\rho(i) - 1} }"
             }
         ]

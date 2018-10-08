@@ -2,7 +2,7 @@
 
 #cidr-calculator-unit code
 {
-    user-select: auto;
+    user-select: text;
 }
 
 #cidr-calculator-unit code,
@@ -12,6 +12,7 @@
     font-family: Monaco, "Noto Mono", monospace;
     font-size: 13px;
     line-height: 1.333em;
+    overscroll-behavior: contain;
 }
 
 #cidr-calculator-unit .ip-range-output

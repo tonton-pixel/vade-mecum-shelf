@@ -32,7 +32,7 @@ module.exports.start = function (context)
     //
     function displayCategory (category)
     {
-        if (definitionsContainer.firstChild)
+        while (definitionsContainer.firstChild)
         {
             definitionsContainer.firstChild.remove ();
         }

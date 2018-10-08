@@ -172,7 +172,7 @@ kbd
     border-radius: 4px;
     padding: 2px 4px;
     white-space: nowrap;
-    color: hsl(0,0%,36%);
+    color: hsl(0, 0%, 36%);
     background-color: hsla(0, 0%, 60%, 0.15);
 }
 

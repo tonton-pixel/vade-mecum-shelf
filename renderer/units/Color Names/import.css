@@ -37,7 +37,7 @@
 #color-names-unit tr
 {
     vertical-align: middle;
-    user-select: auto;
+    user-select: text;
 }
 
 #color-names-unit th,

@@ -90,6 +90,10 @@
                 "value": "require ('electron').remote.process.memoryUsage ()"
             },
             {
+                "name": "Heap Statistics",
+                "value": "require ('electron').remote.process.getHeapStatistics ()"
+            },
+            {
                 "name": "Command Line Arguments",
                 "value": "require ('electron').remote.process.argv"
             },
@@ -130,6 +134,10 @@
             {
                 "name": "Memory Usage",
                 "value": "process.memoryUsage ()"
+            },
+            {
+                "name": "Heap Statistics",
+                "value": "process.getHeapStatistics ()"
             },
             {
                 "name": "Command Line Arguments",
@@ -226,7 +234,7 @@
                 "value": "require ('electron').remote.app.getGPUFeatureStatus ()"
             },
             {
-                "name": "Processes Metrics",
+                "name": "Process Metrics",
                 "value": "require ('electron').remote.app.getAppMetrics ()"
             }
         ]

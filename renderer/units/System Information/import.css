@@ -3,7 +3,7 @@
 #system-information-unit h2
 {
     text-align: center;
-    user-select: auto;
+    user-select: text;
 }
 
 #system-information-unit table
@@ -19,7 +19,7 @@
 {
     font-size: 13px;
     line-height: 1.5em;
-    user-select: auto;
+    user-select: text;
 }
 
 #system-information-unit th,

@@ -24,7 +24,7 @@
 
 #iso-country-codes-unit tr
 {
-    user-select: auto;
+    user-select: text;
 }
 
 #iso-country-codes-unit tr:nth-child(even)

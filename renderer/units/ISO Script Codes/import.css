@@ -24,7 +24,7 @@
 
 #iso-script-codes-unit tr
 {
-    user-select: auto;
+    user-select: text;
 }
 
 #iso-script-codes-unit tr:nth-child(even)

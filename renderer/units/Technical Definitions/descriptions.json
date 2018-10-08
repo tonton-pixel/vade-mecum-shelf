@@ -692,6 +692,10 @@
                 "details": "Extensible 3D"
             },
             {
+                "term": "XHR",
+                "details": "XMLHttpRequest"
+            },
+            {
                 "term": "XHTML",
                 "details": "Extensible Hypertext Markup Language"
             },
