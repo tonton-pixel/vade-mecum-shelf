@@ -246,7 +246,7 @@ module.exports.start = function (context)
                                 //
                                 stringify: json.stringify
                             };
-                            // <http://dfkaye.github.io/2014/03/14/javascript-eval-and-function-constructor/>:
+                            // http://dfkaye.github.io/2014/03/14/javascript-eval-and-function-constructor/
                             // Because Function does not have access to the local scope, the "use strict" 
                             // pragma must be included in the Function body in order to prevent leaking 
                             // and clobbering from within a local scope.

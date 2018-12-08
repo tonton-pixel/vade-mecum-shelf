@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+#chemical-elements-unit .interface
+{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#chemical-elements-unit .live-search
+{
+    width: 12em;
+    font-size: 1em;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+}
+
+#chemical-elements-unit table
+{
+    color: var(--color);
+    margin: 0.5em 0;
+}
+
+#chemical-elements-unit tr
+{
+    user-select: text;
+}
+
+#chemical-elements-unit tr:nth-child(even)
+{
+    background-color: white;
+}
+
+#chemical-elements-unit tr:nth-child(odd)
+{
+    background-color: var(--color-bg);
+}
+
+#chemical-elements-unit th
+{
+    background-color: var(--color-border);
+}
+
+#chemical-elements-unit td,
+#chemical-elements-unit th
+{
+    padding: 0.1em 0.5em;
+    text-align: left;
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#chemical-elements-unit th.atomic-number,
+#chemical-elements-unit td.atomic-number
+{
+    width: 3em;
+    text-align: right;
+}
+
+#chemical-elements-unit td.atomic-number,
+#chemical-elements-unit td.symbol
+{
+    font-family: Monaco, "Noto Mono", monospace;
+}
+
+#chemical-elements-unit th.symbol,
+#chemical-elements-unit td.symbol
+{
+    width: 5em;
+    text-align: center;
+}
+
+#chemical-elements-unit td.message
+{
+    text-align: center;
+    font-style: italic;
+}
+
+#chemical-elements-unit .notes ul
+{
+    margin: -0.5em 0;
+}
+
+#chemical-elements-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
+}

@@ -1,102 +1,102 @@
 [
     [
         {
-            "href": "https://developer.mozilla.org/en/docs/Web/CSS/color_value",
-            "name": "<color> - CSS: Cascading Style Sheets | MDN"
+            "name": "<color> - CSS: Cascading Style Sheets | MDN",
+            "href": "https://developer.mozilla.org/en/docs/Web/CSS/color_value"
         },
         {
-            "href": "https://www.w3.org/TR/css3-color/#svg-color",
-            "name": "Extended color keywords | CSS Color Module Level 3"
+            "name": "Extended color keywords | CSS Color Module Level 3",
+            "href": "https://www.w3.org/TR/css3-color/#svg-color"
         },
         {
-            "href": "https://www.w3.org/TR/css-color-4/#changes-from-3",
-            "name": "Changes from Colors 3 | CSS Color Module Level 4"
+            "name": "Changes from Colors 3 | CSS Color Module Level 4",
+            "href": "https://www.w3.org/TR/css-color-4/#changes-from-3"
         },
         {
-            "href": "https://drafts.csswg.org/css-color/#named-colors",
-            "name": "Named Colors | CSS Color Module Level 4"
+            "name": "Named Colors | CSS Color Module Level 4",
+            "href": "https://drafts.csswg.org/css-color/#named-colors"
         },
         {
-            "href": "https://www.w3.org/TR/SVG/types.html#ColorKeywords",
-            "name": "Recognized color keyword names | Basic Data Types and Interfaces – SVG 1.1 (Second Edition)"
+            "name": "Recognized color keyword names | Basic Data Types and Interfaces – SVG 1.1 (Second Edition)",
+            "href": "https://www.w3.org/TR/SVG/types.html#ColorKeywords"
         },
         {
-            "href": "https://arstechnica.com/information-technology/2015/10/tomato-versus-ff6347-the-tragicomic-history-of-css-color-names/",
-            "name": "“Tomato” versus “#FF6347”—the tragicomic history of CSS color names | Ars Technica"
+            "name": "“Tomato” versus “#FF6347”—the tragicomic history of CSS color names | Ars Technica",
+            "href": "https://arstechnica.com/information-technology/2015/10/tomato-versus-ff6347-the-tragicomic-history-of-css-color-names/"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/X11_color_names",
-            "name": "X11 color names - Wikipedia"
+            "name": "X11 color names - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/X11_color_names"
         },
         {
-            "href": "http://www.thomas-guettler.de/rgb.txt.html",
-            "name": "Colors of /usr/lib/X11/rgb.txt"
+            "name": "Colors of /usr/lib/X11/rgb.txt",
+            "href": "http://www.thomas-guettler.de/rgb.txt.html"
         },
         {
-            "href": "https://www.astrouw.edu.pl/~jskowron/colors-x11/rgb.html",
-            "name": "/usr/lib/X11/rgb.txt"
+            "name": "/usr/lib/X11/rgb.txt",
+            "href": "https://www.astrouw.edu.pl/~jskowron/colors-x11/rgb.html"
         }
     ],
     [
         {
-            "href": "https://en.wikipedia.org/wiki/List_of_colors_by_shade",
-            "name": "List of colors by shade - Wikipedia"
+            "name": "List of colors by shade - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/List_of_colors_by_shade"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_white",
-            "name": "Shades of white - Wikipedia"
+            "name": "Shades of white - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_white"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_gray",
-            "name": "Shades of gray - Wikipedia"
+            "name": "Shades of gray - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_gray"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_black",
-            "name": "Shades of black - Wikipedia"
+            "name": "Shades of black - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_black"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_magenta",
-            "name": "Shades of magenta - Wikipedia"
+            "name": "Shades of magenta - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_magenta"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_pink",
-            "name": "Shades of pink - Wikipedia"
+            "name": "Shades of pink - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_pink"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_red",
-            "name": "Shades of red - Wikipedia"
+            "name": "Shades of red - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_red"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_brown",
-            "name": "Shades of brown - Wikipedia"
+            "name": "Shades of brown - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_brown"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_orange",
-            "name": "Shades of orange - Wikipedia"
+            "name": "Shades of orange - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_orange"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_yellow",
-            "name": "Shades of yellow - Wikipedia"
+            "name": "Shades of yellow - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_yellow"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_green",
-            "name": "Shades of green - Wikipedia"
+            "name": "Shades of green - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_green"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_cyan",
-            "name": "Shades of cyan - Wikipedia"
+            "name": "Shades of cyan - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_cyan"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_blue",
-            "name": "Shades of blue - Wikipedia"
+            "name": "Shades of blue - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_blue"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_violet",
-            "name": "Shades of violet - Wikipedia"
+            "name": "Shades of violet - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_violet"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Shades_of_purple",
-            "name": "Shades of purple - Wikipedia"
+            "name": "Shades of purple - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Shades_of_purple"
         }
     ]
 ]

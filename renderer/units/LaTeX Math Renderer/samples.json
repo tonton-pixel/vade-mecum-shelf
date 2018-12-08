@@ -23,7 +23,7 @@
         [
             {
                 "label": "KaTeX",
-                "string": "\\href{https://khan.github.io/KaTeX/}\\text{KaTeX}"
+                "string": "\\href{https://katex.org}\\text{KaTeX}"
             }
         ]
     },

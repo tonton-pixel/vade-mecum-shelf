@@ -1,9 +1,9 @@
 //
 // References:
-// <http://blog.stevenlevithan.com/archives/javascript-roman-numeral-converter>
-// <https://www.selftaughtjs.com/algorithm-sundays-converting-roman-numerals/>
-// <https://stackoverflow.com/questions/9083037/convert-a-number-into-a-roman-numeral-in-javascript>
-// <https://stackoverflow.com/questions/267399/how-do-you-match-only-valid-roman-numerals-with-a-regular-expression>
+// http://blog.stevenlevithan.com/archives/javascript-roman-numeral-converter
+// https://www.selftaughtjs.com/algorithm-sundays-converting-roman-numerals/
+// https://stackoverflow.com/questions/9083037/convert-a-number-into-a-roman-numeral-in-javascript
+// https://stackoverflow.com/questions/267399/how-do-you-match-only-valid-roman-numerals-with-a-regular-expression
 //
 let lookup = // Sorted by decimal in descending order
 [

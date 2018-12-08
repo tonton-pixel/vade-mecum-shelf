@@ -1,6 +1,6 @@
 # <img src="icons/icon-256.png" width="64px" align="center" alt="Vade Mecum Shelf icon"> VADE MECUM SHELF
 
-**Vade Mecum Shelf** is a collection of utilities wrapped into one single app, built with [Electron](https://electron.atom.io).
+**Vade Mecum Shelf** is a collection of utilities wrapped into one single app, built with [Electron](https://electronjs.org).
 
 This app works on Mac OS X, Linux and Windows operating systems.
 
@@ -18,19 +18,11 @@ Its *look and feel* is partly inspired by the brilliant [Electron API Demos](htt
 
 - From the `Developer` menu, it is possible to reveal the app's executable file, and also to open the user data directory (where the persistent settings get stored), as well as the temporary items directory.
 
-## Note
-
-The following utilities are no more available in **Vade Mecum Shelf**; they have been moved to a new dedicated app called [Unicode Plus](https://github.com/tonton-pixel/unicode-plus):
-
-* **Emoji Data Finder**
-* **Emoji Picture Book**
-* **Unicode Data Finder**
-* **Unicode Inspector**
-
 ## Utilities
 
 The following utilities are currently available:
 
+* [Chemical Elements](#chemical-elements)
 * [CIDR Calculator](#cidr-calculator)
 * [Color Names](#color-names)
 * [Departments of France](#departments-of-france)
@@ -49,8 +41,15 @@ The following utilities are currently available:
 * [Roman Numerals](#roman-numerals)
 * [System Information](#system-information)
 * [Technical Definitions](#technical-definitions)
+* [Text Converter](#text-converter)
 * [Text Scratchpad](#text-scratchpad)
 * [Trigonometric Formulas](#trigonometric-formulas)
+
+## Chemical Elements
+
+Full list of chemical elements, with live search:
+
+<img src="screenshots/chemical-elements.png" width="1080px" alt="Chemical Elements screenshot">
 
 ## CIDR Calculator
 
@@ -191,6 +190,18 @@ Lists of technical definitions:
 * Name of a Polynomial by Degree
 
 <img src="screenshots/technical-definitions.png" width="1080px" alt="Technical Definitions screenshot">
+
+## Text Converter
+
+Encode and decode text according to several string formats:
+
+* JSON String
+* Base64 String
+* Hexadecimal String
+
+<img src="screenshots/text-converter-text-encoder.png" width="1080px" alt="Text Converter - Text Encoder screenshot">
+
+<img src="screenshots/text-converter-text-decoder.png" width="1080px" alt="Text Converter - Text Decoder screenshot">
 
 ## Text Scratchpad
 

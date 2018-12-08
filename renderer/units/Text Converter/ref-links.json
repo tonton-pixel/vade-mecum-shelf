@@ -1,0 +1,20 @@
+[
+    [
+        {
+            "name": "JSON.parse() - JavaScript | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+        },
+        {
+            "name": "JSON.stringify() - JavaScript | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify"
+        },
+        {
+            "name": "Buffer | Node.js Documentation",
+            "href": "https://nodejs.org/api/buffer.html"
+        },
+        {
+            "name": "Encoding and Decoding Base64 Strings in Node.js",
+            "href": "http://stackabuse.com/encoding-and-decoding-base64-strings-in-node-js/"
+        }
+    ]
+]

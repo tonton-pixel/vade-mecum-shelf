@@ -18,6 +18,17 @@ if (!settings.smartZoom)
     webFrame.setVisualZoomLevelLimits (1, 1);  // Disable smart zoom (double-tap and pinch)
 }
 //
+webFrame.setLayoutZoomLevelLimits (settings.minZoomLevel, settings.maxZoomLevel);
+//
+function generateTitle (unitName)
+{
+    let title = settings.window.titleTemplate
+                    .replace ('{{app}}', appName)
+                    .replace ('{{unit}}', unitName);
+    let zoomFactor = Math.round (webFrame.getZoomFactor () * 100);
+    return title + ((zoomFactor !== 100) ? settings.window.zoomSuffixTemplate.replace ('{{zoom}}', zoomFactor) : "");
+}
+//
 if (settings.unitsMenu)
 {
     ipcRenderer.send ('update-units-menu', [ ]);
@@ -139,7 +150,7 @@ function selectUnit (unitName)
         //
         let section= unitElements[unitName].section;
         section.classList.add ('is-shown');
-        document.title = settings.window.titleTemplate.replace ('{app}', appName).replace ('{unit}', unitName);
+        document.title = generateTitle (unitName);
         let currentSection = unitElements[currentUnitName].section;
         currentSection.classList.remove ('is-shown');
         //
@@ -416,7 +427,7 @@ function importUnit (template, unitImport)
     if (unitImport.name === currentUnitName)
     {
         section.classList.add ('is-shown');
-        document.title = settings.window.titleTemplate.replace ('{app}', appName).replace ('{unit}', unitImport.name);
+        document.title = generateTitle (currentUnitName);
     }
     main.appendChild (section);
     fixSvgUseFromTemplate (section);
@@ -552,7 +563,7 @@ const scroll = require ('./lib/scroll.js');
 ipcRenderer.on ( 'scroll-to-top', () => { scroll.toTop (unitElements[currentUnitName].section); } );
 ipcRenderer.on ( 'scroll-to-bottom', () => { scroll.toBottom (unitElements[currentUnitName].section); } );
 //
-// Adapted from <https://github.com/ten1seven/track-focus>
+// Adapted from https://github.com/ten1seven/track-focus
 (function (body)
 {
     let mouseFocus;
@@ -566,7 +577,16 @@ ipcRenderer.on ( 'scroll-to-bottom', () => { scroll.toBottom (unitElements[curre
     bindEvents ();
 }) (document.body);
 //
-// <https://stackoverflow.com/questions/22812303/why-is-my-speech-synthesis-api-voice-changing-when-function-run-more-than-1-time>
+window.addEventListener
+(
+    'resize',
+    (event) =>
+    {
+        document.title = generateTitle (currentUnitName);
+    }
+);
+//
+// https://stackoverflow.com/questions/22812303/why-is-my-speech-synthesis-api-voice-changing-when-function-run-more-than-1-time
 // When you call API for the first time voices don't load for some reason. And default voice loads for the first time.
 window.speechSynthesis.getVoices ();
 //

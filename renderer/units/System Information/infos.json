@@ -170,6 +170,10 @@
                 "value": "require ('electron').remote.app.getLocale ()"
             },
             {
+                "name": "Packaged",
+                "value": "require ('electron').remote.app.isPackaged"
+            },
+            {
                 "name": "Application Directory",
                 "value": "require ('electron').remote.app.getAppPath ()"
             },
@@ -260,12 +264,20 @@
                 "value": "navigator.cookieEnabled"
             },
             {
+                "name": "Device Memory (GB)",
+                "value": "navigator.deviceMemory"
+            },
+            {
                 "name": "Hardware Concurrency",
                 "value": "navigator.hardwareConcurrency"
             },
             {
                 "name": "Language",
                 "value": "navigator.language"
+            },
+            {
+                "name": "Languages",
+                "value": "navigator.languages"
             },
             {
                 "name": "Max Touch Points",

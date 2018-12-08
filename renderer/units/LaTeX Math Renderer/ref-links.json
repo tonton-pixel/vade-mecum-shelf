@@ -1,32 +1,32 @@
 [
     [
         {
-            "href": "https://khan.github.io/KaTeX/",
-            "name": "KaTeX – The fastest math typesetting library for the web"
+            "name": "KaTeX – The fastest math typesetting library for the web",
+            "href": "https://katex.org/"
         },
         {
-            "href": "https://github.com/Khan/KaTeX",
-            "name": "GitHub - Khan/KaTeX: Fast math typesetting for the web."
+            "name": "GitHub - KaTeX/KaTeX: Fast math typesetting for the web.",
+            "href": "https://github.com/KaTeX/KaTeX"
         },
         {
-            "href": "https://www.intmath.com/blog/mathematics/katex-a-new-way-to-display-math-on-the-web-9445",
-            "name": "KaTeX - a new way to display math on the Web"
+            "name": "Supported Functions · KaTeX",
+            "href": "https://katex.org/docs/supported.html"
         },
         {
-            "href": "https://www.intmath.com/cg5/katex-mathjax-comparison.php",
-            "name": "KaTeX and MathJax Comparison Demo"
+            "name": "KaTeX - a new way to display math on the Web",
+            "href": "https://www.intmath.com/blog/mathematics/katex-a-new-way-to-display-math-on-the-web-9445"
         },
         {
-            "href": "https://khan.github.io/KaTeX/docs/supported.html",
-            "name": "Supported Functions · KaTeX"
+            "name": "KaTeX and MathJax Comparison Demo",
+            "href": "https://www.intmath.com/cg5/katex-mathjax-comparison.php"
         },
         {
-            "href": "https://en.wikibooks.org/wiki/LaTeX/Mathematics",
-            "name": "LaTeX/Mathematics - Wikibooks, open books for an open world"
+            "name": "LaTeX/Mathematics - Wikibooks, open books for an open world",
+            "href": "https://en.wikibooks.org/wiki/LaTeX/Mathematics"
         },
         {
-            "href": "https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics",
-            "name": "LaTeX/Advanced Mathematics - Wikibooks, open books for an open world"
+            "name": "LaTeX/Advanced Mathematics - Wikibooks, open books for an open world",
+            "href": "https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics"
         }
     ]
 ]

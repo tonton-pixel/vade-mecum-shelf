@@ -1,20 +1,20 @@
 [
     [
         {
-            "href": "https://en.wikipedia.org/wiki/Trigonometry",
-            "name": "Trigonometry - Wikipedia"
+            "name": "Trigonometry - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Trigonometry"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Trigonometric_functions",
-            "name": "Trigonometric functions - Wikipedia"
+            "name": "Trigonometric functions - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Trigonometric_functions"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/List_of_trigonometric_identities",
-            "name": "List of trigonometric identities - Wikipedia"
+            "name": "List of trigonometric identities - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/List_of_trigonometric_identities"
         },
         {
-            "href": "https://en.wikipedia.org/wiki/Proofs_of_trigonometric_identities",
-            "name": "Proofs of trigonometric identities - Wikipedia"
+            "name": "Proofs of trigonometric identities - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/Proofs_of_trigonometric_identities"
         }
     ]
 ]

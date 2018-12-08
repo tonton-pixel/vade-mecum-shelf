@@ -1,54 +1,54 @@
 [
     [
         {
-            "href": "https://electronjs.org/docs",
-            "name": "Documentation | Electron"
+            "name": "Documentation | Electron",
+            "href": "https://electronjs.org/docs"
         }
     ],
     [
         {
-            "href": "https://nodejs.org/api/",
-            "name": "Index | Node.js Documentation"
+            "name": "Index | Node.js Documentation",
+            "href": "https://nodejs.org/api/"
         },
         {
-            "href": "https://nodejs.org/api/child_process.html",
-            "name": "Child Process | Node.js Documentation"
+            "name": "Child Process | Node.js Documentation",
+            "href": "https://nodejs.org/api/child_process.html"
         }
     ],
     [
         {
-            "href": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model",
-            "name": "Document Object Model (DOM) - Web APIs | MDN"
+            "name": "Document Object Model (DOM) - Web APIs | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
         },
         {
-            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
-            "name": "JavaScript reference - JavaScript | MDN"
+            "name": "JavaScript reference - JavaScript | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference"
         },
         {
-            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions",
-            "name": "Functions - JavaScript | MDN"
+            "name": "Functions - JavaScript | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions"
         },
         {
-            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-            "name": "Function - JavaScript | MDN"
+            "name": "Function - JavaScript | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function"
         },
         {
-            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode",
-            "name": "Strict mode - JavaScript | MDN"
+            "name": "Strict mode - JavaScript | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode"
         }
     ],
     [
         {
-            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
-            "name": "JSON.parse() - JavaScript | MDN"
+            "name": "JSON.parse() - JavaScript | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
         },
         {
-            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify",
-            "name": "JSON.stringify() - JavaScript | MDN"
+            "name": "JSON.stringify() - JavaScript | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify"
         },
         {
-            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/JSON_bad_parse",
-            "name": "SyntaxError: JSON.parse: bad parsing - JavaScript | MDN"
+            "name": "SyntaxError: JSON.parse: bad parsing - JavaScript | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/JSON_bad_parse"
         }
     ]
 ]

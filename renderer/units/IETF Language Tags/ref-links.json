@@ -1,74 +1,78 @@
 [
     [
         {
-            "href": "https://en.wikipedia.org/wiki/IETF_language_tag",
-            "name": "IETF language tag - Wikipedia"
+            "name": "IETF language tag - Wikipedia",
+            "href": "https://en.wikipedia.org/wiki/IETF_language_tag"
         },
         {
-            "href": "https://tools.ietf.org/html/bcp47",
-            "name": "BCP 47 - Tags for Identifying Languages"
+            "name": "BCP 47 - Tags for Identifying Languages",
+            "href": "https://tools.ietf.org/html/bcp47"
         },
         {
-            "href": "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
-            "name": "Language Subtag Registry — IANA"
+            "name": "Language Subtag Registry — IANA",
+            "href": "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry"
         }
     ],
     [
         {
-            "href": "https://www.unicode.org/cldr/utility/languageid.jsp",
-            "name": "Unicode Utilities: Unicode Language Identifers and BCP47"
+            "name": "Unicode Utilities: Unicode Language Identifers and BCP47",
+            "href": "https://www.unicode.org/cldr/utility/languageid.jsp"
         },
         {
-            "href": "https://r12a.github.io/app-subtags/",
-            "name": "Language subtag lookup app"
+            "name": "Language subtag lookup app",
+            "href": "https://r12a.github.io/app-subtags/"
         },
         {
-            "href": "http://schneegans.de/lv/",
-            "name": "BCP 47 Validator"
+            "name": "BCP 47 Validator",
+            "href": "http://schneegans.de/lv/"
         }
     ],
     [
         {
-            "href": "https://www.w3.org/International/getting-started/language",
-            "name": "Language on the Web"
+            "name": "Language on the Web",
+            "href": "https://www.w3.org/International/getting-started/language"
         },
         {
-            "href": "https://www.w3.org/International/articles/language-tags/",
-            "name": "Language tags in HTML and XML"
+            "name": "Language tags in HTML and XML",
+            "href": "https://www.w3.org/International/articles/language-tags/"
         },
         {
-            "href": "https://www.w3.org/International/questions/qa-html-language-declarations",
-            "name": "Declaring language in HTML"
+            "name": "Styling using language attributes",
+            "href": "https://www.w3.org/International/questions/qa-css-lang"
         },
         {
-            "href": "https://www.w3.org/International/questions/qa-lang-why",
-            "name": "Why use the language attribute?"
+            "name": "Declaring language in HTML",
+            "href": "https://www.w3.org/International/questions/qa-html-language-declarations"
         },
         {
-            "href": "https://www.w3.org/International/questions/qa-choosing-language-tags",
-            "name": "Choosing a language tag"
+            "name": "Why use the language attribute?",
+            "href": "https://www.w3.org/International/questions/qa-lang-why"
         },
         {
-            "href": "https://www.w3.org/International/questions/qa-no-language",
-            "name": "Tagging text with no language"
+            "name": "Choosing a language tag",
+            "href": "https://www.w3.org/International/questions/qa-choosing-language-tags"
         },
         {
-            "href": "https://www.w3.org/International/tutorials/language-decl/",
-            "name": "Working with language in HTML (tutorial)"
+            "name": "Tagging text with no language",
+            "href": "https://www.w3.org/International/questions/qa-no-language"
         },
         {
-            "href": "https://www.w3.org/TR/ltli/",
-            "name": "Language Tags and Locale Identifiers for the World Wide Web"
+            "name": "Working with language in HTML (tutorial)",
+            "href": "https://www.w3.org/International/tutorials/language-decl/"
+        },
+        {
+            "name": "Language Tags and Locale Identifiers for the World Wide Web",
+            "href": "https://www.w3.org/TR/ltli/"
         }
     ],
     [
         {
-            "href": "https://github.com/wooorm/bcp-47",
-            "name": "GitHub - wooorm/bcp-47: Parse and stringify BCP 47 language tags"
+            "name": "GitHub - wooorm/bcp-47: Parse and stringify BCP 47 language tags",
+            "href": "https://github.com/wooorm/bcp-47"
         },
         {
-            "href": "https://github.com/sebinsua/ietf-language-tag-regex",
-            "name": "GitHub - sebinsua/ietf-language-tag-regex: Regular expressions for matching IETF language tags (BCP 47)"
+            "name": "GitHub - sebinsua/ietf-language-tag-regex: Regular expressions for matching IETF language tags (BCP 47)",
+            "href": "https://github.com/sebinsua/ietf-language-tag-regex"
         }
     ]
 ]

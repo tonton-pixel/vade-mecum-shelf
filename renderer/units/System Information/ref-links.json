@@ -1,56 +1,56 @@
 [
     [
         {
-            "href": "https://electron.atom.io/docs/all/",
-            "name": "All of the Documentation | Electron"
+            "name": "All of the Documentation | Electron",
+            "href": "https://electronjs.org/docs/all/"
         },
         {
-            "href": "https://electron.atom.io/docs/",
-            "name": "Documentation | Electron"
+            "name": "Documentation | Electron",
+            "href": "https://electronjs.org/docs/"
         },
         {
-            "href": "https://electron.atom.io/docs/api/app/",
-            "name": "app | Electron"
+            "name": "app | Electron",
+            "href": "https://electronjs.org/docs/api/app/"
         },
         {
-            "href": "https://electron.atom.io/docs/api/browser-window/",
-            "name": "BrowserWindow | Electron"
+            "name": "BrowserWindow | Electron",
+            "href": "https://electronjs.org/docs/api/browser-window/"
         },
         {
-            "href": "https://electron.atom.io/docs/api/process/",
-            "name": "process | Electron"
+            "name": "process | Electron",
+            "href": "https://electronjs.org/docs/api/process/"
         },
         {
-            "href": "https://electron.atom.io/docs/api/remote/",
-            "name": "remote | Electron"
+            "name": "remote | Electron",
+            "href": "https://electronjs.org/docs/api/remote/"
         },
         {
-            "href": "https://electron.atom.io/docs/api/screen/",
-            "name": "screen | Electron"
+            "name": "screen | Electron",
+            "href": "https://electronjs.org/docs/api/screen/"
         }
     ],
     [
         {
-            "href": "https://nodejs.org/api/",
-            "name": "Index | Node.js Documentation"
+            "name": "Index | Node.js Documentation",
+            "href": "https://nodejs.org/api/"
         },
         {
-            "href": "https://nodejs.org/api/os.html",
-            "name": "OS | Node.js Documentation"
+            "name": "OS | Node.js Documentation",
+            "href": "https://nodejs.org/api/os.html"
         },
         {
-            "href": "https://nodejs.org/api/process.html",
-            "name": "Process | Node.js Documentation"
+            "name": "Process | Node.js Documentation",
+            "href": "https://nodejs.org/api/process.html"
         }
     ],
     [
         {
-            "href": "https://developer.mozilla.org/en-US/docs/Web/API",
-            "name": "Web APIs | MDN"
+            "name": "Web APIs | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/API"
         },
         {
-            "href": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator",
-            "name": "Navigator - Web APIs | MDN"
+            "name": "Navigator - Web APIs | MDN",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator"
         }
     ]
 ]
