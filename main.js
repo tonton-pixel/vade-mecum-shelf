@@ -98,6 +98,7 @@ else
     //
     const darwinAppMenu =
     {
+        label: appName,
         submenu:
         [
             { label: `About ${appName}...`, click: showAboutBox },

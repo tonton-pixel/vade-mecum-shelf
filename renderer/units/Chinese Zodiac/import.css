@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+#chinese-zodiac-unit .interface
+{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#chinese-zodiac-unit .live-search
+{
+    width: 12em;
+    font-size: 1em;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+}
+
+#chinese-zodiac-unit table
+{
+    color: var(--color);
+    margin: 0.5em 0;
+}
+
+#chinese-zodiac-unit tr
+{
+    user-select: text;
+}
+
+#chinese-zodiac-unit tr:nth-child(even)
+{
+    background-color: white;
+}
+
+#chinese-zodiac-unit tr:nth-child(odd)
+{
+    background-color: var(--color-bg);
+}
+
+#chinese-zodiac-unit th
+{
+    background-color: var(--color-border);
+    white-space: nowrap;
+}
+
+#chinese-zodiac-unit td,
+#chinese-zodiac-unit th
+{
+    padding: 0.1em 0.5em;
+    text-align: left;
+}
+
+#chinese-zodiac-unit th.english,
+#chinese-zodiac-unit td.english
+{
+    width: 6%;
+}
+
+#chinese-zodiac-unit th.chinese,
+#chinese-zodiac-unit td.chinese
+{
+    width: 6%;
+}
+
+#chinese-zodiac-unit th.japanese,
+#chinese-zodiac-unit td.japanese
+{
+    width: 6%;
+}
+
+#chinese-zodiac-unit th.years,
+#chinese-zodiac-unit td.years
+{
+    font-family: Monaco, "Noto Mono", monospace;
+    font-size: 0.96em;
+    white-space: nowrap;
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#chinese-zodiac-unit td.message
+{
+    text-align: center;
+    font-style: italic;
+}
+
+#chemical-elements-unit .notes ul
+{
+    margin: -0.5em 0;
+}
+
+#chinese-zodiac-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
+}

@@ -2,16 +2,17 @@
 
 :root
 {
-    --color:        hsl(0, 0%, 22%);
-    --color-subtle: hsl(0, 0%, 44%);
-    --color-strong: hsl(0, 0%, 11%);
-    --color-border: hsl(31, 5%, 88%);
-    --color-bg:     hsl(31, 5%, 96%);
-    --color-accent: hsl(195, 60%, 37%);
-    --color-hover:  hsl(270, 100%, 50%);
-    --color-error:  hsl(0, 100%, 40%);
-    --sidebar-width: 256px;
+    --color:           hsl(0, 0%, 22%);
+    --color-subtle:    hsl(0, 0%, 44%);
+    --color-strong:    hsl(0, 0%, 11%);
+    --color-border:    hsl(31, 5%, 88%);
+    --color-bg:        hsl(31, 5%, 96%);
+    --color-accent:    hsl(195, 60%, 37%);
+    --color-hover:     hsl(270, 100%, 50%);
+    --color-error:     hsl(0, 100%, 40%);
+    --color-highlight: hsl(55, 100%, 50%);
     --sidebar-duration: calc(1s/10);
+    --sidebar-width: 256px;
 }
 
 :focus
@@ -38,7 +39,7 @@
     font-family: "Apple SD Gothic Neo Medium", "AppleGothic", "맑은 고딕", "Malgun Gothic", "돋움 Regular", "Dotum", "UnDotum", "백묵 돋움", "Baekmuk Dotum", "은 돋움 Regular", "Un Dotum", "Noto Sans CJK KR", sans-serif;
 }
 
-:lang(zh),
+:lang(zh)
 {
     font-family: "PingFang SC", "PingFang TC", "儷黑 Pro", "LiHei Pro Medium", "华文黑体", "STHeiti", "Hei", "微软雅黑", "Microsoft YaHei", "MS Hei", "黑体", "SimHei", "文泉驿微米黑", "WenQuanYi Micro Hei", "Noto Sans CJK SC", "Noto Sans CJK TC", sans-serif;
 }

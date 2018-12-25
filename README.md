@@ -23,6 +23,7 @@ Its *look and feel* is partly inspired by the brilliant [Electron API Demos](htt
 The following utilities are currently available:
 
 * [Chemical Elements](#chemical-elements)
+* [Chinese Zodiac](#chinese-zodiac)
 * [CIDR Calculator](#cidr-calculator)
 * [Color Names](#color-names)
 * [Departments of France](#departments-of-france)
@@ -50,6 +51,12 @@ The following utilities are currently available:
 Full list of chemical elements, with live search:
 
 <img src="screenshots/chemical-elements.png" width="1080px" alt="Chemical Elements screenshot">
+
+## Chinese Zodiac
+
+Full list of the twelve Chinese zodiac signs, with live search:
+
+<img src="screenshots/chinese-zodiac.png" width="1080px" alt="Chinese Zodiac screenshot">
 
 ## CIDR Calculator
 
