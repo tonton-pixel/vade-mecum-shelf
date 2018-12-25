@@ -46,26 +46,28 @@
 #chinese-zodiac-unit td,
 #chinese-zodiac-unit th
 {
-    padding: 0.1em 0.5em;
+    padding: 0.2em 0.5em;
     text-align: left;
 }
 
 #chinese-zodiac-unit th.english,
 #chinese-zodiac-unit td.english
 {
-    width: 6%;
+    width: 5em;
 }
 
 #chinese-zodiac-unit th.chinese,
 #chinese-zodiac-unit td.chinese
 {
-    width: 6%;
+    width: 3em;
+    text-align: center;
 }
 
 #chinese-zodiac-unit th.japanese,
 #chinese-zodiac-unit td.japanese
 {
-    width: 6%;
+    width: 3em;
+    text-align: center;
 }
 
 #chinese-zodiac-unit th.years,
