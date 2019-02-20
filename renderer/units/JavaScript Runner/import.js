@@ -8,6 +8,7 @@ const saveButton = unit.querySelector ('.save-button');
 const codeString = unit.querySelector ('.code-string');
 const runButton = unit.querySelector ('.run-button');
 const outputString = unit.querySelector ('.output-string');
+//
 const builtInFunctions = unit.querySelector ('.built-in-functions');
 //
 const references = unit.querySelector ('.references');
@@ -18,7 +19,7 @@ let defaultFolderPath;
 module.exports.start = function (context)
 {
     const { remote } = require ('electron');
-    const { app, getCurrentWebContents } = remote;
+    const { getCurrentWebContents } = remote;
     const webContents = getCurrentWebContents ();
     //
     const fs = require ('fs');
@@ -33,7 +34,7 @@ module.exports.start = function (context)
     const defaultPrefs =
     {
         codeString: "",
-        defaultFolderPath: app.getPath ('documents'),  // 'desktop'
+        defaultFolderPath: context.defaultFolderPath,
         builtInFunctions: true,
         references: false
     };
@@ -241,14 +242,14 @@ module.exports.start = function (context)
                                             {
                                                 callback ();
                                             }
-                                        };    
+                                        };
                                     },
                                 //
                                 stringify: json.stringify
                             };
                             // http://dfkaye.github.io/2014/03/14/javascript-eval-and-function-constructor/
-                            // Because Function does not have access to the local scope, the "use strict" 
-                            // pragma must be included in the Function body in order to prevent leaking 
+                            // Because Function does not have access to the local scope, the "use strict"
+                            // pragma must be included in the Function body in order to prevent leaking
                             // and clobbering from within a local scope.
                             let result = (new Function ("$", "'use strict';\n" + codeString.value)) ($);
                             if (typeof result !== 'undefined')

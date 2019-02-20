@@ -1,6 +1,26 @@
 [
     [
         {
+            "name": "Releases · electron/electron · GitHub",
+            "href": "https://github.com/electron/electron/releases"
+        }
+    ],
+    [
+        {
+            "name": "Stable Releases | Electron",
+            "href": "https://electronjs.org/releases/stable"
+        },
+        {
+            "name": "Beta Releases | Electron",
+            "href": "https://electronjs.org/releases/beta"
+        },
+        {
+            "name": "Nightly Releases | Electron",
+            "href": "https://electronjs.org/releases/nightly"
+        }
+    ],
+    [
+        {
             "name": "All of the Documentation | Electron",
             "href": "https://electronjs.org/docs/all/"
         },

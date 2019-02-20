@@ -1,6 +1,6 @@
 //
 const electron = require ('electron');
-const { app, BrowserWindow, dialog, globalShortcut, ipcMain, Menu, shell } = electron;
+const { app, BrowserWindow, clipboard, dialog, globalShortcut, ipcMain, Menu, shell } = electron;
 //
 let mainWindow = null;
 //
@@ -36,6 +36,7 @@ else
     }
     //
     const fs = require ('fs');
+    const os = require ('os');
     const path = require ('path');
     const url = require ('url');
     //
@@ -52,24 +53,56 @@ else
         unpackedDirname = appDirname;
     };
     //
-    let aboutBoxDisplayed = false;
-    //
     function showAboutBox (menuItem, browserWindow, event)
     {
-        if (!aboutBoxDisplayed)
+        let options =
         {
-            let options =
-            {
-                type: 'info',
-                title: `About ${appName}`,
-                message: `${appName}`,
-                detail: `${settings.description}\n${settings.copyright}\n\nVersion: ${appVersion}\nDate: ${appDate}`,
-                buttons: [ "OK" ]
-            };
-            aboutBoxDisplayed = true;
-            dialog.showMessageBox ((process.platform === 'darwin') ? null : browserWindow, options);
-            aboutBoxDisplayed = false;
-        }
+            type: 'info',
+            message: `${appName}`,
+            detail: `${settings.description}\n${settings.copyright}\n\nVersion: ${appVersion}\nDate: ${appDate}`,
+            buttons: [ "OK" ]
+        };
+        dialog.showMessageBox ((process.platform === 'darwin') ? null : browserWindow, options);
+    }
+    //
+    function copySystemInfo ()
+    {
+        const infos =
+        [
+            "-- Application --",
+            "",
+            [ "Name", appName ],
+            [ "Version", appVersion ],
+            [ "Date", appDate ],
+            "",
+            [ "Locale", app.getLocale () ],
+            [ "Packaged", app.isPackaged ],
+            "",
+            "-- Framework --",
+            "",
+            [ "Platform", process.platform ],
+            [ "Architecture", process.arch ],
+            [ "Default App", process.defaultApp || false ],
+            [ "Mac App Store App", process.mas || false ],
+            [ "Windows Store App", process.windowsStore || false ],
+            [ "Electron Version", process.versions.electron ],
+            [ "Node Version", process.versions.node ],
+            [ "V8 Version", process.versions.v8 ],
+            [ "Chromium Version", process.versions.chrome ],
+            "",
+            "-- Operating System --",
+            "",
+            [ "OS Type", os.type () ],
+            [ "OS Platform", os.platform () ],
+            [ "OS Release", os.release () ],
+            [ "CPU Architecture", os.arch () ],
+            [ "CPU Endianness", os.endianness () ],
+            [ "CPU Logical Cores", os.cpus ().length ],
+            [ "CPU Model", os.cpus ()[0].model ],
+            [ "CPU Speed (MHz)", os.cpus ()[0].speed ]
+        ];
+        let systemInfo = infos.map (info => (Array.isArray (info) ? `${info[0]}: ${info[1]}` : info) + '\n').join ('');
+        clipboard.writeText (systemInfo);
     }
     //
     let defaultWidth;
@@ -160,15 +193,14 @@ else
         submenu:
         [
             { role: 'reload' },
-            // { role: 'forcereload' },
             { role: 'toggledevtools' },
             { type: 'separator' },
-            // { label: "Open User Data Directory", click: () => { shell.openItem (app.getPath ('userData')); } },
-            { label: "Open User Data Directory", click: () => { shell.openExternal (url.format ({ protocol: 'file:', pathname: app.getPath ('userData') })); } },
-            // { label: "Open Temporary Directory", click: () => { shell.openItem (app.getPath ('temp')); } }
-            { label: "Open Temporary Directory", click: () => { shell.openExternal (url.format ({ protocol: 'file:', pathname: app.getPath ('temp') })); } },
+            { label: "Open User Data Directory", click: () => { shell.openItem (app.getPath ('userData')); } },
+            { label: "Open Temporary Directory", click: () => { shell.openItem (app.getPath ('temp')); } },
             { type: 'separator' },
-            { label: "Show Executable File", click: () => { shell.showItemInFolder (app.getPath ('exe')); } }
+            { label: "Show Executable File", click: () => { shell.showItemInFolder (app.getPath ('exe')); } },
+            { type: 'separator' },
+            { label: "Copy System Info to Clipboard", click: copySystemInfo }
         ]
     };
     const darwinWindowMenu =

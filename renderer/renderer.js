@@ -290,7 +290,7 @@ div.querySelector ('use').addEventListener
         let isCommandOrControlDoubleClick = (process.platform === 'darwin') ? event.metaKey : event.ctrlKey;
         if (isCommandOrControlDoubleClick)
         {
-            shell.openExternal (settings.repository.URL);
+            shell.openExternal (settings.electronApp.URL);
         }
     }
 );
@@ -444,7 +444,8 @@ function importUnit (template, unitImport)
                 name: unitImport.name,
                 baseURL: unitImport.URL,
                 getPrefs: unitImport.storage.get,
-                setPrefs: unitImport.storage.set
+                setPrefs: unitImport.storage.set,
+                defaultFolderPath: app.getPath (settings.defaultFolder)
             };
             if (typeof unitModule === 'function')
             {

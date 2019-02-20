@@ -6,45 +6,32 @@ This app works on Mac OS X, Linux and Windows operating systems.
 
 Its *look and feel* is partly inspired by the brilliant [Electron API Demos](https://github.com/electron/electron-api-demos) app, but it makes use of a more dynamic modular approach: each utility is made of an independent, self-contained folder including all necessary files.
 
-## Features
-
-- The app window is resizable; its title displays the currently selected utility name next to the app name.
-
-- The visibility of the navigation sidebar, as well as the use of categories, can be toggled on and off from the `View` menu.
-
-- It is possible to quickly scroll to the top or to the bottom of the utility from the `View` menu.
-
-- A utility can be displayed either by clicking its name in the navigation sidebar, or by selecting its name from the `Utilities` menu.
-
-- From the `Developer` menu, it is possible to reveal the app's executable file, and also to open the user data directory (where the persistent settings get stored), as well as the temporary items directory.
-
 ## Utilities
 
 The following utilities are currently available:
 
-* [Chemical Elements](#chemical-elements)
-* [Chinese Zodiac](#chinese-zodiac)
-* [CIDR Calculator](#cidr-calculator)
-* [Color Names](#color-names)
-* [Departments of France](#departments-of-france)
-* [Digital Clock](#digital-clock)
-* [HTTP Status Codes](#http-status-codes)
-* [IETF Language Tags](#ietf-language-tags)
-* [ISO Country Codes](#iso-country-codes)
-* [ISO Language Codes](#iso-language-codes)
-* [ISO Script Codes](#iso-script-codes)
-* [Jabberwocky](#jabberwocky)
-* [JavaScript Runner](#javascript-runner)
-* [JSON Formatter](#json-formatter)
-* [LaTeX Math Renderer](#latex-math-renderer)
-* [List of U.S. States](#list-of-us-states)
-* [Prefectures of Japan](#prefectures-of-japan)
-* [Roman Numerals](#roman-numerals)
-* [System Information](#system-information)
-* [Technical Definitions](#technical-definitions)
-* [Text Converter](#text-converter)
-* [Text Scratchpad](#text-scratchpad)
-* [Trigonometric Formulas](#trigonometric-formulas)
+- **Chemical Elements**
+- **Chinese Zodiac**
+- **CIDR Calculator**
+- **Color Names**
+- **Departments of France**
+- **Digital Clock**
+- **HTTP Status Codes**
+- **IETF Language Tags**
+- **ISO Country Codes**
+- **ISO Language Codes**
+- **ISO Script Codes**
+- **Jabberwocky**
+- **JavaScript Runner**
+- **JSON Formatter**
+- **LaTeX Math Renderer**
+- **List of U.S. States**
+- **Prefectures of Japan**
+- **Roman Numerals**
+- **System Information**
+- **Technical Definitions**
+- **Text Converter**
+- **Trigonometric Formulas**
 
 ## Chemical Elements
 
@@ -203,18 +190,12 @@ Lists of technical definitions:
 Encode and decode text according to several string formats:
 
 * JSON String
+* Hex String
 * Base64 String
-* Hexadecimal String
 
 <img src="screenshots/text-converter-text-encoder.png" width="1080px" alt="Text Converter - Text Encoder screenshot">
 
 <img src="screenshots/text-converter-text-decoder.png" width="1080px" alt="Text Converter - Text Decoder screenshot">
-
-## Text Scratchpad
-
-Scratchpad to store persistent text data:
-
-<img src="screenshots/text-scratchpad.png" width="1080px" alt="Text Scratchpad screenshot">
 
 ## Trigonometric Formulas
 
@@ -257,20 +238,8 @@ npm run build-darwin
 
 You can [download the latest release](https://github.com/tonton-pixel/vade-mecum-shelf/releases) for Mac OS X.
 
-## Known Issues
-
-- In Linux (at least on **Linux Mint 18.2 Sonya** and **Ubuntu 16.04.3 LTS**), there is a [bug](https://github.com/electron/electron/issues/10388) which prevents the window position to be correctly recorded between consecutive runs, a slight shift to the bottom right occurs systematically.
-
-- In **Ubuntu 16.04.3 LTS**, the `Utilities` menu is never updated whenever one of its items is selected, or when the selection is triggered programmatically. This [bug](https://github.com/electron/electron/issues/11386) affects all menus made of radio-buttons items.
-
-## Limitations
-
-- The Undo/Redo stack is common to all text editing elements of the app, including those which are hidden. This behavior is a known shortcoming and cannot be changed or improved for the time being.
-
-- Although this app has been developed from the start with multiple platforms in mind, it has only been successfully tested on Mac OS X (Yosemite 10.10.5 and El Capitan 10.11.6), and on two Linux *flavors*, [Linux Mint 18.2 Sonya](https://linuxmint.com/edition.php?id=237) and [Ubuntu 16.04.3 LTS](http://releases.ubuntu.com/16.04/), installed into [VirtualBox](https://www.virtualbox.org/).
-
 ## License
 
 The MIT License (MIT).
 
-Copyright © 2017-2018 Michel MARIANI.
+Copyright © 2017-2019 Michel MARIANI.

@@ -72,8 +72,8 @@ module.exports.start = function (context)
     }
     codesContainer.appendChild (table);
     //
-    let style = document.createElement ('style');
-    document.head.appendChild (style);
+    let headStyle = document.createElement ('style');
+    document.head.appendChild (headStyle);
     //
     function getLocalesCSS (selectLocale, localeValue)
     {
@@ -91,8 +91,8 @@ module.exports.start = function (context)
         selectLocale.selectedIndex = 0;
     }
     let currentLocale = selectLocale.value;
-    style.textContent = getLocalesCSS (selectLocale, currentLocale);
-    selectLocale.addEventListener ('input', (event) => { style.textContent = getLocalesCSS (selectLocale, event.target.value); });
+    headStyle.textContent = getLocalesCSS (selectLocale, currentLocale);
+    selectLocale.addEventListener ('input', (event) => { headStyle.textContent = getLocalesCSS (selectLocale, event.target.value); });
     //
     references.open = prefs.references;
     //

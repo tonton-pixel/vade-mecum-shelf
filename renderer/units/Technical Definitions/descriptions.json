@@ -244,8 +244,16 @@
                 "details": "International Components for Unicode"
             },
             {
+                "term": "IDC",
+                "details": "Ideographic Description Characters"
+            },
+            {
                 "term": "IDL",
                 "details": "Interface Description Language"
+            },
+            {
+                "term": "IDS",
+                "details": "Ideographic Description Sequence"
             },
             {
                 "term": "IEC",
@@ -302,6 +310,10 @@
             {
                 "term": "IT",
                 "details": "Information Technology"
+            },
+            {
+                "term": "IVD",
+                "details": "Ideographic Variation Database"
             },
             {
                 "term": "JIT",

@@ -280,7 +280,7 @@ kbd
     color: var(--color-strong);
     border: none;
     background-color: transparent;
-    cursor: default;
+    cursor: pointer;
 }
 
 .sidebar .nav-button:hover:not(.is-selected)

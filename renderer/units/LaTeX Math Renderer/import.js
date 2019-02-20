@@ -18,9 +18,6 @@ let defaultFolderPath;
 //
 module.exports.start = function (context)
 {
-    const { remote } = require ('electron');
-    const { app } = remote;
-    //
     const path = require ('path');
     //
     const fileDialogs = require ('../../lib/file-dialogs.js');
@@ -35,7 +32,7 @@ module.exports.start = function (context)
         displayMode: true,
         textColor: false,
         throwOnError: false,
-        defaultFolderPath: app.getPath ('documents'),  // 'desktop'
+        defaultFolderPath: context.defaultFolderPath,
         references: false
     };
     let prefs = context.getPrefs (defaultPrefs);

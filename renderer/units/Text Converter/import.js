@@ -29,9 +29,6 @@ let defaultFolderPath;
 //
 module.exports.start = function (context)
 {
-    const { remote } = require ('electron');
-    const { app, Menu, MenuItem } = remote;
-    //
     const path = require ('path');
     //
     const fileDialogs = require ('../../lib/file-dialogs.js');
@@ -43,7 +40,7 @@ module.exports.start = function (context)
         encoderConversionType: "",
         decoderInputString: "",
         decoderConversionType: "",
-        defaultFolderPath: app.getPath ('documents'),  // 'desktop'
+        defaultFolderPath: context.defaultFolderPath,
         references: false
     };
     let prefs = context.getPrefs (defaultPrefs);
@@ -121,10 +118,6 @@ module.exports.start = function (context)
                 isEnclosed = true;
                 output = JSON.stringify (input);
             }
-            else if (encoderConversionType.value === 'base64')
-            {
-                output = Buffer.from (input, 'utf8').toString ('base64');
-            }
             else if (encoderConversionType.value === 'hex')
             {
                 output = Buffer.from (input, 'utf8').toString ('hex');
@@ -132,6 +125,10 @@ module.exports.start = function (context)
                 {
                     output = output.toUpperCase ();
                 }
+            }
+            else if (encoderConversionType.value === 'base64')
+            {
+                output = Buffer.from (input, 'utf8').toString ('base64');
             }
             if (!isEnclosed)
             {
@@ -232,17 +229,30 @@ module.exports.start = function (context)
     {
         let error = false;
         let output = "";
+        input = input.trim ();
         if (input)
         {
             try
             {
-                if (!input.match (/^\".*\"$/))
+                if (!input.match (/^".*"$/su))
                 {
-                    throw new Error ("Invalid string format: must be enclosed in double quotes.");
+                    throw new Error ("Invalid string format: must be enclosed in double quotes");
                 }
                 else if (decoderConversionType.value === 'json')
                 {
                     output = JSON.parse (input);
+                }
+                else if (decoderConversionType.value === 'hex')
+                {
+                    input = input.slice (1, -1);
+                    if (input.match (/^([0-9a-fA-F]{2})*$/))
+                    {
+                        output = Buffer.from (input, 'hex').toString ('utf8');
+                    }
+                    else
+                    {
+                        throw new Error ("Invalid Hex string format");
+                    }
                 }
                 else if (decoderConversionType.value === 'base64')
                 {
@@ -254,19 +264,7 @@ module.exports.start = function (context)
                     }
                     else
                     {
-                        throw new Error ("Invalid Base64 String format.");
-                    }
-                 }
-                else if (decoderConversionType.value === 'hex')
-                {
-                    input = input.slice (1, -1);
-                    if (input.match (/^([0-9a-fA-F]{2})*$/))
-                    {
-                        output = Buffer.from (input, 'hex').toString ('utf8');
-                    }
-                    else
-                    {
-                        throw new Error ("Invalid Hexadecimal String format.");
+                        throw new Error ("Invalid Base64 string format");
                     }
                 }
             }

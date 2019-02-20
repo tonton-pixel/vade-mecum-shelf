@@ -322,7 +322,7 @@
                 "value": "require ('os').homedir ()"
             },
             {
-                "name": "OS Name",
+                "name": "OS Type",
                 "value": "require ('os').type ()"
             },
             {

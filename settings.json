@@ -24,7 +24,12 @@
     "unitsName": "Utilities",
     "noCategoryName": "Other",
     "description": "Collection of utilities wrapped into one single app.",
-    "copyright": "© 2017-2018 Michel MARIANI.",
+    "copyright": "© 2017-2019 Michel MARIANI.",
+    "electronApp":
+    {
+        "label": "Vade Mecum Shelf | Apps | Electron",
+        "URL": "https://electronjs.org/apps/vade-mecum-shelf"
+    },
     "repository":
     {
         "label": "Repository",
@@ -34,5 +39,6 @@
     {
         "label": "Latest Releases",
         "URL": "https://github.com/tonton-pixel/vade-mecum-shelf/releases"
-    }
+    },
+    "defaultFolder": "documents"
 }
