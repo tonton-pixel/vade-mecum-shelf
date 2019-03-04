@@ -1,17 +1,17 @@
 {
     "name": "vade-mecum-shelf",
     "productName": "Vade Mecum Shelf",
-    "version": "1.10.2",
+    "version": "1.10.3",
     "description": "Collection of utilities wrapped into one single app.",
     "main": "main.js",
     "scripts": {
         "start": "electron .",
         "build-darwin-no-asar": "electron-packager . --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
-        "build-darwin": "electron-packager . --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --asar.unpack=LICENSE.txt --icon=icons/icon.icns --overwrite",
-        "build-linux": "electron-packager . --out=build --platform=linux --ignore=/~.* --ignore=^/screenshots --asar.unpack=LICENSE.txt --icon=icons/icon.png --overwrite",
-        "build-mas": "electron-packager . --out=build --platform=mas --ignore=/~.* --ignore=^/screenshots --asar.unpack=LICENSE.txt --icon=icons/icon.icns --overwrite",
-        "build-win32": "electron-packager . --out=build --platform=win32 --ignore=/~.* --ignore=^/screenshots --asar.unpack=LICENSE.txt --icon=icons/icon.ico --overwrite",
-        "build-all": "electron-packager . --out=build --platform=all --ignore=/~.* --ignore=^/screenshots --asar.unpack=LICENSE.txt --icon=icons/icon --overwrite"
+        "build-darwin": "electron-packager . --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
+        "build-linux": "electron-packager . --out=build --platform=linux --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.png --overwrite",
+        "build-mas": "electron-packager . --out=build --platform=mas --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
+        "build-win32": "electron-packager . --out=build --platform=win32 --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.ico --overwrite",
+        "build-all": "electron-packager . --out=build --platform=all --ignore=/~.* --ignore=^/screenshots --icon=icons/icon --overwrite"
     },
     "keywords": [
         "app",

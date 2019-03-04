@@ -65,6 +65,40 @@ else
         dialog.showMessageBox ((process.platform === 'darwin') ? null : browserWindow, options);
     }
     //
+    let licenseWindow = null;
+    //
+    function showLicense (menuItem, browserWindow, event)
+    {
+        if (!licenseWindow)
+        {
+            licenseWindow = new BrowserWindow
+            (
+                {
+                    title: `License | ${appName}`,
+                    width: 384,
+                    height: (process.platform !== 'darwin') ? 480 : 540,
+                    parent: browserWindow,
+                    minimizable: false,
+                    maximizable: false,
+                    resizable: false,
+                    fullscreenable: false,
+                    show: false
+                }
+            );
+            if (process.platform !== 'darwin')
+            {
+                licenseWindow.setMenu (null);
+            }
+            licenseWindow.loadFile ('license.html');
+            licenseWindow.once ('ready-to-show', () => { licenseWindow.show (); });
+            licenseWindow.on ('close', () => { licenseWindow = null; });
+        }
+        else
+        {
+            licenseWindow.focus ();
+        }
+    }
+    //
     function copySystemInfo ()
     {
         const infos =
@@ -233,7 +267,7 @@ else
         role: 'help',
         submenu:
         [
-            { label: "License", click: () => { shell.openItem (path.join (unpackedDirname, 'LICENSE.txt')); } },
+            { label: "License...", click: showLicense },
             { label: settings.repository.label, click: () => { shell.openExternal (settings.repository.URL); } },
             { label: settings.releases.label, click: () => { shell.openExternal (settings.releases.URL); } }
         ]
@@ -245,7 +279,7 @@ else
         [
             { label: "About...", click: showAboutBox },
             { type: 'separator' },
-            { label: "License", click: () => { shell.openItem (path.join (unpackedDirname, 'LICENSE.txt')); } },
+            { label: "License...", click: showLicense },
             { label: settings.repository.label, click: () => { shell.openExternal (settings.repository.URL); } },
             { label: settings.releases.label, click: () => { shell.openExternal (settings.releases.URL); } }
         ]
@@ -284,7 +318,7 @@ else
                             type: 'radio',
                             checked: (unitName === currentUnitName),
                             click: () => { mainWindow.webContents.send ('select-unit', unitName); },
-                        } 
+                        }
                     );
                 }
                 menu = Menu.buildFromTemplate (menuTemplate);
@@ -358,7 +392,11 @@ else
                 minWidth: settings.window.minWidth,
                 minHeight: settings.window.minHeight,
                 backgroundColor: settings.window.backgroundColor,
-                show: !settings.window.deferredShow
+                show: !settings.window.deferredShow,
+                webPreferences:
+                {
+                    nodeIntegration: true
+                }
             }
         );
         //
