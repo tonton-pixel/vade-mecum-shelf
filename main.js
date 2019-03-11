@@ -87,6 +87,7 @@ else
             );
             if (process.platform !== 'darwin')
             {
+                licenseWindow.setMenu (new Menu ()); // Partial workaround for Electron 4.0.x on Linux
                 licenseWindow.setMenu (null);
             }
             licenseWindow.loadFile ('license.html');

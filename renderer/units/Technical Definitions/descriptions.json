@@ -500,6 +500,10 @@
                 "details": "Request For Comments"
             },
             {
+                "term": "RGI",
+                "details": "Recommended for General Interchange"
+            },
+            {
                 "term": "RLM",
                 "details": "Right-to-Left Mark"
             },
