@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+#javascript-parser-unit .code-string,
+#javascript-parser-unit .result-string
+{
+    /* display: block; */
+    vertical-align: top;
+    font-family: Monaco, "Noto Mono", monospace;
+    font-size: 13px;
+    line-height: 1.333em;
+    width: 100%;
+    resize: vertical;
+    padding: 0 0.5em;
+    /* white-space: pre; */
+    tab-size : 4;
+    overscroll-behavior: contain;
+}
+
+#javascript-parser-unit .actions
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+#javascript-parser-unit .action-group
+{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#javascript-parser-unit .action-group + .action-group,
+#javascript-parser-unit .action + .action
+{
+    margin-left: 0.75em;
+}
+
+#javascript-parser-unit .interface
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 -0.25em 0;
+}
+
+#javascript-parser-unit .option + .option
+{
+    margin-left: 0.75em;
+}
+
+#javascript-parser-unit .option .parse-button
+{
+    margin-right: 0.75em;
+}
+
+#javascript-parser-unit .result-string
+{
+    margin-bottom: 0.25em;
+}
+
+#javascript-parser-unit .parse-error
+{
+    color: var(--color-error);
+}
+
+#javascript-parser-unit .plain-panel
+{
+    padding-bottom: 1.5em;
+}
+
+#javascript-parser-unit summary
+{
+    font-weight: bold;
+    margin: 1.2em 0 1em 0;
+}

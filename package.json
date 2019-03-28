@@ -1,7 +1,7 @@
 {
     "name": "vade-mecum-shelf",
     "productName": "Vade Mecum Shelf",
-    "version": "1.11.0",
+    "version": "1.12.0",
     "description": "Collection of utilities wrapped into one single app.",
     "main": "main.js",
     "scripts": {
@@ -30,9 +30,11 @@
     "homepage": "https://github.com/tonton-pixel/vade-mecum-shelf",
     "license": "MIT",
     "private": false,
-    "dependencies": {},
+    "dependencies": {
+        "esprima": "^4.0.1"
+    },
     "devDependencies": {
-        "electron": "^4.0.8",
+        "electron": "^4.1.1",
         "electron-packager": "^13.1.1"
     }
 }

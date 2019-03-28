@@ -22,6 +22,7 @@ The following utilities are currently available:
 - **ISO Language Codes**
 - **ISO Script Codes**
 - **Jabberwocky**
+- **JavaScript Parser**
 - **JavaScript Runner**
 - **JSON Formatter**
 - **LaTeX Math Renderer**
@@ -115,6 +116,12 @@ Full list of ISO 15924 script codes, with live search:
 Typographic rendition of Lewis Carroll's nonsense poem "Jabberwocky":
 
 <img src="screenshots/jabberwocky.png" width="1080px" alt="Jabberwocky screenshot">
+
+## JavaScript Parser
+
+JavaScript code parser and tokenizer, based on Esprima:
+
+<img src="screenshots/javascript-parser.png" width="1080px" alt="JavaScript Parser screenshot">
 
 ## JavaScript Runner
 

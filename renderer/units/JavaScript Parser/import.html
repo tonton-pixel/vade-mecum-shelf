@@ -1,0 +1,40 @@
+<template>
+    <section id="javascript-parser-unit">
+        <div class="plain-panel">
+            <div class="actions">
+                <span class="action-group">
+                    <span class="action">
+                        <button class="clear-button" type="button">Clear</button>
+                    </span>
+                    <span class="action">
+                        <button class="pull-down-menu samples-button" type="button">Samples</button>
+                    </span>
+                </span>
+                <span class="action-group">
+                    <span class="action">
+                        <button class="load-button" type="button">Load...</button>
+                    </span>
+                    <span class="action">
+                        <button class="save-button" type="button">Save...</button>
+                    </span>
+                </span>
+            </div>
+            <label>Code:<textarea class="code-string" rows="12"></textarea></label>
+            <div class="interface">
+                <span class="option">
+                    <button class="parse-button" type="button">Parse&nbsp;Script</button>
+                </span>
+                <span class="option">
+                    <button class="tokenize-button" type="button">Tokenize</button>
+                </span>
+            </div>
+            <label>Result:<textarea class="result-string" rows="12" readonly></textarea></label>
+        </div>
+        <div class="accent-panel">
+            <details class="references">
+                <summary>References</summary>
+                <div class="links"></div>
+            </details>
+        </div>
+    </section>
+</template>
