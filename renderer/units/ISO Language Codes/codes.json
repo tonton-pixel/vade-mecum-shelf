@@ -590,8 +590,8 @@
     {
         "639-1": "lu",
         "639-2": "lub",
-        "french": "Luba-katanga",
-        "english": "Luba-Katanga"
+        "french": "Luba",
+        "english": "Luba"
     },
     {
         "639-1": "lv",
@@ -864,6 +864,12 @@
         "english": "Sango"
     },
     {
+        "639-1": "sh",
+        "639-2": "",
+        "french": "Serbo-croate",
+        "english": "Serbo-Croatian"
+    },
+    {
         "639-1": "si",
         "639-2": "sin",
         "french": "Cingalais",
@@ -879,7 +885,7 @@
         "639-1": "sl",
         "639-2": "slv",
         "french": "Slovène",
-        "english": "Slovene"
+        "english": "Slovenian"
     },
     {
         "639-1": "sm",

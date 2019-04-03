@@ -235,7 +235,7 @@
         "number": 328,
         "english": "Dogra",
         "french": "dogra",
-        "alias": ""
+        "alias": "Dogra"
     },
     {
         "code": "Dsrt",
@@ -280,6 +280,13 @@
         "alias": "Elbasan"
     },
     {
+        "code": "Elym",
+        "number": 128,
+        "english": "Elymaic",
+        "french": "élymaïque",
+        "alias": "Elymaic"
+    },
+    {
         "code": "Ethi",
         "number": 430,
         "english": "Ethiopic (Geʻez)",
@@ -312,7 +319,7 @@
         "number": 312,
         "english": "Gunjala Gondi",
         "french": "gunjala gondî",
-        "alias": ""
+        "alias": "Gunjala_Gondi"
     },
     {
         "code": "Gonm",
@@ -438,7 +445,7 @@
         "number": 451,
         "english": "Nyiakeng Puachue Hmong",
         "french": "nyiakeng puachue hmong",
-        "alias": ""
+        "alias": "Nyiakeng_Puachue_Hmong"
     },
     {
         "code": "Hrkt",
@@ -683,7 +690,7 @@
         "number": 366,
         "english": "Makasar",
         "french": "makassar",
-        "alias": ""
+        "alias": "Makasar"
     },
     {
         "code": "Mand",
@@ -718,7 +725,7 @@
         "number": 265,
         "english": "Medefaidrin (Oberi Okaime, Oberi Ɔkaimɛ)",
         "french": "médéfaïdrine",
-        "alias": ""
+        "alias": "Medefaidrin"
     },
     {
         "code": "Mend",
@@ -796,6 +803,13 @@
         "english": "Myanmar (Burmese)",
         "french": "birman",
         "alias": "Myanmar"
+    },
+    {
+        "code": "Nand",
+        "number": 311,
+        "english": "Nandinagari",
+        "french": "nandinâgarî",
+        "alias": "Nandinagari"
     },
     {
         "code": "Narb",
@@ -991,7 +1005,7 @@
         "number": 167,
         "english": "Hanifi Rohingya",
         "french": "hanifi rohingya",
-        "alias": ""
+        "alias": "Hanifi_Rohingya"
     },
     {
         "code": "Roro",
@@ -1089,14 +1103,14 @@
         "number": 141,
         "english": "Sogdian",
         "french": "sogdien",
-        "alias": ""
+        "alias": "Sogdian"
     },
     {
         "code": "Sogo",
         "number": 142,
         "english": "Old Sogdian",
         "french": "ancien sogdien",
-        "alias": ""
+        "alias": "Old_Sogdian"
     },
     {
         "code": "Sora",
@@ -1292,7 +1306,7 @@
         "number": 283,
         "english": "Wancho",
         "french": "wantcho",
-        "alias": ""
+        "alias": "Wancho"
     },
     {
         "code": "Wole",
@@ -1370,5 +1384,12 @@
         "english": "Code for undetermined script",
         "french": "codet pour écriture indéterminée",
         "alias": "Common"
+    },
+    {
+        "code": "Zzzz",
+        "number": 999,
+        "english": "Code for uncoded script",
+        "french": "codet pour écriture non codée",
+        "alias": "Unknown"
     }
 ]

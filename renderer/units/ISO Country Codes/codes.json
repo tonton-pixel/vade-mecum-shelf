@@ -270,7 +270,7 @@
         "alpha-2": "CC",
         "alpha-3": "CCK",
         "english": "Cocos (Keeling) Islands (the)",
-        "french": "Cocos (les Îles)/ Keeling (les Îles)"
+        "french": "Cocos (les Îles) / Keeling (les Îles)"
     },
     {
         "numeric": 180,
@@ -501,7 +501,7 @@
         "alpha-2": "FK",
         "alpha-3": "FLK",
         "english": "Falkland Islands (the) [Malvinas]",
-        "french": "Falkland (les Îles)/Malouines (les Îles)"
+        "french": "Falkland (les Îles) / Malouines (les Îles)"
     },
     {
         "numeric": 583,
@@ -879,7 +879,7 @@
         "alpha-2": "LA",
         "alpha-3": "LAO",
         "english": "Lao People's Democratic Republic (the)",
-        "french": "Lao, République démocratique populaire"
+        "french": "Lao (la République démocratique populaire)"
     },
     {
         "numeric": 422,
@@ -970,7 +970,7 @@
         "alpha-2": "MD",
         "alpha-3": "MDA",
         "english": "Moldova (the Republic of)",
-        "french": "Moldova, République de"
+        "french": "Moldova (la République de)"
     },
     {
         "numeric": 499,
@@ -998,14 +998,14 @@
         "alpha-2": "MH",
         "alpha-3": "MHL",
         "english": "Marshall Islands (the)",
-        "french": "Marshall (Îles)"
+        "french": "Marshall (les Îles)"
     },
     {
         "numeric": 807,
         "alpha-2": "MK",
         "alpha-3": "MKD",
-        "english": "Macedonia (the former Yugoslav Republic of)",
-        "french": "Macédoine (l'ex‑République yougoslave de)"
+        "english": "North Macedonia",
+        "french": "Macédoine du Nord (la)"
     },
     {
         "numeric": 466,
@@ -1355,7 +1355,7 @@
         "alpha-2": "SB",
         "alpha-3": "SLB",
         "english": "Solomon Islands",
-        "french": "Salomon (Îles)"
+        "french": "Salomon (les Îles)"
     },
     {
         "numeric": 690,
@@ -1480,15 +1480,15 @@
         "numeric": 760,
         "alpha-2": "SY",
         "alpha-3": "SYR",
-        "english": "Syrian Arab Republic",
+        "english": "Syrian Arab Republic (the)",
         "french": "République arabe syrienne (la)"
     },
     {
         "numeric": 748,
         "alpha-2": "SZ",
         "alpha-3": "SWZ",
-        "english": "Swaziland",
-        "french": "Swaziland (le)"
+        "english": "Eswatini",
+        "french": "Eswatini (l')"
     },
     {
         "numeric": 796,
@@ -1599,8 +1599,8 @@
         "numeric": 834,
         "alpha-2": "TZ",
         "alpha-3": "TZA",
-        "english": "Tanzania, United Republic of",
-        "french": "Tanzanie, République-Unie de"
+        "english": "Tanzania, the United Republic of",
+        "french": "Tanzanie (la République-Unie de)"
     },
     {
         "numeric": 804,
