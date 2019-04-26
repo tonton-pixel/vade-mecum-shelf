@@ -19,14 +19,15 @@ module.exports.start = function (context)
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
+    const keyIndex = require ('../../lib/key-index.js');
     const tables = require ('../../lib/tables.js');
     //
     const animals = require ('./animals.json');
     //
-    const englishIndex = tables.buildKeyIndex (animals, "english", (a, b) => a.localeCompare (b, 'en'));
-    const chineseIndex = tables.buildKeyIndex (animals, "chinese", (a, b) => a.localeCompare (b, 'zh'));
-    const japaneseIndex = tables.buildKeyIndex (animals, "japanese", (a, b) => a.localeCompare (b, 'ja'));
-    const yearsIndex = tables.buildKeyIndex (animals, "years", (a, b) => a.localeCompare (b, 'ja'));
+    const englishIndex = keyIndex.build (animals, "english", (a, b) => a.localeCompare (b, 'en'));
+    const chineseIndex = keyIndex.build (animals, "chinese", (a, b) => a.localeCompare (b, 'zh'));
+    const japaneseIndex = keyIndex.build (animals, "japanese", (a, b) => a.localeCompare (b, 'ja'));
+    const yearsIndex = keyIndex.build (animals, "years", (a, b) => a.localeCompare (b, 'ja'));
     //
     let table = tables.create
     (

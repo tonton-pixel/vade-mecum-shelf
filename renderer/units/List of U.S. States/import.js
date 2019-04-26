@@ -16,6 +16,7 @@ module.exports.start = function (context)
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
+    const keyIndex = require ('../../lib/key-index.js');
     const tables = require ('../../lib/tables.js');
     //
     const states = require ('./states.json');
@@ -27,10 +28,10 @@ module.exports.start = function (context)
         }
     }
     //
-    const abbreviationIndex = tables.buildKeyIndex (states, "abbreviation", (a, b) => a.localeCompare (b));
-    const stateIndex = tables.buildKeyIndex (states, "state", (a, b) => a.localeCompare (b, 'en'));
-    const capitalIndex = tables.buildKeyIndex (states, "capital", (a, b) => a.localeCompare (b, 'en'));
-    const largestIndex = tables.buildKeyIndex (states, "largest", (a, b) => a.localeCompare (b, 'en'));
+    const abbreviationIndex = keyIndex.build (states, "abbreviation", (a, b) => a.localeCompare (b));
+    const stateIndex = keyIndex.build (states, "state", (a, b) => a.localeCompare (b, 'en'));
+    const capitalIndex = keyIndex.build (states, "capital", (a, b) => a.localeCompare (b, 'en'));
+    const largestIndex = keyIndex.build (states, "largest", (a, b) => a.localeCompare (b, 'en'));
     //
     let table = tables.create
     (

@@ -16,13 +16,14 @@ module.exports.start = function (context)
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
+    const keyIndex = require ('../../lib/key-index.js');
     const tables = require ('../../lib/tables.js');
     //
     const codes = require ('./codes.json');
     //
-    const codeIndex = tables.buildKeyIndex (codes, "code", (a, b) => a.localeCompare (b));
-    const englishIndex = tables.buildKeyIndex (codes, "english", (a, b) => a.localeCompare (b, 'en'));
-    const frenchIndex = tables.buildKeyIndex (codes, "french", (a, b) => a.localeCompare (b, 'fr'));
+    const codeIndex = keyIndex.build (codes, "code", (a, b) => a.localeCompare (b));
+    const englishIndex = keyIndex.build (codes, "english", (a, b) => a.localeCompare (b, 'en'));
+    const frenchIndex = keyIndex.build (codes, "french", (a, b) => a.localeCompare (b, 'fr'));
     //
     let table = tables.create
     (

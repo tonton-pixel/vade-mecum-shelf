@@ -9,16 +9,12 @@
             "href": "https://www.w3.org/TR/css3-color/#svg-color"
         },
         {
+            "name": "Named Colors | CSS Color Module Level 4",
+            "href": "https://www.w3.org/TR/css-color-4/#named-colors"
+        },
+        {
             "name": "Changes from Colors 3 | CSS Color Module Level 4",
             "href": "https://www.w3.org/TR/css-color-4/#changes-from-3"
-        },
-        {
-            "name": "Named Colors | CSS Color Module Level 4",
-            "href": "https://drafts.csswg.org/css-color/#named-colors"
-        },
-        {
-            "name": "Recognized color keyword names | Basic Data Types and Interfaces – SVG 1.1 (Second Edition)",
-            "href": "https://www.w3.org/TR/SVG/types.html#ColorKeywords"
         },
         {
             "name": "“Tomato” versus “#FF6347”—the tragicomic history of CSS color names | Ars Technica",

@@ -16,15 +16,16 @@ module.exports.start = function (context)
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
+    const keyIndex = require ('../../lib/key-index.js');
     const tables = require ('../../lib/tables.js');
     //
     const departments = require ('./departments.json');
     //
-    const keyIndex = tables.buildKeyIndex (departments, "clé", (a, b) => a - b);
-    const codeIndex = tables.buildKeyIndex (departments, "code", (a, b) => a.localeCompare (b));
-    const departmentIndex = tables.buildKeyIndex (departments, "département", (a, b) => a.localeCompare (b, 'fr'));
-    const prefectureIndex = tables.buildKeyIndex (departments, "chef-lieu", (a, b) => a.localeCompare (b, 'fr'));
-    const regionIndex = tables.buildKeyIndex (departments, "région", (a, b) => a.localeCompare (b, 'fr'));
+    const numberIndex = keyIndex.build (departments, "nombre", (a, b) => a - b);
+    const codeIndex = keyIndex.build (departments, "code", (a, b) => a.localeCompare (b));
+    const departmentIndex = keyIndex.build (departments, "département", (a, b) => a.localeCompare (b, 'fr'));
+    const prefectureIndex = keyIndex.build (departments, "chef-lieu", (a, b) => a.localeCompare (b, 'fr'));
+    const regionIndex = keyIndex.build (departments, "région", (a, b) => a.localeCompare (b, 'fr'));
     //
     let table = tables.create
     (
@@ -36,7 +37,7 @@ module.exports.start = function (context)
         ],
         { label: "Aucun résultat", className: 'message', lang: 'fr' },
         departments,
-        keyIndex // Temp...
+        numberIndex // Temp...
     );
     //
     let tableCopy = table.cloneNode (true);

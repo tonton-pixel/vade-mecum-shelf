@@ -1,3 +1,4 @@
+//
 module.exports = function (linksElement, linksArray)
 {
     linksArray.forEach
@@ -26,3 +27,4 @@ module.exports = function (linksElement, linksArray)
         }
     );
 }
+//

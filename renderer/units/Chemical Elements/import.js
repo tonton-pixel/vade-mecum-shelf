@@ -19,14 +19,15 @@ module.exports.start = function (context)
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
+    const keyIndex = require ('../../lib/key-index.js');
     const tables = require ('../../lib/tables.js');
     //
     const elements = require ('./elements.json');
     //
-    const atomicNumberIndex = tables.buildKeyIndex (elements, "atomic-number", (a, b) => a - b);
-    const symbolIndex = tables.buildKeyIndex (elements, "symbol", (a, b) => a.localeCompare (b));
-    const englishIndex = tables.buildKeyIndex (elements, "english", (a, b) => a.localeCompare (b));
-    const frenchIndex = tables.buildKeyIndex (elements, "french", (a, b) => a.localeCompare (b, 'fr'));
+    const atomicNumberIndex = keyIndex.build (elements, "atomic-number", (a, b) => a - b);
+    const symbolIndex = keyIndex.build (elements, "symbol", (a, b) => a.localeCompare (b));
+    const englishIndex = keyIndex.build (elements, "english", (a, b) => a.localeCompare (b));
+    const frenchIndex = keyIndex.build (elements, "french", (a, b) => a.localeCompare (b, 'fr'));
     //
     let table = tables.create
     (

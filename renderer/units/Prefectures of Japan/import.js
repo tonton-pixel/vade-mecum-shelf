@@ -16,15 +16,16 @@ module.exports.start = function (context)
     };
     let prefs = context.getPrefs (defaultPrefs);
     //
+    const keyIndex = require ('../../lib/key-index.js');
     const tables = require ('../../lib/tables.js');
     //
     const prefectures = require ('./prefectures.json');
     //
-    const readingIndex = tables.buildKeyIndex (prefectures, "読み", (a, b) => a.localeCompare (b, 'ja'));
-    const prefectureIndex = tables.buildKeyIndex (prefectures, "都道府県", (a, b) => a.localeCompare (b, 'ja'));
-    const regionIndex = tables.buildKeyIndex (prefectures, "地方", (a, b) => a.localeCompare (b, 'ja'));
-    const capitalIndex = tables.buildKeyIndex (prefectures, "都道府県庁", (a, b) => a.localeCompare (b, 'ja'));
-    const largestIndex = tables.buildKeyIndex (prefectures, "最大都市", (a, b) => a.localeCompare (b, 'ja'));
+    const readingIndex = keyIndex.build (prefectures, "読み", (a, b) => a.localeCompare (b, 'ja'));
+    const prefectureIndex = keyIndex.build (prefectures, "都道府県", (a, b) => a.localeCompare (b, 'ja'));
+    const regionIndex = keyIndex.build (prefectures, "地方", (a, b) => a.localeCompare (b, 'ja'));
+    const capitalIndex = keyIndex.build (prefectures, "都道府県庁", (a, b) => a.localeCompare (b, 'ja'));
+    const largestIndex = keyIndex.build (prefectures, "最大都市", (a, b) => a.localeCompare (b, 'ja'));
     //
     let table = tables.create
     (
