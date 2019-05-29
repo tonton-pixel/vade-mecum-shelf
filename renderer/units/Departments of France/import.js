@@ -21,19 +21,19 @@ module.exports.start = function (context)
     //
     const departments = require ('./departments.json');
     //
-    const numberIndex = keyIndex.build (departments, "nombre", (a, b) => a - b);
-    const codeIndex = keyIndex.build (departments, "code", (a, b) => a.localeCompare (b));
-    const departmentIndex = keyIndex.build (departments, "département", (a, b) => a.localeCompare (b, 'fr'));
-    const prefectureIndex = keyIndex.build (departments, "chef-lieu", (a, b) => a.localeCompare (b, 'fr'));
-    const regionIndex = keyIndex.build (departments, "région", (a, b) => a.localeCompare (b, 'fr'));
+    const numberIndex = keyIndex.build (departments, 'nombre', (a, b) => a - b);
+    const codeIndex = keyIndex.build (departments, 'code', (a, b) => a.localeCompare (b));
+    const departmentIndex = keyIndex.build (departments, 'département', (a, b) => a.localeCompare (b, 'fr'));
+    const prefectureIndex = keyIndex.build (departments, 'chef-lieu', (a, b) => a.localeCompare (b, 'fr'));
+    const regionIndex = keyIndex.build (departments, 'région', (a, b) => a.localeCompare (b, 'fr'));
     //
     let table = tables.create
     (
         [
-            { label: "Code", className: 'code', key: "code" },
-            { label: "Département", className: 'département', key: "département", lang: 'fr' },
-            { label: "Chef-lieu", className: 'chef-lieu', key: "chef-lieu", lang: 'fr' },
-            { label: "Région", className: 'région', key: "région", lang: 'fr' }
+            { label: "Code", className: 'code', key: 'code' },
+            { label: "Département", className: 'département', key: 'département', lang: 'fr' },
+            { label: "Chef-lieu", className: 'chef-lieu', key: 'chef-lieu', lang: 'fr' },
+            { label: "Région", className: 'région', key: 'région', lang: 'fr' }
         ],
         { label: "Aucun résultat", className: 'message', lang: 'fr' },
         departments,
@@ -58,7 +58,7 @@ module.exports.start = function (context)
     liveSearch.lang = 'fr';
     liveSearch.placeholder = "Rechercher";
     doSearch (liveSearch.value = prefs.liveSearch);
-    liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
+    liveSearch.addEventListener ('input', (event) => { doSearch (event.currentTarget.value); });
     //
     references.open = prefs.references;
     //

@@ -49,7 +49,7 @@ module.exports.start = function (context)
         selectLocale.selectedIndex = 0;
     }
     let currentLocale = selectLocale.value;
-    selectLocale.addEventListener ('input', (event) => { currentLocale = event.target.value; updateClock (new Date ()); });
+    selectLocale.addEventListener ('input', (event) => { currentLocale = event.currentTarget.value; updateClock (new Date ()); });
     //
     function parseOption (optionString)
     {
@@ -101,19 +101,19 @@ module.exports.start = function (context)
     };
     //
     selectEra.value = stringifyOption (dateOptions.era);
-    selectEra.addEventListener ('input', (event) => { dateOptions.era = parseOption (event.target.value); updateClock (new Date ()); });
+    selectEra.addEventListener ('input', (event) => { dateOptions.era = parseOption (event.currentTarget.value); updateClock (new Date ()); });
     //
     selectYear.value =  stringifyOption (dateOptions.year);
-    selectYear.addEventListener ('input', (event) => { dateOptions.year = parseOption (event.target.value); updateClock (new Date ()); });
+    selectYear.addEventListener ('input', (event) => { dateOptions.year = parseOption (event.currentTarget.value); updateClock (new Date ()); });
     //
     selectMonth.value = stringifyOption (dateOptions.month);
-    selectMonth.addEventListener ('input', (event) => { dateOptions.month = parseOption (event.target.value); updateClock (new Date ()); });
+    selectMonth.addEventListener ('input', (event) => { dateOptions.month = parseOption (event.currentTarget.value); updateClock (new Date ()); });
     //
     selectDay.value = stringifyOption (dateOptions.day);
-    selectDay.addEventListener ('input', (event) => { dateOptions.day = parseOption (event.target.value); updateClock (new Date ()); });
+    selectDay.addEventListener ('input', (event) => { dateOptions.day = parseOption (event.currentTarget.value); updateClock (new Date ()); });
     //
     selectWeekday.value = stringifyOption (dateOptions.weekday);
-    selectWeekday.addEventListener ('input', (event) => { dateOptions.weekday = parseOption (event.target.value); updateClock (new Date ()); });
+    selectWeekday.addEventListener ('input', (event) => { dateOptions.weekday = parseOption (event.currentTarget.value); updateClock (new Date ()); });
     //
     let timeOptions =
     {
@@ -125,19 +125,19 @@ module.exports.start = function (context)
     };
     //
     selectHour12.value = stringifyOption (timeOptions.hour12);
-    selectHour12.addEventListener ('input', (event) => { timeOptions.hour12 = parseOption (event.target.value); updateClock (new Date ()); });
+    selectHour12.addEventListener ('input', (event) => { timeOptions.hour12 = parseOption (event.currentTarget.value); updateClock (new Date ()); });
     //
     selectHour.value = stringifyOption (timeOptions.hour);
-    selectHour.addEventListener ('input', (event) => { timeOptions.hour = parseOption (event.target.value); updateClock (new Date ()); });
+    selectHour.addEventListener ('input', (event) => { timeOptions.hour = parseOption (event.currentTarget.value); updateClock (new Date ()); });
     //
     selectMinute.value = stringifyOption (timeOptions.minute);
-    selectMinute.addEventListener ('input', (event) => { timeOptions.minute = parseOption (event.target.value); updateClock (new Date ()); });
+    selectMinute.addEventListener ('input', (event) => { timeOptions.minute = parseOption (event.currentTarget.value); updateClock (new Date ()); });
     //
     selectSecond.value = stringifyOption (timeOptions.second);
-    selectSecond.addEventListener ('input', (event) => { timeOptions.second = parseOption (event.target.value); updateClock (new Date ()); });
+    selectSecond.addEventListener ('input', (event) => { timeOptions.second = parseOption (event.currentTarget.value); updateClock (new Date ()); });
     //
     selectTimeZoneName.value = stringifyOption (timeOptions.timeZoneName);;
-    selectTimeZoneName.addEventListener ('input', (event) => { timeOptions.timeZoneName = parseOption (event.target.value); updateClock (new Date ()); });
+    selectTimeZoneName.addEventListener ('input', (event) => { timeOptions.timeZoneName = parseOption (event.currentTarget.value); updateClock (new Date ()); });
     //
     // Cloning options is necessary since toLocaleDateString () and toLocaleTimeString () modify their options "behind the scenes" 
     // in two cases:
@@ -171,9 +171,9 @@ module.exports.start = function (context)
     {
         clock.lang = currentLocale;
         dateText.textContent = dateString (date);
-        dateText.title = 'new Date ().toLocaleDateString ("' + currentLocale + '", ' + json.stringify (dateOptions) + ')';
+        dateText.title = `new Date ().toLocaleDateString ("${currentLocale}", ${json.stringify (dateOptions)})`;
         timeText.textContent = timeString (date);
-        timeText.title = 'new Date ().toLocaleTimeString ("' + currentLocale + '", ' + json.stringify (timeOptions) + ')';
+        timeText.title = `new Date ().toLocaleTimeString ("${currentLocale}", ${json.stringify (timeOptions)})`;
     }
     //
     title.textContent = timeZone;

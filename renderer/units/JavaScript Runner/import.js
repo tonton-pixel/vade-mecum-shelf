@@ -103,7 +103,7 @@ module.exports.start = function (context)
         'click',
         (event) =>
         {
-            pullDownMenus.popup (event.target.getBoundingClientRect (), samplesMenu);
+            pullDownMenus.popup (event.currentTarget, samplesMenu);
         }
     );
     //
@@ -138,7 +138,7 @@ module.exports.start = function (context)
             fileDialogs.saveTextFile
             (
                 "Save JavaScript file:",
-                [ { name: 'JavaScript (*.js)', extensions: [ 'js' ] } ],
+                [ { name: "JavaScript (*.js)", extensions: [ 'js' ] } ],
                 defaultFolderPath,
                 (filePath) =>
                 {
@@ -175,8 +175,8 @@ module.exports.start = function (context)
             if (hasDesiredType (event.dataTransfer.types))
             {
                 event.preventDefault ();
-                event.target.style.opacity = '0.5';
-                event.target.style.borderStyle = 'dashed';
+                event.currentTarget.style.opacity = '0.5';
+                event.currentTarget.style.borderStyle = 'dashed';
             }
         };
     codeString.ondragleave =
@@ -185,7 +185,7 @@ module.exports.start = function (context)
             if (hasDesiredType (event.dataTransfer.types))
             {
                 event.preventDefault ();
-                event.target.style = saveStyle;
+                event.currentTarget.style = saveStyle;
             }
         };
     codeString.ondrop =
@@ -194,7 +194,7 @@ module.exports.start = function (context)
             if (hasDesiredType (event.dataTransfer.types))
             {
                 event.preventDefault ();
-                event.target.style = saveStyle;
+                event.currentTarget.style = saveStyle;
                 let filePath = getSingleJavaScriptFilePath (event.dataTransfer.files);
                 if (filePath)
                 {

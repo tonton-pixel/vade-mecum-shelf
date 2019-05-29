@@ -21,18 +21,18 @@ module.exports.start = function (context)
     //
     const codes = require ('./codes.json');
     //
-    const code1Index = keyIndex.build (codes, "639-1", (a, b) => a.localeCompare (b));
-    const code2Index = keyIndex.build (codes, "639-2", (a, b) => a.localeCompare (b));
-    const englishIndex = keyIndex.build (codes, "english", (a, b) => a.localeCompare (b, 'en'));
-    const frenchIndex = keyIndex.build (codes, "french", (a, b) => a.localeCompare (b, 'fr'));
+    const code1Index = keyIndex.build (codes, '639-1', (a, b) => a.localeCompare (b));
+    const code2Index = keyIndex.build (codes, '639-2', (a, b) => a.localeCompare (b));
+    const englishIndex = keyIndex.build (codes, 'english', (a, b) => a.localeCompare (b, 'en'));
+    const frenchIndex = keyIndex.build (codes, 'french', (a, b) => a.localeCompare (b, 'fr'));
     //
     let table = tables.create
     (
         [
-            { label: "639-1", className: 'code', key: "639-1" },
-            { label: "639-2", className: 'code', key: "639-2" },
-            { label: "English", className: 'language', key: "english", lang: 'en' },
-            { label: "Français", className: 'language', key: "french", lang: 'fr' }
+            { label: "639-1", className: 'code', key: '639-1' },
+            { label: "639-2", className: 'code', key: '639-2' },
+            { label: "English", className: 'language', key: 'english', lang: 'en' },
+            { label: "Français", className: 'language', key: 'french', lang: 'fr' }
         ],
         { label: "No Match", className: 'message', lang: 'en' },
         codes,
@@ -56,7 +56,7 @@ module.exports.start = function (context)
     //
     liveSearch.placeholder = "Search";
     doSearch (liveSearch.value = prefs.liveSearch);
-    liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
+    liveSearch.addEventListener ('input', (event) => { doSearch (event.currentTarget.value); });
     //
     references.open = prefs.references;
     //

@@ -92,7 +92,7 @@ module.exports.start = function (context)
     }
     let currentLocale = selectLocale.value;
     headStyle.textContent = getLocalesCSS (selectLocale, currentLocale);
-    selectLocale.addEventListener ('input', (event) => { headStyle.textContent = getLocalesCSS (selectLocale, event.target.value); });
+    selectLocale.addEventListener ('input', (event) => { headStyle.textContent = getLocalesCSS (selectLocale, event.currentTarget.value); });
     //
     references.open = prefs.references;
     //

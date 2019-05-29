@@ -14,6 +14,7 @@ The following utilities are currently available:
 - **Chinese Zodiac**
 - **CIDR Calculator**
 - **Color Names**
+- **CSS Cursors Demo**
 - **Departments of France**
 - **Digital Clock**
 - **HTTP Status Codes**
@@ -64,6 +65,12 @@ Lists of color names, with live search:
 * Mac OS X Crayons
 
 <img src="screenshots/color-names.png" width="1080px" alt="Color Names screenshot">
+
+## CSS Cursors Demo
+
+Display CSS cursors by category:
+
+<img src="screenshots/css-cursors-demo.png" width="1080px" alt="CSS Cursors Demo screenshot">
 
 ## Departments of France
 

@@ -1,0 +1,194 @@
+[
+    {
+        "category": "General",
+        "items":
+        [
+            {
+                "cursor": "auto",
+                "description": "The UA will determine the cursor to display based on the current context. E.g., equivalent to text when hovering text."
+            },
+            {
+                "cursor": "default",
+                "description": "The platform-dependent default cursor. Typically an arrow."
+            },
+            {
+                "cursor": "none",
+                "description": "No cursor is rendered."
+            }
+        ]
+    },
+    {
+        "category": "Links",
+        "items":
+        [
+            {
+                "cursor": "context-menu",
+                "description": "A context menu is available."
+            },
+            {
+                "cursor": "help",
+                "description": "Help information is available."
+            },
+            {
+                "cursor": "pointer",
+                "description": "The cursor is a pointer that indicates a link. Typically an image of a pointing hand."
+            }
+        ]
+    },
+    {
+        "category": "Status",
+        "items":
+        [
+            {
+                "cursor": "progress",
+                "description": "The program is busy in the background, but the user can still interact with the interface (in contrast to wait)."
+            },
+            {
+                "cursor": "wait",
+                "description": "The program is busy, and the user can't interact with the interface (in contrast to progress). Sometimes an image of an hourglass or a watch."
+            }
+        ]
+    },
+    {
+        "category": "Selection",
+        "items":
+        [
+            {
+                "cursor": "cell",
+                "description": "The table cell or set of cells can be selected."
+            },
+            {
+                "cursor": "crosshair",
+                "description": "Cross cursor, often used to indicate selection in a bitmap."
+            },
+            {
+                "cursor": "text",
+                "description": "The text can be selected. Typically the shape of an I-beam."
+            },
+            {
+                "cursor": "vertical-text",
+                "description": "The vertical text can be selected. Typically the shape of a sideways I-beam."
+            }
+        ]
+    },
+    {
+        "category": "Drag & Drop",
+        "items":
+        [
+            {
+                "cursor": "alias",
+                "description": "An alias or shortcut is to be created."
+            },
+            {
+                "cursor": "copy",
+                "description": "Something is to be copied."
+            },
+            {
+                "cursor": "move",
+                "description": "Something is to be moved."
+            },
+            {
+                "cursor": "no-drop",
+                "description": "An item may not be dropped at the current location."
+            },
+            {
+                "cursor": "not-allowed",
+                "description": "The requested action will not be carried out."
+            },
+            {
+                "cursor": "grab",
+                "description": "Something can be grabbed (dragged to be moved)."
+            },
+            {
+                "cursor": "grabbing",
+                "description": "Something is being grabbed (dragged to be moved)."
+            }
+        ]
+    },
+    {
+        "category": "Scrolling",
+        "items":
+        [
+            {
+                "cursor": "all-scroll",
+                "description": "Something can be scrolled in any direction (panned)."
+            }
+        ]
+    },
+    {
+        "category": "Resizing",
+        "items":
+        [
+            {
+                "cursor": "col-resize",
+                "description": "The item/column can be resized horizontally. Often rendered as arrows pointing left and right with a vertical bar separating them."
+            },
+            {
+                "cursor": "row-resize",
+                "description": "The item/row can be resized vertically. Often rendered as arrows pointing up and down with a horizontal bar separating them."
+            },
+            {
+                "cursor": "n-resize",
+                "description": "The edge of a box is to be moved north (up)."
+            },
+            {
+                "cursor": "e-resize",
+                "description": "The edge of a box is to be moved east (right)."
+            },
+            {
+                "cursor": "s-resize",
+                "description": "The edge of a box is to be moved south (down)."
+            },
+            {
+                "cursor": "w-resize",
+                "description": "The edge of a box is to be moved west (left)."
+            },
+            {
+                "cursor": "ns-resize",
+                "description": "The edge of a box is to be moved north or south (up or down)"
+            },
+            {
+                "cursor": "ew-resize",
+                "description": "The edge of a box is to be moved east or west (left or right)"
+            },
+            {
+                "cursor": "ne-resize",
+                "description": "The corner of a box is to be moved north or east (up or right)."
+            },
+            {
+                "cursor": "se-resize",
+                "description": "The corner of a box is to be moved south or east (down or right)."
+            },
+            {
+                "cursor": "sw-resize",
+                "description": "The corner of a box is to be moved south or west (down or left)."
+            },
+            {
+                "cursor": "nw-resize",
+                "description": "The corner of a box is to be moved north or west (up or left)."
+            },
+            {
+                "cursor": "nesw-resize",
+                "description": "The corner of a box is to be moved north-east or south-west (up-right or down-left)."
+            },
+            {
+                "cursor": "nwse-resize",
+                "description": "The corner of a box is to be moved north-west or south-east (up-left or down-right)."
+            }
+        ]
+    },
+    {
+        "category": "Zooming",
+        "items":
+        [
+            {
+                "cursor": "zoom-in",
+                "description": "Something can be zoomed (magnified) in."
+            },
+            {
+                "cursor": "zoom-out",
+                "description": "Something can be zoomed (magnified) out."
+            }
+        ]
+    }
+]

@@ -21,20 +21,20 @@ module.exports.start = function (context)
     //
     const prefectures = require ('./prefectures.json');
     //
-    const readingIndex = keyIndex.build (prefectures, "読み", (a, b) => a.localeCompare (b, 'ja'));
-    const prefectureIndex = keyIndex.build (prefectures, "都道府県", (a, b) => a.localeCompare (b, 'ja'));
-    const regionIndex = keyIndex.build (prefectures, "地方", (a, b) => a.localeCompare (b, 'ja'));
-    const capitalIndex = keyIndex.build (prefectures, "都道府県庁", (a, b) => a.localeCompare (b, 'ja'));
-    const largestIndex = keyIndex.build (prefectures, "最大都市", (a, b) => a.localeCompare (b, 'ja'));
+    const readingIndex = keyIndex.build (prefectures, '読み', (a, b) => a.localeCompare (b, 'ja'));
+    const prefectureIndex = keyIndex.build (prefectures, '都道府県', (a, b) => a.localeCompare (b, 'ja'));
+    const regionIndex = keyIndex.build (prefectures, '地方', (a, b) => a.localeCompare (b, 'ja'));
+    const capitalIndex = keyIndex.build (prefectures, '都道府県庁', (a, b) => a.localeCompare (b, 'ja'));
+    const largestIndex = keyIndex.build (prefectures, '最大都市', (a, b) => a.localeCompare (b, 'ja'));
     //
     let table = tables.create
     (
         [
-            { label: "読み", className: 'reading', key: "読み", lang: 'ja' },
-            { label: "都道府県", className: 'prefecture', key: "都道府県", lang: 'ja' },
-            { label: "地方", className: 'region', key: "地方", lang: 'ja' },
-            { label: "都道府県庁", className: 'capital', key: "都道府県庁", lang: 'ja' },
-            { label: "最大都市", className: 'largest', key: "最大都市", lang: 'ja' }
+            { label: "読み", className: 'reading', key: '読み', lang: 'ja' },
+            { label: "都道府県", className: 'prefecture', key: '都道府県', lang: 'ja' },
+            { label: "地方", className: 'region', key: '地方', lang: 'ja' },
+            { label: "都道府県庁", className: 'capital', key: '都道府県庁', lang: 'ja' },
+            { label: "最大都市", className: 'largest', key: '最大都市', lang: 'ja' }
         ],
         { label: "検索結果はありません", className: 'message', lang: 'ja' },
         prefectures,
@@ -59,7 +59,7 @@ module.exports.start = function (context)
     liveSearch.lang = 'ja';
     liveSearch.placeholder = "検索";
     doSearch (liveSearch.value = prefs.liveSearch);
-    liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
+    liveSearch.addEventListener ('input', (event) => { doSearch (event.currentTarget.value); });
     //
     references.open = prefs.references;
     //

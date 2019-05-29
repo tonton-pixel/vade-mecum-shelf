@@ -29,11 +29,11 @@ module.exports.start = function (context)
     //
     romanSample.textContent = "MMXVIII";
     arabicOutput.value = numerals.romanToArabic (romanInput.value = prefs.romanInput);
-    romanInput.addEventListener ('input', (event) => { arabicOutput.value = numerals.romanToArabic (event.target.value); });
+    romanInput.addEventListener ('input', (event) => { arabicOutput.value = numerals.romanToArabic (event.currentTarget.value); });
     //
     arabicSample.textContent = "2018";
     romanOutput.value = numerals.arabicToRoman (arabicInput.value = prefs.arabicInput);
-    arabicInput.addEventListener ('input', (event) => { romanOutput.value = numerals.arabicToRoman (event.target.value) });
+    arabicInput.addEventListener ('input', (event) => { romanOutput.value = numerals.arabicToRoman (event.currentTarget.value) });
     //
     notes.open = prefs.notes;
     //

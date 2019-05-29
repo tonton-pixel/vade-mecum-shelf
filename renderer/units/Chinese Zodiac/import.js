@@ -24,18 +24,18 @@ module.exports.start = function (context)
     //
     const animals = require ('./animals.json');
     //
-    const englishIndex = keyIndex.build (animals, "english", (a, b) => a.localeCompare (b, 'en'));
-    const chineseIndex = keyIndex.build (animals, "chinese", (a, b) => a.localeCompare (b, 'zh'));
-    const japaneseIndex = keyIndex.build (animals, "japanese", (a, b) => a.localeCompare (b, 'ja'));
-    const yearsIndex = keyIndex.build (animals, "years", (a, b) => a.localeCompare (b, 'ja'));
+    const englishIndex = keyIndex.build (animals, 'english', (a, b) => a.localeCompare (b, 'en'));
+    const chineseIndex = keyIndex.build (animals, 'chinese', (a, b) => a.localeCompare (b, 'zh'));
+    const japaneseIndex = keyIndex.build (animals, 'japanese', (a, b) => a.localeCompare (b, 'ja'));
+    const yearsIndex = keyIndex.build (animals, 'years', (a, b) => a.localeCompare (b, 'ja'));
     //
     let table = tables.create
     (
         [
-            { label: "Sign", className: 'english', key: "english", lang: 'en' },
-            { label: "中文", className: 'chinese', key: "chinese", lang: 'zh' },
-            { label: "日本語", className: 'japanese', key: "japanese", lang: 'ja' },
-            { label: "Years", className: 'years', key: "years" }
+            { label: "Sign", className: 'english', key: 'english', lang: 'en' },
+            { label: "中文", className: 'chinese', key: 'chinese', lang: 'zh' },
+            { label: "日本語", className: 'japanese', key: 'japanese', lang: 'ja' },
+            { label: "Years", className: 'years', key: 'years' }
         ],
         { label: "No Match", className: 'message' },
         animals,
@@ -60,7 +60,7 @@ module.exports.start = function (context)
     liveSearch.lang = 'en';
     liveSearch.placeholder = "Search";
     doSearch (liveSearch.value = prefs.liveSearch);
-    liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
+    liveSearch.addEventListener ('input', (event) => { doSearch (event.currentTarget.value); });
     //
     notes.open = prefs.notes;
     //

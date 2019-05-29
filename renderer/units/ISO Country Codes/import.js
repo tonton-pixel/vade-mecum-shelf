@@ -21,19 +21,19 @@ module.exports.start = function (context)
     //
     const codes = require ('./codes.json');
     //
-    const numericIndex = keyIndex.build (codes, "numeric", (a, b) => a - b); // Not used yet...
-    const alpha2Index = keyIndex.build (codes, "alpha-2", (a, b) => a.localeCompare (b));
-    const alpha3Index = keyIndex.build (codes, "alpha-3", (a, b) => a.localeCompare (b));
-    const englishIndex = keyIndex.build (codes, "english", (a, b) => a.localeCompare (b, 'en'));
-    const frenchIndex = keyIndex.build (codes, "french", (a, b) => a.localeCompare (b, 'fr'));
+    const numericIndex = keyIndex.build (codes, 'numeric', (a, b) => a - b); // Not used yet...
+    const alpha2Index = keyIndex.build (codes, 'alpha-2', (a, b) => a.localeCompare (b));
+    const alpha3Index = keyIndex.build (codes, 'alpha-3', (a, b) => a.localeCompare (b));
+    const englishIndex = keyIndex.build (codes, 'english', (a, b) => a.localeCompare (b, 'en'));
+    const frenchIndex = keyIndex.build (codes, 'french', (a, b) => a.localeCompare (b, 'fr'));
     //
     let table = tables.create
     (
         [
-            { label: "Alpha-2", className: 'code', key: "alpha-2" },
-            { label: "Alpha-3", className: 'code', key: "alpha-3" },
-            { label: "English", className: 'country', key: "english", lang: 'en' },
-            { label: "Français", className: 'country', key: "french", lang: 'fr' }
+            { label: "Alpha-2", className: 'code', key: 'alpha-2' },
+            { label: "Alpha-3", className: 'code', key: 'alpha-3' },
+            { label: "English", className: 'country', key: 'english', lang: 'en' },
+            { label: "Français", className: 'country', key: 'french', lang: 'fr' }
         ],
         { label: "No Match", className: 'message', lang: 'en' },
         codes,
@@ -57,7 +57,7 @@ module.exports.start = function (context)
     //
     liveSearch.placeholder = "Search";
     doSearch (liveSearch.value = prefs.liveSearch);
-    liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
+    liveSearch.addEventListener ('input', (event) => { doSearch (event.currentTarget.value); });
     //
     references.open = prefs.references;
     //

@@ -56,7 +56,7 @@ module.exports.start = function (context)
         'click',
         (event) =>
         {
-            pullDownMenus.popup (event.target.getBoundingClientRect (), samplesMenu);
+            pullDownMenus.popup (event.currentTarget, samplesMenu);
         }
     );
     //
@@ -80,7 +80,7 @@ module.exports.start = function (context)
                 output = (balancedSpacing.checked ? json : JSON).stringify (JSON.parse (input), null, space);
                 if (finalLineBreak.checked)
                 {
-                    output += '\n';
+                    output += "\n";
                 }
             }
             catch (e)
@@ -100,7 +100,7 @@ module.exports.start = function (context)
         }
     }
     //
-    inputString.addEventListener ('input', (event) => reformat (event.target.value));
+    inputString.addEventListener ('input', (event) => reformat (event.currentTarget.value));
     inputString.value = prefs.inputString;
     inputString.dispatchEvent (new Event ('input'));
     //
@@ -115,7 +115,7 @@ module.exports.start = function (context)
         spaceType.selectedIndex = 0;
     }
     changeSpaceType (spaceType.value);
-    spaceType.addEventListener ('input', (event) => { changeSpaceType (event.target.value); });
+    spaceType.addEventListener ('input', (event) => { changeSpaceType (event.currentTarget.value); });
     //
     function changeBalancedSpacing (checked)
     {
@@ -123,7 +123,7 @@ module.exports.start = function (context)
     }
     //
     changeBalancedSpacing (balancedSpacing.checked = prefs.balancedSpacing);
-    balancedSpacing.addEventListener ('click', (event) => { changeBalancedSpacing (event.target.checked); });
+    balancedSpacing.addEventListener ('click', (event) => { changeBalancedSpacing (event.currentTarget.checked); });
     //
     function changeFinalLineBreak (checked)
     {
@@ -131,7 +131,7 @@ module.exports.start = function (context)
     }
     //
     changeFinalLineBreak (finalLineBreak.checked = prefs.finalLineBreak);
-    finalLineBreak.addEventListener ('click', (event) => { changeFinalLineBreak (event.target.checked); });
+    finalLineBreak.addEventListener ('click', (event) => { changeFinalLineBreak (event.currentTarget.checked); });
     //
     references.open = prefs.references;
     //

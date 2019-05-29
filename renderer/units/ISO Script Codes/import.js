@@ -21,16 +21,16 @@ module.exports.start = function (context)
     //
     const codes = require ('./codes.json');
     //
-    const codeIndex = keyIndex.build (codes, "code", (a, b) => a.localeCompare (b));
-    const englishIndex = keyIndex.build (codes, "english", (a, b) => a.localeCompare (b, 'en'));
-    const frenchIndex = keyIndex.build (codes, "french", (a, b) => a.localeCompare (b, 'fr'));
+    const codeIndex = keyIndex.build (codes, 'code', (a, b) => a.localeCompare (b));
+    const englishIndex = keyIndex.build (codes, 'english', (a, b) => a.localeCompare (b, 'en'));
+    const frenchIndex = keyIndex.build (codes, 'french', (a, b) => a.localeCompare (b, 'fr'));
     //
     let table = tables.create
     (
         [
-            { label: "Code", className: 'code', key: "code" },
-            { label: "English", className: 'language', key: "english", lang: 'en' },
-            { label: "Français", className: 'language', key: "french", lang: 'fr' }
+            { label: "Code", className: 'code', key: 'code' },
+            { label: "English", className: 'language', key: 'english', lang: 'en' },
+            { label: "Français", className: 'language', key: 'french', lang: 'fr' }
         ],
         { label: "No Match", className: 'message', lang: 'en' },
         codes,
@@ -54,7 +54,7 @@ module.exports.start = function (context)
     //
     liveSearch.placeholder = "Search";
     doSearch (liveSearch.value = prefs.liveSearch);
-    liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
+    liveSearch.addEventListener ('input', (event) => { doSearch (event.currentTarget.value); });
     //
     references.open = prefs.references;
     //

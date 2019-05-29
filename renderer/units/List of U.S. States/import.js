@@ -28,18 +28,18 @@ module.exports.start = function (context)
         }
     }
     //
-    const abbreviationIndex = keyIndex.build (states, "abbreviation", (a, b) => a.localeCompare (b));
-    const stateIndex = keyIndex.build (states, "state", (a, b) => a.localeCompare (b, 'en'));
-    const capitalIndex = keyIndex.build (states, "capital", (a, b) => a.localeCompare (b, 'en'));
-    const largestIndex = keyIndex.build (states, "largest", (a, b) => a.localeCompare (b, 'en'));
+    const abbreviationIndex = keyIndex.build (states, 'abbreviation', (a, b) => a.localeCompare (b));
+    const stateIndex = keyIndex.build (states, 'state', (a, b) => a.localeCompare (b, 'en'));
+    const capitalIndex = keyIndex.build (states, 'capital', (a, b) => a.localeCompare (b, 'en'));
+    const largestIndex = keyIndex.build (states, 'largest', (a, b) => a.localeCompare (b, 'en'));
     //
     let table = tables.create
     (
         [
-            { label: "Abbreviation", className: 'abbreviation', key: "abbreviation" },
-            { label: "State Name", className: 'state', key: "state", lang: 'en' },
-            { label: "Capital City", className: 'city', key: "capital", lang: 'en' },
-            { label: "Largest City", className: 'city', key: "largest", lang: 'en' }
+            { label: "Abbreviation", className: 'abbreviation', key: 'abbreviation' },
+            { label: "State Name", className: 'state', key: 'state', lang: 'en' },
+            { label: "Capital City", className: 'city', key: 'capital', lang: 'en' },
+            { label: "Largest City", className: 'city', key: 'largest', lang: 'en' }
         ],
         { label: "No Match", className: 'message', lang: 'en' },
         states,
@@ -63,7 +63,7 @@ module.exports.start = function (context)
     //
     liveSearch.placeholder = "Search";
     doSearch (liveSearch.value = prefs.liveSearch);
-    liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
+    liveSearch.addEventListener ('input', (event) => { doSearch (event.currentTarget.value); });
     //
     references.open = prefs.references;
     //

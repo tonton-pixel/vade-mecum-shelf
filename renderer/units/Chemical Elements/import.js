@@ -24,18 +24,18 @@ module.exports.start = function (context)
     //
     const elements = require ('./elements.json');
     //
-    const atomicNumberIndex = keyIndex.build (elements, "atomic-number", (a, b) => a - b);
-    const symbolIndex = keyIndex.build (elements, "symbol", (a, b) => a.localeCompare (b));
-    const englishIndex = keyIndex.build (elements, "english", (a, b) => a.localeCompare (b));
-    const frenchIndex = keyIndex.build (elements, "french", (a, b) => a.localeCompare (b, 'fr'));
+    const atomicNumberIndex = keyIndex.build (elements, 'atomic-number', (a, b) => a - b);
+    const symbolIndex = keyIndex.build (elements, 'symbol', (a, b) => a.localeCompare (b));
+    const englishIndex = keyIndex.build (elements, 'english', (a, b) => a.localeCompare (b));
+    const frenchIndex = keyIndex.build (elements, 'french', (a, b) => a.localeCompare (b, 'fr'));
     //
     let table = tables.create
     (
         [
-            { label: "Z", className: 'atomic-number', key: "atomic-number" },
-            { label: "Symbol", className: 'symbol', key: "symbol" },
-            { label: "English", className: 'name', key: "english", lang: 'en' },
-            { label: "Français", className: 'name', key: "french", lang: 'fr' }
+            { label: "Z", className: 'atomic-number', key: 'atomic-number' },
+            { label: "Symbol", className: 'symbol', key: 'symbol' },
+            { label: "English", className: 'name', key: 'english', lang: 'en' },
+            { label: "Français", className: 'name', key: 'french', lang: 'fr' }
         ],
         { label: "No Match", className: 'message', lang: 'en' },
         elements,
@@ -59,7 +59,7 @@ module.exports.start = function (context)
     //
     liveSearch.placeholder = "Search";
     doSearch (liveSearch.value = prefs.liveSearch);
-    liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
+    liveSearch.addEventListener ('input', (event) => { doSearch (event.currentTarget.value); });
     //
     notes.open = prefs.notes;
     //

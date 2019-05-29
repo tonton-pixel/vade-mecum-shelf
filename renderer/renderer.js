@@ -23,10 +23,10 @@ webFrame.setLayoutZoomLevelLimits (settings.minZoomLevel, settings.maxZoomLevel)
 function generateTitle (unitName)
 {
     let title = settings.window.titleTemplate
-                    .replace ('{{app}}', appName)
-                    .replace ('{{unit}}', unitName);
+                    .replace ("{{app}}", appName)
+                    .replace ("{{unit}}", unitName);
     let zoomFactor = Math.round (webFrame.getZoomFactor () * 100);
-    return title + ((zoomFactor !== 100) ? settings.window.zoomSuffixTemplate.replace ('{{zoom}}', zoomFactor) : "");
+    return title + ((zoomFactor !== 100) ? settings.window.zoomSuffixTemplate.replace ("{{zoom}}", zoomFactor) : "");
 }
 //
 if (settings.unitsMenu)

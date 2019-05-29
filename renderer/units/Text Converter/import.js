@@ -72,7 +72,7 @@ module.exports.start = function (context)
     //
     for (let tab of tabs)
     {
-        tab.addEventListener ('click', (event) => { updateTab (event.target.parentElement.textContent); });
+        tab.addEventListener ('click', (event) => { updateTab (event.currentTarget.parentElement.textContent); });
     }
     //
     defaultFolderPath = prefs.defaultFolderPath;
@@ -138,7 +138,7 @@ module.exports.start = function (context)
         encoderOutputString.value = output;
     }
     //
-    encoderInputString.addEventListener ('input', (event) => encode (event.target.value));
+    encoderInputString.addEventListener ('input', (event) => encode (event.currentTarget.value));
     encoderInputString.value = prefs.encoderInputString;
     encoderInputString.dispatchEvent (new Event ('input'));
     //
@@ -153,7 +153,7 @@ module.exports.start = function (context)
         encoderConversionType.selectedIndex = 0;
     }
     changeEncoderConversionType (encoderConversionType.value);
-    encoderConversionType.addEventListener ('input', (event) => { changeEncoderConversionType (event.target.value); });
+    encoderConversionType.addEventListener ('input', (event) => { changeEncoderConversionType (event.currentTarget.value); });
     //
     encoderLoadButton.addEventListener
     (
@@ -285,7 +285,7 @@ module.exports.start = function (context)
         }
     }
     //
-    decoderInputString.addEventListener ('input', (event) => decode (event.target.value));
+    decoderInputString.addEventListener ('input', (event) => decode (event.currentTarget.value));
     decoderInputString.value = prefs.decoderInputString;
     decoderInputString.dispatchEvent (new Event ('input'));
     //
@@ -300,7 +300,7 @@ module.exports.start = function (context)
         decoderConversionType.selectedIndex = 0;
     }
     changeDecoderConversionType (decoderConversionType.value);
-    decoderConversionType.addEventListener ('input', (event) => { changeDecoderConversionType (event.target.value); });
+    decoderConversionType.addEventListener ('input', (event) => { changeDecoderConversionType (event.currentTarget.value); });
     //
     decoderLoadButton.addEventListener
     (

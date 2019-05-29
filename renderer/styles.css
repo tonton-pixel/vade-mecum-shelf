@@ -508,6 +508,11 @@ button.pull-down-menu:active
     padding: 0.25em 0.5em;
 }
 
+button.pull-down-menu.open
+{
+    background: var(--color-border);
+}
+
 button.pull-down-menu::after
 {
     content: "\A0\A0▾";

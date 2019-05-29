@@ -66,7 +66,7 @@ module.exports.start = function (context)
     }
     displayCategory (selectCategory.value);
     //
-    selectCategory.addEventListener ('input', (event) => { displayCategory (event.target.value); });
+    selectCategory.addEventListener ('input', (event) => { displayCategory (event.currentTarget.value); });
     //
     references.open = prefs.references;
     //

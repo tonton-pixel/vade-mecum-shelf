@@ -407,35 +407,35 @@
         [
             {
                 "name": "Unique ID",
-                "value": "require ('electron').screen.getPrimaryDisplay ().id"
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().id"
             },
             {
                 "name": "Rotation",
-                "value": "require ('electron').screen.getPrimaryDisplay ().rotation"
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().rotation"
             },
             {
                 "name": "Scale Factor",
-                "value": "require ('electron').screen.getPrimaryDisplay ().scaleFactor"
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().scaleFactor"
             },
             {
                 "name": "Touch Support",
-                "value": "require ('electron').screen.getPrimaryDisplay ().touchSupport"
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().touchSupport"
             },
             {
                 "name": "Screen Bounds",
-                "value": "require ('electron').screen.getPrimaryDisplay ().bounds"
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().bounds"
             },
             {
                 "name": "Screen Size",
-                "value": "require ('electron').screen.getPrimaryDisplay ().size"
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().size"
             },
             {
                 "name": "Work Area Bounds",
-                "value": "require ('electron').screen.getPrimaryDisplay ().workArea"
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().workArea"
             },
             {
                 "name": "Work Area Size",
-                "value": "require ('electron').screen.getPrimaryDisplay ().workAreaSize"
+                "value": "require ('electron').remote.screen.getPrimaryDisplay ().workAreaSize"
             }
         ]
     },

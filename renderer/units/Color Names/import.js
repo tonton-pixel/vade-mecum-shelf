@@ -96,8 +96,8 @@ module.exports.start = function (context)
         (event) =>
         {
             setTables[currentSet].classList.remove ('is-shown');
-            setTables[currentSet = event.target.value].classList.add ('is-shown');
-            event.target.title = setTables[currentSet].dataset.info;
+            setTables[currentSet = event.currentTarget.value].classList.add ('is-shown');
+            event.currentTarget.title = setTables[currentSet].dataset.info;
         }
     );
     //
@@ -161,7 +161,7 @@ module.exports.start = function (context)
     //
     liveSearch.placeholder = "Search";
     doSearch (liveSearch.value = prefs.liveSearch);
-    liveSearch.addEventListener ('input', (event) => { doSearch (event.target.value); });
+    liveSearch.addEventListener ('input', (event) => { doSearch (event.currentTarget.value); });
     //
     references.open = prefs.references;
     //

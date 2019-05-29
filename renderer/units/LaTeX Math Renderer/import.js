@@ -65,7 +65,7 @@ module.exports.start = function (context)
         'click',
         (event) =>
         {
-            pullDownMenus.popup (event.target.getBoundingClientRect (), samplesMenu);
+            pullDownMenus.popup (event.currentTarget, samplesMenu);
         }
     );
     //
@@ -100,7 +100,7 @@ module.exports.start = function (context)
             fileDialogs.saveTextFile
             (
                 "Save LaTeX file:",
-                [ { name: 'LaTeX (*.tex)', extensions: [ 'tex' ] } ],
+                [ { name: "LaTeX (*.tex)", extensions: [ 'tex' ] } ],
                 defaultFolderPath,
                 (filePath) =>
                 {
@@ -134,7 +134,7 @@ module.exports.start = function (context)
         latexContainer.innerHTML = html;
     }
     //
-    latexFormula.addEventListener ('input', (event) => renderLatex (event.target.value));
+    latexFormula.addEventListener ('input', (event) => renderLatex (event.currentTarget.value));
     latexFormula.value = prefs.latexFormula;
     latexFormula.dispatchEvent (new Event ('input'));
     //
@@ -145,7 +145,7 @@ module.exports.start = function (context)
     }
     //
     changeDisplayMode (displayMode.checked = prefs.displayMode);
-    displayMode.addEventListener ('click', (event) => { changeDisplayMode (event.target.checked); });
+    displayMode.addEventListener ('click', (event) => { changeDisplayMode (event.currentTarget.checked); });
     //
     function changeTextColor (checked)
     {
@@ -154,7 +154,7 @@ module.exports.start = function (context)
     }
     //
     changeTextColor (textColor.checked = prefs.textColor);
-    textColor.addEventListener ('click', (event) => { changeTextColor (event.target.checked); });
+    textColor.addEventListener ('click', (event) => { changeTextColor (event.currentTarget.checked); });
     //
     function changeThrowOnError (checked)
     {
@@ -163,7 +163,7 @@ module.exports.start = function (context)
     }
     //
     changeThrowOnError (throwOnError.checked = prefs.throwOnError);
-    throwOnError.addEventListener ('click', (event) => { changeThrowOnError (event.target.checked); });
+    throwOnError.addEventListener ('click', (event) => { changeThrowOnError (event.currentTarget.checked); });
     //
     references.open = prefs.references;
     //

@@ -87,8 +87,8 @@ else
             );
             if (process.platform !== 'darwin')
             {
-                licenseWindow.setMenu (new Menu ()); // Partial workaround for Electron 4.0.x on Linux
-                licenseWindow.setMenu (null);
+                licenseWindow.setMenu (new Menu ()); // Partial workaround for Electron 4.x.x or 5.x.x on Linux
+                licenseWindow.removeMenu ();
             }
             licenseWindow.loadFile ('license.html');
             licenseWindow.once ('ready-to-show', () => { licenseWindow.show (); });
@@ -136,7 +136,7 @@ else
             [ "CPU Model", os.cpus ()[0].model ],
             [ "CPU Speed (MHz)", os.cpus ()[0].speed ]
         ];
-        let systemInfo = infos.map (info => (Array.isArray (info) ? `${info[0]}: ${info[1]}` : info) + '\n').join ('');
+        let systemInfo = infos.map (info => (Array.isArray (info) ? `${info[0]}: ${info[1]}` : info) + "\n").join ("");
         clipboard.writeText (systemInfo);
     }
     //

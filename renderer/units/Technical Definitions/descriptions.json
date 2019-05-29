@@ -448,6 +448,10 @@
                 "details": "Operating System"
             },
             {
+                "term": "OPML",
+                "details": "Outline Processor Markup Language"
+            },
+            {
                 "term": "OSI",
                 "details": "Open Source Initiative"
             },
@@ -494,6 +498,10 @@
             {
                 "term": "RAM",
                 "details": "Random Access Memory"
+            },
+            {
+                "term": "RDF",
+                "details": "Resource Description Framework"
             },
             {
                 "term": "RFC",
