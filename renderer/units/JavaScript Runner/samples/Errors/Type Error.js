@@ -1,2 +1,0 @@
-// Type Error
-null.length;
