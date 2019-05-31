@@ -6,19 +6,7 @@ This app works on Mac OS X, Linux and Windows operating systems.
 
 Its *look and feel* is partly inspired by the brilliant [Electron API Demos](https://github.com/electron/electron-api-demos) app, but it makes use of a more dynamic modular approach: each utility is made of an independent, self-contained folder including all necessary files.
 
-**Important**: the following developer-oriented utilities have been moved to a new app named **Tutti Quanti Shelf** available on its own [GitHub repository](https://github.com/tonton-pixel/tutti-quanti-shelf):
-
-- **CIDR Calculator**
-- **CSS Cursors Demo**
-- **Digital Clock**
-- **IETF Language Tags**
-- **JavaScript Parser**
-- **JavaScript Runner**
-- **JSON Formatter**
-- **LaTeX Math Renderer**
-- **Roman Numerals**
-- **System Information**
-- **Text Converter**
+**Important**: the following developer-oriented utilities have been moved to a new app named [Tutti Quanti Shelf](https://github.com/tonton-pixel/tutti-quanti-shelf): **CIDR Calculator**, **CSS Cursors Demo**, **Digital Clock**, **IETF Language Tags**, **JavaScript Parser**, **JavaScript Runner**, **JSON Formatter**, **LaTeX Math Renderer**, **Roman Numerals**, **System Information**, **Text Converter**.
 
 ## Utilities
 
