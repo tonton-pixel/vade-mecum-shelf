@@ -44,6 +44,7 @@ Lists of color names, with live search:
 
 * W3C Color Names
 * X11 Color Names
+* XKCD Color Names
 * Mac OS X Crayons
 
 <img src="screenshots/color-names.png" width="1080px" alt="Color Names screenshot">

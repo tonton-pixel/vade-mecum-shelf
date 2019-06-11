@@ -124,6 +124,10 @@ else
             [ "Node Version", process.versions.node ],
             [ "V8 Version", process.versions.v8 ],
             [ "Chromium Version", process.versions.chrome ],
+            [ "ICU Version", process.versions.icu ],
+            [ "Unicode Version", process.versions.unicode ],
+            // [ "CLDR Version", process.versions.cldr ],
+            // [ "Time Zone Version", process.versions.tz ],
             "",
             "-- Operating System --",
             "",
@@ -384,7 +388,7 @@ else
         mainWindow = new BrowserWindow
         (
             {
-                icon: (process.platform === 'linux') && path.join (__dirname, '..', 'icons', 'icon-256.png'),
+                icon: (process.platform === 'linux') && path.join (__dirname, 'icons', 'icon-256.png'),
                 center: true,
                 x: windowBounds.x,
                 y: windowBounds.y,

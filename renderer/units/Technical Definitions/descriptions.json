@@ -808,6 +808,10 @@
             {
                 "term": "10.14",
                 "details": "Mojave"
+            },
+            {
+                "term": "10.15",
+                "details": "Catalina"
             }
         ]
     },

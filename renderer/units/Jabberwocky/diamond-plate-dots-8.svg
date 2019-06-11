@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
-	<g fill="white">
-		<polygon points="3,0 1,2 2,3 5,0" />
-		<polygon points="0,5 2,7 3,6 0,3" />
-		<polygon points="5,8 7,6 6,5 3,8" />
-		<polygon points="8,3 6,1 5,2 8,5" />
+    <g fill="white">
+        <polygon points="3,0 1,2 2,3 5,0" />
+        <polygon points="0,5 2,7 3,6 0,3" />
+        <polygon points="5,8 7,6 6,5 3,8" />
+        <polygon points="8,3 6,1 5,2 8,5" />
 
-		<polygon points="3,4 4,5 5,4 4,3" />
+        <polygon points="3,4 4,5 5,4 4,3" />
 
-		<polygon points="0,0 0,1 1,0" />
-		<polygon points="0,8 1,8 0,7" />
-		<polygon points="8,8 8,7 7,8" />
-		<polygon points="8,0 7,0 8,1" />
-	</g>
+        <polygon points="0,0 0,1 1,0" />
+        <polygon points="0,8 1,8 0,7" />
+        <polygon points="8,8 8,7 7,8" />
+        <polygon points="8,0 7,0 8,1" />
+    </g>
 </svg>

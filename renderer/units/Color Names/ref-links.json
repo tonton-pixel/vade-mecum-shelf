@@ -94,5 +94,19 @@
             "name": "Shades of purple - Wikipedia",
             "href": "https://en.wikipedia.org/wiki/Shades_of_purple"
         }
+    ],
+    [
+        {
+            "name": "Color Survey Results | xkcd",
+            "href": "https://blog.xkcd.com/2010/05/03/color-survey-results/"
+        },
+        {
+            "name": "The 954 most common RGB monitor colors",
+            "href": "https://xkcd.com/color/rgb/"
+        },
+        {
+            "name": "/xkcd.com/color/rgb.txt",
+            "href": "https://xkcd.com/color/rgb.txt"
+        }
     ]
 ]
