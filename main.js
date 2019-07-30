@@ -22,7 +22,8 @@ else
                 {
                     mainWindow.restore ();
                 }
-                mainWindow.focus ();
+                // mainWindow.focus ();
+                mainWindow.show (); // Work around Electron v6.x.x bug on macOS...
             }
         }
     );

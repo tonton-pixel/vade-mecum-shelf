@@ -51,6 +51,10 @@ module.exports.start = function (context)
             definition.appendChild (term);
             let details = document.createElement ('dd');
             details.className = 'details';
+            if (item.extra)
+            {
+                details.title = item.extra;
+            }
             details.innerHTML = item.details;
             definition.appendChild (details);
             list.appendChild (definition);

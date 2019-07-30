@@ -60,6 +60,10 @@
                 "details": "Creative Commons"
             },
             {
+                "term": "CDN",
+                "details": "Content Delivery Network<br>Content Distribution Network"
+            },
+            {
                 "term": "CGI",
                 "details": "Common Gateway Interface"
             },
@@ -240,12 +244,20 @@
                 "details": "Internet Corporation for Assigned Names and Numbers"
             },
             {
+                "term": "ICT",
+                "details": "Information and Communications Technology"
+            },
+            {
                 "term": "ICU",
                 "details": "International Components for Unicode"
             },
             {
                 "term": "IDC",
                 "details": "Ideographic Description Characters"
+            },
+            {
+                "term": "IDE",
+                "details": "Integrated Development Environment"
             },
             {
                 "term": "IDL",
@@ -297,7 +309,7 @@
             },
             {
                 "term": "IRG",
-                "details": "Ideographic Rapporteur Group"
+                "details": "Ideographic Research Group<br>Ideographic Rapporteur Group"
             },
             {
                 "term": "ISO",
@@ -454,6 +466,10 @@
             {
                 "term": "OSI",
                 "details": "Open Source Initiative"
+            },
+            {
+                "term": "P2P",
+                "details": "Peer-To-Peer"
             },
             {
                 "term": "PC",
@@ -648,12 +664,16 @@
                 "details": "Uniform Resource Name"
             },
             {
+                "term": "URO",
+                "details": "Unified Repertoire and Ordering (Unicode Ideographic CJK Characters)"
+            },
+            {
                 "term": "USB",
                 "details": "Universal Serial Bus"
             },
             {
                 "term": "UTC",
-                "details": "Universal Time Coordinated<br>Coordinated Universal Time"
+                "details": "Coordinated Universal Time<br>Unicode Technical Committee"
             },
             {
                 "term": "UTF",
@@ -751,67 +771,83 @@
         [
             {
                 "term": "10.0",
-                "details": "Cheetah"
+                "details": "Cheetah",
+                "extra": "March 2001"
             },
             {
                 "term": "10.1",
-                "details": "Puma"
+                "details": "Puma",
+                "extra": "September 2001"
             },
             {
                 "term": "10.2",
-                "details": "Jaguar"
+                "details": "Jaguar",
+                "extra": "August 2002"
             },
             {
                 "term": "10.3",
-                "details": "Panther"
+                "details": "Panther",
+                "extra": "October 2003"
             },
             {
                 "term": "10.4",
-                "details": "Tiger"
+                "details": "Tiger",
+                "extra": "April 2005"
             },
             {
                 "term": "10.5",
-                "details": "Leopard"
+                "details": "Leopard",
+                "extra": "October 2007"
             },
             {
                 "term": "10.6",
-                "details": "Snow Leopard"
+                "details": "Snow Leopard",
+                "extra": "August 2009"
             },
             {
                 "term": "10.7",
-                "details": "Lion"
+                "details": "Lion",
+                "extra": "July 2011"
             },
             {
                 "term": "10.8",
-                "details": "Mountain Lion"
+                "details": "Mountain Lion",
+                "extra": "July 2012"
             },
             {
                 "term": "10.9",
-                "details": "Mavericks"
+                "details": "Mavericks",
+                "extra": "October 2013"
             },
             {
                 "term": "10.10",
-                "details": "Yosemite"
+                "details": "Yosemite",
+                "extra": "October 2014"
             },
             {
                 "term": "10.11",
-                "details": "El Capitan"
+                "details": "El Capitan",
+                "extra": "September 2015"
             },
             {
                 "term": "10.12",
-                "details": "Sierra"
+                "details": "Sierra",
+                "extra": "September 2016"
             },
             {
                 "term": "10.13",
-                "details": "High Sierra"
+                "details": "High Sierra",
+                "extra": "September 2017"
             },
             {
                 "term": "10.14",
-                "details": "Mojave"
+                "details": "Mojave",
+                "extra": "September 2018"
             },
             {
                 "term": "10.15",
-                "details": "Catalina"
+                "details": "Catalina",
+                "extra": "Fall 2019"
             }
         ]
     },
