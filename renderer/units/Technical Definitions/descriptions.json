@@ -456,12 +456,16 @@
                 "details": "Optical Character Recognition<br>Optical Character Reader"
             },
             {
+                "term": "OPML",
+                "details": "Outline Processor Markup Language"
+            },
+            {
                 "term": "OS",
                 "details": "Operating System"
             },
             {
-                "term": "OPML",
-                "details": "Outline Processor Markup Language"
+                "term": "OSC",
+                "details": "Open Sound Control"
             },
             {
                 "term": "OSI",
@@ -672,6 +676,10 @@
                 "details": "Universal Serial Bus"
             },
             {
+                "term": "USE",
+                "details": "Universal Shaping Engine"
+            },
+            {
                 "term": "UTC",
                 "details": "Coordinated Universal Time<br>Unicode Technical Committee"
             },
@@ -694,6 +702,10 @@
             {
                 "term": "VPN",
                 "details": "Virtual Private Network"
+            },
+            {
+                "term": "VPS",
+                "details": "Virtual Private Server"
             },
             {
                 "term": "VRML",

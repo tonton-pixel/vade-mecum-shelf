@@ -2,7 +2,7 @@
 
 **Vade Mecum Shelf** is a collection of vade mecum-like utilities wrapped into one single app, built with [Electron](https://electronjs.org).
 
-This app works on Mac OS X, Linux and Windows operating systems.
+This app works on macOS, Linux and Windows operating systems.
 
 Its *look and feel* is partly inspired by the brilliant [Electron API Demos](https://github.com/electron/electron-api-demos) app, but it makes use of a more dynamic modular approach: each utility is made of an independent, self-contained folder including all necessary files.
 
@@ -145,7 +145,7 @@ npm start
 If you don't wish to clone, you can [download the source code](https://github.com/tonton-pixel/vade-mecum-shelf/archive/master.zip).
 
 Several scripts are also defined in the `package.json` file to build OS-specific bundles of the app, using the simple yet powerful [Electron Packager](https://github.com/electron-userland/electron-packager) Node module.\
-For instance, running the following command will create a `Vade Mecum Shelf.app` version for Mac OS X:
+For instance, running the following command will create a `Vade Mecum Shelf.app` version for macOS:
 
 ```bash
 npm run build-darwin
@@ -153,7 +153,7 @@ npm run build-darwin
 
 ## Using
 
-You can [download the latest release](https://github.com/tonton-pixel/vade-mecum-shelf/releases) for Mac OS X.
+You can [download the latest release](https://github.com/tonton-pixel/vade-mecum-shelf/releases) for macOS.
 
 ## License
 

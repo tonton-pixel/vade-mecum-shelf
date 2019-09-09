@@ -22,8 +22,7 @@ else
                 {
                     mainWindow.restore ();
                 }
-                // mainWindow.focus ();
-                mainWindow.show (); // Work around Electron v6.x.x bug on macOS...
+                mainWindow.show ();
             }
         }
     );
@@ -45,7 +44,7 @@ else
     //
     const appName = app.getName ();
     const appVersion = app.getVersion ();
-    const appDate = (isPackaged ? fs.statSync (app.getPath ('exe')).birthtime : new Date ()).toISOString ();
+    const appDate = (isPackaged ? fs.statSync (app.getPath ('exe')).ctime : new Date ()).toISOString ();
     //
     let appDirname = app.getAppPath ();
     let unpackedDirname = `${appDirname}.unpacked`;
@@ -97,7 +96,7 @@ else
         }
         else
         {
-            licenseWindow.focus ();
+            licenseWindow.show ();
         }
     }
     //
@@ -116,6 +115,7 @@ else
             "",
             "-- Framework --",
             "",
+            [ "System Version", process.getSystemVersion () ],
             [ "Platform", process.platform ],
             [ "Architecture", process.arch ],
             [ "Default App", process.defaultApp || false ],

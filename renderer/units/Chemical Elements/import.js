@@ -28,6 +28,7 @@ module.exports.start = function (context)
     const symbolIndex = keyIndex.build (elements, 'symbol', (a, b) => a.localeCompare (b));
     const englishIndex = keyIndex.build (elements, 'english', (a, b) => a.localeCompare (b));
     const frenchIndex = keyIndex.build (elements, 'french', (a, b) => a.localeCompare (b, 'fr'));
+    const japaneseIndex = keyIndex.build (elements, 'japanese', (a, b) => a.localeCompare (b, 'ja'));
     //
     let table = tables.create
     (
@@ -35,7 +36,8 @@ module.exports.start = function (context)
             { label: "Z", className: 'atomic-number', key: 'atomic-number' },
             { label: "Symbol", className: 'symbol', key: 'symbol' },
             { label: "English", className: 'name', key: 'english', lang: 'en' },
-            { label: "Français", className: 'name', key: 'french', lang: 'fr' }
+            { label: "Français", className: 'name', key: 'french', lang: 'fr' },
+            { label: "日本語", className: 'name', key: 'japanese', lang: 'ja' }
         ],
         { label: "No Match", className: 'message', lang: 'en' },
         elements,
