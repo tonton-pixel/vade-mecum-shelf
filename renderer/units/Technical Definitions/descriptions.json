@@ -644,6 +644,10 @@
                 "details": "Transport Layer Security"
             },
             {
+                "term": "TSV",
+                "details": "Tab-Separated Values"
+            },
+            {
                 "term": "UCD",
                 "details": "Unicode Character Database"
             },
@@ -859,7 +863,7 @@
             {
                 "term": "10.15",
                 "details": "Catalina",
-                "extra": "Fall 2019"
+                "extra": "October 2019"
             }
         ]
     },
