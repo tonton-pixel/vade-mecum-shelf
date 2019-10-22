@@ -480,6 +480,11 @@ select
     padding: 0.1em 0.2em;
 }
 
+select:disabled
+{
+    border-color: gray;
+}
+
 input[type=checkbox],
 input[type=radio]
 {

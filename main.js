@@ -42,7 +42,7 @@ else
     //
     const isPackaged = !process.defaultApp;
     //
-    const appName = app.getName ();
+    const appName = app.name;
     const appVersion = app.getVersion ();
     const appDate = (isPackaged ? fs.statSync (app.getPath ('exe')).ctime : new Date ()).toISOString ();
     //
@@ -354,11 +354,8 @@ else
     //
     function onAppReady ()
     {
-        if (!settings.unitsMenu)
-        {
-            menu = Menu.buildFromTemplate (menuTemplate);
-            Menu.setApplicationMenu (menu);
-        }
+        menu = Menu.buildFromTemplate (menuTemplate);
+        Menu.setApplicationMenu (menu);
         //
         const Storage = require ('./lib/storage.js');
         const mainStorage = new Storage ('main-preferences');
