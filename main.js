@@ -42,7 +42,7 @@ else
     //
     const isPackaged = !process.defaultApp;
     //
-    const appName = app.name;
+    const appName = app.name || app.getName ();
     const appVersion = app.getVersion ();
     const appDate = (isPackaged ? fs.statSync (app.getPath ('exe')).ctime : new Date ()).toISOString ();
     //

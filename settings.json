@@ -20,7 +20,7 @@
         "zoomSuffixTemplate": " ({{zoom}}%)",
         "deferredShow": true
     },
-    "shortAppName": "Shelf",
+    "shortAppName": "App",
     "unitsName": "Utilities",
     "noCategoryName": "Other",
     "description": "Collection of vade mecum-like utilities wrapped into one single app.",
