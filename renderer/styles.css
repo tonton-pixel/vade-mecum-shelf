@@ -488,10 +488,7 @@ select:disabled
 input[type=checkbox],
 input[type=radio]
 {
-    vertical-align: middle;
     margin: 0;
-    width: 1.25em;
-    height: 1.25em;
     zoom: 1.01;
 }
 
