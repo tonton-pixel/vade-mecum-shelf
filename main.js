@@ -90,7 +90,7 @@ else
                 licenseWindow.setMenu (new Menu ()); // Partial workaround for Electron 4.x.x or 5.x.x on Linux
                 licenseWindow.removeMenu ();
             }
-            licenseWindow.loadFile ('license.html');
+            licenseWindow.loadFile ('license-index.html');
             licenseWindow.once ('ready-to-show', () => { licenseWindow.show (); });
             licenseWindow.on ('close', () => { licenseWindow = null; });
         }
