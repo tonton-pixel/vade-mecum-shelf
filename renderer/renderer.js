@@ -108,6 +108,7 @@ for (let unitFilename of unitFilenames)
             //
             unitImport.name = unitFilename;
             unitImport.category = category;
+            unitImport.htmlFilename = htmlFilename;
             unitImport.URL = pathToURL (htmlFilename);
             //
             let filename = path.join (unitDirname, 'import.js');
@@ -148,7 +149,7 @@ function selectUnit (unitName)
         let currentCategorizedNavButton = unitElements[currentUnitName].categorizedNavButton;
         currentCategorizedNavButton.classList.remove ('is-selected');
         //
-        let section= unitElements[unitName].section;
+        let section = unitElements[unitName].section;
         section.classList.add ('is-shown');
         document.title = generateTitle (unitName);
         let currentSection = unitElements[currentUnitName].section;
@@ -389,53 +390,53 @@ function fixSvgUseFromTemplate (node)
     }
 }
 //
-function importUnit (template, unitImport)
+for (let unitImport of unitImports)
 {
-    if (!template)
+    if (unitImport.cssURL)
     {
-        template = document.createElement ('template');
-        template.innerHTML = '<section><p style="color: var(--color-error)">Error: missing &lt;template&gt; in import.html.</p></section>';
+        let cssLink = document.createElement ('link');
+        cssLink.rel = 'stylesheet';
+        cssLink.href = unitImport.cssURL;
+        document.head.appendChild (cssLink);
     }
-    let templateNode = template.content.cloneNode (true);
-    resolveURLs (templateNode, unitImport.URL);
-    let section = templateNode.querySelector ('section');
-    if (!section)
+    //
+    if (unitImport.htmlFilename)
     {
-        section = document.createElement ('section');
-        section.innerHTML = '<p style="color: var(--color-error)">Error: missing &lt;section&gt; in import.html.</p>';
+        let template = document.createElement ('template');
+        template.innerHTML = fs.readFileSync (unitImport.htmlFilename, 'utf8');
+        let templateNode = template.content.cloneNode (true);
+        resolveURLs (templateNode, unitImport.URL);
+        let section = templateNode.querySelector ('section');
+        unitImport.id = section.id;
+        section.className = 'unit';
+        let sectionTitle = document.createElement ('h1');
+        sectionTitle.className = 'unit-title';
+        sectionTitle.innerHTML = '<svg class="title-icon"><use href="images/symbols.svg#fisheye-symbol"></use></svg>&nbsp;&nbsp;';
+        let h1 = section.querySelector ('h1');
+        if (h1 && h1.innerHTML)
+        {
+            sectionTitle.innerHTML += h1.innerHTML;
+        }
+        else
+        {
+            let textNode = document.createTextNode (unitImport.name);
+            sectionTitle.appendChild (textNode);
+        }
+        if (h1)
+        {
+            h1.remove ();
+        }
+        sectionTitle.normalize ();
+        section.insertBefore (sectionTitle, section.firstChild);
+        main.appendChild (section);
+        fixSvgUseFromTemplate (section);
+        unitElements[unitImport.name].section = section;
     }
-    section.className = 'unit';
-    let sectionTitle = document.createElement ('h1');
-    sectionTitle.className = 'unit-title';
-    sectionTitle.innerHTML = '<svg class="title-icon"><use href="images/symbols.svg#fisheye-symbol"></use></svg>&nbsp;&nbsp;';
-    let h1 = section.querySelector ('h1');
-    if (h1 && h1.innerHTML)
-    {
-        sectionTitle.innerHTML += h1.innerHTML;
-    }
-    else
-    {
-        let textNode = document.createTextNode (unitImport.name);
-        sectionTitle.appendChild (textNode);
-    }
-    if (h1)
-    {
-        h1.remove ();
-    }
-    sectionTitle.normalize ();
-    section.insertBefore (sectionTitle, section.firstChild);
-    if (unitImport.name === currentUnitName)
-    {
-        section.classList.add ('is-shown');
-        document.title = generateTitle (currentUnitName);
-    }
-    main.appendChild (section);
-    fixSvgUseFromTemplate (section);
-    unitElements[unitImport.name].section = section;
+    //
     if (unitImport.filename)
     {
         let unitModule = require (unitImport.filename);
-        let id = section.id;
+        let id = unitImport.id;
         if (id)
         {
             unitImport.storage = new Storage (`${id}-preferences`);
@@ -456,29 +457,6 @@ function importUnit (template, unitImport)
                 unitModule.start (context);
             }
         }
-    }
-}
-//
-for (let unitImport of unitImports)
-{
-    if (unitImport.cssURL)
-    {
-        let cssLink = document.createElement ('link');
-        cssLink.rel = 'stylesheet';
-        cssLink.href = unitImport.cssURL;
-        document.head.appendChild (cssLink);
-    }
-}
-//
-for (let unitImport of unitImports)
-{
-    if (unitImport.URL)
-    {
-        let link = document.createElement ('link');
-        link.rel = 'import';
-        link.href = unitImport.URL;
-        link.onload = function (event) { importUnit (this.import.querySelector ('template'), unitImport); };
-        document.head.appendChild (link);
     }
 }
 //
@@ -549,6 +527,8 @@ getCurrentWebContents ().once
         }
         toggleCategories (showCategories);
         main.classList.add ('is-shown');
+        unitElements[currentUnitName].section.classList.add ('is-shown');
+        document.title = generateTitle (currentUnitName);
         if (settings.unitsMenu)
         {
             ipcRenderer.send ('update-units-menu', unitNames, currentUnitName);
@@ -561,8 +541,8 @@ ipcRenderer.on ('select-unit', (event, unitName) => { selectUnit (unitName); });
 //
 const scroll = require ('./lib/scroll.js');
 //
-ipcRenderer.on ( 'scroll-to-top', () => { scroll.toTop (unitElements[currentUnitName].section); } );
-ipcRenderer.on ( 'scroll-to-bottom', () => { scroll.toBottom (unitElements[currentUnitName].section); } );
+ipcRenderer.on ('scroll-to-top', () => { scroll.toTop (unitElements[currentUnitName].section); });
+ipcRenderer.on ('scroll-to-bottom', () => { scroll.toBottom (unitElements[currentUnitName].section); });
 //
 // Adapted from https://github.com/ten1seven/track-focus
 (function (body)

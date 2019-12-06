@@ -50,7 +50,7 @@ module.exports.start = function (context)
             if (item)
             {
                 let paragraph = document.createElement ('p');
-                paragraph.innerHTML = katex.renderToString (item, { displayMode: true });
+                katex.render (item, paragraph, { displayMode: true });
                 paragraph.title = item;
                 sheet.appendChild (paragraph);
             }
