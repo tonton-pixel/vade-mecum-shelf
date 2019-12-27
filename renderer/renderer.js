@@ -13,9 +13,10 @@ const isPackaged = !remote.process.defaultApp;
 //
 const settings = getGlobal ('settings');
 //
-if (!settings.smartZoom)
+// Visual zoom is disabled by default in Electron
+if (settings.smartZoom)
 {
-    webFrame.setVisualZoomLevelLimits (1, 1);  // Disable smart zoom (double-tap and pinch)
+    webFrame.setVisualZoomLevelLimits (1, 3);  // Enable smart zoom (double-tap and pinch)
 }
 //
 webFrame.setLayoutZoomLevelLimits (settings.minZoomLevel, settings.maxZoomLevel);

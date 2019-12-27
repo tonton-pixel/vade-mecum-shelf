@@ -868,6 +868,138 @@
         ]
     },
     {
+        "category": "Unicode Release Dates",
+        "items":
+        [
+            {
+                "term": "1.1",
+                "details": "June 1993"
+            },
+            {
+                "term": "2.0",
+                "details": "July 1996"
+            },
+            {
+                "term": "2.1",
+                "details": "May 1998"
+            },
+            {
+                "term": "3.0",
+                "details": "September 1999"
+            },
+            {
+                "term": "3.1",
+                "details": "March 2001"
+            },
+            {
+                "term": "3.2",
+                "details": "March 2002"
+            },
+            {
+                "term": "4.0",
+                "details": "April 2003"
+            },
+            {
+                "term": "4.1",
+                "details": "March 2005"
+            },
+            {
+                "term": "5.0",
+                "details": "July 2006"
+            },
+            {
+                "term": "5.1",
+                "details": "March 2008"
+            },
+            {
+                "term": "5.2",
+                "details": "October 2009"
+            },
+            {
+                "term": "6.0",
+                "details": "October 2010"
+            },
+            {
+                "term": "6.1",
+                "details": "January 2012"
+            },
+            {
+                "term": "6.2",
+                "details": "September 2012"
+            },
+            {
+                "term": "6.3",
+                "details": "September 2013"
+            },
+            {
+                "term": "7.0",
+                "details": "June 2014"
+            },
+            {
+                "term": "8.0",
+                "details": "June 2015"
+            },
+            {
+                "term": "9.0",
+                "details": "June 2016"
+            },
+            {
+                "term": "10.0",
+                "details": "June 2017"
+            },
+            {
+                "term": "11.0",
+                "details": "June 2018"
+            },
+            {
+                "term": "12.0",
+                "details": "March 2019"
+            },
+            {
+                "term": "12.1",
+                "details": "May 2019"
+            }
+        ]
+    },
+    {
+        "category": "Emoji Release Dates",
+        "items":
+        [
+            {
+                "term": "1.0",
+                "details": "August 2015"
+            },
+            {
+                "term": "2.0",
+                "details": "November 2015"
+            },
+            {
+                "term": "3.0",
+                "details": "June 2016"
+            },
+            {
+                "term": "4.0",
+                "details": "November 2016"
+            },
+            {
+                "term": "5.0",
+                "details": "June 2017"
+            },
+            {
+                "term": "11.0",
+                "details": "June 2018"
+            },
+            {
+                "term": "12.0",
+                "details": "March 2019"
+            },
+            {
+                "term": "12.1",
+                "details": "October 2019"
+            }
+        ]
+    },
+    {
         "category": "Metric Prefixes | Fractions",
         "items":
         [

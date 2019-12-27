@@ -41,6 +41,26 @@
     ],
     [
         {
+            "name": "Unicode/Versions - Wikibooks, open books for an open world",
+            "href": "https://en.wikibooks.org/wiki/Unicode/Versions"
+        },
+        {
+            "name": "History of Unicode Release and Publication Dates",
+            "href": "https://www.unicode.org/history/publicationdates.html"
+        }
+    ],
+    [
+        {
+            "name": "Emoji Versions, v12.1",
+            "href": "https://unicode.org/emoji/charts/emoji-versions.html"
+        },
+        {
+            "name": "Index of /Public/emoji",
+            "href": "https://unicode.org/Public/emoji/"
+        }
+    ],
+    [
+        {
             "name": "Unit prefix - Wikipedia",
             "href": "https://en.wikipedia.org/wiki/Unit_prefix"
         },
