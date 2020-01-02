@@ -24,7 +24,7 @@
     "unitsName": "Utilities",
     "noCategoryName": "Other",
     "description": "Collection of vade mecum-like utilities wrapped into one single app.",
-    "copyright": "© 2017-2019 Michel MARIANI.",
+    "copyright": "© 2017-2020 Michel MARIANI.",
     "electronApp":
     {
         "label": "Vade Mecum Shelf | Apps | Electron",

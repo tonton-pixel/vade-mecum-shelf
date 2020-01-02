@@ -159,4 +159,4 @@ You can [download the latest release](https://github.com/tonton-pixel/vade-mecum
 
 The MIT License (MIT).
 
-Copyright © 2017-2019 Michel MARIANI.
+Copyright © 2017-2020 Michel MARIANI.

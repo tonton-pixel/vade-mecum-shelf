@@ -44,7 +44,7 @@ else
     //
     const appName = app.name || app.getName ();
     const appVersion = app.getVersion ();
-    const appDate = (isPackaged ? fs.statSync (app.getPath ('exe')).ctime : new Date ()).toISOString ();
+    const appDate = (isPackaged ? fs.statSync (process.resourcesPath).ctime : new Date ()).toISOString ();
     //
     let appDirname = app.getAppPath ();
     let unpackedDirname = `${appDirname}.unpacked`;
