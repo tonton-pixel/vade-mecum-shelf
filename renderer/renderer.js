@@ -504,7 +504,7 @@ document.body.addEventListener
     (event) =>
     {
         let aTag = event.target.closest ('a');
-        if (aTag)
+        if (aTag && (typeof aTag.href === 'string'))
         {
             // if (aTag.href.match (/^http(s?)\:\/\//))
             if (aTag.href.startsWith ("http://") || aTag.href.startsWith ("https://"))
