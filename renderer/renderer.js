@@ -497,19 +497,18 @@ window.addEventListener // *Not* document.addEventListener
     }
 );
 //
-// Open all links in external browser
+// Open all http:// and https:// links in external browser
 document.body.addEventListener
 (
     'click',
     (event) =>
     {
         let aTag = event.target.closest ('a');
-        if (aTag && (typeof aTag.href === 'string'))
+        if (aTag)
         {
-            // if (aTag.href.match (/^http(s?)\:\/\//))
-            if (aTag.href.startsWith ("http://") || aTag.href.startsWith ("https://"))
+            event.preventDefault ();
+            if ((typeof aTag.href === 'string') && (aTag.href.startsWith ("http://") || aTag.href.startsWith ("https://")))
             {
-                event.preventDefault ();
                 let isCommandOrControlClick = (process.platform === 'darwin') ? event.metaKey : event.ctrlKey;
                 shell.openExternal (aTag.href, { activate: !isCommandOrControlClick }); // options are macOS only anyway
             }
