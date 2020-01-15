@@ -507,10 +507,11 @@ document.body.addEventListener
         if (aTag)
         {
             event.preventDefault ();
-            if ((typeof aTag.href === 'string') && (aTag.href.startsWith ("http://") || aTag.href.startsWith ("https://")))
+            let aUrl = aTag.getAttribute ('xlink:href') || aTag.getAttribute ('href');
+            if (aUrl && (aUrl.startsWith ("http://") || aUrl.startsWith ("https://")))
             {
                 let isCommandOrControlClick = (process.platform === 'darwin') ? event.metaKey : event.ctrlKey;
-                shell.openExternal (aTag.href, { activate: !isCommandOrControlClick }); // options are macOS only anyway
+                shell.openExternal (aUrl, { activate: !isCommandOrControlClick }); // options are macOS only anyway
             }
         }
     }
