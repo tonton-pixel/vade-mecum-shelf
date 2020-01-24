@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.3.7
+
+- Added release notes (CHANGES.md).
+- Updated `Electron` to version `7.1.10`.
+
 ## 2.3.6
 
 - Enabled opening of external links in SVG graphs.

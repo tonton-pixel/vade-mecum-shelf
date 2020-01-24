@@ -1,7 +1,7 @@
 {
     "name": "vade-mecum-shelf",
     "productName": "Vade Mecum Shelf",
-    "version": "2.3.6",
+    "version": "2.3.7",
     "description": "Collection of vade mecum-like utilities wrapped into one single app.",
     "main": "main.js",
     "scripts": {
@@ -9,8 +9,7 @@
         "build-darwin": "electron-packager . --asar --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
         "build-linux": "electron-packager . --asar --out=build --platform=linux --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.png --overwrite",
         "build-mas": "electron-packager . --asar --out=build --platform=mas --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
-        "build-win32": "electron-packager . --asar --out=build --platform=win32 --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.ico --overwrite",
-        "build-all": "electron-packager . --asar --out=build --platform=all --ignore=/~.* --ignore=^/screenshots --icon=icons/icon --overwrite"
+        "build-win32": "electron-packager . --asar --out=build --platform=win32 --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.ico --overwrite"
     },
     "keywords": [
         "app",
@@ -31,7 +30,7 @@
     "private": false,
     "dependencies": {},
     "devDependencies": {
-        "electron": "^7.1.9",
+        "electron": "^7.1.10",
         "electron-packager": "^14.2.0"
     }
 }
