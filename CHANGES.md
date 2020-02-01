@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.3.8
+
+- Updated release notes (CHANGES.md).
+- Updated `Electron` to version `7.1.11`.
+
 ## 2.3.7
 
 - Added release notes (CHANGES.md).
@@ -26,7 +31,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ## 2.3.3
 
-- Added Unicode and emoji release dates to the **Technical Definitions** utility.
+- Added lists of `Unicode Release Dates` and `Emoji Release Dates` to the **Technical Definitions** utility.
 - Updated handling of default smart zoom setting.
 - Updated `Electron` to version `7.1.7`.
 
@@ -101,8 +106,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ## 2.0.1
 
-- Added **XKCD Color Names** to the **Color Names** utility.
-- Updated **Mac OS Release Names** in the **Technical Definitions** utility. 
+- Added `XKCD Color Names` to the **Color Names** utility.
+- Updated `Mac OS Release Names` in the **Technical Definitions** utility. 
 - Added `Unicode` and `ICU` versions to the system information copied to clipboard.
 - Fixed window icon in Linux.
 - Updated `Electron` to version `5.0.3`.
@@ -261,7 +266,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ## 1.5.0
 
-- Added the **Technical Definitions** utility: lists of technical definitions (computing  abbreviations, Mac OS release names, unit prefixes).
+- Added the **Technical Definitions** utility: lists of technical definitions (`Computing Abbreviations`, `Mac OS Release Names`, `Unit Prefixes`).
 - Reorganized data of the **System Information** utility.
 - Added new table fields to the **Departments of France** and **List of U.S. States** utilities.
 - Hierarchized samples of the **JavaScript Runner** utility.

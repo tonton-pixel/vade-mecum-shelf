@@ -420,6 +420,11 @@ kbd
     margin-top: -0.5em;
 }
 
+textarea
+{
+    border-color: #a9a9a9;
+}
+
 button.mouse-focus,
 input[type=button].mouse-focus,
 input[type=checkbox].mouse-focus,
