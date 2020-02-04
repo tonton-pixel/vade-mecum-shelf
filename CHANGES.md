@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.4.0
+
+- Revamped the zoom level actions (`Actual Size`, `Zoom In`, `Zoom Out`) of the `View` menu.
+- Updated `Electron` to version `8.0.0`.
+
 ## 2.3.8
 
 - Updated release notes (CHANGES.md).

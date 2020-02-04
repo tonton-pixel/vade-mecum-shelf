@@ -13,13 +13,29 @@ const isPackaged = !remote.process.defaultApp;
 //
 const settings = getGlobal ('settings');
 //
+const Storage = require ('../lib/storage.js');
+const rendererStorage = new Storage ('renderer-preferences');
+//
+const defaultPrefs =
+{
+    zoomLevel: 0,
+    currentUnitName: "",
+    showSidebar: true,
+    showCategories: true
+};
+let prefs = rendererStorage.get (defaultPrefs);
+//
+webFrame.setZoomLevel (prefs.zoomLevel);
+//
+ipcRenderer.on ('reset-zoom', () => webFrame.setZoomLevel (0));
+ipcRenderer.on ('zoom-in', () => webFrame.setZoomLevel (Math.min (webFrame.getZoomLevel () + 0.5, settings.maxZoomLevel)));
+ipcRenderer.on ('zoom-out', () => webFrame.setZoomLevel (Math.max (webFrame.getZoomLevel () - 0.5, settings.minZoomLevel)));
+//
 // Visual zoom is disabled by default in Electron
 if (settings.smartZoom)
 {
     webFrame.setVisualZoomLevelLimits (1, 3);  // Enable smart zoom (double-tap and pinch)
 }
-//
-webFrame.setLayoutZoomLevelLimits (settings.minZoomLevel, settings.maxZoomLevel);
 //
 function generateTitle (unitName)
 {
@@ -176,16 +192,6 @@ let main = document.createElement ('main');
 main.className = 'main';
 document.body.appendChild (main);
 //
-const Storage = require ('../lib/storage.js');
-const rendererStorage = new Storage ('renderer-preferences');
-//
-const defaultPrefs =
-{
-    currentUnitName: "",
-    showSidebar: true,
-    showCategories: true
-};
-let prefs = rendererStorage.get (defaultPrefs);
 let currentUnitName = prefs.currentUnitName;
 let showSidebar = prefs.showSidebar;
 let showCategories = prefs.showCategories;
@@ -468,6 +474,7 @@ window.addEventListener // *Not* document.addEventListener
     {
         let prefs =
         {
+            zoomLevel: webFrame.getZoomLevel (),
             currentUnitName: currentUnitName,
             showSidebar: showSidebar,
             showCategories: showCategories

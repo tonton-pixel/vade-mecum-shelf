@@ -219,9 +219,9 @@ else
             { label: "Scroll to Top", accelerator: 'CommandOrControl+T', click: () => { mainWindow.webContents.send ('scroll-to-top'); } },
             { label: "Scroll to Bottom", accelerator: 'CommandOrControl+B', click: () => { mainWindow.webContents.send ('scroll-to-bottom'); } },
             { type: 'separator' },
-            { role: 'resetzoom' },
-            { role: 'zoomin' },
-            { role: 'zoomout' },
+            { label: "Actual Size", accelerator: 'CommandOrControl+0', click: () => { mainWindow.webContents.send ('reset-zoom'); } },
+            { label: "Zoom In", accelerator: 'CommandOrControl+Plus', click: () => { mainWindow.webContents.send ('zoom-in'); } },
+            { label: "Zoom Out", accelerator: 'CommandOrControl+-', click: () => { mainWindow.webContents.send ('zoom-out'); } },
             { type: 'separator' },
             { role: 'togglefullscreen' }
         ]
