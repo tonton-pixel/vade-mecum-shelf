@@ -1,7 +1,7 @@
 {
     "name": "vade-mecum-shelf",
     "productName": "Vade Mecum Shelf",
-    "version": "2.4.0",
+    "version": "2.4.1",
     "description": "Collection of vade mecum-like utilities wrapped into one single app.",
     "main": "main.js",
     "scripts": {
@@ -31,6 +31,6 @@
     "dependencies": {},
     "devDependencies": {
         "electron": "^8.0.0",
-        "electron-packager": "^14.2.0"
+        "electron-packager": "^14.2.1"
     }
 }

@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.4.1
+
+- Updated `KaTeX` to version `0.11.1`.
+- Updated `Electron Packager` to version `14.2.1`.
+
 ## 2.4.0
 
 - Revamped the zoom level actions (`Actual Size`, `Zoom In`, `Zoom Out`) of the `View` menu.
