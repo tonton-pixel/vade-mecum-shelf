@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.4.2
+
+- Updated `Unicode Release Dates` and `Emoji Release Dates` of the **Technical Definitions** utility.
+- Updated `Electron` to version `8.0.1`.
+
 ## 2.4.1
 
 - Updated `KaTeX` to version `0.11.1`.
