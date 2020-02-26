@@ -25,6 +25,7 @@
 #list-of-us-states-unit tr
 {
     user-select: text;
+    cursor: text;
 }
 
 #list-of-us-states-unit tr:nth-child(even)

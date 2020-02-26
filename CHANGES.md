@@ -2,6 +2,14 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.4.3
+
+- Updated `Unicode Release Dates` and `Emoji Release Dates` of the **Technical Definitions** utility.
+- Used text cursor for all user-selectable text.
+- Improved user text selection.
+- Reorganized CSS code architecture.
+- Updated `Electron` to version `8.0.2`.
+
 ## 2.4.2
 
 - Updated `Unicode Release Dates` and `Emoji Release Dates` of the **Technical Definitions** utility.

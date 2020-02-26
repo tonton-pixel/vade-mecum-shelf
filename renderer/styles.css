@@ -1,21 +1,5 @@
 @charset "utf-8";
 
-:root
-{
-    --color:           hsl(0, 0%, 22%);
-    --color-subtle:    hsl(0, 0%, 44%);
-    --color-strong:    hsl(0, 0%, 11%);
-    --color-border:    hsl(31, 5%, 88%);
-    --color-bg:        hsl(31, 5%, 96%);
-    --color-accent:    hsl(195, 60%, 37%);
-    --color-hover:     hsl(270, 100%, 50%);
-    --color-error:     hsl(0, 100%, 40%);
-    --color-highlight: hsl(55, 100%, 50%);
-    --color-selection: hsl(255, 75%, 60%);
-    --sidebar-duration: calc(1s/10);
-    --sidebar-width: 256px;
-}
-
 :focus
 {
     outline: -webkit-focus-ring-color auto 3px;
@@ -28,21 +12,6 @@
 {
     color: var(--color-bg);
     background-color: var(--color-selection);
-}
-
-:lang(ja)
-{
-    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ 角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "游ゴシック", "YuGothic", "Yu Gothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴ シック", "VL Pゴシック", "VL PGothic", "Noto Sans CJK JP", "TakaoExゴシック", "TakaoExGothic", "IPAex ゴシック", "IPAexGothic", "IPA Pゴシック", "IPAPGothic", sans-serif;
-}
-
-:lang(ko)
-{
-    font-family: "Apple SD Gothic Neo Medium", "AppleGothic", "맑은 고딕", "Malgun Gothic", "돋움 Regular", "Dotum", "UnDotum", "백묵 돋움", "Baekmuk Dotum", "은 돋움 Regular", "Un Dotum", "Noto Sans CJK KR", sans-serif;
-}
-
-:lang(zh)
-{
-    font-family: "PingFang SC", "PingFang TC", "儷黑 Pro", "LiHei Pro Medium", "华文黑体", "STHeiti", "Hei", "微软雅黑", "Microsoft YaHei", "MS Hei", "黑体", "SimHei", "文泉驿微米黑", "WenQuanYi Micro Hei", "Noto Sans CJK SC", "Noto Sans CJK TC", sans-serif;
 }
 
 html
@@ -292,7 +261,7 @@ kbd
 .sidebar .nav-button.is-selected
 {
     background-color: var(--color-accent);
-    color: #fff;
+    color: white;
 }
 
 .sidebar .footer
@@ -448,6 +417,7 @@ input[type=button]
     border: var(--color-accent) 1px solid;
     padding: 0.25em 0.5em;
     color: var(--color-accent);
+    fill: var(--color-accent);
     background-color: white;
 }
 
@@ -470,8 +440,9 @@ button:disabled,
 input[type=button]:disabled,
 input[type=number]:disabled
 {
+    border-color: gray;
     color: gray;
-    border: gray 1px solid;
+    fill: gray;
     background-color: white;
     pointer-events: none;
 }
@@ -511,9 +482,18 @@ button.pull-down-menu:active
     font-weight: normal;
     background: white;
     color: var(--color);
+    fill: var(--color);
     border: 1px solid var(--color-subtle);
     border-radius: 0.4em;
     padding: 0.25em 0.5em;
+}
+
+button.pull-down-menu:disabled
+{
+    border-color: gray;
+    color: gray;
+    fill: gray;
+    pointer-events: none;
 }
 
 button.pull-down-menu.open

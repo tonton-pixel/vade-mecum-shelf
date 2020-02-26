@@ -25,6 +25,7 @@
 #departments-of-france-unit tr
 {
     user-select: text;
+    cursor: text;
 }
 
 #departments-of-france-unit tr:nth-child(even)

@@ -25,6 +25,7 @@
 #chemical-elements-unit tr
 {
     user-select: text;
+    cursor: text;
 }
 
 #chemical-elements-unit tr:nth-child(even)
@@ -50,6 +51,7 @@
     max-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 #chemical-elements-unit th.atomic-number,

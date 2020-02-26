@@ -20,6 +20,7 @@
 {
     vertical-align: middle;
     user-select: text;
+    cursor: text;
 }
 
 #http-status-codes-unit th

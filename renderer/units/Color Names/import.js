@@ -59,7 +59,9 @@ module.exports.start = function (context)
             let div = document.createElement ('div');
             div.className = 'swatch';
             div.style.setProperty ('background-color', color.hex);
-            div.title = div.style.getPropertyValue ('background-color'); // Gets automatically converted to rgb() syntax format!
+            div.style.setProperty ('color', color.hex);
+            div.textContent = div.style.getPropertyValue ('color'); // Gets automatically converted to rgb() syntax format!
+            div.title = div.textContent;
             td.appendChild (div);
             tr.appendChild (td);
             table.appendChild (tr);

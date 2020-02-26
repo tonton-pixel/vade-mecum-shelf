@@ -872,6 +872,10 @@
         "items":
         [
             {
+                "term": "1.0",
+                "details": "October 1991"
+            },
+            {
                 "term": "1.1",
                 "details": "June 1993"
             },
@@ -909,7 +913,7 @@
             },
             {
                 "term": "5.1",
-                "details": "March 2008"
+                "details": "April 2008"
             },
             {
                 "term": "5.2",
@@ -971,7 +975,7 @@
         [
             {
                 "term": "1.0",
-                "details": "August 2015"
+                "details": "June 2015"
             },
             {
                 "term": "2.0",
@@ -991,7 +995,7 @@
             },
             {
                 "term": "11.0",
-                "details": "June 2018"
+                "details": "May 2018"
             },
             {
                 "term": "12.0",

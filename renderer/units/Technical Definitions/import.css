@@ -18,13 +18,14 @@
     border-radius: inherit;
     margin-bottom: 1em;
     padding: 0.75em;
+    user-select: text;
+    cursor: text;
 }
 
 #technical-definitions-unit .plain-panel .list
 {
     padding: 0;
     margin: 0.5em 1em 0.75em 1em;
-    user-select: text;
 }
 
 #technical-definitions-unit .plain-panel .list > .definition
