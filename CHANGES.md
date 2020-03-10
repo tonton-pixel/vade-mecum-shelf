@@ -2,6 +2,10 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.4.4
+
+- Updated `Electron` to version `8.1.1`.
+
 ## 2.4.3
 
 - Updated `Unicode Release Dates` and `Emoji Release Dates` of the **Technical Definitions** utility.

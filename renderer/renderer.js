@@ -449,6 +449,7 @@ for (let unitImport of unitImports)
             unitImport.storage = new Storage (`${id}-preferences`);
             let context =
             {
+                app: `${appName} v${appVersion}`,
                 name: unitImport.name,
                 baseURL: unitImport.URL,
                 getPrefs: unitImport.storage.get,
