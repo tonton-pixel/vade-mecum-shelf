@@ -1,7 +1,7 @@
 {
     "name": "vade-mecum-shelf",
     "productName": "Vade Mecum Shelf",
-    "version": "2.4.4",
+    "version": "2.4.5",
     "description": "Collection of vade mecum-like utilities wrapped into one single app.",
     "main": "main.js",
     "scripts": {

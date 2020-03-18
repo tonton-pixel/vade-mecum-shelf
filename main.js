@@ -38,7 +38,6 @@ else
     const fs = require ('fs');
     const os = require ('os');
     const path = require ('path');
-    const url = require ('url');
     //
     const isPackaged = !process.defaultApp;
     //
@@ -89,7 +88,7 @@ else
             {
                 licenseWindow.removeMenu ();
             }
-            licenseWindow.loadFile ('license-index.html');
+            licenseWindow.loadFile (path.join (__dirname, 'license-index.html'));
             licenseWindow.once ('ready-to-show', () => { licenseWindow.show (); });
             licenseWindow.on ('close', () => { licenseWindow = null; });
         }
@@ -402,7 +401,7 @@ else
             }
         );
         //
-        mainWindow.loadURL (url.format ({ protocol: 'file', slashes: true, pathname: path.join (__dirname, 'renderer', 'index.html') }));
+        mainWindow.loadFile (path.join (__dirname, 'renderer', 'index.html'));
         //
         mainWindow.webContents.on ('will-navigate', (event) => { event.preventDefault (); }); // Inhibit drag-and-drop of URL on window
         //

@@ -13,6 +13,8 @@ const isPackaged = !remote.process.defaultApp;
 //
 const settings = getGlobal ('settings');
 //
+const appDefaultFolderPath = app.getPath (settings.defaultFolder);
+//
 const Storage = require ('../lib/storage.js');
 const rendererStorage = new Storage ('renderer-preferences');
 //
@@ -454,7 +456,7 @@ for (let unitImport of unitImports)
                 baseURL: unitImport.URL,
                 getPrefs: unitImport.storage.get,
                 setPrefs: unitImport.storage.set,
-                defaultFolderPath: app.getPath (settings.defaultFolder)
+                defaultFolderPath: appDefaultFolderPath
             };
             if (typeof unitModule === 'function')
             {
