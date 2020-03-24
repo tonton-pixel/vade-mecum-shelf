@@ -6,7 +6,7 @@ const fs = require ('fs');
 const path = require ('path');
 const url = require ('url');
 //
-const appName = app.name || app.getName ();
+const appName = app.name;
 const appVersion = app.getVersion ();
 //
 const isPackaged = !remote.process.defaultApp;

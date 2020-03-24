@@ -41,7 +41,7 @@ else
     //
     const isPackaged = !process.defaultApp;
     //
-    const appName = app.name || app.getName ();
+    const appName = app.name;
     const appVersion = app.getVersion ();
     const appDate = (isPackaged ? fs.statSync (process.resourcesPath).ctime : new Date ()).toISOString ();
     //
