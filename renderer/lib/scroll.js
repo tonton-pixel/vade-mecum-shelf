@@ -1,5 +1,5 @@
 //
-const duration = 250;
+const duration = 200;
 const easing = function (t) { return t * t * t * ((t * ((t * 6) - 15)) + 10); }; // Smootherstep
 //
 function scrollTo (element, to)
