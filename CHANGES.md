@@ -2,6 +2,10 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.5.2
+
+- Updated `Electron` to version `8.2.3`.
+
 ## 2.5.1
 
 - Fixed 1 low severity vulnerability.
