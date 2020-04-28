@@ -2,11 +2,11 @@
 
 **Vade Mecum Shelf** is a collection of vade mecum-like utilities wrapped into one single app, built with [Electron](https://electronjs.org).
 
-This app works on macOS, Linux and Windows operating systems.
+This desktop application works on macOS, Linux and Windows operating systems.
 
-Its *look and feel* is partly inspired by the brilliant [Electron API Demos](https://github.com/electron/electron-api-demos) app, but it makes use of a more dynamic modular approach: each utility is made of an independent, self-contained folder including all necessary files.
+Its *look and feel* is partly inspired by the brilliant [Electron API Demos](https://github.com/electron/electron-api-demos) application, but it makes use of a more dynamic modular approach: each utility is made of an independent, self-contained folder including all necessary files.
 
-**Important**: the following developer-oriented utilities have been moved to a new app named [Tutti Quanti Shelf](https://github.com/tonton-pixel/tutti-quanti-shelf): **CIDR Calculator**, **CSS Cursors Demo**, **Digital Clock**, **IETF Language Tags**, **JavaScript Parser**, **JavaScript Runner**, **JSON Formatter**, **LaTeX Math Renderer**, **Roman Numerals**, **System Information**, **Text Converter**.
+**Important**: the following developer-oriented utilities have been moved to a new application named [Tutti Quanti Shelf](https://github.com/tonton-pixel/tutti-quanti-shelf): **CIDR Calculator**, **CSS Cursors Demo**, **Digital Clock**, **IETF Language Tags**, **JavaScript Parser**, **JavaScript Runner**, **JSON Formatter**, **LaTeX Math Renderer**, **Roman Numerals**, **System Information**, **Text Converter**.
 
 ## Utilities
 
@@ -133,7 +133,7 @@ Sets of trigonometric formulas, by category:
 
 ## Building
 
-You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this app.
+You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this application.
 
 ```bash
 git clone https://github.com/tonton-pixel/vade-mecum-shelf
@@ -144,7 +144,7 @@ npm start
 
 If you don't wish to clone, you can [download the source code](https://github.com/tonton-pixel/vade-mecum-shelf/archive/master.zip).
 
-Several scripts are also defined in the `package.json` file to build OS-specific bundles of the app, using the simple yet powerful [Electron Packager](https://github.com/electron-userland/electron-packager) Node module.\
+Several scripts are also defined in the `package.json` file to build OS-specific bundles of the application, using the simple yet powerful [Electron Packager](https://github.com/electron-userland/electron-packager) Node module.\
 For instance, running the following command will create a `Vade Mecum Shelf.app` version for macOS:
 
 ```bash

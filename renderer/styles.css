@@ -139,7 +139,7 @@ svg.app-color-icon
 code,
 kbd
 {
-    font-family: Monaco, "Noto Mono", monospace;
+    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
     border-radius: 4px;
     padding: 2px 4px;
     white-space: nowrap;

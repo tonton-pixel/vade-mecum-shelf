@@ -64,7 +64,7 @@
 #chemical-elements-unit td.atomic-number,
 #chemical-elements-unit td.symbol
 {
-    font-family: Monaco, "Noto Mono", monospace;
+    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
 }
 
 #chemical-elements-unit th.symbol,

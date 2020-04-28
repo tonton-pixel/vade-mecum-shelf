@@ -74,7 +74,7 @@
 #chinese-zodiac-unit th.years,
 #chinese-zodiac-unit td.years
 {
-    font-family: Monaco, "Noto Mono", monospace;
+    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
     font-size: 0.96em;
     max-width: 0;
     overflow: hidden;

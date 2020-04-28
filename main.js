@@ -272,6 +272,7 @@ else
         submenu:
         [
             { label: "License...", click: showLicense },
+            { type: 'separator' },
             { label: settings.repository.label, click: () => { shell.openExternal (settings.repository.URL); } },
             { label: settings.releases.label, click: () => { shell.openExternal (settings.releases.URL); } }
         ]
@@ -282,8 +283,8 @@ else
         submenu:
         [
             { label: "About...", click: showAboutBox },
-            { type: 'separator' },
             { label: "License...", click: showLicense },
+            { type: 'separator' },
             { label: settings.repository.label, click: () => { shell.openExternal (settings.repository.URL); } },
             { label: settings.releases.label, click: () => { shell.openExternal (settings.releases.URL); } }
         ]

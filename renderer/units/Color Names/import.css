@@ -61,7 +61,7 @@
 
 #color-names-unit td.hex
 {
-    font-family: Monaco, "Noto Mono", monospace;
+    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
 }
 
 #color-names-unit th.color

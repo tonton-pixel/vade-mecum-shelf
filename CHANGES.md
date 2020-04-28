@@ -2,6 +2,13 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.5.3
+
+- Improved display of monospaced fonts on Linux by adding "DejaVu Sans Mono" to the font stack.
+- Updated Help menu.
+- Updated documentation.
+- Updated `Electron` to version `8.2.4`.
+
 ## 2.5.2
 
 - Updated `Electron` to version `8.2.3`.
