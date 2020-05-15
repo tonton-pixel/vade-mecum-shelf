@@ -107,6 +107,8 @@ Lists of technical definitions:
 
 * Computing Abbreviations
 * Mac OS Release Names
+* Unicode Release Dates
+* Emoji Release Dates
 * Metric Prefixes | Fractions
 * Metric Prefixes | Multiples
 * IEC Binary Prefixes | Multiples

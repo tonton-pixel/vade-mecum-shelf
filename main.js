@@ -81,7 +81,11 @@ else
                     maximizable: false,
                     resizable: false,
                     fullscreenable: false,
-                    show: false
+                    show: false,
+                    webPreferences:
+                    {
+                        devTools: false
+                    }
                 }
             );
             if (process.platform !== 'darwin')
@@ -404,6 +408,7 @@ else
         //
         mainWindow.loadFile (path.join (__dirname, 'renderer', 'index.html'));
         //
+        mainWindow.webContents.on ('new-window', (event) => { event.preventDefault (); }); // Prevent openening of a new window by window.open ()
         mainWindow.webContents.on ('will-navigate', (event) => { event.preventDefault (); }); // Inhibit drag-and-drop of URL on window
         //
         mainWindow.once ('close', () => { mainStorage.set ({ windowBounds: mainWindow.getBounds () }); });
