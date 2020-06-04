@@ -13,6 +13,7 @@
     --color-error:     hsl(0, 100%, 40%);
     --color-highlight: hsl(55, 100%, 50%);
     --color-selection: hsl(255, 75%, 60%);
+    --color-focus:     hsl(210, 100%, 67%);
     --sidebar-duration: calc(1s/10);
     --sidebar-width: 256px;
 }

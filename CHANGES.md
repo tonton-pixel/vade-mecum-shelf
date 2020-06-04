@@ -2,6 +2,14 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.7.0
+
+- Updated `Electron` to version `9.0.2`.
+
+## 2.6.1
+
+- Defined platform-independent focus outline color for text areas.
+
 ## 2.6.0
 
 - Improved security.

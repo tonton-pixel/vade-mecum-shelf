@@ -237,8 +237,8 @@ else
             { role: 'reload' },
             { role: 'toggledevtools' },
             { type: 'separator' },
-            { label: "Open User Data Directory", click: () => { shell.openItem (app.getPath ('userData')); } },
-            { label: "Open Temporary Directory", click: () => { shell.openItem (app.getPath ('temp')); } },
+            { label: "Open User Data Directory", click: () => { shell.openPath (app.getPath ('userData')); } },
+            { label: "Open Temporary Directory", click: () => { shell.openPath (app.getPath ('temp')); } },
             { type: 'separator' },
             { label: "Show Executable File", click: () => { shell.showItemInFolder (app.getPath ('exe')); } },
             { type: 'separator' },
@@ -401,7 +401,9 @@ else
                 show: !settings.window.deferredShow,
                 webPreferences:
                 {
-                    nodeIntegration: true
+                    nodeIntegration: true,
+                    enableRemoteModule: true,
+                    spellcheck: false
                 }
             }
         );

@@ -2,10 +2,8 @@
 
 :focus
 {
-    outline: -webkit-focus-ring-color auto 3px;
+    outline: var(--color-focus) auto 3px;
     outline-offset: -2px;
-    /* outline: var(--color-accent) auto 3px; */
-    /* outline: rgb(229, 151, 0) auto 3px; */
 }
 
 :not(input):not(textarea)::selection
@@ -387,11 +385,6 @@ kbd
 .accent-panel ul
 {
     margin-top: -0.5em;
-}
-
-textarea
-{
-    border-color: #a9a9a9;
 }
 
 button.mouse-focus,
