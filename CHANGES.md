@@ -2,13 +2,15 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.8.0
+
+- Defined platform-independent focus outline color for text areas.
+- Updated app building instructions.
+- Updated `Electron` to version `9.0.3`.
+
 ## 2.7.0
 
 - Updated `Electron` to version `9.0.2`.
-
-## 2.6.1
-
-- Defined platform-independent focus outline color for text areas.
 
 ## 2.6.0
 

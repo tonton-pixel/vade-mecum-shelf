@@ -135,7 +135,7 @@ Sets of trigonometric formulas, by category:
 
 ## Building
 
-You'll need [Node.js](https://nodejs.org/) (which comes with [npm](http://npmjs.com/)) installed on your computer in order to build this application.
+You'll need [Node.js](https://nodejs.org/) (which comes with [npm](https://www.npmjs.com/)) installed on your computer in order to build this application.
 
 ### Clone method
 
@@ -150,7 +150,7 @@ npm install
 npm start
 ```
 
-**Note**: to use the clone method, the core tool [Git](https://git-scm.com/) must also be installed.
+**Note**: to use the clone method, the core tool [git](https://www.git-scm.com/) must also be installed.
 
 ### Download method
 
