@@ -9,6 +9,7 @@
                 font-size: 12px;
                 margin: 0;
                 user-select: none;
+                background-color: white;
             }
             div.contents
             {
@@ -52,6 +53,7 @@
         </div>
         <script>
             document.body.addEventListener ('click', (event) => { window.close (); });
+            document.body.addEventListener ('keydown', (event) => { if (event.key === 'Escape') window.close (); });
         </script>
     </body>
 </html>

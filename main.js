@@ -1,6 +1,6 @@
 //
 const electron = require ('electron');
-const { app, BrowserWindow, clipboard, dialog, globalShortcut, ipcMain, Menu, shell } = electron;
+const { app, BrowserWindow, dialog, globalShortcut, ipcMain, Menu, shell } = electron;
 //
 let mainWindow = null;
 //
@@ -76,11 +76,12 @@ else
                     title: `License | ${appName}`,
                     width: 384,
                     height: (process.platform !== 'darwin') ? 480 : 540,
-                    parent: browserWindow,
                     minimizable: false,
                     maximizable: false,
                     resizable: false,
                     fullscreenable: false,
+                    parent: browserWindow,
+                    modal: true,
                     show: false,
                     webPreferences:
                     {
@@ -102,7 +103,7 @@ else
         }
     }
     //
-    function copySystemInfo ()
+function getSystemInfo ()
     {
         const infos =
         [
@@ -143,8 +144,48 @@ else
             [ "CPU Model", os.cpus ()[0].model ],
             [ "CPU Speed (MHz)", os.cpus ()[0].speed ]
         ];
-        let systemInfo = infos.map (info => (Array.isArray (info) ? `${info[0]}: ${info[1]}` : info) + "\n").join ("");
-        clipboard.writeText (systemInfo);
+        return infos.map (info => (Array.isArray (info) ? `${info[0]}: ${info[1]}` : info) + "\n").join ("");
+    }
+    //
+    let systemInfoWindow = null;
+    //
+    function showSystemInfo (menuItem, browserWindow, event)
+    {
+        if (!systemInfoWindow)
+        {
+            systemInfoWindow = new BrowserWindow
+            (
+                {
+                    title: `System Info | ${appName}`,
+                    width: 480,
+                    height: settings.window.defaultHeight,
+                    minimizable: false,
+                    maximizable: false,
+                    resizable: false,
+                    fullscreenable: false,
+                    parent: browserWindow,
+                    modal: true,
+                    show: false,
+                    webPreferences:
+                    {
+                        devTools: false
+                    }
+                }
+            );
+            if (process.platform !== 'darwin')
+            {
+                systemInfoWindow.removeMenu ();
+            }
+            systemInfoWindow.loadFile (path.join (__dirname, 'system-info-index.html'));
+            const script = `document.body.querySelector ('.system-info').value = ${JSON.stringify (getSystemInfo ())};`;
+            systemInfoWindow.webContents.on ('dom-ready', () => { systemInfoWindow.webContents.executeJavaScript (script); });
+            systemInfoWindow.once ('ready-to-show', () => { systemInfoWindow.show (); });
+            systemInfoWindow.on ('close', () => { systemInfoWindow = null; });
+        }
+        else
+        {
+            systemInfoWindow.show ();
+        }
     }
     //
     let defaultWidth;
@@ -240,9 +281,7 @@ else
             { label: "Open User Data Directory", click: () => { shell.openPath (app.getPath ('userData')); } },
             { label: "Open Temporary Directory", click: () => { shell.openPath (app.getPath ('temp')); } },
             { type: 'separator' },
-            { label: "Show Executable File", click: () => { shell.showItemInFolder (app.getPath ('exe')); } },
-            { type: 'separator' },
-            { label: "Copy System Info to Clipboard", click: copySystemInfo }
+            { label: "Show Executable File", click: () => { shell.showItemInFolder (app.getPath ('exe')); } }
         ]
     };
     const darwinWindowMenu =
@@ -276,6 +315,7 @@ else
         submenu:
         [
             { label: "License...", click: showLicense },
+            { label: "System Info...", click: showSystemInfo },
             { type: 'separator' },
             { label: settings.repository.label, click: () => { shell.openExternal (settings.repository.URL); } },
             { label: settings.releases.label, click: () => { shell.openExternal (settings.releases.URL); } }
@@ -288,6 +328,7 @@ else
         [
             { label: "About...", click: showAboutBox },
             { label: "License...", click: showLicense },
+            { label: "System Info...", click: showSystemInfo },
             { type: 'separator' },
             { label: settings.repository.label, click: () => { shell.openExternal (settings.repository.URL); } },
             { label: settings.releases.label, click: () => { shell.openExternal (settings.releases.URL); } }

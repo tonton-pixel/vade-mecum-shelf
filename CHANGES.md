@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 2.9.0
+
+- Added display of `System Info` dialog from the `Help` menu.
+- Updated `Electron` to version `9.0.5`.
+
 ## 2.8.0
 
 - Defined platform-independent focus outline color for text areas.

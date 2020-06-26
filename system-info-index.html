@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-sizing: border-box;
+                user-select: none;
+                background-color: hsl(31, 5%, 96%);
+            }
+            textarea.system-info
+            {
+                font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
+                font-size: 12px;
+                white-space: pre;
+                width: calc(100% - 2*16px);
+                margin: 8px 16px;
+                padding: 0.5em 1em;
+                border: 1px solid gray;
+                resize: none;
+                overflow-y: scroll;
+            }
+            button.close-button
+            {
+                font-size: 13px;
+                font-weight: bold;
+                border: 1px solid gray;
+                border-radius: 0.25em;
+                padding: 0.25em 0.5em;
+                background-color: white;
+                margin: 8px 16px;
+            }
+            :focus
+            {
+                outline: hsl(210, 100%, 67%) auto 3px;
+                outline-offset: -2px;
+            }
+        </style>
+    </head>
+    <body>
+        <textarea class="system-info" rows="35" readonly></textarea>
+        <button class="close-button">Close</button>
+        <script>
+            document.body.querySelector ('.close-button').addEventListener ('click', () => { window.close (); });
+            document.body.addEventListener ('keydown', (event) => { if (event.key === 'Escape') window.close (); });
+        </script>
+    </body>
+</html>

@@ -864,6 +864,11 @@
                 "term": "10.15",
                 "details": "Catalina",
                 "extra": "October 2019"
+            },
+            {
+                "term": "11.0",
+                "details": "Big Sur",
+                "extra": ""
             }
         ]
     },
