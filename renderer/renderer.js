@@ -8,8 +8,7 @@ const url = require ('url');
 //
 const appName = app.name;
 const appVersion = app.getVersion ();
-//
-const isPackaged = !remote.process.defaultApp;
+const appPackaged = app.isPackaged;
 //
 const settings = getGlobal ('settings');
 //
@@ -47,6 +46,8 @@ function generateTitle (unitName)
     let zoomFactor = Math.round (webFrame.getZoomFactor () * 100);
     return title + ((zoomFactor !== 100) ? settings.window.zoomSuffixTemplate.replace ("{{zoom}}", zoomFactor) : "");
 }
+//
+document.title = appName;
 //
 if (settings.unitsMenu)
 {
@@ -111,7 +112,7 @@ for (let unitFilename of unitFilenames)
         description = "",
         developer = false
     } = getConfig (path.join (unitDirname, 'config.json'));
-    if ((!isPackaged) || (!developer) || settings.developerFeatures)
+    if ((!appPackaged) || (!developer) || settings.developerFeatures)
     {
         let htmlFilename = path.join (unitDirname, 'import.html');
         if (fs.existsSync (htmlFilename))

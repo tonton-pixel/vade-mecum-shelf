@@ -133,6 +133,10 @@ Sets of trigonometric formulas, by category:
 
 <img src="screenshots/trigonometric-formulas.png" width="1080px" alt="Trigonometric Formulas screenshot">
 
+## Using
+
+You can [download the latest release](https://github.com/tonton-pixel/vade-mecum-shelf/releases) for macOS.
+
 ## Building
 
 You'll need [Node.js](https://nodejs.org/) (which comes with [npm](https://www.npmjs.com/)) installed on your computer in order to build this application.
@@ -172,10 +176,6 @@ For instance, running the following command (once the dependencies are installed
 # Build macOS (Darwin) application
 npm run build-darwin
 ```
-
-## Using
-
-You can [download the latest release](https://github.com/tonton-pixel/vade-mecum-shelf/releases) for macOS.
 
 ## License
 

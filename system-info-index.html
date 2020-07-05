@@ -3,12 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <style>
+            html
+            {
+                box-sizing: border-box;
+            }
+            *, *::before, *::after
+            {
+                box-sizing: inherit;
+            }
             body
             {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                box-sizing: border-box;
+                padding: 8px;
                 user-select: none;
                 background-color: hsl(31, 5%, 96%);
             }
@@ -17,8 +25,7 @@
                 font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
                 font-size: 12px;
                 white-space: pre;
-                width: calc(100% - 2*16px);
-                margin: 8px 16px;
+                width: 100%;
                 padding: 0.5em 1em;
                 border: 1px solid gray;
                 resize: none;
@@ -32,12 +39,11 @@
                 border-radius: 0.25em;
                 padding: 0.25em 0.5em;
                 background-color: white;
-                margin: 8px 16px;
+                margin-top: 16px;
             }
             :focus
             {
                 outline: hsl(210, 100%, 67%) auto 3px;
-                outline-offset: -2px;
             }
         </style>
     </head>

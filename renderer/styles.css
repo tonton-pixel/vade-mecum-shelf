@@ -3,7 +3,6 @@
 :focus
 {
     outline: var(--color-focus) auto 3px;
-    outline-offset: -2px;
 }
 
 :not(input):not(textarea)::selection

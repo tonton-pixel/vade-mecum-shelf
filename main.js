@@ -39,11 +39,11 @@ else
     const os = require ('os');
     const path = require ('path');
     //
-    const isPackaged = !process.defaultApp;
+    const appPackaged = app.isPackaged;
     //
     const appName = app.name;
     const appVersion = app.getVersion ();
-    const appDate = (isPackaged ? fs.statSync (process.resourcesPath).ctime : new Date ()).toISOString ();
+    const appDate = (appPackaged ? fs.statSync (process.resourcesPath).ctime : new Date ()).toISOString ();
     //
     let appDirname = app.getAppPath ();
     let unpackedDirname = `${appDirname}.unpacked`;
@@ -343,7 +343,7 @@ function getSystemInfo ()
     {
         menuTemplate.push ({ label: settings.unitsName.replace (/&/g, "&&"), submenu: [ ] });
     }
-    if ((!isPackaged) || settings.developerFeatures)
+    if ((!appPackaged) || settings.developerFeatures)
     {
         menuTemplate.push (developerMenu);
     }
