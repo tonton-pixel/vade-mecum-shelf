@@ -47,8 +47,6 @@ function generateTitle (unitName)
     return title + ((zoomFactor !== 100) ? settings.window.zoomSuffixTemplate.replace ("{{zoom}}", zoomFactor) : "");
 }
 //
-document.title = appName;
-//
 if (settings.unitsMenu)
 {
     ipcRenderer.send ('update-units-menu', [ ]);
