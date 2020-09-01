@@ -1,6 +1,6 @@
 {
     "accelerated": true,
-    "hotKey": "CommandOrControl+Alt+V",
+    "hotKey": "CommandOrControl+Alt+Shift+V",
     "escapeExitsFullScreen": true,
     "unitsMenu": true,
     "developerFeatures": true,
@@ -24,7 +24,7 @@
     "unitsName": "Utilities",
     "noCategoryName": "Other",
     "description": "Collection of vade mecum-like utilities wrapped into one single app.",
-    "copyright": "© 2017-2020 Michel MARIANI.",
+    "copyright": "© 2017-2020 Michel Mariani.",
     "electronApp":
     {
         "label": "Vade Mecum Shelf | Apps | Electron",

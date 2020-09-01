@@ -1,7 +1,7 @@
 {
     "name": "vade-mecum-shelf",
     "productName": "Vade Mecum Shelf",
-    "version": "2.11.1",
+    "version": "3.0.0",
     "description": "Collection of vade mecum-like utilities.",
     "main": "main.js",
     "scripts": {
@@ -22,7 +22,7 @@
         "vade mecum"
     ],
     "author": {
-        "name": "Michel MARIANI",
+        "name": "Michel Mariani",
         "url": "https://github.com/tonton-pixel"
     },
     "homepage": "https://github.com/tonton-pixel/vade-mecum-shelf",
@@ -30,7 +30,7 @@
     "private": false,
     "dependencies": {},
     "devDependencies": {
-        "electron": "^9.1.2",
-        "electron-packager": "^15.0.0"
+        "electron": "^10.1.1",
+        "electron-packager": "^15.1.0"
     }
 }

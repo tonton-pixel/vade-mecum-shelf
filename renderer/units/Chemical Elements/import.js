@@ -29,6 +29,8 @@ module.exports.start = function (context)
     const englishIndex = keyIndex.build (elements, 'english', (a, b) => a.localeCompare (b));
     const frenchIndex = keyIndex.build (elements, 'french', (a, b) => a.localeCompare (b, 'fr'));
     const japaneseIndex = keyIndex.build (elements, 'japanese', (a, b) => a.localeCompare (b, 'ja'));
+    const traditionalIndex = keyIndex.build (elements, 'traditional-chinese', (a, b) => a.localeCompare (b, 'zh-Hant'));
+    const simplifiedIndex = keyIndex.build (elements, 'simplified-chinese', (a, b) => a.localeCompare (b, 'zh-Hans'));
     //
     let table = tables.create
     (
@@ -37,7 +39,9 @@ module.exports.start = function (context)
             { label: "Symbol", className: 'symbol', key: 'symbol' },
             { label: "English", className: 'name', key: 'english', lang: 'en' },
             { label: "Français", className: 'name', key: 'french', lang: 'fr' },
-            { label: "日本語", className: 'name', key: 'japanese', lang: 'ja' }
+            { label: "日本語", className: 'name', key: 'japanese', lang: 'ja' },
+            { label: "繁體字", className: 'name', key: 'traditional-chinese', lang: 'zh-Hant' },
+            { label: "简体字", className: 'name', key: 'simplified-chinese', lang: 'zh-Hans' }
         ],
         { label: "No Match", className: 'message', lang: 'en' },
         elements,

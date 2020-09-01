@@ -68,42 +68,45 @@ else
     //
     function showLicense (menuItem, browserWindow, event)
     {
-        if (!licenseWindow)
+        if (browserWindow)
         {
-            licenseWindow = new BrowserWindow
-            (
-                {
-                    title: `License | ${appName}`,
-                    width: 384,
-                    height: (process.platform !== 'darwin') ? 480 : 540,
-                    minimizable: false,
-                    maximizable: false,
-                    resizable: false,
-                    fullscreenable: false,
-                    parent: browserWindow,
-                    modal: true,
-                    show: false,
-                    webPreferences:
-                    {
-                        devTools: false
-                    }
-                }
-            );
-            if (process.platform !== 'darwin')
+            if (!licenseWindow)
             {
-                licenseWindow.removeMenu ();
+                licenseWindow = new BrowserWindow
+                (
+                    {
+                        title: `License | ${appName}`,
+                        width: 384,
+                        height: (process.platform !== 'darwin') ? 480 : 540,
+                        minimizable: false,
+                        maximizable: false,
+                        resizable: false,
+                        fullscreenable: false,
+                        parent: browserWindow,
+                        modal: true,
+                        show: false,
+                        webPreferences:
+                        {
+                            devTools: false
+                        }
+                    }
+                );
+                if (process.platform !== 'darwin')
+                {
+                    licenseWindow.removeMenu ();
+                }
+                licenseWindow.loadFile (path.join (__dirname, 'license-index.html'));
+                licenseWindow.once ('ready-to-show', () => { licenseWindow.show (); });
+                licenseWindow.on ('close', () => { licenseWindow = null; });
             }
-            licenseWindow.loadFile (path.join (__dirname, 'license-index.html'));
-            licenseWindow.once ('ready-to-show', () => { licenseWindow.show (); });
-            licenseWindow.on ('close', () => { licenseWindow = null; });
-        }
-        else
-        {
-            licenseWindow.show ();
+            else
+            {
+                licenseWindow.show ();
+            }
         }
     }
     //
-function getSystemInfo ()
+    function getSystemInfo ()
     {
         const infos =
         [
@@ -151,40 +154,43 @@ function getSystemInfo ()
     //
     function showSystemInfo (menuItem, browserWindow, event)
     {
-        if (!systemInfoWindow)
+        if (browserWindow)
         {
-            systemInfoWindow = new BrowserWindow
-            (
-                {
-                    title: `System Info | ${appName}`,
-                    width: 480,
-                    height: settings.window.defaultHeight,
-                    minimizable: false,
-                    maximizable: false,
-                    resizable: false,
-                    fullscreenable: false,
-                    parent: browserWindow,
-                    modal: true,
-                    show: false,
-                    webPreferences:
-                    {
-                        devTools: false
-                    }
-                }
-            );
-            if (process.platform !== 'darwin')
+            if (!systemInfoWindow)
             {
-                systemInfoWindow.removeMenu ();
+                systemInfoWindow = new BrowserWindow
+                (
+                    {
+                        title: `System Info | ${appName}`,
+                        width: 480,
+                        height: settings.window.defaultHeight,
+                        minimizable: false,
+                        maximizable: false,
+                        resizable: false,
+                        fullscreenable: false,
+                        parent: browserWindow,
+                        modal: true,
+                        show: false,
+                        webPreferences:
+                        {
+                            devTools: false
+                        }
+                    }
+                );
+                if (process.platform !== 'darwin')
+                {
+                    systemInfoWindow.removeMenu ();
+                }
+                systemInfoWindow.loadFile (path.join (__dirname, 'system-info-index.html'));
+                const script = `document.body.querySelector ('.system-info').value = ${JSON.stringify (getSystemInfo ())};`;
+                systemInfoWindow.webContents.on ('dom-ready', () => { systemInfoWindow.webContents.executeJavaScript (script); });
+                systemInfoWindow.once ('ready-to-show', () => { systemInfoWindow.show (); });
+                systemInfoWindow.on ('close', () => { systemInfoWindow = null; });
             }
-            systemInfoWindow.loadFile (path.join (__dirname, 'system-info-index.html'));
-            const script = `document.body.querySelector ('.system-info').value = ${JSON.stringify (getSystemInfo ())};`;
-            systemInfoWindow.webContents.on ('dom-ready', () => { systemInfoWindow.webContents.executeJavaScript (script); });
-            systemInfoWindow.once ('ready-to-show', () => { systemInfoWindow.show (); });
-            systemInfoWindow.on ('close', () => { systemInfoWindow = null; });
-        }
-        else
-        {
-            systemInfoWindow.show ();
+            else
+            {
+                systemInfoWindow.show ();
+            }
         }
     }
     //

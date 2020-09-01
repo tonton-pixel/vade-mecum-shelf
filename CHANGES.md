@@ -2,6 +2,13 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.0.0
+
+- Added Chinese (Simplified and Traditional) to the **Chemical Elements** utility.
+- Updated global hot key.
+- Updated `Electron` to version `10.1.1`.
+- Updated `Electron Packager` to version `15.1.0`.
+
 ## 2.11.1
 
 - Updated `Electron` to version `9.1.2`.

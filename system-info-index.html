@@ -51,8 +51,8 @@
         <textarea class="system-info" rows="35" readonly></textarea>
         <button class="close-button">Close</button>
         <script>
-            document.body.querySelector ('.close-button').addEventListener ('click', () => { window.close (); });
-            document.body.addEventListener ('keydown', (event) => { if (event.key === 'Escape') window.close (); });
+            document.body.querySelector ('.close-button').addEventListener ('click', (event) => { event.preventDefault (); window.close (); });
+            window.addEventListener ('keydown', (event) => { if (event.key === 'Escape') { event.preventDefault (); window.close (); } });
         </script>
     </body>
 </html>

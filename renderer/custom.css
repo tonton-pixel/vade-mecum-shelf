@@ -18,6 +18,24 @@
     --sidebar-width: 256px;
 }
 
+@font-face
+{
+    font-family: "Sans CJK JP";
+    src: url("cjk-fonts/NotoSansCJKjp-Regular.otf") format("opentype");
+}
+
+@font-face
+{
+    font-family: "Sans CJK SC";
+    src: url("cjk-fonts/NotoSansCJKsc-Regular.otf") format("opentype");
+}
+
+@font-face
+{
+    font-family: "Sans CJK TC";
+    src: url("cjk-fonts/NotoSansCJKtc-Regular.otf") format("opentype");
+}
+
 :lang(ja)
 {
     font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ 角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "游ゴシック", "YuGothic", "Yu Gothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴ シック", "VL Pゴシック", "VL PGothic", "Noto Sans CJK JP", "TakaoExゴシック", "TakaoExGothic", "IPAex ゴシック", "IPAexGothic", "IPA Pゴシック", "IPAPGothic", sans-serif;

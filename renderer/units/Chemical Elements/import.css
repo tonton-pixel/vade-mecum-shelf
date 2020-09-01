@@ -18,6 +18,7 @@
 
 #chemical-elements-unit table
 {
+    font-size: 15px;
     color: var(--color);
     margin: 0.5em 0;
 }
@@ -72,6 +73,24 @@
 {
     width: 5em;
     text-align: center;
+}
+
+#chemical-elements-unit th.name:lang(ja),
+#chemical-elements-unit td.name:lang(ja)
+{
+    font-family: "Sans CJK JP";
+}
+
+#chemical-elements-unit th.name:lang(zh-Hant),
+#chemical-elements-unit td.name:lang(zh-Hant)
+{
+    font-family: "Sans CJK TC";
+}
+
+#chemical-elements-unit th.name:lang(zh-Hans),
+#chemical-elements-unit td.name:lang(zh-Hans)
+{
+    font-family: "Sans CJK SC";
 }
 
 #chemical-elements-unit td.message

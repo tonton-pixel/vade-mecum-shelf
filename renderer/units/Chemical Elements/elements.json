@@ -4,825 +4,1061 @@
         "symbol": "H",
         "english": "Hydrogen",
         "french": "Hydrogène",
-        "japanese": "水素"
+        "japanese": "水素",
+        "traditional-chinese": "氫",
+        "simplified-chinese": "氢"
     },
     {
         "atomic-number": 2,
         "symbol": "He",
         "english": "Helium",
         "french": "Hélium",
-        "japanese": "ヘリウム"
+        "japanese": "ヘリウム",
+        "traditional-chinese": "氦",
+        "simplified-chinese": "氦"
     },
     {
         "atomic-number": 3,
         "symbol": "Li",
         "english": "Lithium",
         "french": "Lithium",
-        "japanese": "リチウム"
+        "japanese": "リチウム",
+        "traditional-chinese": "鋰",
+        "simplified-chinese": "锂"
     },
     {
         "atomic-number": 4,
         "symbol": "Be",
         "english": "Beryllium",
         "french": "Béryllium",
-        "japanese": "ベリリウム"
+        "japanese": "ベリリウム",
+        "traditional-chinese": "鈹",
+        "simplified-chinese": "铍"
     },
     {
         "atomic-number": 5,
         "symbol": "B",
         "english": "Boron",
         "french": "Bore",
-        "japanese": "ホウ素"
+        "japanese": "ホウ素",
+        "traditional-chinese": "硼",
+        "simplified-chinese": "硼"
     },
     {
         "atomic-number": 6,
         "symbol": "C",
         "english": "Carbon",
         "french": "Carbone",
-        "japanese": "炭素"
+        "japanese": "炭素",
+        "traditional-chinese": "碳",
+        "simplified-chinese": "碳"
     },
     {
         "atomic-number": 7,
         "symbol": "N",
         "english": "Nitrogen",
         "french": "Azote",
-        "japanese": "窒素"
+        "japanese": "窒素",
+        "traditional-chinese": "氮",
+        "simplified-chinese": "氮"
     },
     {
         "atomic-number": 8,
         "symbol": "O",
         "english": "Oxygen",
         "french": "Oxygène",
-        "japanese": "酸素"
+        "japanese": "酸素",
+        "traditional-chinese": "氧",
+        "simplified-chinese": "氧"
     },
     {
         "atomic-number": 9,
         "symbol": "F",
         "english": "Fluorine",
         "french": "Fluor",
-        "japanese": "フッ素"
+        "japanese": "フッ素",
+        "traditional-chinese": "氟",
+        "simplified-chinese": "氟"
     },
     {
         "atomic-number": 10,
         "symbol": "Ne",
         "english": "Neon",
         "french": "Néon",
-        "japanese": "ネオン"
+        "japanese": "ネオン",
+        "traditional-chinese": "氖",
+        "simplified-chinese": "氖"
     },
     {
         "atomic-number": 11,
         "symbol": "Na",
         "english": "Sodium",
         "french": "Sodium",
-        "japanese": "ナトリウム"
+        "japanese": "ナトリウム",
+        "traditional-chinese": "鈉",
+        "simplified-chinese": "钠"
     },
     {
         "atomic-number": 12,
         "symbol": "Mg",
         "english": "Magnesium",
         "french": "Magnésium",
-        "japanese": "マグネシウム"
+        "japanese": "マグネシウム",
+        "traditional-chinese": "鎂",
+        "simplified-chinese": "镁"
     },
     {
         "atomic-number": 13,
         "symbol": "Al",
         "english": "Aluminium",
         "french": "Aluminium",
-        "japanese": "アルミニウム"
+        "japanese": "アルミニウム",
+        "traditional-chinese": "鋁",
+        "simplified-chinese": "铝"
     },
     {
         "atomic-number": 14,
         "symbol": "Si",
         "english": "Silicon",
         "french": "Silicium",
-        "japanese": "ケイ素"
+        "japanese": "ケイ素",
+        "traditional-chinese": "矽",
+        "simplified-chinese": "硅"
     },
     {
         "atomic-number": 15,
         "symbol": "P",
         "english": "Phosphorus",
         "french": "Phosphore",
-        "japanese": "リン"
+        "japanese": "リン",
+        "traditional-chinese": "磷",
+        "simplified-chinese": "磷"
     },
     {
         "atomic-number": 16,
         "symbol": "S",
         "english": "Sulfur",
         "french": "Soufre",
-        "japanese": "硫黄"
+        "japanese": "硫黄",
+        "traditional-chinese": "硫",
+        "simplified-chinese": "硫"
     },
     {
         "atomic-number": 17,
         "symbol": "Cl",
         "english": "Chlorine",
         "french": "Chlore",
-        "japanese": "塩素"
+        "japanese": "塩素",
+        "traditional-chinese": "氯",
+        "simplified-chinese": "氯"
     },
     {
         "atomic-number": 18,
         "symbol": "Ar",
         "english": "Argon",
         "french": "Argon",
-        "japanese": "アルゴン"
+        "japanese": "アルゴン",
+        "traditional-chinese": "氬",
+        "simplified-chinese": "氩"
     },
     {
         "atomic-number": 19,
         "symbol": "K",
         "english": "Potassium",
         "french": "Potassium",
-        "japanese": "カリウム"
+        "japanese": "カリウム",
+        "traditional-chinese": "鉀",
+        "simplified-chinese": "钾"
     },
     {
         "atomic-number": 20,
         "symbol": "Ca",
         "english": "Calcium",
         "french": "Calcium",
-        "japanese": "カルシウム"
+        "japanese": "カルシウム",
+        "traditional-chinese": "鈣",
+        "simplified-chinese": "钙"
     },
     {
         "atomic-number": 21,
         "symbol": "Sc",
         "english": "Scandium",
         "french": "Scandium",
-        "japanese": "スカンジウム"
+        "japanese": "スカンジウム",
+        "traditional-chinese": "鈧",
+        "simplified-chinese": "钪"
     },
     {
         "atomic-number": 22,
         "symbol": "Ti",
         "english": "Titanium",
         "french": "Titane",
-        "japanese": "チタン"
+        "japanese": "チタン",
+        "traditional-chinese": "鈦",
+        "simplified-chinese": "钛"
     },
     {
         "atomic-number": 23,
         "symbol": "V",
         "english": "Vanadium",
         "french": "Vanadium",
-        "japanese": "バナジウム"
+        "japanese": "バナジウム",
+        "traditional-chinese": "釩",
+        "simplified-chinese": "钒"
     },
     {
         "atomic-number": 24,
         "symbol": "Cr",
         "english": "Chromium",
         "french": "Chrome",
-        "japanese": "クロム"
+        "japanese": "クロム",
+        "traditional-chinese": "鉻",
+        "simplified-chinese": "铬"
     },
     {
         "atomic-number": 25,
         "symbol": "Mn",
         "english": "Manganese",
         "french": "Manganèse",
-        "japanese": "マンガン"
+        "japanese": "マンガン",
+        "traditional-chinese": "錳",
+        "simplified-chinese": "锰"
     },
     {
         "atomic-number": 26,
         "symbol": "Fe",
         "english": "Iron",
         "french": "Fer",
-        "japanese": "鉄"
+        "japanese": "鉄",
+        "traditional-chinese": "鐵",
+        "simplified-chinese": "铁"
     },
     {
         "atomic-number": 27,
         "symbol": "Co",
         "english": "Cobalt",
         "french": "Cobalt",
-        "japanese": "コバルト"
+        "japanese": "コバルト",
+        "traditional-chinese": "鈷",
+        "simplified-chinese": "钴"
     },
     {
         "atomic-number": 28,
         "symbol": "Ni",
         "english": "Nickel",
         "french": "Nickel",
-        "japanese": "ニッケル"
+        "japanese": "ニッケル",
+        "traditional-chinese": "鎳",
+        "simplified-chinese": "镍"
     },
     {
         "atomic-number": 29,
         "symbol": "Cu",
         "english": "Copper",
         "french": "Cuivre",
-        "japanese": "銅"
+        "japanese": "銅",
+        "traditional-chinese": "銅",
+        "simplified-chinese": "铜"
     },
     {
         "atomic-number": 30,
         "symbol": "Zn",
         "english": "Zinc",
         "french": "Zinc",
-        "japanese": "亜鉛"
+        "japanese": "亜鉛",
+        "traditional-chinese": "鋅",
+        "simplified-chinese": "锌"
     },
     {
         "atomic-number": 31,
         "symbol": "Ga",
         "english": "Gallium",
         "french": "Gallium",
-        "japanese": "ガリウム"
+        "japanese": "ガリウム",
+        "traditional-chinese": "鎵",
+        "simplified-chinese": "镓"
     },
     {
         "atomic-number": 32,
         "symbol": "Ge",
         "english": "Germanium",
         "french": "Germanium",
-        "japanese": "ゲルマニウム"
+        "japanese": "ゲルマニウム",
+        "traditional-chinese": "鍺",
+        "simplified-chinese": "锗"
     },
     {
         "atomic-number": 33,
         "symbol": "As",
         "english": "Arsenic",
         "french": "Arsenic",
-        "japanese": "ヒ素"
+        "japanese": "ヒ素",
+        "traditional-chinese": "砷",
+        "simplified-chinese": "砷"
     },
     {
         "atomic-number": 34,
         "symbol": "Se",
         "english": "Selenium",
         "french": "Sélénium",
-        "japanese": "セレン"
+        "japanese": "セレン",
+        "traditional-chinese": "硒",
+        "simplified-chinese": "硒"
     },
     {
         "atomic-number": 35,
         "symbol": "Br",
         "english": "Bromine",
         "french": "Brome",
-        "japanese": "臭素"
+        "japanese": "臭素",
+        "traditional-chinese": "溴",
+        "simplified-chinese": "溴"
     },
     {
         "atomic-number": 36,
         "symbol": "Kr",
         "english": "Krypton",
         "french": "Krypton",
-        "japanese": "クリプトン"
+        "japanese": "クリプトン",
+        "traditional-chinese": "氪",
+        "simplified-chinese": "氪"
     },
     {
         "atomic-number": 37,
         "symbol": "Rb",
         "english": "Rubidium",
         "french": "Rubidium",
-        "japanese": "ルビジウム"
+        "japanese": "ルビジウム",
+        "traditional-chinese": "銣",
+        "simplified-chinese": "铷"
     },
     {
         "atomic-number": 38,
         "symbol": "Sr",
         "english": "Strontium",
         "french": "Strontium",
-        "japanese": "ストロンチウム"
+        "japanese": "ストロンチウム",
+        "traditional-chinese": "鍶",
+        "simplified-chinese": "锶"
     },
     {
         "atomic-number": 39,
         "symbol": "Y",
         "english": "Yttrium",
         "french": "Yttrium",
-        "japanese": "イットリウム"
+        "japanese": "イットリウム",
+        "traditional-chinese": "釔",
+        "simplified-chinese": "钇"
     },
     {
         "atomic-number": 40,
         "symbol": "Zr",
         "english": "Zirconium",
         "french": "Zirconium",
-        "japanese": "ジルコニウム"
+        "japanese": "ジルコニウム",
+        "traditional-chinese": "鋯",
+        "simplified-chinese": "锆"
     },
     {
         "atomic-number": 41,
         "symbol": "Nb",
         "english": "Niobium",
         "french": "Niobium",
-        "japanese": "ニオブ"
+        "japanese": "ニオブ",
+        "traditional-chinese": "鈮",
+        "simplified-chinese": "铌"
     },
     {
         "atomic-number": 42,
         "symbol": "Mo",
         "english": "Molybdenum",
         "french": "Molybdène",
-        "japanese": "モリブデン"
+        "japanese": "モリブデン",
+        "traditional-chinese": "鉬",
+        "simplified-chinese": "钼"
     },
     {
         "atomic-number": 43,
         "symbol": "Tc",
         "english": "Technetium",
         "french": "Technétium",
-        "japanese": "テクネチウム"
+        "japanese": "テクネチウム",
+        "traditional-chinese": "鎝/鍀",
+        "simplified-chinese": "锝"
     },
     {
         "atomic-number": 44,
         "symbol": "Ru",
         "english": "Ruthenium",
         "french": "Ruthénium",
-        "japanese": "ルテニウム"
+        "japanese": "ルテニウム",
+        "traditional-chinese": "釕",
+        "simplified-chinese": "钌"
     },
     {
         "atomic-number": 45,
         "symbol": "Rh",
         "english": "Rhodium",
         "french": "Rhodium",
-        "japanese": "ロジウム"
+        "japanese": "ロジウム",
+        "traditional-chinese": "銠",
+        "simplified-chinese": "铑"
     },
     {
         "atomic-number": 46,
         "symbol": "Pd",
         "english": "Palladium",
         "french": "Palladium",
-        "japanese": "パラジウム"
+        "japanese": "パラジウム",
+        "traditional-chinese": "鈀",
+        "simplified-chinese": "钯"
     },
     {
         "atomic-number": 47,
         "symbol": "Ag",
         "english": "Silver",
         "french": "Argent",
-        "japanese": "銀"
+        "japanese": "銀",
+        "traditional-chinese": "銀",
+        "simplified-chinese": "银"
     },
     {
         "atomic-number": 48,
         "symbol": "Cd",
         "english": "Cadmium",
         "french": "Cadmium",
-        "japanese": "カドミウム"
+        "japanese": "カドミウム",
+        "traditional-chinese": "鎘",
+        "simplified-chinese": "镉"
     },
     {
         "atomic-number": 49,
         "symbol": "In",
         "english": "Indium",
         "french": "Indium",
-        "japanese": "インジウム"
+        "japanese": "インジウム",
+        "traditional-chinese": "銦",
+        "simplified-chinese": "铟"
     },
     {
         "atomic-number": 50,
         "symbol": "Sn",
         "english": "Tin",
         "french": "Étain",
-        "japanese": "スズ"
+        "japanese": "スズ",
+        "traditional-chinese": "錫",
+        "simplified-chinese": "锡"
     },
     {
         "atomic-number": 51,
         "symbol": "Sb",
         "english": "Antimony",
         "french": "Antimoine",
-        "japanese": "アンチモン"
+        "japanese": "アンチモン",
+        "traditional-chinese": "銻",
+        "simplified-chinese": "锑"
     },
     {
         "atomic-number": 52,
         "symbol": "Te",
         "english": "Tellurium",
         "french": "Tellure",
-        "japanese": "テルル"
+        "japanese": "テルル",
+        "traditional-chinese": "碲",
+        "simplified-chinese": "碲"
     },
     {
         "atomic-number": 53,
         "symbol": "I",
         "english": "Iodine",
         "french": "Iode",
-        "japanese": "ヨウ素"
+        "japanese": "ヨウ素",
+        "traditional-chinese": "碘",
+        "simplified-chinese": "碘"
     },
     {
         "atomic-number": 54,
         "symbol": "Xe",
         "english": "Xenon",
         "french": "Xénon",
-        "japanese": "キセノン"
+        "japanese": "キセノン",
+        "traditional-chinese": "氙",
+        "simplified-chinese": "氙"
     },
     {
         "atomic-number": 55,
         "symbol": "Cs",
         "english": "Caesium",
         "french": "Césium",
-        "japanese": "セシウム"
+        "japanese": "セシウム",
+        "traditional-chinese": "銫",
+        "simplified-chinese": "铯"
     },
     {
         "atomic-number": 56,
         "symbol": "Ba",
         "english": "Barium",
         "french": "Baryum",
-        "japanese": "バリウム"
+        "japanese": "バリウム",
+        "traditional-chinese": "鋇",
+        "simplified-chinese": "钡"
     },
     {
         "atomic-number": 57,
         "symbol": "La",
         "english": "Lanthanum",
         "french": "Lanthane",
-        "japanese": "ランタン"
+        "japanese": "ランタン",
+        "traditional-chinese": "鑭",
+        "simplified-chinese": "镧"
     },
     {
         "atomic-number": 58,
         "symbol": "Ce",
         "english": "Cerium",
         "french": "Cérium",
-        "japanese": "セリウム"
+        "japanese": "セリウム",
+        "traditional-chinese": "鈰",
+        "simplified-chinese": "铈"
     },
     {
         "atomic-number": 59,
         "symbol": "Pr",
         "english": "Praseodymium",
         "french": "Praséodyme",
-        "japanese": "プラセオジム"
+        "japanese": "プラセオジム",
+        "traditional-chinese": "鐠",
+        "simplified-chinese": "镨"
     },
     {
         "atomic-number": 60,
         "symbol": "Nd",
         "english": "Neodymium",
         "french": "Néodyme",
-        "japanese": "ネオジム"
+        "japanese": "ネオジム",
+        "traditional-chinese": "釹",
+        "simplified-chinese": "钕"
     },
     {
         "atomic-number": 61,
         "symbol": "Pm",
         "english": "Promethium",
         "french": "Prométhium",
-        "japanese": "プロメチウム"
+        "japanese": "プロメチウム",
+        "traditional-chinese": "鉕",
+        "simplified-chinese": "钷"
     },
     {
         "atomic-number": 62,
         "symbol": "Sm",
         "english": "Samarium",
         "french": "Samarium",
-        "japanese": "サマリウム"
+        "japanese": "サマリウム",
+        "traditional-chinese": "釤",
+        "simplified-chinese": "钐"
     },
     {
         "atomic-number": 63,
         "symbol": "Eu",
         "english": "Europium",
         "french": "Europium",
-        "japanese": "ユウロピウム"
+        "japanese": "ユウロピウム",
+        "traditional-chinese": "銪",
+        "simplified-chinese": "铕"
     },
     {
         "atomic-number": 64,
         "symbol": "Gd",
         "english": "Gadolinium",
         "french": "Gadolinium",
-        "japanese": "ガドリニウム"
+        "japanese": "ガドリニウム",
+        "traditional-chinese": "釓",
+        "simplified-chinese": "钆"
     },
     {
         "atomic-number": 65,
         "symbol": "Tb",
         "english": "Terbium",
         "french": "Terbium",
-        "japanese": "テルビウム"
+        "japanese": "テルビウム",
+        "traditional-chinese": "鋱",
+        "simplified-chinese": "铽"
     },
     {
         "atomic-number": 66,
         "symbol": "Dy",
         "english": "Dysprosium",
         "french": "Dysprosium",
-        "japanese": "ジスプロシウム"
+        "japanese": "ジスプロシウム",
+        "traditional-chinese": "鏑",
+        "simplified-chinese": "镝"
     },
     {
         "atomic-number": 67,
         "symbol": "Ho",
         "english": "Holmium",
         "french": "Holmium",
-        "japanese": "ホルミウム"
+        "japanese": "ホルミウム",
+        "traditional-chinese": "鈥",
+        "simplified-chinese": "钬"
     },
     {
         "atomic-number": 68,
         "symbol": "Er",
         "english": "Erbium",
         "french": "Erbium",
-        "japanese": "エルビウム"
+        "japanese": "エルビウム",
+        "traditional-chinese": "鉺",
+        "simplified-chinese": "铒"
     },
     {
         "atomic-number": 69,
         "symbol": "Tm",
         "english": "Thulium",
         "french": "Thulium",
-        "japanese": "ツリウム"
+        "japanese": "ツリウム",
+        "traditional-chinese": "銩",
+        "simplified-chinese": "铥"
     },
     {
         "atomic-number": 70,
         "symbol": "Yb",
         "english": "Ytterbium",
         "french": "Ytterbium",
-        "japanese": "イッテルビウム"
+        "japanese": "イッテルビウム",
+        "traditional-chinese": "鐿",
+        "simplified-chinese": "镱"
     },
     {
         "atomic-number": 71,
         "symbol": "Lu",
         "english": "Lutetium",
         "french": "Lutécium",
-        "japanese": "ルテチウム"
+        "japanese": "ルテチウム",
+        "traditional-chinese": "鎦/鑥",
+        "simplified-chinese": "镥"
     },
     {
         "atomic-number": 72,
         "symbol": "Hf",
         "english": "Hafnium",
         "french": "Hafnium",
-        "japanese": "ハフニウム"
+        "japanese": "ハフニウム",
+        "traditional-chinese": "鉿",
+        "simplified-chinese": "铪"
     },
     {
         "atomic-number": 73,
         "symbol": "Ta",
         "english": "Tantalum",
         "french": "Tantale",
-        "japanese": "タンタル"
+        "japanese": "タンタル",
+        "traditional-chinese": "鉭",
+        "simplified-chinese": "钽"
     },
     {
         "atomic-number": 74,
         "symbol": "W",
         "english": "Tungsten",
         "french": "Tungstène",
-        "japanese": "タングステン"
+        "japanese": "タングステン",
+        "traditional-chinese": "鎢",
+        "simplified-chinese": "钨"
     },
     {
         "atomic-number": 75,
         "symbol": "Re",
         "english": "Rhenium",
         "french": "Rhénium",
-        "japanese": "レニウム"
+        "japanese": "レニウム",
+        "traditional-chinese": "錸",
+        "simplified-chinese": "铼"
     },
     {
         "atomic-number": 76,
         "symbol": "Os",
         "english": "Osmium",
         "french": "Osmium",
-        "japanese": "オスミウム"
+        "japanese": "オスミウム",
+        "traditional-chinese": "鋨",
+        "simplified-chinese": "锇"
     },
     {
         "atomic-number": 77,
         "symbol": "Ir",
         "english": "Iridium",
         "french": "Iridium",
-        "japanese": "イリジウム"
+        "japanese": "イリジウム",
+        "traditional-chinese": "銥",
+        "simplified-chinese": "铱"
     },
     {
         "atomic-number": 78,
         "symbol": "Pt",
         "english": "Platinum",
         "french": "Platine",
-        "japanese": "白金"
+        "japanese": "白金",
+        "traditional-chinese": "鉑",
+        "simplified-chinese": "铂"
     },
     {
         "atomic-number": 79,
         "symbol": "Au",
         "english": "Gold",
         "french": "Or",
-        "japanese": "金"
+        "japanese": "金",
+        "traditional-chinese": "金",
+        "simplified-chinese": "金"
     },
     {
         "atomic-number": 80,
         "symbol": "Hg",
         "english": "Mercury",
         "french": "Mercure",
-        "japanese": "水銀"
+        "japanese": "水銀",
+        "traditional-chinese": "汞(銾)",
+        "simplified-chinese": "汞"
     },
     {
         "atomic-number": 81,
         "symbol": "Tl",
         "english": "Thallium",
         "french": "Thallium",
-        "japanese": "タリウム"
+        "japanese": "タリウム",
+        "traditional-chinese": "鉈",
+        "simplified-chinese": "铊"
     },
     {
         "atomic-number": 82,
         "symbol": "Pb",
         "english": "Lead",
         "french": "Plomb",
-        "japanese": "鉛"
+        "japanese": "鉛",
+        "traditional-chinese": "鉛",
+        "simplified-chinese": "铅"
     },
     {
         "atomic-number": 83,
         "symbol": "Bi",
         "english": "Bismuth",
         "french": "Bismuth",
-        "japanese": "ビスマス"
+        "japanese": "ビスマス",
+        "traditional-chinese": "鉍",
+        "simplified-chinese": "铋"
     },
     {
         "atomic-number": 84,
         "symbol": "Po",
         "english": "Polonium",
         "french": "Polonium",
-        "japanese": "ポロニウム"
+        "japanese": "ポロニウム",
+        "traditional-chinese": "釙",
+        "simplified-chinese": "钋"
     },
     {
         "atomic-number": 85,
         "symbol": "At",
         "english": "Astatine",
         "french": "Astate",
-        "japanese": "アスタチン"
+        "japanese": "アスタチン",
+        "traditional-chinese": "砈",
+        "simplified-chinese": "砹"
     },
     {
         "atomic-number": 86,
         "symbol": "Rn",
         "english": "Radon",
         "french": "Radon",
-        "japanese": "ラドン"
+        "japanese": "ラドン",
+        "traditional-chinese": "氡",
+        "simplified-chinese": "氡"
     },
     {
         "atomic-number": 87,
         "symbol": "Fr",
         "english": "Francium",
         "french": "Francium",
-        "japanese": "フランシウム"
+        "japanese": "フランシウム",
+        "traditional-chinese": "鍅/鈁",
+        "simplified-chinese": "钫"
     },
     {
         "atomic-number": 88,
         "symbol": "Ra",
         "english": "Radium",
         "french": "Radium",
-        "japanese": "ラジウム"
+        "japanese": "ラジウム",
+        "traditional-chinese": "鐳",
+        "simplified-chinese": "镭"
     },
     {
         "atomic-number": 89,
         "symbol": "Ac",
         "english": "Actinium",
         "french": "Actinium",
-        "japanese": "アクチニウム"
+        "japanese": "アクチニウム",
+        "traditional-chinese": "錒",
+        "simplified-chinese": "锕"
     },
     {
         "atomic-number": 90,
         "symbol": "Th",
         "english": "Thorium",
         "french": "Thorium",
-        "japanese": "トリウム"
+        "japanese": "トリウム",
+        "traditional-chinese": "釷",
+        "simplified-chinese": "钍"
     },
     {
         "atomic-number": 91,
         "symbol": "Pa",
         "english": "Protactinium",
         "french": "Protactinium",
-        "japanese": "プロトアクチニウム"
+        "japanese": "プロトアクチニウム",
+        "traditional-chinese": "鏷",
+        "simplified-chinese": "镤"
     },
     {
         "atomic-number": 92,
         "symbol": "U",
         "english": "Uranium",
         "french": "Uranium",
-        "japanese": "ウラン"
+        "japanese": "ウラン",
+        "traditional-chinese": "鈾",
+        "simplified-chinese": "铀"
     },
     {
         "atomic-number": 93,
         "symbol": "Np",
         "english": "Neptunium",
         "french": "Neptunium",
-        "japanese": "ネプツニウム"
+        "japanese": "ネプツニウム",
+        "traditional-chinese": "錼/鎿",
+        "simplified-chinese": "镎"
     },
     {
         "atomic-number": 94,
         "symbol": "Pu",
         "english": "Plutonium",
         "french": "Plutonium",
-        "japanese": "プルトニウム"
+        "japanese": "プルトニウム",
+        "traditional-chinese": "鈽/鈈",
+        "simplified-chinese": "钚"
     },
     {
         "atomic-number": 95,
         "symbol": "Am",
         "english": "Americium",
         "french": "Américium",
-        "japanese": "アメリシウム"
+        "japanese": "アメリシウム",
+        "traditional-chinese": "鋂/鎇",
+        "simplified-chinese": "镅"
     },
     {
         "atomic-number": 96,
         "symbol": "Cm",
         "english": "Curium",
         "french": "Curium",
-        "japanese": "キュリウム"
+        "japanese": "キュリウム",
+        "traditional-chinese": "鋦",
+        "simplified-chinese": "锔"
     },
     {
         "atomic-number": 97,
         "symbol": "Bk",
         "english": "Berkelium",
         "french": "Berkélium",
-        "japanese": "バークリウム"
+        "japanese": "バークリウム",
+        "traditional-chinese": "鉳/錇",
+        "simplified-chinese": "锫"
     },
     {
         "atomic-number": 98,
         "symbol": "Cf",
         "english": "Californium",
         "french": "Californium",
-        "japanese": "カリホルニウム"
+        "japanese": "カリホルニウム",
+        "traditional-chinese": "鉲/鐦",
+        "simplified-chinese": "锎"
     },
     {
         "atomic-number": 99,
         "symbol": "Es",
         "english": "Einsteinium",
         "french": "Einsteinium",
-        "japanese": "アインスタイニウム"
+        "japanese": "アインスタイニウム",
+        "traditional-chinese": "鑀/鎄",
+        "simplified-chinese": "锿"
     },
     {
         "atomic-number": 100,
         "symbol": "Fm",
         "english": "Fermium",
         "french": "Fermium",
-        "japanese": "フェルミウム"
+        "japanese": "フェルミウム",
+        "traditional-chinese": "鐨",
+        "simplified-chinese": "镄"
     },
     {
         "atomic-number": 101,
         "symbol": "Md",
         "english": "Mendelevium",
         "french": "Mendélévium",
-        "japanese": "メンデレビウム"
+        "japanese": "メンデレビウム",
+        "traditional-chinese": "鍆",
+        "simplified-chinese": "钔"
     },
     {
         "atomic-number": 102,
         "symbol": "No",
         "english": "Nobelium",
         "french": "Nobélium",
-        "japanese": "ノーベリウム"
+        "japanese": "ノーベリウム",
+        "traditional-chinese": "鍩",
+        "simplified-chinese": "锘"
     },
     {
         "atomic-number": 103,
         "symbol": "Lr",
         "english": "Lawrencium",
         "french": "Lawrencium",
-        "japanese": "ローレンシウム"
+        "japanese": "ローレンシウム",
+        "traditional-chinese": "鐒",
+        "simplified-chinese": "铹"
     },
     {
         "atomic-number": 104,
         "symbol": "Rf",
         "english": "Rutherfordium",
         "french": "Rutherfordium",
-        "japanese": "ラザホージウム"
+        "japanese": "ラザホージウム",
+        "traditional-chinese": "鑪",
+        "simplified-chinese": "𬬻"
     },
     {
         "atomic-number": 105,
         "symbol": "Db",
         "english": "Dubnium",
         "french": "Dubnium",
-        "japanese": "ドブニウム"
+        "japanese": "ドブニウム",
+        "traditional-chinese": "𨧀",
+        "simplified-chinese": "𬭊"
     },
     {
         "atomic-number": 106,
         "symbol": "Sg",
         "english": "Seaborgium",
         "french": "Seaborgium",
-        "japanese": "シーボーギウム"
+        "japanese": "シーボーギウム",
+        "traditional-chinese": "𨭎",
+        "simplified-chinese": "𬭳"
     },
     {
         "atomic-number": 107,
         "symbol": "Bh",
         "english": "Bohrium",
         "french": "Bohrium",
-        "japanese": "ボーリウム"
+        "japanese": "ボーリウム",
+        "traditional-chinese": "𨨏",
+        "simplified-chinese": "𬭛"
     },
     {
         "atomic-number": 108,
         "symbol": "Hs",
         "english": "Hassium",
         "french": "Hassium",
-        "japanese": "ハッシウム"
+        "japanese": "ハッシウム",
+        "traditional-chinese": "𨭆",
+        "simplified-chinese": "𬭶"
     },
     {
         "atomic-number": 109,
         "symbol": "Mt",
         "english": "Meitnerium",
         "french": "Meitnérium",
-        "japanese": "マイトネリウム"
+        "japanese": "マイトネリウム",
+        "traditional-chinese": "䥑",
+        "simplified-chinese": "鿏"
     },
     {
         "atomic-number": 110,
         "symbol": "Ds",
         "english": "Darmstadtium",
         "french": "Darmstadtium",
-        "japanese": "ダームスタチウム"
+        "japanese": "ダームスタチウム",
+        "traditional-chinese": "鐽",
+        "simplified-chinese": "𫟼"
     },
     {
         "atomic-number": 111,
         "symbol": "Rg",
         "english": "Roentgenium",
         "french": "Roentgenium",
-        "japanese": "レントゲニウム"
+        "japanese": "レントゲニウム",
+        "traditional-chinese": "錀",
+        "simplified-chinese": "𬬭"
     },
     {
         "atomic-number": 112,
         "symbol": "Cn",
         "english": "Copernicium",
         "french": "Copernicium",
-        "japanese": "コペルニシウム"
+        "japanese": "コペルニシウム",
+        "traditional-chinese": "鎶",
+        "simplified-chinese": "鿔"
     },
     {
         "atomic-number": 113,
         "symbol": "Nh",
         "english": "Nihonium",
         "french": "Nihonium",
-        "japanese": "ニホニウム"
+        "japanese": "ニホニウム",
+        "traditional-chinese": "鉨",
+        "simplified-chinese": "鿭"
     },
     {
         "atomic-number": 114,
         "symbol": "Fl",
         "english": "Flerovium",
         "french": "Flérovium",
-        "japanese": "フレロビウム"
+        "japanese": "フレロビウム",
+        "traditional-chinese": "鈇",
+        "simplified-chinese": "𫓧"
     },
     {
         "atomic-number": 115,
         "symbol": "Mc",
         "english": "Moscovium",
         "french": "Moscovium",
-        "japanese": "モスコビウム"
+        "japanese": "モスコビウム",
+        "traditional-chinese": "鏌",
+        "simplified-chinese": "镆"
     },
     {
         "atomic-number": 116,
         "symbol": "Lv",
         "english": "Livermorium",
         "french": "Livermorium",
-        "japanese": "リバモリウム"
+        "japanese": "リバモリウム",
+        "traditional-chinese": "鉝",
+        "simplified-chinese": "𫟷"
     },
     {
         "atomic-number": 117,
         "symbol": "Ts",
         "english": "Tennessine",
         "french": "Tennesse",
-        "japanese": "テネシン"
+        "japanese": "テネシン",
+        "traditional-chinese": "鿬",
+        "simplified-chinese": "鿬"
     },
     {
         "atomic-number": 118,
         "symbol": "Og",
         "english": "Oganesson",
         "french": "Oganesson",
-        "japanese": "オガネソン"
+        "japanese": "オガネソン",
+        "traditional-chinese": "鿫",
+        "simplified-chinese": "鿫"
     }
 ]
