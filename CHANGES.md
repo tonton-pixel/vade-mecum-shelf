@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.0.1
+
+- Updated punctuation in the Traditional Chinese field of the **Chemical Elements** utility.
+- Updated `Electron` to version `10.1.2`.
+
 ## 3.0.0
 
 - Added Chinese (Simplified and Traditional) to the **Chemical Elements** utility.

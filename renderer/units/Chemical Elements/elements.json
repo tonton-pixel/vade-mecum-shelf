@@ -383,7 +383,7 @@
         "english": "Technetium",
         "french": "Technétium",
         "japanese": "テクネチウム",
-        "traditional-chinese": "鎝/鍀",
+        "traditional-chinese": "鎝・鍀",
         "simplified-chinese": "锝"
     },
     {
@@ -635,7 +635,7 @@
         "english": "Lutetium",
         "french": "Lutécium",
         "japanese": "ルテチウム",
-        "traditional-chinese": "鎦/鑥",
+        "traditional-chinese": "鎦・鑥",
         "simplified-chinese": "镥"
     },
     {
@@ -716,7 +716,7 @@
         "english": "Mercury",
         "french": "Mercure",
         "japanese": "水銀",
-        "traditional-chinese": "汞(銾)",
+        "traditional-chinese": "汞（銾）",
         "simplified-chinese": "汞"
     },
     {
@@ -779,7 +779,7 @@
         "english": "Francium",
         "french": "Francium",
         "japanese": "フランシウム",
-        "traditional-chinese": "鍅/鈁",
+        "traditional-chinese": "鍅・鈁",
         "simplified-chinese": "钫"
     },
     {
@@ -833,7 +833,7 @@
         "english": "Neptunium",
         "french": "Neptunium",
         "japanese": "ネプツニウム",
-        "traditional-chinese": "錼/鎿",
+        "traditional-chinese": "錼・鎿",
         "simplified-chinese": "镎"
     },
     {
@@ -842,7 +842,7 @@
         "english": "Plutonium",
         "french": "Plutonium",
         "japanese": "プルトニウム",
-        "traditional-chinese": "鈽/鈈",
+        "traditional-chinese": "鈽・鈈",
         "simplified-chinese": "钚"
     },
     {
@@ -851,7 +851,7 @@
         "english": "Americium",
         "french": "Américium",
         "japanese": "アメリシウム",
-        "traditional-chinese": "鋂/鎇",
+        "traditional-chinese": "鋂・鎇",
         "simplified-chinese": "镅"
     },
     {
@@ -869,7 +869,7 @@
         "english": "Berkelium",
         "french": "Berkélium",
         "japanese": "バークリウム",
-        "traditional-chinese": "鉳/錇",
+        "traditional-chinese": "鉳・錇",
         "simplified-chinese": "锫"
     },
     {
@@ -878,7 +878,7 @@
         "english": "Californium",
         "french": "Californium",
         "japanese": "カリホルニウム",
-        "traditional-chinese": "鉲/鐦",
+        "traditional-chinese": "鉲・鐦",
         "simplified-chinese": "锎"
     },
     {
@@ -887,7 +887,7 @@
         "english": "Einsteinium",
         "french": "Einsteinium",
         "japanese": "アインスタイニウム",
-        "traditional-chinese": "鑀/鎄",
+        "traditional-chinese": "鑀・鎄",
         "simplified-chinese": "锿"
     },
     {
