@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.1.0
+
+- Added reading tooltip to the Japanese field of the **Chemical Elements** utility.
+- Updated `Emoji Release Dates` of the **Technical Definitions** utility.
+- Restricted display of modal dialogs over main window only.
+
 ## 3.0.1
 
 - Updated punctuation in the Traditional Chinese field of the **Chemical Elements** utility.

@@ -5,6 +5,7 @@
         "english": "Hydrogen",
         "french": "Hydrogène",
         "japanese": "水素",
+        "reading": "すいそ",
         "traditional-chinese": "氫",
         "simplified-chinese": "氢"
     },
@@ -41,6 +42,7 @@
         "english": "Boron",
         "french": "Bore",
         "japanese": "ホウ素",
+        "reading": "ほうそ【硼素】",
         "traditional-chinese": "硼",
         "simplified-chinese": "硼"
     },
@@ -50,6 +52,7 @@
         "english": "Carbon",
         "french": "Carbone",
         "japanese": "炭素",
+        "reading": "たんそ",
         "traditional-chinese": "碳",
         "simplified-chinese": "碳"
     },
@@ -59,6 +62,7 @@
         "english": "Nitrogen",
         "french": "Azote",
         "japanese": "窒素",
+        "reading": "ちっそ",
         "traditional-chinese": "氮",
         "simplified-chinese": "氮"
     },
@@ -68,6 +72,7 @@
         "english": "Oxygen",
         "french": "Oxygène",
         "japanese": "酸素",
+        "reading": "さんそ",
         "traditional-chinese": "氧",
         "simplified-chinese": "氧"
     },
@@ -77,6 +82,7 @@
         "english": "Fluorine",
         "french": "Fluor",
         "japanese": "フッ素",
+        "reading": "ふっそ【弗素】",
         "traditional-chinese": "氟",
         "simplified-chinese": "氟"
     },
@@ -122,6 +128,7 @@
         "english": "Silicon",
         "french": "Silicium",
         "japanese": "ケイ素",
+        "reading": "けいそ【珪素・硅素】",
         "traditional-chinese": "矽",
         "simplified-chinese": "硅"
     },
@@ -131,6 +138,7 @@
         "english": "Phosphorus",
         "french": "Phosphore",
         "japanese": "リン",
+        "reading": "りん【燐】",
         "traditional-chinese": "磷",
         "simplified-chinese": "磷"
     },
@@ -140,6 +148,7 @@
         "english": "Sulfur",
         "french": "Soufre",
         "japanese": "硫黄",
+        "reading": "いおう",
         "traditional-chinese": "硫",
         "simplified-chinese": "硫"
     },
@@ -149,6 +158,7 @@
         "english": "Chlorine",
         "french": "Chlore",
         "japanese": "塩素",
+        "reading": "えんそ",
         "traditional-chinese": "氯",
         "simplified-chinese": "氯"
     },
@@ -230,6 +240,7 @@
         "english": "Iron",
         "french": "Fer",
         "japanese": "鉄",
+        "reading": "てつ",
         "traditional-chinese": "鐵",
         "simplified-chinese": "铁"
     },
@@ -257,6 +268,7 @@
         "english": "Copper",
         "french": "Cuivre",
         "japanese": "銅",
+        "reading": "どう",
         "traditional-chinese": "銅",
         "simplified-chinese": "铜"
     },
@@ -266,6 +278,7 @@
         "english": "Zinc",
         "french": "Zinc",
         "japanese": "亜鉛",
+        "reading": "あえん",
         "traditional-chinese": "鋅",
         "simplified-chinese": "锌"
     },
@@ -293,6 +306,7 @@
         "english": "Arsenic",
         "french": "Arsenic",
         "japanese": "ヒ素",
+        "reading": "ひそ【砒素】",
         "traditional-chinese": "砷",
         "simplified-chinese": "砷"
     },
@@ -311,6 +325,7 @@
         "english": "Bromine",
         "french": "Brome",
         "japanese": "臭素",
+        "reading": "しゅうそ",
         "traditional-chinese": "溴",
         "simplified-chinese": "溴"
     },
@@ -419,6 +434,7 @@
         "english": "Silver",
         "french": "Argent",
         "japanese": "銀",
+        "reading": "ぎん",
         "traditional-chinese": "銀",
         "simplified-chinese": "银"
     },
@@ -446,6 +462,7 @@
         "english": "Tin",
         "french": "Étain",
         "japanese": "スズ",
+        "reading": "すず【錫】",
         "traditional-chinese": "錫",
         "simplified-chinese": "锡"
     },
@@ -473,6 +490,7 @@
         "english": "Iodine",
         "french": "Iode",
         "japanese": "ヨウ素",
+        "reading": "ようそ【沃素】",
         "traditional-chinese": "碘",
         "simplified-chinese": "碘"
     },
@@ -698,6 +716,7 @@
         "english": "Platinum",
         "french": "Platine",
         "japanese": "白金",
+        "reading": "はっきん",
         "traditional-chinese": "鉑",
         "simplified-chinese": "铂"
     },
@@ -707,6 +726,7 @@
         "english": "Gold",
         "french": "Or",
         "japanese": "金",
+        "reading": "きん",
         "traditional-chinese": "金",
         "simplified-chinese": "金"
     },
@@ -716,6 +736,7 @@
         "english": "Mercury",
         "french": "Mercure",
         "japanese": "水銀",
+        "reading": "すいぎん",
         "traditional-chinese": "汞（銾）",
         "simplified-chinese": "汞"
     },
@@ -734,6 +755,7 @@
         "english": "Lead",
         "french": "Plomb",
         "japanese": "鉛",
+        "reading": "なまり",
         "traditional-chinese": "鉛",
         "simplified-chinese": "铅"
     },

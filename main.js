@@ -68,7 +68,7 @@ else
     //
     function showLicense (menuItem, browserWindow, event)
     {
-        if (browserWindow)
+        if (browserWindow === mainWindow)
         {
             if (!licenseWindow)
             {
@@ -154,7 +154,7 @@ else
     //
     function showSystemInfo (menuItem, browserWindow, event)
     {
-        if (browserWindow)
+        if (browserWindow === mainWindow)
         {
             if (!systemInfoWindow)
             {

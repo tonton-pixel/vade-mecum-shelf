@@ -39,7 +39,7 @@ module.exports.start = function (context)
             { label: "Symbol", className: 'symbol', key: 'symbol' },
             { label: "English", className: 'name', key: 'english', lang: 'en' },
             { label: "Français", className: 'name', key: 'french', lang: 'fr' },
-            { label: "日本語", className: 'name', key: 'japanese', lang: 'ja' },
+            { label: "日本語", className: 'name', key: 'japanese', tooltip: 'reading', lang: 'ja' },
             { label: "繁體字", className: 'name', key: 'traditional-chinese', lang: 'zh-Hant' },
             { label: "简体字", className: 'name', key: 'simplified-chinese', lang: 'zh-Hans' }
         ],

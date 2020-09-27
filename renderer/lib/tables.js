@@ -24,12 +24,16 @@ module.exports.create = function (fields, hidden, rows, sortIndex)
         {
             let td;
             td = document.createElement ('td');
-            td.className = field.className;;
+            td.className = field.className;
             if (field.lang)
             {
                 td.lang = field.lang;
             }
             td.textContent = row[field.key];
+            if (field.tooltip && row[field.tooltip])
+            {
+                td.title = row[field.tooltip];
+            }
             tr.appendChild (td);
         }
         table.appendChild (tr);
