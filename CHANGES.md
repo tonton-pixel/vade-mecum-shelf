@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.1.1
+
+- Forced proper Latin font `Segoe UI` as a substitute to `system-ui` on Windows.
+- Updated `Electron` to version `10.1.3`.
+
 ## 3.1.0
 
 - Added reading tooltip to the Japanese field of the **Chemical Elements** utility.
