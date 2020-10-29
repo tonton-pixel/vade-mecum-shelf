@@ -1,6 +1,6 @@
 //
 const { ipcRenderer, remote, shell, webFrame } = require ('electron');
-const { app, getCurrentWebContents, getGlobal } = remote;
+const { app, BrowserWindow, clipboard, getCurrentWebContents, getCurrentWindow, getGlobal } = remote;
 //
 const fs = require ('fs');
 const path = require ('path');
@@ -9,6 +9,9 @@ const url = require ('url');
 const appName = app.name;
 const appVersion = app.getVersion ();
 const appPackaged = app.isPackaged;
+//
+const mainWindow = getCurrentWindow ();
+const webContents = getCurrentWebContents ();
 //
 const settings = getGlobal ('settings');
 //
@@ -526,7 +529,38 @@ document.body.addEventListener
     }
 );
 //
-getCurrentWebContents ().once
+let currentLink;
+//
+let linkMenuTemplate =
+[
+    { label: "Copy Link", click: menuItem => clipboard.writeText (currentLink) }
+];
+let linkContextualMenu = remote.Menu.buildFromTemplate (linkMenuTemplate);
+//
+document.body.addEventListener
+(
+    'contextmenu',
+    (event) =>
+    {
+        if (BrowserWindow.getFocusedWindow () === mainWindow)   // Should not be necessary...
+        {
+            let aTag = event.target.closest ('a');
+            if (aTag)
+            {
+                let aUrl = aTag.getAttribute ('xlink:href') || aTag.getAttribute ('href');
+                if (aUrl && (aUrl.startsWith ("http://") || aUrl.startsWith ("https://")))
+                {
+                    event.preventDefault ();
+                    currentLink = aUrl;
+                    let factor = webFrame.getZoomFactor ();
+                    linkContextualMenu.popup ({ window: mainWindow, x: Math.round (event.x * factor), y: Math.round (event.y * factor) });
+                }
+            }
+        }
+    }
+);
+//
+webContents.once
 (
     'did-finish-load', (event) =>
     {

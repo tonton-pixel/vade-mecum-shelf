@@ -200,6 +200,10 @@
                 "details": "GNU Image Manipulation Program<br>General Image Manipulation Program"
             },
             {
+                "term": "GIS",
+                "details": "Geographic Information System"
+            },
+            {
                 "term": "GMT",
                 "details": "Greenwich Mean Time"
             },

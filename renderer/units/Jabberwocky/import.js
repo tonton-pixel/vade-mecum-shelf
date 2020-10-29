@@ -65,6 +65,35 @@ module.exports.start = function (context)
     panel.appendChild (combiBox);
     poemContainer.appendChild (panel);
     //
+    // Easter egg...
+    illustrationBox.addEventListener
+    (
+        'dblclick',
+        (event) =>
+        {
+            event.preventDefault ();
+            let isCommandOrControlDoubleClick = (process.platform === 'darwin') ? event.metaKey : event.ctrlKey;
+            if (isCommandOrControlDoubleClick)
+            {
+                if (window.speechSynthesis.speaking)
+                {
+                    window.speechSynthesis.cancel ();
+                }
+                else
+                {
+                    for (let stanza of stanzas)
+                    {
+                        let utterance = new SpeechSynthesisUtterance ();
+                        utterance.lang = 'en-GB';
+                        utterance.rate = 0.9;
+                        utterance.text = stanza.join (" ");
+                        window.speechSynthesis.speak (utterance);
+                    }
+                }
+            }
+        }
+    );
+    //
     references.open = prefs.references;
     //
     const refLinks = require ('./ref-links.json');

@@ -2,6 +2,13 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.1.2
+
+- Updated `Computing Abbreviations` of the **Technical Definitions** utility.
+- Added speech synthesis *Easter egg* to the **Jabberwocky** utility.
+- Added context menu to external reference links, allowing copy of URL to clipboard.
+- Updated `Electron` to version `10.1.5`.
+
 ## 3.1.1
 
 - Forced proper Latin font `Segoe UI` as a substitute to `system-ui` on Windows.
