@@ -627,7 +627,3 @@ if (settings.escapeExitsFullScreen)
     );
 }
 //
-// https://stackoverflow.com/questions/22812303/why-is-my-speech-synthesis-api-voice-changing-when-function-run-more-than-1-time
-// When you call API for the first time voices don't load for some reason. And default voice loads for the first time.
-window.speechSynthesis.getVoices ();
-//

@@ -450,7 +450,11 @@ else
                 {
                     nodeIntegration: true,
                     enableRemoteModule: true,
-                    spellcheck: false
+                    spellcheck: false,
+                    defaultFontFamily:
+                    {
+                        standard: "Arial"   // Instead of "Times New Roman" by default
+                    }
                 }
             }
         );
