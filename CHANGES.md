@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.3.0
+
+- Updated `Electron` to version `11.1.0`.
+- Updated `Electron Packager` to version `15.2.0`.
+
 ## 3.2.0
 
 - Updated `KaTeX` to version `0.12.0`.
