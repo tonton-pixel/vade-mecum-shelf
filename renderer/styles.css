@@ -26,7 +26,7 @@ html
     -webkit-user-drag: none;
     cursor: default;
     height: 100%;
-    font-family: "Segoe UI", system-ui, sans-serif;
+    font-family: var(--system-ui-family);
     font-size: 14px;
     line-height: 1.5;
     overflow: hidden;
@@ -136,7 +136,7 @@ svg.app-color-icon
 code,
 kbd
 {
-    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
+    font-family: var(--monospace-family);
     border-radius: 4px;
     padding: 2px 4px;
     white-space: nowrap;

@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.4.0
+
+- Used common CSS variables for font stacks.
+- Updated and expanded font stacks.
+- Updated `Electron` to version `11.1.1`.
+
 ## 3.3.0
 
 - Updated `Electron` to version `11.1.0`.

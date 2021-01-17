@@ -63,7 +63,7 @@
 
 #iso-country-codes-unit td.code
 {
-    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
+    font-family: var(--monospace-family);
 }
 
 #iso-country-codes-unit td.message

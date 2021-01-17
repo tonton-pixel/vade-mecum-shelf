@@ -63,7 +63,7 @@
 
 #iso-language-codes-unit td.code
 {
-    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
+    font-family: var(--monospace-family);
 }
 
 #iso-language-codes-unit td.message

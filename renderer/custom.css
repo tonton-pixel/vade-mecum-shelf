@@ -16,6 +16,9 @@
     --color-focus:     hsl(210, 100%, 67%);
     --sidebar-duration: calc(1s/10);
     --sidebar-width: 256px;
+    --monospace-family: Monaco, Menlo, "DejaVu Sans Mono", "Liberation Mono", "Noto Mono", "Ubuntu Mono", monospace;
+    --system-ui-family: "Segoe UI", system-ui, sans-serif;
+    --sans-serif-family: Arial, Geneva, Verdana, Tahoma, "DejaVu Sans", "Liberation Sans", "Noto Sans", Ubuntu, sans-serif;
 }
 
 @font-face

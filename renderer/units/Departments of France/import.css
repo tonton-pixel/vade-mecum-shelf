@@ -63,7 +63,7 @@
 
 #departments-of-france-unit td.code
 {
-    font-family: Monaco, "DejaVu Sans Mono", "Noto Mono", monospace;
+    font-family: var(--monospace-family);
 }
 
 #departments-of-france-unit td.message

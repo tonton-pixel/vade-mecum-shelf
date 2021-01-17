@@ -668,6 +668,10 @@
                 "details": "User Datagram Protocol"
             },
             {
+                "term": "UNC",
+                "details": "Urgently Needed Character"
+            },
+            {
                 "term": "URI",
                 "details": "Uniform Resource Identifier"
             },
