@@ -28,6 +28,10 @@
                 "details": "Application Programming Interface"
             },
             {
+                "term": "ARIB",
+                "details": "Association of Radio Industries and Businesses"
+            },
+            {
                 "term": "ASAR",
                 "details": "Atom Shell Archive Format"
             },
@@ -334,6 +338,10 @@
             {
                 "term": "IVD",
                 "details": "Ideographic Variation Database"
+            },
+            {
+                "term": "JIS",
+                "details": "Japanese Industrial Standards"
             },
             {
                 "term": "JIT",

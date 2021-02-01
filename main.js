@@ -435,28 +435,30 @@ else
         let prefs = mainStorage.get (defaultPrefs);
         let windowBounds = prefs.windowBounds;
         //
-        mainWindow = new BrowserWindow
-        (
+        const windowOptions =
+        {
+            center: true,
+            x: windowBounds.x,
+            y: windowBounds.y,
+            width: windowBounds.width,
+            height: windowBounds.height,
+            minWidth: settings.window.minWidth,
+            minHeight: settings.window.minHeight,
+            backgroundColor: settings.window.backgroundColor,
+            show: !settings.window.deferredShow,
+            webPreferences:
             {
-                icon: (process.platform === 'linux') && path.join (__dirname, 'icons', 'icon-256.png'),
-                center: true,
-                x: windowBounds.x,
-                y: windowBounds.y,
-                width: windowBounds.width,
-                height: windowBounds.height,
-                minWidth: settings.window.minWidth,
-                minHeight: settings.window.minHeight,
-                backgroundColor: settings.window.backgroundColor,
-                show: !settings.window.deferredShow,
-                webPreferences:
-                {
-                    contextIsolation: false,
-                    nodeIntegration: true,
-                    enableRemoteModule: true,
-                    spellcheck: false
-                }
+                contextIsolation: false,
+                nodeIntegration: true,
+                enableRemoteModule: true,
+                spellcheck: false
             }
-        );
+        };
+        if (process.platform === 'linux')
+        {
+            windowOptions.icon = path.join (__dirname, 'icons', 'icon-256.png');
+        }
+        mainWindow = new BrowserWindow (windowOptions);
         //
         mainWindow.loadFile (path.join (__dirname, 'renderer', 'index.html'));
         //

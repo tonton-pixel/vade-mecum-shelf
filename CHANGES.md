@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.4.1
+
+- Updated `Computing Abbreviations` of the **Technical Definitions** utility.
+- Updated font stacks: improved display on Windows.
+- Updated `Electron` to version `11.2.1`.
+
 ## 3.4.0
 
 - Used common CSS variables for font stacks.
