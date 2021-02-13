@@ -2,6 +2,10 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.4.2
+
+- Updated `Electron` to version `11.2.3`.
+
 ## 3.4.1
 
 - Updated `Computing Abbreviations` of the **Technical Definitions** utility.
