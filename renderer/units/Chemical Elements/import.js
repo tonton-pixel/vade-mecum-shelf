@@ -63,6 +63,7 @@ module.exports.start = function (context)
         codesContainer.appendChild (tableCopy);
     }
     //
+    liveSearch.lang = 'en';
     liveSearch.placeholder = "Search";
     doSearch (liveSearch.value = prefs.liveSearch);
     liveSearch.addEventListener ('input', (event) => { doSearch (event.currentTarget.value); });

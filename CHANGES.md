@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.5.0
+
+- Fixed bottom border of color fields in the **Color Names** utility. 
+- Improved font sizes for non-english fields.
+- Updated `Electron` to version `12.0.0`.
+
 ## 3.4.2
 
 - Updated `Electron` to version `11.2.3`.

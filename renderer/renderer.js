@@ -1,6 +1,6 @@
 //
 const { ipcRenderer, remote, shell, webFrame } = require ('electron');
-const { app, BrowserWindow, clipboard, getCurrentWebContents, getCurrentWindow, getGlobal } = remote;
+const { app, BrowserWindow, clipboard, getCurrentWebContents, getCurrentWindow, getGlobal, Menu } = remote;
 //
 const fs = require ('fs');
 const path = require ('path');
@@ -535,7 +535,7 @@ let linkMenuTemplate =
 [
     { label: "Copy Link", click: menuItem => clipboard.writeText (currentLink) }
 ];
-let linkContextualMenu = remote.Menu.buildFromTemplate (linkMenuTemplate);
+let linkContextualMenu = Menu.buildFromTemplate (linkMenuTemplate);
 //
 document.body.addEventListener
 (

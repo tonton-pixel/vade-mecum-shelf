@@ -28,6 +28,7 @@
 
 #prefectures-of-japan-unit table
 {
+    font-size: 1em;
     color: var(--color);
     margin: 0.5em 0;
 }
