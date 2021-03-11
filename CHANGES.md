@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ## 3.5.1
 
-- Improved styling of <code> and <kbd> tags.
+- Improved styling of `<code>` and `<kbd>` tags.
 - Added optional confirm quit dialog.
 - Updated `Electron` to version `12.0.1`.
 
