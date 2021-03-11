@@ -465,7 +465,50 @@ else
         mainWindow.webContents.on ('new-window', (event) => { event.preventDefault (); }); // Prevent openening of a new window by window.open ()
         mainWindow.webContents.on ('will-navigate', (event) => { event.preventDefault (); }); // Inhibit drag-and-drop of URL on window
         //
-        mainWindow.once ('close', () => { mainStorage.set ({ windowBounds: mainWindow.getBounds () }); });
+        let inConfirmQuitDialog = false;
+        //
+        mainWindow.on
+        (
+            'close',
+            (event) =>
+            {
+                if (settings.confirmQuit)
+                {
+                    if (inConfirmQuitDialog)
+                    {
+                        event.preventDefault ();
+                    }
+                    else
+                    {
+                        inConfirmQuitDialog = true;
+                        let choice = dialog.showMessageBoxSync
+                        (
+                            (process.platform === 'darwin') ? null : mainWindow,
+                            {
+                                type: 'question',
+                                buttons: [ "Yes", "No" ],
+                                defaultId: 0,
+                                title: "Confirm Quit",
+                                message: "Are you sure you want to quit?"
+                            }
+                        );
+                        inConfirmQuitDialog = false;
+                        if (choice === 1)
+                        {
+                            event.preventDefault ();
+                        }
+                        else
+                        {
+                            mainStorage.set ({ windowBounds: mainWindow.getBounds () });
+                        }
+                    }
+                }
+                else
+                {
+                    mainStorage.set ({ windowBounds: mainWindow.getBounds () });
+                }
+            }
+        );
         //
         mainWindow.once ('closed', () => { if (process.platform === 'darwin') { app.hide (); } app.quit (); });
         //

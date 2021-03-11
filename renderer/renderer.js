@@ -1,6 +1,6 @@
 //
-const { ipcRenderer, remote, shell, webFrame } = require ('electron');
-const { app, BrowserWindow, clipboard, getCurrentWebContents, getCurrentWindow, getGlobal, Menu } = remote;
+const { clipboard, ipcRenderer, remote, shell, webFrame } = require ('electron');
+const { app, BrowserWindow, getCurrentWebContents, getCurrentWindow, getGlobal, Menu } = remote;
 //
 const fs = require ('fs');
 const path = require ('path');

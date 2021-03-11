@@ -40,5 +40,6 @@
         "label": "Latest Releases",
         "URL": "https://github.com/tonton-pixel/vade-mecum-shelf/releases"
     },
-    "defaultFolder": "documents"
+    "defaultFolder": "documents",
+    "confirmQuit": false
 }

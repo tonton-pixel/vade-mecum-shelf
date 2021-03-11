@@ -6,6 +6,7 @@
     --color-subtle:    hsl(0, 0%, 44%);
     --color-strong:    hsl(0, 0%, 11%);
     --color-strongest: hsl(0, 0%, 0%);
+    --color-dimmed:    hsl(0, 0%, 56%);
     --color-border:    hsl(31, 5%, 88%);
     --color-bg:        hsl(31, 5%, 96%);
     --color-accent:    hsl(196, 66%, 37%);

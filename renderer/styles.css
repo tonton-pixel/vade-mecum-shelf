@@ -137,8 +137,8 @@ code,
 kbd
 {
     font-family: var(--monospace-family);
-    border-radius: 4px;
-    padding: 2px 4px;
+    border-radius: 3px;
+    padding: 1px 3px;
     white-space: nowrap;
     color: hsl(0, 0%, 36%);
     background-color: hsla(0, 0%, 60%, 0.15);
@@ -368,6 +368,7 @@ kbd
 .accent-panel
 {
     font-size: 13px;
+    line-height: 20px;
     margin: 2rem 0;
     padding: 0 2rem 0.5em 2rem;
     border: 1px solid hsla(0, 0%, 0%, 0.06);
@@ -468,6 +469,7 @@ button.pull-down-menu:active
     background: white;
     color: var(--color);
     fill: var(--color);
+    stroke: var(--color);
     border: 1px solid var(--color-subtle);
     border-radius: 0.4em;
     padding: 0.25em 0.5em;
@@ -478,6 +480,7 @@ button.pull-down-menu:disabled
     border-color: gray;
     color: gray;
     fill: gray;
+    stroke: gray;
     pointer-events: none;
 }
 
