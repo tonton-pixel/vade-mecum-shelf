@@ -64,6 +64,10 @@
                 "details": "Creative Commons"
             },
             {
+                "term": "CDC",
+                "details": "Character  Description Component"
+            },
+            {
                 "term": "CDN",
                 "details": "Content Delivery Network<br>Content Distribution Network"
             },
@@ -190,6 +194,10 @@
             {
                 "term": "FTP",
                 "details": "File Transfer Protocol"
+            },
+            {
+                "term": "GBK",
+                "details": "China National Standard Extension (Guójiā Biāozhǔn Kuòzhǎn)"
             },
             {
                 "term": "GIF",

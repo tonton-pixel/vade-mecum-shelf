@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.5.2
+
+- Added definitions to the `Computing Abbreviations` of the **Technical Definitions** utility.
+- Updated `KaTeX` to version `0.13.0`.
+- Updated `Electron` to version `12.0.2`.
+
 ## 3.5.1
 
 - Improved styling of `<code>` and `<kbd>` tags.
