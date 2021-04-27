@@ -536,6 +536,10 @@
                 "details": "Point-to-Point Protocol"
             },
             {
+                "term": "PUA",
+                "details": "Private Use Area"
+            },
+            {
                 "term": "RADIUS",
                 "details": "Remote Authentication Dial-In User Service"
             },

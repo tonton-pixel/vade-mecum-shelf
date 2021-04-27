@@ -552,8 +552,7 @@ document.body.addEventListener
                 {
                     event.preventDefault ();
                     currentLink = aUrl;
-                    let factor = webFrame.getZoomFactor ();
-                    linkContextualMenu.popup ({ window: mainWindow, x: Math.round (event.x * factor), y: Math.round (event.y * factor) });
+                    linkContextualMenu.popup ({ window: mainWindow });
                 }
             }
         }

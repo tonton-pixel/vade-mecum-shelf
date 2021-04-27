@@ -1,15 +1,40 @@
 {
     "name": "vade-mecum-shelf",
     "productName": "Vade Mecum Shelf",
-    "version": "3.5.2",
+    "version": "3.5.3",
     "description": "Collection of vade mecum-like utilities.",
     "main": "main.js",
     "scripts": {
         "start": "electron .",
+        "build-mac": "electron-builder --macos",
         "build-darwin": "electron-packager . --asar --out=build --platform=darwin --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
         "build-linux": "electron-packager . --asar --out=build --platform=linux --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.png --overwrite",
-        "build-mas": "electron-packager . --asar --out=build --platform=mas --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.icns --overwrite",
         "build-win32": "electron-packager . --asar --out=build --platform=win32 --ignore=/~.* --ignore=^/screenshots --icon=icons/icon.ico --overwrite"
+    },
+    "build": {
+        "appId": "com.tonton-pixel.vade-mecum-shelf",
+        "copyright": "Copyright © 2017-2021 ${author}.",
+        "directories": {
+            "output": "build",
+            "buildResources": "build-res"
+        },
+        "files": [
+            "!**/~*",
+            "!screenshots/*"
+        ],
+        "mac": {
+            "artifactName": "${name}-${os}-${version}.${ext}",
+            "category": "public.app-category.utilities",
+            "icon": "icons/icon.icns",
+            "target": "pkg"
+        },
+        "pkg": {
+            "license": "license-index.html",
+            "installLocation": "/Applications",
+            "allowAnywhere": true,
+            "isRelocatable": false,
+            "isVersionChecked": false
+        }
     },
     "keywords": [
         "application",
@@ -29,7 +54,8 @@
     "license": "MIT",
     "private": false,
     "devDependencies": {
-        "electron": "^12.0.2",
+        "electron": "^12.0.5",
+        "electron-builder": "^22.10.5",
         "electron-packager": "^15.2.0"
     }
 }

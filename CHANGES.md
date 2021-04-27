@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.5.3
+
+- Updated `Computing Abbreviations` of the **Technical Definitions** utility.
+- Added support for building .pkg installer file for macOS.
+- Updated `Electron` to version `12.0.5`.
+
 ## 3.5.2
 
 - Added definitions to the `Computing Abbreviations` of the **Technical Definitions** utility.
