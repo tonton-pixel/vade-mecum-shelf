@@ -26,7 +26,11 @@
             "artifactName": "${name}-${os}-${version}.${ext}",
             "category": "public.app-category.utilities",
             "icon": "icons/icon.icns",
-            "target": "pkg"
+            "target": [
+                "zip",
+                "dmg",
+                "pkg"
+            ]
         },
         "pkg": {
             "license": "license-index.html",
