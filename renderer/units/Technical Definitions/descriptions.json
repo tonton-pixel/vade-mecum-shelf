@@ -273,7 +273,7 @@
             },
             {
                 "term": "IDC",
-                "details": "Ideographic Description Characters"
+                "details": "Ideographic Description Character"
             },
             {
                 "term": "IDE",
@@ -346,6 +346,10 @@
             {
                 "term": "IVD",
                 "details": "Ideographic Variation Database"
+            },
+            {
+                "term": "IVS",
+                "details": "Ideographic Variation Sequence"
             },
             {
                 "term": "JIS",
