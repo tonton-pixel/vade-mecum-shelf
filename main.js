@@ -111,6 +111,7 @@ else
     {
         const infos =
         [
+            "",
             "-- Application --",
             "",
             [ "Name", appName ],
@@ -125,9 +126,11 @@ else
             [ "System Version", process.getSystemVersion () ],
             [ "Platform", process.platform ],
             [ "Architecture", process.arch ],
+            "",
             [ "Default App", process.defaultApp || false ],
             [ "Mac App Store App", process.mas || false ],
             [ "Windows Store App", process.windowsStore || false ],
+            "",
             [ "Electron Version", process.versions.electron ],
             [ "Node Version", process.versions.node ],
             [ "V8 Version", process.versions.v8 ],
@@ -142,6 +145,7 @@ else
             [ "OS Type", os.type () ],
             [ "OS Platform", os.platform () ],
             [ "OS Release", os.release () ],
+            "",
             [ "CPU Architecture", os.arch () ],
             [ "CPU Endianness", os.endianness () ],
             [ "CPU Logical Cores", os.cpus ().length ],

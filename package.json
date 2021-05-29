@@ -1,7 +1,7 @@
 {
     "name": "vade-mecum-shelf",
     "productName": "Vade Mecum Shelf",
-    "version": "3.5.4",
+    "version": "3.5.5",
     "description": "Collection of vade mecum-like utilities.",
     "main": "main.js",
     "scripts": {
@@ -69,7 +69,7 @@
     "license": "MIT",
     "private": false,
     "devDependencies": {
-        "electron": "^12.0.7",
+        "electron": "^13.0.1",
         "electron-builder": "22.10.5",
         "electron-packager": "^15.2.0"
     }

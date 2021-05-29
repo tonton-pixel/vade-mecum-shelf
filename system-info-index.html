@@ -26,7 +26,7 @@
                 font-size: 12px;
                 white-space: pre;
                 width: 100%;
-                padding: 0.5em 1em;
+                padding: 0 12px;
                 border: 1px solid gray;
                 resize: none;
                 overflow-y: scroll;
@@ -48,7 +48,7 @@
         </style>
     </head>
     <body>
-        <textarea class="system-info" rows="35" readonly></textarea>
+        <textarea class="system-info" rows="36" readonly></textarea>
         <button class="close-button">Close</button>
         <script>
             document.body.querySelector ('.close-button').addEventListener ('click', (event) => { event.preventDefault (); window.close (); });
