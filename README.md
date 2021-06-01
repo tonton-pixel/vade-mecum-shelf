@@ -14,6 +14,7 @@ The following utilities are currently available:
 - **Chinese Zodiac**
 - **Color Names**
 - **Departments of France**
+- **Derivative Formulas**
 - **HTTP Status Codes**
 - **ISO Country Codes**
 - **ISO Language Codes**
@@ -52,6 +53,22 @@ Lists of color names, with live search:
 Full list of French departments, with live search:
 
 <img src="screenshots/departments-of-france.png" width="1080px" alt="Departments of France screenshot">
+
+## Derivative Formulas
+
+Sets of derivative formulas, by category:
+
+* Constant Rule
+* Sum Rule
+* Product Rule
+* Quotient Rule
+* Chain Rule
+* Power Rule
+* Exponential
+* Logarithmic
+* Trigonometric
+
+<img src="screenshots/derivative-formulas.png" width="1080px" alt="Derivative Formulas screenshot">
 
 ## HTTP Status Codes
 

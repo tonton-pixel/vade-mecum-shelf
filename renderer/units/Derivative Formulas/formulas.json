@@ -1,0 +1,69 @@
+[
+    {
+        "category": "Constant Rule",
+        "items":
+        [
+            "\\text{if }f(x)\\text{ is constant, then} \\\\[0.5em]\nf'(x)=0"
+        ]
+    },
+    {
+        "category": "Sum Rule",
+        "items":
+        [
+            "(\\alpha f+\\beta g)'=\\alpha f'+\\beta g'"
+        ]
+    },
+    {
+        "category": "Product Rule",
+        "items":
+        [
+            "(fg)'=f'g+fg'"
+        ]
+    },
+    {
+        "category": "Quotient Rule",
+        "items":
+        [
+            "\\left({\\frac {f}{g}}\\right)'={\\frac {f'g-fg'}{g^{2}}}"
+        ]
+    },
+    {
+        "category": "Chain Rule",
+        "items":
+        [
+            "\\text{if }f(x)=h(g(x))\\text{, then} \\\\[0.5em]\nf'(x)=h'(g(x))\\cdot g'(x)"
+        ]
+    },
+    {
+        "category": "Power Rule",
+        "items":
+        [
+            "{\\frac {d}{dx}}x^{a}=ax^{a-1}"
+        ]
+    },
+    {
+        "category": "Exponential",
+        "items":
+        [
+           "{\\frac {d}{dx}}e^{x}=e^{x}",
+           "{\\frac {d}{dx}}a^{x}=a^{x}\\ln(a)\\qquad a>0"
+        ]
+    },
+    {
+        "category": "Logarithmic",
+        "items":
+        [
+           "{\\frac {d}{dx}}\\ln(x)={\\frac {1}{x}}\\qquad x>0",
+           "{\\frac {d}{dx}}\\log _{a}(x)={\\frac {1}{x\\ln(a)}}\\qquad x,a>0"
+        ]
+    },
+    {
+        "category": "Trigonometric",
+        "items":
+        [
+            "{\\frac {d}{dx}}\\sin(x)=\\cos(x)",
+            "{\\frac {d}{dx}}\\cos(x)=-\\sin(x)",
+            "{\\frac {d}{dx}}\\tan(x)={\\frac {1}{\\cos ^{2}(x)}}=1+\\tan ^{2}(x)"
+        ]
+    }
+]

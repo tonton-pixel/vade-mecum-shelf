@@ -2,6 +2,10 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.6.0
+
+- Added new **Derivative Formulas** utility.
+
 ## 3.5.5
 
 - Updated `Electron` to version `13.0.1`.
