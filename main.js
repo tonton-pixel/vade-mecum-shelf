@@ -2,6 +2,8 @@
 const electron = require ('electron');
 const { app, BrowserWindow, dialog, globalShortcut, ipcMain, Menu, shell } = electron;
 //
+require ('@electron/remote/main').initialize ();
+//
 let mainWindow = null;
 //
 const gotTheLock = app.requestSingleInstanceLock ();

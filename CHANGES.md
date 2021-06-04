@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.7.0
+
+- Used `@electron/remote` module.
+- Updated `Electron` to version `13.1.0`.
+
 ## 3.6.0
 
 - Added new **Derivative Formulas** utility.
