@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 3.8.0
+
+- Updated `Noto Sans CJK` fonts to version `2.004`.
+- Updated `@electron/remote` module to version `1.2.0`.
+- Updated `Electron` to version `13.1.4`.
+
 ## 3.7.0
 
 - Used `@electron/remote` module.
